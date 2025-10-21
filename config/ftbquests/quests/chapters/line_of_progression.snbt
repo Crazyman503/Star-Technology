@@ -87,72 +87,6 @@
 			y: -25.0d
 		}
 		{
-			id: "52F4E84F3BFC7D8C"
-			linked_quest: "53A9F3758C218CDC"
-			x: -1.5d
-			y: -23.5d
-		}
-		{
-			id: "67BF77667CC175ED"
-			linked_quest: "06780B462515CAE2"
-			x: 0.0d
-			y: -26.5d
-		}
-		{
-			id: "6A645D3E42F96459"
-			linked_quest: "4E77319DB3B30062"
-			x: 0.0d
-			y: -25.0d
-		}
-		{
-			id: "6A0A1A59BBA636FB"
-			linked_quest: "421DF7880AD00F58"
-			x: 0.0d
-			y: -23.5d
-		}
-		{
-			id: "3296AB708049D9CD"
-			linked_quest: "70C2BB4FAA2FB1F2"
-			x: 1.5d
-			y: -25.0d
-		}
-		{
-			id: "29E17D70643091AF"
-			linked_quest: "744CAEF994308983"
-			x: 1.5d
-			y: -23.5d
-		}
-		{
-			id: "68F275E2F86A90D9"
-			linked_quest: "30A1077A14212FE2"
-			x: 1.5d
-			y: -22.0d
-		}
-		{
-			id: "46DF42F4B5D32E52"
-			linked_quest: "3FC351F05F2AC743"
-			x: 1.5d
-			y: -20.5d
-		}
-		{
-			id: "2962CE7698F4AA72"
-			linked_quest: "0962C36622E385B8"
-			x: 3.0d
-			y: -23.5d
-		}
-		{
-			id: "435BB61E021C8D1B"
-			linked_quest: "1F79E45EF7810DFF"
-			x: 3.0d
-			y: -22.0d
-		}
-		{
-			id: "58580939166771A6"
-			linked_quest: "4C5DBB94345FF33B"
-			x: 3.0d
-			y: -20.5d
-		}
-		{
 			id: "0CF0B36FA1A0ABE2"
 			linked_quest: "707C2E9BA62A60C5"
 			x: 3.0d
@@ -168,12 +102,6 @@
 			id: "6D220F5D5B6F0922"
 			linked_quest: "6EB85BBD539AEB57"
 			x: 1.5d
-			y: -31.0d
-		}
-		{
-			id: "2B30EE9B2767B72D"
-			linked_quest: "5C302CB1A1068EE1"
-			x: 3.0d
 			y: -31.0d
 		}
 		{
@@ -327,12 +255,6 @@
 			y: -25.0d
 		}
 		{
-			id: "0AC6062ECBE46015"
-			linked_quest: "67ABB3BF6D0C183B"
-			x: -18.0d
-			y: -23.5d
-		}
-		{
 			id: "07BCC67693FA7435"
 			linked_quest: "3DBCF29F5183C6C5"
 			x: -10.5d
@@ -343,18 +265,6 @@
 			linked_quest: "13118B7518370623"
 			x: -16.5d
 			y: -28.0d
-		}
-		{
-			id: "3550D612E8D3318D"
-			linked_quest: "665FC02BC2BC414F"
-			x: -15.0d
-			y: -26.5d
-		}
-		{
-			id: "7A43541F39514E79"
-			linked_quest: "06EC98F6E6AFC2AF"
-			x: 6.0d
-			y: -31.0d
 		}
 		{
 			id: "47FC871DEDEAE29F"
@@ -372,24 +282,6 @@
 			id: "715F3E093FC8F375"
 			linked_quest: "25583D0BF59E1BC8"
 			x: 4.5d
-			y: -17.5d
-		}
-		{
-			id: "0A215A99C18C9F04"
-			linked_quest: "3B1453C435E3950B"
-			x: 7.5d
-			y: -14.5d
-		}
-		{
-			id: "55BF86296CFC362D"
-			linked_quest: "16FDCABFC80579D5"
-			x: 7.5d
-			y: -16.0d
-		}
-		{
-			id: "1B3B2AA683ABB655"
-			linked_quest: "3AE6E85C2FC76DE9"
-			x: 7.5d
 			y: -17.5d
 		}
 	]
@@ -819,10 +711,7 @@
 			y: -25.0d
 		}
 		{
-			dependencies: [
-				"5BA69EDC3C223B2C"
-				"52B553FDB34B1475"
-			]
+			dependencies: ["52B553FDB34B1475"]
 			id: "29624C6DE10DEC12"
 			tasks: [{
 				id: "357F9BCE8FDA3C99"
@@ -833,7 +722,6 @@
 			y: -22.0d
 		}
 		{
-			dependencies: ["2587E109968EFBB4"]
 			id: "30A974D5B70D9BA6"
 			tasks: [{
 				id: "0FF4C89E0631917D"
@@ -927,10 +815,7 @@
 			y: -25.0d
 		}
 		{
-			dependencies: [
-				"289AF2AEBB2759A5"
-				"65D76272BA5E67FC"
-			]
+			dependencies: ["289AF2AEBB2759A5"]
 			disable_toast: true
 			id: "6FCC918C3F8DF9D2"
 			tasks: [{
@@ -942,10 +827,7 @@
 			y: -23.5d
 		}
 		{
-			dependencies: [
-				"6FCC918C3F8DF9D2"
-				"36C01453717B249D"
-			]
+			dependencies: ["6FCC918C3F8DF9D2"]
 			disable_toast: true
 			id: "5EBE45141E470090"
 			tasks: [{
@@ -957,10 +839,7 @@
 			y: -22.0d
 		}
 		{
-			dependencies: [
-				"5EBE45141E470090"
-				"678B90BF2ACE2BBA"
-			]
+			dependencies: ["5EBE45141E470090"]
 			disable_toast: true
 			id: "761E799972E221FF"
 			tasks: [{
@@ -1017,7 +896,7 @@
 					type: "item"
 				}
 			]
-			title: "Basic Chips"
+			title: "{ftbquests.chapter.line_of_progression.quest51.title}"
 			x: 0.0d
 			y: -29.5d
 		}
@@ -1051,7 +930,7 @@
 					type: "item"
 				}
 			]
-			title: "Better Chips"
+			title: "{ftbquests.chapter.line_of_progression.quest52.title}"
 			x: 1.5d
 			y: -29.5d
 		}
@@ -1070,12 +949,11 @@
 					type: "item"
 				}
 			]
-			title: "Highly Advanced Chips"
+			title: "{ftbquests.chapter.line_of_progression.quest53.title}"
 			x: 4.5d
 			y: -29.5d
 		}
 		{
-			dependencies: ["5C302CB1A1068EE1"]
 			id: "2FF72B005CDCDC1A"
 			tasks: [
 				{
@@ -1089,7 +967,7 @@
 					type: "item"
 				}
 			]
-			title: "Advanced Chips"
+			title: "{ftbquests.chapter.line_of_progression.quest54.title}"
 			x: 3.0d
 			y: -29.5d
 		}
@@ -1136,7 +1014,7 @@
 					type: "item"
 				}
 			]
-			title: "Enhanced Chips"
+			title: "{ftbquests.chapter.line_of_progression.quest55.title}"
 			x: 3.0d
 			y: -28.0d
 		}
@@ -1165,10 +1043,6 @@
 			y: -32.5d
 		}
 		{
-			dependencies: [
-				"67ABB3BF6D0C183B"
-				"2911EC7333E0E9C5"
-			]
 			disable_toast: true
 			id: "3883C93F8D66832B"
 			tasks: [{
@@ -1185,7 +1059,7 @@
 			optional: true
 			tasks: [{
 				id: "03D2F19E7E4E8C5A"
-				title: "positioner"
+				title: "{ftbquests.chapter.line_of_progression.quest59.task_275548190249225306.title}"
 				type: "checkmark"
 			}]
 			x: -7.0d
@@ -1261,7 +1135,6 @@
 			y: -32.5d
 		}
 		{
-			dependencies: ["53A9F3758C218CDC"]
 			id: "780DE9C5FAC1A07B"
 			tasks: [{
 				id: "60F21FFB33D8FCB2"
@@ -1272,10 +1145,7 @@
 			y: -23.5d
 		}
 		{
-			dependencies: [
-				"79428BAEAA7856E1"
-				"2C389E4B673A803E"
-			]
+			dependencies: ["2C389E4B673A803E"]
 			id: "68F9735CB776A7A5"
 			tasks: [{
 				id: "5A0D53C0B8BFACF3"
@@ -1286,7 +1156,6 @@
 			y: -22.0d
 		}
 		{
-			dependencies: ["3FC351F05F2AC743"]
 			id: "0D4D54F0410EB78A"
 			tasks: [{
 				id: "753E7D945E8041B9"
@@ -1344,7 +1213,7 @@
 			dependencies: ["2DA7FFD9B7A550B9"]
 			id: "35D5CC08AE53A7FA"
 			optional: true
-			subtitle: "Third UHV Circuit"
+			subtitle: "{ftbquests.chapter.line_of_progression.quest73.subtitle}"
 			tasks: [{
 				id: "7278702A05728EA6"
 				item: {
@@ -1361,7 +1230,7 @@
 			dependencies: ["35D5CC08AE53A7FA"]
 			id: "2F0E0C63E0DE0F5A"
 			optional: true
-			subtitle: "Second UEV Circuit"
+			subtitle: "{ftbquests.chapter.line_of_progression.quest74.subtitle}"
 			tasks: [{
 				id: "74164D342D52608B"
 				item: {
@@ -1376,10 +1245,10 @@
 		}
 		{
 			dependencies: ["2F0E0C63E0DE0F5A"]
-			description: ["A beast of a circuit."]
+			description: ["{ftbquests.chapter.line_of_progression.quest75.description1}"]
 			id: "73E9000BE5288623"
 			optional: true
-			subtitle: "First UIV Cicuit"
+			subtitle: "{ftbquests.chapter.line_of_progression.quest75.subtitle}"
 			tasks: [{
 				id: "104B5031089707D7"
 				item: {
@@ -1396,7 +1265,7 @@
 			dependencies: ["4DF812EEFB4FD1C3"]
 			id: "2DA7FFD9B7A550B9"
 			optional: true
-			subtitle: "Fourth and Last UV Circuit"
+			subtitle: "{ftbquests.chapter.line_of_progression.quest76.subtitle}"
 			tasks: [{
 				id: "4B3DDFC692C95879"
 				item: {
@@ -1410,10 +1279,9 @@
 			y: -20.5d
 		}
 		{
-			dependencies: ["1C9396E2587051F7"]
 			id: "4DF812EEFB4FD1C3"
 			optional: true
-			subtitle: "Fourth and Last ZPM Circuit"
+			subtitle: "{ftbquests.chapter.line_of_progression.quest77.subtitle}"
 			tasks: [{
 				id: "08AF5523EEC4E80C"
 				item: {
@@ -1474,7 +1342,6 @@
 			y: -25.0d
 		}
 		{
-			dependencies: ["3E1CA9FFB9953F42"]
 			id: "6AF20DCF1401A0FE"
 			tasks: [{
 				id: "45AE3FEB444694C9"
@@ -1553,7 +1420,6 @@
 			y: -31.0d
 		}
 		{
-			dependencies: ["0094C2E72105E8CA"]
 			id: "1A3303CDCDA020EF"
 			tasks: [{
 				id: "2FB2B65B72C007DA"
@@ -1564,9 +1430,8 @@
 			y: -23.5d
 		}
 		{
-			dependencies: ["421DF7880AD00F58"]
 			id: "2C389E4B673A803E"
-			subtitle: "First ZPM Circuit"
+			subtitle: "{ftbquests.chapter.line_of_progression.quest88.subtitle}"
 			tasks: [{
 				id: "2B6DA2DF1C1EA537"
 				item: "gtceu:quantum_processor_mainframe"
@@ -1578,7 +1443,7 @@
 		{
 			dependencies: ["75942788374CDEF3"]
 			id: "297CE2423324B92B"
-			subtitle: "Last ULV Circuit"
+			subtitle: "{ftbquests.chapter.line_of_progression.quest89.subtitle}"
 			tasks: [{
 				id: "3B54565722872EC4"
 				item: "gtceu:nand_chip"
@@ -1646,7 +1511,6 @@
 			y: -26.5d
 		}
 		{
-			dependencies: ["06EC98F6E6AFC2AF"]
 			id: "5FE5E2D9034DA872"
 			tasks: [
 				{
@@ -1660,7 +1524,7 @@
 					type: "item"
 				}
 			]
-			title: "Draconically Advanced Chips"
+			title: "{ftbquests.chapter.line_of_progression.quest95.title}"
 			x: 6.0d
 			y: -29.5d
 		}
@@ -1737,5 +1601,5 @@
 			y: -17.5d
 		}
 	]
-	title: "Line Of Progression"
+	title: "{ftbquests.chapter.line_of_progression.title}"
 }

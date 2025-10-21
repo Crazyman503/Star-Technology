@@ -30,6 +30,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
         .workableCasingRenderer('gtceu:block/casings/gcym/high_temperature_smelting_casing',
-            'block/multiblock/electric_blast_furnace', false);
+            'gtceu:block/multiblock/gcym/mega_blast_furnace', false);
 
 });
