@@ -217,8 +217,8 @@
 				item: "kubejs:ancient_netherite_reinforced_mesh"
 				type: "item"
 			}]
-			x: -10.25d
-			y: -1.25d
+			x: -10.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -3494,7 +3494,6 @@
 		}
 		{
 			dependencies: ["0A1A8258657B67B5"]
-			hide_dependent_lines: true
 			icon: "start_core:flamewake_solvent_bucket"
 			id: "53A2FF89C0F89921"
 			rewards: [{
@@ -3514,15 +3513,14 @@
 					type: "checkmark"
 				}
 			]
-			x: -13.5d
-			y: 3.0d
+			x: -12.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
 				"1AB8A88BA38BC989"
 				"2E34F23A42004285"
 			]
-			hide_dependent_lines: true
 			icon: "start_core:emberheart_nectar_bucket"
 			id: "75C33909E2CD5EC0"
 			rewards: [{
@@ -3542,8 +3540,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -13.5d
-			y: 4.5d
+			x: -12.5d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -3564,7 +3562,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -12.0d
+			x: -11.0d
 			y: 0.5d
 		}
 		{
@@ -3602,7 +3600,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -12.0d
+			x: -11.0d
 			y: 2.0d
 		}
 		{
@@ -3621,13 +3619,14 @@
 					type: "checkmark"
 				}
 			]
-			x: -12.0d
+			x: -11.0d
 			y: 3.5d
 		}
 		{
 			dependencies: ["1AB8A88BA38BC989"]
 			icon: "gtceu:super_stellar_infernal_concentrate_bucket"
 			id: "4692000C0C708F4B"
+			optional: true
 			tasks: [
 				{
 					id: "33F08C3BD19B18A1"
@@ -3640,14 +3639,14 @@
 					type: "checkmark"
 				}
 			]
-			x: -12.0d
+			x: -11.0d
 			y: 5.0d
 		}
 		{
 			dependencies: ["4692000C0C708F4B"]
-			hide_dependent_lines: true
 			icon: "start_core:igniferous_elixir_bucket"
 			id: "21C55F3D9C0FC93A"
+			optional: true
 			tasks: [
 				{
 					id: "1F1B404851AC7223"
@@ -3660,14 +3659,14 @@
 					type: "checkmark"
 				}
 			]
-			x: -13.5d
-			y: 6.0d
+			x: -12.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["1334D1E06C371200"]
-			hide_dependent_lines: true
 			icon: "start_core:blazing_phlogiston_bucket"
 			id: "29B530ECF5513147"
+			optional: true
 			tasks: [
 				{
 					id: "4921C927C17B3543"
@@ -3680,13 +3679,14 @@
 					type: "checkmark"
 				}
 			]
-			x: -13.5d
-			y: 7.5d
+			x: -12.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["4692000C0C708F4B"]
 			icon: "gtceu:hyper_stellar_infernal_concentrate_bucket"
 			id: "1334D1E06C371200"
+			optional: true
 			tasks: [
 				{
 					id: "22BAF41B7933B574"
@@ -3699,7 +3699,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -12.0d
+			x: -11.0d
 			y: 6.5d
 		}
 		{
@@ -3708,16 +3708,67 @@
 				"75C33909E2CD5EC0"
 				"21C55F3D9C0FC93A"
 				"29B530ECF5513147"
+				"1B1489636C9E1EE9"
+				"77590DF30E77EA84"
+				"40E6AD95A6EB0CE1"
+				"61ADDEF9B9DCE1E5"
 			]
 			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
 			id: "08EC699233F68A9A"
 			tasks: [{
 				id: "42FE2B194DF4ED76"
 				item: "start_core:infernal_tar_bucket"
 				type: "item"
 			}]
-			x: -13.5d
-			y: 9.0d
+			x: -11.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["53A2FF89C0F89921"]
+			id: "77590DF30E77EA84"
+			tasks: [{
+				id: "0A05D1DC39086D98"
+				item: "start_core:cinderbrew_solvent_bucket"
+				type: "item"
+			}]
+			x: -14.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["75C33909E2CD5EC0"]
+			id: "1B1489636C9E1EE9"
+			tasks: [{
+				id: "423750B81B044566"
+				item: "start_core:corefire_nectar_bucket"
+				type: "item"
+			}]
+			x: -14.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["21C55F3D9C0FC93A"]
+			id: "40E6AD95A6EB0CE1"
+			optional: true
+			tasks: [{
+				id: "18ADAB34A14A4EBB"
+				item: "start_core:infernum_elixir_bucket"
+				type: "item"
+			}]
+			x: -14.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["29B530ECF5513147"]
+			id: "61ADDEF9B9DCE1E5"
+			optional: true
+			tasks: [{
+				id: "3AF30152595DE12B"
+				item: "start_core:hellfire_essence_bucket"
+				type: "item"
+			}]
+			x: -14.0d
+			y: 6.5d
 		}
 	]
 	title: "{ftbquests.chapter.processing_lines_chap_7_1.title}"

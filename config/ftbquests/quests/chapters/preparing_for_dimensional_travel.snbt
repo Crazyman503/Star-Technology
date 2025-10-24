@@ -1151,7 +1151,7 @@
 					id: "gtceu:indium_tin_lead_cadmium_soldering_alloy_dust"
 					tag: { }
 				}
-					type: "item"
+				type: "item"
 			}]
 			x: 1.0d
 			y: 1.5d

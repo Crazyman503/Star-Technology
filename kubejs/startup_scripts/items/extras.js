@@ -49,5 +49,14 @@ StartupEvents.registry('item', event => {
         .tooltip(Text.translate('item.kubejs.dragonic_eye.tooltip'))
         .texture('kubejs:item/dragon_eye');
 
+    //Hellforge Catalyst
+    event.create('infernal_catalyst')
+        .texture('kubejs:item/infernal_catalyst');
+
+    event.create('abyssal_catalyst')
+        .texture('kubejs:item/abyssal_catalyst');
+
+    event.create('ascendant_catalyst')
+        .texture('kubejs:item/ascendant_catalyst');
 
 });
