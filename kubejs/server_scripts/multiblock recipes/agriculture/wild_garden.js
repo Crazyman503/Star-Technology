@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
         .chancedOutput('thermal:frost_melon_seeds', 200, 200)
         .duration(100)
         .EUt(global.vha['lv'])
-        .circuit(3);
+        .circuit(4);
 
     event.recipes.gtceu.wild_garden(id('sea_crops'))
         .itemInputs('minecraft:bone_meal')
@@ -82,6 +82,6 @@ ServerEvents.recipes(event => {
         .chancedOutput('minecraft:lily_pad', 800, 200)
         .duration(100)
         .EUt(global.vha['lv'])
-        .circuit(4);
+        .circuit(5);
 
 });

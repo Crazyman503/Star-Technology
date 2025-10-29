@@ -27,6 +27,7 @@ ServerEvents.recipes(event => {
 		/^create:crafting.*cogwheel.*/,
 		'create:crafting/kinetics/shaft',
 		'create:crafting/kinetics/belt_connector',
+		'create:crafting/kinetics/mechanical_piston',
 		'gtceu:shaped/iron_wire_single',
 		'create:splashing/soul_sand',
 		'minecraft:cookie',

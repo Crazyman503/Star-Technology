@@ -52,7 +52,7 @@ ServerEvents.recipes(event => {
     }
     SpecialCasing('bronze',0,true,true,true,false);
     SpecialCasing('steel',1,true,true,true,false);
-    SpecialCasing('stainless_steel',3,true,true,true,false);
+    SpecialCasing('stainless_steel',3,false,false,true,false);
     SpecialCasing('polytetrafluoroethylene',3,false,true,false,false);
     SpecialCasing('titanium',4,true,true,true,true);
     SpecialCasing('tungsten_steel',5,true,true,true,false); // made sperate engine load since keeps breaking
