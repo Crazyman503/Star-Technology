@@ -18,8 +18,8 @@
 		{
 			id: "220DBF269EDBAC7A"
 			linked_quest: "22B85F7F13C66730"
-			x: -5.5d
-			y: 4.0d
+			x: -6.5d
+			y: 3.0d
 		}
 	]
 	quests: [
@@ -278,8 +278,8 @@
 				item: "gtceu:uhv_electric_pump"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -3.0d
+			x: -6.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -1984,8 +1984,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.adventures_in_abydos.quest81.title}"
-			x: -6.5d
-			y: 1.0d
+			x: -4.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -2057,8 +2057,8 @@
 				item: "gtceu:neutronium_silicon_carbide_ingot"
 				type: "item"
 			}]
-			x: -8.5d
-			y: 3.0d
+			x: -10.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["1BE69DB2DFDC35C8"]
@@ -2073,7 +2073,7 @@
 				item: "gtceu:zirconium_ingot"
 				type: "item"
 			}]
-			x: -6.5d
+			x: -8.5d
 			y: 3.0d
 		}
 		{
@@ -2123,6 +2123,17 @@
 			}]
 			x: -2.5d
 			y: 5.0d
+		}
+		{
+			dependencies: ["22B85F7F13C66730"]
+			id: "7E9A5A626648A859"
+			tasks: [{
+				id: "04E9B2997427EC44"
+				item: "start_core:lucinducer"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 1.0d
 		}
 	]
 	title: "{ftbquests.chapter.adventures_in_abydos.title}"
