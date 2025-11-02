@@ -707,14 +707,6 @@ ServerEvents.recipes(event => {
         .duration(500)
         .EUt(1920);
 
-    event.recipes.gtceu.assembler(id('rhenotax_coil'))
-        .itemInputs('gtceu:astrenalloy_nx_frame','8x gtceu:rhenate_w_double_wire','16x gtceu:tantalum_carbide_foil',
-            '32x gtceu:hafnide_ito_ceramic_ring','64x gtceu:neutronium_silicon_carbide_foil')
-        .inputFluids('gtceu:dragonsteel 144')
-        .itemOutputs('gtceu:rhenotax_coil')
-        .duration(1200)
-        .EUt(31457280);
-
     // Cupronickel / Kanthal no Changes
 
     event.recipes.gtceu.assembler(id('cupronickel_coil_block'))

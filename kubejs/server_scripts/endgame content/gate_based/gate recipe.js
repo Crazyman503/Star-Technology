@@ -491,6 +491,30 @@ ServerEvents.recipes(event => {
             .duration(48000)
             .EUt(GTValues.VHA[GTValues.UEV]);
 
+        //KMRU
+        event.recipes.gtceu.component_part_synthesis_forge(id(`despair_and_agony`))
+            .itemInputs('4x gtceu:uiv_circuit_assembler','8x gtceu:dense_nyanium_plate','128x gtceu:red_alloy_single_cable','128x gtceu:lead_single_cable',
+                '999x komarumod:komaru_powder','999x komarumod:komaru_powder','999x komarumod:komaru_powder','999x komarumod:komaru_powder')
+            .inputFluids('gtceu:maxwellium 4444', 'gtceu:pure_dragon_breath 5000')
+            .itemOutputs(`kubejs:worries_about_it`)
+            .duration(222836420)
+            .stationResearch(
+                researchRecipeBuilder => researchRecipeBuilder
+                    .researchStack(Item.of(`komarumod:komaru_spawn_egg`))
+                    .EUt(GTValues.VHA[GTValues.UXV])
+                    .CWUt(500)
+            )            
+            .EUt(1)
+            .cleanroom(CleanroomType.getByName('stabilized'));
+
+        event.recipes.gtceu.research_station(`1_x_komarumod_komaru_spawn_egg`)
+            .itemInputs('start_core:component_data_core')
+            .itemInputs(`komarumod:komaru_spawn_egg`)
+            .itemOutputs(Item.of(`start_core:component_data_core`, `{assembly_line_research:{research_id:"1x_komarumod_komaru_spawn_egg",research_type:"gtceu:component_part_synthesis_forge"}}`))
+            .CWUt(500)
+            .totalCWU(1000000)
+            .EUt(GTValues.VHA[GTValues.UXV]);
+
         //Gate Crafting
         const GateCraft = (gate,fluid1,fluid2,fluid3,eut,sgGate) => {
             let B = `kubejs:${gate}_stargate_base_block`;
@@ -543,8 +567,9 @@ ServerEvents.recipes(event => {
             let M = 'placeablemaxwell:mars'
             let S = 'placeablemaxwell:vasilisa'
             let P = 'placeablemaxwell:poomba'
+            let W = 'kubejs:worries_about_it'
         event.recipes.gtceu.gate_assembly(id(`maxwell`))
-            .itemInputs(V,M,S,P,V,M,S,P,V,M,S,P,V,M,S,P,V,M,S,P,V,M,S,P)
+            .itemInputs(V,V,V,W,M,M,M,M,M,W,S,S,S,S,S,W,P,P,P,P,P,W,V,V)
             .inputFluids('gtceu:maxwellium 444444', `gtceu:black_dye 2500000`, `gtceu:pure_dragon_breath 250000`)
             .itemOutputs(`placeablemaxwell:maxwell`)
             .duration(64000)

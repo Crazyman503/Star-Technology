@@ -1314,6 +1314,7 @@
 				"61C534992FB17066"
 				"2F62965D05463E44"
 				"208863E121666BF4"
+				"1359FB7E009CD041"
 			]
 			description: [
 				"{ftbquests.chapter.draconic_age_part_1.quest57.description1}"
@@ -2008,7 +2009,6 @@
 				"things"
 				"non-tooltip information"
 			]
-			hide_dependent_lines: true
 			id: "4A13D4F1B22DBCAF"
 			shape: "gear"
 			size: 1.5d
@@ -2018,15 +2018,15 @@
 				type: "item"
 			}]
 			x: 10.0d
-			y: -2.0d
+			y: -4.0d
 		}
 		{
-			dependencies: ["4A13D4F1B22DBCAF"]
+			dependencies: ["1359FB7E009CD041"]
 			id: "20ABDF48307586F2"
 			invisible: true
 			tasks: [{
-				id: "1A613FCE6992AF19"
-				item: "kubejs:worries_about_it"
+				id: "26700A905905BA33"
+				item: "kubejs:why_are_you_worrying"
 				type: "item"
 			}]
 			x: 15.0d
@@ -2121,6 +2121,18 @@
 			}]
 			x: 7.0d
 			y: 1.0d
+		}
+		{
+			dependencies: ["4A13D4F1B22DBCAF"]
+			hide_dependent_lines: true
+			id: "1359FB7E009CD041"
+			tasks: [{
+				id: "6207A8177D8031C2"
+				item: "kubejs:worries_about_it"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -4.0d
 		}
 	]
 	title: "{ftbquests.chapter.draconic_age_part_1.title}"

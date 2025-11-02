@@ -191,10 +191,13 @@ GTCEuStartupEvents.materialModification(event => {
     GTMaterials.get('netherite_certus_quartz_skystone_alloy').setFormula('Nr4(SkC2)2(Sk(SiO2)2)');
     GTMaterials.get('nether_star').setFormula('✧');
     GTMaterials.get('nether_star_concentrate').setFormula('*✧*');
+    GTMaterials.get('dissipated_helish_concentrate').setFormula('⛧-');
+    GTMaterials.get('helish_concentrate').setFormula('⛧');
+    GTMaterials.get('hellfire_ash').setFormula('🔥-');
     GTMaterials.get('aurourium').setFormula('*A*');
     GTMaterials.get('starium_alloy').setFormula('*✧*4(Ke6Nq2C)2El2');
-    GTMaterials.get('nyanium').setFormula('*A*7(URhNq2)4(Mg3N2)*Nr*2');
-    GTMaterials.get('maxwellium').setFormula('∅(*A*7(URhNq2)4(Mg3N2)*Nr*2)∅')
+    GTMaterials.get('nyanium').setFormula('ᗢ');
+    GTMaterials.get('maxwellium').setFormula('ᓚᘏᗢ')
     GTMaterials.get('low_saturation_voidic_excression').setFormula('[∅-]');
     GTMaterials.get('moderate_saturation_voidic_excression').setFormula('[∅]');
     GTMaterials.get('high_saturation_voidic_excression').setFormula('[∅+]');
@@ -755,17 +758,17 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
         compLiquid('enriched_estaltadyne_solution', ['1x mystery','1x enriched_estalt','1x mystery'], 0xBE4717, [no_decomp]);
 
-        compLiquid('enriched_estaltadyne_slurry', ['1x mystery','1x enriched_estalt','1x mystery'], 0xBE4777, [no_decomp]);
+        // compLiquid('enriched_estaltadyne_slurry', ['1x mystery','1x enriched_estalt','1x mystery'], 0xBE4777, [no_decomp]);
 
-        compLiquid('enriched_estaltadyne_naquide_slurry_mixture', ['1x mystery','1x enriched_estalt','1x enriched_naquadah','1x mystery'], 0xBE4697, [no_decomp]);
+        // compLiquid('enriched_estaltadyne_naquide_slurry_mixture', ['1x mystery','1x enriched_estalt','1x enriched_naquadah','1x mystery'], 0xBE4697, [no_decomp]);
 
-        compLiquid('hyper_enriched_estaltadyne_slurry_mixture', ['1x mystery','2x enriched_estalt'], 0xBE4697, [no_decomp]);
+        // compLiquid('hyper_enriched_estaltadyne_slurry_mixture', ['1x mystery','2x enriched_estalt'], 0xBE4697, [no_decomp]);
         
-        compLiquid('hyper_enriched_estaltadyne_slurry_residue', ['1x mystery','2x enriched_estalt'],0xBE4677, [no_decomp]);
+        // compLiquid('hyper_enriched_estaltadyne_slurry_residue', ['1x mystery','2x enriched_estalt'],0xBE4677, [no_decomp]);
 
-        compLiquid('sodium_hyper_enriched_estaltadyne_sludge', ['2x sodium','1x mystery','2x enriched_estalt'], 0xBE4697, [no_decomp]);
+        // compLiquid('sodium_hyper_enriched_estaltadyne_sludge', ['2x sodium','1x mystery','2x enriched_estalt'], 0xBE4697, [no_decomp]);
 
-        compLiquid('hyper_enriched_estaltadyne_concentrate', ['2x enriched_estalt','1x mystery'], 0xBE4587, [no_decomp]);
+        // compLiquid('hyper_enriched_estaltadyne_concentrate', ['2x enriched_estalt','1x mystery'], 0xBE4587, [no_decomp]);
         
         //Adamantine Line
         compLiquid('enriched_adamantamite_mixture', ['1x mystery','1x adamantine','1x mystery'], 0x866E4B, [no_decomp]);
@@ -1054,7 +1057,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     compDust('seaborgium_cerium_tricarbon_tetrakis_orthosilicate_linked_dipolonium_diplatinum_tris_pyrophosphate', ['1x seaborgium_cerium_tricarbon_tetrakis_orthosilicate', '1x dipolonium_diplatinum_tris_pyrophosphate'], 0x526A48, [no_decomp]);
 
-    compDust('flerovium_hexaoxide_octafluorosulfatoplutonate_enriched_rare_earth', ['3x flerovium_hexaoxide_octafluorosulfatoplutonate', '4x mystery'], 0x6A4852, [no_decomp]);
+    compDust('flerovium_hexaoxide_octafluorosulfatoplutonate_enriched_rare_earth', ['4x flerovium_hexaoxide_octafluorosulfatoplutonate', '3x mystery'], 0x6A4852, [no_decomp]);
  
     // PEDOT:PSS plastic Line
     compLiquid('maleic_anhydride', ['4x carbon', '2x hydrogen', '3x oxygen'], 0xAAA099, [no_decomp]);
@@ -1413,7 +1416,13 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     //UEV Materials
     event.create('warped').dust().color(0x4FBB85).flags([no_smelt]);
 
+    compDust('hellfire_ash', ['1x mystery'], 0x5e4646, [no_smelt, no_decomp]);
+
     compLiquid('nether_star_concentrate', ['1x mystery'], 0xeeeeee, [no_decomp]);
+
+    compLiquid('dissipated_helish_concentrate', ['1x mystery'], 0x8da589, [no_decomp]);
+
+    compLiquid('helish_concentrate', ['1x mystery'], 0x66a574, [no_decomp]);
 
     compIngotLiquidSecColor('aurourium', ['1x mystery'], 0x5d44de, 0xde44ce, SHINY, [], [no_decomp, fine_wire, no_smelt]);
        

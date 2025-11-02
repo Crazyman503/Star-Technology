@@ -2496,6 +2496,20 @@
 			x: -10.5d
 			y: 0.0d
 		}
+		{
+			dependencies: [
+				"6FB365E6C91B482E"
+				"1EE1007BA8202CC1"
+			]
+			id: "7A1B47A17B14C928"
+			tasks: [{
+				id: "7880A4932BAD960A"
+				item: "gtceu:nyinsane_plasma_turbine"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.0d
+		}
 	]
 	title: "{ftbquests.chapter.power.title}"
 }

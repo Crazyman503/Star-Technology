@@ -8,12 +8,32 @@ ServerEvents.recipes(event => {
         .duration(240)
         .EUt(GTValues.VHA[GTValues.UEV]);
 
-    event.recipes.gtceu.injection_mixer(id('helish_star'))
-        .itemInputs('gtceu:gravi_star', '2x gtceu:warped_dust')
-        .inputFluids('gtceu:flerovium 576')
+    event.recipes.gtceu.injection_mixer(id('dissipated_helish_concentrate'))
+        .itemInputs('2x gtceu:plutonium_dust', '7x gtceu:warped_dust', '1x gtceu:astatine_dust', 
+            '5x gtceu:netherite_dust', '3x thermal_extra:soul_sand_dust')
+        .inputFluids('gtceu:nether_star_concentrate 144', 'gtceu:infernal_concentrate 250', 'gtceu:enriched_mystical_concentrate 625', 
+            'gtceu:flerovium 432', 'gtceu:nether_air 18000')
+        .outputFluids('gtceu:dissipated_helish_concentrate 6250')
+        .duration(720)
+        .EUt(GTValues.VHA[GTValues.UEV]);
+
+    event.recipes.gtceu.pressure_heat_chamber(id('helish_concentrate'))
+        .itemInputs('3x kubejs:nether_tempered_shard')
+        .inputFluids('gtceu:dissipated_helish_concentrate 4625')
+        .itemOutputs('7x gtceu:netherrack_dust')
+        .outputFluids('gtceu:helish_concentrate 504')
+        .duration(560)
+        .EUt(GTValues.VHA[GTValues.UHV]);
+
+    event.recipes.gtceu.hellforge(id('helish_star'))
+        .inputFluids('gtceu:helish_concentrate 432')
+        .itemInputs('gtceu:gravi_star')
         .itemOutputs('kubejs:helish_star')
-        .duration(960)
-        .EUt(GTValues.VA[GTValues.UV]);
+        .outputFluids('start_core:infernal_tar 50')
+        .blastFurnaceTemp(1000)
+        .duration(240)
+        .circuit(1)
+        .EUt(GTValues.VA[GTValues.UHV]);
 
     const WarpedMaceration = (type,size) => {
     event.recipes.gtceu.macerator(id(`warped_dust_nether_from_${type.split(':')[1]}`))

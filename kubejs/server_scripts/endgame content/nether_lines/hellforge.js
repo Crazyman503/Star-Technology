@@ -47,7 +47,7 @@ ServerEvents.recipes(event => {
             .blastFurnaceTemp(HeatMK)
             .duration(SecDurPerIng * 20 * IngQuant)
             .outputFluids(`gtceu:${type}_plasma ${IngQuant * 144}`)
-            // .itemOutputs()
+            .itemOutputs(`${IngQuant}x gtceu:tiny_hellfire_ash_dust`)
             .EUt(eut)
             .circuit(inputs.length);
         event.recipes.gtceu.hellforge(id(`${type}_boosted`))
@@ -57,7 +57,7 @@ ServerEvents.recipes(event => {
             .blastFurnaceTemp(HeatMK)
             .duration(SecDurPerIng * 20 * IngQuant * .67)
             .outputFluids(`gtceu:${type}_plasma ${IngQuant * 144}`)
-            // .itemOutputs()
+            .itemOutputs(`${IngQuant}x gtceu:tiny_hellfire_ash_dust`)
             .EUt(eut)
             .circuit(inputs.length + 10);
 
@@ -136,13 +136,25 @@ ServerEvents.recipes(event => {
         .inputFluids('start_core:infernal_tar 100')
         .chancedOutput('gtceu:basaltic_mineral_sand_dust',4000,200)
         .chancedOutput('gtceu:deactivated_nether_dust',2500,300)
-        .chancedOutput('gtceu:netherrack_dust',7500,150)
+        .chancedOutput('gtceu:hellfire_ash_dust',7500,150)
         .chancedOutput('gtceu:thorium_nugget',1250,125)
         .chancedOutput('gtceu:red_garnet_dust',900,100)
         .chancedOutput('gtceu:tetrahedrite_dust',500,75)
         .outputFluids('gtceu:infernal_concentrate 100')
         .duration(20)
         .EUt(GTValues.VHA[GTValues.UV]);
+
+    event.recipes.gtceu.manifold_centrifuge(id('hellfire_ash_decomposition'))
+        .itemInputs('gtceu:hellfire_ash_dust')
+        .chancedOutput('gtceu:dark_ash_dust',4500,250)
+        .chancedOutput('gtceu:deactivated_nether_dust',500,75)
+        .chancedOutput('gtceu:netherrack_dust',7000,150)
+        .chancedOutput('gtceu:uvarovite_dust',1250,125)
+        .chancedOutput('gtceu:mica_dust',900,100)
+        .chancedOutput('gtceu:biotite_dust',500,75)
+        .outputFluids('start_core:infernal_tar 25')
+        .duration(50)
+        .EUt(GTValues.VHA[GTValues.ZPM]);
 
     //Catalyst
     const catalyst = (type,inputs,scaler) => {

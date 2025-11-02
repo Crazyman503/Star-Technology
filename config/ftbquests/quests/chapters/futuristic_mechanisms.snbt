@@ -1252,7 +1252,10 @@
 			y: -7.0d
 		}
 		{
-			dependencies: ["3FC351F05F2AC743"]
+			dependencies: [
+				"3FC351F05F2AC743"
+				"464BB867FCF25A94"
+			]
 			description: ["This beautiful machine allows you to compress entire processing lines into one machine."]
 			id: "3E1CA9FFB9953F42"
 			rewards: [{

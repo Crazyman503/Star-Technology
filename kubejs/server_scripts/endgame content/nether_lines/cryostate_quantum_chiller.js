@@ -65,5 +65,6 @@ ServerEvents.recipes(event => {
     Material15000PlusAlloy('draconyallium', 14.55);
     Material15000PlusAlloy('draco_abyssal', 35.85);
     Material15000PlusAlloy('expetidalloy_d_17', 12.30);
+    Material15000PlusAlloy('rhenate_w', 28.8);
 
 });

@@ -96,7 +96,10 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["0743A08E81AB84D3"]
+			dependencies: [
+				"0743A08E81AB84D3"
+				"1F416C7A641914EC"
+			]
 			description: ["{ftbquests.chapter.processing_lines_chap_456.quest5.description1}"]
 			id: "445BC7DFD3387DD4"
 			rewards: [{
