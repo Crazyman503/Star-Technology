@@ -177,6 +177,10 @@ event.create('netherite')
         .flags(no_decomp);
 */
 
+GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
+    event.create('fluix').parent('certus');
+});
+
 GTCEuStartupEvents.materialModification(event => {
 
     GTMaterials.Netherite.setMaterialARGB(0x1a0d00);
@@ -276,7 +280,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     
     // Materials used as placeholders
     [
-        'mystery','star','dragon','excited','soul','fluix'
+        'mystery','star','dragon','excited','soul'
     ].forEach(elem => {
         event.create(elem)
                 .element(GTElements.get(elem));
@@ -888,6 +892,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     // AE2 (constants left due to sec color components)
     elemFluid('skystone', 'skystone', 0x414445, []);
+
+    event.create('fluix')
+        .element(GTElements.get('fluix'))
+        .flags(lens)
+        .iconSet("fluix");
 
     compIngotLiquid('sky_steel', ['1x skystone', '2x steel'], 0xCCFFCC, METALLIC, [1600, 'low', VA('mv'), 400], [no_decomp, plates, rod, frame]);
     

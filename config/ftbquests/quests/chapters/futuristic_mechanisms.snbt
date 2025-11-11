@@ -444,6 +444,8 @@
 				"{ftbquests.chapter.futuristic_mechanisms.quest19.description1}"
 				""
 				"{ftbquests.chapter.futuristic_mechanisms.quest19.description2}"
+				""
+				"{ftbquests.chapter.futuristic_mechanisms.quest19.description3}"
 			]
 			id: "67ABB3BF6D0C183B"
 			rewards: [{
