@@ -94,36 +94,18 @@ ServerEvents.recipes(event => {
         .duration(480)
         .EUt(GTValues.VHA[GTValues.ZPM]);
 
-    ['holmium','pure_netherite','zapolgium'].forEach( type => {
-        event.remove({output: `gtceu:magnetic_${type}_rod`});
-        event.remove({input: `gtceu:magnetic_${type}_rod`});
-        event.remove({output: `gtceu:long_magnetic_${type}_rod`});
-        event.remove({input: `gtceu:long_magnetic_${type}_rod`});
-        event.remove({output: `gtceu:magnetic_${type}_block`});
-        event.remove({input: `gtceu:magnetic_${type}_block`});
-        event.remove({output: `gtceu:magnetic_${type}_ingot`});
-        event.remove({input: `gtceu:magnetic_${type}_ingot`});
-        event.remove({output: `gtceu:magnetic_${type}_dust`});
-        event.remove({input: `gtceu:magnetic_${type}_dust`});
-        event.remove({output: `gtceu:small_magnetic_${type}_dust`});
-        event.remove({input: `gtceu:small_magnetic_${type}_dust`});
-        event.remove({output: `gtceu:tiny_magnetic_${type}_dust`});
-        event.remove({input: `gtceu:tiny_magnetic_${type}_dust`});
-        event.remove({output: `gtceu:magnetic_${type}_nugget`});
-        event.remove({input: `gtceu:magnetic_${type}_nugget`});
-    });
+        event.remove({output: /gtceu:.*magnetic_holmium.*/});
+        event.remove({input: /gtceu:.*magnetic_holmium.*/});
+        event.remove({output: /gtceu:.*magnetic_pure_netherite.*/});
+        event.remove({input: /gtceu:.*magnetic_pure_netherite.*/});
+        event.remove({output: /gtceu:.*magnetic_zapolgium.*/});
+        event.remove({input: /gtceu:.*magnetic_zapolgium.*/});
 
     [
         {type: 'pure_netherite', duration: 200, energy: GTValues.VA[GTValues.LuV]},
         {type: 'zapolgium', duration: 300, energy: GTValues.VA[GTValues.UV]}    
         // Holmium is HM only as of now and wont generate recipes here   
     ].forEach( magIngot => {
-
-        // event.recipes.gtceu.polarizer(id(`magnetic_${magIngot.type}_ingot`))
-        //     .itemInputs(`gtceu:${magIngot.type}_ingot`)
-        //     .itemOutputs(`gtceu:magnetic_${magIngot.type}_ingot`)
-        //     .duration(magIngot.duration)
-        //     .EUt(magIngot.energy);
 
         event.recipes.gtceu.polarizer(id(`magnetic_${magIngot.type}_rod`))
             .itemInputs(`gtceu:${magIngot.type}_rod`)
@@ -137,6 +119,18 @@ ServerEvents.recipes(event => {
             .duration(magIngot.duration)
             .EUt(magIngot.energy);
 
+    });
+
+    [
+        { plastic: 'polyether_ether_ketone', scaler: 2 },
+        { plastic: 'poly_34_ethylenedioxythiophene_polystyrene_sulfate', scaler: 4 }
+    ].forEach( cFiber => {
+        event.recipes.gtceu.autoclave(id(`carbon_fibers_${cFiber.plastic}`))
+            .itemInputs(`${cFiber.scaler * 8}x gtceu:carbon_dust`)
+            .inputFluids(`gtceu:${cFiber.plastic} 9`)
+            .itemOutputs(`${32 * cFiber.scaler}x gtceu:carbon_fibers`)
+            .duration(37)
+            .EUt(1920 * (2 ** cFiber.scaler));
     });
 
     event.recipes.gtceu.mixer(id('cerium_tritelluride'))
@@ -456,7 +450,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.chemical_reactor(id('better_draco_stem_cells'))
         .itemInputs('gtceu:small_draconyallium_dust')
         .inputFluids('gtceu:abyssal_nutrient_blend 500','gtceu:draconic_enrichment_serum 2500')
-        .itemOutputs('16x kubejs:draconic_stem_cells')
+        .itemOutputs('32x kubejs:draconic_stem_cells')
         .outputFluids('gtceu:condensed_abyssal_nutrient_blend 100')
         .duration(500)
         .cleanroom($StarTAbyssalContainmentMachine.ABYSSAL_CONTAINMENT_ROOM)

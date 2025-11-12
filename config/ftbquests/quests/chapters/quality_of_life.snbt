@@ -371,13 +371,33 @@
 			y: -3.5d
 		}
 		{
-			description: ["{ftbquests.chapter.quality_of_life.quest20.description1}"]
+			description: [
+				"{ftbquests.chapter.quality_of_life.quest20.description1}"
+				""
+				"&4UPDATE TO INCLUDE ADDED ITEMS"
+				""
+				"Machine Memory copys single block configurations"
+				""
+				"Portable scanner gives info on blocks clicked (helps with multi info)"
+			]
 			id: "2AB07DDCE44FA5D4"
-			tasks: [{
-				id: "4CECC98B96F59492"
-				item: "gtceu:terminal"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "4CECC98B96F59492"
+					item: "gtceu:terminal"
+					type: "item"
+				}
+				{
+					id: "7A07BAD9EAEFC06A"
+					item: "gtceu:portable_scanner"
+					type: "item"
+				}
+				{
+					id: "47C9262314FF7F51"
+					item: "gtceu:machine_memory_card"
+					type: "item"
+				}
+			]
 			x: -2.0d
 			y: 0.5d
 		}

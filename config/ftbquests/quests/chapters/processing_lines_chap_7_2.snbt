@@ -2324,6 +2324,8 @@
 			description: [
 				"{ftbquests.chapter.processing_lines_chap_7_2.quest122.description1}"
 				"[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.processing_lines_chap_7_2.quest122.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"09B55AFE7C06EC82\"}}]"
+				""
+				"&4DURING TESTING CHECK IF FIXED SERVER SIDE (SHOULD BE)"
 			]
 			hide_dependent_lines: true
 			icon: "architects_palette:chiseled_abyssaline_bricks"

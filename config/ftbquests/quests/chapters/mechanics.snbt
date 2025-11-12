@@ -244,6 +244,7 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["0A6534BD104A2B08"]
 			description: [
 				"{ftbquests.chapter.mechanics.quest13.description1}"
 				""
