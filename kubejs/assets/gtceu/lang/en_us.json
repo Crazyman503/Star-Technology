@@ -932,7 +932,7 @@
     "block.gtceu.supreme_plasma_turbine.tooltip.5": "§8-----------------------------------",
     "block.gtceu.supreme_plasma_turbine.tooltip.6": "§c§uTurbine Parallels: §7Turbine can run up to §a6x§7 as many recipes as a standard Large Plasma Turbine.",
     "block.gtceu.supreme_plasma_turbine.tooltip.7": "§8-----------------------------------",
-    "block.gtceu.supreme_plasma_turbine.tooltip.8": "§6Lubricant Boosting: §7Consumes 2000B of §fTungsten Disulfide§7 an Hour for an additional §a+25% §fEU/t §7output, failure to do so leads to a loss of §4-10% §fEU/t §7output.",
+    "block.gtceu.supreme_plasma_turbine.tooltip.8": "§6Lubricant Boosting: §7Consumes 1000B of §fTungsten Disulfide§7 an Hour for an additional §a+25% §fEU/t §7output, failure to do so leads to a loss of §4-10% §fEU/t §7output.",
     "block.gtceu.supreme_plasma_turbine.tooltip.9": "§8-----------------------------------",
     "block.gtceu.supreme_plasma_turbine.tooltip.10": "§3Coolant Boosting: §7Consumes 2500B of §fSuperstate Helium 3§7 an Hour for an additional §a+75% §fEU/t §7output.",
     "block.gtceu.supreme_plasma_turbine.tooltip.11": "§7Note: §oCoolant Boosting§r§7 only occurs if §oLubricant Boosting§r§7 is Active.",
@@ -948,7 +948,7 @@
     "block.gtceu.nyinsane_plasma_turbine.tooltip.5": "§8-----------------------------------",
     "block.gtceu.nyinsane_plasma_turbine.tooltip.6": "§c§uTurbine Parallels: §7Turbine can run up to §a12x§7 as many recipes as a standard Large Plasma Turbine.",
     "block.gtceu.nyinsane_plasma_turbine.tooltip.7": "§8-----------------------------------",
-    "block.gtceu.nyinsane_plasma_turbine.tooltip.8": "§6Lubricant Boosting: §7Consumes 5000B of §fTungsten Disulfide§7 an Hour for an additional §a+50% §fEU/t §7output, failure to do so leads to a loss of §4-20% §fEU/t §7output.",
+    "block.gtceu.nyinsane_plasma_turbine.tooltip.8": "§6Lubricant Boosting: §7Consumes 2500B of §fTungsten Disulfide§7 an Hour for an additional §a+50% §fEU/t §7output, failure to do so leads to a loss of §4-20% §fEU/t §7output.",
     "block.gtceu.nyinsane_plasma_turbine.tooltip.9": "§8-----------------------------------",
     "block.gtceu.nyinsane_plasma_turbine.tooltip.10": "§3Coolant Boosting: §7Consumes 800B of §fOganesson Stabilized Bose-Einstein Condensate§7 an Hour for an additional §a+150% §fEU/t §7output.",
     "block.gtceu.nyinsane_plasma_turbine.tooltip.11": "§7Note: §oCoolant Boosting§r§7 only occurs if §oLubricant Boosting§r§7 is Active.",
@@ -1266,6 +1266,16 @@
     "block.gtceu.omega_pressure_heat_chamber.tooltip.1": "Can use §3Parallel§r hatches, has §bThoughput Boosting§r, and §cSubtick Parallels",
 
     "material.gtceu.naquadated_soldering_alloy": "Naquadated Soldering Alloy",
-    "material.gtceu.rhenate_w": "Rhenate-W"
+    "material.gtceu.rhenate_w": "Rhenate-W",
+    "material.gtceu.borealic_steel": "Borealic Steel",
+    "material.gtceu.hvga_steel": "Hyper Voidic Graviton Aborition Steel",
+    "material.gtceu.melastrium_mox": "Melastrium MOX",
+    "material.gtceu.trikoductive_neutro_steel": "Trikoductive Neutro-steel",
+    "material.gtceu.soul_ascendant_cuperite": "Soul Ascendant Cuperite",
+    "material.gtceu.mythrotight_carbide_steel": "Mythrotight-caribe Steel",
+    "material.gtceu.aerorelient_steel": "Aerorelient Steel",
+    "material.gtceu.vastaqalloy_cr_4200x": "Vastaqalloy CR-4200X",
+    "material.gtceu.ultispestalloy_cmsh": "Ultispestalloy C/MSH",
+    "material.gtceu.zeroidic_trinate_steel": "Zeroidic Trinate-steel"
 
 }
