@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
         .itemInputs('2x gtceu:plutonium_dust', '173x gtceu:warped_dust', '1x gtceu:astatine_dust', 
             '5x gtceu:netherite_dust', '3x thermal_extra:soul_sand_dust')
         .inputFluids('gtceu:nether_star_concentrate 144', 'gtceu:infernal_concentrate 250', 'gtceu:enriched_mystical_concentrate 625', 
-            'gtceu:flerovium 432', 'gtceu:nether_air 18000')
+            'gtceu:flerovium 288', 'gtceu:nether_air 18000')
         .outputFluids('gtceu:dissipated_helish_concentrate 7450')
         .duration(720)
         .EUt(GTValues.VHA[GTValues.UEV]);
