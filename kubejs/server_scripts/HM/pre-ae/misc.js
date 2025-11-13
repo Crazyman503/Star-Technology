@@ -169,4 +169,17 @@ ServerEvents.recipes(event => {
     mold('credit',false,28);
     mold('name',false,29);
 
+    event.recipes.gtceu.mixer(id('cast_iron_dust'))
+        .itemInputs('18x gtceu:crude_cast_iron_dust', '1x gtceu:bismuth_dust', '2x gtceu:copper_dust')
+        .itemOutputs('21x gtceu:cast_iron_dust')
+        .duration(132)
+        .EUt(120);
+
+    event.recipes.gtceu.electric_blast_furnace(id('cast_iron_ingot'))
+        .itemInputs('gtceu:cast_iron_dust', 'gtceu:carbon_dust')
+        .itemOutputs('gtceu:cast_iron_ingot')
+        .blastFurnaceTemp(1800)
+        .duration(280)
+        .EUt(120);
+
 });

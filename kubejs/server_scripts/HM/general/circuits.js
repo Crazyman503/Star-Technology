@@ -141,7 +141,7 @@ ServerEvents.recipes(event => {
         PartsAssemblerFluids('6x gtceu:transistor', 'transistor',['4x gtceu:silicon_foil', '3x gtceu:fine_tin_wire', '3x gtceu:fine_silver_wire'],'gtceu:polyethylene 216', 240, 120);
         PartsAssemblerFluids('6x gtceu:capacitor', 'capacitor',['1x gtceu:polyethylene_foil', '2x gtceu:aluminium_foil', '2x gtceu:silver_bolt'],'gtceu:polyethylene 144', 360, 120);
         // SMD
-        PartsAssemblerFluids('32x gtceu:smd_capacitor', 'smd_capacitor', ['8x #gtceu:capacitors', '3x gtceu:tantalum_foil', '2x gtceu:polyvinyl_chloride_foil'], 'gtceu:polyethylene 144', 320, 480);
+        PartsAssemblerFluids('32x gtceu:smd_capacitor', 'smd_capacitor', ['8x gtceu:capacitor', '3x gtceu:tantalum_foil', '2x gtceu:polyvinyl_chloride_foil'], 'gtceu:polyethylene 144', 320, 480);
         PartsAssemblerFluids('32x gtceu:smd_diode', 'smd_diode', ['2x gtceu:gallium_arsenide_dust', '8x gtceu:platinum_foil', 'kubejs:silicon_chip'], 'gtceu:polyethylene 288', 400, 480);
         PartsAssemblerFluids('32x gtceu:smd_transistor', 'smd_transistor', ['3x gtceu:gallium_foil', '8x gtceu:fine_tantalum_wire', '4x gtceu:fine_cupronickel_wire'], 'gtceu:polyethylene 216', 320, 480);
         PartsAssemblerFluids('32x gtceu:smd_resistor', 'smd_resistor', ['1x gtceu:graphene_dust', '10x gtceu:fine_tantalum_wire', '4x gtceu:silicone_rubber_foil'], 'gtceu:polyethylene 144', 360, 480);

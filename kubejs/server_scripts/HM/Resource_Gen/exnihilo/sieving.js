@@ -38,15 +38,15 @@ ServerEvents.recipes(event => {
 
 	// Dirt
 	sieve('string', 1, cdirt, dirt, false);
-	sieve('string', .1, cdirt, dirt, false);
-	sieve('string', .8, cdirt, 'exnihilosequentia:stone_pebble', false);
-	sieve('string', .8, cdirt, 'exnihilosequentia:stone_pebble', false);
-	sieve('string', .8, cdirt, 'exnihilosequentia:stone_pebble', false);
-	sieve('string', .30, cdirt, 'minecraft:flint', false);
+	sieve('string', .15, cdirt, dirt, false);
+	sieve('string', .75, cdirt, 'exnihilosequentia:stone_pebble', false);
+	sieve('string', .75, cdirt, 'exnihilosequentia:stone_pebble', false);
+	sieve('string', .75, cdirt, 'exnihilosequentia:stone_pebble', false);
+	sieve('string', .15, cdirt, 'minecraft:flint', false);
 
 	sieve('flint', 1, cdirt, dirt, false);
-	sieve('flint', .2, cdirt, dirt, false);
-	sieve('flint', .2, cdirt, gravel, false);
+	sieve('flint', .25, cdirt, dirt, false);
+	sieve('flint', .25, cdirt, gravel, false);
 
 	// Gravel
 	['andesite', 'basalt', 'blackstone', 'deepslate', 'diorite', 'granite', 'tuff'].forEach(pebble => {

@@ -18,6 +18,7 @@ ServerEvents.recipes(event => {
 
     assembler(['4x minecraft:glass_pane', '4x gtceu:brass_plate'], '32x create_hypertube:hypertube', 100, 30, 'hypertube');
     assembler(['create:smart_chute', 'create_hypertube:hypertube', 'create:cogwheel'], 'create_hypertube:hypertube_entrance', 100, 30, 'hypertube_entrance');
-    assembler(['create_hypertube:hypertube_entrance', 'gtceu:lv_voltage_coil', 'create:cogwheel'], 'create_hypertube:hypertube_accelerator', 100, 30, 'hyper_accelerator');
+    assembler(['create_hypertube:hypertube_entrance', 'gtceu:lv_voltage_coil', 'create:cogwheel'], 'create_hypertube:hyper_accelerator_small_cogwheel', 100, 30, 'hyper_accelerator_small');
+    assembler(['create_hypertube:hypertube_entrance', 'gtceu:lv_voltage_coil', 'create:large_cogwheel'], 'create_hypertube:hyper_accelerator_large_cogwheel', 100, 30, 'hyper_accelerator_large');
 
 });

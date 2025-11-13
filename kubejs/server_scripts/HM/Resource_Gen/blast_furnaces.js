@@ -30,12 +30,12 @@ ServerEvents.recipes(event => {
 		event
 			.blasting(`gtceu:${dust}_ingot`, `gtceu:${dust}_dust`)
 			.id(`start:blasting/${dust}_dust_manual_only`);
-        event.recipes.gtceu
-			.gt_blasting(id(`${dust}_from_dust`))
-            .itemInputs(`gtceu:${dust}_dust`)
-            .itemOutputs(`gtceu:${dust}_ingot`)
-            .duration(100)
-            .EUt(8);
+        // event.recipes.gtceu
+		// 	.gt_blasting(id(`${dust}_from_dust`))
+        //     .itemInputs(`gtceu:${dust}_dust`)
+        //     .itemOutputs(`gtceu:${dust}_ingot`)
+        //     .duration(100)
+        //     .EUt(8);
 	});
 
     // event.forEachRecipe({type:'minecraft:blasting'}, BlastParse => {
