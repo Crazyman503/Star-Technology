@@ -8,23 +8,15 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW_MULTIPLE , FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ASSEMBLER);
 
-    event.create('mass_laser_engraving')
-        .category('extemely_advanced')
-        .setEUIO('in')
-        .setMaxTooltips(4)
-        .setMaxIOSize(2, 1, 0, 0)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.ELECTROLYZER);
-
 });
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('vibration_laser_engraver', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)    
-        .recipeTypes(['vibration_laser_engraver','mass_laser_engraving'])
+        .recipeTypes(['vibration_laser_engraver','laser_engraver'])
         .appearanceBlock(GCYMBlocks.CASING_VIBRATION_SAFE)
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_PERFECT])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, $StarTRecipeModifiers.THOUGHPUT_BOOSTING, $StarTRecipeModifiers.BULK_PROCESSING, GTRecipeModifiers.OC_NON_PERFECT_SUBTICK])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('      BCCCB      ', '     DBCCCBD     ', '    DDBCCCBDD    ', '   DDBBCCCBBDD   ', '  DDBBBCCCBBBDD  ', ' DDBBEBBBBBEBBDD ', 'BBBBBBBDDDBBBBBBB', 'CCCCCBDDADDBCCCCC', 'CCCCCBDAAADBCCCCC', 'CCCCCBDDADDBCCCCC', 'BBBBBBBDDDBBBBBBB', ' DDBBEBBBBBEBBDD ', '  DDBBBCCCBBBDD  ', '   DDBBCCCBBDD   ', '    DDBCCCBDD    ', '     DBCCCBD     ', '      BCCCB      ') 
             .aisle('     DBCCCBD     ', '   BB   F   BB   ', '  BB    F    BB  ', ' BB     F     BB ', ' B             B ', 'D      GGG      D', 'B     GDDDG     B', 'C    GDDDDDG    C', 'CFFF GDDDDDG FFFC', 'C    GDDDDDG    C', 'B     GDDDG     B', 'D      GGG      D', ' B             B ', ' BB     F     BB ', '  BB    F    BB  ', '   BB   F   BB   ', '     DBCCCBD     ') 

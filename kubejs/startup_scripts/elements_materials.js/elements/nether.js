@@ -10,5 +10,6 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
     elem('calamatium', 134, 211, 'Ct');
     elem('isovol', 135, 221, 'Is');
     elem('ancient_netherite', 124, 295, 'Nr+');
+    elem('aurourium', -1, -1, '*A*')
 
 });

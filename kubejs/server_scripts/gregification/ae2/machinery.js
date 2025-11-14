@@ -318,6 +318,15 @@ ServerEvents.recipes(event => {
             C: 'merequester:requester'
     });
 
+    shapedRecipeRem('megacells:cell_dock',[
+        'DGD',
+        'PWP'],{
+            D: 'gtceu:diamond_skystone_alloy_plate',
+            G: 'gtceu:gold_skystone_alloy_plate',
+            P: 'ae2:engineering_processor',
+            W: '#ae2:glass_cable'
+        });
+
     shapedRecipeRem('expatternprovider:wireless_connect',[
         'ABA',
         'CDC',
@@ -384,7 +393,7 @@ ServerEvents.recipes(event => {
     assembler_rem('quantum_ring', 'ae2:quantum_ring', ['gtceu:tungsten_carbide_frame', 'gtceu:ev_field_generator', 'gtceu:ev_emitter', 'gtceu:quantum_star', '6x gtceu:double_fluix_steel_plate'], 2048);
 
     assemblerfluid_rem('mega_energy_cell', 'megacells:mega_energy_cell', ['gtceu:netherite_gold_skystone_alloy_frame', '8x ae2:dense_energy_cell', 'gtceu:lapotronic_energy_orb'], 'fluix_steel 576', 8192);
-    assemblerfluid_rem('expanded_energy_cell', 'expandedae:exp_energy_cell', ['gtceu:void_frame', '8x megacells:mega_energy_cell', 'gtceu:max_battery', '6x gtceu:stellarium_plate'], 'netherite_gold_skystone_alloy 1152', 983040);
+    assemblerfluid_rem('expanded_energy_cell', 'expandedae:exp_energy_cell', ['gtceu:void_frame', '8x megacells:mega_energy_cell', 'gtceu:max_battery'], 'netherite_gold_skystone_alloy 1152', 983040);
 
     assemblerfluid_rem('mega_crafting_unit','megacells:mega_crafting_unit',['gtceu:netherite_certus_quartz_skystone_alloy_frame', '8x ae2:crafting_unit','#gtceu:circuits/iv'],'fluix_steel 576',8192);
 
@@ -419,7 +428,7 @@ ServerEvents.recipes(event => {
         repIn(`${type}`,'minecraft:iron_ingot','gtceu:certus_quartz_skystone_alloy_plate');
     });
 
-    ['ae2:network/crafting/patterns_blank', 'ae2:network/wireless_booster', 'megacells:network/cell_dock', 'megacells:crafting/decompression_module',
+    ['ae2:network/crafting/patterns_blank', 'ae2:network/wireless_booster', 'megacells:crafting/decompression_module',
         'expatternprovider:ingredient_buffer', 'expatternprovider:wireless_tool'].forEach(type => {
        repIn(`${type}`,'minecraft:iron_ingot','gtceu:diamond_skystone_alloy_plate'); 
     });
@@ -429,7 +438,6 @@ ServerEvents.recipes(event => {
     repIn('ae2:materials/basiccard','minecraft:gold_ingot','gtceu:gold_skystone_alloy_plate');
     repIn('ae2:materials/advancedcard','minecraft:diamond','gtceu:diamond_skystone_alloy_plate');
     repIn('ae2netanalyser:analyser','minecraft:copper_ingot','gtceu:gold_skystone_alloy_plate');
-    repIn('megacells:network/cell_dock','minecraft:copper_ingot','gtceu:gold_skystone_alloy_plate');
     repIn('megacells:crafting/decompression_module','megacells:accumulation_processor','#gtceu:circuits/hv');
     repIn('ae2:network/blocks/spatial_io_pylon', 'ae2:fluix_crystal','gtceu:fluix_steel_frame');
     repIn('expatternprovider:wireless_tool', 'ae2:calculation_processor','gtceu:machine_memory_card');

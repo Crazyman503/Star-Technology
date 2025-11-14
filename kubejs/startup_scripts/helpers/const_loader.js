@@ -22,6 +22,16 @@
             // sets multiblock to use steam
         //.recipeModifier($StarTRecipeModifiers.START_STEAM_PARALLEL)
             //Adds StartSteamMulti as a recipe modifier
+    
+    const $StarTThreadingStatBlocks = Java.loadClass('com.startechnology.start_core.machine.threading.StarTThreadingStatsPredicate');
+        // $StarTThreadingStatBlocks.threadingStatBlocks()
+            // Helix block predicate
+
+    const $StarTThreadingCapableMachine = Java.loadClass('com.startechnology.start_core.machine.threading.StarTThreadingCapableMachine');
+        // .machine((holder) => new $StarTThreadingCapableMachine(holder))
+            // sets as threading multi
+        // .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, $StarTRecipeModifiers.THREADING_MACHINE])
+            // gives threading abilities, goes after OC determinate
 
 //GTCEU Loader
 

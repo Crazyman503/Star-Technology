@@ -47,6 +47,7 @@ ServerEvents.recipes(event => {
     { mat: 'gtceu:tantalum', typeA: 'paradoxicity', typeB: 'causality' },
     { mat: 'gtceu:uranium', typeA: 'paradoxicity', typeB: 'intangibility' },
     { mat: 'gtceu:ruthenium', typeA: 'causality', typeB: 'intangibility' },
+    { mat: 'gtceu:rhodium', typeA: 'causality', typeB: 'paradoxicity' },
    ].forEach(material => {
         const { mat, typeA, typeB } = material;
         const name = mat.split(':')[1];
@@ -58,8 +59,8 @@ ServerEvents.recipes(event => {
         
         event.recipes.gtceu.quantum_compressor_extraction(id(`${name}_block_extraction`))
             .itemInputs(`${mat}_block`)
-            .outputFluids(`gtceu:${typeA}_infusion 8`, `gtceu:${typeB}_infusion 4`)
-            .duration(60 * 9)
+            .outputFluids(`gtceu:${typeA}_infusion 18`, `gtceu:${typeB}_infusion 6`)
+            .duration(90 * 9)
             .EUt(GTValues.VHA[GTValues.LuV]);
    });
 

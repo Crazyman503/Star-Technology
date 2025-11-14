@@ -45,7 +45,6 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(80000);
 
-
     event.recipes.gtceu.large_chemical_reactor(id('isovol_fluoride'))
         .itemInputs('gtceu:isovol_fluoride_dust')
         .inputFluids('minecraft:water 1000')

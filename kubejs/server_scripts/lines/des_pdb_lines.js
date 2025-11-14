@@ -34,14 +34,14 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:drac_aurouric_endrocrinal_medium 400','gtceu:precursor_serum 100')
         .outputFluids('gtceu:abyssal_nutrient_blend 500')
         .duration(640)
-        .EUt(GTValues.VHA[GTValues.UV])
+        .EUt(GTValues.VHA[GTValues.UHV])
         .cleanroom($StarTAbyssalContainmentMachine.ABYSSAL_CONTAINMENT_ROOM);
 
     event.recipes.gtceu.distillery(id('condensed_abyssal_nutrient_blend'))
         .inputFluids('gtceu:abyssal_nutrient_blend 500')
         .outputFluids('gtceu:condensed_abyssal_nutrient_blend 100')
         .duration(300)
-        .EUt(GTValues.VHA[GTValues.UV])
+        .EUt(GTValues.VHA[GTValues.UHV])
         .cleanroom($StarTAbyssalContainmentMachine.ABYSSAL_CONTAINMENT_ROOM);
 
     event.recipes.gtceu.mixer(id('amino_primed_medium'))
@@ -49,7 +49,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:condensed_abyssal_nutrient_blend 500')
         .outputFluids('gtceu:amino_primed_medium 500')
         .duration(250)
-        .EUt(GTValues.VHA[GTValues.UV])
+        .EUt(GTValues.VHA[GTValues.UHV])
         .cleanroom($StarTAbyssalContainmentMachine.ABYSSAL_CONTAINMENT_ROOM);
 
     event.recipes.gtceu.autoclave(id('draco_peptide_amino_chain'))
@@ -57,7 +57,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:amino_primed_medium 250')
         .itemOutputs('kubejs:draco_peptide_amino_chain')
         .duration(315)
-        .EUt(GTValues.VA[GTValues.UV])
+        .EUt(GTValues.VA[GTValues.UHV])
         .cleanroom($StarTAbyssalContainmentMachine.ABYSSAL_CONTAINMENT_ROOM);
 
     const BreathHormone = (type,fluid) => {
@@ -113,15 +113,15 @@ ServerEvents.recipes(event => {
     HormoneComplex('growth',['gtceu:hemavyrin 100','gtceu:aethermetin 100','gtceu:metavorexin 100','gtceu:dracotropin 100','gtceu:pyrothyin 100']);
 
     event.recipes.gtceu.mixer(id('pure_dragon_breath'))
-        .inputFluids('gtceu:dragon_breath 600','gtceu:breath_hormone_complex 150')
-        .outputFluids('gtceu:pure_dragon_breath 750')
+        .inputFluids('gtceu:dragon_breath 1300','gtceu:breath_hormone_complex 200')
+        .outputFluids('gtceu:pure_dragon_breath 500')
         .duration(425)
         .EUt(GTValues.VHA[GTValues.UIV])
         .cleanroom($StarTAbyssalContainmentMachine.ABYSSAL_CONTAINMENT_ROOM);
 
     event.recipes.gtceu.mixer(id('draconic_enrichment_serum'))
-        .inputFluids('gtceu:sterilized_growth_medium 600','gtceu:growth_hormone_complex 150')
-        .outputFluids('gtceu:draconic_enrichment_serum 750')
+        .inputFluids('gtceu:sterilized_growth_medium 1300','gtceu:growth_hormone_complex 200')
+        .outputFluids('gtceu:draconic_enrichment_serum 500')
         .duration(240)
         .EUt(GTValues.VHA[GTValues.UEV])
         .cleanroom($StarTAbyssalContainmentMachine.ABYSSAL_CONTAINMENT_ROOM);

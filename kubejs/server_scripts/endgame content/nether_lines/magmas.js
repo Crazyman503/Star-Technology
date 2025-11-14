@@ -25,26 +25,27 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.UHV]*3/5);
 
     event.recipes.gtceu.manifold_centrifuge(id('adamantamite_nether_magma_deconstruction'))
-        .inputFluids('gtceu:adamantamite_nether_magma 10000')
-        .outputFluids('gtceu:highly_unstable_nether_magma 3000')
-        .outputFluids('gtceu:molten_adamantamite_mixture 6000')
-        .outputFluids('gtceu:enriched_adamantamite_mixture 1000')
+        .inputFluids('gtceu:adamantamite_nether_magma 9000')
+        .outputFluids('gtceu:molten_adamantamite_mixture 6000',
+            'gtceu:enriched_adamantamite_mixture 2000',
+            'gtceu:highly_unstable_nether_magma 1000')
         .duration(1200)
         .EUt(GTValues.VHA[GTValues.UHV]);
 
     event.recipes.gtceu.manifold_centrifuge(id('mythrillic_nether_magma_deconstruction'))
-        .inputFluids('gtceu:mythrillic_nether_magma 10000')
-        .outputFluids('gtceu:highly_unstable_nether_magma 3000')
-        .outputFluids('gtceu:molten_mythrillic_mixture 6000')
-        .outputFluids('gtceu:enriched_mythrillic_mixture 1000')
+        .inputFluids('gtceu:mythrillic_nether_magma 9000')
+        .outputFluids('gtceu:molten_mythrillic_mixture 6000',
+            'gtceu:enriched_mythrillic_mixture 2000',
+            'gtceu:highly_unstable_nether_magma 1000')
         .duration(1200)
         .EUt(GTValues.VHA[GTValues.UHV]);
 
     event.recipes.gtceu.manifold_centrifuge(id('estaltadyne_nether_magma_deconstruction'))
-        .inputFluids('gtceu:estaltadyne_nether_magma 10000')
-        .outputFluids('gtceu:highly_unstable_nether_magma 3000')
-        .outputFluids('gtceu:molten_estaltadyne_mixture 6000')
-        .outputFluids('gtceu:enriched_estaltadyne_mixture 1000')
+        .inputFluids('gtceu:estaltadyne_nether_magma 9000')
+        .outputFluids(
+            'gtceu:molten_estaltadyne_mixture 6000',
+            'gtceu:enriched_estaltadyne_mixture 2000',
+            'gtceu:highly_unstable_nether_magma 1000')
         .duration(1200)
         .EUt(GTValues.VHA[GTValues.UHV]);
 
@@ -59,11 +60,11 @@ ServerEvents.recipes(event => {
     });
 
     event.recipes.gtceu.heat_chamber(id(`enriched_estaltadyne_mixture_to_solution`))
-        .inputFluids(`gtceu:enriched_estaltadyne_mixture 4000`)
-        .itemInputs(`1x gtceu:plutonium_241_dust`)
-        .outputFluids(`gtceu:enriched_estaltadyne_solution 4000`)
-        .itemOutputs('1x gtceu:lead_dust')
-        .duration(400)
+        .inputFluids(`gtceu:enriched_estaltadyne_mixture 500`)
+        .itemInputs(`5x gtceu:small_activated_nether_dust`, '2x gtceu:tiny_activated_nether_dust')
+        .outputFluids(`gtceu:enriched_estaltadyne_solution 500`)
+        .itemOutputs('5x gtceu:small_atomic_nether_sludge_dust', '2x gtceu:tiny_atomic_nether_sludge_dust')
+        .duration(1200)
         .EUt(GTValues.VHA[GTValues.UHV]); 
 
     //Debris Magma

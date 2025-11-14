@@ -411,7 +411,6 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["111033FEFA89BA91"]
 			icon: "gtceu:benzotrichloride_bucket"
 			id: "5D66D12C6EBB3A43"
 			size: 1.0d
@@ -510,7 +509,6 @@
 			y: 10.5d
 		}
 		{
-			dependencies: ["111033FEFA89BA91"]
 			id: "59546613EC1FC027"
 			size: 1.0d
 			tasks: [{
@@ -557,7 +555,6 @@
 			y: 10.5d
 		}
 		{
-			dependencies: ["6CC13BE9AD447218"]
 			description: ["{ftbquests.chapter.processing_lines_chap_456.quest30.description1}"]
 			icon: "gtceu:bacteria_bucket"
 			id: "24AE98EABF69F2D1"
@@ -1549,10 +1546,7 @@
 			y: 4.5d
 		}
 		{
-			dependencies: [
-				"7E99889B3427A842"
-				"6CC13BE9AD447218"
-			]
+			dependencies: ["7E99889B3427A842"]
 			description: ["{ftbquests.chapter.processing_lines_chap_456.quest79.description1}"]
 			id: "01AF9486EA6DA792"
 			rewards: [{
@@ -1578,7 +1572,6 @@
 		{
 			dependencies: [
 				"18ED2B1F051E0868"
-				"1F416C7A641914EC"
 				"600015DA0DCAACD4"
 			]
 			id: "32AC51387EAD9D2D"
@@ -3490,7 +3483,6 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["111033FEFA89BA91"]
 			icon: "gtceu:magnesium_nitride_bucket"
 			id: "4DDA332F7E9B545E"
 			tasks: [

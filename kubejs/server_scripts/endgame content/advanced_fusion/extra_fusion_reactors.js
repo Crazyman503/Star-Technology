@@ -47,17 +47,21 @@ ServerEvents.recipes(event => {
 
     //Casings/Coil
     
-    const betterSuperconductingCoil = (tier,SuperCond,quant) => {
+    event.remove({output: 'gtceu:superconducting_coil'});
+    const SuperconductingCoil = (tier,SuperCond,quant) => {
         event.recipes.gtceu.assembler(id(`superconducting_coil_${tier}`))
-            .itemInputs(`8x gtceu:${SuperCond}_double_wire`, '8x gtceu:niobium_titanium_foil')
-            .inputFluids('gtceu:trinium 1152')
-            .itemOutputs(`${2 ** quant}x gtceu:superconducting_coil`)
+            .itemInputs('gtceu:enriched_naquadah_frame', `16x gtceu:${SuperCond}_double_wire`, '32x gtceu:niobium_titanium_foil')
+            .inputFluids('gtceu:trinium 1728')
+            .itemOutputs(`${2 ** (quant - 1)}x gtceu:superconducting_coil`)
             .duration(100)
-            .EUt(GTValues.VA[GTValues.UV] * (4 ** quant));
+            .EUt(GTValues.VA[GTValues.IV] * (4 ** quant));
     };
-    betterSuperconductingCoil('uhv','ruthenium_trinium_americium_neutronate',1);
-    betterSuperconductingCoil('uev','seaborgium_palladium_enriched_estalt_flerovium_alloy',2);
-    betterSuperconductingCoil('uiv','rhenium_super_composite_alloy',3);
+    SuperconductingCoil('luv','indium_tin_barium_titanium_cuprate',1);
+    SuperconductingCoil('zpm','uranium_rhodium_dinaquadide',2);
+    SuperconductingCoil('uv','enriched_naquadah_trinium_europium_duranide',3);    
+    SuperconductingCoil('uhv','ruthenium_trinium_americium_neutronate',4);
+    SuperconductingCoil('uev','seaborgium_palladium_enriched_estalt_flerovium_alloy',5);
+    SuperconductingCoil('uiv','rhenium_super_composite_alloy',6);
 
     event.recipes.gtceu.assembler(id('auxiliary_boosted_fusion_casing_mk1'))
         .itemInputs('gtceu:uhv_machine_casing', 'start_core:auxiliary_fusion_coil_mk1', '2x kubejs:uhv_voltage_coil', 'gtceu:uv_field_generator', '6x gtceu:zircalloy_4_plate')

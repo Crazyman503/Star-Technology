@@ -57,4 +57,11 @@ StartupEvents.registry('block', event => {
         .tagBlock('minecraft:needs_iron_tool')
         .textureAll('kubejs:block/casings/superalloy_casing');
 
+    event.create('why_are_you_worrying')
+        .displayName('I Said to !Not Worry About It')
+        .hardness(1)
+        .resistance(1)
+        .soundType('metal')
+        .textureAll('kubejs:item/gate_items/worry');
+
 });

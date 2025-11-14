@@ -48,7 +48,7 @@ ServerEvents.recipes(event => {
     //Fl Lines
     event.recipes.gtceu.centrifuge(id('flerovium_hexaoxide_octafluorosulfatoplutonate_enriched_rare_earth_decomp'))
         .itemInputs('7x gtceu:flerovium_hexaoxide_octafluorosulfatoplutonate_enriched_rare_earth_dust')
-        .itemOutputs('6x gtceu:rare_earth_dust', '1x gtceu:flerovium_hexaoxide_octafluorosulfatoplutonate_dust')
+        .itemOutputs('4x gtceu:flerovium_hexaoxide_octafluorosulfatoplutonate_dust', '3x gtceu:rare_earth_dust')
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(120)
         .EUt(GTValues.V[GTValues.ZPM]);

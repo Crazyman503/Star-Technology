@@ -4,7 +4,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('plasma_generator')
         .generator(true)
-        .machine((holder) => new $BoostedPlasmaTurbine(holder, GTValues.IV))
+        .machine((holder) => new $BoostedPlasmaTurbine(holder, GTValues.UHV))
         .regressWhenWaiting(false)
         .recipeModifiers([$StarTRecipeModifiers.LARGE_TURBINE,$StarTRecipeModifiers.BOOSTED_PLASMA_TURBINE])
         .appearanceBlock(() => Block.getBlock('kubejs:enriched_naquadah_machine_casing'))
@@ -51,8 +51,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setPreviewCount(1)))
             .where('F', Predicates.blocks('gtceu:draconyallium_frame'))
             .where('C', Predicates.blocks('kubejs:nyanium_machine_casing'))
-            .where('E', Predicates.blocks('gtceu:engine_intake_casing')) //Nyanium Variant needed
-            .where('X', Predicates.blocks('gtceu:titanium_firebox_casing')) //Nyanium Variant needed
+            .where('E', Predicates.blocks('kubejs:nyanium_machine_engine_intake_casing'))
+            .where('X', Predicates.blocks('kubejs:nyanium_machine_firebox_casing'))
             .where('G', Predicates.blocks('kubejs:nyanium_gearbox'))
             .where('L', Predicates.abilities(PartAbility.OUTPUT_LASER))
             .where('R', Predicates.abilities(PartAbility.ROTOR_HOLDER))

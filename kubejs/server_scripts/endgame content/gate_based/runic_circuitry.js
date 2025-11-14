@@ -50,7 +50,7 @@ ServerEvents.recipes(event => {
     lcr(id('astral_fluorosilicate'))
         .itemInputs('9x gtceu:netherite_tetrahydroxide_dust', '2x gtceu:silicon_dioxide_dust')
         .inputFluids('gtceu:hydrofluoric_acid 4000')
-        .outputFluids('gtceu:astral_fluorosilicate 1000', 'minecraft:water 4000', 'gtceu:hydrogen_fluoride 3000')
+        .outputFluids('gtceu:astral_fluorosilicate 1000', 'minecraft:water 4000', 'gtceu:hydrofluoric_acid 3000')
         .duration(200)
         .EUt(GTValues.VHA[GTValues.ZPM]);
 

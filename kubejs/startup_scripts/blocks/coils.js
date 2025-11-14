@@ -31,6 +31,15 @@ StartupEvents.registry('block', event => {
         .soundType('metal')
         .requiresTool(true);
 
+    event.create('rhenotax_coil', 'gtceu:active')
+        .displayName('Rhenotax Coil')
+        .hardness(3)
+        .resistance(10)
+        .soundType('metal')
+        .tagBlock('mineable/wrench')
+        .tagBlock('minecraft:needs_iron_tool')
+        .requiresTool(false)
+        .bloom('kubejs:block/coils/rhenotax/coil');
 
 });
 

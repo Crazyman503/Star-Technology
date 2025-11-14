@@ -97,8 +97,6 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UV]);
 
     event.recipes.gtceu.injection_mixer(id('heavy_tau_densification'))
-        // TODO: Better idea for "densifying/heavying" items which can be freely
-        // consumed.
         .itemInputs('1x kubejs:aspect_of_weight', '1x gtceu:osmiridium_dust')
         .inputFluids('gtceu:heavy_tau_infusion_flux 1000')
         .outputFluids('gtceu:superheavy_tau_infusion_flux 1000')

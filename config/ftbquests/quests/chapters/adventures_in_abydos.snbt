@@ -18,8 +18,8 @@
 		{
 			id: "220DBF269EDBAC7A"
 			linked_quest: "22B85F7F13C66730"
-			x: -5.5d
-			y: 4.0d
+			x: -6.5d
+			y: 3.0d
 		}
 	]
 	quests: [
@@ -278,8 +278,8 @@
 				item: "gtceu:uhv_electric_pump"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -3.0d
+			x: -6.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -513,7 +513,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: -5.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["305974D431F17AF0"]
@@ -533,7 +533,7 @@
 				}
 				type: "item"
 			}]
-			x: -0.5d
+			x: 1.5d
 			y: -5.0d
 		}
 		{
@@ -652,7 +652,7 @@
 				}
 			]
 			title: "{ftbquests.chapter.adventures_in_abydos.quest28.title}"
-			x: 1.5d
+			x: 3.5d
 			y: -5.0d
 		}
 		{
@@ -825,7 +825,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: -1.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -855,7 +855,7 @@
 				type: "item"
 			}]
 			x: 9.5d
-			y: -1.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -886,7 +886,7 @@
 				type: "item"
 			}]
 			x: 9.5d
-			y: -3.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -912,10 +912,13 @@
 				type: "item"
 			}]
 			x: 9.5d
-			y: 1.0d
+			y: 3.0d
 		}
 		{
-			dependencies: ["442233119AED645F"]
+			dependencies: [
+				"442233119AED645F"
+				"04DCB3F7F8B80717"
+			]
 			description: ["{ftbquests.chapter.adventures_in_abydos.quest39.description1}"]
 			id: "425A865B6B617DEC"
 			rewards: [{
@@ -932,11 +935,12 @@
 				type: "item"
 			}]
 			x: 9.5d
-			y: 3.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["379D69A44FC5B2F2"]
 			description: ["{ftbquests.chapter.adventures_in_abydos.quest40.description1}"]
+			hide_dependent_lines: true
 			id: "64F0BB858EEB7913"
 			rewards: [{
 				count: 2
@@ -955,7 +959,7 @@
 				}
 				type: "item"
 			}]
-			x: 11.5d
+			x: 7.5d
 			y: -5.0d
 		}
 		{
@@ -975,8 +979,8 @@
 				item: "kubejs:draconic_coordinate_core"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 1.0d
+			x: 6.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["2D064F759D13FE4B"]
@@ -1120,7 +1124,7 @@
 			]
 			title: "{ftbquests.chapter.adventures_in_abydos.quest44.title}"
 			x: 11.5d
-			y: -1.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["47DF7968E9B98C65"]
@@ -1133,7 +1137,7 @@
 				title: "{ftbquests.chapter.adventures_in_abydos.quest45.task_8701452312478719627.title}"
 				type: "checkmark"
 			}]
-			x: -2.5d
+			x: -0.5d
 			y: -5.0d
 		}
 		{
@@ -1228,10 +1232,7 @@
 			y: 1.0d
 		}
 		{
-			dependencies: [
-				"5BA69EDC3C223B2C"
-				"22B85F7F13C66730"
-			]
+			dependencies: ["22B85F7F13C66730"]
 			description: ["{ftbquests.chapter.adventures_in_abydos.quest50.description1}"]
 			id: "7AC55BA8BDD0F3D2"
 			rewards: [{
@@ -1285,8 +1286,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.adventures_in_abydos.quest51.title}"
-			x: 5.5d
-			y: -5.0d
+			x: 7.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -1318,7 +1319,7 @@
 			]
 			title: "{ftbquests.chapter.adventures_in_abydos.quest52.title}"
 			x: 7.5d
-			y: -3.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -1345,7 +1346,7 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: -3.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -1378,8 +1379,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.adventures_in_abydos.quest54.title}"
-			x: 6.5d
-			y: -4.0d
+			x: 9.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -1404,7 +1405,7 @@
 				type: "item"
 			}]
 			x: 9.5d
-			y: 5.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["493DD013C818BB7B"]
@@ -1456,7 +1457,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.adventures_in_abydos.quest57.title}"
-			x: -1.5d
+			x: 0.5d
 			y: 2.0d
 		}
 		{
@@ -1490,7 +1491,7 @@
 				item: "kubejs:inscribe_casing"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 5.5d
 			y: -3.0d
 		}
 		{
@@ -1557,9 +1558,8 @@
 		}
 		{
 			dependencies: [
-				"2C354B0735DF8023"
-				"5FCA8ED151CEB5C1"
 				"2F26A144D29B00A5"
+				"3C3E585C933C9515"
 			]
 			description: ["{ftbquests.chapter.adventures_in_abydos.quest63.description1}"]
 			hide_dependent_lines: true
@@ -1616,7 +1616,7 @@
 				}
 			]
 			title: "{ftbquests.chapter.adventures_in_abydos.quest63.title}"
-			x: 6.5d
+			x: 10.5d
 			y: -2.0d
 		}
 		{
@@ -1818,131 +1818,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.adventures_in_abydos.quest74.title}"
-			x: 8.5d
-			y: -4.0d
-		}
-		{
-			dependencies: [
-				"2D064F759D13FE4B"
-				"25583D0BF59E1BC8"
-			]
-			description: [
-				"{ftbquests.chapter.adventures_in_abydos.quest75.description1}"
-				""
-				"{ftbquests.chapter.adventures_in_abydos.quest75.description2}"
-				""
-				""
-				"[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.adventures_in_abydos.quest75.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"2F63F0E239737E38\"}}]"
-			]
-			id: "141911C5DD68CD2A"
-			rewards: [{
-				id: "73B232401A84DDAC"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "66552A0737028183"
-				item: "start_core:dream_link_node"
-				type: "item"
-			}]
-			x: -0.5d
-			y: 5.0d
-		}
-		{
-			dependencies: ["141911C5DD68CD2A"]
-			description: [
-				"{ftbquests.chapter.adventures_in_abydos.quest76.description1}"
-				""
-				"{ftbquests.chapter.adventures_in_abydos.quest76.description2}"
-				""
-				"{ftbquests.chapter.adventures_in_abydos.quest76.description3}"
-			]
-			id: "659690E81B3E3AE7"
-			rewards: [{
-				count: 2
-				id: "00C995FE80302AE3"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			shape: "gear"
-			size: 1.5d
-			tasks: [
-				{
-					id: "55F419E4EF98D96F"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							display: {
-								Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"UV Wireless Power\"}"
-							}
-							items: [
-								{
-									Count: 1b
-									id: "start_core:uv_2a_dream_link_cover_item"
-								}
-								{
-									Count: 1b
-									id: "start_core:uv_2a_dream_link_energy_hatch"
-								}
-								{
-									Count: 1b
-									id: "start_core:uv_4a_dream_link_energy_hatch"
-								}
-								{
-									Count: 1b
-									id: "start_core:uv_16a_dream_link_energy_hatch"
-								}
-								{
-									Count: 1b
-									id: "start_core:uv_64a_dream_link_energy_hatch"
-								}
-							]
-						}
-					}
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "6F69C60333996AA1"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							display: {
-								Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"UHV Wireless Power\"}"
-							}
-							items: [
-								{
-									Count: 1b
-									id: "start_core:uhv_2a_dream_link_cover_item"
-								}
-								{
-									Count: 1b
-									id: "start_core:uhv_2a_dream_link_energy_hatch"
-								}
-								{
-									Count: 1b
-									id: "start_core:uhv_4a_dream_link_energy_hatch"
-								}
-								{
-									Count: 1b
-									id: "start_core:uhv_16a_dream_link_energy_hatch"
-								}
-								{
-									Count: 1b
-									id: "start_core:uhv_64a_dream_link_energy_hatch"
-								}
-							]
-						}
-					}
-					optional_task: true
-					type: "item"
-				}
-			]
-			title: "{ftbquests.chapter.adventures_in_abydos.quest76.title}"
-			x: 1.5d
-			y: 5.0d
+			x: 9.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["652809D17FCE8B11"]
@@ -2081,8 +1958,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.adventures_in_abydos.quest80.title}"
-			x: 5.5d
-			y: -1.0d
+			x: 10.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["5BD0047E69D79476"]
@@ -2107,8 +1984,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.adventures_in_abydos.quest81.title}"
-			x: -6.5d
-			y: 1.0d
+			x: -4.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -2141,7 +2018,6 @@
 			dependencies: [
 				"5022ABEA367576E7"
 				"5DC3B85B63641F6C"
-				"1F79E45EF7810DFF"
 			]
 			id: "4F994F04EF1710B9"
 			subtitle: "{ftbquests.chapter.adventures_in_abydos.quest84.subtitle}"
@@ -2181,8 +2057,8 @@
 				item: "gtceu:neutronium_silicon_carbide_ingot"
 				type: "item"
 			}]
-			x: -8.5d
-			y: 3.0d
+			x: -10.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["1BE69DB2DFDC35C8"]
@@ -2197,7 +2073,7 @@
 				item: "gtceu:zirconium_ingot"
 				type: "item"
 			}]
-			x: -6.5d
+			x: -8.5d
 			y: 3.0d
 		}
 		{
@@ -2214,7 +2090,7 @@
 				item: "gtceu:component_nexus"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -0.5d
 			y: 5.0d
 		}
 		{
@@ -2225,8 +2101,39 @@
 				item: "gtceu:uhv_stabilization_module"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 6.0d
+			x: 1.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"25583D0BF59E1BC8"
+				"7AC55BA8BDD0F3D2"
+			]
+			description: ["{ftbquests.chapter.draconic_age_part_1.quest67.description1}"]
+			id: "0DFAD40205E5D899"
+			rewards: [{
+				id: "6C05E0C359C06382"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "18B2CAF419FA5670"
+				item: "start_core:oneiric_relay"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["22B85F7F13C66730"]
+			id: "7E9A5A626648A859"
+			tasks: [{
+				id: "04E9B2997427EC44"
+				item: "start_core:lucinducer"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 1.0d
 		}
 	]
 	title: "{ftbquests.chapter.adventures_in_abydos.title}"

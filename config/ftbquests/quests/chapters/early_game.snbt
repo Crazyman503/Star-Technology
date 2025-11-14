@@ -1294,7 +1294,11 @@
 				"3D0F6CA8028C074B"
 				"753ECD744470EFF2"
 			]
-			description: ["{ftbquests.chapter.early_game.quest38.description1}"]
+			description: [
+				"{ftbquests.chapter.early_game.quest38.description1}"
+				""
+				"&4DONT MENTION COAL"
+			]
 			icon: "gtceu:coke_oven"
 			id: "07C5B4C5EE2F948D"
 			rewards: [{
@@ -2068,6 +2072,8 @@
 				"{ftbquests.chapter.early_game.quest64.description1}"
 				""
 				"{ftbquests.chapter.early_game.quest64.description2}"
+				""
+				"&4ADD NOTE THAT NEEDS WATER OR KABOOM"
 			]
 			id: "1289465781707205"
 			optional: true

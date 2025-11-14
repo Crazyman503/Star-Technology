@@ -21,14 +21,6 @@
 			x: -6.5d
 			y: -2.0d
 		}
-		{
-			id: "669BFEB98301CC0D"
-			linked_quest: "5B72F7526494EAEC"
-			shape: "octagon"
-			size: 1.25d
-			x: 4.0d
-			y: 3.0d
-		}
 	]
 	quests: [
 		{
@@ -301,7 +293,6 @@
 		{
 			dependencies: [
 				"4D9DAED52FF74B8B"
-				"53A9F3758C218CDC"
 				"1AE561E8FE98FB21"
 				"51F889E1432E4DAD"
 			]
@@ -334,8 +325,6 @@
 		}
 		{
 			dependencies: [
-				"023794367F1B28D1"
-				"53A9F3758C218CDC"
 				"7DDFBCDFC3F09A6B"
 				"51F889E1432E4DAD"
 			]
@@ -901,10 +890,7 @@
 			y: 2.0d
 		}
 		{
-			dependencies: [
-				"53A9F3758C218CDC"
-				"5D107FD21879F54B"
-			]
+			dependencies: ["5D107FD21879F54B"]
 			description: [
 				"{ftbquests.chapter.power.quest46.description1}"
 				""
@@ -2058,10 +2044,7 @@
 			y: 1.0d
 		}
 		{
-			dependencies: [
-				"5BDA17962F4630EB"
-				"5B72F7526494EAEC"
-			]
+			dependencies: ["5BDA17962F4630EB"]
 			description: [
 				"{ftbquests.chapter.power.quest105.description1}"
 				""
@@ -2078,10 +2061,6 @@
 			y: 3.0d
 		}
 		{
-			dependencies: [
-				"138E77CDBA50A619"
-				"5B72F7526494EAEC"
-			]
 			description: ["{ftbquests.chapter.power.quest106.description1}"]
 			id: "2CBF80C9C2CEE2AD"
 			subtitle: "{ftbquests.chapter.power.quest106.subtitle}"
@@ -2094,7 +2073,6 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["5B72F7526494EAEC"]
 			description: [
 				"{ftbquests.chapter.power.quest107.description1}"
 				""
@@ -2379,7 +2357,6 @@
 			dependencies: [
 				"2FCCE10E5C3E858D"
 				"21B905AA3AE6059F"
-				"5BA69EDC3C223B2C"
 			]
 			id: "64162DB23206AD7A"
 			tasks: [{
@@ -2394,7 +2371,6 @@
 			dependencies: [
 				"09FB26E3AADE4FAD"
 				"6FB365E6C91B482E"
-				"694E1F6458D5F72F"
 			]
 			id: "60523CDE5E5695DB"
 			tasks: [{
@@ -2410,7 +2386,6 @@
 				"64162DB23206AD7A"
 				"3F34F4AC99C45E6F"
 				"7AC55BA8BDD0F3D2"
-				"5944C4DE27F98FF3"
 			]
 			id: "09FB26E3AADE4FAD"
 			tasks: [{
@@ -2520,6 +2495,20 @@
 			}]
 			x: -10.5d
 			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6FB365E6C91B482E"
+				"1EE1007BA8202CC1"
+			]
+			id: "7A1B47A17B14C928"
+			tasks: [{
+				id: "7880A4932BAD960A"
+				item: "gtceu:nyinsane_plasma_turbine"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.0d
 		}
 	]
 	title: "{ftbquests.chapter.power.title}"

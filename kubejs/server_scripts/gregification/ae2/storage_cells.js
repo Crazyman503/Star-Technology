@@ -143,8 +143,8 @@ ServerEvents.recipes(event => {
             event.shapeless(`2x ${lowerAccelerator}`, currentAccelerator).id(`start:shapeless/exp_crafting_accelerator_${current}_uncompressing`);
 
             event.recipes.gtceu.me_assembler(id(`exp_crafting_accelerator_${current}`))
-                .itemInputs(`gtceu:${transformerDict[current][2]}_frame`, `3x ${previousAcceleratorCraft}`, `#gtceu:circuits/${voltage}`, `6x gtceu:${suffixPos == 1 ? 'netherite_' : ''}certus_quartz_skystone_alloy_plate`)
-                .inputFluids(`gtceu:fluix_steel ${9 * transformerDict[current][1]}`)
+                .itemInputs(`gtceu:${transformerDict[current][2]}_frame`, `3x ${previousAcceleratorCraft}`, `2x #gtceu:circuits/${voltage}`, `6x gtceu:${suffixPos == 1 ? 'netherite_' : ''}certus_quartz_skystone_alloy_plate`)
+                .inputFluids(`gtceu:fluix_steel ${18 * transformerDict[current][1]}`)
                 .itemOutputs(currentAccelerator)
                 .duration(200)
                 .EUt(global.vha[voltage]);

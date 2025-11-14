@@ -103,7 +103,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.advanced_chemistry(id('edot_synthesis'))
         .itemInputs('9x gtceu:thiophene_dust', '6x gtceu:potassium_carbonate_dust', '6x gtceu:sodium_hydroxide_dust')
-        .inputFluids('gtceu:12_dibromoethane', 'gtceu:dimethylformamide 2000', 'gtceu:sulfuric_acid 1000', 'gtceu:carbon_monoxide 1000')
+        .inputFluids('gtceu:12_dibromoethane 1000', 'gtceu:dimethylformamide 2000', 'gtceu:sulfuric_acid 1000', 'gtceu:carbon_monoxide 1000')
         .itemOutputs('4x gtceu:potassium_bromide_dust', '8x gtceu:sodium_nitrite_dust')
         .outputFluids('gtceu:34_ethylenedioxythiophene 2000', 'gtceu:ethane 1000', 'minecraft:water 4000')
         .duration(484)
@@ -145,7 +145,7 @@ ServerEvents.recipes(event => {
     
     event.recipes.gtceu.chemical_bath(id('pedot_pss_finalization'))
         .itemInputs('6x gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate_paste_dust')
-        .inputFluids('gtceu:polysorbate_20 48')
+        .inputFluids('gtceu:polysorbate_20 480')
         .outputFluids('gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 864')
         .duration(82)
         .cleanroom(CleanroomType.CLEANROOM)

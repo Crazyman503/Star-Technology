@@ -37,10 +37,7 @@
 			y: 6.5d
 		}
 		{
-			dependencies: [
-				"707C2E9BA62A60C5"
-				"02606EBF230281A3"
-			]
+			dependencies: ["707C2E9BA62A60C5"]
 			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest2.description1}"]
 			id: "314B6ABE72E4A438"
 			rewards: [{
@@ -280,7 +277,7 @@
 			y: 0.5d
 		}
 		{
-			dependencies: ["5BA69EDC3C223B2C"]
+			dependencies: ["2577C7EC42AF00C9"]
 			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest14.description1}"]
 			id: "60ECE277341A9408"
 			rewards: [{
@@ -321,10 +318,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: [
-				"5BA69EDC3C223B2C"
-				"7A5734E3CF682EBA"
-			]
+			dependencies: ["7A5734E3CF682EBA"]
 			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest16.description1}"]
 			id: "027C5CE3CFCB5649"
 			rewards: [{
@@ -407,7 +401,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: -3.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["1C515302A357B1B8"]
@@ -424,7 +418,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: -1.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["5C3AF136913CF8BE"]
@@ -441,7 +435,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 0.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -465,7 +459,7 @@
 				type: "item"
 			}]
 			x: 10.0d
-			y: 0.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["75F0388FAB52E0B3"]
@@ -482,7 +476,7 @@
 				type: "item"
 			}]
 			x: 10.0d
-			y: -1.5d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -505,8 +499,8 @@
 				item: "gtceu:runic_circuitry_assembling_station"
 				type: "item"
 			}]
-			x: 7.0d
-			y: -1.5d
+			x: 8.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["52B553FDB34B1475"]
@@ -522,8 +516,8 @@
 				item: "gtceu:melodium_single_wire"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 4.5d
+			x: 7.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["678B90BF2ACE2BBA"]
@@ -544,15 +538,11 @@
 				item: "gtceu:melodium_ingot"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 2.5d
+			x: 8.0d
+			y: 4.5d
 		}
 		{
-			dependencies: [
-				"678B90BF2ACE2BBA"
-				"52B553FDB34B1475"
-				"7FD0034E639F3B2D"
-			]
+			dependencies: ["52B553FDB34B1475"]
 			description: [
 				"{ftbquests.chapter.preparing_for_dimensional_travel.quest27.description1}"
 				""
@@ -569,8 +559,8 @@
 				item: "gtceu:stellarium_ingot"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 2.5d
+			x: 10.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["253AECE450920D99"]
@@ -821,7 +811,7 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: 3.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["2F87FC1D5BB43220"]
@@ -839,8 +829,8 @@
 				item: "kubejs:coordinate_crystal"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 5.5d
+			x: 10.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["707C2E9BA62A60C5"]
@@ -1054,10 +1044,10 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: -5.5d
+			y: -3.5d
 		}
 		{
-			dependencies: ["3FC351F05F2AC743"]
+			dependencies: ["7FFCAD92772A175F"]
 			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest49.description1}"]
 			id: "1C81273869C0EC9F"
 			rewards: [{
@@ -1102,7 +1092,6 @@
 		{
 			dependencies: [
 				"7F4D5331B59AA5F0"
-				"3B69844600AD5430"
 				"783BDF78D6C56815"
 			]
 			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest51.description1}"]
@@ -1151,10 +1140,7 @@
 			y: -8.0d
 		}
 		{
-			dependencies: [
-				"35829E28221CB70E"
-				"074A6D7A3072E11F"
-			]
+			dependencies: ["074A6D7A3072E11F"]
 			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest53.description1}"]
 			id: "783865A56909D3C7"
 			shape: "circle"
@@ -1162,7 +1148,7 @@
 				id: "4639AA5380F2CC8F"
 				item: {
 					Count: 1
-					id: "gtceu:indium_tin_lead_cadmium_soldering_alloy_ingot"
+					id: "gtceu:indium_tin_lead_cadmium_soldering_alloy_dust"
 					tag: { }
 				}
 				type: "item"
@@ -1215,8 +1201,8 @@
 				item: "gtceu:large_quantum_compressor"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 0.5d
+			x: 8.0d
+			y: 2.5d
 		}
 		{
 			id: "18A35D008CA73084"
@@ -1305,6 +1291,103 @@
 			title: "{ftbquests.chapter.preparing_for_dimensional_travel.quest59.title}"
 			x: -2.0d
 			y: -5.5d
+		}
+		{
+			dependencies: ["1C81273869C0EC9F"]
+			id: "79CFAA5E52FF8766"
+			tasks: [{
+				id: "79EEB4B57AA13EBD"
+				title: "Bulking Explained"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["141911C5DD68CD2A"]
+			description: [
+				"{ftbquests.chapter.adventures_in_abydos.quest76.description1}"
+				""
+				"{ftbquests.chapter.adventures_in_abydos.quest76.description2}"
+				""
+				"{ftbquests.chapter.adventures_in_abydos.quest76.description3}"
+			]
+			id: "659690E81B3E3AE7"
+			rewards: [{
+				count: 2
+				id: "00C995FE80302AE3"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "55F419E4EF98D96F"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						display: {
+							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"UV Wireless Power\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "start_core:uv_2a_dream_link_cover_item"
+							}
+							{
+								Count: 1b
+								id: "start_core:uv_2a_dream_link_energy_hatch"
+							}
+							{
+								Count: 1b
+								id: "start_core:uv_4a_dream_link_energy_hatch"
+							}
+							{
+								Count: 1b
+								id: "start_core:uv_16a_dream_link_energy_hatch"
+							}
+							{
+								Count: 1b
+								id: "start_core:uv_64a_dream_link_energy_hatch"
+							}
+						]
+					}
+				}
+				optional_task: true
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.adventures_in_abydos.quest76.title}"
+			x: 10.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"664F435508073B8E"
+				"7FFCAD92772A175F"
+				"52B553FDB34B1475"
+			]
+			description: [
+				"{ftbquests.chapter.adventures_in_abydos.quest75.description1}"
+				""
+				"{ftbquests.chapter.adventures_in_abydos.quest75.description2}"
+				""
+				""
+				"[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.adventures_in_abydos.quest75.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"2F63F0E239737E38\"}}]"
+			]
+			id: "141911C5DD68CD2A"
+			rewards: [{
+				id: "73B232401A84DDAC"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "66552A0737028183"
+				item: "start_core:dream_link_node"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 6.5d
 		}
 	]
 	title: "{ftbquests.chapter.preparing_for_dimensional_travel.title}"

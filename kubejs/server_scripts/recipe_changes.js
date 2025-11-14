@@ -301,7 +301,6 @@ ServerEvents.recipes(event => {
     casing('blue_steel','blue_steel' ,'kubejs');
     casing('red_steel','red_steel' ,'kubejs');
     casing('enriched_naquadah_machine','enriched_naquadah' ,'kubejs');
-    casing('nyanium_machine','nyanium' ,'kubejs');
 
     const casingDouble = (type,material,casing_id) => {
         event.shaped(Item.of(`${casing_id}:${type}_casing`,2), [
@@ -327,6 +326,7 @@ ServerEvents.recipes(event => {
     casingDouble('noble_mixing','astrenalloy_nx','kubejs');
     casingDouble('quake_proof','thacoloy_nq_42x','kubejs');
     casingDouble('superalloy','lepton_coalescing_superalloy','kubejs');
+    casingDouble('nyanium_machine','nyanium' ,'kubejs');
 
     event.recipes.gtceu.assembler(id('silicone_rubber_casing'))
         .itemInputs('gtceu:solid_machine_casing') 
@@ -337,7 +337,7 @@ ServerEvents.recipes(event => {
         .circuit(6);
 
     const firebox = (type,material,casing_id) => {
-        event.shaped(Item.of(`2x ${casing_id}:${type}_firebox_casing`), [
+        event.shaped(`2x ${casing_id}:${type}_firebox_casing`, [
             'PRP',
             'RFR',
             'PRP'
@@ -345,14 +345,14 @@ ServerEvents.recipes(event => {
             P: `gtceu:${material}_plate`,
             F: `gtceu:${material}_frame`,
             R: `gtceu:${material}_rod`
-        }).id(`start:${type}_firebox_casing`);
+        }).id(`${casing_id}:${type}_firebox_casing`);
     };
 
     firebox('enriched_naquadah','enriched_naquadah','start_core');
-    // firebox('nyanium','nyanium','start_core')
+    // firebox('nyanium','nyanium','kubejs')
 
     const gearbox = (type,material,casing_id) => {
-        event.shaped(Item.of(`2x ${casing_id}:${type}_gearbox`), [
+        event.shaped(`2x ${casing_id}:${type}_gearbox`, [
             'PHP',
             'GFG',
             'PWP'
@@ -362,7 +362,7 @@ ServerEvents.recipes(event => {
             G:  `gtceu:${material}_gear`,
             H: '#forge:tools/hammers',
             W: '#forge:tools/wrenches'
-        }).id(`start:${type}_gearbox`);
+        }).id(`${casing_id}:${type}_gearbox`);
     
         event.recipes.gtceu.assembler(id(`${material}_gearbox`))
             .itemInputs(`4x gtceu:${material}_plate`,`2x gtceu:${material}_gear`,`gtceu:${material}_frame`)
@@ -376,7 +376,7 @@ ServerEvents.recipes(event => {
     gearbox('nyanium','nyanium','kubejs');
 
     const pipe = (type,material,pipe,casing_id) => {
-        event.shaped(Item.of(`2x ${casing_id}:${type}_pipe_casing`), [
+        event.shaped(`2x ${casing_id}:${type}_pipe_casing`, [
             'PLP',
             'LFL',
             'PLP'
@@ -384,14 +384,14 @@ ServerEvents.recipes(event => {
             P:  `gtceu:${material}_plate`,
             F:  `gtceu:${material}_frame`,
             L:  `gtceu:${pipe}_normal_fluid_pipe`
-        }).id(`start:${type}_pipe_casing`);
+        }).id(`${casing_id}:${type}_pipe_casing`);
     };
 
     pipe('enriched_naquadah','enriched_naquadah','enriched_naquadah','kubejs');
     pipe('nyanium','nyanium','nyanium','kubejs');
 
     const engine_intake = (type,material,pipe,casing_id,used_casing) => {
-        event.shaped(Item.of(`2x ${casing_id}:${type}_engine_intake_casing`), [
+        event.shaped(`2x ${casing_id}:${type}_engine_intake_casing`, [
             'PHP',
             'RFR',
             'PWP'
@@ -401,7 +401,7 @@ ServerEvents.recipes(event => {
             R:  `gtceu:${material}_rotor`,
             H: '#forge:tools/hammers',
             W: '#forge:tools/wrenches'
-        }).id(`start:${type}_engine_intake_casing`);
+        }).id(`${casing_id}:${type}_engine_intake_casing`);
 
         event.recipes.gtceu.assembler(id( `${type}_engine_intake_casing`))
             .itemInputs(`2x gtceu:${material}_rotor`,`4x gtceu:${pipe}_normal_fluid_pipe`,`${used_casing}_casing`)
@@ -411,7 +411,7 @@ ServerEvents.recipes(event => {
     };
 
     engine_intake('enriched_naquadah','enriched_naquadah','enriched_naquadah','start_core','kubejs:enriched_naquadah_machine');
-    // engine_intake('nyanium','nyanium','nyanium','start_core','kubejs:nyanium_machine');
+    // engine_intake('nyanium','nyanium','nyanium','kubejs','kubejs:nyanium_machine');
 
     ['blackstone','calcite','tuff','dripstone_block'].forEach(stone => {
     event.recipes.gtceu.rock_breaker(id(`${stone}`))
@@ -617,6 +617,85 @@ ServerEvents.recipes(event => {
     });
     event.recipes.create.item_application('gtceu:large_rock_crusher', ['gtceu:hv_rock_crusher', 'kubejs:multiblock_upgrade_kit']).id('start:item_application/large_rock_crusher');
     
+    event.shaped('gtceu:super_electric_ore_factory', [
+        'GCG',
+        'PHP',
+        'BPB'
+    ], {
+        G: 'gtceu:blue_steel_gear',
+        P: 'gtceu:black_steel_plate',
+        C: '#gtceu:circuits/hv',
+        B: 'gtceu:gold_single_cable',
+        H: 'gtceu:hv_machine_hull'
+    });
+
+    event.shaped('gtceu:super_cutter', [
+        'CBC',
+        'TSS',
+        'PVB'
+    ], {
+        S: 'gtceu:blue_steel_buzz_saw_blade',
+        T: 'gtceu:hv_cutter',
+        C: '#gtceu:circuits/ev',
+        B: 'gtceu:gold_single_cable',
+        P: 'gtceu:hv_electric_pump',
+        V: 'gtceu:hv_conveyor_module'
+    });
+
+    event.shaped('gtceu:super_implosion_compressor', [
+        'PRP',
+        'CIC',
+        'BTB'
+    ], {
+        P: 'gtceu:dense_obsidian_plate',
+        R: 'kubejs:highly_enriched_uranium_fuel_rod',
+        C: '#gtceu:circuits/luv',
+        I: 'gtceu:implosion_compressor',
+        B: 'gtceu:niobium_titanium_double_cable',
+        T: 'gtceu:iv_electric_piston'
+    });
+
+    event.shaped('gtceu:super_ebf', [
+        'BPB',
+        'CFC',
+        'RSR'
+    ], {
+        P: 'gtceu:double_black_steel_plate',
+        R: 'gtceu:small_tungsten_spring',
+        C: '#gtceu:circuits/iv',
+        F: 'gtceu:electric_blast_furnace',
+        B: 'gtceu:aluminium_double_cable',
+        S: 'gtceu:ev_sensor'
+    });
+
+    event.recipes.gtceu.assembly_line(id('super_vacuum_freezer'))
+        .itemInputs('gtceu:aluminium_frame','2x #gtceu:circuits/luv','4x gtceu:double_kanthal_plate','2x gtceu:iv_fluid_regulator',
+            '8x gtceu:stainless_steel_tiny_fluid_pipe','4x gtceu:niobium_titanium_screw')
+        .inputFluids('gtceu:soldering_alloy 432')
+        .itemOutputs('gtceu:super_vacuum_freezer')
+        ["scannerResearch(java.util.function.UnaryOperator)"](
+            researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of('gtceu:vacuum_freezer'))
+                .duration(1800)
+                .EUt(GTValues.VHA[GTValues.EV])
+        )
+        .duration(400)
+        .EUt(GTValues.VHA[GTValues.IV]);
+
+    event.recipes.gtceu.assembly_line(id('super_abs'))
+        .itemInputs('gtceu:zpm_alloy_smelter','2x #gtceu:circuits/zpm','2x gtceu:double_naquadah_plate','2x gtceu:zpm_emitter',
+            '4x gtceu:europium_spring','8x gtceu:vanadium_gallium_single_cable','4x gtceu:naquadria_screw')
+        .inputFluids('gtceu:soldering_alloy 1008', 'gtceu:polybenzimidazole 432')
+        .itemOutputs('gtceu:super_abs')
+        .stationResearch(
+        researchRecipeBuilder => researchRecipeBuilder
+            .researchStack(Item.of('gtceu:alloy_blast_smelter'))
+            .EUt(GTValues.VHA[GTValues.LuV])
+            .CWUt(12)
+        )
+        .duration(400)
+        .EUt(GTValues.VHA[GTValues.ZPM]);       
+
     // Coil Changes
 
     event.remove({output: /gtceu:.*coil_block/});
@@ -727,7 +806,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('gtceu:mega_vacuum_freezer')
         .stationResearch(
         researchRecipeBuilder => researchRecipeBuilder
-            .researchStack(Item.of('gtceu:vacuum_freezer'))
+            .researchStack(Item.of('gtceu:super_vacuum_freezer'))
             .EUt(GTValues.VHA[GTValues.ZPM])
             .CWUt(24)
         )
@@ -741,7 +820,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('gtceu:mega_blast_furnace')
         .stationResearch(
         researchRecipeBuilder => researchRecipeBuilder
-            .researchStack(Item.of('gtceu:electric_blast_furnace'))
+            .researchStack(Item.of('gtceu:super_ebf'))
             .EUt(GTValues.VHA[GTValues.UV])
             .CWUt(64)
         )
@@ -832,14 +911,14 @@ ServerEvents.recipes(event => {
         .cleanroom(CleanroomType.STERILE_CLEANROOM)
         .EUt(GTValues.V[GTValues.UHV]);
 
-    event.recipes.gtceu.circuit_assembler(id('multithread_data_module'))
-        .itemInputs('kubejs:draconic_wetware_printed_circuit_board','2x #gtceu:circuits/uev','64x kubejs:qram_chip', 
+    event.recipes.gtceu.circuit_assembler(id('component_data_core'))
+        .itemInputs('kubejs:awakened_draconic_wetware_printed_circuit_board','2x #gtceu:circuits/uiv','56x kubejs:qram_chip', 
             '48x kubejs:3d_nor_chip','48x kubejs:3d_nand_chip','32x gtceu:fine_polonium_bismide_wire')
-        .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 576')
-        .itemOutputs('kubejs:multithread_data_module') //to be moved to core for data abilities
+        .inputFluids('gtceu:naquadated_soldering_alloy 1152')
+        .itemOutputs('start_core:component_data_core')
         .duration(400)
         .cleanroom(CleanroomType.STERILE_CLEANROOM)
-        .EUt(GTValues.V[GTValues.UEV]);
+        .EUt(GTValues.V[GTValues.UIV]);
 
     event.recipes.gtceu.assembler(id('redstone_variadic_interface'))
         .itemInputs('gtceu:luv_machine_hull', '2x gtceu:hpic_chip', 'gtceu:redstone_plate', 'gtceu:advanced_item_detector_cover',
@@ -850,13 +929,13 @@ ServerEvents.recipes(event => {
         .circuit(4)
         .EUt(GTValues.V[GTValues.EV]);
 
-    event.remove({id: 'gtceu:macerator/macerate_naquadah_refined_ore_to_dust'});
-    event.recipes.gtceu.macerator(id('macerate_refined_naquadah_ore_to_dust'))
-        .itemInputs('gtceu:refined_naquadah_ore')
-        .itemOutputs('gtceu:naquadah_dust')
-        .chancedOutput('gtceu:enriched_naquadah_dust', 350, 125)
-        .duration(400)
-        .EUt(2);
+    // event.remove({id: 'gtceu:macerator/macerate_naquadah_refined_ore_to_dust'});
+    // event.recipes.gtceu.macerator(id('macerate_refined_naquadah_ore_to_dust'))
+    //     .itemInputs('gtceu:refined_naquadah_ore')
+    //     .itemOutputs('gtceu:naquadah_dust')
+    //     .chancedOutput('gtceu:enriched_naquadah_dust', 350, 125)
+    //     .duration(400)
+    //     .EUt(2);
 
     //rutile fix
     event.remove({ id: 'gtceu:electric_blast_furnace/rutile_from_ilmenite' })
@@ -1002,8 +1081,18 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 2880')
         .duration(280)
         .blastFurnaceTemp(3000)
-        .EUt(GTValues.VH[GTValues.EV])
+        .EUt(GTValues.VH[GTValues.ZPM])
         .circuit(14);
+
+    event.recipes.gtceu.alloy_blast_smelter(id('naquadated_soldering_alloy'))
+        .itemInputs('3x gtceu:tin_dust', '18x gtceu:indium_dust', '6x gtceu:silver_dust',
+             '4x gtceu:lutetium_dust', '3x gtceu:cerium_dust', '3x gtceu:naquadah_dust',
+             '1x gtceu:trinium_dust', '2x gtceu:lead_dust')
+        .outputFluids('gtceu:naquadated_soldering_alloy 5760')
+        .duration(2250)
+        .blastFurnaceTemp(8980)
+        .EUt(GTValues.VH[GTValues.UHV])
+        .circuit(8);
 
     event.shaped('bingus:floppa_orb', [
         'ABA',

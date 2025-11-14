@@ -3,15 +3,15 @@ ServerEvents.recipes(event => {
 
     // === Controller Blocks === 
         event.recipes.gtceu.assembly_line(id('component_nexus'))
-            .itemInputs('4x gtceu:component_part_assembly','6x #gtceu:circuits/uev','4x gtceu:uhv_robot_arm','2x gtceu:uhv_conveyor_module',
-                '32x gtceu:energy_cluster','6x kubejs:uhv_voltage_coil','16x gtceu:europium_double_cable','24x gtceu:iron_selenide_over_strontium_titanium_oxide_bolt',
+            .itemInputs('4x gtceu:assembly_line','6x #gtceu:circuits/uev','6x gtceu:uhv_robot_arm','8x kubejs:uhv_high_strength_panel',
+                '2x gtceu:uhv_fluid_regulator', '4x kubejs:uhv_voltage_coil', '32x gtceu:fine_stellarium_wire', '16x gtceu:neutronium_screw',
                 '64x gtceu:uhpic_chip','64x gtceu:uhpic_chip','32x gtceu:uhpic_chip')
             .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 25056', 'gtceu:lubricant 16000', 'gtceu:utopian_akreyrium 1000')
             .itemOutputs('gtceu:component_nexus')
             .duration(1800)
             .stationResearch(
                 researchRecipeBuilder => researchRecipeBuilder
-                    .researchStack(Item.of('gtceu:component_part_assembly'))
+                    .researchStack(Item.of('gtceu:large_assembler'))
                     .EUt(GTValues.VHA[GTValues.UHV])
                     .CWUt(144)
                 )
@@ -26,19 +26,17 @@ ServerEvents.recipes(event => {
                 .inputFluids(fluids)
                 .inputFluids(`gtceu:naquadria 576`)
                 .itemOutputs(`1x gtceu:${Tier}_${type}`)
-                .duration(600 / 2)
-                .circuit(circuit)
+                .duration(600)
                 .cleanroom(CleanroomType.getByName('stabilized'))
-                .EUt(eut * 2);
+                .EUt(eut);
             } else {
             event.recipes.gtceu.component_nexus(id(`${Tier}_${type}`))
                 .itemInputs(inputs)
                 .inputFluids(fluids)
                 .itemOutputs(`1x gtceu:${Tier}_${type}`)
-                .duration(600 / 2)
-                .circuit(circuit)
+                .duration(600)
                 .cleanroom(CleanroomType.getByName('stabilized'))
-                .EUt(eut * 2);
+                .EUt(eut);
             }
         }
         componentTypesAssemblyLine('electric_motor',[`1x gtceu:long_magnetic_samarium_rod`,`4x gtceu:long_${Primary}_rod`,`4x gtceu:${Primary}_ring`,`8x gtceu:${Primary}_round`,`64x gtceu:fine_${MechanicalWire}_wire`,`2x gtceu:${Cable}_single_cable`],

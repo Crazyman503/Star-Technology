@@ -187,21 +187,24 @@ ServerEvents.recipes(event => {
             .notConsumable('gtceu:fluix_lens')
             .itemOutputs(`${n}x kubejs:ae2_soc_wafer`)
             .duration(time)
-            .EUt(global.va[voltage]);
+            .EUt(global.va[voltage])
+            .cleanroom(CleanroomType.CLEANROOM);
     });
 
     event.recipes.gtceu.cutter(id('ae2_soc_chip'))
         .itemInputs('kubejs:ae2_soc_wafer')
         .itemOutputs('6x kubejs:ae2_soc_chip')
         .duration(900)
-        .EUt(global.va['ev']);
+        .EUt(global.va['ev'])
+        .cleanroom(CleanroomType.CLEANROOM);
 
     event.recipes.gtceu.chemical_bath(id('fluix_lens'))
         .itemInputs('gtceu:sapphire_lens')
         .inputFluids('gtceu:fluix_steel 144')
         .itemOutputs('gtceu:fluix_lens')
         .duration(900)
-        .EUt(global.va['ev']);
+        .EUt(global.va['ev'])
+        .cleanroom(CleanroomType.CLEANROOM);
 
     // [
     //     {circuit: 'logic', material: 'gold'},

@@ -35,7 +35,14 @@ const oreProcessableTiers = {
         { material: 'quartzite', secondary: 'certus_quartz', tertiary: 'opal', quaternary: 'barite' },  // check
         { material: 'certus_quartz', secondary: 'quartzite', tertiary: 'opal', quaternary: 'barite' },  // check
         { material: 'rock_salt', secondary: 'salt', tertiary: 'salt', quaternary: 'borax' },
-        { material: 'saltpeter', secondary: 'salt', tertiary: 'potassium', quaternary: 'alunite' }  // check
+        { material: 'saltpeter', secondary: 'salt', tertiary: 'potassium', quaternary: 'alunite' },  // check
+        // mystical agriculture
+        { material: 'salt', secondary: 'rock_salt', tertiary: 'rock_salt', quaternary: 'borax' },
+        { material: 'amethyst', secondary: 'amethyst', tertiary: 'amethyst', quaternary: 'amethyst' },
+        { material: 'sulfur', secondary: 'sulfur', tertiary: 'sulfur', quaternary: 'sulfur' },
+        // { material: 'redstone', secondary: 'cinnabar', tertiary: 'rare_earth', quaternary: 'ruby' }, // not gonna rewrite entire thing just for an MA ore (is minecraft:redstone not gtceu:redstone_dust)
+        { material: 'lapis', secondary: 'lazurite', tertiary: 'sodalite', quaternary: 'pyrite' },
+        { material: 'nether_quartz', secondary: 'quartzite', tertiary: 'quartzite', quaternary: 'quartzite' }
     ],
 
     'mv': [
@@ -47,7 +54,11 @@ const oreProcessableTiers = {
         { material: 'lepidolite', secondary: 'lithium', tertiary: 'lithium', quaternary: 'caesium' },
         { material: 'pyrochlore', secondary: 'apatite', tertiary: 'apatite', quaternary: 'calcium' },
         { material: 'pyrolusite', secondary: 'manganese', tertiary: 'manganese', quaternary: 'tantalite' },
-        { material: 'magnesite', secondary: 'magnesium', tertiary: 'magnesium', quaternary: 'cobaltite' }
+        { material: 'magnesite', secondary: 'magnesium', tertiary: 'magnesium', quaternary: 'cobaltite' },
+        // mystical agriculture
+        { material: 'red_garnet', secondary: 'spessartine', tertiary: 'pyrope', quaternary: 'almandine' },
+        { material: 'yellow_garnet', secondary: 'andradite', tertiary: 'grossular', quaternary: 'uvarovite' },
+        { material: 'garnet_sand', secondary: 'red_garnet', tertiary: 'yellow_garnet', quaternary: 'yellow_garnet' }
     ],
 
     'hv': [
@@ -76,6 +87,7 @@ const oreProcessableTiers = {
     ],
 
     'iv': [
+        { material: 'naquadah', secondary: 'barium', tertiary: 'sulfur', quaternary: 'enriched_naquadah', quinary: 'enriched_naquadah'  },
         { material: 'titanite', secondary: 'rutile', tertiary: 'rare_earth', quaternary: 'bauxite', quinary: 'pyrite' },
         { material: 'zapolite', secondary: 'lautarite', tertiary: 'iodargyrite', quaternary: 'titanite', quinary: 'tungstate' },
         { material: 'lautarite', secondary: 'clausthalite', tertiary: 'stibnite', quaternary: 'calaverite', quinary: 'sylvanite' },
@@ -89,7 +101,10 @@ const oreProcessableTiers = {
         { material: 'stibiopalladinite', secondary: 'clausthalite', tertiary: 'berzelianite', quaternary: 'tiemannite', quinary: 'stibiopalladinite' },
         { material: 'berzelianite', secondary: 'umangite', tertiary: 'aguilarite', quaternary: 'polybasite', quinary: 'berzelianite' },
         { material: 'umangite', secondary: 'berzelianite', tertiary: 'aguilarite', quaternary: 'polybasite', quinary: 'umangite' },
-        { material: 'aguilarite', secondary: 'berzelianite', tertiary: 'umangite', quaternary: 'polybasite', quinary: 'aguilarite' }
+        { material: 'aguilarite', secondary: 'berzelianite', tertiary: 'umangite', quaternary: 'polybasite', quinary: 'aguilarite' },
+        { material: 'strontianite', secondary: 'celestine', tertiary: 'berzelianite', quaternary: 'umangite', quinary: 'aguilarite'  },
+        // mystical agriculture
+        { material: 'celestine', secondary: 'strontianite', tertiary: 'aguilarite', quaternary: 'umangite', quinary: 'berzelianite'  }
     ]
 };
 
@@ -103,13 +118,12 @@ const dust = (mat, amount) => {
 };
 const fluids = {
     water: 'minecraft:water 100',
+    water_5x: 'minecraft:water 500',
     distilled_water: 'gtceu:distilled_water 100',
+    distilled_water_5x: 'gtceu:distilled_water 500',
     sodium_persulfate: 'gtceu:sodium_persulfate 100',
     sodium_persulfate_5x: 'gtceu:sodium_persulfate 500',
-    water_bulk: 'minecraft:water 25600',
-    distilled_bulk: 'gtceu:distilled_water 25600',
-    sodium_persulfate_bulk: 'gtceu:sodium_persulfate 25600',
-    sodium_persulfate_5x_bulk: 'gtceu:sodium_persulfate 128000'
+    sodium_persulfate_25x: 'gtceu:sodium_persulfate 2500',
 };
 
 /*
@@ -209,13 +223,13 @@ const plant_primitive_processing = (event, materialObj) => {
         .EUt(GTValues.VHA[GTValues.LV]);
 
     event.recipes.gtceu.bulk_ore_processing_array(id(`${materialObj.material}`))
-        .itemInputs(crushed_ore(materialObj.material, 256))
-        .inputFluids(fluids.water_bulk)
-        .itemOutputs(dust(materialObj.material, 256))
-        .itemOutputs(dust(materialObj.material, 256))
-        .itemOutputs(dust(materialObj.secondary, 180))
-        .itemOutputs(dust(materialObj.tertiary, 144))
-        .duration(240 * 256 * .75)
+        .itemInputs(crushed_ore(materialObj.material, 10))
+        .inputFluids(fluids.water_5x)
+        .itemOutputs(dust(materialObj.material, 10))
+        .itemOutputs(dust(materialObj.material, 10))
+        .itemOutputs(dust(materialObj.secondary, 8))
+        .itemOutputs(dust(materialObj.tertiary, 6))
+        .duration(2400)
         .EUt(GTValues.VHA[GTValues.LV]);
 
 };
@@ -233,7 +247,7 @@ const plant_electric_processing = (event, materialObj, tier) => {
         'ev': GTValues.VHA[GTValues.EV]
     }
     const fluid = (tier == 'lv' || tier == 'mv') ? fluids.distilled_water : fluids.sodium_persulfate;
-    const fluid_bulk = (tier == 'lv' || tier == 'mv') ? fluids.distilled_bulk : fluids.sodium_persulfate_bulk;
+    const fluid_5x = (tier == 'lv' || tier == 'mv') ? fluids.distilled_water_5x : fluids.sodium_persulfate_5x;
     event.recipes.gtceu.plant_ore_processing(id(`${materialObj.material}`))
         .itemInputs(crushed_ore(materialObj.material, 1))
         .inputFluids(fluid)
@@ -246,14 +260,14 @@ const plant_electric_processing = (event, materialObj, tier) => {
         .EUt(voltages[tier]);
 
     event.recipes.gtceu.bulk_ore_processing_array(id(`${materialObj.material}`))
-        .itemInputs(crushed_ore(materialObj.material, 256))
-        .inputFluids(fluid_bulk)
-        .itemOutputs(dust(materialObj.material, 256))
-        .itemOutputs(dust(materialObj.material, 192))
-        .itemOutputs(dust(materialObj.secondary, 154))
-        .itemOutputs(dust(materialObj.tertiary, 90))
-        .itemOutputs(dust(materialObj.quaternary, 52))
-        .duration(240 * 256 * .75)
+        .itemInputs(crushed_ore(materialObj.material, 10))
+        .inputFluids(fluid_5x)
+        .itemOutputs(dust(materialObj.material, 10))
+        .itemOutputs(dust(materialObj.material, 9))
+        .itemOutputs(dust(materialObj.secondary, 7))
+        .itemOutputs(dust(materialObj.tertiary, 4))
+        .itemOutputs(dust(materialObj.quaternary, 3))
+        .duration(2400)
         .EUt(voltages[tier]);
 };
 
@@ -274,15 +288,15 @@ const plant_ore_processing = (event, materialObj) => {
         .EUt(GTValues.VA[GTValues.IV]);
 
     event.recipes.gtceu.bulk_ore_processing_array(id(`${materialObj.material}`))
-        .itemInputs(crushed_ore(materialObj.material, 256))
-        .inputFluids(fluids.sodium_persulfate_5x_bulk)
-        .itemOutputs(dust(materialObj.material, 256))
-        .itemOutputs(dust(materialObj.material, 216))
-        .itemOutputs(dust(materialObj.secondary, 160))
-        .itemOutputs(dust(materialObj.tertiary, 96))
-        .itemOutputs(dust(materialObj.quaternary, 54))
-        .itemOutputs(dust(materialObj.quinary, 30))
-        .duration(320 * 256 * .5)
+        .itemInputs(crushed_ore(materialObj.material, 10))
+        .inputFluids(fluids.sodium_persulfate_25x)
+        .itemOutputs(dust(materialObj.material, 10))
+        .itemOutputs(dust(materialObj.material, 9))
+        .itemOutputs(dust(materialObj.secondary, 7))
+        .itemOutputs(dust(materialObj.tertiary, 5))
+        .itemOutputs(dust(materialObj.quaternary, 3))
+        .itemOutputs(dust(materialObj.quinary, 2))
+        .duration(3200)
         .EUt(GTValues.VA[GTValues.IV]);
 };
 

@@ -76,4 +76,8 @@ StartupEvents.registry('item', event => {
             .texture(`kubejs:item/gate_items/rune_tablet_${piece}`);
     });
 
+    event.create('worries_about_it')
+        .displayName(`§4DON'T§r Worry About It :)`)
+        .texture('kubejs:item/gate_items/worry');
+
 });

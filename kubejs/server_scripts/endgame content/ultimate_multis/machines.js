@@ -52,7 +52,7 @@ ServerEvents.recipes(event => {
             '4x gtceu:pure_netherite_rotor','4x gtceu:small_pure_netherite_gear','24x gtceu:uv_electric_pump')
         .inputFluids('gtceu:polyether_ether_ketone 8000','gtceu:neutronium 7200')
         .itemOutputs('gtceu:molten_destabilizer')
-        .duration(18000)
+        .duration(9000)
         .stationResearch(
             researchRecipeBuilder => researchRecipeBuilder
                 .researchStack(Item.of('gtceu:large_distillery'))
@@ -60,5 +60,20 @@ ServerEvents.recipes(event => {
                 .CWUt(144)
         )
         .EUt(GTValues.VA[GTValues.UV]); 
+
+    // event.recipes.gtceu.assembly_line(id('titan_forge'))
+    //     .itemInputs(
+    //         'gtceu:uv_machine_hull', '12x #gtceu:circuits/uv', '4x gtceu:dense_titan_steel_plate','64x gtceu:uhpic_chip',
+    //         '8x gtceu:uv_electric_piston', '4x gtceu:small_pure_netherite_gear', '2x gtceu:enriched_naquadah_quadruple_fluid_pipe', '4x gtceu:uv_electric_pump')
+    //     .inputFluids('gtceu:soldering_alloy 7200', 'gtceu:lubricant 5000', 'gtceu:naquadria 864')
+    //     .itemOutputs('gtceu:titan_forge')
+    //     .duration(6000)
+    //     .stationResearch(
+    //         researchRecipeBuilder => researchRecipeBuilder
+    //             .researchStack(Item.of('gtceu:large_extruder'))
+    //             .EUt(GTValues.VA[GTValues.ZPM])
+    //             .CWUt(128)
+    //     )
+    //     .EUt(GTValues.VHA[GTValues.UV]); 
     
 });

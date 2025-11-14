@@ -9,14 +9,6 @@
 	progression_mode: "flexible"
 	quest_links: [
 		{
-			id: "644DCDEBD0AD2399"
-			linked_quest: "31F87896FF834E63"
-			shape: "gear"
-			size: 1.5d
-			x: 16.5d
-			y: -4.0d
-		}
-		{
 			id: "267DD9DBDDB021CC"
 			linked_quest: "3D51DB909365D9B3"
 			x: 9.0d
@@ -45,22 +37,6 @@
 			linked_quest: "266F486F2425C35E"
 			x: 13.5d
 			y: -2.0d
-		}
-		{
-			id: "3A1610B7FC73175A"
-			linked_quest: "3AE729D3F47E9A2B"
-			shape: "gear"
-			size: 1.5d
-			x: 17.5d
-			y: 2.0d
-		}
-		{
-			id: "22B947CD0EFC2E2F"
-			linked_quest: "1799430093ABCC64"
-			shape: "gear"
-			size: 1.5d
-			x: 17.5d
-			y: 7.0d
 		}
 		{
 			id: "0241D0DF0F320CDB"
@@ -97,6 +73,22 @@
 			linked_quest: "261B946701411D9C"
 			x: 6.5d
 			y: 3.0d
+		}
+		{
+			id: "5471BFD2D05A173F"
+			linked_quest: "3AE729D3F47E9A2B"
+			shape: "gear"
+			size: 1.5d
+			x: 17.5d
+			y: 2.0d
+		}
+		{
+			id: "6619BD72D7AC92AB"
+			linked_quest: "1799430093ABCC64"
+			shape: "gear"
+			size: 1.5d
+			x: 17.5d
+			y: 7.0d
 		}
 	]
 	quests: [
@@ -1033,7 +1025,6 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["18FD654260DFF1D6"]
 			icon: "kubejs:void_core"
 			id: "1D3052F94EE128F4"
 			shape: "circle"
@@ -1396,6 +1387,7 @@
 				"68B378F9C61A4476"
 				"64B6D570D8C43249"
 				"2A51E0AEDCCC8F9E"
+				"18FD654260DFF1D6"
 			]
 			icon: "gtceu:order_centric_void_bucket"
 			id: "5080743917931298"
@@ -1424,6 +1416,7 @@
 				"26795C8AEFF36410"
 				"622AB20A4B3D2DB6"
 				"0B9426D5788B0337"
+				"18FD654260DFF1D6"
 			]
 			icon: "gtceu:chaos_centric_void_bucket"
 			id: "2F6115002741F26F"
@@ -1647,7 +1640,6 @@
 		}
 		{
 			dependencies: [
-				"09B55AFE7C06EC82"
 				"394D5FF2EEE3E610"
 				"253FE2C976FBCA5D"
 			]
@@ -1661,7 +1653,6 @@
 			y: 7.0d
 		}
 		{
-			dependencies: ["262BD3D9D1DF7F13"]
 			icon: "gtceu:dragon_breath_bucket"
 			id: "749AB3A73D3744EA"
 			tasks: [
@@ -2007,7 +1998,6 @@
 			y: 7.0d
 		}
 		{
-			dependencies: ["218CABD676F3B732"]
 			id: "1599CBA5069B1B4C"
 			tasks: [{
 				id: "2DE1FA566DC988C4"
@@ -2147,7 +2137,6 @@
 			y: 7.0d
 		}
 		{
-			dependencies: ["37F9C85CFCFFDA5F"]
 			id: "7D92FDFAE5CBA103"
 			tasks: [{
 				id: "073270F6189D1018"
@@ -2332,10 +2321,11 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["09B55AFE7C06EC82"]
 			description: [
 				"{ftbquests.chapter.processing_lines_chap_7_2.quest122.description1}"
 				"[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.processing_lines_chap_7_2.quest122.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"09B55AFE7C06EC82\"}}]"
+				""
+				"&4DURING TESTING CHECK IF FIXED SERVER SIDE (SHOULD BE)"
 			]
 			hide_dependent_lines: true
 			icon: "architects_palette:chiseled_abyssaline_bricks"
@@ -2351,7 +2341,6 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["37F9C85CFCFFDA5F"]
 			id: "253FE2C976FBCA5D"
 			shape: "circle"
 			size: 1.5d
@@ -2411,8 +2400,8 @@
 		}
 		{
 			dependencies: [
-				"1799430093ABCC64"
 				"394D5FF2EEE3E610"
+				"1799430093ABCC64"
 			]
 			id: "2C80DB1A0465B07E"
 			shape: "gear"

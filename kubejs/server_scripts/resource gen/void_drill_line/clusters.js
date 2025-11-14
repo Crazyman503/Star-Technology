@@ -31,9 +31,9 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.void_excavation(id('mining'))
         .inputFluids('gtceu:drilling_fluid 5000')
-        .chancedOutput('5x gtceu:raw_coal', 5000, 1000)
+        .chancedOutput('2x gtceu:raw_coal', 4000, 1000)
         .chancedOutput('2x minecraft:raw_gold', 4000, 750)
-        .chancedOutput('3x gtceu:raw_sodalite', 4000, 1000)
+        .chancedOutput('1x gtceu:raw_sodalite', 3000, 1000)
         .chancedOutput('3x gtceu:raw_pentlandite', 3000, 500)
         .chancedOutput('1x gtceu:raw_realgar', 6000, 1200)
         .chancedOutput('2x gtceu:raw_silver', 3500, 750)

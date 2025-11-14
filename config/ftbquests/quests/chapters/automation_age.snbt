@@ -12,14 +12,28 @@
 		{
 			id: "39074A560F263385"
 			linked_quest: "0F0FEE1952A3CB4F"
-			x: -9.5d
+			x: -11.5d
 			y: -5.0d
 		}
 		{
 			id: "723EBAAA2CB2DA89"
 			linked_quest: "3306CAE5E57839A2"
-			x: -12.5d
+			x: -14.5d
+			y: 2.0d
+		}
+		{
+			id: "7E128634294DAC44"
+			linked_quest: "235423100BBE5C81"
+			x: -4.5d
 			y: 0.0d
+		}
+		{
+			id: "30A5491900B22823"
+			linked_quest: "4BCC078B76C6CAE3"
+			shape: "gear"
+			size: 1.125d
+			x: 1.5d
+			y: -4.0d
 		}
 	]
 	quests: [
@@ -46,7 +60,7 @@
 				item: "gtceu:advanced_integrated_circuit"
 				type: "item"
 			}]
-			x: -12.5d
+			x: -14.5d
 			y: -6.0d
 		}
 		{
@@ -98,7 +112,7 @@
 				}
 				type: "item"
 			}]
-			x: -10.5d
+			x: -12.5d
 			y: -8.0d
 		}
 		{
@@ -116,7 +130,7 @@
 				item: "gtceu:lumium_single_wire"
 				type: "item"
 			}]
-			x: -10.5d
+			x: -12.5d
 			y: -10.0d
 		}
 		{
@@ -138,7 +152,7 @@
 				item: "gtceu:lumium_ingot"
 				type: "item"
 			}]
-			x: -12.5d
+			x: -14.5d
 			y: -10.0d
 		}
 		{
@@ -159,7 +173,7 @@
 				item: "gtceu:hv_machine_hull"
 				type: "item"
 			}]
-			x: -8.5d
+			x: -10.5d
 			y: -6.0d
 		}
 		{
@@ -177,7 +191,7 @@
 				item: "gtceu:mv_circuit_assembler"
 				type: "item"
 			}]
-			x: -12.5d
+			x: -14.5d
 			y: -4.0d
 		}
 		{
@@ -195,7 +209,7 @@
 				item: "gtceu:multi_smelter"
 				type: "item"
 			}]
-			x: -12.5d
+			x: -14.5d
 			y: -8.0d
 		}
 		{
@@ -214,7 +228,7 @@
 				item: "gtceu:micro_processor"
 				type: "item"
 			}]
-			x: -8.5d
+			x: -10.5d
 			y: -2.0d
 		}
 		{
@@ -237,7 +251,7 @@
 				item: "gtceu:microchip_processor"
 				type: "item"
 			}]
-			x: -10.5d
+			x: -12.5d
 			y: -2.0d
 		}
 		{
@@ -260,7 +274,7 @@
 				item: "gtceu:micro_processor_assembly"
 				type: "item"
 			}]
-			x: -6.5d
+			x: -8.5d
 			y: -2.0d
 		}
 		{
@@ -284,7 +298,7 @@
 				item: "gtceu:micro_processor_computer"
 				type: "item"
 			}]
-			x: -4.5d
+			x: -6.5d
 			y: -2.0d
 		}
 		{
@@ -326,7 +340,7 @@
 				}
 			]
 			title: "{ftbquests.chapter.automation_age.quest12.title}"
-			x: -12.5d
+			x: -14.5d
 			y: -2.0d
 		}
 		{
@@ -360,7 +374,7 @@
 					type: "item"
 				}
 			]
-			x: -10.5d
+			x: -12.5d
 			y: -4.0d
 		}
 		{
@@ -398,7 +412,7 @@
 				}
 			]
 			title: "{ftbquests.chapter.automation_age.quest14.title}"
-			x: -10.5d
+			x: -12.5d
 			y: -6.0d
 		}
 		{
@@ -418,7 +432,7 @@
 				item: "gtceu:hv_assembler"
 				type: "item"
 			}]
-			x: -6.5d
+			x: -8.5d
 			y: -6.0d
 		}
 		{
@@ -439,7 +453,7 @@
 				item: "gtceu:hv_energy_input_hatch"
 				type: "item"
 			}]
-			x: -6.5d
+			x: -8.5d
 			y: -8.0d
 		}
 		{
@@ -476,7 +490,7 @@
 				}
 			]
 			title: "{ftbquests.chapter.automation_age.quest17.title}"
-			x: -6.5d
+			x: -8.5d
 			y: -10.0d
 		}
 		{
@@ -517,7 +531,7 @@
 				}
 			]
 			title: "{ftbquests.chapter.automation_age.quest18.title}"
-			x: -5.5d
+			x: -7.5d
 			y: -5.0d
 		}
 		{
@@ -565,7 +579,7 @@
 				item: "gtceu:energy_crystal"
 				type: "item"
 			}]
-			x: -8.5d
+			x: -10.5d
 			y: -10.0d
 		}
 		{
@@ -587,7 +601,7 @@
 				item: "gtceu:hv_autoclave"
 				type: "item"
 			}]
-			x: -8.5d
+			x: -10.5d
 			y: -8.0d
 		}
 		{
@@ -627,7 +641,7 @@
 				}
 			]
 			title: "{ftbquests.chapter.automation_age.quest22.title}"
-			x: -7.5d
+			x: -9.5d
 			y: -9.0d
 		}
 		{
@@ -646,7 +660,7 @@
 				item: "gtceu:cleanroom"
 				type: "item"
 			}]
-			x: -6.5d
+			x: -8.5d
 			y: -4.0d
 		}
 		{
@@ -665,7 +679,7 @@
 				type: "item"
 			}]
 			x: -4.5d
-			y: -4.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["47CD61D6ECD3DC7D"]
@@ -686,12 +700,11 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: -6.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
 				"74749B089D50329C"
-				"52FE319F5E176C37"
 				"77303F30F0A44393"
 			]
 			description: [
@@ -749,8 +762,8 @@
 					type: "item"
 				}
 			]
-			x: -2.5d
-			y: -4.0d
+			x: -0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["5BA3F17E1C7BE599"]
@@ -768,7 +781,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: -4.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["1DA6B3308C263A6F"]
@@ -786,7 +799,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: -4.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -806,8 +819,8 @@
 				item: "gtceu:nichrome_ingot"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -1.0d
+			x: 3.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -833,13 +846,12 @@
 				item: "gtceu:nichrome_coil_block"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 3.5d
 			y: -2.0d
 		}
 		{
 			dependencies: [
 				"235423100BBE5C81"
-				"1646D6D439B260D3"
 				"250C897A70DB797F"
 			]
 			description: ["{ftbquests.chapter.automation_age.quest31.description1}"]
@@ -856,7 +868,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: -2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -885,8 +897,8 @@
 				}
 				type: "item"
 			}]
-			x: -0.5d
-			y: -2.0d
+			x: 1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["74749B089D50329C"]
@@ -906,7 +918,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["52FE319F5E176C37"]
@@ -924,8 +936,8 @@
 				item: "gtceu:vacuum_freezer"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -1.0d
+			x: -5.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["52FE319F5E176C37"]
@@ -945,7 +957,7 @@
 				item: "kubejs:multiblock_upgrade_kit"
 				type: "item"
 			}]
-			x: -4.5d
+			x: -8.5d
 			y: 0.0d
 		}
 		{
@@ -982,7 +994,7 @@
 			]
 			title: "{ftbquests.chapter.automation_age.quest36.title}"
 			x: -6.5d
-			y: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -1004,8 +1016,8 @@
 				title: "{ftbquests.chapter.automation_age.quest37.task_8353874335363797765.title}"
 				type: "checkmark"
 			}]
-			x: -7.5d
-			y: -1.0d
+			x: -8.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["4FFD2642BC183495"]
@@ -1052,8 +1064,8 @@
 				}
 				type: "item"
 			}]
-			x: -9.5d
-			y: -1.0d
+			x: -10.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["73931EAA3EC5C9A9"]
@@ -1075,8 +1087,8 @@
 				item: "gtceu:prospector.hv"
 				type: "item"
 			}]
-			x: -11.5d
-			y: -1.0d
+			x: -12.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["170C262792DA7123"]
@@ -1095,7 +1107,7 @@
 				type: "checkmark"
 			}]
 			x: -8.5d
-			y: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["1A05644388327FA4"]
@@ -1129,7 +1141,7 @@
 			]
 			title: "{ftbquests.chapter.automation_age.quest41.title}"
 			x: -10.5d
-			y: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -1159,7 +1171,7 @@
 				type: "checkmark"
 			}]
 			x: -12.5d
-			y: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["439D8AE6D3DC41AF"]
@@ -1180,8 +1192,8 @@
 				item: "gtceu:styrene_butadiene_rubber_bucket"
 				type: "item"
 			}]
-			x: -12.5d
-			y: 3.5d
+			x: -14.5d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -1202,7 +1214,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -1230,7 +1242,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -1255,15 +1267,14 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: 0.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
 				"1646D6D439B260D3"
-				"23A6938803281145"
-				"2B695762FC4A7686"
 				"170C262792DA7123"
 			]
+			dependency_requirement: "one_completed"
 			description: ["{ftbquests.chapter.automation_age.quest47.description1}"]
 			id: "39FF89B370D09B88"
 			rewards: [{
@@ -1283,17 +1294,19 @@
 				{
 					id: "4D8A038B8589DD34"
 					item: "gtceu:liquid_nether_air_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "68CD5E7FD8D9C5EF"
 					item: "gtceu:liquid_ender_air_bucket"
+					optional_task: true
 					type: "item"
 				}
 			]
 			title: "{ftbquests.chapter.automation_age.quest47.title}"
 			x: -6.5d
-			y: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["74749B089D50329C"]
@@ -1314,8 +1327,8 @@
 				item: "gtceu:cupric_chloride_solution_bucket"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -3.0d
+			x: -3.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["2CABFCC73E33E133"]
@@ -1347,7 +1360,7 @@
 			]
 			title: "{ftbquests.chapter.automation_age.quest49.title}"
 			x: 3.5d
-			y: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["6EB85BBD539AEB57"]
@@ -1367,7 +1380,7 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["75CCD3B6125B55C4"]
@@ -1393,7 +1406,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["32FF3127152DCD7D"]
@@ -1411,7 +1424,7 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["2231C06CE59E0074"]
@@ -1428,11 +1441,15 @@
 				item: "gtceu:phosphorus_boule"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -2.0d
+			x: 7.5d
+			y: 0.0d
 		}
 		{
-			dependencies: ["32EF0A93C1C5F429"]
+			dependencies: [
+				"7AF84C014E136391"
+				"71523C429C7CA007"
+			]
+			dependency_requirement: "one_completed"
 			id: "2231C06CE59E0074"
 			rewards: [{
 				id: "437765BD288B060E"
@@ -1445,31 +1462,8 @@
 				item: "gtceu:phosphorus_dust"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -4.0d
-		}
-		{
-			dependencies: [
-				"71523C429C7CA007"
-				"7AF84C014E136391"
-			]
-			dependency_requirement: "one_completed"
-			description: ["{ftbquests.chapter.automation_age.quest55.description1}"]
-			hide_dependency_lines: true
-			id: "32EF0A93C1C5F429"
-			rewards: [{
-				id: "707941A79A8B418A"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			size: 1.0d
-			tasks: [{
-				id: "26526B2121D0A317"
-				item: "gtceu:phosphate_dust"
-				type: "item"
-			}]
-			x: 5.5d
-			y: -6.0d
+			x: 7.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["2CABFCC73E33E133"]
@@ -1500,195 +1494,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.automation_age.quest56.title}"
-			x: 7.5d
+			x: 5.5d
 			y: 0.0d
-		}
-		{
-			dependencies: [
-				"23A6938803281145"
-				"0B9C9B50CBD06F13"
-			]
-			description: [
-				"{ftbquests.chapter.automation_age.quest57.description1}"
-				""
-				""
-				"[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.automation_age.quest57.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"38351B708EBA5528\"}}]"
-			]
-			id: "2B695762FC4A7686"
-			optional: true
-			rewards: [{
-				id: "059875F4497E4EA9"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			size: 1.0d
-			tasks: [{
-				id: "7AF1BAB9B4390EB3"
-				item: "gtceu:ender_air_bucket"
-				type: "item"
-			}]
-			x: -7.5d
-			y: 3.5d
-		}
-		{
-			dependencies: ["0F1D766E2E2EEEB5"]
-			description: [
-				"{ftbquests.chapter.automation_age.quest58.description1}"
-				""
-				""
-				"[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.automation_age.quest58.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"38351B708EBA5528\"}}]"
-			]
-			id: "23A6938803281145"
-			optional: true
-			rewards: [{
-				id: "11386D4E5873ED47"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			size: 1.0d
-			tasks: [{
-				id: "64B499458C1F62D4"
-				item: "gtceu:nether_air_bucket"
-				type: "item"
-			}]
-			x: -5.5d
-			y: 3.5d
-		}
-		{
-			dependencies: ["5E1E1A4F5036A6EA"]
-			description: ["{ftbquests.chapter.automation_age.quest59.description1}"]
-			id: "0B9C9B50CBD06F13"
-			optional: true
-			rewards: [{
-				id: "43C38518BA14FB01"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			size: 1.0d
-			tasks: [{
-				id: "2448F8220FDCFE44"
-				item: "mysticalagriculture:end_agglomeratio"
-				type: "item"
-			}]
-			x: -8.5d
-			y: 3.5d
-		}
-		{
-			dependencies: ["549B363564644706"]
-			description: ["{ftbquests.chapter.automation_age.quest60.description1}"]
-			id: "0F1D766E2E2EEEB5"
-			rewards: [{
-				id: "5EE84E5EE3586E86"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			size: 1.0d
-			tasks: [{
-				id: "0670EDADED37A8C8"
-				item: "mysticalagriculture:nether_agglomeratio"
-				type: "item"
-			}]
-			x: -4.5d
-			y: 3.5d
-		}
-		{
-			dependencies: ["0725DE9E90815AB4"]
-			description: ["{ftbquests.chapter.automation_age.quest61.description1}"]
-			id: "549B363564644706"
-			rewards: [{
-				id: "7BE8C8DF5473190B"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			size: 1.0d
-			tasks: [{
-				id: "3BD6AB9C714C8D5D"
-				item: "gtceu:netherrack_dust"
-				type: "item"
-			}]
-			x: -3.5d
-			y: 3.5d
-		}
-		{
-			dependencies: ["4E9FAED9D889160A"]
-			description: ["{ftbquests.chapter.automation_age.quest62.description1}"]
-			id: "5E1E1A4F5036A6EA"
-			optional: true
-			rewards: [{
-				id: "7ECD96DDE51CD967"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			size: 1.0d
-			tasks: [{
-				id: "1F17577A8F6302A7"
-				item: "gtceu:endstone_dust"
-				type: "item"
-			}]
-			x: -9.5d
-			y: 3.5d
-		}
-		{
-			dependencies: ["1820787D031EAB15"]
-			description: ["{ftbquests.chapter.automation_age.quest63.description1}"]
-			id: "4E9FAED9D889160A"
-			optional: true
-			rewards: [{
-				id: "2EA67AA0DED02E19"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			size: 1.0d
-			tasks: [{
-				id: "7190C3BB30387607"
-				item: "minecraft:end_stone"
-				type: "item"
-			}]
-			x: -10.5d
-			y: 3.5d
-		}
-		{
-			dependencies: ["1820787D031EAB15"]
-			description: ["{ftbquests.chapter.automation_age.quest64.description1}"]
-			id: "0725DE9E90815AB4"
-			rewards: [{
-				id: "5F7A11F57B0F3C94"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			size: 1.0d
-			tasks: [{
-				id: "14C28144E7157D9E"
-				item: "minecraft:netherrack"
-				type: "item"
-			}]
-			x: -2.5d
-			y: 3.5d
-		}
-		{
-			dependencies: [
-				"0F0FEE1952A3CB4F"
-				"3CB63B290C9EFAA2"
-			]
-			description: ["{ftbquests.chapter.automation_age.quest65.description1}"]
-			hide_dependent_lines: true
-			id: "1820787D031EAB15"
-			rewards: [{
-				count: 2
-				id: "3C77881803A22D67"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			shape: "gear"
-			size: 1.5d
-			tasks: [{
-				id: "03C25F040094BAEF"
-				item: "gtceu:large_chemical_reactor"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.automation_age.quest65.title}"
-			x: -8.5d
-			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -1708,8 +1515,8 @@
 				item: "gtceu:ev_circuit_assembler"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -6.0d
+			x: -4.5d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -1731,7 +1538,7 @@
 				item: "gtceu:nano_processor"
 				type: "item"
 			}]
-			x: 1.5d
+			x: -4.5d
 			y: -6.0d
 		}
 		{
@@ -1749,8 +1556,8 @@
 				item: "gtceu:nano_processor_assembly"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -6.0d
+			x: -4.5d
+			y: -8.0d
 		}
 		{
 			dependencies: [
@@ -1772,8 +1579,8 @@
 				item: "gtceu:nano_processor_computer"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -4.0d
+			x: -4.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["076532C492102F8E"]
@@ -1801,8 +1608,8 @@
 					type: "item"
 				}
 			]
-			x: 2.5d
-			y: -7.0d
+			x: -6.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["4FF433145C67693F"]
@@ -1828,8 +1635,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.automation_age.quest71.title}"
-			x: 0.5d
-			y: -5.0d
+			x: -6.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["4D49884E7F5BCBB4"]
@@ -1845,12 +1652,13 @@
 				item: "gtceu:epoxy_plate"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -7.0d
+			x: -6.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["2CABFCC73E33E133"]
 			description: ["{ftbquests.chapter.automation_age.quest73.description1}"]
+			hide_dependent_lines: true
 			icon: "gtceu:nor_memory_chip"
 			id: "737C84EA25886EC9"
 			rewards: [{
@@ -1877,8 +1685,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.automation_age.quest73.title}"
-			x: 3.5d
-			y: -2.0d
+			x: 7.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -1898,8 +1706,8 @@
 				item: "gtceu:iv_energy_input_hatch"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -10.0d
+			x: -0.5d
+			y: -8.0d
 		}
 		{
 			dependencies: [
@@ -1921,13 +1729,12 @@
 				item: "gtceu:iv_assembler"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -8.0d
+			x: -0.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["4BCE8A9EBDF113CE"]
 			description: ["{ftbquests.chapter.automation_age.quest76.description1}"]
-			hide_dependency_lines: true
 			id: "4D9DAED52FF74B8B"
 			rewards: [{
 				id: "2F601584CF53D9C4"
@@ -1940,8 +1747,8 @@
 				item: "gtceu:iv_machine_hull"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -8.0d
+			x: -0.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["7CACFC7C9101EA59"]
@@ -1976,60 +1783,8 @@
 				item: "gtceu:iv_energy_input_hatch_16a"
 				type: "item"
 			}]
-			x: 1.5d
+			x: -2.5d
 			y: -10.0d
-		}
-		{
-			dependencies: [
-				"15CAE17A4EF1F7E9"
-				"62BA581B2918BB7B"
-				"4D9DAED52FF74B8B"
-			]
-			description: ["{ftbquests.chapter.automation_age.quest79.description1}"]
-			id: "7392E56AAA2E5790"
-			rewards: [{
-				id: "3D3BB2114B527507"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			size: 1.0d
-			tasks: [{
-				id: "76DE79D061ECA488"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						display: {
-							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Any IV Converter\"}"
-						}
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:iv_1a_energy_converter"
-							}
-							{
-								Count: 1b
-								id: "gtceu:iv_4a_energy_converter"
-							}
-							{
-								Count: 1b
-								id: "gtceu:iv_8a_energy_converter"
-							}
-							{
-								Count: 1b
-								id: "gtceu:iv_16a_energy_converter"
-							}
-							{
-								Count: 1b
-								id: "start_core:iv_64a_energy_converter"
-							}
-						]
-					}
-				}
-				type: "item"
-			}]
-			x: -4.5d
-			y: -6.0d
 		}
 		{
 			dependencies: ["1C05C80BCB4736B6"]
@@ -2046,13 +1801,12 @@
 				item: "gtceu:shellite_single_wire"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -7.0d
+			x: -2.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["3B2D79D40B9617D5"]
 			description: ["{ftbquests.chapter.automation_age.quest81.description1}"]
-			hide_dependency_lines: true
 			id: "1C05C80BCB4736B6"
 			rewards: [{
 				id: "415D9C74355CF8C9"
@@ -2065,8 +1819,8 @@
 				item: "gtceu:shellite_ingot"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -9.0d
+			x: -2.5d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -2096,8 +1850,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.automation_age.quest82.title}"
-			x: -4.5d
-			y: -10.0d
+			x: -2.5d
+			y: -8.0d
 		}
 		{
 			dependencies: [
@@ -2141,8 +1895,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.automation_age.quest83.title}"
-			x: 4.5d
-			y: -9.0d
+			x: 5.5d
+			y: -10.0d
 		}
 		{
 			dependencies: [
@@ -2186,8 +1940,8 @@
 				item: "gtceu:hssg_ingot"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -9.0d
+			x: 1.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["689150D2A185216C"]
@@ -2205,7 +1959,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: -8.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["689150D2A185216C"]
@@ -2222,8 +1976,8 @@
 				item: "gtceu:hsss_ingot"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -9.0d
+			x: 3.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["10F2237FF0C87F62"]
@@ -2267,7 +2021,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -2298,7 +2052,7 @@
 				item: "gtceu:nuclear_reactor"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -4.5d
 			y: 2.0d
 		}
 		{
@@ -2306,6 +2060,7 @@
 				"39FF89B370D09B88"
 				"68865F1DDBFFFACE"
 				"6A57B03345FC6D99"
+				"3C099AFD41C38BC3"
 			]
 			dependency_requirement: "one_completed"
 			description: [
@@ -2322,7 +2077,7 @@
 				type: "item"
 			}]
 			x: -4.5d
-			y: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -2338,7 +2093,7 @@
 				title: "{ftbquests.chapter.automation_age.quest92.task_4153588287290401953.title}"
 				type: "checkmark"
 			}]
-			x: -7.5d
+			x: -9.5d
 			y: -3.0d
 		}
 		{
@@ -2350,7 +2105,7 @@
 				title: "{ftbquests.chapter.automation_age.quest93.task_190112155846319496.title}"
 				type: "checkmark"
 			}]
-			x: -2.5d
+			x: -4.0d
 			y: -3.0d
 		}
 		{
@@ -2377,7 +2132,7 @@
 			]
 			title: "{ftbquests.chapter.automation_age.quest94.title}"
 			x: 7.5d
-			y: -2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["1820787D031EAB15"]
@@ -2390,7 +2145,7 @@
 				title: "{ftbquests.chapter.automation_age.quest95.task_7724124884352409575.title}"
 				type: "checkmark"
 			}]
-			x: -9.5d
+			x: -11.5d
 			y: -3.0d
 		}
 		{
@@ -2404,14 +2159,13 @@
 				title: "{ftbquests.chapter.automation_age.quest96.task_5923144932531606937.title}"
 				type: "checkmark"
 			}]
-			x: -3.5d
+			x: -7.5d
 			y: 1.0d
 		}
 		{
 			dependencies: [
 				"1820787D031EAB15"
 				"5B70B63D4157594F"
-				"170C262792DA7123"
 			]
 			dependency_requirement: "one_completed"
 			description: ["[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.automation_age.quest97.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"4A4275186719AD8D\"}}]"]
@@ -2422,8 +2176,8 @@
 				title: "{ftbquests.chapter.automation_age.quest97.task_8466801704009021541.title}"
 				type: "checkmark"
 			}]
-			x: -5.5d
-			y: 1.0d
+			x: -9.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["7B0133D388101F68"]
@@ -2439,7 +2193,7 @@
 				title: "{ftbquests.chapter.automation_age.quest98.task_7835011503546140611.title}"
 				type: "checkmark"
 			}]
-			x: -9.5d
+			x: -11.5d
 			y: -9.0d
 		}
 		{
@@ -2457,7 +2211,7 @@
 				item: "gtceu:laminated_glass"
 				type: "item"
 			}]
-			x: -10.5d
+			x: -14.5d
 			y: 0.0d
 		}
 		{
@@ -2469,8 +2223,8 @@
 				item: "gtceu:industrial_barrel"
 				type: "item"
 			}]
-			x: -9.5d
-			y: 1.0d
+			x: -12.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["0AB3A8C14C3A0512"]
@@ -2482,7 +2236,7 @@
 				title: "{ftbquests.chapter.automation_age.quest101.task_1048687994948650425.title}"
 				type: "checkmark"
 			}]
-			x: -8.5d
+			x: -10.5d
 			y: 0.0d
 		}
 		{
@@ -2501,8 +2255,8 @@
 				item: "gtceu:carbon_fibers"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -5.0d
+			x: -6.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["550DB81B8DC91730"]
@@ -2520,8 +2274,244 @@
 				item: "gtceu:borosilicate_glass_ingot"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -3.0d
+			x: 5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"62BA581B2918BB7B"
+				"2DB216B224F2E8EF"
+				"1E981BDF3F2C577D"
+			]
+			id: "09C1739F3FE3298F"
+			shape: "gear"
+			size: 1.25d
+			tasks: [{
+				id: "3FA629A913A5ABC7"
+				item: "gtceu:super_ebf"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["4D9DAED52FF74B8B"]
+			id: "21B885A85E5764F9"
+			shape: "gear"
+			size: 1.25d
+			tasks: [{
+				id: "3BCF6ACFE60E429C"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						display: {
+							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Large (Parallel) Multiblocks\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:large_extruder"
+							}
+							{
+								Count: 1b
+								id: "gtceu:large_wiremill"
+							}
+							{
+								Count: 1b
+								id: "gtceu:large_material_press"
+							}
+							{
+								Count: 1b
+								id: "gtceu:alloy_blast_smelter"
+							}
+							{
+								Count: 1b
+								id: "gtceu:large_arc_smelter"
+							}
+							{
+								Count: 1b
+								id: "gtceu:large_mixer"
+							}
+							{
+								Count: 1b
+								id: "gtceu:large_maceration_tower"
+							}
+							{
+								Count: 1b
+								id: "gtceu:large_electromagnet"
+							}
+							{
+								Count: 1b
+								id: "gtceu:large_electrolyzer"
+							}
+							{
+								Count: 1b
+								id: "gtceu:large_solidifier"
+							}
+							{
+								Count: 1b
+								id: "gtceu:large_autoclave"
+							}
+							{
+								Count: 1b
+								id: "gtceu:large_distillery"
+							}
+							{
+								Count: 1b
+								id: "gtceu:large_extractor"
+							}
+							{
+								Count: 1b
+								id: "gtceu:large_chemical_bath"
+							}
+							{
+								Count: 1b
+								id: "gtceu:large_assembler"
+							}
+							{
+								Count: 1b
+								id: "gtceu:large_circuit_assembler"
+							}
+							{
+								Count: 1b
+								id: "gtceu:large_centrifuge"
+							}
+							{
+								Count: 1b
+								id: "gtceu:large_sifting_funnel"
+							}
+							{
+								Count: 1b
+								id: "gtceu:large_engraving_laser"
+							}
+							{
+								Count: 1b
+								id: "gtceu:large_cutter"
+							}
+							{
+								Count: 1b
+								id: "gtceu:large_brewer"
+							}
+							{
+								Count: 1b
+								id: "gtceu:large_packer"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"4BCC078B76C6CAE3"
+				"2DB216B224F2E8EF"
+			]
+			id: "272CE9BF358D64FE"
+			tasks: [{
+				id: "69181872A1F96333"
+				item: "gtceu:quantum_star"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["46D5CAA2666803D4"]
+			description: ["&dLuV&r superconductor, can hold 64 amps in a 1x cable."]
+			id: "26126E2FA2B406E8"
+			tasks: [{
+				id: "3B2B7C559D191078"
+				item: "gtceu:twinite_single_wire"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["689150D2A185216C"]
+			description: ["Your &dLuV&r Superconductor"]
+			id: "46D5CAA2666803D4"
+			rewards: [{
+				id: "559DE76C9E59DA34"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "2A3DDF9C1C75E713"
+				item: "gtceu:twinite_ingot"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["52FE319F5E176C37"]
+			id: "2027351D670E4CC6"
+			tasks: [{
+				id: "56732FAD42D189AA"
+				item: "gtceu:super_cutter"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3CB63B290C9EFAA2"]
+			id: "4BDAE5D4790ED230"
+			tasks: [{
+				id: "149705D10E869C3F"
+				item: "gtceu:super_electric_ore_factory"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"4BDAE5D4790ED230"
+				"2027351D670E4CC6"
+				"09C1739F3FE3298F"
+			]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
+			id: "02BC9C8FF2AE1650"
+			tasks: [{
+				id: "54823A71E8D104D4"
+				title: "Go Read About Throughput Boosting"
+				type: "checkmark"
+			}]
+			x: -5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"0F0FEE1952A3CB4F"
+				"3CB63B290C9EFAA2"
+			]
+			description: ["{ftbquests.chapter.automation_age.quest65.description1}"]
+			hide_dependent_lines: true
+			id: "1820787D031EAB15"
+			rewards: [{
+				count: 2
+				id: "3C77881803A22D67"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "03C25F040094BAEF"
+				item: "gtceu:large_chemical_reactor"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.automation_age.quest65.title}"
+			x: -10.5d
+			y: -4.0d
 		}
 	]
 	title: "{ftbquests.chapter.automation_age.title}"
