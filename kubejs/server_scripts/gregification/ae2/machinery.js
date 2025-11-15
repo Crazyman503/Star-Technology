@@ -166,7 +166,7 @@ ServerEvents.recipes(event => {
             A: 'gtceu:luv_electric_piston',
             B: Sediment,
             C: 'gtceu:double_netherite_certus_quartz_skystone_alloy_plate',
-            D: Item.of('expatternprovider:infinity_cell', `{record:{"#c":"ae2:i",id:"minecraft:cobblestone"}}`),
+            D: Item.of('expatternprovider:infinity_cell', `{record:{"#c":"ae2:i",id:"minecraft:cobblestone"}}`).strongNBT(),
             E: 'gtceu:luv_conveyor_module',
             F: 'gtceu:pure_netherite_gear'
     });
