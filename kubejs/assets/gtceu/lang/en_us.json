@@ -75,7 +75,7 @@
     "block.gtceu.bulk_ore_processing_array": "Bulk Ore Processing Array",
     "gtceu.bulk_ore_processing_array": "Bulk Ore Processing",
     "block.gtceu.bulk_ore_processing_array.tooltip.0": "§7The §4ULTIMATE§7 tier of ore processing machine that far exceeds the throughput capacity of all previous tiers.",
-    "block.gtceu.bulk_ore_processing_array.tooltip.1": "Can use §3Parallel§r hatches§r, has §cSubtick Parallels§r, §2Bulking§r, and §bThoughput Boosting",
+    "block.gtceu.bulk_ore_processing_array.tooltip.1": "Can use §3Parallel§r hatches§r, has §cSubtick Parallels§r, §2Bulking§r, and §bThroughput Boosting",
     
     "block.gtceu.industrial_barrel": "Industrial Barrel",
     "gtceu.industrial_barrel_aqueous": "Industrial Barrel - Aqueous",
@@ -133,7 +133,7 @@
     "block.gtceu.molten_destabilizer.tooltip.1": "Can use §3Parallel§r hatches",
     
     "block.gtceu.vibration_laser_engraver.tooltip.0": "§7A multiblock that uses precise lasers and vibrations to effortlessly reform and engrave gems, chips, and crystals, changing them in whatever way you need.",
-    "block.gtceu.vibration_laser_engraver.tooltip.1": "Can use §3Parallel§r hatches§r, has §cSubtick Parallels§r, §2Bulking§r, and §bThoughput Boosting",
+    "block.gtceu.vibration_laser_engraver.tooltip.1": "Can use §3Parallel§r hatches§r, has §cSubtick Parallels§r, §2Bulking§r, and §bThroughput Boosting",
     
     "block.gtceu.cyclonic_sifter.tooltip.0": "§7An advanced tier of sifter that is more precise and stronger than the basic tier, allowing it to run better recipes.",
     "block.gtceu.cyclonic_sifter.tooltip.1": "Can use §3Parallel§r hatches",
@@ -901,7 +901,7 @@
     "gtceu.quantum_cooling": "Quantum Cooling",
     "block.gtceu.cryostate_quantum_chiller": "Cryostate Quantum Chiller",
     "block.gtceu.cryostate_quantum_chiller.tooltip.0": "§7A precision quantum cooling array capable of handling absolute-zero cryogenic coolants for advanced matter state manipulation and bulk vacuum freezing.",
-    "block.gtceu.cryostate_quantum_chiller.tooltip.1": "Can use §3Parallel§r hatches§r, has §cSubtick Parallels§r, §2Bulking§r, and §bThoughput Boosting",
+    "block.gtceu.cryostate_quantum_chiller.tooltip.1": "Can use §3Parallel§r hatches§r, has §cSubtick Parallels§r, §2Bulking§r, and §bThroughput Boosting",
 
     "gtceu.draco_infusion": "§dDraconic Infusion",
     "block.gtceu.draco_infusion": "§dDraconic Infusion Array",
@@ -957,7 +957,7 @@
 
     "block.gtceu.super_compact_heat_chamber": "Super-Compact Heat Chamber",
     "block.gtceu.super_compact_heat_chamber.tooltip.0": "§7A compacted and upgraded heat chamber capable of purifying materials and catalysing reactions at an enhanced rate through its ultra-dense thermal reactor design.",
-    "block.gtceu.super_compact_heat_chamber.tooltip.1": "Can use §3Parallel§r hatches, has §bThoughput Boosting§r, and §cSubtick Parallels",
+    "block.gtceu.super_compact_heat_chamber.tooltip.1": "Can use §3Parallel§r hatches, has §bThroughput Boosting§r, and §cSubtick Parallels",
 
     "block.gtceu.kiln": "Kiln",
     "gtceu.kiln": "Kiln",
@@ -1197,16 +1197,16 @@
 
     "block.gtceu.component_nexus": "Component Nexus",
     "block.gtceu.component_nexus.tooltip.0": "§6§lBoosted Component Assembler",
-    "block.gtceu.component_nexus.tooltip.1": "§7Once stabilized this amalgamation of a machine is able to assembly components from §dLuV§7 to §3UV§7 without the need for ordered inputs.",
+    "block.gtceu.component_nexus.tooltip.1": "§7Once stabilized this amalgamation of a machine is able to assemble components from §dLuV§7 to §3UV§7 without the need for ordered inputs.",
     "block.gtceu.component_nexus.tooltip.2": "§8-----------------------------------",
-    "block.gtceu.component_nexus.tooltip.3": "Has §cSubtick Parallels §fand §bThoughput Boosting",
+    "block.gtceu.component_nexus.tooltip.3": "Has §cSubtick Parallels §fand §bThroughput Boosting",
     "gtceu.component_nexus": "Component Nexus",
 
     "block.gtceu.component_part_hub": "Component Part Hub",
     "block.gtceu.component_part_hub.tooltip.0": "§6§lBoosted Component Part Assembler",
-    "block.gtceu.component_part_hub.tooltip.1": "§7Once stabilized this amalgamation of a machine is able to assembly component parts without the need for ordered inputs and instead relying on advanced circuit configurations.",
+    "block.gtceu.component_part_hub.tooltip.1": "§7Once stabilized this amalgamation of a machine is able to assemble component parts without the need for ordered inputs.",
     "block.gtceu.component_part_hub.tooltip.2": "§8-----------------------------------",
-    "block.gtceu.component_part_hub.tooltip.3": "Has §cSubtick Parallels §fand §bThoughput Boosting",
+    "block.gtceu.component_part_hub.tooltip.3": "Has §cSubtick Parallels §fand §bThroughput Boosting",
     "gtceu.stocking_component_part_assembly": "Component Part Assembly",
 
     "block.gtceu.super_abs": "Chambered Alloy Transmuter",
@@ -1219,7 +1219,7 @@
     "block.gtceu.super_abs.tooltip.6": "§7For every voltage tier above §bMV§7, temperature is increased by §f100K§7.",
     "block.gtceu.super_abs.tooltip.7": "§8-----------------------------------",
     "block.gtceu.super_abs.tooltip.8": "Can only have §bone§r Energy Hatch",
-    "block.gtceu.super_abs.tooltip.9": "Has §bThoughput Boosting§r and §cSubtick Parallels",
+    "block.gtceu.super_abs.tooltip.9": "Has §bThroughput Boosting§r and §cSubtick Parallels",
 
     "block.gtceu.super_ebf": "Hardened Industrial Furnace",
     "block.gtceu.super_ebf.tooltip.0": "§6§lBoosted Electric Blast Furnace",
@@ -1231,12 +1231,12 @@
     "block.gtceu.super_ebf.tooltip.6": "§7For every voltage tier above §bMV§7, temperature is increased by §f100K§7.",
     "block.gtceu.super_ebf.tooltip.7": "§8-----------------------------------",
     "block.gtceu.super_ebf.tooltip.8": "Can only have §bone§r Energy Hatch",
-    "block.gtceu.super_ebf.tooltip.9": "Has §bThoughput Boosting§r and §cSubtick Parallels",
+    "block.gtceu.super_ebf.tooltip.9": "Has §bThroughput Boosting§r and §cSubtick Parallels",
 
     "block.gtceu.super_vacuum_freezer": "Arctic Chilling Unit",
     "block.gtceu.super_vacuum_freezer.tooltip.0": "§7Makes things just a little cold.",
     "block.gtceu.super_vacuum_freezer.tooltip.1": "Can only have §bone§r Energy Hatch",
-    "block.gtceu.super_vacuum_freezer.tooltip.2": "Has §bThoughput Boosting§r and §cSubtick Parallels",
+    "block.gtceu.super_vacuum_freezer.tooltip.2": "Has §bThroughput Boosting§r and §cSubtick Parallels",
 
     "block.gtceu.super_implosion_compressor": "High Intensity Imploder",
     "block.gtceu.super_implosion_compressor.tooltip.0": "§7The chaining of explosions helps this machine process at immense rates.",
@@ -1244,26 +1244,26 @@
     "block.gtceu.super_implosion_compressor.tooltip.2": "Has §bCoil Parallels§r",
 
     "block.gtceu.super_cutter": "Large Cutter",
-    "block.gtceu.super_cutter.tooltip.0": "§7A larger variant of the cutter thatcan process more materials at once.",
+    "block.gtceu.super_cutter.tooltip.0": "§7A larger variant of the cutter that can process more materials at once.",
     "block.gtceu.super_cutter.tooltip.1": "Can only have §bone§r Energy Hatch",
-    "block.gtceu.super_cutter.tooltip.2": "Has §bThoughput Boosting",
+    "block.gtceu.super_cutter.tooltip.2": "Has §bThroughput Boosting",
 
     "block.gtceu.super_electric_ore_factory": "Ore Processing Factory",
     "block.gtceu.super_electric_ore_factory.tooltip.0": "§7An Electric Ore Factory pushed to its limits.",
     "block.gtceu.super_electric_ore_factory.tooltip.1": "Can only have §bone§r Energy Hatch",
-    "block.gtceu.super_electric_ore_factory.tooltip.2": "Has §bThoughput Boosting",
+    "block.gtceu.super_electric_ore_factory.tooltip.2": "Has §bThroughput Boosting",
 
     "block.gtceu.atomic_synthesis_plant": "Atomic Synthesis Plant",
     "block.gtceu.atomic_synthesis_plant.tooltip.0": "§6§lParagon of Chemistry",
     "block.gtceu.atomic_synthesis_plant.tooltip.1": "§7Not only is this machine capable of performing the task of a §6Chemical Plant§7 but it also pushes beyond what the know synthesis of chemisty beholds.",
-    "block.gtceu.atomic_synthesis_plant.tooltip.2": "Can use §3Parallel§r hatches, has §6Perfect Overclock§r, §cSubtick Parallels§r, §2Bulking§r, and §bThoughput Boosting",
+    "block.gtceu.atomic_synthesis_plant.tooltip.2": "Can use §3Parallel§r hatches, has §6Perfect Overclock§r, §cSubtick Parallels§r, §2Bulking§r, and §bThroughput Boosting",
 
     "gtceu.absolute_reduction": "Absolute Chemical Line Reduction",
     "gtceu.enlightened_chemistry": "Enlightened Chemical Synthesis",
 
     "block.gtceu.omega_pressure_heat_chamber": "Omega Pressure Heat Chamber",
     "block.gtceu.omega_pressure_heat_chamber.tooltip.0": "§7It turns out the more pressure you add the stronger the fusing of materials becomes.",
-    "block.gtceu.omega_pressure_heat_chamber.tooltip.1": "Can use §3Parallel§r hatches, has §bThoughput Boosting§r, and §cSubtick Parallels",
+    "block.gtceu.omega_pressure_heat_chamber.tooltip.1": "Can use §3Parallel§r hatches, has §bThroughput Boosting§r, and §cSubtick Parallels",
 
     "material.gtceu.naquadated_soldering_alloy": "Naquadated Soldering Alloy",
     "material.gtceu.rhenate_w": "Rhenate-W",
@@ -1342,7 +1342,7 @@
     "block.gtceu.subatomic_particle_lattice_isolation_terminal.tooltip.4": "Can use §3Parallel§r hatches§r, has §5Threading§r, §2Bulking§r, and §cSubtick Parallels§r",
 
     "block.gtceu.superior_particulate_isolation_nexus": "Superior Particulate Isolation Nexus",
-    "block.gtceu.superior_particulate_isolation_nexus.tooltip.0": "§3§lMulti-threaded Seperator",
+    "block.gtceu.superior_particulate_isolation_nexus.tooltip.0": "§3§lMulti-threaded Separator",
     "block.gtceu.superior_particulate_isolation_nexus.tooltip.1": "§7description :)",
     "block.gtceu.superior_particulate_isolation_nexus.tooltip.2": "§8-----------------------------------",
     "block.gtceu.superior_particulate_isolation_nexus.tooltip.3": "§7Available Recipe Types: §fSifter§7, §fCentrifuge§7, §fThermal Centrifuge",
