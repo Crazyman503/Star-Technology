@@ -193,4 +193,6 @@ ServerEvents.tags('fluid', event => {
     });
     event.remove('forge:sulfuric_acid','vintage:sulfuric_acid');
 
+    event.removeAllTagsFrom(/^thermal_extra:(?!.*_oil$).*/);
+
 });
