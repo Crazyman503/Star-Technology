@@ -106,7 +106,8 @@ ServerEvents.tags('item', event=>{
         /thermal_extra:.*_block/,
         /thermal_extra:.*_plate/,
         /thermal_extra:.*_rod/,
-        /thermal_extra:.*_gear/
+        /thermal_extra:.*_gear/,
+        /thermal_extra:.*_hammer/
     ]
     const Exnihilo = [
         /exnihilosequentia:.*_ingot/,
