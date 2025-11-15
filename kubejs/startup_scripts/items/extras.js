@@ -2,8 +2,7 @@ StartupEvents.registry('item', event => {
 
     event.create('naquadic_netherite_fibers')
         .rarity('rare')
-        .tooltip(Text.translate('item.kubejs.naquadic_netherite_fibers.tooltip'))
-        .tooltip('The strongest armor material');
+        .tooltip(Text.translate('item.kubejs.naquadic_netherite_fibers.tooltip'));
 
     event.create('coin')
         .rarity('epic')
