@@ -349,7 +349,7 @@ ServerEvents.recipes(event => {
     };
 
     firebox('enriched_naquadah','enriched_naquadah','start_core');
-    // firebox('nyanium','nyanium','kubejs')
+    firebox('nyanium_machine','nyanium','kubejs')
 
     const gearbox = (type,material,casing_id) => {
         event.shaped(`2x ${casing_id}:${type}_gearbox`, [
@@ -411,8 +411,8 @@ ServerEvents.recipes(event => {
     };
 
     engine_intake('enriched_naquadah','enriched_naquadah','enriched_naquadah','start_core','kubejs:enriched_naquadah_machine');
-    // engine_intake('nyanium','nyanium','nyanium','kubejs','kubejs:nyanium_machine');
-
+    engine_intake('nyanium_machine','nyanium','nyanium','kubejs','kubejs:nyanium_machine');
+    
     ['blackstone','calcite','tuff','dripstone_block'].forEach(stone => {
     event.recipes.gtceu.rock_breaker(id(`${stone}`))
         .notConsumable(`minecraft:${stone}`)

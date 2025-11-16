@@ -890,7 +890,7 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["5D107FD21879F54B"]
+			dependencies: ["0055CE82469F239C"]
 			description: [
 				"{ftbquests.chapter.power.quest46.description1}"
 				""
