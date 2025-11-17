@@ -441,6 +441,7 @@
 		}
 		{
 			can_repeat: true
+			dependencies: ["1C154476DB77B773"]
 			icon: { Count: 16, id: "gtceu:rhodium_plated_palladium_ingot" }
 			id: "465529DB399DFC0F"
 			rewards: [{
@@ -463,6 +464,7 @@
 		}
 		{
 			can_repeat: true
+			dependencies: ["2587E109968EFBB4"]
 			icon: { Count: 16, id: "gtceu:naquadah_ingot" }
 			id: "73CD5F0A87F340EB"
 			rewards: [{
@@ -485,6 +487,7 @@
 		}
 		{
 			can_repeat: true
+			dependencies: ["27C0ED4305E84D21"]
 			icon: { Count: 16, id: "gtceu:darmstadtium_ingot" }
 			id: "16C6C65AA362C121"
 			rewards: [{
@@ -645,6 +648,7 @@
 		}
 		{
 			can_repeat: true
+			dependencies: ["53A9F3758C218CDC"]
 			icon: "kubejs:luv_universal_circuit"
 			id: "7A487C3931997719"
 			rewards: [{
@@ -667,6 +671,7 @@
 		}
 		{
 			can_repeat: true
+			dependencies: ["79428BAEAA7856E1"]
 			icon: "kubejs:zpm_universal_circuit"
 			id: "6C496B6F76ECAD88"
 			rewards: [{
@@ -689,6 +694,7 @@
 		}
 		{
 			can_repeat: true
+			dependencies: ["3FC351F05F2AC743"]
 			icon: "kubejs:uv_universal_circuit"
 			id: "38E6B3EBC483B21F"
 			rewards: [{
@@ -1510,9 +1516,11 @@
 		}
 		{
 			can_repeat: true
+			dependencies: ["262BD3D9D1DF7F13"]
 			hide_until_deps_complete: true
 			icon: "minecraft:dragon_breath"
 			id: "7A188FDFA4C591D7"
+			invisible_until_tasks: 500
 			rewards: [{
 				count: 128
 				id: "476116DFED4CC404"

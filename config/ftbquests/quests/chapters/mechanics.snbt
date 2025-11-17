@@ -193,6 +193,10 @@
 				"{ftbquests.chapter.mechanics.quest10.description3}"
 				"{ftbquests.chapter.mechanics.quest10.description4}"
 				"{ftbquests.chapter.mechanics.quest10.description5}"
+				""
+				"&5- &rKeep in mind that hovering over an item and clicking \"r\" will should the ways to acquire it and clicking \"u\" will show uses of it. "
+				""
+				"&7Make sure to check your keybinds and experiment it is a &l&nvery&r&7 useful tool."
 			]
 			id: "69D57FE912CAF112"
 			tasks: [{
@@ -315,6 +319,145 @@
 			}]
 			x: 0.0d
 			y: 2.5d
+		}
+		{
+			dependencies: ["02BC9C8FF2AE1650"]
+			description: [
+				"&bThroughput Boosting&r is a modifier that machines have which allow them to process more materials at once."
+				""
+				"These work like the Electric version of steam parallels with a few caveats."
+				"[\"\",{\"underlined\":1,\"translate\":\"What are steam parallels?\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"27F5DD0860E43CFF\"}}]"
+				""
+				"&7Modifier Logic on the next page"
+				""
+				"{@pagebreak}"
+				"&nHow they work:"
+				""
+				"If a recipe has 4 of a recipe worth of materials in it:"
+				""
+				"- It will process all &24&r recipes at once"
+				""
+				"- The duration increases by &240%"
+				""
+				"- The EU/t cost is decreased by &210%"
+			]
+			icon: "gtceu:super_electric_ore_factory"
+			id: "2152FBCC48D5D7AC"
+			tasks: [{
+				id: "0819F50E5287B587"
+				title: "Throughput Boosting"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["79CFAA5E52FF8766"]
+			description: [
+				"Machines with this will reward you for running many recipes at once."
+				""
+				"The bonus for Bulking is progressively linear meaning it scales up as you give it more recipes / power."
+				""
+				"&nFunctionality:"
+				""
+				"- If a recipe has 4 recipes in it, then it runs all &a4&r recipes and &4triples&r the duration."
+				""
+				"- This scales up to &a64x&r recipes at once for only a &448x&r increase in time."
+				""
+				"- A net &a33%&r increase in efficiency."
+			]
+			icon: "megacells:bulk_cell_component"
+			id: "33FE3C68B0BD21B1"
+			tasks: [{
+				id: "62D06C72396A9375"
+				title: "Bulking"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["553A8FA2F468DD90"]
+			description: [
+				"Threading is the absolute tier of machine capabilities which gives choice to the player on how their machine benefits."
+				""
+				"Think of threading as a Stat Point system, by which investing points into different \"stats\" you are able to get different benefits."
+				""
+				"This stats are given to you by the Helixes that you place on the machine and you attribute them using the controller present."
+				""
+				""
+				"{@pagebreak}"
+				"&nThe Stats:"
+				""
+				"- Generalis: &7Stats which can be attributed to any of the 4 other stats "
+				""
+				"- &aVelocitas&r: &7Stats used to reduce the recipe duration of machines"
+				""
+				"- &dEfficienta&r: &7Stats used to reduce the EU/t cost of machines"
+				""
+				"- &cParallelismus&r: &7Stats used to give your machines parallels"
+				""
+				"- &9Filum&r: &7Stats used to Multi-thread your machines"
+				""
+				""
+				"{@pagebreak}"
+				"&aVelocitas&r Benfits:"
+				""
+				"&7Halve the recipe duration for every (sum of halvings * 100) points"
+				""
+				"&nExample: "
+				""
+				"- To halve the duration once is 100 points for &a50%&r duration reduction."
+				"&7 100 = (100 * [1]) "
+				"- To halve it twice is 300 points for &a75%&r duration reduction. "
+				"&7 300 = (100 * [2+1])"
+				"- To halve it 3 times is 600 points for &a87.5%&r duration reduction."
+				"&7 600 = (100 * [3+2+1])"
+				""
+				"{@pagebreak}"
+				"&dEfficienta&r Benfits:"
+				""
+				"&7For every 30 points gain another thread worth of energy reduction"
+				""
+				"&nExample:"
+				""
+				"- 30 points is 50% EU/t cost or 1/2 cost"
+				"- 60 points is 66.6% EU/t cost or 1/3 cost"
+				"- 90 points is 75% EU/t cost or 1/4 cost"
+				""
+				"{@pagebreak}"
+				"&cParallelismus&r Benefits:"
+				""
+				"Gain 1 additional parallel per 20 points invested, but at the cost of increasing duration by sqrt(Parallels)"
+				""
+				"&nExample:"
+				""
+				"- 20 points is 2 total parallels at a cost of ~41% more duration"
+				"&7 ~41% increase = sqrt(2)"
+				"- 60 points is 4 total parallels at a cost of 100% more duration"
+				"&7 100% increase = sqrt(4)"
+				""
+				"{@pagebreak}"
+				"&9Filum&r Benefits:"
+				""
+				"Gain 1 additional multi-thread per 5 points invested. Multi-threads allow you to run additional types of recipes at once."
+				""
+				"&nExample:"
+				""
+				"- 1 multi-thread allows you to run 2 different type of recipes at once, but it does add the EU/t cost of the 2 recipes for the machine"
+				"&7 (Tungsten Plate AND Titanium Plate at the same time)"
+				""
+				"- 3 multi-threads allows you to run 4 different recipes types but their EU/t cost increases to the sum of the 4 recipes"
+			]
+			icon: "start_core:threading_controller"
+			id: "143CFCE710B59455"
+			tasks: [{
+				id: "2259A7835F1A06B8"
+				title: "Threading"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 4.0d
 		}
 	]
 	title: "{ftbquests.chapter.mechanics.title}"

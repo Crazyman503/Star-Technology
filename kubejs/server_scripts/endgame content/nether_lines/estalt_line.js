@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
         .itemInputs('15x gtceu:sodium_hydroxide_dust')
         .inputFluids('gtceu:oxygen 15000')
         .itemOutputs('1x gtceu:tytite_estaltadyne_dust')
-        .itemOutputs('5x gtceu:sodium_bisulfate_dust')
+        .itemOutputs('35x gtceu:sodium_bisulfate_dust')
         .duration(460)
         .EUt(GTValues.VA[GTValues.UHV]);
 
@@ -62,5 +62,12 @@ ServerEvents.recipes(event => {
         Fluid.of('gtceu:krypton 10'),
         Fluid.of('gtceu:xenon 10')
     );
+
+    event.recipes.gtceu.electrolyzer(id('phosphoric_acid_decomp'))
+        .inputFluids('gtceu:phosphoric_acid 1000')
+        .outputFluids('gtceu:hydrogen 3000', 'gtceu:oxygen 4000')
+        .itemOutputs('gtceu:phosphorus_dust')
+        .duration(1420)
+        .EUt(30);
 
 });

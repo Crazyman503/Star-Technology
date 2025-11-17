@@ -963,6 +963,7 @@
 		}
 		{
 			dependencies: ["49ACE56A8AC7A63E"]
+			hide_dependent_lines: true
 			id: "43F95399A861BDB4"
 			tasks: [
 				{
@@ -1674,6 +1675,20 @@
 			title: "{ftbquests.chapter.applied_energistics.quest96.title}"
 			x: -7.0d
 			y: -9.0d
+		}
+		{
+			dependencies: [
+				"311AE326F9287D02"
+				"43F95399A861BDB4"
+			]
+			id: "010737DB9CD70C4C"
+			tasks: [{
+				id: "069D3081DFFA38E1"
+				item: "expatternprovider:wireless_hub"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -7.0d
 		}
 	]
 	title: "{ftbquests.chapter.applied_energistics.title}"

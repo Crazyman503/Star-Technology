@@ -1188,6 +1188,7 @@
 				"3DF4C45A9424D4D1"
 			]
 			description: ["{ftbquests.chapter.adventures_in_abydos.quest48.description1}"]
+			hide_dependent_lines: true
 			id: "43DAD4B63603BFC3"
 			rewards: [{
 				id: "2D07335EE60C7099"
@@ -1665,6 +1666,11 @@
 				"{ftbquests.chapter.adventures_in_abydos.quest66.description3}"
 			]
 			id: "63AD0F905F2A262B"
+			rewards: [{
+				id: "06E28D11F33EF9D8"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
@@ -1688,6 +1694,11 @@
 				"{ftbquests.chapter.adventures_in_abydos.quest67.description3}"
 			]
 			id: "5BA6FB8F852C2629"
+			rewards: [{
+				id: "389B052A7F666317"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
@@ -1706,6 +1717,11 @@
 			description: ["{ftbquests.chapter.adventures_in_abydos.quest68.description1}"]
 			hide_dependency_lines: true
 			id: "4A0AD203617FEF0E"
+			rewards: [{
+				id: "4AE93EB6AC26AB13"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "510926669DC47CEC"
 				item: "kubejs:empty_coordinate_core"
@@ -1723,6 +1739,11 @@
 			]
 			hide_dependent_lines: true
 			id: "29A86F882D68239F"
+			rewards: [{
+				id: "3C6CC15FE24FFFC5"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0B5A515CFE1C6C24"
 				item: "kubejs:abyssal_stargate_rod"
@@ -1740,6 +1761,11 @@
 			]
 			hide_dependent_lines: true
 			id: "78117340F3D4549A"
+			rewards: [{
+				id: "32A59896F37EC3AF"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "289B786570065AE5"
 				item: "kubejs:infernal_stargate_rod"
@@ -1752,6 +1778,11 @@
 			dependencies: ["63AD0F905F2A262B"]
 			description: ["{ftbquests.chapter.adventures_in_abydos.quest71.description1}"]
 			id: "509F0DE97411C0CD"
+			rewards: [{
+				id: "73F3B1BFF6FAF98D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4B87905BEBE00F09"
 				item: "kubejs:untreated_abyssal_stargate_rod"
@@ -1764,6 +1795,11 @@
 			dependencies: ["5BA6FB8F852C2629"]
 			description: ["{ftbquests.chapter.adventures_in_abydos.quest72.description1}"]
 			id: "5829828FB6290587"
+			rewards: [{
+				id: "6CEE5EE948F04928"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4543736298C247BE"
 				item: "kubejs:untreated_infernal_stargate_rod"
@@ -1783,6 +1819,11 @@
 				"{ftbquests.chapter.adventures_in_abydos.quest73.description2}"
 			]
 			id: "13118B7518370623"
+			rewards: [{
+				id: "5F1C87DDDBE0917F"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7C4394204677D241"
 				item: "gtceu:bulk_ore_processing_array"
@@ -1911,6 +1952,11 @@
 			description: ["{ftbquests.chapter.adventures_in_abydos.quest80.description1}"]
 			hide_dependency_lines: true
 			id: "2F26A144D29B00A5"
+			rewards: [{
+				id: "37B8E6AFBC5B75E9"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "1E0E6D339410596C"
@@ -1991,6 +2037,7 @@
 			dependencies: [
 				"67E52B5738FC7398"
 				"5A91EE93457C617E"
+				"43DAD4B63603BFC3"
 			]
 			id: "25583D0BF59E1BC8"
 			subtitle: "{ftbquests.chapter.adventures_in_abydos.quest82.subtitle}"
@@ -2050,7 +2097,13 @@
 		}
 		{
 			dependencies: ["5BDA17962F4630EB"]
+			description: ["Only the strongests of coil insulators"]
 			id: "06BE744AEAA6C217"
+			rewards: [{
+				id: "21070641AEDDEF98"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "circle"
 			tasks: [{
 				id: "65ADF26AC53A059B"
@@ -2068,6 +2121,11 @@
 				"{ftbquests.chapter.adventures_in_abydos.quest87.description2}"
 			]
 			id: "3C99D83398AFC31C"
+			rewards: [{
+				id: "6A32F9EDDCD8304C"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "463AE4AD2822A9C5"
 				item: "gtceu:zirconium_ingot"
@@ -2126,7 +2184,13 @@
 		}
 		{
 			dependencies: ["22B85F7F13C66730"]
+			description: ["A way to copy the dream network your machines are on"]
 			id: "7E9A5A626648A859"
+			rewards: [{
+				id: "4A257F294C4D4C76"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "04E9B2997427EC44"
 				item: "start_core:lucinducer"

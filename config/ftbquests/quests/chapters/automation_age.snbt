@@ -642,7 +642,7 @@
 			]
 			title: "{ftbquests.chapter.automation_age.quest22.title}"
 			x: -9.5d
-			y: -9.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["3CB63B290C9EFAA2"]
@@ -2070,6 +2070,12 @@
 			]
 			hide_dependent_lines: true
 			id: "2DB216B224F2E8EF"
+			rewards: [{
+				count: 3
+				id: "3FFB7996ABA8F5EA"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			size: 1.0d
 			tasks: [{
 				id: "5BC0FD5122614E2B"
@@ -2218,6 +2224,11 @@
 			dependencies: ["020048FAC9576691"]
 			description: ["{ftbquests.chapter.automation_age.quest100.description1}"]
 			id: "3DBCF29F5183C6C5"
+			rewards: [{
+				id: "07A08D452D47B133"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "448AC96F3048A100"
 				item: "gtceu:industrial_barrel"
@@ -2283,7 +2294,14 @@
 				"2DB216B224F2E8EF"
 				"1E981BDF3F2C577D"
 			]
+			hide_dependent_lines: true
 			id: "09C1739F3FE3298F"
+			rewards: [{
+				count: 2
+				id: "776A9C03EC93261A"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.25d
 			tasks: [{
@@ -2296,7 +2314,18 @@
 		}
 		{
 			dependencies: ["4D9DAED52FF74B8B"]
+			description: [
+				"Large Variants of nearly all of the single blocks they allow you to overclock some machines you couldn't prior."
+				""
+				"Also capable of using parallel hatches, something you'll get familiar with soon."
+			]
 			id: "21B885A85E5764F9"
+			rewards: [{
+				count: 2
+				id: "3B3A6178EA51F071"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.25d
 			tasks: [{
@@ -2411,6 +2440,11 @@
 				"2DB216B224F2E8EF"
 			]
 			id: "272CE9BF358D64FE"
+			rewards: [{
+				id: "5C9D5984889446C9"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "69181872A1F96333"
 				item: "gtceu:quantum_star"
@@ -2423,6 +2457,11 @@
 			dependencies: ["46D5CAA2666803D4"]
 			description: ["&dLuV&r superconductor, can hold 64 amps in a 1x cable."]
 			id: "26126E2FA2B406E8"
+			rewards: [{
+				id: "7A89F0E0D13FB121"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3B2B7C559D191078"
 				item: "gtceu:twinite_single_wire"
@@ -2451,6 +2490,7 @@
 		}
 		{
 			dependencies: ["52FE319F5E176C37"]
+			hide_dependent_lines: true
 			id: "2027351D670E4CC6"
 			tasks: [{
 				id: "56732FAD42D189AA"
@@ -2463,6 +2503,11 @@
 		{
 			dependencies: ["3CB63B290C9EFAA2"]
 			id: "4BDAE5D4790ED230"
+			rewards: [{
+				id: "29E0C0EB00DB8AC2"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "149705D10E869C3F"
 				item: "gtceu:super_electric_ore_factory"
@@ -2478,15 +2523,16 @@
 				"09C1739F3FE3298F"
 			]
 			dependency_requirement: "one_completed"
-			hide_dependency_lines: true
+			description: ["[\"\",{\"underlined\":1,\"translate\":\"Read About It Here\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"2152FBCC48D5D7AC\"}}]"]
+			icon: "ftbquests:book"
 			id: "02BC9C8FF2AE1650"
 			tasks: [{
 				id: "54823A71E8D104D4"
 				title: "Go Read About Throughput Boosting"
 				type: "checkmark"
 			}]
-			x: -5.5d
-			y: 1.0d
+			x: -9.5d
+			y: -9.0d
 		}
 		{
 			dependencies: [

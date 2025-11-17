@@ -2,7 +2,22 @@ if (global.packmode !== 'hard'){
     (() => {   
 
 ServerEvents.recipes(event => {
-   const id = global.id;
+    const id = global.id;
+
+    ['stone','andesite','diorite','granite','diamond'].forEach(exHammer => {
+        var input = 'minecraft:' + exHammer;
+        if('stone'){var input = '#forge:cobblestone'};
+
+        event.shaped(Item.of(`exnihilosequentia:${exHammer}_hammer`, '{Damage:0}'), [
+            ' I ',
+            ' SI',
+            'S  '
+        ], {
+            I: input,
+            S: 'minecraft:stick'
+        });
+
+    });
     
     event.recipes.create.mixing('3x gtceu:bronze_ingot', ['3x minecraft:copper_ingot', '#forge:ingots/tin']).heatRequirement('lowheated').id('start:create_mixing/bronze');
     event.shapeless('3x gtceu:bronze_dust', ['gtceu:copper_dust', 'gtceu:copper_dust', 'gtceu:copper_dust', 'gtceu:tin_dust']).id('start:shapeless/bronze_dust');

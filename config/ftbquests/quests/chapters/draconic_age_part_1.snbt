@@ -32,14 +32,20 @@
 		{
 			id: "6EBA3C9601A8DDCC"
 			linked_quest: "5080743917931298"
-			x: -5.0d
-			y: 7.0d
+			x: -6.0d
+			y: 6.0d
 		}
 		{
 			id: "02B087F0A2892890"
 			linked_quest: "2F6115002741F26F"
-			x: -7.0d
-			y: 7.0d
+			x: -4.0d
+			y: 6.0d
+		}
+		{
+			id: "7F751F6B23BCF63D"
+			linked_quest: "1B6159E114BA50ED"
+			x: -1.0d
+			y: -5.0d
 		}
 	]
 	quests: [
@@ -244,10 +250,7 @@
 			y: -5.0d
 		}
 		{
-			dependencies: [
-				"215A1E80621E2880"
-				"5224152A7D22A0B5"
-			]
+			dependencies: ["5224152A7D22A0B5"]
 			description: ["{ftbquests.chapter.draconic_age_part_1.quest8.description1}"]
 			id: "310FC3F86513555F"
 			rewards: [{
@@ -379,8 +382,8 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
-			y: -4.0d
+			x: -3.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -432,36 +435,6 @@
 			y: 6.0d
 		}
 		{
-			dependencies: [
-				"6C8C6EA426060065"
-				"208FDFFCCA373C1F"
-			]
-			description: ["{ftbquests.chapter.draconic_age_part_1.quest15.description1}"]
-			icon: "gtceu:magmatic_plasma_bucket"
-			id: "215A1E80621E2880"
-			rewards: [{
-				id: "7A7388365616500C"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			shape: "circle"
-			tasks: [
-				{
-					id: "13271D35858C6726"
-					type: "checkmark"
-				}
-				{
-					id: "217417D24B5F8D16"
-					item: "gtceu:magmatic_plasma_bucket"
-					optional_task: true
-					type: "item"
-				}
-			]
-			title: "{ftbquests.chapter.draconic_age_part_1.quest15.title}"
-			x: -3.0d
-			y: -3.0d
-		}
-		{
 			dependencies: ["0168A45EB73911AC"]
 			description: ["{ftbquests.chapter.draconic_age_part_1.quest16.description1}"]
 			id: "18FD654260DFF1D6"
@@ -475,8 +448,8 @@
 				item: "start_core:abyssal_harvester"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 6.0d
+			x: -5.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["395C32B51E768458"]
@@ -579,8 +552,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.draconic_age_part_1.quest20.title}"
-			x: -6.0d
-			y: 8.0d
+			x: -5.0d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -863,6 +836,7 @@
 				"1772F46C9EAF6FB7"
 				"61E082759BC89A1E"
 			]
+			description: ["Quantum Mainframes Who?"]
 			id: "169C2E9DA1CF8F53"
 			rewards: [{
 				id: "3767B7D9C3E1212A"
@@ -880,6 +854,7 @@
 		}
 		{
 			dependencies: ["169C2E9DA1CF8F53"]
+			description: ["Crystal Mainframes Who?"]
 			id: "26FDB9612063F49D"
 			rewards: [{
 				id: "369733BBEC093142"
@@ -897,6 +872,7 @@
 		}
 		{
 			dependencies: ["26FDB9612063F49D"]
+			description: ["Wetware Mainframes Who?"]
 			id: "66D49CB8D8819E3F"
 			rewards: [{
 				id: "4F559A2D7738B87F"
@@ -914,6 +890,7 @@
 		}
 		{
 			dependencies: ["66D49CB8D8819E3F"]
+			description: ["Runic Wetware Mainframes Who?"]
 			id: "6F3DF16481990D99"
 			rewards: [{
 				id: "4D321A14B798F316"
@@ -972,6 +949,7 @@
 		}
 		{
 			dependencies: ["3AE729D3F47E9A2B"]
+			description: ["A boule purified to immense capabilities allowing for even stronger of circuits"]
 			id: "06EC98F6E6AFC2AF"
 			rewards: [{
 				id: "25348F8CF999B3FB"
@@ -988,6 +966,7 @@
 		}
 		{
 			dependencies: ["06EC98F6E6AFC2AF"]
+			description: ["Wafer go nom nom"]
 			id: "0DF30CDA8DE68E0C"
 			rewards: [{
 				count: 2
@@ -1007,6 +986,7 @@
 		}
 		{
 			dependencies: ["0DF30CDA8DE68E0C"]
+			description: ["Cheapest &cZPM&r and &3UV&r circuits..... and bug?"]
 			id: "074635DC3322DC99"
 			rewards: [{
 				id: "741879FCA3600628"
@@ -1039,14 +1019,15 @@
 				item: "start_core:sterile_cleaning_maintenance_hatch"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -5.0d
+			x: 0.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
 				"6A82CC9F01960097"
 				"31F87896FF834E63"
 			]
+			description: ["A machines capable of simulating the end in an uncorrupted and pure state"]
 			id: "09B55AFE7C06EC82"
 			rewards: [{
 				id: "5C220EE9FD21B829"
@@ -1065,6 +1046,7 @@
 		}
 		{
 			dependencies: ["45E628CF1DA8D380"]
+			description: ["The material of \"DrAgON\"s"]
 			id: "37F9C85CFCFFDA5F"
 			rewards: [{
 				id: "60D4025181F9B52A"
@@ -1084,6 +1066,7 @@
 				"3B1453C435E3950B"
 				"694E1F6458D5F72F"
 			]
+			description: ["An Auxiliary Fusion Ractor capable of running MK4 recipes and more"]
 			id: "38C2E3061C764F05"
 			rewards: [{
 				count: 2
@@ -1106,8 +1089,8 @@
 				"09B55AFE7C06EC82"
 				"749AB3A73D3744EA"
 				"54A48D25CC69507E"
-				"394D5FF2EEE3E610"
 			]
+			description: ["Refined as intended"]
 			id: "3AE729D3F47E9A2B"
 			rewards: [{
 				count: 3
@@ -1126,6 +1109,7 @@
 		}
 		{
 			dependencies: ["3AE729D3F47E9A2B"]
+			description: ["Core of technology for the long lost Draconic Empires"]
 			hide_dependent_lines: true
 			id: "694E1F6458D5F72F"
 			rewards: [{
@@ -1150,12 +1134,14 @@
 		}
 		{
 			dependencies: ["3B1453C435E3950B"]
+			description: ["4096 Parallels"]
 			id: "7FABD2E818B70D35"
 			rewards: [{
 				id: "5913DB9A14802483"
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			subtitle: "&7The &2UIV&7 Parallel Hatch"
 			tasks: [{
 				id: "1A9F5B4EAFB66C03"
 				item: "start_core:uiv_parallel_hatch"
@@ -1175,8 +1161,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.draconic_age_part_1.quest49.title}"
-			x: 21.5d
-			y: 1.5d
+			x: 16.5d
+			y: -3.0d
 		}
 		{
 			id: "51FAA26B6A537091"
@@ -1235,6 +1221,11 @@
 		}
 		{
 			dependencies: ["5944C4DE27F98FF3"]
+			description: [
+				"2048 Regular Parallels"
+				""
+				"8 Absolute Parallels"
+			]
 			id: "0ECE55AB7BBDAAA4"
 			rewards: [{
 				id: "19D703078F0CF47C"
@@ -1270,8 +1261,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.draconic_age_part_1.quest54.title}"
-			x: 21.5d
-			y: -2.5d
+			x: 16.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["218CABD676F3B732"]
@@ -1314,17 +1305,19 @@
 				"61C534992FB17066"
 				"208863E121666BF4"
 				"1359FB7E009CD041"
+				"2F62965D05463E44"
 			]
 			description: [
 				"{ftbquests.chapter.draconic_age_part_1.quest57.description1}"
 				""
 				""
-				"{ftbquests.chapter.draconic_age_part_1.quest57.description2}"
+				"&7{ftbquests.chapter.draconic_age_part_1.quest57.description2}"
 				""
+				"&7{ftbquests.chapter.draconic_age_part_1.quest57.description3}"
 				""
-				"{ftbquests.chapter.draconic_age_part_1.quest57.description3}"
+				"&7{ftbquests.chapter.draconic_age_part_1.quest57.description4}"
 				""
-				"{ftbquests.chapter.draconic_age_part_1.quest57.description4}"
+				"&7Hardmode is currently on development hiatus with expected return mid-late 2026"
 				"{@pagebreak}"
 				"{ftbquests.chapter.draconic_age_part_1.quest57.description5}"
 				""
@@ -1405,7 +1398,7 @@
 			]
 			id: "3BB8848F84026B45"
 			rewards: [{
-				count: 3
+				count: 77
 				id: "02458AAFDA811A7F"
 				item: "kubejs:coin"
 				type: "item"
@@ -1430,6 +1423,8 @@
 				""
 				""
 				"{ftbquests.chapter.draconic_age_part_1.quest58.description3}"
+				""
+				"&7cya in 2026"
 			]
 			id: "46982CD51A50CD07"
 			shape: "pentagon"
@@ -1633,6 +1628,7 @@
 		}
 		{
 			dependencies: ["16FDCABFC80579D5"]
+			description: ["The tip of technology the Draconic Empires were capable of.... it knows what you did"]
 			id: "3B1453C435E3950B"
 			rewards: [{
 				id: "6CB5C3D8188E33D0"
@@ -1646,10 +1642,11 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: 4.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["3AE6E85C2FC76DE9"]
+			description: ["Scheming......"]
 			id: "16FDCABFC80579D5"
 			rewards: [{
 				id: "748B871094F29C87"
@@ -1663,13 +1660,14 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: 6.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
 				"35D5CC08AE53A7FA"
 				"5A724E912A475EAB"
 			]
+			description: ["Awoken and aware"]
 			id: "3AE6E85C2FC76DE9"
 			rewards: [{
 				id: "1307F45A07A8F297"
@@ -1683,15 +1681,15 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: 8.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
 				"09B55AFE7C06EC82"
 				"25436E09A8F9E9C8"
 				"058533FBFBA38DC8"
-				"394D5FF2EEE3E610"
 			]
+			description: ["A medium of growth DNA for even more capable neuro-technology"]
 			id: "1799430093ABCC64"
 			rewards: [{
 				count: 3
@@ -1712,12 +1710,14 @@
 				"7FABD2E818B70D35"
 				"694E1F6458D5F72F"
 			]
+			description: ["16 Absolute Parallels"]
 			id: "4D556DE76399E083"
 			rewards: [{
 				id: "058BF3F098253930"
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			subtitle: "&7The &2UIV&7 Absolute Parallel Hatch"
 			tasks: [{
 				id: "2388751B6210D3C4"
 				item: "start_core:uiv_absolute_parallel_hatch"
@@ -1755,14 +1755,12 @@
 					type: "item"
 				}
 			]
-			x: -2.0d
-			y: 6.0d
+			x: 0.0d
+			y: 4.0d
 		}
 		{
-			dependencies: [
-				"1799430093ABCC64"
-				"394D5FF2EEE3E610"
-			]
+			dependencies: ["1799430093ABCC64"]
+			description: ["This is what Draconic Circuits were meant to be"]
 			id: "6D6C79E7CBBCC893"
 			rewards: [{
 				id: "0D4F24ECDD2D65B4"
@@ -1782,6 +1780,7 @@
 				"2DACE6EF41A118D9"
 				"3FBD3851CCB3F14E"
 			]
+			description: ["&eUXV&r Cable Material"]
 			hide_dependent_lines: true
 			id: "31F87896FF834E63"
 			rewards: [{
@@ -1803,6 +1802,7 @@
 				"37F9C85CFCFFDA5F"
 				"3D239E0F7B45AE92"
 			]
+			description: ["Corrupted by the abyss it is the closest thing known to primordial wyrms"]
 			id: "6A82CC9F01960097"
 			rewards: [{
 				id: "3210FE0BBF45E34D"
@@ -1822,6 +1822,7 @@
 				"799F6F79B9FF86DF"
 				"4777033988C9F512"
 			]
+			description: ["The &aUEV&r superconductor used in your machines and components."]
 			id: "5224152A7D22A0B5"
 			rewards: [{
 				id: "0A16190629DBA7B9"
@@ -1838,6 +1839,7 @@
 		}
 		{
 			dependencies: ["1AEBAE3050B72906"]
+			description: ["Somehow, some way, they just refuse to decay."]
 			hide_dependent_lines: true
 			id: "4777033988C9F512"
 			rewards: [{
@@ -1889,6 +1891,7 @@
 		}
 		{
 			dependencies: ["45E628CF1DA8D380"]
+			description: ["The &2UIV&r superconductor used in your machines and components."]
 			id: "33FBF8561A3D901D"
 			rewards: [{
 				id: "703863528004F25F"
@@ -1905,6 +1908,8 @@
 		}
 		{
 			dependencies: ["38C2E3061C764F05"]
+			description: ["Do do do do do do, dodododo do, odododododo do, dooo, dooo, dooo, dooo, dododododo do, ododododo do, dododododododdoooooddo da"]
+			hide_dependent_lines: true
 			id: "2F62965D05463E44"
 			rewards: [{
 				id: "6A891782D4FA2656"
@@ -1916,7 +1921,7 @@
 				item: "gtceu:maxwellium_bucket"
 				type: "item"
 			}]
-			x: 8.0d
+			x: 10.0d
 			y: 2.0d
 		}
 		{
@@ -1975,11 +1980,12 @@
 				}
 			]
 			title: "{ftbquests.chapter.draconic_age_part_1.quest84.title}"
-			x: 0.0d
-			y: 4.0d
+			x: -1.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["310FC3F86513555F"]
+			description: ["&2UIV&r Cable Material"]
 			hide_dependent_lines: true
 			id: "00333140377A33F5"
 			rewards: [{
@@ -2001,9 +2007,11 @@
 				"076F21506A7C19D5"
 			]
 			description: [
-				"stuff"
-				"things"
-				"non-tooltip information"
+				"Stabilization? Threads? Stocking? Research? It is faster than all of your assembly lines."
+				""
+				"This...."
+				""
+				"This is the pinnacle of component creation"
 			]
 			id: "4A13D4F1B22DBCAF"
 			shape: "gear"
@@ -2025,15 +2033,25 @@
 				item: "kubejs:why_are_you_worrying"
 				type: "item"
 			}]
-			x: 21.5d
-			y: 3.5d
+			x: 16.5d
+			y: -5.0d
 		}
 		{
 			dependencies: [
 				"6A82CC9F01960097"
 				"2DACE6EF41A118D9"
 			]
+			description: [
+				"You like the Chemical Plant?"
+				""
+				"Well this is its older sibling"
+			]
 			id: "7C050BBD087D46BD"
+			rewards: [{
+				id: "0624D90E24CCA3B2"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2B0B4B5EEA540F04"
 				item: "gtceu:atomic_synthesis_plant"
@@ -2044,17 +2062,24 @@
 		}
 		{
 			dependencies: ["0168A45EB73911AC"]
+			description: ["A component part assembly with all the trinkets"]
 			id: "49E80236C69B95C1"
+			rewards: [{
+				id: "32CC08CCB827F2D6"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6BACF640E12ACD2E"
 				item: "gtceu:component_part_hub"
 				type: "item"
 			}]
-			x: -4.0d
+			x: -2.0d
 			y: 6.0d
 		}
 		{
 			dependencies: ["2DACE6EF41A118D9"]
+			description: ["{ftbquests.chapter.draconic_age_part_1.quest61.description1} But differently?"]
 			hide_dependency_lines: true
 			id: "208863E121666BF4"
 			shape: "none"
@@ -2075,8 +2100,8 @@
 				item: "start_core:beacon_of_lucidity"
 				type: "item"
 			}]
-			x: 22.5d
-			y: 2.5d
+			x: 17.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["20ABDF48307586F2"]
@@ -2086,15 +2111,18 @@
 				item: "start_core:uiv_256a_dream_link_energy_hatch"
 				type: "item"
 			}]
-			x: 22.5d
-			y: 4.5d
+			x: 17.5d
+			y: -4.0d
 		}
 		{
-			dependencies: [
-				"394D5FF2EEE3E610"
-				"5A724E912A475EAB"
-			]
+			dependencies: ["5A724E912A475EAB"]
+			description: ["We're going to need some powerful data containers"]
 			id: "681FD6DF05A9DF79"
+			rewards: [{
+				id: "1E34E2CB3DC6C4E4"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1600579B58EEF6A8"
 				item: {
@@ -2109,7 +2137,13 @@
 		}
 		{
 			dependencies: ["6D6C79E7CBBCC893"]
+			description: ["Engraved with only the toughest of conductors available"]
 			id: "5A724E912A475EAB"
+			rewards: [{
+				id: "2EB652113BA6B7C9"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1FC13A74F9418DDB"
 				item: "kubejs:awakened_draconic_wetware_printed_circuit_board"
@@ -2123,21 +2157,35 @@
 				"4A13D4F1B22DBCAF"
 				"2F62965D05463E44"
 			]
+			description: [
+				"I said not to worry about it."
+				""
+				""
+				""
+				"&d&mBingus"
+			]
 			hide_dependent_lines: true
+			hide_until_deps_complete: true
 			id: "1359FB7E009CD041"
+			rewards: [{
+				id: "034A97D511BB019E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6207A8177D8031C2"
 				item: "kubejs:worries_about_it"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 2.0d
+			x: 11.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
 				"4D556DE76399E083"
 				"578BB997FB677D37"
 			]
+			description: ["The Stats assigner for ALL of your threaded multiblock needs"]
 			id: "076F21506A7C19D5"
 			tasks: [{
 				id: "37C21F56452F96BB"
@@ -2149,6 +2197,8 @@
 		}
 		{
 			dependencies: ["076F21506A7C19D5"]
+			description: ["[\"\",{\"underlined\":1,\"translate\":\"Read About It Here\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"143CFCE710B59455\"}}]"]
+			icon: "ftbquests:book"
 			id: "553A8FA2F468DD90"
 			tasks: [{
 				id: "418FB6F41909F13D"
@@ -2160,7 +2210,13 @@
 		}
 		{
 			dependencies: ["4450509C08F416EC"]
+			description: ["Tier 1 Universal Helix"]
 			id: "1B661108D7577FBE"
+			rewards: [{
+				id: "61A47D7B7315FA63"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "59018BE6CC6BB9ED"
 				item: "start_core:uv_supreme_thread_helix"
@@ -2175,18 +2231,30 @@
 				"35C687F2D0931ECB"
 				"652C158FF3FC6090"
 			]
+			description: ["Tier 2 Universal Helix"]
 			id: "13508A2A55EAA6E1"
+			rewards: [{
+				id: "6F25641E021199E7"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "303F341173DA5E7E"
 				item: "start_core:uev_supreme_thread_helix"
 				type: "item"
 			}]
 			x: 10.0d
-			y: -4.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["1B661108D7577FBE"]
+			description: ["Tier 1 Speed Helix"]
 			id: "35C687F2D0931ECB"
+			rewards: [{
+				id: "3A4D32FE9DDB3536"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1BEE5380EFFC6A96"
 				item: "start_core:uhv_overdrive_thread_helix"
@@ -2197,7 +2265,13 @@
 		}
 		{
 			dependencies: ["1B661108D7577FBE"]
+			description: ["Tier 1 Parallel Helix"]
 			id: "549D02412C9707FB"
+			rewards: [{
+				id: "22CC66F9103CED04"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "326C0279ED6466B6"
 				item: "start_core:uhv_coprocessor_thread_helix"
@@ -2208,7 +2282,13 @@
 		}
 		{
 			dependencies: ["1B661108D7577FBE"]
+			description: ["Tier 1 Thread Helix"]
 			id: "652C158FF3FC6090"
+			rewards: [{
+				id: "12CBB464B420E04F"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "11F882D8186CBA98"
 				item: "start_core:uhv_weaving_thread_helix"
@@ -2219,18 +2299,52 @@
 		}
 		{
 			dependencies: ["1EB60E6DE2086158"]
+			description: ["By using special catalyst you can achieve a &a33%&r reduction in recipe time. The same type of bonus you would get with Gas Boosting in an &7EBF&r or &7ABS&r."]
 			id: "68204750A7B0569E"
 			tasks: [{
-				id: "3E40AC452445186E"
-				title: "Catalyst Boosting"
-				type: "checkmark"
+				id: "06B0A98E6FE20328"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						display: {
+							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Hell Forge Catalyst\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "kubejs:ascendant_catalyst"
+							}
+							{
+								Count: 1b
+								id: "kubejs:infernal_catalyst"
+							}
+							{
+								Count: 1b
+								id: "kubejs:abyssal_catalyst"
+							}
+						]
+					}
+				}
+				type: "item"
 			}]
+			title: "Catalyst Boosting"
 			x: -6.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["076F21506A7C19D5"]
+			description: [
+				"Machines at the pinnacle of technology...."
+				""
+				"They are slightly powerful"
+			]
 			id: "589A4AA6BF7C5097"
+			rewards: [{
+				id: "6363036C2FF73E28"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6502CCEC5301617C"
 				item: {
@@ -2295,7 +2409,13 @@
 		}
 		{
 			dependencies: ["074635DC3322DC99"]
+			description: ["Buzz buzz, its Helixing time"]
 			id: "4450509C08F416EC"
+			rewards: [{
+				id: "7F794F231F8464BA"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "66528D9DCFE85EE7"
 				item: "kubejs:prismalic_helix_core"
@@ -2309,7 +2429,13 @@
 				"4450509C08F416EC"
 				"694E1F6458D5F72F"
 			]
+			description: ["You spin me right round....."]
 			id: "578BB997FB677D37"
+			rewards: [{
+				id: "5520D9C4880B014D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2CC057A31CDA0898"
 				item: "kubejs:prisma_helical_nucleus"
@@ -2317,6 +2443,50 @@
 			}]
 			x: 8.0d
 			y: -2.0d
+		}
+		{
+			dependencies: [
+				"13508A2A55EAA6E1"
+				"20ABDF48307586F2"
+				"549D02412C9707FB"
+			]
+			description: ["Tier 2 Parallel Helix"]
+			hide_until_deps_complete: true
+			id: "47EEF1366A681004"
+			rewards: [{
+				id: "00B7C82A10F9648C"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "21208A79D41A3E69"
+				item: "start_core:uiv_coprocessor_thread_helix"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"13508A2A55EAA6E1"
+				"20ABDF48307586F2"
+				"652C158FF3FC6090"
+			]
+			description: ["Tier 2 Thread Helix"]
+			hide_until_deps_complete: true
+			id: "56E208A3DA6183B8"
+			rewards: [{
+				id: "21AD6B1ADB3CB2E6"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7861E14D23795A5E"
+				item: "start_core:uiv_weaving_thread_helix"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -4.0d
 		}
 	]
 	title: "{ftbquests.chapter.draconic_age_part_1.title}"

@@ -135,6 +135,7 @@
 				"397C622B06B1165A"
 			]
 			description: ["{ftbquests.chapter.industrial_revolution.quest6.description1}"]
+			hide_dependent_lines: true
 			id: "0E88CB5E68212006"
 			rewards: [{
 				id: "33061CD7DE7F3DEE"
@@ -500,7 +501,11 @@
 			y: -5.5d
 		}
 		{
-			dependencies: ["5F80268C02FAD5F6"]
+			dependencies: [
+				"5F80268C02FAD5F6"
+				"0E88CB5E68212006"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{ftbquests.chapter.industrial_revolution.quest26.description1}"]
 			id: "10F2237FF0C87F62"
 			rewards: [{

@@ -96,7 +96,7 @@ ServerEvents.recipes(event => {
           .itemOutputs(`kubejs:${shard.element}_infused_shard`)
           .chancedOutput(`kubejs:${shard.element}_infused_shard`, 2500, 0)
           .duration(120)
-          .EUt(GTValues.VHA[GTValues.UV]);
+          .EUt(GTValues.VHA[GTValues.LuV]);
 
         event.recipes.gtceu.autoclave(id(`${shard.element}_infused_shard_nether_tempered`))
           .itemInputs('kubejs:nether_tempered_shard')
@@ -104,7 +104,7 @@ ServerEvents.recipes(event => {
           .itemOutputs(`3x kubejs:${shard.element}_infused_shard`)
           .chancedOutput(`kubejs:${shard.element}_infused_shard`, 2000, 0)
           .duration(60)
-          .EUt(GTValues.VHA[GTValues.UEV]);
+          .EUt(GTValues.VHA[GTValues.ZPM]);
       
     });
 
@@ -153,7 +153,6 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:magmada_alloy 16', 'gtceu:utopian_akreyrium 50')
         .itemOutputs('256x kubejs:nether_tempered_shard')
         .duration(1200)
-        .dimension('minecraft:the_nether')
         .EUt(GTValues.VHA[GTValues.UHV]);
 
 });

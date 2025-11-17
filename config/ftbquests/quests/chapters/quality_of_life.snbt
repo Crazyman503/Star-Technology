@@ -374,8 +374,6 @@
 			description: [
 				"{ftbquests.chapter.quality_of_life.quest20.description1}"
 				""
-				"&4UPDATE TO INCLUDE ADDED ITEMS"
-				""
 				"Machine Memory copys single block configurations"
 				""
 				"Portable scanner gives info on blocks clicked (helps with multi info)"

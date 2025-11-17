@@ -87,7 +87,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.dimensional_destabiliser(id('temp_crookesite_mining'))
         .itemInputs('kubejs:lightning_infused_shard')
         .inputFluids('gtceu:pcb_coolant 16000')
-        .itemOutputs('16x gtceu:raw_crookesite')
+        .itemOutputs('32x gtceu:crookesite_dust')
         .chancedOutput('gtceu:tiny_nether_star_dust', 8000, 0)
         .outputFluids('gtceu:hot_pcb_coolant 19200')
         .duration(400)

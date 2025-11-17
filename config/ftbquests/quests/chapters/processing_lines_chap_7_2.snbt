@@ -35,8 +35,8 @@
 		{
 			id: "25269DDFF2DB70C8"
 			linked_quest: "266F486F2425C35E"
-			x: 13.5d
-			y: -2.0d
+			x: 11.0d
+			y: -1.5d
 		}
 		{
 			id: "0241D0DF0F320CDB"
@@ -89,6 +89,14 @@
 			size: 1.5d
 			x: 17.5d
 			y: 7.0d
+		}
+		{
+			id: "67B0A8BEF1D69846"
+			linked_quest: "31F87896FF834E63"
+			shape: "gear"
+			size: 1.5d
+			x: 17.5d
+			y: -4.0d
 		}
 	]
 	quests: [
@@ -584,8 +592,8 @@
 				item: "gtceu:thallium_antimonide_dust"
 				type: "item"
 			}]
-			x: 13.0d
-			y: -3.0d
+			x: 12.0d
+			y: -2.0d
 		}
 		{
 			id: "4973E84B699CFCE2"
@@ -594,21 +602,18 @@
 				item: "gtceu:antimony_dust"
 				type: "item"
 			}]
-			x: 12.5d
-			y: -2.0d
+			x: 11.0d
+			y: -2.5d
 		}
 		{
-			dependencies: [
-				"17FC1E92368D840B"
-				"47AAC1C525D0EE12"
-			]
+			dependencies: ["6D5BF994D776C721"]
 			id: "05AD1039268E86A4"
 			tasks: [{
 				id: "479DC7924234363F"
 				item: "gtceu:lepton_resonant_thallium_antimonide_dust"
 				type: "item"
 			}]
-			x: 13.0d
+			x: 14.5d
 			y: -4.0d
 		}
 		{
@@ -627,7 +632,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 14.5d
+			x: 16.0d
 			y: -4.0d
 		}
 		{
@@ -635,6 +640,7 @@
 				"7ADE549CFFB6AB36"
 				"7791705FF3192010"
 			]
+			description: ["Only the longest of polymer names"]
 			id: "1B6159E114BA50ED"
 			rewards: [{
 				count: 4
@@ -1639,10 +1645,7 @@
 			y: 3.0d
 		}
 		{
-			dependencies: [
-				"394D5FF2EEE3E610"
-				"253FE2C976FBCA5D"
-			]
+			dependencies: ["253FE2C976FBCA5D"]
 			id: "09996867BC3E5819"
 			tasks: [{
 				id: "7FA4661139DC8B30"
@@ -1653,6 +1656,7 @@
 			y: 7.0d
 		}
 		{
+			dependencies: ["262BD3D9D1DF7F13"]
 			icon: "gtceu:dragon_breath_bucket"
 			id: "749AB3A73D3744EA"
 			tasks: [
@@ -1674,7 +1678,6 @@
 			dependencies: [
 				"349B743B5F3792F1"
 				"3B53D64D9EA506E1"
-				"394D5FF2EEE3E610"
 			]
 			icon: "gtceu:pyrothyin_bucket"
 			id: "60C58CBCA20CC288"
@@ -1697,7 +1700,6 @@
 			dependencies: [
 				"7D92FDFAE5CBA103"
 				"3B53D64D9EA506E1"
-				"394D5FF2EEE3E610"
 			]
 			icon: "gtceu:dracotropin_bucket"
 			id: "369119C0801269FD"
@@ -1720,7 +1722,6 @@
 			dependencies: [
 				"1B5E265DA009B4B6"
 				"3B53D64D9EA506E1"
-				"394D5FF2EEE3E610"
 			]
 			icon: "gtceu:metavorexin_bucket"
 			id: "7CBD3A984028C356"
@@ -1743,7 +1744,6 @@
 			dependencies: [
 				"122ECDEA3014F0F6"
 				"3B53D64D9EA506E1"
-				"394D5FF2EEE3E610"
 			]
 			icon: "gtceu:aethermetin_bucket"
 			id: "4447ADD635826F25"
@@ -1766,7 +1766,6 @@
 			dependencies: [
 				"60AA88F6743636C0"
 				"3B53D64D9EA506E1"
-				"394D5FF2EEE3E610"
 			]
 			icon: "gtceu:hemavyrin_bucket"
 			id: "6C6379760CE78AC5"
@@ -1789,7 +1788,6 @@
 			dependencies: [
 				"1C5C32E5A47F2D2D"
 				"30241EA7B41A3212"
-				"394D5FF2EEE3E610"
 			]
 			icon: "gtceu:ignisferin_bucket"
 			id: "5BB6B21843A7107F"
@@ -1812,7 +1810,6 @@
 			dependencies: [
 				"0D18B33E2C26A942"
 				"30241EA7B41A3212"
-				"394D5FF2EEE3E610"
 			]
 			icon: "gtceu:cryokinase_bucket"
 			id: "798E1B26BA950E09"
@@ -1835,7 +1832,6 @@
 			dependencies: [
 				"44B18C095DB4DF17"
 				"30241EA7B41A3212"
-				"394D5FF2EEE3E610"
 			]
 			icon: "gtceu:stormcallin_bucket"
 			id: "30F23A53A3BD37A1"
@@ -1859,7 +1855,6 @@
 				"239A0034C8425661"
 				"30241EA7B41A3212"
 				"74A0BF2EA205B23C"
-				"394D5FF2EEE3E610"
 			]
 			icon: "gtceu:voidrenin_bucket"
 			id: "50B36A9870682FDB"
@@ -1882,7 +1877,6 @@
 			dependencies: [
 				"5D3B5DEE3B2D30C0"
 				"30241EA7B41A3212"
-				"394D5FF2EEE3E610"
 			]
 			icon: "gtceu:terrathroxin_bucket"
 			id: "42BF157CA44898DE"
@@ -1908,7 +1902,6 @@
 				"42BF157CA44898DE"
 				"50B36A9870682FDB"
 				"30F23A53A3BD37A1"
-				"394D5FF2EEE3E610"
 			]
 			icon: "gtceu:breath_hormone_complex_bucket"
 			id: "54A48D25CC69507E"
@@ -1931,7 +1924,6 @@
 			dependencies: [
 				"6CC2A99E0E26C42B"
 				"68FD71F1A73B47A1"
-				"394D5FF2EEE3E610"
 			]
 			icon: "gtceu:abyssal_nutrient_blend_bucket"
 			id: "0E2F6184D7767AFD"
@@ -1978,7 +1970,6 @@
 				"7E99889B3427A842"
 				"221A840C4A071343"
 				"0F4E7B496BC5C896"
-				"394D5FF2EEE3E610"
 			]
 			icon: "gtceu:drac_endrocritic_medium_bucket"
 			id: "7DB00D797172F8F8"
@@ -1998,6 +1989,7 @@
 			y: 7.0d
 		}
 		{
+			dependencies: ["218CABD676F3B732"]
 			id: "1599CBA5069B1B4C"
 			tasks: [{
 				id: "2DE1FA566DC988C4"
@@ -2011,7 +2003,6 @@
 			dependencies: [
 				"7DB00D797172F8F8"
 				"1599CBA5069B1B4C"
-				"394D5FF2EEE3E610"
 			]
 			icon: "gtceu:drac_aurouric_endrocrinal_medium_bucket"
 			id: "6CC2A99E0E26C42B"
@@ -2031,10 +2022,7 @@
 			y: 5.5d
 		}
 		{
-			dependencies: [
-				"09996867BC3E5819"
-				"394D5FF2EEE3E610"
-			]
+			dependencies: ["09996867BC3E5819"]
 			icon: "gtceu:draconic_hormone_residue_bucket"
 			id: "221A840C4A071343"
 			tasks: [
@@ -2078,7 +2066,6 @@
 			dependencies: [
 				"3F976C15932579FD"
 				"56CA67C022703D4E"
-				"394D5FF2EEE3E610"
 			]
 			id: "30241EA7B41A3212"
 			tasks: [{
@@ -2117,7 +2104,6 @@
 				"7CBD3A984028C356"
 				"60C58CBCA20CC288"
 				"369119C0801269FD"
-				"394D5FF2EEE3E610"
 			]
 			icon: "gtceu:growth_hormone_complex_bucket"
 			id: "25436E09A8F9E9C8"
@@ -2170,10 +2156,7 @@
 			y: 8.0d
 		}
 		{
-			dependencies: [
-				"0E2F6184D7767AFD"
-				"394D5FF2EEE3E610"
-			]
+			dependencies: ["0E2F6184D7767AFD"]
 			icon: "gtceu:condensed_abyssal_nutrient_blend_bucket"
 			id: "68DA57B7791A76E1"
 			tasks: [
@@ -2192,10 +2175,7 @@
 			y: 3.5d
 		}
 		{
-			dependencies: [
-				"68DA57B7791A76E1"
-				"394D5FF2EEE3E610"
-			]
+			dependencies: ["68DA57B7791A76E1"]
 			icon: "gtceu:amino_primed_medium_bucket"
 			id: "3F976C15932579FD"
 			tasks: [
@@ -2217,7 +2197,6 @@
 			dependencies: [
 				"30241EA7B41A3212"
 				"0E2F6184D7767AFD"
-				"394D5FF2EEE3E610"
 			]
 			icon: "gtceu:drac_peptide_amino_residue_bucket"
 			id: "3B53D64D9EA506E1"
@@ -2321,26 +2300,7 @@
 			y: 8.0d
 		}
 		{
-			description: [
-				"{ftbquests.chapter.processing_lines_chap_7_2.quest122.description1}"
-				"[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.processing_lines_chap_7_2.quest122.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"09B55AFE7C06EC82\"}}]"
-				""
-				"&4DURING TESTING CHECK IF FIXED SERVER SIDE (SHOULD BE)"
-			]
-			hide_dependent_lines: true
-			icon: "architects_palette:chiseled_abyssaline_bricks"
-			id: "394D5FF2EEE3E610"
-			shape: "none"
-			size: 1.5d
-			tasks: [{
-				id: "5817B648D618FC03"
-				title: "{ftbquests.chapter.processing_lines_chap_7_2.quest122.task_6347742623747865603.title}"
-				type: "checkmark"
-			}]
-			x: 13.5d
-			y: 4.5d
-		}
-		{
+			dependencies: ["37F9C85CFCFFDA5F"]
 			id: "253FE2C976FBCA5D"
 			shape: "circle"
 			size: 1.5d
@@ -2353,10 +2313,7 @@
 			y: 4.75d
 		}
 		{
-			dependencies: [
-				"253FE2C976FBCA5D"
-				"394D5FF2EEE3E610"
-			]
+			dependencies: ["253FE2C976FBCA5D"]
 			id: "0CD4A2A7CDC7A06E"
 			tasks: [{
 				id: "136C2FBCEF223E99"
@@ -2367,10 +2324,7 @@
 			y: 2.5d
 		}
 		{
-			dependencies: [
-				"0CD4A2A7CDC7A06E"
-				"394D5FF2EEE3E610"
-			]
+			dependencies: ["0CD4A2A7CDC7A06E"]
 			id: "588C0950E5334025"
 			shape: "gear"
 			tasks: [{
@@ -2383,10 +2337,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: [
-				"54A48D25CC69507E"
-				"394D5FF2EEE3E610"
-			]
+			dependencies: ["54A48D25CC69507E"]
 			id: "6F5453EB015DE189"
 			shape: "gear"
 			tasks: [{
@@ -2399,10 +2350,7 @@
 			y: 0.5d
 		}
 		{
-			dependencies: [
-				"394D5FF2EEE3E610"
-				"1799430093ABCC64"
-			]
+			dependencies: ["1799430093ABCC64"]
 			id: "2C80DB1A0465B07E"
 			shape: "gear"
 			tasks: [{
@@ -2413,6 +2361,31 @@
 			title: "{ftbquests.chapter.processing_lines_chap_7_2.quest127.title}"
 			x: 18.5d
 			y: 5.5d
+		}
+		{
+			dependencies: [
+				"5F19DF0BE8D40DB6"
+				"17FC1E92368D840B"
+			]
+			id: "6D5BF994D776C721"
+			tasks: [{
+				id: "793C807F3872428D"
+				item: "gtceu:tiny_lepton_resonant_thallium_antimonide_dust"
+				type: "item"
+			}]
+			x: 13.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["47AAC1C525D0EE12"]
+			id: "5F19DF0BE8D40DB6"
+			tasks: [{
+				id: "5CB758DE26A99621"
+				item: "gtceu:tiny_thallium_antimonide_dust"
+				type: "item"
+			}]
+			x: 12.5d
+			y: -3.0d
 		}
 	]
 	title: "{ftbquests.chapter.processing_lines_chap_7_2.title}"

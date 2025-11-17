@@ -273,6 +273,56 @@
 					item: "exnihilosequentia:dust"
 					type: "item"
 				}
+				{
+					id: "35F1068467C86DEE"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							display: {
+								Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Simple Hammers\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "exnihilosequentia:stone_hammer"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "exnihilosequentia:andesite_hammer"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "exnihilosequentia:granite_hammer"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "exnihilosequentia:diorite_hammer"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "exnihilosequentia:diamond_hammer"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					type: "item"
+				}
 			]
 			title: "{ftbquests.chapter.early_game.quest8.title}"
 			x: -4.5d
@@ -1294,11 +1344,7 @@
 				"3D0F6CA8028C074B"
 				"753ECD744470EFF2"
 			]
-			description: [
-				"{ftbquests.chapter.early_game.quest38.description1}"
-				""
-				"&4DONT MENTION COAL"
-			]
+			description: ["{ftbquests.chapter.early_game.quest38.description1}"]
 			icon: "gtceu:coke_oven"
 			id: "07C5B4C5EE2F948D"
 			rewards: [{
@@ -2072,8 +2118,6 @@
 				"{ftbquests.chapter.early_game.quest64.description1}"
 				""
 				"{ftbquests.chapter.early_game.quest64.description2}"
-				""
-				"&4ADD NOTE THAT NEEDS WATER OR KABOOM"
 			]
 			id: "1289465781707205"
 			optional: true
@@ -2292,7 +2336,8 @@
 		}
 		{
 			dependencies: ["6B059D530FCE7428"]
-			description: ["{ftbquests.chapter.early_game.quest72.description1}"]
+			dependency_requirement: "one_completed"
+			description: ["{ftbquests.chapter.early_game.quest72.description1} "]
 			icon: "minecraft:book"
 			id: "27F5DD0860E43CFF"
 			optional: true

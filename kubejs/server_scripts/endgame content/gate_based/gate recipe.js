@@ -563,11 +563,11 @@ ServerEvents.recipes(event => {
         Gato('poomba', 'infernal', 'abyssal', 'brown', 'black');
         Gato('vasilisa', 'infernal', 'infernal', 'gray', 'white');
         {
-            let V = 'placeablemaxwell:valenok'
-            let M = 'placeablemaxwell:mars'
-            let S = 'placeablemaxwell:vasilisa'
-            let P = 'placeablemaxwell:poomba'
-            let W = 'kubejs:worries_about_it'
+            let V = '2x placeablemaxwell:valenok'
+            let M = '2x placeablemaxwell:mars'
+            let S = '2x placeablemaxwell:vasilisa'
+            let P = '2x placeablemaxwell:poomba'
+            let W = '16x kubejs:worries_about_it'
         event.recipes.gtceu.gate_assembly(id(`maxwell`))
             .itemInputs(V,V,V,W,M,M,M,M,M,W,S,S,S,S,S,W,P,P,P,P,P,W,V,V)
             .inputFluids('gtceu:maxwellium 444444', `gtceu:black_dye 2500000`, `gtceu:pure_dragon_breath 250000`)

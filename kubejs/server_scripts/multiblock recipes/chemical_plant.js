@@ -351,7 +351,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.absolute_reduction(id('estalt_skip'))
         .itemInputs('1x gtceu:estaltadyne_dust','2x gtceu:carbon_dust','15x gtceu:sodium_hydroxide_dust','15x gtceu:phosphate_dust')
         .inputFluids('gtceu:oxygen 15000','gtceu:hydrofluoric_acid 9000')
-        .itemOutputs('4x gtceu:estalt_dust','2x gtceu:aluminium_dust','5x gtceu:sodium_bisulfate_dust','12x gtceu:titanium_trifluoride_dust')
+        .itemOutputs('4x gtceu:estalt_dust','2x gtceu:aluminium_dust','35x gtceu:sodium_bisulfate_dust','12x gtceu:titanium_trifluoride_dust')
         .outputFluids('gtceu:phosphoric_acid 3000','gtceu:carbon_dioxide 2000')
         .duration(178)
         .EUt(GTValues.VHA[GTValues.UIV]);

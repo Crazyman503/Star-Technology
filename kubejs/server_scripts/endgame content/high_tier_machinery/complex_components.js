@@ -192,9 +192,9 @@ ServerEvents.recipes(event => {
             event.recipes.gtceu.scanner(id(`1_x_kubejs_${Tier}_${type}_scpa`))
                 .itemInputs('gtceu:data_stick')
                 .itemInputs(`kubejs:${Tier}_${type}`)
-                .chancedOutput(Item.of(`gtceu:data_stick`, `{assembly_line_research:{research_id:"1x_kubejs_${Tier}_${type}",research_type:"gtceu:stocking_component_part_assembly"}}`), 5000, 0)
-                .duration(duration * 12)
-                .EUt(eut);
+                .chancedOutput(Item.of(`gtceu:data_stick`, `{assembly_line_research:{research_id:"1x_kubejs_${Tier}_${type}",research_type:"gtceu:stocking_component_part_assembly"}}`), 2000, 0)
+                .duration(duration * 6)
+                .EUt(eut / 4);
         };
         {
             let CoilMod = (Tier == 'uhv') ? 'gtceu' : 'kubejs' ;
