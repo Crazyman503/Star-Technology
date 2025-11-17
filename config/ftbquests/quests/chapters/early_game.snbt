@@ -247,18 +247,6 @@
 			}]
 			tasks: [
 				{
-					id: "52EA53A717B865C8"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "exnihilosequentia:hammer"
-						}
-					}
-					title: "{ftbquests.chapter.early_game.quest8.task_5974679832782988744.title}"
-					type: "item"
-				}
-				{
 					id: "72992D00E63E5558"
 					item: "minecraft:gravel"
 					type: "item"
@@ -2065,11 +2053,20 @@
 			]
 			hide_dependent_lines: true
 			id: "53A9BA26813A1141"
-			tasks: [{
-				id: "367A50EF5240BFA3"
-				item: "minecraft:clay_ball"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "367A50EF5240BFA3"
+					item: "minecraft:clay_ball"
+					type: "item"
+				}
+				{
+					id: "38F0F5F67CE1F321"
+					item: "minecraft:clay"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Clay"
 			x: -5.5d
 			y: 4.5d
 		}

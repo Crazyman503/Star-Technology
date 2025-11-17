@@ -394,6 +394,8 @@
     "item.kubejs.uev_universal_circuit.tooltip": "§o§7For use with AE2 autocrafting",
     "item.kubejs.uiv_universal_circuit": "§2UIV§r Universal Circuit",
     "item.kubejs.uiv_universal_circuit.tooltip": "§o§7For use with AE2 autocrafting",
+    "item.kubejs.uxv_universal_circuit": "§eUXV§r Universal Circuit",
+    "item.kubejs.uxv_universal_circuit.tooltip": "§o§7For use with AE2 autocrafting",
 
     "item.kubejs.uhv_voltage_coil": "Ultra High Voltage Coil",
     "item.kubejs.uhv_voltage_coil.tooltip": "§l§4P§fe§4p§fp§4e§fr§4m§fi§4n§ft§r Coil",

@@ -1134,14 +1134,14 @@
 		}
 		{
 			dependencies: ["3B1453C435E3950B"]
-			description: ["4096 Parallels"]
+			description: [""]
 			id: "7FABD2E818B70D35"
 			rewards: [{
 				id: "5913DB9A14802483"
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			subtitle: "&7The &2UIV&7 Parallel Hatch"
+			subtitle: "&74069x Parallel Hatch"
 			tasks: [{
 				id: "1A9F5B4EAFB66C03"
 				item: "start_core:uiv_parallel_hatch"
@@ -1663,10 +1663,7 @@
 			y: 4.0d
 		}
 		{
-			dependencies: [
-				"35D5CC08AE53A7FA"
-				"5A724E912A475EAB"
-			]
+			dependencies: ["5A724E912A475EAB"]
 			description: ["Awoken and aware"]
 			id: "3AE6E85C2FC76DE9"
 			rewards: [{
@@ -1710,14 +1707,14 @@
 				"7FABD2E818B70D35"
 				"694E1F6458D5F72F"
 			]
-			description: ["16 Absolute Parallels"]
+			description: [""]
 			id: "4D556DE76399E083"
 			rewards: [{
 				id: "058BF3F098253930"
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			subtitle: "&7The &2UIV&7 Absolute Parallel Hatch"
+			subtitle: "&716x Absolute Parallel Hatch"
 			tasks: [{
 				id: "2388751B6210D3C4"
 				item: "start_core:uiv_absolute_parallel_hatch"
@@ -2187,6 +2184,7 @@
 			]
 			description: ["The Stats assigner for ALL of your threaded multiblock needs"]
 			id: "076F21506A7C19D5"
+			subtitle: "The Final Control Hatch"
 			tasks: [{
 				id: "37C21F56452F96BB"
 				item: "start_core:threading_controller"

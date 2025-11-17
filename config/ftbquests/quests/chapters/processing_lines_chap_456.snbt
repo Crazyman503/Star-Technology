@@ -667,7 +667,6 @@
 			y: 6.5d
 		}
 		{
-			dependencies: ["791DE0AFE1CFD7C7"]
 			description: ["{ftbquests.chapter.processing_lines_chap_456.quest35.description1}"]
 			id: "3DB8A5E51DB80275"
 			size: 1.0d

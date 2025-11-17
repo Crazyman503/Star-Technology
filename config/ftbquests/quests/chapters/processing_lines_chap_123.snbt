@@ -11,8 +11,8 @@
 		{
 			id: "5B9F9EFC7AF759A6"
 			linked_quest: "0BBCC13EE6C7C061"
-			x: 20.5d
-			y: 9.0d
+			x: 21.0d
+			y: 8.0d
 		}
 		{
 			id: "6597F20CEA188552"
@@ -2175,8 +2175,8 @@
 				}
 				type: "item"
 			}]
-			x: 22.0d
-			y: 9.0d
+			x: 22.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["02469EA239AC9C3F"]
@@ -2205,7 +2205,7 @@
 				}
 				type: "item"
 			}]
-			x: 22.0d
+			x: 23.5d
 			y: 7.0d
 		}
 		{
@@ -2220,8 +2220,8 @@
 				}
 				type: "item"
 			}]
-			x: 22.5d
-			y: 10.0d
+			x: 24.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["556B952A01A153DE"]
@@ -2743,10 +2743,7 @@
 			y: 12.5d
 		}
 		{
-			dependencies: [
-				"13C1904CBEB09726"
-				"6375D265594CEE4F"
-			]
+			dependencies: ["13C1904CBEB09726"]
 			id: "24CF3F64E74A027E"
 			optional: true
 			tasks: [{

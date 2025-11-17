@@ -388,7 +388,6 @@
 			dependencies: [
 				"020048FAC9576691"
 				"138E77CDBA50A619"
-				"53A9F3758C218CDC"
 				"272CE9BF358D64FE"
 			]
 			description: [
@@ -415,16 +414,34 @@
 					type: "item"
 				}
 				{
-					id: "06A6F6CC573EB32A"
-					item: "gtceu:iv_scanner"
-					type: "item"
-				}
-				{
 					id: "437AA53011E32C41"
 					item: {
 						Count: 1
 						id: "gtceu:data_stick"
 						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "08692192BBA7EA24"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							display: {
+								Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Early Scanners\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:ev_scanner"
+								}
+								{
+									Count: 1b
+									id: "gtceu:iv_scanner"
+								}
+							]
+						}
 					}
 					type: "item"
 				}
@@ -879,6 +896,7 @@
 			dependencies: [
 				"79428BAEAA7856E1"
 				"023794367F1B28D1"
+				"26250BA1D20AE2DC"
 			]
 			description: ["{ftbquests.chapter.futuristic_mechanisms.quest40.description1}"]
 			id: "175837CCB419A09F"
@@ -1924,6 +1942,13 @@
 		}
 		{
 			dependencies: ["464BB867FCF25A94"]
+			description: [
+				"A Boosted ABS....."
+				""
+				"\"Woo, imabouttomakeanameformyselfhere\""
+				""
+				"Oh... only 1 energy hatch, oh well its still cracked."
+			]
 			id: "20136E5C195AFED1"
 			shape: "gear"
 			size: 1.25d
@@ -1948,6 +1973,7 @@
 		}
 		{
 			dependencies: ["0094C2E72105E8CA"]
+			description: ["A boosted VF, well I guess that's nice."]
 			id: "061571A0D03CE303"
 			shape: "gear"
 			size: 1.25d

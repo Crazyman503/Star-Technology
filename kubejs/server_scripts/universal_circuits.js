@@ -1,5 +1,5 @@
 
-const tiers = ['ulv', 'lv', 'mv', 'hv', 'ev', 'iv', 'luv', 'zpm', 'uv', 'uhv', 'uev','uiv'];
+const tiers = ['ulv', 'lv', 'mv', 'hv', 'ev', 'iv', 'luv', 'zpm', 'uv', 'uhv', 'uev', 'uiv', 'uxv'];
 	
 ServerEvents.recipes(event => {
     const id = global.id;

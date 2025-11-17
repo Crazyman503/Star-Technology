@@ -903,6 +903,11 @@
     "block.gtceu.cryostate_quantum_chiller.tooltip.0": "§7A precision quantum cooling array capable of handling absolute-zero cryogenic coolants for advanced matter state manipulation and bulk vacuum freezing.",
     "block.gtceu.cryostate_quantum_chiller.tooltip.1": "Can use §3Parallel§r hatches§r, has §cSubtick Parallels§r, §2Bulking§r, and §bThroughput Boosting",
 
+    "block.gtceu.ancient_refinement_center": "Ancient Refinement Center",
+    "block.gtceu.ancient_refinement_center.tooltip.0": "§7Ancient Technology utilized to combine all the needed resource generators.",
+    "block.gtceu.ancient_refinement_center.tooltip.1": "Can use §3Parallel§r hatches§r, has §cSubtick Parallels§r, and §2Bulking",
+    "gtceu.aqueous_void_excavation": "Aqueous Void Excavation",
+
     "gtceu.draco_infusion": "§dDraconic Infusion",
     "block.gtceu.draco_infusion": "§dDraconic Infusion Array",
     "block.gtceu.draco_infusion.tooltip.0": "§5§lMystical Enhancement and Awakening",
@@ -968,11 +973,16 @@
     "block.gtceu.steam_kiln.tooltip.0": "§7A Kiln with buses and steam parallels.",
 
     "block.gtceu.rugged_alloyer": "Rugged Alloyer",
+    "block.gtceu.rugged_alloyer.tooltip.0": "§4Hardmode§7 Exclusive",
     "gtceu.rugged_alloyer": "Rugged Alloyer",
+
     "material.gtceu.pig_iron": "Pig Iron",
     "material.gtceu.coke_clay": "Coke Clay",
     "material.gtceu.flisnt": "Flint",
+
     "block.gtceu.reinforced_blast_furnace": "Reinforced Blast Furnace",
+    "block.gtceu.reinforced_blast_furnace.tooltip.0": "§4Hardmode§7 Exclusive",
+
     "gtceu.reinforced_blast_furnace": "Reinforced Blast Furnace",
     "material.gtceu.crude_cast_iron": "Crude Cast Iron",
     "material.gtceu.crude_wrought_iron": "Crude Wrought Iron",
@@ -992,7 +1002,7 @@
     "block.gtceu.high_pressure_steam_hammer.tooltip.0": "§7A larger variant of the forge hammer capable of running multiple recipes at once.",
 
     "block.gtceu.high_pressure_steam_sifter": "High Pressure Steam Sifter",
-    "block.gtceu.high_pressure_steam_sifter.tooltip.o": "§7Able to sort out the rarest of goods depending on mesh used.",
+    "block.gtceu.high_pressure_steam_sifter.tooltip.0": "§7Able to sort out the rarest of goods depending on mesh used.",
     "block.gtceu.high_pressure_steam_sifter.tooltip.1": "§4Hardmode§7 Exclusive",
     "gtceu.primitive_sifter": "Primitive Sifting",
 
@@ -1207,7 +1217,7 @@
     "block.gtceu.component_part_hub.tooltip.1": "§7Once stabilized this amalgamation of a machine is able to assemble component parts without the need for ordered inputs.",
     "block.gtceu.component_part_hub.tooltip.2": "§8-----------------------------------",
     "block.gtceu.component_part_hub.tooltip.3": "Has §cSubtick Parallels §fand §bThroughput Boosting",
-    "gtceu.stocking_component_part_assembly": "Component Part Assembly",
+    "gtceu.stocking_component_part_assembly": "Component Part Hub",
 
     "block.gtceu.super_abs": "Chambered Alloy Transmuter",
     "block.gtceu.super_abs.tooltip.0": "§6§lBoosted Alloy Blast Smelter",

@@ -10,7 +10,7 @@
 	quest_links: [{
 		id: "748DA87BBBFC0D45"
 		linked_quest: "6B1E88A09583F979"
-		x: -13.5d
+		x: -12.5d
 		y: 13.0d
 	}]
 	quests: [
@@ -1777,7 +1777,7 @@
 				type: "item"
 			}]
 			x: 0.5d
-			y: 12.75d
+			y: 13.0d
 		}
 		{
 			dependencies: ["24288AB05FC9DB33"]
@@ -2466,7 +2466,7 @@
 				item: "gtceu:salt_dust"
 				type: "item"
 			}]
-			x: 11.0d
+			x: 10.0d
 			y: 7.5d
 		}
 		{
@@ -2485,7 +2485,7 @@
 		}
 		{
 			dependencies: ["52D4B5EDABCA9420"]
-			icon: "gtceu:hydroxide_bucket"
+			icon: "gtceu:hydrogen_bucket"
 			id: "632E3EF2E231A069"
 			tasks: [
 				{
@@ -3181,7 +3181,7 @@
 			dependencies: [
 				"1BEE0053B443D65C"
 				"481B6F3CF0170917"
-				"0369BA079922E315"
+				"2322B5C57E863AFD"
 			]
 			icon: "gtceu:bromine_pentafluoride_bucket"
 			id: "1AB7DD09707355AD"
@@ -3212,26 +3212,6 @@
 			y: 14.0d
 		}
 		{
-			dependencies: ["1207F7CCCB8335A5"]
-			hide_dependency_lines: true
-			icon: "gtceu:bromine_bucket"
-			id: "0369BA079922E315"
-			tasks: [
-				{
-					id: "34832AB68179FE4E"
-					item: "gtceu:bromine_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "49D3B02B896ED71A"
-					type: "checkmark"
-				}
-			]
-			x: -4.5d
-			y: 12.0d
-		}
-		{
 			dependencies: ["3A15777DD813EE71"]
 			icon: "gtceu:fluorine_bucket"
 			id: "481B6F3CF0170917"
@@ -3258,8 +3238,8 @@
 				item: "gtceu:nickel_fluoride_dust"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 13.0d
+			x: -4.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["4C4E700B3DE67CDD"]
@@ -3565,6 +3545,11 @@
 		{
 			dependencies: ["1207F7CCCB8335A5"]
 			id: "2322B5C57E863AFD"
+			rewards: [{
+				id: "34E8D2C5650E167F"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
@@ -3572,7 +3557,7 @@
 				item: "gtceu:bromine_bucket"
 				type: "item"
 			}]
-			x: -7.0d
+			x: -6.0d
 			y: 13.0d
 		}
 		{
@@ -3592,7 +3577,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -8.5d
+			x: -7.5d
 			y: 13.0d
 		}
 		{
@@ -3612,7 +3597,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -9.5d
+			x: -8.5d
 			y: 13.0d
 		}
 		{
@@ -3632,7 +3617,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -10.5d
+			x: -9.5d
 			y: 13.0d
 		}
 		{
@@ -3652,7 +3637,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -11.5d
+			x: -10.5d
 			y: 13.0d
 		}
 		{
@@ -3675,7 +3660,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -12.5d
+			x: -11.5d
 			y: 12.0d
 		}
 		{
@@ -3695,7 +3680,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -12.5d
+			x: -11.5d
 			y: 14.0d
 		}
 		{
@@ -3715,7 +3700,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -11.0d
+			x: -10.0d
 			y: 14.0d
 		}
 		{
@@ -3735,7 +3720,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -10.0d
+			x: -9.0d
 			y: 14.0d
 		}
 		{
@@ -3755,7 +3740,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -9.0d
+			x: -8.0d
 			y: 14.0d
 		}
 		{
@@ -3775,7 +3760,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -8.0d
+			x: -7.0d
 			y: 14.0d
 		}
 		{
@@ -3795,7 +3780,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -8.5d
+			x: -7.5d
 			y: 15.0d
 		}
 		{
@@ -3815,8 +3800,27 @@
 					type: "checkmark"
 				}
 			]
-			x: -9.0d
+			x: -8.0d
 			y: 12.0d
+		}
+		{
+			dependencies: ["52D4B5EDABCA9420"]
+			icon: "gtceu:oxygen_bucket"
+			id: "1DEBEAF6058C6625"
+			tasks: [
+				{
+					id: "472DE96CE0FCECCC"
+					item: "gtceu:oxygen_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "36F2AB54E21F30C1"
+					type: "checkmark"
+				}
+			]
+			x: 11.0d
+			y: 7.5d
 		}
 	]
 	title: "{ftbquests.chapter.processing_lines_chap_7_1.title}"

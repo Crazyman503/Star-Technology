@@ -137,6 +137,7 @@
 			description: ["{ftbquests.chapter.industrial_revolution.quest6.description1}"]
 			hide_dependent_lines: true
 			id: "0E88CB5E68212006"
+			optional: true
 			rewards: [{
 				id: "33061CD7DE7F3DEE"
 				item: "kubejs:coin"
@@ -1028,10 +1029,7 @@
 			y: 5.0d
 		}
 		{
-			dependencies: [
-				"12C9427A04A2F550"
-				"24DF9557A927B2B5"
-			]
+			dependencies: ["12C9427A04A2F550"]
 			description: [
 				"{ftbquests.chapter.industrial_revolution.quest49.description1}"
 				""
@@ -1549,6 +1547,7 @@
 				"[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.industrial_revolution.quest68.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"14AB8F4BE7C1F8E3\"}}]"
 			]
 			id: "5F80268C02FAD5F6"
+			optional: true
 			rewards: [{
 				id: "170D10B336CA9B51"
 				item: "kubejs:coin"
@@ -1886,6 +1885,11 @@
 			description: ["{ftbquests.chapter.industrial_revolution.quest84.description1}"]
 			icon: "gtceu:tin_alloy_bucket"
 			id: "333F9471F8B4E184"
+			rewards: [{
+				id: "1FF636B58F5E1EA1"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "6A9D974979FC6B36"

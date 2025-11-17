@@ -144,7 +144,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('23x gtceu:borax_dust')
         .outputFluids('gtceu:diluted_sulfuric_acid 3000', 'gtceu:oxygen 6000')
         .duration(720)
-        .EUt((GTValues.VHA[GTValues.IV]));
+        .EUt(GTValues.VHA[GTValues.IV]);
 
     event.recipes.gtceu.chemical_skip(id('peek_skip'))
         .inputFluids('gtceu:benzene 2000','gtceu:toluene 1000','gtceu:propene 1000','gtceu:oxygen 2000')
@@ -422,9 +422,17 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 864', 'gtceu:ethylene_glycol 1770', 'gtceu:ethane 1500',
             'gtceu:ethenone 1500', 'gtceu:hydrogen_chloride 750', 'gtceu:diluted_sulfuric_acid 6750')
         .circuit(3)
-        .duration(46)
-        .EUt(GTValues.VHA[GTValues.UXV])
+        .duration(126)
+        .EUt(GTValues.VA[GTValues.UXV] * .3)
         .cleanroom(CleanroomType.CLEANROOM); 
+
+    event.recipes.gtceu.absolute_reduction(id('plat_line_skip'))
+        .itemInputs('4x gtceu:cooperite_dust')
+        .inputFluids('gtceu:aqua_regia 3000')
+        .itemOutputs('gtceu:platinum_dust', 'gtceu:palladium_dust', 'gtceu:ruthenium_dust', 'gtceu:rhodium_dust', 'gtceu:osmium_dust', 'gtceu:iridium_dust')
+        .outputFluids('gtceu:nitric_acid 1000', 'gtceu:hydrochloric_acid 2000')
+        .duration(350)
+        .EUt(GTValues.VHA[GTValues.ZPM]);
 
     // === Enlightened Chemistry ===
 

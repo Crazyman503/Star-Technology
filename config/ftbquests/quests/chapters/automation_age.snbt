@@ -213,7 +213,10 @@
 			y: -8.0d
 		}
 		{
-			dependencies: ["088FE0CF9D07F9C6"]
+			dependencies: [
+				"088FE0CF9D07F9C6"
+				"6BD741413F3EB520"
+			]
 			description: ["{ftbquests.chapter.automation_age.quest8.description1}"]
 			id: "363F5B598683A074"
 			rewards: [{
@@ -2294,6 +2297,13 @@
 				"2DB216B224F2E8EF"
 				"1E981BDF3F2C577D"
 			]
+			description: [
+				"A Boosted EBF....."
+				""
+				"Oh yeah this is where it's at"
+				""
+				"Wait what do you mean it can only have 1 energy hatch?"
+			]
 			hide_dependent_lines: true
 			id: "09C1739F3FE3298F"
 			rewards: [{
@@ -2502,6 +2512,7 @@
 		}
 		{
 			dependencies: ["3CB63B290C9EFAA2"]
+			description: ["A Boosted Electric Ore Factory which allows you to break down you ores at an even more accelerated rate."]
 			id: "4BDAE5D4790ED230"
 			rewards: [{
 				id: "29E0C0EB00DB8AC2"

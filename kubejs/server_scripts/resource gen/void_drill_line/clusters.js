@@ -29,6 +29,20 @@ ServerEvents.recipes(event => {
         G: 'gtceu:luv_conveyor_module'
     }).id('start:shaped/void_excavator');
 
+    event.recipes.gtceu.assembly_line(id('ancient_refinement_center'))
+        .itemInputs('gtceu:uhv_machine_hull', '12x #gtceu:circuits/uev', '4x gtceu:uhv_robot_arm', '4x gtceu:uhv_electric_pump',
+            '2x gtceu:uhv_conveyor_module', '2x gtceu:zircalloy_4_gear', '4x gtceu:small_pure_netherite_gear', '12x gtceu:ancient_runicalium_single_wire')
+        .inputFluids('gtceu:utopian_akreyrium 5000','gtceu:indium_tin_lead_cadmium_soldering_alloy 2880')
+        .itemOutputs('gtceu:ancient_refinement_center')
+        .duration(1200)
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of('gtceu:void_excavator'))
+                .EUt(GTValues.VHA[GTValues.UHV])
+                .CWUt(144)
+            )
+        .EUt(GTValues.VA[GTValues.UHV]);
+
     event.recipes.gtceu.void_excavation(id('mining'))
         .inputFluids('gtceu:drilling_fluid 5000')
         .chancedOutput('2x gtceu:raw_coal', 4000, 1000)
@@ -40,6 +54,12 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:rare_ore_residue 400', 'gtceu:raw_ore_slurry 600')
         .duration(640)
         .EUt(GTValues.VA[GTValues.LV]);
+
+    event.recipes.gtceu.aqueous_void_excavation(id('mining'))
+        .inputFluids('gtceu:drilling_fluid 20000')
+        .outputFluids('gtceu:rare_ore_residue 4000', 'gtceu:raw_ore_slurry 6000')
+        .duration(960)
+        .EUt(GTValues.VA[GTValues.HV]);
 
     });
 

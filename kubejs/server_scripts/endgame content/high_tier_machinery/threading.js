@@ -4,11 +4,11 @@ ServerEvents.recipes(event => {
     // Parts
 
             event.recipes.gtceu.assembly_line(id('prismalic_helix_core'))
-                .itemInputs('gtceu:void_frame', 'kubejs:draco_advanced_soc', 'kubejs:runic_wave_generator', '32x gtceu:fine_draco_abyssal_wire', 
+                .itemInputs('gtceu:void_frame', '4x kubejs:draco_advanced_soc', 'kubejs:runic_wave_generator', '32x gtceu:fine_draco_abyssal_wire', 
                     '32x gtceu:fine_ancient_runicalium_wire', '32x gtceu:fine_stellarium_wire', '32x gtceu:fine_melodium_wire', '32x gtceu:fine_prismalium_wire', 
                     '32x gtceu:fine_dragonsteel_wire', '32x gtceu:fine_twinite_wire', '32x gtceu:fine_shellite_wire', '32x gtceu:fine_enderium_wire', 
                     '32x gtceu:fine_lumium_wire', '32x gtceu:fine_signalum_wire', '32x gtceu:fine_soul_infused_wire')
-                .inputFluids('gtceu:utopian_akreyrium 5000','gtceu:indium_tin_lead_cadmium_soldering_alloy 2880')
+                .inputFluids('gtceu:utopian_akreyrium 5000','gtceu:naquadated_soldering_alloy 2880')
                 .itemOutputs('kubejs:prismalic_helix_core')
                 .duration(900)
                 .stationResearch(
