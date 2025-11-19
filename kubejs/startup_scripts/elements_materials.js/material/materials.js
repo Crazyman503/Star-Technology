@@ -531,7 +531,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluidPipeProperties(18000, 7200, true,true,true,true);
 
     // Thermal Superconductors
-    if (global.packmode !== 'hard'){(() => { 
+    // if (global.packmode !== 'hard'){(() => { 
     conductorSuper('soul_infused', ['1x invar', '2x soul'], 0xcc9966, [], [V('lv'), 4, 0, true], [150, 130, 2, 4000]);
 
     conductorSuper('signalum', ['1x silver', '3x copper', '4x redstone'], 0xff3300, [1700, 'low', VA('mv'), 800], [V('mv'), 16, 0, true], [190, 150, 3, 6000]);
@@ -553,7 +553,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     conductorSuper('stellarium', ['12x neutronium', '4x melodium', '1x samarium_iron_arsenic_oxide'], 0xccffff, [10799, 'highest', VA('uhv'), 2400], [V('uhv'), 192, 0, true], [3200, 660, 12, 48000]);
 
     conductorSuper('ancient_runicalium', ['5x zapolgium', '18x stellarium', '8x zirconium'], 0xFAB922, [11749, 'highest', VA('uev'), 3600], [V('uev'), 256, 0, true], [6400, 720, 15, 64000]);
-    })()}
+    // })()}
 
     // Nuclear Reactor Materials
     compIngot('austenitic_stainless_steel_304', ['35x steel', '10x chromium', '4x nickel', '1x manganese', '1x silicon'], 0x800040, METALLIC, [3500, 'low', VA('ev'), 1500], [plates, rod, frame]);
