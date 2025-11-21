@@ -11,7 +11,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle('BABABAB', '   E   ', 'B  D  B', 'B DCD B', 'B  D  B', '   E   ', 'BABFBAB') 
             .aisle('BBABABB', 'B EDE B', 'B DCD B', 'BDCCCDB', 'B DCD B', 'B EDE B', 'BBFFFBB') 
             .aisle('BABABAB', '   E   ', 'B  D  B', 'B DCD B', 'B  D  B', '   E   ', 'BABFBAB') 
-            .aisle('ABABABA', ' C   C ', ' C   C ', ' C D C ', ' C   C ', ' C   C ', 'AAABABA') 
+            .aisle('ABABABA', ' C   C ', ' C   C ', ' C D C ', ' C   C ', ' C   C ', 'AAABAAA') 
             .aisle('AABBBAA', '   B   ', '  BBB  ', '  B@B  ', '  BBB  ', '   B   ', 'AABBBAA') 
             .where('A', Predicates.blocks('kubejs:extreme_temperature_smelting_casing'))
             .where('B', Predicates.blocks(GCYMBlocks.CASING_STRESS_PROOF.get())

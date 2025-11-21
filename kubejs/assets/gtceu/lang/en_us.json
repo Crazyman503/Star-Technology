@@ -1223,7 +1223,8 @@
     "block.gtceu.component_part_hub.tooltip.0": "§6§lBoosted Component Part Assembler",
     "block.gtceu.component_part_hub.tooltip.1": "§7Once stabilized this amalgamation of a machine is able to assemble component parts without the need for ordered inputs.",
     "block.gtceu.component_part_hub.tooltip.2": "§8-----------------------------------",
-    "block.gtceu.component_part_hub.tooltip.3": "Has §cSubtick Parallels §fand §bThroughput Boosting",
+    "block.gtceu.super_abs.component_part_hub.3": "Can only have §bone§r Energy Hatch",
+    "block.gtceu.component_part_hub.tooltip.4": "Has §cSubtick Parallels §fand §bThroughput Boosting",
     "gtceu.stocking_component_part_assembly": "Component Part Hub",
 
     "block.gtceu.super_abs": "Chambered Alloy Transmuter",
@@ -1273,7 +1274,8 @@
     "block.gtceu.atomic_synthesis_plant": "Atomic Synthesis Plant",
     "block.gtceu.atomic_synthesis_plant.tooltip.0": "§6§lParagon of Chemistry",
     "block.gtceu.atomic_synthesis_plant.tooltip.1": "§7Not only is this machine capable of performing the task of a §6Chemical Plant§7 but it also pushes beyond what the know synthesis of chemisty beholds.",
-    "block.gtceu.atomic_synthesis_plant.tooltip.2": "Can use §3Parallel§r hatches, has §6Perfect Overclock§r, §cSubtick Parallels§r, §2Bulking§r, and §bThroughput Boosting",
+    "block.gtceu.atomic_synthesis_plant.tooltip.2": "§8-----------------------------------",
+    "block.gtceu.atomic_synthesis_plant.tooltip.3": "Can use §3Parallel§r hatches, has §6Perfect Overclock§r, §cSubtick Parallels§r, §2Bulking§r, and §bThroughput Boosting",
 
     "gtceu.absolute_reduction": "Absolute Chemical Line Reduction",
     "gtceu.enlightened_chemistry": "Enlightened Chemical Synthesis",
@@ -1289,7 +1291,7 @@
     "material.gtceu.melastrium_mox": "Melastrium MOX",
     "material.gtceu.trikoductive_neutro_steel": "Trikoductive Neutro-steel",
     "material.gtceu.soul_ascendant_cuperite": "Soul Ascendant Cuperite",
-    "material.gtceu.mythrotight_carbide_steel": "Mythrotight-caribe Steel",
+    "material.gtceu.mythrotight_carbide_steel": "Mythrotight-Carbide Steel",
     "material.gtceu.aerorelient_steel": "Aerorelient Steel",
     "material.gtceu.vastaqalloy_cr_4200x": "Vastaqalloy CR-4200X",
     "material.gtceu.ultispestalloy_cmsh": "Ultispestalloy C/MSH",

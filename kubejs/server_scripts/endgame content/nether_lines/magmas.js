@@ -3,11 +3,11 @@ ServerEvents.recipes(event => {
 
     //Mystical Magma
     event.recipes.gtceu.cyclonic_sifter(id('mystical_nether_magma'))
-        .inputFluids('gtceu:highly_unstable_nether_magma 100000')
+        .inputFluids('gtceu:highly_unstable_nether_magma 200000')
         .chancedInput('1x kubejs:ancient_netherite_reinforced_mesh', 1000, -150)
-        .outputFluids('gtceu:mystical_nether_magma 7000')
-        .itemOutputs('1x gtceu:deactivated_nether_dust','1x gtceu:small_deactivated_nether_dust')
-        .duration(1050)
+        .outputFluids('gtceu:mystical_nether_magma 12000')
+        .itemOutputs('3x gtceu:deactivated_nether_dust','2x gtceu:small_deactivated_nether_dust','1x gtceu:tiny_deactivated_nether_dust')
+        .duration(1350)
         .EUt(GTValues.VA[GTValues.UEV]*3/11);
 
     event.recipes.gtceu.polarizer(id('nether_dust_activation'))
@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:adamantamite_nether_magma 9000')
         .outputFluids('gtceu:molten_adamantamite_mixture 6000',
             'gtceu:enriched_adamantamite_mixture 2000',
-            'gtceu:highly_unstable_nether_magma 1000')
+            'gtceu:mystical_nether_magma 1000')
         .duration(1200)
         .EUt(GTValues.VHA[GTValues.UHV]);
 
@@ -36,7 +36,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:mythrillic_nether_magma 9000')
         .outputFluids('gtceu:molten_mythrillic_mixture 6000',
             'gtceu:enriched_mythrillic_mixture 2000',
-            'gtceu:highly_unstable_nether_magma 1000')
+            'gtceu:mystical_nether_magma 1000')
         .duration(1200)
         .EUt(GTValues.VHA[GTValues.UHV]);
 
@@ -45,7 +45,7 @@ ServerEvents.recipes(event => {
         .outputFluids(
             'gtceu:molten_estaltadyne_mixture 6000',
             'gtceu:enriched_estaltadyne_mixture 2000',
-            'gtceu:highly_unstable_nether_magma 1000')
+            'gtceu:mystical_nether_magma 1000')
         .duration(1200)
         .EUt(GTValues.VHA[GTValues.UHV]);
 
@@ -55,15 +55,15 @@ ServerEvents.recipes(event => {
             .itemInputs('1x gtceu:small_activated_nether_dust')
             .outputFluids(`gtceu:molten_${type}_mixture 100`)
             .itemOutputs('1x gtceu:small_atomic_nether_sludge_dust')
-            .duration(400)
+            .duration(300)
             .EUt(GTValues.VHA[GTValues.UHV]); 
     });
 
     event.recipes.gtceu.heat_chamber(id(`enriched_estaltadyne_mixture_to_solution`))
         .inputFluids(`gtceu:enriched_estaltadyne_mixture 500`)
-        .itemInputs(`5x gtceu:small_activated_nether_dust`, '2x gtceu:tiny_activated_nether_dust')
+        .itemInputs(`3x gtceu:small_activated_nether_dust`, '7x gtceu:tiny_activated_nether_dust')
         .outputFluids(`gtceu:enriched_estaltadyne_solution 500`)
-        .itemOutputs('5x gtceu:small_atomic_nether_sludge_dust', '2x gtceu:tiny_atomic_nether_sludge_dust')
+        .itemOutputs('3x gtceu:small_atomic_nether_sludge_dust', '7x gtceu:tiny_atomic_nether_sludge_dust')
         .duration(1200)
         .EUt(GTValues.VHA[GTValues.UHV]); 
 
@@ -73,8 +73,8 @@ ServerEvents.recipes(event => {
         .outputFluids('minecraft:lava 100000')
         .outputFluids('gtceu:debris 125000')
         .outputFluids('gtceu:ancient_debris 25000')
-        .duration(3600)
-        .EUt(GTValues.VA[GTValues.UHV]);
+        .duration(2400)
+        .EUt(GTValues.VHA[GTValues.UEV]);
 
     event.recipes.gtceu.fluid_solidifier(id('debris_dust_from_liquid'))
         .inputFluids('gtceu:debris 144')

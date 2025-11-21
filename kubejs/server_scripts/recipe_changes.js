@@ -503,20 +503,12 @@ ServerEvents.recipes(event => {
     event.shapeless('9x create:andesite_alloy', ['create:andesite_alloy_block']).id('start:shapeless/andesite_alloy_block_decomp');
 
     //Added Tools
+    const plungerMats = ['rubber', 'polyethylene', 'polytetrafluoroethylene', 'silicone_rubber', 'styrene_butadiene_rubber', 'polybenzimidazole' ];
+    const malletMats = ['perfluoroelastomer_rubber' ];
 
-        //Mallet + Plunger
-        [
-        'perfluoroelastomer_rubber' 
-        ].forEach(material => {
-            event.shaped(Item.of(`gtceu:${material}_mallet`), [
-                'II ',
-                'IIS',
-                'II '
-            ], {
-                I: `gtceu:${material}_ingot`,
-                S: 'minecraft:stick'
-            }).id(`start:shaped/${material}_mallet`);
-            event.shaped(Item.of(`gtceu:${material}_plunger`), [
+    //Mallet + Plunger
+    plungerMats.forEach(material => {
+        event.shaped(Item.of(`gtceu:${material}_plunger`), [
                 'WPP',
                 ' SP',
                 'S F'
@@ -525,8 +517,19 @@ ServerEvents.recipes(event => {
                 F: '#forge:tools/files',
                 P: `gtceu:${material}_plate`,
                 S: `#forge:rods`
-            });
-        });
+            }).id(`start:shaped/${material}_plunger`);
+    });
+
+    malletMats.forEach(material => {
+        event.shaped(Item.of(`gtceu:${material}_mallet`), [
+                'II ',
+                'IIS',
+                'II '
+            ], {
+                I: `gtceu:${material}_ingot`,
+                S: 'minecraft:stick'
+            }).id(`start:shaped/${material}_mallet`);
+    });
 
     [1,2,4].forEach(size => {
         event.remove({id: `functionalstorage:oak_drawer_alternate_x${size}`});

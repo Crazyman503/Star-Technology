@@ -203,8 +203,13 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.heat_chamber(id('crude_to_void_ingot'))
         .itemInputs('gtceu:raw_void_ingot')
         .itemOutputs('gtceu:hot_void_ingot')
-        .blastFurnaceTemp(10799)
         .duration(6000)
+        .EUt(GTValues.VHA[GTValues.LuV]);
+
+    event.recipes.gtceu.pressure_heat_chamber(id('dust_to_void_ingot'))
+        .itemInputs('gtceu:void_dust')
+        .itemOutputs('gtceu:hot_void_ingot')
+        .duration(3000)
         .EUt(GTValues.VHA[GTValues.LuV]);
 
     //Material Adjustments

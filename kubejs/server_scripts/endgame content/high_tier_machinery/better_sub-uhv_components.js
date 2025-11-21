@@ -54,7 +54,7 @@ ServerEvents.recipes(event => {
         componentTypesAssemblyLine('robot_arm',[`4x gtceu:long_${Primary}_rod`,`1x gtceu:${Primary}_gear`,`3x gtceu:small_${Primary}_gear`,`2x gtceu:${Tier}_electric_motor`,`1x gtceu:${Tier}_electric_piston`,`1x #gtceu:circuits/${Tier}`,`2x #gtceu:circuits/${Tier1}`,`4x #gtceu:circuits/${Tier2}`,`4x gtceu:${Cable}_single_cable`],
             [`gtceu:soldering_alloy ${576*scale}`,`gtceu:lubricant ${125*(2**scale)}`],4);
 
-        componentTypesAssemblyLine('field_generator',[`1x gtceu:${Frame}_frame`,`6x gtceu:${Primary}_plate`,`1x gtceu:${Catalyst}`,`2x gtceu:${Tier}_emitter`,`2x #gtceu:circuits/${Tier}`,`128x gtceu:fine_${SuperConductor}_wire`,`4x gtceu:${Cable}_single_cable`],
+        componentTypesAssemblyLine('field_generator',[`1x gtceu:${Frame}_frame`,`6x gtceu:${Frame}_plate`,`1x gtceu:${Catalyst}`,`2x gtceu:${Tier}_emitter`,`2x #gtceu:circuits/${Tier}`,`128x gtceu:fine_${SuperConductor}_wire`,`4x gtceu:${Cable}_single_cable`],
             [`gtceu:soldering_alloy ${576*scale}`],5);
 
         componentTypesAssemblyLine('emitter',[`1x gtceu:${Frame}_frame`,`1x gtceu:${Tier}_electric_motor`,`4x gtceu:long_${SenMat}_rod`,`1x gtceu:${Catalyst}`,`2x #gtceu:circuits/${Tier}`,`96x gtceu:${SenFoil}_foil`,`4x gtceu:${Cable}_single_cable`],

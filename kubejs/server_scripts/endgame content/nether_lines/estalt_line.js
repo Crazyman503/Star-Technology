@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:mystical_nether_magma 250')
         .itemOutputs('gtceu:estaltadyne_dust','gtceu:small_estaltadyne_dust')
         .duration(140)
-        .EUt(GTValues.V[GTValues.UHV]);
+        .EUt(GTValues.VHA[GTValues.UHV]);
 
     event.recipes.gtceu.heat_chamber(id('metmalic_estaltadyne_dust'))
         .itemInputs('1x gtceu:estaltadyne_dust')
@@ -34,8 +34,8 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.advanced_chemistry(id('tytite_estaltadyne_dust'))
         .itemInputs('1x gtceu:magnemalic_estaltadyne_dust')
-        .itemInputs('15x gtceu:sodium_hydroxide_dust')
-        .inputFluids('gtceu:oxygen 15000')
+        .itemInputs('5x gtceu:sodium_hydroxide_dust')
+        .inputFluids('gtceu:oxygen 20000')
         .itemOutputs('1x gtceu:tytite_estaltadyne_dust')
         .itemOutputs('35x gtceu:sodium_bisulfate_dust')
         .duration(460)
