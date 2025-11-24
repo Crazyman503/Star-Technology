@@ -14,7 +14,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('bulk_ore_processing_array', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('bulk_ore_processing_array')
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, $StarTRecipeModifiers.THOUGHPUT_BOOSTING, $StarTRecipeModifiers.BULK_PROCESSING, GTRecipeModifiers.OC_NON_PERFECT_SUBTICK])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, $StarTRecipeModifiers.THOUGHPUT_BOOSTING, $StarTRecipeModifiers.BULK_PROCESSING])
         .appearanceBlock(() => Block.getBlock('kubejs:enriched_naquadah_machine_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('  BBB  ', '  AAA  ', '  AAA  ', '   A   ', '       ', '       ', '       ', '       ', '       ') 

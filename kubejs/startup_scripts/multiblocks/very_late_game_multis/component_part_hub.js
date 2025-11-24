@@ -16,7 +16,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('component_part_hub', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('stocking_component_part_assembly')
-        .recipeModifiers([$StarTRecipeModifiers.THOUGHPUT_BOOSTING, GTRecipeModifiers.OC_NON_PERFECT_SUBTICK])
+        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, $StarTRecipeModifiers.THOUGHPUT_BOOSTING])
         .appearanceBlock(() => Block.getBlock('kubejs:advanced_assembly_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle(' BBBBB   BBBBB ', ' BBBBB   BBBBB ', '  BBB     BBB  ') 

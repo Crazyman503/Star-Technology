@@ -3,7 +3,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('super_vacuum_freezer', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('vacuum_freezer')
-        .recipeModifiers([$StarTRecipeModifiers.THOUGHPUT_BOOSTING, GTRecipeModifiers.OC_NON_PERFECT_SUBTICK]) //Vac has subtick so so will this
+        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, $StarTRecipeModifiers.THOUGHPUT_BOOSTING])
         .appearanceBlock(() => Block.getBlock('gtceu:frostproof_machine_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('AAAAA', 'AAAAA', 'AABAA', 'AABAA', 'AAAAA') 
