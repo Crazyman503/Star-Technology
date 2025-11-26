@@ -170,8 +170,8 @@ ServerEvents.recipes(event => {
     const catalyst = (type,inputs,scaler) => {
     event.recipes.gtceu.assembler(id(`${type}_catalyst`))
         .itemInputs(inputs)
-        .inputFluids(`gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate ${256 + scaler * 32}`)
-        .itemOutputs(`96x kubejs:${type}_catalyst`)
+        .inputFluids(`gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate ${512 + scaler * 64}`)
+        .itemOutputs(`192x kubejs:${type}_catalyst`)
         .duration(600)
         .EUt(GTValues.VHA[GTValues.UV] * ( 4 ** scaler ));
     };

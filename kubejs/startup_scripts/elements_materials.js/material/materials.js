@@ -1473,7 +1473,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     elemLiquidSecColor('aurourium', 0x5d44de, 0xde44ce, SHINY, [], [no_decomp, fine_wire, no_smelt]);
        
-    conductor('cerium_tritelluride', ['1x cerium', '3x tellurium'], 0x6d8B5d, DULL, [11699, 'highest', VA('uhv'), 1800], [V('uev'), 6, 16, false], [bolt_and_screw,spring,small_spring]);
+    conductor('cerium_tritelluride', ['1x cerium', '3x tellurium'], 0x6d8B5d, DULL, [11699, 'highest', VHA('uhv'), 1800], [V('uev'), 6, 16, false], [bolt_and_screw,spring,small_spring]);
 
     compLiquidTemp('bec_og', 0.0001, ['1x oganesson'], 0xbfacff, [no_decomp]);
 
@@ -1519,7 +1519,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     //UIV Materials
     compDustLiquid('tungsten_disulfide', ['1x tungsten', '2x sulfur'], 0x928897, [no_decomp]);
 
-    conductor('polonium_bismide', ['1x polonium', '1x bismuth'], 0x016038, DULL, [14400, 'highest', VA('uev'), 1800], [V('uiv'), 5, 24, false], [fine_wire, bolt_and_screw,spring,small_spring]);
+    conductor('polonium_bismide', ['1x polonium', '1x bismuth'], 0x016038, DULL, [14400, 'highest', VHA('uev'), 1800], [V('uiv'), 5, 24, false], [fine_wire, bolt_and_screw,spring,small_spring]);
 
     compIngot('diamane', ['1x carbon'], 0x62777A, [], [4000, 'low', VA('lv'), 1], [no_decomp]);
 
@@ -1674,7 +1674,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     
     compLiquidStill('lepton_dense_akreyrium', ['1x utopian_akreyrium', '1x mystery'], [no_decomp]);
 
-    conductor('lepton_resonant_thallium_antimonide', ['1x thallium', '1x antimony', '1x mystery'], 0x74638F, DULL, [18250, 'highest', VA('uev'), 1800], [V('uxv'), 7, 48, false], [bolt_and_screw,spring,small_spring, no_abs_recipe, no_decomp, fine_wire]);
+    conductor('lepton_resonant_thallium_antimonide', ['1x thallium', '1x antimony', '1x mystery'], 0x74638F, DULL, [18250, 'highest', VHA('uiv'), 1800], [V('uxv'), 7, 48, false], [bolt_and_screw,spring,small_spring, no_abs_recipe, no_decomp, fine_wire]);
 
     //Agriculture
     compLiquid('raw_silkworm_oil', [], 0x8B5A2B, [no_decomp]);
