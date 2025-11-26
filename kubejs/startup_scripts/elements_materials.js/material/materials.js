@@ -325,8 +325,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     const blast = global.blastProperty;
     blast('zirconium', 10900, 'higher', VA('uv'), 800);
     blast('tellurium', 11200, 'higher', VA('uhv'), 900);
-    blast('polonium', 13400, 'higher', VA('uiv'), 1480);
-    blast('astatine', 12800, 'higher', VA('uhv'), 1350);
+    blast('polonium', 13400, 'higher', VHA('uiv'), 1350);
+    blast('astatine', 12800, 'higher', VA('uhv'), 1400);
     blast('hafnium', 11900, 'higher', VA('uv'), 750);
     blast('rhenium', 14800, 'highest', VA('uiv'), 1200);
     blast('seaborgium', 13300, 'higher', VA('uev'), 1500);
