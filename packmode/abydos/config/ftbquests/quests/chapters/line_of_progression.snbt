@@ -298,6 +298,12 @@
 			x: 8.5d
 			y: 6.5d
 		}
+		{
+			id: "354C977EF0391CB6"
+			linked_quest: "088FE0CF9D07F9C6"
+			x: -9.5d
+			y: -4.0d
+		}
 	]
 	quests: [
 		{
@@ -916,21 +922,6 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: -4.0d
-		}
-		{
-			dependencies: [
-				"297CE2423324B92B"
-				"088FE0CF9D07F9C6"
-			]
-			id: "6BD741413F3EB520"
-			subtitle: "{ftbquests.chapter.automation_age.quest9.subtitle}"
-			tasks: [{
-				id: "5DB59F5FEE0DED16"
-				item: "gtceu:microchip_processor"
-				type: "item"
-			}]
-			x: -9.5d
 			y: -4.0d
 		}
 		{

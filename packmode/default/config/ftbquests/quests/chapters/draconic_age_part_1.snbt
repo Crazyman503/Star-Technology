@@ -1141,7 +1141,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			subtitle: "&74069x Parallel Hatch"
+			subtitle: "&74096x Parallel Hatch"
 			tasks: [{
 				id: "1A9F5B4EAFB66C03"
 				item: "start_core:uiv_parallel_hatch"

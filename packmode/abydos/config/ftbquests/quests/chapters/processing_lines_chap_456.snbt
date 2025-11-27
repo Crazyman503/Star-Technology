@@ -2087,6 +2087,10 @@
 					optional_task: true
 					type: "item"
 				}
+				{
+					id: "28AA5A379AE5E111"
+					type: "checkmark"
+				}
 			]
 			title: "{ftbquests.chapter.processing_lines_chap_456.quest100.title}"
 			x: 17.5d
@@ -2095,7 +2099,7 @@
 		{
 			dependencies: [
 				"465533FFE22523F8"
-				"10FF0043448ED24F"
+				"5CC733B0DA775351"
 			]
 			dependency_requirement: "one_completed"
 			id: "4C34343E64A8511C"
@@ -3564,7 +3568,9 @@
 				""
 				"[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.processing_lines_chap_456.quest181.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"17FC1E92368D840B\"}}]"
 			]
+			icon: "kubejs:leptonic_akreyrium_catalyst"
 			id: "39202B7E28ABD0EC"
+			optional: true
 			tasks: [{
 				id: "0560BAFCBFA5335C"
 				title: "{ftbquests.chapter.processing_lines_chap_456.quest181.task_387515162663662428.title}"

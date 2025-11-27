@@ -112,6 +112,18 @@ ServerEvents.recipes(event => {
 	event.replaceInput({ type: 'gtceu:fluid_solidifier' }, 'gtceu:ball_casting_mold', '#kubejs:ball_casting_mold');
 	event.replaceInput({ type: 'gtceu:fluid_solidifier' }, 'gtceu:ingot_casting_mold', '#kubejs:ingot_casting_mold');
 
+	event.recipes.gtceu.coke_oven(id('coke_from_coal'))
+        .itemInputs('minecraft:coal')
+        .outputFluids('gtceu:creosote 500')
+        .itemOutputs('gtceu:coke_gem')
+        .duration(1200)
+
+	event.recipes.gtceu.coke_oven(id('coke_from_coal_block'))
+        .itemInputs('minecraft:coal_block')
+        .outputFluids('gtceu:creosote 4500')
+        .itemOutputs('gtceu:coke_block')
+        .duration(9000)
+
 	// ================================ Post Cobble-Gen, Pre-Circuit ================================
 
 	event.recipes.create.mechanical_crafting('gtceu:latex_plantation', [

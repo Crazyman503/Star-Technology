@@ -451,6 +451,62 @@
 					}
 					type: "item"
 				}
+				{
+					id: "6509D3DA557C23D4"
+					item: {
+						Count: 1
+						id: "expatternprovider:infinity_cell"
+						tag: {
+							record: {
+								"#c": "ae2:i"
+								id: "minecraft:gravel"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "36A7B0D50A3CF675"
+					item: {
+						Count: 1
+						id: "expatternprovider:infinity_cell"
+						tag: {
+							record: {
+								"#c": "ae2:i"
+								id: "minecraft:sand"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "13874A5EB0BB4284"
+					item: {
+						Count: 1
+						id: "expatternprovider:infinity_cell"
+						tag: {
+							record: {
+								"#c": "ae2:i"
+								id: "exnihilosequentia:dust"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4729741DF09A9058"
+					item: {
+						Count: 1
+						id: "expatternprovider:infinity_cell"
+						tag: {
+							record: {
+								"#c": "ae2:i"
+								id: "exnihilosequentia:crushed_blackstone"
+							}
+						}
+					}
+					type: "item"
+				}
 			]
 			title: "{ftbquests.chapter.applied_energistics.quest31.title}"
 			x: -3.0d

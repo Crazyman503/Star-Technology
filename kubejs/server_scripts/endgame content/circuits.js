@@ -72,14 +72,14 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:neutronium 576')
         .itemOutputs('kubejs:uepic_wafer')
         .duration(1200)
-        .EUt(GTValues.VA[GTValues.UV])
+        .EUt(GTValues.VA[GTValues.ZPM])
         .cleanroom(CleanroomType.CLEANROOM);
 
     event.recipes.gtceu.cutter(id('uepic_chip'))
         .itemInputs('kubejs:uepic_wafer')
         .itemOutputs('2x kubejs:uepic_chip')
         .duration(900)
-        .EUt(GTValues.VA[GTValues.UV])
+        .EUt(GTValues.VA[GTValues.ZPM])
         .cleanroom(CleanroomType.STERILE_CLEANROOM);
 
     event.recipes.gtceu.draco_infusion(id('uipic_wafer'))
@@ -87,14 +87,14 @@ ServerEvents.recipes(event => {
             'gtceu:naquadah_foil','gtceu:neutronium_foil','4x kubejs:draconic_stem_cells','gtceu:vanadium_gallium_foil')
         .inputFluids('gtceu:pure_dragon_breath 2000')
         .itemOutputs('kubejs:uipic_wafer')
-        .duration(800)
-        .EUt(GTValues.VA[GTValues.UEV]);
+        .duration(3600)
+        .EUt(GTValues.VA[GTValues.UV]);
 
     event.recipes.gtceu.cutter(id('uipic_chip'))
         .itemInputs('kubejs:uipic_wafer')
         .itemOutputs('2x kubejs:uipic_chip')
         .duration(900)
-        .EUt(GTValues.VA[GTValues.UEV])
+        .EUt(GTValues.VA[GTValues.UV])
         .cleanroom(CleanroomType.STERILE_CLEANROOM);
 
     event.recipes.gtceu.cutter(id('draco_soc'))
@@ -107,8 +107,8 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.cutter(id('draco_wafer'))
         .itemInputs('kubejs:draco_boule')
         .itemOutputs('64x kubejs:draco_wafer', '64x kubejs:draco_wafer')
-        .duration(4000)
-        .EUt(GTValues.VA[GTValues.UV])
+        .duration(3200)
+        .EUt(GTValues.VA[GTValues.ZPM])
         .cleanroom(CleanroomType.STERILE_CLEANROOM);
 
     event.recipes.gtceu.circuit_assembler(id('3d_nand_chip'))
@@ -139,7 +139,7 @@ ServerEvents.recipes(event => {
         .itemInputs('kubejs:qram_wafer')
         .itemOutputs('12x kubejs:qram_chip')
         .duration(900)
-        .EUt(GTValues.VHA[GTValues.UHV])
+        .EUt(GTValues.VHA[GTValues.UHV] * .6)
         .cleanroom(CleanroomType.STERILE_CLEANROOM);
 
     const DracoWaferEngraving = (ModID, Output, WaferTier, Lens, LensIsTag) => {

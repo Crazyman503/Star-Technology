@@ -23,7 +23,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('atomic_synthesis_plant', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes(['chemical_skip', 'advanced_chemistry', 'absolute_reduction', 'enlightened_chemistry'])
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, $StarTRecipeModifiers.THOUGHPUT_BOOSTING, $StarTRecipeModifiers.BULK_PROCESSING, GTRecipeModifiers.OC_PERFECT_SUBTICK])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_PERFECT_SUBTICK, $StarTRecipeModifiers.THOUGHPUT_BOOSTING, $StarTRecipeModifiers.BULK_PROCESSING])
         .appearanceBlock(() => Block.getBlock('kubejs:cattomolymer_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('ABBCBBA    ', 'DAAAAAD    ', 'D     D    ', 'D     D    ', 'D     D    ', 'DAAAAAD    ', 'ABBCBBA    ', '           ', '           ', '           ', '           ') 

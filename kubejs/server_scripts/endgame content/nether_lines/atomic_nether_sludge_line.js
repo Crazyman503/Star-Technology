@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.large_chemical_reactor(id('uranium_tetrafluoride_to_uranium_dioxide'))
         .inputFluids('gtceu:uranium_tetrafluoride 1000', 'minecraft:water 2000')
         .outputFluids('gtceu:hydrofluoric_acid 4000')
-        .itemOutputs('3x gtceu:uraninite_dust')
+        .itemOutputs('2x gtceu:uraninite_dust')
         .duration(850)
         .EUt(GTValues.V[GTValues.LuV]);
 
@@ -188,9 +188,9 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.electric_blast_furnace(id('polonium_carbonate_heating'))
         .itemInputs('1x gtceu:polonium_carbonate_dust', '2x gtceu:calcium_dust')
         .itemOutputs('6x gtceu:calcium_carbonate_dust', '1x gtceu:hot_polonium_ingot')
-        .duration(1400)
+        .duration(2000)
         .blastFurnaceTemp(13499)
-        .EUt(GTValues.VA[GTValues.UIV]);
+        .EUt(GTValues.VHA[GTValues.UIV] * .6);
 
     event.recipes.gtceu.large_chemical_reactor(id('pyrophosphoric_acid_hydrating'))
         .inputFluids('gtceu:pyrophosphoric_acid 1000', 'minecraft:water 1000')

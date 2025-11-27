@@ -105,7 +105,7 @@ ServerEvents.recipes(event => {
             '8x gtceu:magmada_alloy_round','gtceu:mythrolic_alloy_ring','2x kubejs:uev_transmission_assembly','kubejs:uev_precision_drive_mechanism',
             '#gtceu:circuits/uev','12x gtceu:fine_adamantine_wire'
         )
-        .inputFluids('gtceu:polyether_ether_ketone 576','gtceu:lubricant 10000')
+        .inputFluids('gtceu:polyether_ether_ketone 576','gtceu:tungsten_disulfide 5000')
         .itemOutputs('gtceu:uev_rotor_holder')
         .duration(400)
         .stationResearch(
@@ -122,7 +122,7 @@ ServerEvents.recipes(event => {
             '8x gtceu:abyssal_alloy_round','gtceu:chaotixic_alloy_ring','2x kubejs:uiv_transmission_assembly','kubejs:uiv_precision_drive_mechanism',
             '#gtceu:circuits/uiv','gtceu:uiv_field_generator','16x gtceu:fine_xeproda_wire'
         )
-        .inputFluids('gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 432','gtceu:tungsten_disulfide 5000')
+        .inputFluids('gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 432','gtceu:tungsten_disulfide 10000')
         .itemOutputs('gtceu:uiv_rotor_holder')
         .duration(400)
         .stationResearch(

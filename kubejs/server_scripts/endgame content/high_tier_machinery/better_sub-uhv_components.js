@@ -54,19 +54,19 @@ ServerEvents.recipes(event => {
         componentTypesAssemblyLine('robot_arm',[`4x gtceu:long_${Primary}_rod`,`1x gtceu:${Primary}_gear`,`3x gtceu:small_${Primary}_gear`,`2x gtceu:${Tier}_electric_motor`,`1x gtceu:${Tier}_electric_piston`,`1x #gtceu:circuits/${Tier}`,`2x #gtceu:circuits/${Tier1}`,`4x #gtceu:circuits/${Tier2}`,`4x gtceu:${Cable}_single_cable`],
             [`gtceu:soldering_alloy ${576*scale}`,`gtceu:lubricant ${125*(2**scale)}`],4);
 
-        componentTypesAssemblyLine('field_generator',[`1x gtceu:${Frame}_frame`,`6x gtceu:${Frame}_plate`,`1x gtceu:${Catalyst}`,`2x gtceu:${Tier}_emitter`,`2x #gtceu:circuits/${Tier}`,`128x gtceu:fine_${SuperConductor}_wire`,`4x gtceu:${Cable}_single_cable`],
+        componentTypesAssemblyLine('field_generator',[`1x gtceu:${Frame}_frame`,`6x gtceu:${Frame}_plate`,`${Catalyst}`,`2x gtceu:${Tier}_emitter`,`2x #gtceu:circuits/${Tier}`,`128x gtceu:fine_${SuperConductor}_wire`,`4x gtceu:${Cable}_single_cable`],
             [`gtceu:soldering_alloy ${576*scale}`],5);
 
-        componentTypesAssemblyLine('emitter',[`1x gtceu:${Frame}_frame`,`1x gtceu:${Tier}_electric_motor`,`4x gtceu:long_${SenMat}_rod`,`1x gtceu:${Catalyst}`,`2x #gtceu:circuits/${Tier}`,`96x gtceu:${SenFoil}_foil`,`4x gtceu:${Cable}_single_cable`],
+        componentTypesAssemblyLine('emitter',[`1x gtceu:${Frame}_frame`,`1x gtceu:${Tier}_electric_motor`,`4x gtceu:long_${SenMat}_rod`,`${Catalyst}`,`2x #gtceu:circuits/${Tier}`,`96x gtceu:${SenFoil}_foil`,`4x gtceu:${Cable}_single_cable`],
             [`gtceu:soldering_alloy ${144*(2**scale)}`],6);
 
-        componentTypesAssemblyLine('sensor',[`1x gtceu:${Frame}_frame`,`1x gtceu:${Tier}_electric_motor`,`4x gtceu:${SenMat}_plate`,`1x gtceu:${Catalyst}`,`2x #gtceu:circuits/${Tier}`,`96x gtceu:${SenFoil}_foil`,`4x gtceu:${Cable}_single_cable`],
+        componentTypesAssemblyLine('sensor',[`1x gtceu:${Frame}_frame`,`1x gtceu:${Tier}_electric_motor`,`4x gtceu:${SenMat}_plate`,`${Catalyst}`,`2x #gtceu:circuits/${Tier}`,`96x gtceu:${SenFoil}_foil`,`4x gtceu:${Cable}_single_cable`],
             [`gtceu:soldering_alloy ${144*(2**scale)}`],7);
 
         }
 
-        assemblyMaterials(1,'luv','iv','ev','hsss','hsss','ruridit','niobium_titanium','niobium_titanium','indium_tin_barium_titanium_cuprate','quantum_star','ruridit','palladium','hsss',6000);
-        assemblyMaterials(2,'zpm','luv','iv','osmiridium','osmiridium','europium','vanadium_gallium','polybenzimidazole','uranium_rhodium_dinaquadide','quantum_star','osmiridium','trinium','naquadah_alloy',24000);
-        assemblyMaterials(3,'uv','zpm','luv','tritanium','naquadah_alloy','americium','yttrium_barium_cuprate','naquadah','enriched_naquadah_trinium_europium_duranide','gravi_star','tritanium','naquadria','tritanium',100000);
+        assemblyMaterials(1,'luv','iv','ev','hsss','hsss','ruridit','niobium_titanium','niobium_titanium','indium_tin_barium_titanium_cuprate','1x gtceu:quantum_star','ruridit','palladium','hsss',6000);
+        assemblyMaterials(2,'zpm','luv','iv','osmiridium','osmiridium','europium','vanadium_gallium','polybenzimidazole','uranium_rhodium_dinaquadide','2x gtceu:quantum_star','osmiridium','trinium','naquadah_alloy',24000);
+        assemblyMaterials(3,'uv','zpm','luv','tritanium','naquadah_alloy','americium','yttrium_barium_cuprate','naquadah','enriched_naquadah_trinium_europium_duranide','1x gtceu:gravi_star','tritanium','naquadria','tritanium',100000);
 
 });

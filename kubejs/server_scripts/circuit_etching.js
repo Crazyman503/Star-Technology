@@ -69,7 +69,7 @@ ServerEvents.recipes(event => {
     [
         {board: 'runic_convergence', foil: 'yttrium_barium_cuprate', foil_count: 24, amount: 5000, duration: 2100, energy: 1920},
         {board: 'draconic_wetware', foil: 'europium', foil_count: 32, amount: 10000, duration: 2400, energy: 7680},
-        {board: 'awakened_draconic_wetware', foil: 'polonium_bismide', foil_count: 48, amount: 20000, duration: 2700, energy: 30720}
+        {board: 'awakened_draconic_wetware', foil: 'polonium_bismide', foil_count: 40, amount: 20000, duration: 2700, energy: 30720}
     ].forEach(type=> {
         [
           {id: 'copper', name: 'cupric_chloride_solution', multiplier: 1},

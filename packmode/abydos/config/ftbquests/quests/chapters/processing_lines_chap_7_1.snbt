@@ -543,6 +543,7 @@
 				{
 					id: "4D555D03AF2F7542"
 					item: "gtceu:hot_mythril_ingot"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -934,6 +935,7 @@
 				{
 					id: "0711BAE622F4A06B"
 					item: "gtceu:hot_adamantine_ingot"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1072,6 +1074,7 @@
 				{
 					id: "6DF4A6043689D13B"
 					item: "gtceu:hot_enriched_estalt_ingot"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1410,6 +1413,7 @@
 				{
 					id: "785C8FB1BDA657D4"
 					item: "gtceu:hot_estalt_ingot"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1699,6 +1703,7 @@
 				{
 					id: "2604250FE035522F"
 					item: "gtceu:hot_isovol_ingot"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1717,6 +1722,7 @@
 				{
 					id: "7C631999E570007E"
 					item: "gtceu:hot_calamatium_ingot"
+					optional_task: true
 					type: "item"
 				}
 				{

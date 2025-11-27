@@ -1365,9 +1365,9 @@
 		}
 		{
 			dependencies: [
-				"664F435508073B8E"
 				"7FFCAD92772A175F"
 				"52B553FDB34B1475"
+				"707C2E9BA62A60C5"
 			]
 			description: [
 				"{ftbquests.chapter.adventures_in_abydos.quest75.description1}"
