@@ -1,7 +1,7 @@
 import mods.redimstages.ReDimensionStages;
 
 // Abydos - classic stargate
-ReDimensionStages.restrictWithMessage("sgjourney:abydos", "You lack comprehension of the Ancient Sands. Consume an Abydoss Coordinate Crystal to enter this area.", "one");
+ReDimensionStages.restrictWithMessage("sgjourney:abydos", "You lack comprehension of the Ancient Sands. Consume an Abydos Coordinate Crystal to enter this area.", "one");
 // Nether, End - milky way stargate
 ReDimensionStages.restrictWithMessage("minecraft:the_nether", "You lack comprehension of the Burning Hells. Consume a Nether Coordinate Crystal to enter this plane.", "two");
 ReDimensionStages.restrictWithMessage("minecraft:the_end", "You lack comprehension of the Draconic Void. Consume an End Coordinate Crystal to enter this plane.", "three");
