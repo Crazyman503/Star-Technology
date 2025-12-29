@@ -437,11 +437,11 @@ ServerEvents.recipes(event => {
     // === Enlightened Chemistry ===
 
     event.recipes.gtceu.enlightened_chemistry(id('better_draco_stem_cells'))
-        .itemInputs('gtceu:small_draconyallium_dust')
-        .inputFluids('gtceu:abyssal_nutrient_blend 500','gtceu:draconic_enrichment_serum 2000')
-        .itemOutputs('32x kubejs:draconic_stem_cells')
-        .outputFluids('gtceu:condensed_abyssal_nutrient_blend 100')
-        .duration(300)
+        .itemInputs('gtceu:nether_star_dust','gtceu:echo_shard_dust')
+        .inputFluids('gtceu:abyssal_nutrient_blend 2000','gtceu:draconic_enrichment_serum 500')
+        .itemOutputs('8x kubejs:draconic_stem_cells')
+        .outputFluids('gtceu:condensed_abyssal_nutrient_blend 800')
+        .duration(46)
         .EUt(GTValues.VHA[GTValues.UIV]);
 
 });

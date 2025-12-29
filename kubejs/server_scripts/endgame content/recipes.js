@@ -412,9 +412,9 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.injection_mixer(id('dragon_breath'))
         .itemInputs('gtceu:tiny_draconyallium_dust')
-        .inputFluids('gtceu:radon 73250','gtceu:breath_hormone_complex 1750')
-        .outputFluids('gtceu:dragon_breath 1250')
-        .duration(375)
+        .inputFluids('gtceu:radon 124000','gtceu:breath_hormone_complex 1000')
+        .outputFluids('gtceu:dragon_breath 5000')
+        .duration(1575)
         .EUt(GTValues.V[GTValues.UIV] * .3)
         .cleanroom($StarTAbyssalContainmentMachine.ABYSSAL_CONTAINMENT_ROOM);
 

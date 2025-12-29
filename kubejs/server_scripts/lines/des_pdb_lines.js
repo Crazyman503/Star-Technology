@@ -3,7 +3,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.extractor(id('secreting_cell_extraction'))
         .itemInputs('kubejs:secreting_draconic_cells')
-        .outputFluids('gtceu:draconic_hormone_residue 50')
+        .outputFluids('gtceu:draconic_hormone_residue 75')
         .duration(40)
         .EUt(GTValues.VHA[GTValues.UEV])
         .cleanroom($StarTAbyssalContainmentMachine.ABYSSAL_CONTAINMENT_ROOM);
@@ -39,7 +39,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.distillery(id('condensed_abyssal_nutrient_blend'))
         .inputFluids('gtceu:abyssal_nutrient_blend 500')
-        .outputFluids('gtceu:condensed_abyssal_nutrient_blend 100')
+        .outputFluids('gtceu:condensed_abyssal_nutrient_blend 200')
         .duration(300)
         .EUt(GTValues.VHA[GTValues.UHV])
         .cleanroom($StarTAbyssalContainmentMachine.ABYSSAL_CONTAINMENT_ROOM);
@@ -54,7 +54,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.autoclave(id('draco_peptide_amino_chain'))
         .itemInputs('gtceu:gelatin_dust')
-        .inputFluids('gtceu:amino_primed_medium 250')
+        .inputFluids('gtceu:amino_primed_medium 125')
         .itemOutputs('kubejs:draco_peptide_amino_chain')
         .duration(315)
         .EUt(GTValues.VA[GTValues.UHV])
@@ -64,7 +64,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.autoclave(id(type))
         .itemInputs('kubejs:draco_peptide_amino_chain')
         .inputFluids(fluid)
-        .outputFluids(`gtceu:${type} 250`)
+        .outputFluids(`gtceu:${type} 125`)
         .duration(30)
         .EUt(GTValues.VHA[GTValues.UIV])
         .cleanroom($StarTAbyssalContainmentMachine.ABYSSAL_CONTAINMENT_ROOM);
