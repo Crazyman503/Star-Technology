@@ -45,10 +45,63 @@ ServerEvents.recipes(event => {
             )
         .EUt(GTValues.VHA[GTValues.UIV]);
 
-    //Casings/Coil
-    
+    // === Reflector Panels ===
+    event.remove({output: 'gtceu:neutron_reflector'});
+    const T1Panel = 'kubejs:basic_neutron_reflector';
+    const T2Panel = 'kubejs:advanced_neutron_reflector';
+    const T3Panel = 'kubejs:complex_neutron_reflector';
+    const T4Panel = 'kubejs:reinforced_neutron_reflector';
+    const T5Panel = 'kubejs:borealic_neutron_reflector';
+    const T6Panel = 'kubejs:dragonic_neutron_reflector';
+    const T7Panel = 'kubejs:prismalic_neutron_reflector';
+
+    const T1Reflector = 'kubejs:basic_reflector_casing';
+    const T2Reflector = 'kubejs:advanced_reflector_casing';
+    const T3Reflector = 'kubejs:complex_reflector_casing';
+    const T4Reflector = 'kubejs:reinforced_reflector_casing';
+    const T5Reflector = 'kubejs:borealic_reflector_casing';
+    const T6Reflector = 'kubejs:dragonic_reflector_casing';
+    const T7Reflector = 'kubejs:prismalic_reflector_casing';
+
+    let ReflectorPanel = (output,primary,secondary,backing,solder,eut,clean) => {
+        event.recipes.gtceu.assembler(id(output.split(':')[1]))
+            .itemInputs(`gtceu:${primary}_plate`,`2x gtceu:double_${secondary}_plate`,backing)
+            .inputFluids(`gtceu:${solder}`)
+            .itemOutputs(output)
+            .duration(1000)
+            .EUt(eut)
+            .cleanroom(clean);
+    }
+
+    ReflectorPanel(T1Panel,'ruridit','beryllium','gtceu:double_tungsten_carbide_plate','tin_alloy 2304',GTValues.VHA[GTValues.EV],CleanroomType.CLEANROOM);
+    ReflectorPanel(T2Panel,'osmiridium','naquadah',T1Panel,'soldering_alloy 1152',GTValues.VHA[GTValues.IV],CleanroomType.CLEANROOM);
+    ReflectorPanel(T3Panel,'trinaquadalloy','zirconium',T2Panel,'soldering_alloy 2304',GTValues.VHA[GTValues.LuV],CleanroomType.CLEANROOM);
+    ReflectorPanel(T4Panel,'pure_netherite','tritanium',T3Panel,'indium_tin_lead_cadmium_soldering_alloy 1152',GTValues.VHA[GTValues.ZPM],CleanroomType.STERILE_CLEANROOM);
+    ReflectorPanel(T5Panel,'ancient_netherite','void',T4Panel,'indium_tin_lead_cadmium_soldering_alloy 2304',GTValues.VHA[GTValues.UV],CleanroomType.STERILE_CLEANROOM);
+    ReflectorPanel(T6Panel,'rhenate_w','mythrotight_carbide_steel',T5Panel,'naquadated_soldering_alloy 1152',GTValues.VHA[GTValues.UHV],CleanroomType.STERILE_CLEANROOM);
+    ReflectorPanel(T7Panel,'draco_abyssal','hvga_steel',T6Panel,'naquadated_soldering_alloy 2304',GTValues.VHA[GTValues.UEV],$StarTAbyssalContainmentMachine.ABYSSAL_CONTAINMENT_ROOM);
+
+    let ReflectorBlock = (output,core,tierFG,cable,plate,fluid,eut,clean) => {
+        event.recipes.gtceu.assembler(id(output.split(':')[1]))
+            .itemInputs(core,`gtceu:${tierFG}_field_generator`,'6x ' + plate,`4x gtceu:${cable}_single_cable`,'12x gtceu:trinium_foil')
+            .inputFluids('gtceu:'+fluid)
+            .itemOutputs('2x ' + output)
+            .duration(400)
+            .EUt(eut)
+            .cleanroom(clean);
+    }
+
+    ReflectorBlock(T1Reflector,'gtceu:enriched_naquadah_frame','iv','niobium_nitride',T1Panel,'polybenzimidazole 288',GTValues.VA[GTValues.IV],CleanroomType.CLEANROOM);
+    ReflectorBlock(T2Reflector,T1Reflector,'luv','vanadium_gallium',T2Panel,'polybenzimidazole 576',GTValues.VA[GTValues.LuV],CleanroomType.CLEANROOM);
+    ReflectorBlock(T3Reflector,T2Reflector,'zpm','yttrium_barium_cuprate',T3Panel,'polyether_ether_ketone 288',GTValues.VA[GTValues.ZPM],CleanroomType.CLEANROOM);
+    ReflectorBlock(T4Reflector,T3Reflector,'uv','europium',T4Panel,'polyether_ether_ketone 576',GTValues.VA[GTValues.UV],CleanroomType.STERILE_CLEANROOM);
+    ReflectorBlock(T5Reflector,T4Reflector,'uhv','cerium_tritelluride',T5Panel,'poly_34_ethylenedioxythiophene_polystyrene_sulfate 288',GTValues.VA[GTValues.UHV],CleanroomType.STERILE_CLEANROOM);
+    ReflectorBlock(T6Reflector,T5Reflector,'uev','polonium_bismide',T6Panel,'poly_34_ethylenedioxythiophene_polystyrene_sulfate 576',GTValues.VA[GTValues.UEV],CleanroomType.STERILE_CLEANROOM);
+    ReflectorBlock(T7Reflector,T6Reflector,'uiv','lepton_resonant_thallium_antimonide',T7Panel,'poly_34_ethylenedioxythiophene_polystyrene_sulfate 1152',GTValues.VA[GTValues.UIV],$StarTAbyssalContainmentMachine.ABYSSAL_CONTAINMENT_ROOM);
+
+    // === Coils ===
     event.remove({output: 'gtceu:superconducting_coil'});
-    const SuperconductingCoil = (tier,SuperCond,quant) => {
+    let SuperconductingCoil = (tier,SuperCond,quant) => {
         event.recipes.gtceu.assembler(id(`superconducting_coil_${tier}`))
             .itemInputs('gtceu:enriched_naquadah_frame', `16x gtceu:${SuperCond}_double_wire`, '32x gtceu:niobium_titanium_foil')
             .inputFluids('gtceu:trinium 1728')
@@ -63,51 +116,60 @@ ServerEvents.recipes(event => {
     SuperconductingCoil('uev','seaborgium_palladium_enriched_estalt_flerovium_alloy',5);
     SuperconductingCoil('uiv','rhenium_super_composite_alloy',6);
 
-    event.recipes.gtceu.assembler(id('auxiliary_boosted_fusion_casing_mk1'))
-        .itemInputs('gtceu:uhv_machine_casing', 'start_core:auxiliary_fusion_coil_mk1', '2x kubejs:uhv_voltage_coil', 'gtceu:uv_field_generator', '6x gtceu:zircalloy_4_plate')
-        .inputFluids('gtceu:polyether_ether_ketone 576')
-        .itemOutputs('2x start_core:auxiliary_boosted_fusion_casing_mk1')
-        .duration(100)
-        .EUt(GTValues.VHA[GTValues.UHV])
-        .cleanroom(CleanroomType.STERILE_CLEANROOM);
+    event.remove({output: 'gtceu:fusion_coil'});
+    let FusionCoil = (output,inputs,fluid,clean,dura,eut) => {
+        event.recipes.gtceu.assembler(id(`${output.split(':')[1]}`))
+            .itemInputs(inputs)
+            .inputFluids(fluid)
+            .itemOutputs(output)
+            .duration(dura)
+            .EUt(eut)
+            .cleanroom(clean);
+    }
+    FusionCoil('1x gtceu:fusion_coil',['1x gtceu:superconducting_coil','2x gtceu:iv_field_generator','1x gtceu:iv_electric_pump','4x '+T1Panel,'4x #gtceu:circuits/luv','1x gtceu:naquadah_normal_fluid_pipe','4x gtceu:europium_plate'],'gtceu:vanadium_gallium 576',CleanroomType.CLEANROOM,150,GTValues.VA[GTValues.ZPM]);
+    FusionCoil('3x start_core:auxiliary_fusion_coil_mk1',['3x gtceu:superconducting_coil','4x gtceu:zpm_field_generator','2x gtceu:zpm_electric_pump','8x '+T3Panel,'8x #gtceu:circuits/uv','2x gtceu:zapolgium_normal_fluid_pipe','8x gtceu:zircalloy_4_plate'],'gtceu:europium 1152',CleanroomType.CLEANROOM,300,GTValues.VA[GTValues.UHV]);
+    FusionCoil('1x start_core:advanced_fusion_coil',['1x gtceu:fusion_coil','2x gtceu:uv_field_generator','1x gtceu:uv_electric_pump','4x '+T4Panel,'4x #gtceu:circuits/uhv','1x gtceu:mythrolic_alloy_normal_fluid_pipe','4x gtceu:magmada_alloy_plate'],'gtceu:cerium_tritelluride 576',CleanroomType.STERILE_CLEANROOM,150,GTValues.VA[GTValues.UEV]);
+    FusionCoil('3x start_core:auxiliary_fusion_coil_mk2',['3x start_core:auxiliary_fusion_coil_mk1','4x gtceu:uhv_field_generator','2x gtceu:uhv_electric_pump','8x '+T5Panel,'8x #gtceu:circuits/uev','2x gtceu:nyanium_normal_fluid_pipe','8x gtceu:abyssal_alloy_plate'],'gtceu:polonium_bismide 1152',CleanroomType.STERILE_CLEANROOM,300,GTValues.VA[GTValues.UIV]);
 
-    event.recipes.gtceu.assembler(id('fusion_casing_mk4'))
-        .itemInputs('gtceu:uev_machine_casing', 'start_core:advanced_fusion_coil', '2x kubejs:uev_voltage_coil', 'gtceu:uhv_field_generator', '6x gtceu:magmada_alloy_plate')
-        .inputFluids('gtceu:polyether_ether_ketone 1152')
-        .itemOutputs('2x start_core:fusion_casing_mk4')
-        .duration(100)
-        .EUt(GTValues.VHA[GTValues.UEV])
-        .cleanroom(CleanroomType.STERILE_CLEANROOM);
+    // === Casings ===
+    event.remove({output: 'gtceu:fusion_casing'});
+    event.remove({output: 'gtceu:fusion_casing_mk2'});
+    event.remove({output: 'gtceu:fusion_casing_mk3'});
 
-    event.recipes.gtceu.assembler(id('auxiliary_fusion_coil_mk1'))
-        .itemInputs('3x gtceu:superconducting_coil', '4x gtceu:zpm_field_generator', '2x gtceu:zpm_electric_pump', '4x gtceu:neutron_reflector', '8x #gtceu:circuits/uv', '8x gtceu:zapolgium_small_fluid_pipe', '8x gtceu:zircalloy_4_plate')
-        .inputFluids('gtceu:europium 1152')
-        .itemOutputs('3x start_core:auxiliary_fusion_coil_mk1')
-        .duration(200)
-        .EUt(GTValues.VHA[GTValues.UHV])
-        .cleanroom(CleanroomType.CLEANROOM);
+    let FusionCasing = (output,tier,VcoilMod,reflector,coil,fluid,clean,eut) => {
+        let TierData = {
+            'luv': 'iv',
+            'zpm': 'luv',
+            'uv': 'zpm',
+            'uhv': 'uv',
+            'uev': 'uhv',
+            'uiv': 'uev'
+        }
+        let tierUnder = TierData[tier];
 
-    event.recipes.gtceu.assembler(id('advanced_fusion_coil'))
-        .itemInputs('gtceu:fusion_coil', '2x gtceu:uv_field_generator', '1x gtceu:uv_electric_pump', '6x gtceu:neutron_reflector', '4x #gtceu:circuits/uhv', '4x gtceu:mythrolic_alloy_small_fluid_pipe', '4x gtceu:magmada_alloy_plate')
-        .inputFluids('gtceu:cerium_tritelluride 576')
-        .itemOutputs('start_core:advanced_fusion_coil')
-        .duration(200)
-        .EUt(GTValues.VHA[GTValues.UEV])
-        .cleanroom(CleanroomType.STERILE_CLEANROOM);
+        event.recipes.gtceu.assembler(id(`${output.split(':')[1]}`))
+            .itemInputs(`gtceu:${tier}_machine_hull`,coil,`2x ${VcoilMod}:${tier}_voltage_coil`,`gtceu:${tierUnder}_field_generator`,'6x ' + reflector)
+            .inputFluids(fluid)
+            .itemOutputs(output)
+            .duration(160)
+            .EUt(eut)
+            .cleanroom(clean);
 
-    event.recipes.gtceu.assembler(id('auxiliary_boosted_fusion_casing_mk2'))
-        .itemInputs('gtceu:uiv_machine_casing', 'start_core:auxiliary_fusion_coil_mk2', '2x kubejs:uiv_voltage_coil', 'gtceu:uev_field_generator', '6x gtceu:abyssal_alloy_plate')
-        .inputFluids('gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 576')
-        .itemOutputs('2x start_core:auxiliary_boosted_fusion_casing_mk2')
-        .duration(100)
-        .EUt(GTValues.VHA[GTValues.UIV])
-        .cleanroom(CleanroomType.STERILE_CLEANROOM);
+    }
 
-    event.recipes.gtceu.assembler(id('auxiliary_fusion_coil_mk2'))
-        .itemInputs('3x start_core:auxiliary_fusion_coil_mk1', '4x gtceu:uhv_field_generator', '2x gtceu:uhv_electric_pump', '8x gtceu:neutron_reflector', '8x #gtceu:circuits/uev', '8x gtceu:nyanium_small_fluid_pipe', '8x gtceu:abyssal_alloy_plate')
-        .inputFluids('gtceu:polonium_bismide 1152')
-        .itemOutputs('3x start_core:auxiliary_fusion_coil_mk2')
-        .duration(200)
-        .EUt(GTValues.VHA[GTValues.UIV])
-        .cleanroom(CleanroomType.STERILE_CLEANROOM);
+    FusionCasing('2x gtceu:fusion_casing','luv','gtceu',T1Panel,'gtceu:superconducting_coil','gtceu:polybenzimidazole 288',CleanroomType.CLEANROOM,GTValues.VA[GTValues.LuV]);
+    FusionCasing('2x gtceu:fusion_casing_mk2','zpm','gtceu',T2Panel,'gtceu:fusion_coil','gtceu:polybenzimidazole 576',CleanroomType.CLEANROOM,GTValues.VA[GTValues.LuV]);
+    FusionCasing('2x gtceu:fusion_casing_mk3','uv','gtceu',T3Panel,'gtceu:fusion_coil','gtceu:polyether_ether_ketone 288',CleanroomType.CLEANROOM,GTValues.VA[GTValues.LuV]);
+    FusionCasing('2x start_core:auxiliary_boosted_fusion_casing_mk1','uhv','kubejs',T4Panel,'start_core:auxiliary_fusion_coil_mk1','gtceu:polyether_ether_ketone 576',CleanroomType.CLEANROOM,GTValues.VA[GTValues.LuV]);
+    FusionCasing('2x start_core:fusion_casing_mk4','uev','kubejs',T5Panel,'start_core:advanced_fusion_coil','gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 288',CleanroomType.CLEANROOM,GTValues.VA[GTValues.LuV]);
+    FusionCasing('2x start_core:auxiliary_boosted_fusion_casing_mk2','uiv','kubejs',T6Panel,'start_core:auxiliary_fusion_coil_mk2','gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 576',CleanroomType.CLEANROOM,GTValues.VA[GTValues.LuV]);
+
+    event.remove({output: 'gtceu:fusion_glass'});
+    event.recipes.gtceu.assembler(id('fusion_glass'))
+        .itemInputs('gtceu:laminated_glass','4x gtceu:enriched_naquadah_plate','6x kubejs:basic_neutron_reflector')
+        .inputFluids('gtceu:polybenzimidazole 144')
+        .itemOutputs('2x gtceu:fusion_glass')
+        .duration(50)
+        .EUt(GTValues.VA[GTValues.LuV]);
+
 });
