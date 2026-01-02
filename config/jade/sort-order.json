@@ -38,6 +38,7 @@
   "extendedcrafting:ultimate_auto_table": null,
   "extendedcrafting:ultimate_table": null,
   "framedblocks:framed_item_frame": null,
+  "functionalstorage:armory": null,
   "gravestone:grave": null,
   "gregiceng:crafting_io_buffer": null,
   "gtceu:auto_output_info": null,
@@ -115,5 +116,11 @@
   "mysticalagriculture:inferium_crop": null,
   "mysticalagriculture:infused_farmland": null,
   "pipez:pipe": null,
-  "shetiphiancore:hud": null
+  "shetiphiancore:hud": null,
+  "start_core:abyssal_harvester_info": null,
+  "start_core:dream_link_network_info": null,
+  "start_core:hellforge_heat_info": null,
+  "start_core:threading_recipes": null,
+  "start_core:threading_stat_blocks": null,
+  "start_core:variadic_redstone_info": null
 }
