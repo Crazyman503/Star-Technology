@@ -63,7 +63,11 @@ config/de/mari_023/ae2wtlib.json5
 config/fancymenu/legacy_checklist.txt
 config/fancymenu/options.txt
 config/fancymenu/user_variables.db
-config/fancymenu/ui_themes/*
 config/hammerlib/tags/modded/solarflux.json
-config/konkrete/locals/*
+config/fancymenu/ui_themes/dark.json
+config/fancymenu/ui_themes/light.json
+config/konkrete/locals/de_de.local
+config/konkrete/locals/en_us.local
+config/konkrete/locals/pl_pl.local
+config/konkrete/locals/pt_br.local
 config/skyblockbuilder/data/*
