@@ -1,3 +1,5 @@
+// packmode: hard
+
 GTCEuStartupEvents.registry('gtceu:machine', event => {
 	const ulv_machine = (machine) => {
 		event.create(machine, 'simple')

@@ -1,3 +1,5 @@
+// packmode: hard
+
 GTCEuStartupEvents.registry('gtceu:machine', event => {
 	event.create('steeled_blast_furnace', 'primitive')
 		.rotationState(RotationState.NON_Y_AXIS)

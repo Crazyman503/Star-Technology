@@ -1,4 +1,8 @@
+// packmode: hard
+
 StartupEvents.registry('item', event => {
+
+    // === Primitive Age ===
 	event.create('flint_shard')
 		.rarity('common')
 		.texture(`kubejs:item/hm/pre-lv/flint_shard`);
@@ -29,8 +33,7 @@ StartupEvents.registry('item', event => {
 		.unstackable()
 		.texture(`kubejs:item/hm/pre-lv/water_bowl`);
 
-	// ================================================================================== //
-
+    // === Ore Chunks ===
 	[
 		{type: 'hematite', composition: 'Fe₂O₃'},
 		{type: 'cassiterite', composition: 'SnO₂'},
@@ -48,8 +51,8 @@ StartupEvents.registry('item', event => {
 			.texture(`kubejs:item/hm/pre-lv/${id}`)
 	});
 
-	// ================================================================================== //
 
+    // === Incomplete parts ===
 	['long_rod', 'double_plate', 'gear', 'small_gear', 'rotor', 'spring', 'small_spring',
 		'single_wire', 'fine_wire', 'fluid_pipe', 'item_pipe',].forEach(id => {
 		event.create(`incomplete_${id}`)
@@ -57,8 +60,7 @@ StartupEvents.registry('item', event => {
 			.texture(`kubejs:item/hm/incomplete_parts/incomplete_${id}`)
 	});
 
-	// ================================================================================== //
-
+    // === Tools ===
 	event.create('basic_scavenging_rod')
 		.rarity('common')
 		.maxDamage(256)
@@ -71,22 +73,13 @@ StartupEvents.registry('item', event => {
 		.unstackable()
 		.texture(`kubejs:item/hm/pre-lv/scavenging_rod`);
 
-	// ================================================================================== //
-
-	// event.create('iron_sand_paper')
-	// 	.displayName('Iron Sand Paper')
-	// 	.rarity('common')
-	// 	.maxDamage(96)
-	// 	.unstackable()
-	// 	.texture(`kubejs:item/hm/pre-lv/iron_sand_paper`);
-
-	// ================================================================================== //
-
+	// === ULV Parts ===
 	['electric_motor', 'electric_pump', 'conveyor_module', 'robot_arm', 'electric_piston', 'emitter'].forEach(type => {
 		event.create(`ulv_${type}`)
 			.texture(`kubejs:item/hm/pre-lv/ulv_${type}`);
 	});
 
+    // === Ceramic Molds
 	['ingot', 'ball', 'raw'].forEach(ceramic => {
 		event.create(`unfired_${ceramic}_ceramic_casting_mold`)
 			.texture(`kubejs:item/hm/pre-lv/unfired_${ceramic}_ceramic_casting_mold`);
@@ -95,71 +88,4 @@ StartupEvents.registry('item', event => {
 			.texture(`kubejs:item/hm/pre-lv/${ceramic}_ceramic_casting_mold`);
 	});
 
-});
-
-StartupEvents.registry('block', event => {
-	event.create('reinforced_stone_bricks')
-		.hardness(5)
-		.resistance(1)
-		.soundType('stone')
-		.requiresTool(true)
-		.tagBlock("mineable/pickaxe")
-		.tagBlock('minecraft:needs_stone_tool')
-		.textureAll('kubejs:block/hm/reinforced_stone_bricks');
-
-	// ================================================================================== //
-
-	['1', '2', '3'].forEach(num => {
-		event.create(`crucible_stage_${num}`)
-			.hardness(1)
-			.resistance(2)
-			.requiresTool(true)
-			.tagBlock("minecraft:mineable/axe")
-			.tagBlock("minecraft:needs_stone_tool");
-
-		event.create(`crafting_stage_${num}`)
-			.hardness(1)
-			.resistance(2)
-			.requiresTool(true)
-			.tagBlock("minecraft:mineable/axe")
-			.tagBlock("minecraft:needs_stone_tool");
-	});
-
-	event.create('high_steam_machine_casing')
-		.hardness(5)
-		.resistance(1)
-		.soundType('stone')
-		.requiresTool(true)
-		.tagBlock("mineable/pickaxe")
-		.tagBlock('minecraft:needs_iron_tool')
-		.textureAll('kubejs:block/hm/high_steam_machine_casing');
-
-	event.create('refined_sand', 'falling')
-		.hardness(1)
-		.resistance(1)
-		.soundType('sand')
-		.requiresTool(false)
-		.tagBlock("mineable/shovel")
-		.textureAll('kubejs:block/hm/refined_sand');
-
-	event.create('refined_dust', 'falling')
-		.hardness(1)
-		.resistance(1)
-		.soundType('sand')
-		.requiresTool(false)
-		.tagBlock("mineable/shovel")
-		.textureAll('kubejs:block/hm/refined_dust');
-});
-
-ItemEvents.modification(event => {
-	event.modify('minecraft:cocoa_beans', item => {
-		item.foodProperties = food => {
-			food.hunger(1)
-			food.saturation(1)
-			food.effect('minecraft:slowness', 80, 2, 1)
-			food.effect('minecraft:hunger', 80, 1, .1)
-			food.effect('minecraft:blindness', 20, 1, .05)
-			food.fastToEat(true)
-		}
-	})
 });

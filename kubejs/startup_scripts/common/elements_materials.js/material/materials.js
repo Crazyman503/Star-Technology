@@ -260,6 +260,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     element('seaborgium', 'ingot');
     element('flerovium', 'ingot');
     element('rhenium', 'ingot');
+    element('dysprosium', 'ingot');
 
     // Dusts
     element('selenium', 'dust');
@@ -323,14 +324,15 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     // Blast Properties of periodic table metals
     const blast = global.blastProperty;
-    blast('zirconium', 10900, 'higher', VA('uv'), 800);
-    blast('tellurium', 11200, 'higher', VA('uhv'), 900);
+    blast('zirconium', 8100, 'higher', VA('uv'), 1200);
+    blast('tellurium', 10700, 'higher', VA('uhv'), 900);
     blast('polonium', 13400, 'higher', VHA('uiv'), 1350);
     blast('astatine', 12800, 'higher', VA('uhv'), 1400);
     blast('hafnium', 11900, 'higher', VA('uv'), 750);
     blast('rhenium', 14800, 'highest', VA('uiv'), 1200);
     blast('seaborgium', 13300, 'higher', VA('uev'), 1500);
     blast('flerovium', 12200, 'higher', VA('uhv'), 1200);
+    blast('dysprosium', 1680, 'mid', VA('luv'), 2250);
 
     // Fluid Pipes
     GTMaterials.NaquadahEnriched.setProperty(PropertyKey.FLUID_PIPE, new FluidPipeProperties(8000, 500, true, true, true, false));
@@ -544,7 +546,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         conductorSuper('prismalium', ['8x naquadah', '4x mercury_barium_calcium_cuprate', '7x tungsten_carbide'], 0x66ffff, [9000, 'high', VA('zpm'), 2000], [V('uv'), 48, 0, true], [1600, 470, 9, 24000]);
         conductorSuper('melodium', ['2x uranium_triplatinum', '14x electrum', '3x amethyst', '4x darmstadtium', '7x europium'], 0xd9b3ff, [10000, 'higher', VA('uv'), 2200], [V('uv'), 128, 0, true], [2000, 550, 10, 32000]);
         conductorSuper('stellarium', ['12x neutronium', '4x melodium', '1x samarium_iron_arsenic_oxide'], 0xccffff, [10799, 'highest', VA('uhv'), 2400], [V('uhv'), 192, 0, true], [3200, 660, 12, 48000]);
-        conductorSuper('ancient_runicalium', ['5x zapolgium', '18x stellarium', '8x zirconium'], 0xFAB922, [11749, 'highest', VA('uev'), 3600], [V('uev'), 256, 0, true], [6400, 720, 15, 64000]);
+        conductorSuper('ancient_runicalium', ['5x zapolgium', '18x stellarium', '8x zirconium'], 0xFAB922, [11749, 'highest', VHA('uev'), 3000], [V('uev'), 256, 0, true], [6400, 720, 15, 64000]);
     
     })()} else if (global.packmode == 'hard'){(() => {
 	
@@ -582,17 +584,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     compLiquid('chlorine_trifluoride', ['1x chlorine', '3x fluorine'], 0xb3ff99, []);
 
     compLiquid('tetrachloroethylene', ['2x carbon', '4x chlorine'], 0xd966ff, []);
-    
-    // Netherite Derivatives/Alloys
-    elemIngotFluid('pure_netherite', 0x1a0d00, DULL, [5000, 'low', VA('iv'), 1200], [foil, gear, long_rod, plates, rod, rotor, small_gear, ring]);
 
-    elemIngot('magnetic_pure_netherite', 'pure_netherite', 0x1a0d00, MAGNETIC, [], [rod, long_rod, magnetic]);
-
-    compGem('naquadic_netherite', ['3x naquadah', '5x pure_netherite', '2x caesium', '5x cerium', '12x fluorine', '32x oxygen'], 0xffd966, DIAMOND, []);
-
-    compIngotLiquid('weapon_grade_naquadah', ['7x naquadria', '2x pure_netherite', '5x neutronium', '16x fluorine'], 0xccff33, DULL, [10500, 'highest', VHA('uv'), 2500], [foil, gear, long_rod, plates, rod, rotor, small_gear, ring, frame]);
-
-    compGem('runic_laser_source_base', ['2x naquadic_netherite', '10x tritanium', '5x trinium'], 0x00ff00, OPAL, []);
 
     // Crown Ethers
     compLiquid('sulfur_dichloride', ['1x sulfur', '2x chlorine'], 0xcc0000, []);
@@ -707,7 +699,18 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     compLiquid('npk_solution', ['15x apatite', '5x potassium', '1x sulfur_trioxide', '1x nitrogen', '2x water'], 0xb8c3f5, []);
 
     compLiquid('cupric_chloride_solution', ['1x copper_chloride', '1x hydrochloric_acid'], 0x336600, []);
+    
+    // Netherite Derivatives/Alloys
+    elemIngotFluid('pure_netherite', 0x1a0d00, DULL, [5000, 'low', VA('iv'), 1200], [foil, gear, long_rod, plates, rod, rotor, small_gear, ring]);
 
+    elemIngot('magnetic_pure_netherite', 'pure_netherite', 0x1a0d00, MAGNETIC, [], [rod, long_rod, magnetic]);
+
+    compGem('naquadic_netherite', ['3x naquadah', '5x pure_netherite', '2x caesium', '5x cerium', '12x fluorine', '32x oxygen'], 0xffd966, DIAMOND, []);
+
+    compIngotLiquid('weapon_grade_naquadah', ['7x naquadria', '4x pure_netherite', '6x trinaquadalloy', '12x fluorine'], 0xccff33, DULL, [9500, 'highest', VHA('uv'), 2500], [foil, gear, long_rod, plates, rod, rotor, small_gear, ring, frame]);
+
+    compGem('runic_laser_source_base', ['2x naquadic_netherite', '10x tritanium', '5x trinium'], 0x00ff00, OPAL, []);    
+    
     // Ores and bedrock fluids
 
     compDustLiquidOre('titanite', ['1x calcium', '1x titanium', '1x silicon', '5x oxygen'], 0x66ffff, [no_decomp]);
@@ -1198,7 +1201,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     // Ultimate Multis
     compIngotLiquid('astrenalloy_nx', ['1x hastelloy_x', '4x enriched_naquadah', '3x zirconium', '6x tantalum_carbide', '4x osmiridium', '3x boron_nitride'], 0x63478e, SHINY, [10090, 'highest', VA('uv'), 2800], [plates, rod, frame]);
     
-    compIngotLiquid('thacoloy_nq_42x', ['6x incoloy_ma_956', '4x enriched_naquadah', '2x niobium_titanium', '4x osmiridium', '4x thallium_tungstate'], 0x467624, SHINY, [10090, 'highest', VA('zpm'), 3400], [plates, rod, frame]);
+    compIngotLiquid('thacoloy_nq_42x', ['6x incoloy_ma_956', '4x enriched_naquadah', '2x niobium_titanium', '4x osmiridium', '4x thallium_tungstate'], 0x467624, SHINY, [9190, 'highest', VA('zpm'), 3400], [plates, rod, frame]);
 
     compIngotLiquidSecColor('titan_steel', ['7x tritanium', '3x maraging_steel_300', '2x enriched_naquadah', '3x titanium_tungsten_carbide', '1x boron_nitride'], 0x9a445d, 0x2d095a, METALLIC, [8990, 'highest', VHA('uv'), 2400], [plates, rod, frame, small_gear, gear, round, ring, bolt_and_screw, long_rod, foil, dense_plate]);
 

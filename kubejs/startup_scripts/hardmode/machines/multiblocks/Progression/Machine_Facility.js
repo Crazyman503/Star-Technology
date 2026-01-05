@@ -1,3 +1,5 @@
+// packmode: hard
+
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
     event.create('simple_machine_facility')

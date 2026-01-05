@@ -1,3 +1,5 @@
+// packmode: hard
+
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 	event.create('gt_blasting')
 		.category('primitive')

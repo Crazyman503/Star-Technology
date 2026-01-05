@@ -1,3 +1,5 @@
+// packmode: hard
+
 GTCEuStartupEvents.registry('gtceu:machine', event => {
 	event.create('steam_casting_array', 'multiblock')
 		.rotationState(RotationState.NON_Y_AXIS)

@@ -1,88 +1,8 @@
+// packmode: hard
+
 GTCEuStartupEvents.registry('gtceu:material', event => {
-	
-	// Periodic table materials
-    const element = global.periodicTableElement;
-    // Ingots
-    element('promethium', 'ingot');
-    element('dysprosium', 'ingot');
-    element('holmium', 'ingot');
-	const blast = global.blastProperty;
-    blast('promethium', 1315, 'high', VA('ev'), 3458);
-    blast('dysprosium', 1680, 'mid', VA('hv'), 2684);
-    blast('holmium', 1747, 'mid', VHA('ev'), 3346);
 
-	event.create('pig_iron')
-		.ingot(1)
-		.dust()
-		.components('1x iron')
-		.color(0x8E8385)
-		.iconSet(DULL)
-		.flags(foil, gear, long_rod, plates, rod, rotor, small_gear, ring, frame, bolt_and_screw, no_decomp, no_smelt);
-
-	event.create('flisnt')
-		.color(0x888B8C)
-		.toolStats(ToolProperty.Builder.of(1, 1, 96, 1, [
-			GTToolType.SAW,
-			GTToolType.HARD_HAMMER,
-			GTToolType.PICKAXE,
-			GTToolType.SHOVEL,
-			GTToolType.AXE,
-			GTToolType.SWORD,
-			GTToolType.KNIFE,
-			GTToolType.FILE,
-			GTToolType.SCYTHE
-		]).build());
-
-	event.create('coke_clay')
-		.dust()
-		.color(0xD7D2AA)
-		.secondaryColor(0xA09C78);
-
-	event.create('crude_cast_iron')
-		.ingot()
-		.components('1x pig_iron')
-		.color(0x3D413F)
-		.iconSet(DULL)
-		.flags(no_decomp, no_smelt);
-
-	event.create('crude_wrought_iron')
-		.ingot()
-		.liquid(new GTFluidBuilder().temperature(1700))
-		.components('1x wrought_iron')
-		.color(0x7A6E69)
-		.iconSet(DULL)
-		.flags(no_decomp, no_smelt);
-
-	event.create('cast_iron')
-        .ingot(1)
-		.liquid()
-        .components('18x crude_cast_iron', '1x bismuth', '2x copper')
-        .color(0x696E6C)
-		.secondaryColor(0x4C5052)
-        .iconSet(METALLIC)
-		.blastTemp(1450, 'low', VA('mv'), 1200)
-        .flags(not_alloy, foil, gear, long_rod, plates, rod, rotor, small_gear, ring, frame, bolt_and_screw, no_decomp, no_smelt);
-
-	const matmod = (mat, flag) => {
-        GTMaterials.get(mat).addFlags(flag);
-    }
-	matmod('iron', [foil, fine_wire]);
-	matmod('brass', [ring, foil, frame]);
-	matmod('tin_alloy', [ring, foil, rotor]);
-	matmod('potin', [foil, ring, small_gear]);
-	matmod('cupronickel', [ring]);
-	matmod('nickel', [foil]);
-	matmod('wrought_iron', [frame, small_gear]);
-	matmod('red_alloy', [spring]);
-	matmod('lead', [small_gear]);
-	matmod('black_steel', [bolt_and_screw, rotor, gear, small_gear]);
-	matmod('hsla_steel', [bolt_and_screw, rotor]);
-	matmod('ultimet', [gear, small_gear]);
-	matmod('magnalium', [gear, small_gear]);
-	matmod('damascus_steel', [gear, small_gear, fine_wire, foil]);
-	matmod('blue_alloy', [fine_wire, foil]);
-	matmod('promethium', [plates]);
-
+	// === Helpers ===
 	const elemDustFluid = (name, color, flags) => {
         event.create(name).dust().fluid().element(GTElements.get(name)).color(color).flags(flags);
     }
@@ -133,7 +53,49 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 			.blastTemp(blasting[0], blasting[1], blasting[2], blasting[3]).cableProperties(cable[0], cable[1], cable[2], cable[3]).rotorStats(rotorstat[0], rotorstat[1], rotorstat[2], rotorstat[3]);
     }
 
-	//Resource Gen Extension
+	// === Early Game ===
+	compIngot('pig_iron','1x iron',0x8E8385,DULL,[],[foil, gear, long_rod, plates, rod, rotor, small_gear, ring, frame, bolt_and_screw, no_decomp, no_smelt])
+
+	event.create('flisnt')
+		.color(0x888B8C)
+		.toolStats(ToolProperty.Builder.of(1, 1, 96, 1, [
+			GTToolType.SAW,
+			GTToolType.HARD_HAMMER,
+			GTToolType.PICKAXE,
+			GTToolType.SHOVEL,
+			GTToolType.AXE,
+			GTToolType.SWORD,
+			GTToolType.KNIFE,
+			GTToolType.FILE,
+			GTToolType.SCYTHE
+		]).build());
+
+	event.create('coke_clay')
+		.dust()
+		.color(0xD7D2AA)
+		.secondaryColor(0xA09C78);
+
+	compIngot('crude_cast_iron','1x pig_iron',0x3D413F,DULL,[],[no_decomp, no_smelt])
+
+	event.create('crude_wrought_iron')
+		.ingot()
+		.liquid(new GTFluidBuilder().temperature(1700))
+		.components('1x wrought_iron')
+		.color(0x7A6E69)
+		.iconSet(DULL)
+		.flags(no_decomp, no_smelt);
+
+	event.create('cast_iron')
+        .ingot(1)
+		.liquid()
+        .components('18x crude_cast_iron', '1x bismuth', '2x copper')
+        .color(0x696E6C)
+		.secondaryColor(0x4C5052)
+        .iconSet(METALLIC)
+		.blastTemp(1450, 'low', VA('mv'), 1200)
+        .flags(not_alloy, foil, gear, long_rod, plates, rod, rotor, small_gear, ring, frame, bolt_and_screw, no_decomp, no_smelt);
+
+	// === Resource Gen Extension ===
 	compDustIcon('metallic_ore_sludge', ['8x pentlandite', '5x gold', '2x silver'],0xA4AC72,METALLIC,no_decomp)
 	LiquidNoComp('raw_ore_concentrate',0x7C8478,no_decomp);
 	LiquidNoComp('raw_ore_residue',0x908784,no_decomp);
@@ -155,7 +117,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     compLiquidTemp('cooled_molten_bastnasite_ore', 480, ['1x bastnasite'], 0x80766F, [no_decomp]);
     compLiquidTemp('cooled_molten_cooperite_ore', 480, ['1x cooperite'], 0x8B8A76, [no_decomp]);
 
-	//Rare Earth Line Extension
+	// === Rare Earth Line Extension ===
 	compLiquid('acid_leached_rare_earth_sludge', '1x mystery', 0x7D4E41, no_decomp);
 	compLiquid('fractionated_rare_earth_slurry', '1x mystery', 0x938376, no_decomp);
 	compLiquid('low_density_rare_earth_residue', '1x mystery', 0x7A6C57, no_decomp);
@@ -180,7 +142,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 	compDust('unrefined_dysprosium', ['1x dysprosium', '1x mystery'], 0x6B6F73, no_decomp);
 	compDust('dysprosium_iii_fluoride', ['1x dysprosium', '3x fluorine'], 0x54585C, no_decomp);
 
-	//Plat Line Extension
+	// === Plat Line Extension ===
 	compLiquid('platinum_group_leach_liquor', '1x mystery', 0x6F96A0, no_decomp);
 	compLiquid('platinum_group_acid_residue', '1x mystery', 0x555555, no_decomp);
 	compDust('platinum_group_leach_residue', '1x mystery', 0x444444, no_decomp);
@@ -203,15 +165,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 	compDust('iridium_iv_chloride', ['1x iridium', '4x chlorine'], 0x46A593, no_decomp);
 	compDust('iridium_hydroxide', ['1x iridium', '3x hydroxide'], 0x50B7A4, no_decomp);
 	compDust('iridium_oxide', ['1x iridium', '2x oxygen'], 0x3C9D88, no_decomp);
-
-});
-
-GTCEuStartupEvents.materialModification(event => {
-
-    GTMaterials.get('yttrium_carbonate').setFormula('Y2(CO3)3');
-    GTMaterials.get('platinum_salt').setFormula('(NH3)4PtCl6');
-    GTMaterials.get('palladium_salt').setFormula('(NH3)5PdCl4');
-	GTMaterials.get('iridium_rich_residue').setFormula('Ir?Oₓ');
 
 });
 	

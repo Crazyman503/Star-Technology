@@ -1,3 +1,5 @@
+// packmode: hard
+
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('steam_blaster', 'steam')
     .definition((tier, builder) =>{

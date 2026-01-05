@@ -44,6 +44,15 @@ StartupEvents.registry('block', event => {
         .tagBlock('minecraft:needs_stone_tool')
         .textureAll('kubejs:block/multiblock/meshblock');
 
+    event.create('high_steam_machine_casing')
+		.hardness(5)
+		.resistance(1)
+		.soundType('stone')
+		.requiresTool(true)
+		.tagBlock("mineable/pickaxe")
+		.tagBlock('minecraft:needs_iron_tool')
+		.textureAll('kubejs:block/hm/high_steam_machine_casing');
+
     // Draco Tier
     event.create('draco_ware_casing')
         .hardness(5)

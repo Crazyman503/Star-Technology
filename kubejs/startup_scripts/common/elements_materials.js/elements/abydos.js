@@ -5,5 +5,6 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
 
     elem('zapolgium', 141, 217, 'Zg');
     elem('akreyrium', -1, -1, 'Ak');
+    elem('dysprosium', 66, 98, 'Dy');
 
 });
