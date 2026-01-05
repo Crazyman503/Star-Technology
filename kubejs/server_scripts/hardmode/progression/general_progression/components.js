@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
     VoltageCoil('hv','neodymium','black_steel',480);
     VoltageCoil('ev','neodymium','platinum',1920);
 
-    // Will Require CAL
+    // Will Require CAL - To change post Theta
     // VoltageCoil('iv','samarium','iridium',0,false);
     // VoltageCoil('luv','samarium','osmiridium',0,false);
     // VoltageCoil('zpm','holmium','europium',0,false);

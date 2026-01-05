@@ -182,4 +182,30 @@ ServerEvents.recipes(event => {
         .duration(280)
         .EUt(120);
 
+    event.recipes.gtceu.assembler(id('data_access_hatch'))
+        .itemInputs('gtceu:mv_input_bus','9x gtceu:data_stick','24x gtceu:fine_platinum_wire',
+            '4x #gtceu:circuits/ev','4x gtceu:blue_alloy_double_cable')
+        .inputFluids('gtceu:silicone_rubber 576')
+        .itemOutputs('gtceu:data_access_hatch')
+        .duration(1200)
+        .EUt(480);
+
+    // Clearing non Certus Outputs
+    [
+        'centrifuge/centrifuge_quartzite_dirty_dust_to_dust', 'centrifuge/quartz_sand_separation', 
+        'macerator/macerate_quartzite_crushed_ore_to_impure_dust', 'ore_washer/wash_quartzite_crushed_ore_to_purified_ore',
+        'ore_washer/wash_quartzite_crushed_ore_to_purified_ore_distilled'
+    ].forEach( remove => {
+    event.replaceOutput({id: `gtceu:${remove}`},`gtceu:certus_quartz_dust`,`gtceu:nether_quartz_dust`);
+    });
+    
+    event.remove({id:'gtceu:macerator/macerate_raw_quartiz_ore_to_crushed_ore'});
+    event.recipes.gtceu.macerator(id('macerator/macerate_raw_quartiz_ore_to_crushed_ore'))
+        .itemInputs('gtceu:raw_quartzite')
+        .itemOutputs('4x gtceu:crushed_quartzite_ore')
+        .chancedOutput('minecraft:quartz', 1000, 300)
+        .chancedOutput('gtceu:stone_dust', 500, 100)
+        .duration(400)
+        .EUt(2);
+
 });
