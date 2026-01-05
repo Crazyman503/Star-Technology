@@ -348,7 +348,7 @@ ServerEvents.recipes(event => {
         }).id(`${casing_id}:${type}_firebox_casing`);
     };
 
-    firebox('enriched_naquadah','enriched_naquadah','start_core');
+    firebox('enriched_naquadah','enriched_naquadah','kubejs');
     firebox('nyanium_machine','nyanium','kubejs')
 
     const gearbox = (type,material,casing_id) => {
@@ -410,7 +410,7 @@ ServerEvents.recipes(event => {
             .EUt(16);
     };
 
-    engine_intake('enriched_naquadah','enriched_naquadah','enriched_naquadah','start_core','kubejs:enriched_naquadah_machine');
+    engine_intake('enriched_naquadah','enriched_naquadah','enriched_naquadah','kubejs','kubejs:enriched_naquadah_machine');
     engine_intake('nyanium_machine','nyanium','nyanium','kubejs','kubejs:nyanium_machine');
     
     ['blackstone','calcite','tuff','dripstone_block'].forEach(stone => {
