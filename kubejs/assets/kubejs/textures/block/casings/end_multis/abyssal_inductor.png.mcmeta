@@ -1,5 +1,5 @@
 {
     "ldlib": {
-        "connection": "kubejs:block/casings/abyssal_inductor_ctm"
+        "connection": "kubejs:block/casings/end_multis/abyssal_inductor_ctm"
     }
 }

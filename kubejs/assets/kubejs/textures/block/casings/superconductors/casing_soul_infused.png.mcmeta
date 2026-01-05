@@ -1,12 +1,12 @@
 {
   "ldlib": {
-    "connection": "kubejs:block/casings/superconductors/casing-signalum-ctm"
+    "connection": "kubejs:block/casings/superconductors/casing_soul_infused_ctm"
   },
   "animation": {
     "interpolate": true,
-    "frametime": 2,
+    "frametime": 4,
         "frames": [
-		    { "index": 0, "time": 66 },
+		    { "index": 0, "time": 56 },
             1,
             2,
             3,
@@ -22,8 +22,7 @@
             13,
             14,
             15,
-            16,
-            17
+            16
         ]
   }
 }

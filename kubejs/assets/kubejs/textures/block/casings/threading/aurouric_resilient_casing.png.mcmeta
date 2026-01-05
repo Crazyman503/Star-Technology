@@ -1,6 +1,6 @@
 {
     "ldlib": {
-        "connection": "kubejs:block/casings/ultimate_multis/aurouric_resilient_casing_ctm"
+        "connection": "kubejs:block/casings/threading/aurouric_resilient_casing_ctm"
     },
     "animation": {
         "interpolate": true,

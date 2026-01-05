@@ -1,6 +1,6 @@
 {
     "ldlib": {
-        "connection": "kubejs:block/casings/ultimate_multis/ionic_engraving_casing_ctm"
+        "connection": "kubejs:block/casings/threading/ionic_engraving_casing_ctm"
     },
     "animation": {
         "interpolate": true,

@@ -28,7 +28,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('R', Predicates.abilities(PartAbility.ROTOR_HOLDER))
             .where(' ', Predicates.any())
             .build())
-        .workableCasingRenderer('kubejs:block/casings/naquadah/casing','gtceu:block/multiblock/generator/large_plasma_turbine',false);
+        .workableCasingRenderer('kubejs:block/casings/naquadah/casing',
+        'gtceu:block/multiblock/generator/large_plasma_turbine',false);
 
     event.create('nyinsane_plasma_turbine', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)

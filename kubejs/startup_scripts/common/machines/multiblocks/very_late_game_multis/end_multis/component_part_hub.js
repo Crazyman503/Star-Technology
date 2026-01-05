@@ -50,7 +50,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('L', Predicates.blocks('gtceu:trinium_coil_block'))
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
-        .workableCasingRenderer('kubejs:block/casings/ultimate_multis/advanced_assembly_casing',
+        .workableCasingRenderer('kubejs:block/casings/threading/advanced_assembly_casing',
         'gtceu:block/machines/assembler', false);
 
 });

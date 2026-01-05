@@ -33,7 +33,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('F', $StarTThreadingStatBlocks.threadingStatBlocks())
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
-        .workableCasingRenderer('kubejs:block/casings/ultimate_multis/gravitationally_strained_stabilization_casing',
+        .workableCasingRenderer('kubejs:block/casings/threading/gravitationally_strained_stabilization_casing',
             'gtceu:block/multiblock/implosion_compressor', false);
 
 });

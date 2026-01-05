@@ -49,7 +49,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('K', Predicates.blocks('kubejs:nyanium_machine_casing'))
 			.where('@', Predicates.controller(Predicates.blocks(definition.get())))
 			.build())
-		.workableCasingRenderer('kubejs:block/casings/ultimate_multis/extreme_temperature_smelting_casing',
+		.workableCasingRenderer('kubejs:block/casings/nether_multis/extreme_temperature_smelting_casing',
             'gtceu:block/multiblock/gcym/mega_blast_furnace', false);
 
 });

@@ -18,13 +18,13 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .recipeType('electric_sifter')
         .appearanceBlock(() => Block.getBlock('kubejs:wood_casing'))
         .pattern(definition => FactoryBlockPattern.start()
-            .aisle('A###A', 'ABBBA', 'ABBBA', 'ABBBA', 'ABBBA', 'ABBBA', '#AAA#') 
-            .aisle('#####', 'BBBBB', 'BCCCB', 'BDDDB', 'BDDDB', 'B###B', 'A#A#A') 
-            .aisle('#####', 'BBBBB', 'BCCCB', 'BDDDB', 'BDDDB', 'B###B', 'AAAAA') 
-            .aisle('#####', 'BBBBB', 'BCCCB', 'BDDDB', 'BDDDB', 'B###B', 'A#A#A') 
-            .aisle('A###A', 'ABBBA', 'AB@BA', 'ABBBA', 'ABBBA', 'ABBBA', '#AAA#') 
+            .aisle('A   A', 'ABBBA', 'ABBBA', 'ABBBA', 'ABBBA', 'ABBBA', ' AAA ') 
+            .aisle('     ', 'BBBBB', 'BCCCB', 'BDDDB', 'BDDDB', 'B   B', 'A A A') 
+            .aisle('     ', 'BBBBB', 'BCCCB', 'BDDDB', 'BDDDB', 'B   B', 'AAAAA') 
+            .aisle('     ', 'BBBBB', 'BCCCB', 'BDDDB', 'BDDDB', 'B   B', 'A A A') 
+            .aisle('A   A', 'ABBBA', 'AB@BA', 'ABBBA', 'ABBBA', 'ABBBA', ' AAA ') 
             .where('A', Predicates.blocks('gtceu:treated_wood_frame'))
-            .where('#', Predicates.any())
+            .where(' ', Predicates.any())
             .where('B', Predicates.blocks('kubejs:wood_casing')
                 .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(3).setPreviewCount(1))
                 .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setMaxGlobalLimited(6).setPreviewCount(1))
@@ -33,6 +33,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('D', Predicates.blocks('kubejs:meshblock'))
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
-        .workableCasingRenderer('kubejs:block/casings/casing-wood',
+        .workableCasingRenderer('kubejs:block/casings/basic/casing_wood',
         'gtceu:block/machines/sifter', false);
 });

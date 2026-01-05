@@ -1,6 +1,6 @@
 {
     "ldlib": {
-        "connection": "kubejs:block/casings/ultimate_multis/gravitationally_strained_stabilization_casing_ctm"
+        "connection": "kubejs:block/casings/threading/gravitationally_strained_stabilization_casing_ctm"
     },
     "animation": {
         "interpolate": true,

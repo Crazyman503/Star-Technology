@@ -11,7 +11,7 @@ StartupEvents.registry('block', event => {
             .requiresTool(true)
             .tagBlock('mineable/pickaxe')
             .tagBlock('minecraft:needs_iron_tool')
-            .textureAll(`kubejs:block/casings/superconductors/${'casing-' + material.replace('_', '-')}`);
+            .textureAll(`kubejs:block/casings/superconductors/${'casing_'+ material}`);
 
     }
 

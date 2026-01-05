@@ -14,6 +14,7 @@ StartupEvents.registry('block', event => {
     }
 
     ThreadingCasing('ionic_engraving_casing');
+    ThreadingCasing('advanced_assembly_casing');
     ThreadingCasing('aurouric_resilient_casing');
     ThreadingCasing('atomic_convergence_casing');
     ThreadingCasing('gravitationally_strained_stabilization_casing');

@@ -37,7 +37,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 			.where('I', Predicates.blocks('kubejs:enriched_naquadah_firebox_casing'))
 			.where('@', Predicates.controller(Predicates.blocks(definition.get())))
 			.build())
-		.workableCasingRenderer('kubejs:block/casings/ultimate_multis/extreme_temperature_smelting_casing',
+		.workableCasingRenderer('kubejs:block/casings/nether_multis/extreme_temperature_smelting_casing',
             'gtceu:block/multiblock/gcym/blast_alloy_smelter', false);
 
 });

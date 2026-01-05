@@ -16,7 +16,7 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock('mineable/axe')
         .tagBlock('minecraft:needs_stone_tool')
-        .textureAll('kubejs:block/casings/basic/casing-wood');
+        .textureAll('kubejs:block/casings/basic/casing_wood');
 
     event.create('peek_casing')
         .hardness(5)

@@ -8,7 +8,7 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock('mineable/pickaxe')
         .tagBlock('minecraft:needs_iron_tool')
-        .textureAll('kubejs:block/deprecated/casing-austenitic-stainless-steel-304');
+        .textureAll('kubejs:block/deprecated/casing_austenitic_stainless_steel_304');
 
     event.create('inconel_625_casing')
         .hardness(2)
@@ -18,6 +18,6 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)
         .tagBlock('mineable/pickaxe')
         .tagBlock('minecraft:needs_iron_tool')
-        .textureAll('kubejs:block/deprecated/casing-inconel-625');
+        .textureAll('kubejs:block/deprecated/casing_inconel_625');
 
 });

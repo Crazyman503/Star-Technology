@@ -28,16 +28,6 @@ StartupEvents.registry('block', event => {
         .requiresTool(false)
         .textureAll('kubejs:block/casings/abydos_multis/titanic_blasting_casing');
 
-    event.create('advanced_assembly_casing')
-        .displayName('Advanced Assembly Casing')
-        .hardness(5)
-        .resistance(10)
-        .soundType('metal')
-        .tagBlock('mineable/pickaxe')
-        .tagBlock('minecraft:needs_iron_tool')
-        .requiresTool(false)
-        .textureAll('kubejs:block/casings/abydos_multis/advanced_assembly_casing');
-
     event.create('superdense_assembly_control_casing', 'gtceu:active')
         .displayName('Superdense Assembly Control Casing')
         .hardness(5)
@@ -162,7 +152,7 @@ StartupEvents.registry('block', event => {
         .requiresTool(false)
         .textureAll('kubejs:block/casings/end_multis/cattomolymer_casing');
 
-        event.create('draco_ware_casing')
+    event.create('draco_ware_casing')
         .hardness(5)
         .resistance(10)
         .lightLevel(3)

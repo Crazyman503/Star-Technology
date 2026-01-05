@@ -58,7 +58,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => { // Filler pre-multi
             .where('I', Predicates.blocks('gtceu:cleanroom_glass'))
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
-        .workableCasingRenderer('kubejs:block/casings/ultimate_multis/subzero_casing', 
+        .workableCasingRenderer('kubejs:block/casings/nether_multis/subzero_casing', 
             'gtceu:block/multiblock/implosion_compressor', false);
 
 
