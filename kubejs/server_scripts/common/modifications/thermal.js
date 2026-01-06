@@ -244,20 +244,6 @@ ServerEvents.recipes(event => {
     
     event.remove({ id: 'thermal:redstone_servo' })
 
-    if (global.packmode !== 'hard'){
-        (() => {   
-    event.shaped(Item.of('thermal:redstone_servo', 1), [
-        'RPR',
-        ' I ',
-        'RPR'
-    ], {
-        R: 'minecraft:redstone',
-        P: 'gtceu:iron_plate',
-        I: 'minecraft:iron_ingot'
-    }
-    ).id('start:shaped/redstone_servo');
-    })()
-    }
     event.shaped(Item.of('thermal:rf_coil'), [
         ' RP',
         'RBR',
@@ -315,22 +301,6 @@ ServerEvents.recipes(event => {
         L: 'gtceu:lead_plate',
         E: 'gtceu:electrum_plate'
     }).id('start:shaped/energy_cell_frame');
-
-    if (global.packmode !== 'hard'){(() => {   
-    
-    event.shaped(Item.of('thermal:fluid_cell_frame'), [
-        'BTB',
-        'TGT',
-        'BTB'
-    ], {
-        B: 'gtceu:bronze_plate',
-        T: 'gtceu:tin_plate',
-        G: '#forge:glass'
-    }).id('start:shaped/fluid_cell_frame');
-
-    event.smelting('minecraft:slime_ball', 'thermal:slime_mushroom_spores').id('start:smelting/slitake');
-    
-    })()}
 
     event.shaped(Item.of('thermal:machine_frame'), [
         'SSS',

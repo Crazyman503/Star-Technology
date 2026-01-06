@@ -2,22 +2,6 @@ ServerEvents.recipes(event => {
     const id = global.id;
 
 // === LARGE BARREL ===
-
-    if (global.packmode !== 'hard'){
-        (() => {   
-    event.shaped(Item.of('gtceu:large_barrel'), [
-        'PSP',
-        'IBI',
-        'PSP'
-    ], {
-        P: 'gtceu:treated_wood_planks',
-        S: 'gtceu:treated_wood_rod',
-        B: 'gtceu:ulv_barrel',
-        I: 'gtceu:wrought_iron_plate'
-    }).id('start:shaped/large_barrel');
-    })()
-    }
-
     const LargeBarItem = (item,fluid,dur,mod,output) => {
 
         event.recipes.gtceu.large_barrel(id(`${output}_large_barrel`))
@@ -76,21 +60,6 @@ ServerEvents.recipes(event => {
 
 // === LARGE STONE BARREL ===
 
-    if (global.packmode !== 'hard'){
-        (() => {   
-    event.shaped(Item.of('gtceu:large_stone_barrel'), [
-        'PSP',
-        'IBI',
-        'PSP'
-    ], {
-        P: 'minecraft:stone',
-        S: 'gtceu:treated_wood_rod',
-        B: 'gtceu:ulv_stone_barrel',
-        I: 'gtceu:wrought_iron_plate'
-    }).id('start:shaped/large_stone_barrel');
-    })()
-    }    
-
     event.recipes.gtceu.large_stone_barrel(id('lava_from_stones'))
         .itemInputs('#forge:stone')
         .notConsumable('minecraft:soul_campfire')
@@ -132,21 +101,6 @@ ServerEvents.recipes(event => {
     LSB_Pebbles('basalt', 1, 'exnihilosequentia:witch_water', 1);
 
     // === INDUSTRIAL BARREL ===
-
-    if (global.packmode !== 'hard'){(() => {   
-    event.shaped(Item.of('gtceu:industrial_barrel'), [
-        'LSL',
-        'PEP', 
-        'CHC'
-    ], {
-        L: 'gtceu:gold_single_cable',
-        S: 'gtceu:kanthal_spring',
-        P: 'gtceu:hv_electric_pump',
-        E: 'gtceu:hv_emitter',
-        C: '#gtceu:circuits/hv',
-        H: 'gtceu:hv_machine_hull'
-    }).id('start:shaped/industrial_barrel');
-    })()};
 
     event.recipes.gtceu.industrial_barrel_magmatic(id('lava'))
         .itemInputs('#forge:cobblestone')

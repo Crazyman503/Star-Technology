@@ -39,21 +39,6 @@ ServerEvents.recipes(event => {
             .EUt(global.va['lv']);
     })
 
-    if (global.packmode !== 'hard'){(() => {   
-    event.shaped(Item.of('gtceu:greenhouse'), [
-        'WAW',
-        'MHM',
-        'SCS'
-    ], {
-        W: 'gtceu:fertilizer',
-        A: 'gtceu:iron_axe',
-        M: 'gtceu:lv_electric_motor',
-        H: 'gtceu:lv_machine_hull',
-        S: 'gtceu:steel_plate',
-        C: '#gtceu:circuits/mv'
-    }).id('start:shaped/greenhouse');
-    })()};
-
     event.shaped(Item.of('gtceu:tree_synthesizer'), [
         'ABC',
         'ADE',

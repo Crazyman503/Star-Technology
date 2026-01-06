@@ -1,27 +1,6 @@
 ServerEvents.recipes(event => {
     const id = global.id;
 
-    // Controller
-
-    event.recipes.gtceu.assembly_line(id('cryostate_quantum_chiller'))
-        .itemInputs(
-            'gtceu:isovol_frame', '12x #gtceu:circuits/uev', '32x kubejs:uhv_high_strength_panel', '8x gtceu:neutronium_huge_fluid_pipe', '32x gtceu:uhv_field_generator',
-            '24x gtceu:uhv_electric_pump', '4x gtceu:isovol_rotor', '32x gtceu:calamatium_screw'
-        )
-        .inputFluids(
-            'gtceu:liquid_helium 1000000',
-            'gtceu:utopian_akreyrium 60000'
-        )
-        .itemOutputs('gtceu:cryostate_quantum_chiller')
-        .duration(1800)
-        .stationResearch(
-            researchRecipeBuilder => researchRecipeBuilder
-                .researchStack(Item.of('gtceu:mega_vacuum_freezer'))
-                .EUt(GTValues.VA[GTValues.UHV])
-                .CWUt(192)
-            )
-        .EUt(GTValues.VA[GTValues.UEV]);
-
     // Misc
 
         event.recipes.gtceu.bender(id('zalloyic_empty_mold'))

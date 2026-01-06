@@ -304,8 +304,6 @@ const plant_ore_processing = (event, materialObj) => {
 ServerEvents.recipes(event => {
 
     // Controllers
-    if (global.packmode !== 'hard'){
-        (() => {   
     event.shaped(Item.of('gtceu:primitive_ore_factory'), [
         'HRS',
         'PBR',
@@ -331,8 +329,6 @@ ServerEvents.recipes(event => {
         B: 'kubejs:high_steam_machine_casing',
         F: '#forge:tools/screwdrivers'
     }).id('start:shaped/steam_ore_factory');
-    })()
-    }
 
     event.shaped(Item.of('gtceu:electric_ore_factory'), [
         'GCG', 

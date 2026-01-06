@@ -13,8 +13,6 @@ ServerEvents.recipes(event => {
         I: 'gtceu:iron_plate',
         S: 'thermal:redstone_servo'
     }).id('start:shaped/ulv_advanced_composter');
-    })()
-    }   
 
     event.shaped('gtceu:composting_factory',[
         'AAB',
@@ -83,5 +81,7 @@ ServerEvents.recipes(event => {
         'farmersdelight:chocolate_pie', 'farmersdelight:sweet_berry_cheesecake', 'minecraft:pumpkin_pie'].forEach(organic=>{
         composting(10000, organic)
     });
+    })()
+    }   
 
 });
