@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
     ].forEach(tier => {
         event.recipes.gtceu.assembler(id(`${tier.tier}_kit`))
             .itemInputs(`4x gtceu:${tier.plate}_plate`, `thermal${tier.glass}_glass`, `gtceu:${tier.gear}_gear`, `#gtceu:circuits/${tier.tier}`)
-            .itemOutputs(Item.of(`kubejs:${tier.tier}_upgraade_kit`, `{AugmentData:{BaseMod:${tier.Mod}f,Type: Upgrade}}`))
+            .itemOutputs(Item.of(`kubejs:${tier.tier}_upgrade_kit`, `{AugmentData:{BaseMod:${tier.Mod}f,Type: Upgrade}}`))
             .inputFluids(tier.fluid)
             .duration(600)
             .EUt(global.va[tier.tier]);

@@ -582,7 +582,7 @@
 				id: "2E17F557A322B711"
 				item: {
 					Count: 1
-					id: "kubejs:lv_upgraade_kit"
+					id: "kubejs:lv_upgrade_kit"
 					tag: {
 						AugmentData: {
 							BaseMod: 6.0f
@@ -1244,7 +1244,7 @@
 				id: "75813F1318A38663"
 				item: {
 					Count: 1
-					id: "kubejs:mv_upgraade_kit"
+					id: "kubejs:mv_upgrade_kit"
 					tag: {
 						AugmentData: {
 							BaseMod: 12.0f

@@ -23,6 +23,6 @@ StartupEvents.registry('block', event => {
         .hardness(1)
         .resistance(1)
         .soundType('metal')
-        .textureAll('kubejs:item/gate_items/worry');
+        .textureAll('kubejs:item/stargate/gate_items/worry');
 
 });
