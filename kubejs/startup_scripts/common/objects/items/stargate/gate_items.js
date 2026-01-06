@@ -12,7 +12,7 @@ StartupEvents.registry('item', event => {
         .rarity('epic');
 
     event.create('computational_super_matrix')
-        .texture('kubejs:item/stargate/gate_items/computation-super-matrix')
+        .texture('kubejs:item/stargate/gate_items/computation_super_matrix')
         .rarity('rare');
 
     event.create('classic_stargate_computer_core')

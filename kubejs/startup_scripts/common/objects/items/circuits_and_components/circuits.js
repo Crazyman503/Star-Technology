@@ -32,7 +32,7 @@ StartupEvents.registry('item', event => {
 
     event.create('draconic_wetware_microchip_processor')
         .tooltip(Text.translate('item.kubejs.draconic_wetware_microchip_processor.tooltip'))
-        .texture('kubejs:item/circuits/draconic/microchip_processor');
+        .texture('kubejs:item/circuits_and_components/circuits/draconic/microchip_processor');
 
     event.create('draconic_wetware_processor')
         .tooltip(Text.translate('item.kubejs.draconic_wetware_processor.tooltip'))
