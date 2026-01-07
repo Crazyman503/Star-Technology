@@ -45,19 +45,6 @@ ServerEvents.recipes(event => {
     WarpedMaceration('#chipped:warped_roots', 1);
     WarpedMaceration('#chipped:warped_fungus', 1);
     WarpedMaceration('minecraft:warped_wart_block', 9);
-
-    //Sculk Variant
-    event.recipes.gtceu.polarizer(id('ionized_sculk_dust'))
-        .itemInputs('gtceu:sculk_dust')
-        .itemOutputs('gtceu:ionized_sculk_dust')
-        .duration(300)
-        .EUt(GTValues.VA[GTValues.UV]);
-
-    event.recipes.gtceu.large_chemical_reactor(id('sodium_over_sculk_to_echo'))
-        .itemInputs('2x gtceu:sodium_over_sculk_dust','3x gtceu:silicon_dioxide_dust')
-        .itemOutputs('2x gtceu:sodium_dust','5x gtceu:echo_shard_dust')
-        .duration(320)
-        .EUt(GTValues.VHA[GTValues.UEV]);
     
     //Ancient Netherite
     event.recipes.gtceu.assembler(id('ancient_netherite_reinforced_mesh'))
@@ -81,5 +68,42 @@ ServerEvents.recipes(event => {
         .itemOutputs('4x gtceu:ancient_debris_dust')
         .duration(124)
         .EUt(380644);
+
+    event.recipes.gtceu.mixer(id('astatine_bis_tritelluride_cobo_selenium'))
+        .itemInputs('gtceu:astatine_dust', 'gtceu:bismuth_tritelluride_dust', '4x gtceu:cobalt_dust', 'gtceu:selenium_dust')
+        .itemOutputs('7x gtceu:astatine_bis_tritelluride_cobo_selenium_dust')
+        .duration(360)
+        .circuit(3)
+        .EUt(GTValues.VHA[GTValues.UV]);
+
+    event.recipes.gtceu.mixer(id('astatine_bis_tritelluride_cobo_selenium_over_iron_titanium_oxide_dust'))
+        .itemInputs('gtceu:astatine_bis_tritelluride_cobo_selenium_dust', 'gtceu:iron_titanium_oxide_dust')
+        .itemOutputs('2x gtceu:astatine_bis_tritelluride_cobo_selenium_over_iron_titanium_oxide_dust')
+        .duration(480)
+        .circuit(1)
+        .EUt(GTValues.VHA[GTValues.UHV]);
+
+    event.recipes.gtceu.autoclave(id('brimstone'))
+        .itemInputs('kubejs:brimstone', '64x minecraft:netherrack')
+        .inputFluids('gtceu:blaze 500')
+        .itemOutputs('kubejs:brimstone')
+        .chancedOutput('kubejs:brimstone', 6660, 0)
+        .duration(240)
+        .EUt(GTValues.VHA[GTValues.LuV]);
+
+    event.recipes.gtceu.autoclave(id('cryostone'))
+        .itemInputs('kubejs:cryostone', '64x minecraft:netherrack')
+        .inputFluids('gtceu:liquid_helium 500')
+        .itemOutputs('kubejs:cryostone')
+        .chancedOutput('kubejs:cryostone', 6660, 0)
+        .duration(240)
+        .EUt(GTValues.VHA[GTValues.LuV]);
+
+    event.recipes.gtceu.mixer(id('polonium_bismide'))
+        .itemInputs('gtceu:polonium_dust', 'gtceu:bismuth_dust')
+        .itemOutputs('2x gtceu:polonium_bismide_dust')
+        .duration(600)
+        .circuit(2)
+        .EUt((GTValues.VHA[GTValues.UEV]));
 
 });

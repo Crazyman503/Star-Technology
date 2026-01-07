@@ -17,37 +17,6 @@ ServerEvents.recipes(event => {
 
     event.remove({ id: 'create:splashing/stained_glass'});
 
-    //Recipe conflict fix: ethane+chlorine
-    event.remove({id: 'gtceu:chemical_reactor/vinyl_chloride_from_ethane'})
-    event.recipes.gtceu.chemical_reactor(id('vinyl_chloride_from_ethane'))
-        .inputFluids('gtceu:chlorine 4000', 'gtceu:ethane 1000')
-        .outputFluids('gtceu:vinyl_chloride 1000','gtceu:hydrochloric_acid 3000')
-        .duration(160)
-        .EUt(30)
-        .circuit(2);
-
-    event.remove({id: 'gtceu:large_chemical_reactor/vinyl_chloride_from_ethane'})
-    event.recipes.gtceu.large_chemical_reactor(id('vinyl_chloride_from_ethane'))
-        .inputFluids('gtceu:chlorine 4000', 'gtceu:ethane 1000')
-        .outputFluids('gtceu:vinyl_chloride 1000','gtceu:hydrochloric_acid 3000')
-        .duration(160)
-        .EUt(30)
-        .circuit(2);
-
-    event.recipes.gtceu.mixer(id('naquadic_netherite'))
-        .itemInputs('3x gtceu:naquadah_dust', '5x gtceu:pure_netherite_dust', '2x gtceu:caesium_dust', '5x gtceu:cerium_dust')
-        .inputFluids('gtceu:fluorine 12000', 'gtceu:oxygen 32000')
-        .itemOutputs('59x gtceu:naquadic_netherite_dust')
-        .duration(7600)
-        .EUt(6400);
-
-    event.recipes.gtceu.mixer(id('weapon_grade_naquadah'))
-        .itemInputs('4x gtceu:pure_netherite_dust', '6x gtceu:trinaquadalloy_dust')
-        .inputFluids('gtceu:naquadria 1008', 'gtceu:fluorine 12000')
-        .itemOutputs('29x gtceu:weapon_grade_naquadah_dust')
-        .duration(1200)
-        .EUt(346000);
-
     event.recipes.gtceu.alloy_smelter(id('rubber_sheet_from_thermal'))
         .itemInputs('2x thermal:cured_rubber')
         .notConsumable('gtceu:plate_casting_mold')
@@ -116,75 +85,6 @@ ServerEvents.recipes(event => {
 
     event.replaceInput({id: 'enderchests:ender_pouch'}, 'minecraft:leather', 'gtceu:carbon_fiber_plate');
 
-    event.recipes.gtceu.mixer(id('birmabright'))
-        .itemInputs('7x gtceu:aluminium_dust', '2x gtceu:magnesium_dust', '1x gtceu:manganese_dust')
-        .itemOutputs('10x gtceu:birmabright_dust')
-        .duration(350)
-        .EUt(GTValues.VHA[GTValues.HV])
-        .circuit(3);
-
-    event.recipes.gtceu.mixer(id('duralumin'))
-        .itemInputs('4x gtceu:aluminium_dust', '3x gtceu:copper_dust', '1x gtceu:magnesium_dust', '1x gtceu:manganese_dust')
-        .itemOutputs('9x gtceu:duralumin_dust')
-        .duration(400)
-        .EUt(GTValues.VHA[GTValues.HV])
-        .circuit(4);
-
-    event.recipes.gtceu.mixer(id('beryllium_aluminium_alloy'))
-        .itemInputs('7x gtceu:beryllium_dust', '1x gtceu:aluminium_dust')
-        .itemOutputs('8x gtceu:beryllium_aluminium_alloy_dust')
-        .duration(310)
-        .EUt(GTValues.VHA[GTValues.HV])
-        .circuit(1);
-
-    event.recipes.gtceu.mixer(id('hydronalium'))
-        .itemInputs('6x gtceu:aluminium_dust', '3x gtceu:magnesium_dust', '1x gtceu:manganese_dust')
-        .itemOutputs('10x gtceu:hydronalium_dust')
-        .duration(410)
-        .EUt(GTValues.VHA[GTValues.HV])
-        .circuit(2);
-
-    event.recipes.gtceu.mixer(id('elgiloy'))
-        .itemInputs('4x gtceu:cobalt_dust', '2x gtceu:chromium_dust', '1x gtceu:nickel_dust', '1x gtceu:steel_dust', '1x gtceu:molybdenum_dust', '1x gtceu:manganese_dust')
-        .itemOutputs('10x gtceu:elgiloy_dust')
-        .duration(420)
-        .EUt(GTValues.VHA[GTValues.HV]);
-
-    event.recipes.gtceu.mixer(id('beryllium_bronze'))
-        .itemInputs('10x gtceu:copper_dust', '1x gtceu:beryllium_dust')
-        .itemOutputs('11x gtceu:beryllium_bronze_dust')
-        .duration(290)
-        .EUt(GTValues.VHA[GTValues.HV])
-        .circuit(1);
-
-    event.recipes.gtceu.mixer(id('silicon_bronze'))
-        .itemInputs('32x gtceu:copper_dust', '2x gtceu:silicon_dust', '1x gtceu:manganese_dust')
-        .itemOutputs('35x gtceu:silicon_bronze_dust')
-        .duration(600)
-        .EUt(GTValues.VHA[GTValues.HV])
-        .circuit(1);
-
-    event.recipes.gtceu.mixer(id('kovar'))
-        .itemInputs('18x gtceu:iron_dust', '11x gtceu:nickel_dust', '6x gtceu:cobalt_dust')
-        .itemOutputs('35x gtceu:kovar_dust')
-        .duration(450)
-        .EUt(GTValues.VHA[GTValues.HV])
-        .circuit(3);
-
-    event.recipes.gtceu.mixer(id('zamak'))
-        .itemInputs('1x gtceu:zinc_dust', '4x gtceu:aluminium_dust', '3x gtceu:copper_dust')
-        .itemOutputs('8x gtceu:zamak_dust')
-        .duration(350)
-        .EUt(GTValues.VHA[GTValues.HV])
-        .circuit(3);
-
-    event.recipes.gtceu.mixer(id('tumbaga'))
-        .itemInputs('20x gtceu:copper_dust', '6x gtceu:gold_dust', '1x gtceu:silver_dust')
-        .itemOutputs('27x gtceu:tumbaga_dust')
-        .duration(470)
-        .EUt(GTValues.VHA[GTValues.HV])
-        .circuit(4);
-
     //B(SiO)7 Foil
     event.recipes.gtceu.bender(id('borosilicate_glas_foil'))
         .itemInputs('gtceu:borosilicate_glass_ingot')
@@ -192,23 +92,6 @@ ServerEvents.recipes(event => {
         .circuit(10)
         .duration(32)
         .EUt(30);
-
-    // NtSiC line
-    event.remove({output: 'gtceu:hot_neutronium_silicon_carbide_ingot'});
-
-    event.recipes.gtceu.mixer(id('neutronium_silicon_carbide_dust'))
-        .itemInputs('2x gtceu:neutronium_dust','7x gtceu:silicon_carbide_dust','3x gtceu:niobium_nitride_dust','3x gtceu:graphene_dust')
-        .itemOutputs('15x gtceu:neutronium_silicon_carbide_dust')
-        .duration(465)
-        .circuit(2)
-        .EUt(GTValues.VHA[GTValues.ZPM]);
-
-    event.recipes.gtceu.heat_chamber(id('hot_neutronium_silicon_carbide'))
-        .itemInputs('gtceu:neutronium_silicon_carbide_dust')
-        .inputFluids('gtceu:polyether_ether_ketone 36')
-        .itemOutputs('gtceu:hot_neutronium_silicon_carbide_ingot')
-        .duration(200)
-        .EUt(GTValues.VA[GTValues.ZPM]);
 
     ['iron','steel','neodymium','samarium','zapolgium','pure_netherite','holmium'].forEach(Magnetic=>{
     event.remove({id: `gtceu:alloy_smelter/alloy_smelt_magnetic_${Magnetic}_dust_to_block`});
@@ -276,56 +159,6 @@ ServerEvents.recipes(event => {
         .cleanroom(CleanroomType.STERILE_CLEANROOM)
         .EUt(GTValues.V[GTValues.UIV]);
 
-    event.recipes.gtceu.assembler(id('redstone_variadic_interface'))
-        .itemInputs('gtceu:luv_machine_hull', '2x gtceu:hpic_chip', 'gtceu:redstone_plate', 'gtceu:advanced_item_detector_cover',
-            'gtceu:advanced_fluid_detector_cover', 'gtceu:advanced_energy_detector_cover')
-        .itemOutputs('start_core:redstone_variadic_interface')
-        .inputFluids('gtceu:soldering_alloy 288')
-        .duration(600)
-        .circuit(4)
-        .EUt(GTValues.V[GTValues.EV]);
-
-    // event.remove({id: 'gtceu:macerator/macerate_naquadah_refined_ore_to_dust'});
-    // event.recipes.gtceu.macerator(id('macerate_refined_naquadah_ore_to_dust'))
-    //     .itemInputs('gtceu:refined_naquadah_ore')
-    //     .itemOutputs('gtceu:naquadah_dust')
-    //     .chancedOutput('gtceu:enriched_naquadah_dust', 350, 125)
-    //     .duration(400)
-    //     .EUt(2);
-
-    //rutile fix
-    event.remove({ id: 'gtceu:electric_blast_furnace/rutile_from_ilmenite' })
-    event.recipes.gtceu.electric_blast_furnace(id('electric_blast_furnace/rutile_from_ilmenite'))
-        .itemInputs('10x gtceu:ilmenite_dust', '2x gtceu:carbon_dust')
-        .itemOutputs('2x gtceu:wrought_iron_ingot','2x gtceu:rutile_dust')
-        .outputFluids('gtceu:carbon_monoxide 2000')
-        .blastFurnaceTemp(1700)
-        .duration(1600)
-        .EUt(480);
-
-    //Indium Line Fix (DONT TOUCH VALUES)
-    const InRemoval = ['gtceu:mixer/indium_concentrate','gtceu:chemical_reactor/indium_concentrate_separation','gtceu:large_chemical_reactor/indium_concentrate_separation',
-        'gtceu:chemical_reactor/indium_concentrate_separation_4x','gtceu:large_chemical_reactor/indium_concentrate_separation_4x']
-    
-    InRemoval.forEach(RecipeId => {
-        event.remove({id: RecipeId})
-    });
-
-    event.recipes.gtceu.mixer(id('indium_concentrate_fix'))
-        .itemInputs('gtceu:purified_sphalerite_ore', 'gtceu:purified_galena_ore')
-        .inputFluids('gtceu:sulfuric_acid 2000')
-        .outputFluids('gtceu:indium_concentrate 1000')
-        .duration(60)
-        .EUt(150);
-
-    event.recipes.gtceu.chemical_reactor(id('indium_concentrate_separation_fix'))
-        .itemInputs('2x gtceu:aluminium_dust')
-        .inputFluids('gtceu:indium_concentrate 2000', 'gtceu:oxygen 6000')
-        .itemOutputs('5x gtceu:indium_oxide_dust', '14x gtceu:aluminium_sulfite_dust')
-        .outputFluids('gtceu:lead_zinc_solution 1000', 'gtceu:diluted_sulfuric_acid 1000')
-        .duration(240)
-        .EUt(600);
-
     event.recipes.create.item_application('minecraft:mycelium', ['minecraft:grass_block', 'exnihilosequentia:mycelium_spores']).id('start:item_application/mycelium');
 
     // StarT Core Cell* Emptying
@@ -340,7 +173,6 @@ ServerEvents.recipes(event => {
     });
 
     //NPK Re-add
-
     event.recipes.gtceu.large_chemical_reactor(id('npk_solution'))
         .itemInputs('15x gtceu:apatite_dust', '5x gtceu:potassium_dust')
         .inputFluids('gtceu:sulfur_trioxide 288', 'gtceu:nitrogen 1000', 'gtceu:distilled_water 2200')
@@ -473,25 +305,3 @@ ServerEvents.recipes(event => {
     // REMOVING LARGE BOILERS BECAUSE ALL OUR FOOD KEEPS BLOWING UP
     event.remove({ id: /gtceu:.*_large_boiler/});
 });
-
-if (global.packmode == 'default'){ //To easy in HM (has its own thing) and for Abydos makes player switch it upa bit
-    (() => {   
-
-BlockEvents.rightClicked('minecraft:grass_block', event => {
-    if (event.player.isCrouching() && event.player.getMainHandItem() == null) {
-        if (Math.random() < 0.75) {
-            event.block.popItemFromFace(Item.of('exnihilosequentia:stone_pebble'), 'up');
-        }
-        if (Math.random() < 0.5) {
-            event.block.popItemFromFace(Item.of('exnihilosequentia:andesite_pebble'), 'up');
-        }
-        if (Math.random() < 0.5) {
-            event.block.popItemFromFace(Item.of('exnihilosequentia:granite_pebble'), 'up');
-        }
-        if (Math.random() < 0.5) {
-            event.block.popItemFromFace(Item.of('exnihilosequentia:diorite_pebble'), 'up');
-        }
-    } 
-});
-})()
-}

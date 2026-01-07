@@ -70,4 +70,25 @@ ServerEvents.recipes(event => {
         .duration(1420)
         .EUt(30);
 
+    // === Enriched Estalt ===    
+    event.recipes.gtceu.electrolyzer(id('enriched_estalt'))
+        .inputFluids('gtceu:enriched_estaltadyne_solution 1000')    
+        .itemOutputs('1x gtceu:enriched_estalt_dust')
+        .outputFluids('gtceu:enriched_mystical_concentrate 500')
+        .duration(190)
+        .EUt(GTValues.VHA[GTValues.UHV]);
+
+    event.recipes.gtceu.manifold_centrifuge(id('enriched_mystical_concentrate_decomposition'))
+        .inputFluids('gtceu:enriched_mystical_concentrate 3000')
+        .outputFluids('gtceu:enriched_mythrillic_mixture 1000')
+        .outputFluids('gtceu:enriched_estaltadyne_mixture 1000')
+        .outputFluids('gtceu:enriched_adamantamite_mixture 1000')
+        .duration(300)
+        .EUt(GTValues.VHA[GTValues.UEV]);
+
+    event.replaceInput({id: 'gtceu:electric_blast_furnace/blast_enriched_estalt_gas'},
+        Fluid.of('gtceu:krypton 10'),
+        Fluid.of('gtceu:xenon 10')
+    );
+
 });

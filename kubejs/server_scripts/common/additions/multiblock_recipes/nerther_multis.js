@@ -59,4 +59,24 @@ ServerEvents.recipes(event => {
             )
         .EUt(GTValues.VA[GTValues.UEV]);
 
+    // === HAM ===
+
+    event.recipes.gtceu.assembly_line(id('mega_abs'))
+        .itemInputs('gtceu:uhv_alloy_smelter', '12x #gtceu:circuits/uev', '8x gtceu:uhv_field_generator', '6x gtceu:dense_ancient_netherite_plate',
+            '4x gtceu:uhv_robot_arm', '12x gtceu:uhv_fluid_regulator', '12x gtceu:ruthenium_trinium_americium_neutronate_quadruple_wire', '4x gtceu:calamatium_rotor',
+            '4x gtceu:cerium_tritelluride_spring', '8x gtceu:calamatium_screw')
+        .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 13824',
+            'gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 10368',
+            'gtceu:utopian_akreyrium 12000',
+            'gtceu:perfluoroelastomer_rubber 8640')
+        .itemOutputs('gtceu:mega_abs')
+        .duration(1800)
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of('gtceu:super_abs'))
+                .EUt(GTValues.VHA[GTValues.UHV])
+                .CWUt(160)
+            )
+        .EUt(GTValues.VHA[GTValues.UEV]);
+
 });
