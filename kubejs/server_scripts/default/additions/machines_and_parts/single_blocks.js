@@ -3,38 +3,6 @@ global.not_hardmode(() => {
     ServerEvents.recipes(event => {
         const id = global.id;
 
-        // === Mega EBF/Vac ===
-        event.remove({output:'gtceu:mega_vacuum_freezer'});
-        event.remove({output:'gtceu:mega_blast_furnace'});
-
-        event.recipes.gtceu.assembly_line(id('mega_vacuum_freezer'))
-            .itemInputs('gtceu:aluminium_frame','2x #gtceu:circuits/uv','4x gtceu:dense_rhodium_plated_palladium_plate','2x gtceu:luv_field_generator',
-                '4x gtceu:niobium_titanium_normal_fluid_pipe','32x gtceu:fine_indium_tin_barium_titanium_cuprate_wire','6x gtceu:hsse_screw')
-            .inputFluids('gtceu:soldering_alloy 1152')
-            .itemOutputs('gtceu:mega_vacuum_freezer')
-            .stationResearch(
-            researchRecipeBuilder => researchRecipeBuilder
-                .researchStack(Item.of('gtceu:super_vacuum_freezer'))
-                .EUt(GTValues.VHA[GTValues.ZPM])
-                .CWUt(24)
-            )
-            .duration(400)
-            .EUt(GTValues.VHA[GTValues.UV]);
-
-        event.recipes.gtceu.assembly_line(id('mega_blast_furnace'))
-            .itemInputs('gtceu:tungsten_carbide_frame','2x #gtceu:circuits/uhv','4x gtceu:dense_naquadah_alloy_plate','2x gtceu:zpm_field_generator',
-                '4x gtceu:naquadah_spring','32x gtceu:fine_uranium_rhodium_dinaquadide_wire','6x gtceu:hsss_screw')
-            .inputFluids('gtceu:soldering_alloy 1152')
-            .itemOutputs('gtceu:mega_blast_furnace')
-            .stationResearch(
-            researchRecipeBuilder => researchRecipeBuilder
-                .researchStack(Item.of('gtceu:super_ebf'))
-                .EUt(GTValues.VHA[GTValues.UV])
-                .CWUt(64)
-            )
-            .duration(400)
-            .EUt(GTValues.VHA[GTValues.UHV]);
-
         // === AE ===
         ['lv', 'mv', 'hv', 'ev', 'iv', 'luv', 'zpm', 'uv', 'uhv', 'uev', 'uiv'].forEach(voltage => {
             let cable = (voltage) => {
@@ -67,6 +35,15 @@ global.not_hardmode(() => {
                 G: `gtceu:${voltage}_electric_motor`
             }).id(`start:shaped/${voltage}_me_assembler`);        
         });
+
+        const assembler = (id1, output, input, eu) => {
+            event.recipes.gtceu.assembler(id(`${id1}`))
+                .itemInputs(input)
+                .inputFluids('gtceu:soldering_alloy 144')
+                .itemOutputs(`${output}`)
+                .duration(400)
+                .EUt(eu);
+        }
 
         ['input_bus', 'output_bus', 'input_hatch', 'output_hatch'].forEach(type => {
             assembler(`me_${type}`, `gtceu:me_${type}`, [`gtceu:ev_${type}`, '#gtceu:circuits/ev', 'ae2:fluix_smart_cable'], 8192);
