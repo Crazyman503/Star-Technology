@@ -60,6 +60,29 @@ ServerEvents.recipes(event => {
 			.outputFluids(`thermal:latex ${100 + 50 * latex.circ}`)
 			.duration(400);
 	});
+
+    event.recipes.gtceu.fluid_solidifier(id('raw_rubber'))
+        .inputFluids('thermal:latex 250')
+        .itemOutputs('thermal:rubber')
+        .duration(120)
+        .EUt(8);
+
+    event.recipes.gtceu.extractor(id('latex_extraction'))
+        .itemInputs('thermal:rubber')
+        .outputFluids('thermal:latex 250')
+        .duration(120)
+        .EUt(8);
+
+    event.recipes.gtceu.chemical_reactor(id('latex_rubber'))
+        .itemInputs('3x thermal:rubber', 'gtceu:sulfur_dust')
+        .outputFluids('gtceu:rubber 576')
+        .duration(240)
+        .EUt(8);
+
+
+
+
+
 	  })()
     }
 

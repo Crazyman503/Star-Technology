@@ -25,5 +25,12 @@ ServerEvents.recipes(event => {
         S: 'create:cogwheel',
         P: 'gtceu:gold_plate'
     }).id(id('shaped/precision_mechanism'));
+
+    event.shaped(Item.of('3x create:belt_connector'), [
+        'RRR'
+    ], {
+        R: 'gtceu:rubber_plate'
+    }).id('start:shaped/belt_connector');
     
-})});
+});
+});

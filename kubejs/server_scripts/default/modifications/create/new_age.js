@@ -39,4 +39,45 @@ ServerEvents.recipes(event => {
     wiremill('create_new_age:overcharged_golden_sheet', '4x create_new_age:overcharged_golden_wire', 588, 7, 'gold_wire');
     wiremill('create_new_age:overcharged_diamond', '4x create_new_age:overcharged_diamond_wire', 764, 7, 'diamond_wire');
 
-})});
+        event.shaped(Item.of('create_new_age:carbon_brushes'), [
+        'SCS',
+        'KsK',
+        'SSS'
+    ], {
+        S: 'gtceu:steel_plate',
+        C: '#gtceu:circuits/lv',
+        K: 'minecraft:charcoal',
+        s: 'create:shaft'
+    }).id('start:shaped/carbon_brushes');
+
+    event.shaped(Item.of('create_new_age:magnetite_block'), [
+        'SMS',
+        'MSM',
+        'SMS'
+    ], {
+        S: 'minecraft:stone',
+        M: 'gtceu:magnetite_dust'
+    }).id('start:shaped/magnetite_block');
+
+    event.shaped(Item.of('3x create_new_age:redstone_magnet'), [
+        'MRM',
+        'RBR',
+        'MRM'
+    ], {
+        B: 'create_new_age:magnetite_block',
+        R: 'minecraft:redstone',
+        M: 'gtceu:magnetite_dust'
+    }).id('start:shaped/redstone_magnet');
+
+    event.shaped(Item.of('4x create_new_age:netherite_magnet'), [
+        'MNM',
+        'NEN',
+        'MNM'
+    ], {
+        M: 'create_new_age:fluxuated_magnetite',
+        N: 'gtceu:neodymium_ingot',
+        E: 'gtceu:energium_dust'
+    }).id('start:shaped/neodymium_magnet');
+
+});
+});

@@ -4,11 +4,26 @@ if (global.packmode !== 'hard'){
 ServerEvents.recipes(event => {
     const id = global.id;
 
-   event.recipes.gtceu.coke_oven(id('sugar_coke'))
+    // === Coke Oven ===
+    event.recipes.gtceu.coke_oven(id('sugar_coke'))
         .itemOutputs('minecraft:charcoal')
         .outputFluids(Fluid.of('gtceu:creosote', 50))
         .itemInputs('8x minecraft:sugar_cane')
         .duration(1200)
+
+    // === Blast Furnace Controllers ===
+    event.replaceInput({ id: 'gtceu:shaped/bronze_primitive_blast_furnace' },
+        '#forge:plates/iron',
+        'gtceu:wrought_iron_plate'
+    );
+    event.replaceInput({ id: 'gtceu:shaped/bronze_primitive_blast_furnace' },
+        '#forge:rods/iron',
+        'gtceu:wrought_iron_rod'
+    );
+    event.replaceInput({ id: 'gtceu:shaped/bronze_primitive_blast_furnace' },
+        'gtceu:iron_screw',
+        'gtceu:wrought_iron_screw'
+    );
 
     event.shaped(Item.of('gtceu:solid_blast_furnace'), [
         'HRS',
@@ -23,55 +38,7 @@ ServerEvents.recipes(event => {
         F: '#forge:tools/screwdrivers'
     }).id('start:shaped/solid_blast_furnace');
 
-//     const fuel = [
-//         'gtceu:charcoal_dust',
-//         'gtceu:coal_dust',
-//         'minecraft:coal',
-//         'minecraft:charcoal'
-//     ]; 
-
-//     const goodFuel = [
-//         'gtceu:coke_gem',
-//         'gtceu:coke_dust'
-//     ];
-
-//     fuel.forEach(fuel => {
-//         const cutFuel = fuel.split(':')[1]
-//         event.recipes.gtceu.solid_blast_furnace(id(`silicon_from_silicon_dioxide/${cutFuel}`))
-//             .itemInputs('6x gtceu:silicon_dioxide_dust', `2x ${fuel}`)
-//             .itemOutputs('2x gtceu:silicon_dust', '2x gtceu:tiny_dark_ash_dust')
-//             .duration(1000);
-
-//        event.recipes.gtceu.solid_blast_furnace(id(`steel_from_magnetite_dust/${cutFuel}`))
-//             .itemInputs('7x gtceu:magnetite_dust', '2x gtceu:silicon_dust', `2x ${fuel}`)
-//             .itemOutputs('3x gtceu:steel_ingot', '6x gtceu:silicon_dioxide_dust', '2x gtceu:tiny_dark_ash_dust')
-//             .duration(1500);
-
-//         event.recipes.gtceu.solid_blast_furnace(id(`sulfur_from_sphalerite/${cutFuel}`))
-//             .itemInputs('2x gtceu:sphalerite_dust', '4x minecraft:andesite', `2x ${fuel}`)
-//             .itemOutputs('12x create:andesite_alloy', '1x gtceu:sulfur_dust', '2x gtceu:tiny_dark_ash_dust')
-//             .duration(200);
-//     });
-
-//     goodFuel.forEach(fuel => {
-//         const cutFuel = fuel.split(':')[1]
-//         event.recipes.gtceu.solid_blast_furnace(id(`silicon_from_silicon_dioxide/${cutFuel}`))
-//             .itemInputs('6x gtceu:silicon_dioxide_dust', `2x ${fuel}`)
-//             .itemOutputs('2x gtceu:silicon_dust', '2x gtceu:tiny_ash_dust')
-//             .duration(750);
-
-//         event.recipes.gtceu.solid_blast_furnace(id(`steel_from_magnetite_dust/${cutFuel}`))
-//             .itemInputs('7x gtceu:magnetite_dust', '2x gtceu:silicon_dust', `2x ${fuel}`)
-//             .itemOutputs('3x gtceu:steel_ingot', '6x gtceu:silicon_dioxide_dust', '2x gtceu:tiny_ash_dust')
-//             .duration(1125);
-
-//         event.recipes.gtceu.solid_blast_furnace(id(`sulfur_from_sphalerite/${cutFuel}`))
-//             .itemInputs('2x gtceu:sphalerite_dust', '4x minecraft:andesite', `2x ${fuel}`)
-//             .itemOutputs('12x create:andesite_alloy', '1x gtceu:sulfur_dust', '2x gtceu:tiny_ash_dust')
-//             .duration(150);
-//     });
-
-    //Bessemer Steel
+    // === SBF ===
     const coalType = ['coal','charcoal']
 
     const ironType = (FeType, baseTime, cokeScaler) => {
@@ -116,6 +83,7 @@ ServerEvents.recipes(event => {
     }
     ironType('minecraft:iron', 720, 5/6)
     ironType('gtceu:wrought_iron', 320, 3/4)
+
 });
 })()
 }

@@ -50,6 +50,7 @@ ServerEvents.recipes(event => {
     casing('blue_steel','blue_steel' ,'kubejs');
     casing('red_steel','red_steel' ,'kubejs');
     casing('enriched_naquadah_machine','enriched_naquadah' ,'kubejs');
+    casing('fluix_steel','fluix_steel' ,'kubejs');
 
     const casingDouble = (type,material,casing_id) => {
 
