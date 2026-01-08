@@ -46,6 +46,24 @@
 			x: -6.0d
 			y: 6.0d
 		}
+		{
+			id: "5653D7ACD1B20D4E"
+			linked_quest: "78644D6D1CEC15C6"
+			x: 6.5d
+			y: 8.5d
+		}
+		{
+			id: "5007357C2B464919"
+			linked_quest: "53D32686A5778F2F"
+			x: 5.5d
+			y: 8.5d
+		}
+		{
+			id: "2BDE5EC7379ED554"
+			linked_quest: "179A15014A5716B5"
+			x: 7.5d
+			y: 8.5d
+		}
 	]
 	quests: [
 		{
@@ -1628,90 +1646,6 @@
 			y: 7.0d
 		}
 		{
-			dependencies: ["69CCC4E36528A4FC"]
-			icon: {
-				Count: 1
-				id: "gtceu:abydos_titanite_rich_magma_bucket"
-				tag: { }
-			}
-			id: "0A35D045D8D77A9C"
-			tasks: [
-				{
-					id: "5B8079BEC6149BE3"
-					item: {
-						Count: 1
-						id: "gtceu:abydos_titanite_rich_magma_bucket"
-						tag: { }
-					}
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "749F66A1C5DCBDA0"
-					type: "checkmark"
-				}
-			]
-			title: "{ftbquests.chapter.resource_production.quest93.title}"
-			x: 5.5d
-			y: 8.5d
-		}
-		{
-			dependencies: ["69CCC4E36528A4FC"]
-			icon: {
-				Count: 1
-				id: "gtceu:abydos_zapolite_rich_magma_bucket"
-				tag: { }
-			}
-			id: "30C7C7F03042AC26"
-			tasks: [
-				{
-					id: "7ED8930B83695BB4"
-					item: {
-						Count: 1
-						id: "gtceu:abydos_zapolite_rich_magma_bucket"
-						tag: { }
-					}
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "369D6998A9A1F2A0"
-					type: "checkmark"
-				}
-			]
-			title: "{ftbquests.chapter.resource_production.quest94.title}"
-			x: 6.5d
-			y: 8.5d
-		}
-		{
-			dependencies: ["69CCC4E36528A4FC"]
-			icon: {
-				Count: 1
-				id: "gtceu:gritty_akreyrium_bucket"
-				tag: { }
-			}
-			id: "1C25CB31BA7878F3"
-			tasks: [
-				{
-					id: "524A39004AB02158"
-					item: {
-						Count: 1
-						id: "gtceu:gritty_akreyrium_bucket"
-						tag: { }
-					}
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "53D43877B8CB6A8C"
-					type: "checkmark"
-				}
-			]
-			title: "{ftbquests.chapter.resource_production.quest95.title}"
-			x: 7.5d
-			y: 8.5d
-		}
-		{
 			dependencies: ["748EC87C28C4CC56"]
 			icon: "gtceu:brackish_water_bucket"
 			id: "13FB042818A0F23C"
@@ -1733,10 +1667,11 @@
 		}
 		{
 			dependencies: [
-				"30C7C7F03042AC26"
-				"0A35D045D8D77A9C"
-				"1C25CB31BA7878F3"
+				"78644D6D1CEC15C6"
+				"179A15014A5716B5"
+				"53D32686A5778F2F"
 			]
+			dependency_requirement: "one_completed"
 			id: "254A058C83258376"
 			tasks: [{
 				id: "5650CB9FACAD6C04"

@@ -51,4 +51,26 @@ ServerEvents.recipes(event => {
         .EUt(30)
         .circuit(2);
 
+    // === Rare Earth Centrifuging Fix ===
+    event.remove({ id: 'gtceu:centrifuge/rare_earth_separation' });
+    event.recipes.gtceu.centrifuge(id('rare_earth_speraration'))
+        .itemInputs('5x gtceu:rare_earth_dust')
+        .itemOutputs('gtceu:neodynmium_dust','gtceu:samarium_dust','gtceu:cerium_dust','gtceu:yttrium_dust','gtceu:lanthanum_dust')
+        .duration(56)
+        .EUt(80);
+
+    //carbon acid fixes
+    event.recipes.gtceu.electrolyzer(id('carbon_acid'))
+        .inputFluids('gtceu:carbon_acid 1000')
+        .outputFluids('minecraft:water 1000','gtceu:carbon_dioxide')
+        .duration(60)
+        .EUt(60);
+    event.recipes.gtceu.large_chemical_reactor(id('carbon_acid'))
+        .itemInputs('3x gtceu:potassium_carbonate_dust')
+        .inputFluids('gtceu:hydrogen 1000')
+        .itemOutputs('3x gtceu:potassium_dust')
+        .outputFluids('gtceu:carbon_acid 500')
+        .duration(100)
+        .EUt(GTValues.VHA[GTValues.IV]);
+ 
 });

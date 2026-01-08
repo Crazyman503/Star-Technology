@@ -162,10 +162,7 @@
 			y: 2.5d
 		}
 		{
-			dependencies: [
-				"44B43694312BAAC8"
-				"0C19C040CA121E3B"
-			]
+			dependencies: ["44B43694312BAAC8"]
 			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest8.description1}"]
 			id: "581B9922CC4B457F"
 			rewards: [{

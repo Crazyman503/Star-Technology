@@ -63,7 +63,7 @@ global.not_hardmode(() => {
         'hv': [
             { material: 'beryllium', secondary: 'emerald', tertiary: 'emerald', quaternary: 'beryllium' },
             { material: 'chalcopyrite', secondary: 'gold', tertiary: 'pyrite', quaternary: 'cobalt' },
-            { material: 'bornite', secondary: 'gold', tertiary: 'pyrite', quaternary: 'cobalt' },
+            { material: 'bornite', secondary: 'gold', tertiary: 'cadmium', quaternary: 'cobalt' },
             { material: 'barite', secondary: 'pyrite', tertiary: 'pyrite', quaternary: 'chalcopyrite' },  // check
             { material: 'cassiterite', secondary: 'tin', tertiary: 'tin', quaternary: 'bismuth' },
             { material: 'tantalite', secondary: 'manganese', tertiary: 'niobium', quaternary: 'niobium' },
@@ -79,31 +79,32 @@ global.not_hardmode(() => {
             { material: 'pitchblende', secondary: 'thorium', tertiary: 'thorium', quaternary: 'uraninite' },
             { material: 'ilmenite', secondary: 'iron', tertiary: 'iron', quaternary: 'rutile' },
             { material: 'molybdenite', secondary: 'molybdenum', tertiary: 'sulfur', quaternary: 'molybdenum' },
+            { material: 'scheelite', secondary: 'manganese', tertiary: 'manganese', quaternary: 'molybdenum' },
             // mystical agriculture
             { material: 'cobaltite', secondary: 'cobalt', tertiary: 'sulfur', quaternary: 'cobalt' },
-            { material: 'chromite', secondary: 'iron', tertiary: 'magnesium', quaternary: 'iron' },
-            { material: 'scheelite', secondary: 'manganese', tertiary: 'manganese', quaternary: 'molybdenum' }
+            { material: 'chromite', secondary: 'iron', tertiary: 'magnesium', quaternary: 'iron' }
         ],
 
         'iv': [
             { material: 'naquadah', secondary: 'barium', tertiary: 'sulfur', quaternary: 'enriched_naquadah', quinary: 'enriched_naquadah'  },
-            { material: 'titanite', secondary: 'rutile', tertiary: 'rare_earth', quaternary: 'bauxite', quinary: 'pyrite' },
-            { material: 'zapolite', secondary: 'lautarite', tertiary: 'iodargyrite', quaternary: 'titanite', quinary: 'tungstate' },
-            { material: 'lautarite', secondary: 'clausthalite', tertiary: 'stibnite', quaternary: 'calaverite', quinary: 'sylvanite' },
-            { material: 'iodargyrite', secondary: 'lautarite', tertiary: 'galena', quaternary: 'tungstate', quinary: 'iodargyrite' },
-            { material: 'clausthalite', secondary: 'tiemannite', tertiary: 'klockmannite', quaternary: 'berzelianite', quinary: 'stibiopalladinite' },
-            { material: 'crookesite', secondary: 'lautarite', tertiary: 'calaverite', quaternary: 'sylvanite', quinary: 'crookesite' },
-            { material: 'calaverite', secondary: 'sylvanite', tertiary: 'clausthalite', quaternary: 'lautarite', quinary: 'calaverite' },
-            { material: 'sylvanite', secondary: 'calaverite', tertiary: 'clausthalite', quaternary: 'bauxite', quinary: 'sylvanite' },
-            { material: 'tiemannite', secondary: 'clausthalite', tertiary: 'klockmannite', quaternary: 'berzelianite', quinary: 'tiemannite' },
-            { material: 'klockmannite', secondary: 'clausthalite', tertiary: 'tiemannite', quaternary: 'stibiopalladinite', quinary: 'klockmannite' },
-            { material: 'stibiopalladinite', secondary: 'clausthalite', tertiary: 'berzelianite', quaternary: 'tiemannite', quinary: 'stibiopalladinite' },
-            { material: 'berzelianite', secondary: 'umangite', tertiary: 'aguilarite', quaternary: 'polybasite', quinary: 'berzelianite' },
-            { material: 'umangite', secondary: 'berzelianite', tertiary: 'aguilarite', quaternary: 'polybasite', quinary: 'umangite' },
-            { material: 'aguilarite', secondary: 'berzelianite', tertiary: 'umangite', quaternary: 'polybasite', quinary: 'aguilarite' },
-            { material: 'strontianite', secondary: 'celestine', tertiary: 'berzelianite', quaternary: 'umangite', quinary: 'aguilarite'  },
-            // mystical agriculture
-            { material: 'celestine', secondary: 'strontianite', tertiary: 'aguilarite', quaternary: 'umangite', quinary: 'berzelianite'  }
+            { material: 'titanite', secondary: 'rutile', tertiary: 'xenotime', quaternary: 'calcite', quinary: 'pyrite' },
+            { material: 'xenotime', secondary: 'monazite', tertiary: 'rare_earth', quaternary: 'yttrium', quinary: 'phosphate' },
+            { material: 'zapolite', secondary: 'lautarite', tertiary: 'crookesite', quaternary: 'kitkaite', quinary: 'bauxite' },
+            { material: 'lautarite', secondary: 'zapolite', tertiary: 'kitkaite', quaternary: 'crookesite', quinary: 'calcium' },
+            // { material: 'iodargyrite', secondary: 'lautarite', tertiary: 'galena', quaternary: 'tungstate', quinary: 'iodargyrite' },
+            // { material: 'clausthalite', secondary: 'tiemannite', tertiary: 'klockmannite', quaternary: 'berzelianite', quinary: 'stibiopalladinite' },
+            { material: 'crookesite', secondary: 'kitkaite', tertiary: 'zapolite', quaternary: 'lautarite', quinary: 'bornite' },
+            { material: 'kitkaite', secondary: 'crookesite', tertiary: 'lautarite', quaternary: 'zapolite', quinary: 'nickel' },
+            // { material: 'calaverite', secondary: 'sylvanite', tertiary: 'clausthalite', quaternary: 'lautarite', quinary: 'calaverite' },
+            // { material: 'sylvanite', secondary: 'calaverite', tertiary: 'clausthalite', quaternary: 'bauxite', quinary: 'sylvanite' },
+            // { material: 'tiemannite', secondary: 'clausthalite', tertiary: 'klockmannite', quaternary: 'berzelianite', quinary: 'tiemannite' },
+            // { material: 'klockmannite', secondary: 'clausthalite', tertiary: 'tiemannite', quaternary: 'stibiopalladinite', quinary: 'klockmannite' },
+            // { material: 'stibiopalladinite', secondary: 'clausthalite', tertiary: 'berzelianite', quaternary: 'tiemannite', quinary: 'stibiopalladinite' },
+            // { material: 'berzelianite', secondary: 'umangite', tertiary: 'aguilarite', quaternary: 'polybasite', quinary: 'berzelianite' },
+            // { material: 'umangite', secondary: 'berzelianite', tertiary: 'aguilarite', quaternary: 'polybasite', quinary: 'umangite' },
+            // { material: 'aguilarite', secondary: 'berzelianite', tertiary: 'umangite', quaternary: 'polybasite', quinary: 'aguilarite' },
+            { material: 'strontianite', secondary: 'celestine', tertiary: 'gypsum', quaternary: 'calcite', quinary: 'calcium' },
+            { material: 'celestine', secondary: 'strontianite', tertiary: 'calcite', quaternary: 'gypsum', quinary: 'calcium' }
         ]
     };
 

@@ -1847,8 +1847,8 @@
 				item: "gtceu:rare_earth_dust"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 6.5d
+			x: 0.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["249B5146C5470ACB"]
@@ -3829,6 +3829,17 @@
 			]
 			x: 11.0d
 			y: 7.5d
+		}
+		{
+			dependencies: ["249B5146C5470ACB"]
+			id: "4FE174543760C79A"
+			tasks: [{
+				id: "24FA15EEA0CD5D7B"
+				item: "gtceu:rich_rare_earth_dust"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.5d
 		}
 	]
 	title: "{ftbquests.chapter.processing_lines_chap_7_1.title}"

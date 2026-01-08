@@ -1409,7 +1409,11 @@
 			y: 7.0d
 		}
 		{
-			dependencies: ["493DD013C818BB7B"]
+			dependencies: [
+				"493DD013C818BB7B"
+				"69CCC4E36528A4FC"
+				"66E5020B15598CCD"
+			]
 			description: ["{ftbquests.chapter.adventures_in_abydos.quest56.description1}"]
 			icon: {
 				Count: 1
