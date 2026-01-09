@@ -4,7 +4,7 @@ StartupEvents.registry('item', event => {
     event.create('naquadic_netherite_fibers')
         .rarity('rare')
         .tooltip(Text.translate('item.kubejs.naquadic_netherite_fibers.tooltip'))
-        .texture('kubejs:item/misc/extra/coin');
+        .texture('kubejs:item/misc/extra/naquadic_netherite_fibers');
 
     event.create('coin')
         .rarity('epic')

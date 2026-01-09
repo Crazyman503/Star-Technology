@@ -55,7 +55,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:centrifuge/rare_earth_separation' });
     event.recipes.gtceu.centrifuge(id('rare_earth_speraration'))
         .itemInputs('5x gtceu:rare_earth_dust')
-        .itemOutputs('gtceu:neodynmium_dust','gtceu:samarium_dust','gtceu:cerium_dust','gtceu:yttrium_dust','gtceu:lanthanum_dust')
+        .itemOutputs('gtceu:neodymium_dust','gtceu:samarium_dust','gtceu:cerium_dust','gtceu:yttrium_dust','gtceu:lanthanum_dust')
         .duration(56)
         .EUt(80);
 
