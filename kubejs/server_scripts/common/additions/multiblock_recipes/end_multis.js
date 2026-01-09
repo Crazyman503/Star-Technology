@@ -42,5 +42,20 @@ ServerEvents.recipes(event => {
                 .CWUt(192)
             )
         .EUt(GTValues.VHA[GTValues.UXV]);
+
+    // === Part Hub ===
+    event.recipes.gtceu.assembly_line(id('component_part_hub'))
+        .itemInputs('8x gtceu:component_part_assembly', '6x kubejs:uev_computational_matrix', '4x kubejs:draco_ware_casing', '8x kubejs:uev_high_strength_panel',
+            '4x gtceu:uev_robot_arm', '4x gtceu:uev_field_generator', '24x gtceu:void_screw', '64x kubejs:uepic_chip')
+        .inputFluids('gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 14400', 'gtceu:utopian_akreyrium 10000', 'gtceu:tungsten_disulfide 7200',  'gtceu:indium_tin_lead_cadmium_soldering_alloy 5600')
+        .itemOutputs('gtceu:component_part_hub')
+        .duration(2400)
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of('gtceu:component_part_assembly'))
+                .EUt(GTValues.VHA[GTValues.UEV])
+                .CWUt(192)
+            )
+        .EUt(GTValues.VHA[GTValues.UIV]);
     
 });

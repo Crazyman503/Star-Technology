@@ -1,21 +1,8 @@
-GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
-
-    event.create('stocking_component_part_assembly')
-        .category('highly_advanced')
-        .setEUIO('in')
-        .setMaxIOSize(6, 1, 2, 0)
-        .setHasResearchSlot(true)
-        .setSound(GTSoundEntries.ASSEMBLER)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW_MULTIPLE, FillDirection.LEFT_TO_RIGHT)
-        .setMaxTooltips(6);
-
-});
-
 GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('component_part_hub', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .recipeType('stocking_component_part_assembly')
+        .recipeType('component_part_assembly')
         .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, $StarTRecipeModifiers.THOUGHPUT_BOOSTING])
         .appearanceBlock(() => Block.getBlock('kubejs:advanced_assembly_casing'))
         .pattern(definition => FactoryBlockPattern.start()
