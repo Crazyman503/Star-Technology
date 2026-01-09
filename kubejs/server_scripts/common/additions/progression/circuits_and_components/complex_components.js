@@ -1003,8 +1003,8 @@ ServerEvents.recipes(event => {
     const preUHVmaterialList = (scale, tier, tier1, tier2, primary, secondary, mechanicalWire, cable, pipe, superConductor, catalyst, catalystQuant, senMat, senFoil, frame, eut) => {
 
         const multiplier = (value) => value + scaler * value;
-        const partialMultiplier = (value, fraction) => value + scaler * fraction;
-        const exponentialMultiplier = (base) => base * (2 ** scaler);
+        const partialMultiplier = (value, fraction) => value + scale * fraction;
+        const exponentialMultiplier = (base) => base * (2 ** scale);
 
         const componentsMCSF_preUHV = (type, inputs, fluids) => {
 
