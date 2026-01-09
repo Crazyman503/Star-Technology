@@ -548,7 +548,7 @@
 				id: "224E2F4895E0D2A3"
 				item: {
 					Count: 1
-					id: "kubejs:hv_upgraade_kit"
+					id: "kubejs:hv_upgrade_kit"
 					tag: {
 						AugmentData: {
 							BaseMod: 24.0f
@@ -887,7 +887,7 @@
 				id: "5082FC3378A0E539"
 				item: {
 					Count: 1
-					id: "kubejs:ev_upgraade_kit"
+					id: "kubejs:ev_upgrade_kit"
 					tag: {
 						AugmentData: {
 							BaseMod: 48.0f

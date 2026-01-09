@@ -1,0 +1,5 @@
+{
+    "ldlib": {
+        "connection": "start_core:block/casings/naquadah/firebox_casing_ctm"
+    }
+}

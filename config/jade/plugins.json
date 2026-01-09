@@ -84,6 +84,14 @@
     "cable_info": true,
     "parallel_info": true
   },
+  "start_core": {
+    "hellforge_heat_info": true,
+    "threading_stat_blocks": true,
+    "dream_link_network_info": true,
+    "variadic_redstone_info": true,
+    "threading_recipes": true,
+    "abyssal_harvester_info": true
+  },
   "jade": {
     "coordinates.rel": false,
     "distance": false,
@@ -95,6 +103,9 @@
   "expatternprovider": {
     "jade_chamber": true,
     "jade_wireless": true
+  },
+  "functionalstorage": {
+    "armory": true
   },
   "balm": {
     "jade": true
@@ -113,21 +124,6 @@
   },
   "modularrouters": {
     "router": true
-  },
-  "extendedcrafting": {
-    "elite_auto_table": true,
-    "ender_crafter": true,
-    "basic_auto_table": true,
-    "flux_crafter": true,
-    "advanced_table": true,
-    "auto_ender_crafter": true,
-    "ultimate_table": true,
-    "ultimate_auto_table": true,
-    "elite_table": true,
-    "basic_table": true,
-    "crafting_core": true,
-    "advanced_auto_table": true,
-    "compressor": true
   },
   "hammerlib": {
     "root": true
