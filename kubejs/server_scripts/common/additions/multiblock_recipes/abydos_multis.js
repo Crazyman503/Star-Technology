@@ -75,5 +75,20 @@ ServerEvents.recipes(event => {
     //             .CWUt(128)
     //     )
     //     .EUt(GTValues.VHA[GTValues.UV]); 
+
+    event.recipes.gtceu.assembly_line(id('component_nexus'))
+        .itemInputs('4x gtceu:assembly_line','6x #gtceu:circuits/uev','6x gtceu:uhv_robot_arm','8x kubejs:uhv_high_strength_panel',
+            '2x gtceu:uhv_fluid_regulator', '4x kubejs:uhv_voltage_coil', '32x gtceu:fine_stellarium_wire', '16x gtceu:neutronium_screw',
+            '64x gtceu:uhpic_chip','64x gtceu:uhpic_chip','32x gtceu:uhpic_chip')
+        .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 25056', 'gtceu:lubricant 16000', 'gtceu:utopian_akreyrium 1000')
+        .itemOutputs('gtceu:component_nexus')
+        .duration(1800)
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of('gtceu:large_assembler'))
+                .EUt(GTValues.VHA[GTValues.UHV])
+                .CWUt(144)
+        )
+        .EUt(GTValues.VHA[GTValues.UEV]);
     
 });

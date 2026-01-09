@@ -42,7 +42,7 @@ ServerEvents.recipes(event => {
             .stationResearch(
             researchRecipeBuilder => researchRecipeBuilder
                 .researchStack(from)
-                .EUt(eutfrom)
+                .EUt(eutFrom)
                 .CWUt(cwu)
             )
             .EUt(eut);
@@ -286,18 +286,18 @@ ServerEvents.recipes(event => {
         
     }
 
-    dracoWaferEngraving('gtceu', 'cpu', 'Silicon', 'light_blue', true);
-    dracoWaferEngraving('gtceu', 'ram', 'Silicon', 'green', true);
-    dracoWaferEngraving('gtceu', 'ilc', 'Silicon', 'red', true);
-    dracoWaferEngraving('gtceu', 'simple_soc', 'Silicon', 'cyan_glass', false);
-    dracoWaferEngraving('gtceu', 'soc', 'Phosphorous', 'yellow_glass', false);
-    dracoWaferEngraving('gtceu', 'advanced_soc', 'Naquadah', 'purple', true);
-    dracoWaferEngraving('gtceu', 'highly_advanced_soc', 'Neutronium', 'black_glass', false);
-    dracoWaferEngraving('gtceu', 'nand_memory', 'Phosphorous', 'gray_glass', false);
-    dracoWaferEngraving('gtceu', 'nor_memory', 'Phosphorous', 'pink_glass', false);
-    dracoWaferEngraving('gtceu', 'ulpic', 'Silicon', 'blue', true);
-    dracoWaferEngraving('gtceu', 'lpic', 'Silicon', 'orange_glass', false);
-    dracoWaferEngraving('gtceu', 'mpic', 'Phosphorous', 'brown_glass', false);
-    dracoWaferEngraving('kubejs', 'draco_advanced_soc', 'Draconic', 'echo_shard', false);
+    dracoWaferEngraving('gtceu', 'cpu', 'silicon', 'light_blue', true);
+    dracoWaferEngraving('gtceu', 'ram', 'silicon', 'green', true);
+    dracoWaferEngraving('gtceu', 'ilc', 'silicon', 'red', true);
+    dracoWaferEngraving('gtceu', 'simple_soc', 'silicon', 'cyan_glass', false);
+    dracoWaferEngraving('gtceu', 'soc', 'phosphorous', 'yellow_glass', false);
+    dracoWaferEngraving('gtceu', 'advanced_soc', 'naquadah', 'purple', true);
+    dracoWaferEngraving('gtceu', 'highly_advanced_soc', 'neutronium', 'black_glass', false);
+    dracoWaferEngraving('gtceu', 'nand_memory', 'phosphorous', 'gray_glass', false);
+    dracoWaferEngraving('gtceu', 'nor_memory', 'phosphorous', 'pink_glass', false);
+    dracoWaferEngraving('gtceu', 'ulpic', 'silicon', 'blue', true);
+    dracoWaferEngraving('gtceu', 'lpic', 'silicon', 'orange_glass', false);
+    dracoWaferEngraving('gtceu', 'mpic', 'phosphorous', 'brown_glass', false);
+    dracoWaferEngraving('kubejs', 'draco_advanced_soc', 'draconic', 'echo_shard', false);
 
 });
