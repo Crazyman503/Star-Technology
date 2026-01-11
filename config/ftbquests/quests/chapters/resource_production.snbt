@@ -127,7 +127,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.resource_production.quest1.title}"
+			title: "{ftbquests.resource_production.sieving_dirt.title}"
 			x: -9.5d
 			y: -9.5d
 		}
@@ -185,7 +185,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.resource_production.quest2.title}"
+			title: "{ftbquests.resource_production.sieving_rooted_dirt.title}"
 			x: -9.0d
 			y: -10.5d
 		}
@@ -249,7 +249,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.resource_production.quest3.title}"
+			title: "{ftbquests.resource_production.sieving_dust_water.title}"
 			x: -6.5d
 			y: -12.0d
 		}
@@ -304,7 +304,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.resource_production.quest4.title}"
+			title: "{ftbquests.resource_production.sieving_dust.title}"
 			x: -5.0d
 			y: -8.0d
 		}
@@ -368,7 +368,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.resource_production.quest5.title}"
+			title: "{ftbquests.resource_production.sieving_sand.title}"
 			x: -4.5d
 			y: -9.0d
 		}
@@ -459,7 +459,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.resource_production.quest6.title}"
+			title: "{ftbquests.resource_production.sieving_sand_water.title}"
 			x: -7.5d
 			y: -12.0d
 		}
@@ -523,7 +523,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.resource_production.quest7.title}"
+			title: "{ftbquests.resource_production.sieving_gravel.title}"
 			x: -4.5d
 			y: -10.0d
 		}
@@ -560,7 +560,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.resource_production.quest8.title}"
+			title: "{ftbquests.resource_production.sieving_blackstone.title}"
 			x: -5.0d
 			y: -11.0d
 		}
@@ -872,7 +872,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.resource_production.quest33.title}"
+			title: "{ftbquests.resource_production.rare_ore_residue.title}"
 			x: 6.0d
 			y: -8.5d
 		}
@@ -897,7 +897,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.resource_production.quest34.title}"
+			title: "{ftbquests.resource_production.raw_ore_slurry.title}"
 			x: 6.0d
 			y: -6.5d
 		}
@@ -999,7 +999,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.resource_production.quest41.title}"
+			title: "{ftbquests.resource_production.mixed_mineral_residue.title}"
 			x: 8.5d
 			y: -6.5d
 		}
@@ -1024,7 +1024,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.resource_production.quest42.title}"
+			title: "{ftbquests.resource_production.molten_ore_mixture.title}"
 			x: 6.0d
 			y: -2.5d
 		}
@@ -1059,7 +1059,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.resource_production.quest44.title}"
+			title: "{ftbquests.resource_production.oxygenous_mineral_mixture.title}"
 			x: 10.5d
 			y: -5.0d
 		}
@@ -1083,7 +1083,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.resource_production.quest45.title}"
+			title: "{ftbquests.resource_production.sulfuric_mineral_mixture.title}"
 			x: 10.5d
 			y: -8.0d
 		}
@@ -1563,23 +1563,17 @@
 		{
 			dependencies: ["05FB44E437E88BE7"]
 			description: [
-				"{ftbquests.resource_production.quest89.description1}"
-				""
-				"{ftbquests.resource_production.quest89.description2}"
-				""
-				"[\"\",{\"underlined\":1,\"translate\":\"ftbquests.resource_production.quest89.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"113B1C2BA5D4CB7C\"}}]"
-				"{ftbquests.resource_production.quest89.description4}"
-				"[\"\",{\"underlined\":1,\"translate\":\"ftbquests.resource_production.quest89.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"66BF04FC2C167FDF\"}}]"
+				"{ftbquests.resource_production.easy_molten_ore_mixture.description}"
 			]
 			icon: "gtceu:ev_mixer"
 			id: "39CF5BCF84727BB3"
 			optional: true
 			tasks: [{
 				id: "00230717870973D6"
-				title: "{ftbquests.resource_production.quest89.task_9859421816058838.title}"
+				title: "{ftbquests.resource_production.easy_molten_ore_mixture.title}"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.resource_production.quest89.title}"
+			title: "{ftbquests.resource_production.easy_molten_ore_mixture.title}"
 			x: 5.0d
 			y: -4.0d
 		}
@@ -1589,7 +1583,7 @@
 			optional: true
 			tasks: [{
 				id: "78581BF782B594DE"
-				title: "{ftbquests.resource_production.quest90.task_8671711832365700318.title}"
+				title: "{ftbquests.resource_production.positioner.title}"
 				type: "checkmark"
 			}]
 			x: 1.0d
@@ -1605,7 +1599,7 @@
 			id: "748EC87C28C4CC56"
 			tasks: [{
 				id: "7D01C9B5B1A9671B"
-				title: "{ftbquests.resource_production.quest91.task_9007702511924635419.title}"
+				title: "{ftbquests.resource_production.overworld_drilling.title}"
 				type: "checkmark"
 			}]
 			x: 4.5d
@@ -1621,7 +1615,7 @@
 			id: "69CCC4E36528A4FC"
 			tasks: [{
 				id: "7BB21D8C5FFD8D04"
-				title: "{ftbquests.resource_production.quest92.task_8913219101262712068.title}"
+				title: "{ftbquests.resource_production.abydos_drilling.title}"
 				type: "checkmark"
 			}]
 			x: 6.5d
@@ -1651,7 +1645,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.resource_production.quest93.title}"
+			title: "{ftbquests.resource_production.titanite_magma.title}"
 			x: 5.5d
 			y: 8.5d
 		}
@@ -1679,7 +1673,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.resource_production.quest94.title}"
+			title: "{ftbquests.resource_production.zapolite_magma.title}"
 			x: 6.5d
 			y: 8.5d
 		}
@@ -1707,7 +1701,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.resource_production.quest95.title}"
+			title: "{ftbquests.resource_production.gritty_akreyrium.title}"
 			x: 7.5d
 			y: 8.5d
 		}
@@ -1727,7 +1721,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.resource_production.quest96.title}"
+			title: "{ftbquests.resource_production.brackish_water.title}"
 			x: 5.5d
 			y: 6.0d
 		}
@@ -1742,7 +1736,7 @@
 				id: "5650CB9FACAD6C04"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.resource_production.quest97.title}"
+			title: "{ftbquests.resource_production.processing_lines_456.title}"
 			x: 6.5d
 			y: 10.0d
 		}
@@ -1770,7 +1764,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.resource_production.quest98.title}"
+			title: "{ftbquests.resource_production.sulfuric_heavy_fuel.title}"
 			x: 2.0d
 			y: 4.5d
 		}
@@ -1798,7 +1792,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.resource_production.quest99.title}"
+			title: "{ftbquests.resource_production.sulfuric_light_fuel.title}"
 			x: 2.0d
 			y: 5.5d
 		}
@@ -1826,7 +1820,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.resource_production.quest100.title}"
+			title: "{ftbquests.resource_production.sulfuric_naptha.title}"
 			x: 2.0d
 			y: 6.5d
 		}
@@ -1854,7 +1848,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.resource_production.quest101.title}"
+			title: "{ftbquests.resource_production.sulfuric_gas.title}"
 			x: 2.0d
 			y: 7.5d
 		}
@@ -1883,7 +1877,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.resource_production.quest102.title}"
+			title: "{ftbquests.resource_production.heavy_fuel.title}"
 			x: 0.75d
 			y: 4.5d
 		}
@@ -1912,7 +1906,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.resource_production.quest103.title}"
+			title: "{ftbquests.resource_production.light_fuel.title}"
 			x: 0.75d
 			y: 5.5d
 		}
@@ -1941,7 +1935,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.resource_production.quest104.title}"
+			title: "{ftbquests.resource_production.naphtha.title}"
 			x: 0.75d
 			y: 6.5d
 		}
@@ -1970,7 +1964,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.resource_production.quest105.title}"
+			title: "{ftbquests.resource_production.refinery_gas.title}"
 			x: 0.75d
 			y: 7.5d
 		}
@@ -1982,12 +1976,12 @@
 				"081AEA0310BAA2B6"
 			]
 			dependency_requirement: "one_completed"
-			description: ["{ftbquests.resource_production.quest106.description1}"]
+			description: ["{ftbquests.resource_production.steam_cracking.description}"]
 			id: "51A0E48B2D04465E"
 			optional: true
 			tasks: [{
 				id: "05812E734700834C"
-				title: "{ftbquests.resource_production.quest106.task_396649314832646988.title}"
+				title: "{ftbquests.resource_production.steam_cracking.title}"
 				type: "checkmark"
 			}]
 			x: -0.75d
@@ -2001,12 +1995,12 @@
 				"081AEA0310BAA2B6"
 			]
 			dependency_requirement: "one_completed"
-			description: ["{ftbquests.resource_production.quest107.description1}"]
+			description: ["{ftbquests.resource_production.hydro_cracking.description1}"]
 			id: "3BD1916DC5208255"
 			optional: true
 			tasks: [{
 				id: "4EAE7F0A6A9B2515"
-				title: "{ftbquests.resource_production.quest107.task_5669608663620986133.title}"
+				title: "{ftbquests.resource_production.hydro_cracking.title}"
 				type: "checkmark"
 			}]
 			x: -0.75d
@@ -2064,11 +2058,11 @@
 				}
 				{
 					id: "1E34BEB843A3DEF0"
-					title: "{ftbquests.resource_production.quest108.task_2176574218544865008.title}"
+					title: "{ftbquests.resource_production.oil_production.item_title}"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.resource_production.quest108.title}"
+			title: "{ftbquests.resource_production.oil_production.title}"
 			x: 3.5d
 			y: 6.0d
 		}
@@ -2084,7 +2078,7 @@
 			tasks: [
 				{
 					id: "47AD76957C921187"
-					title: "{ftbquests.resource_production.quest109.task_5164914732075979143.title}"
+					title: "{ftbquests.resource_production.pyrolysis_oil.title}"
 					type: "checkmark"
 				}
 				{
@@ -2113,7 +2107,7 @@
 			tasks: [
 				{
 					id: "2BB44FF79D0E0217"
-					title: "{ftbquests.resource_production.quest110.task_3149229964349276695.title}"
+					title: "{ftbquests.resource_production.wood_products.title}"
 					type: "checkmark"
 				}
 				{
@@ -2123,7 +2117,7 @@
 						id: "itemfilters:or"
 						tag: {
 							display: {
-								Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Wood Products\"}"
+								Name: "{ftbquests.resource_production.wood_products.title}"
 							}
 							items: [
 								{
@@ -2168,7 +2162,7 @@
 			tasks: [
 				{
 					id: "7271F0DBB6EE9F6C"
-					title: "{ftbquests.resource_production.quest111.task_8246637219149684588.title}"
+					title: "{ftbquests.resource_production.coal_products.title}"
 					type: "checkmark"
 				}
 				{
@@ -2178,7 +2172,7 @@
 						id: "itemfilters:or"
 						tag: {
 							display: {
-								Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Coal Products\"}"
+								Name: "{ftbquests.resource_production.coal_products.title}"
 							}
 							items: [
 								{
@@ -2213,7 +2207,7 @@
 			tasks: [
 				{
 					id: "7D308DD9058E03F1"
-					title: "{ftbquests.resource_production.quest112.task_9020866016863716337.title}"
+					title: "{ftbquests.resource_production.bio_products.title}"
 					type: "checkmark"
 				}
 				{
@@ -2223,7 +2217,7 @@
 						id: "itemfilters:or"
 						tag: {
 							display: {
-								Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Bio Products\"}"
+								Name: "{ftbquests.resource_production.bio_products.title}"
 							}
 							items: [
 								{
@@ -2256,7 +2250,7 @@
 					id: "itemfilters:or"
 					tag: {
 						display: {
-							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"HydroCarbons\"}"
+							Name: "{ftbquests.resource_production.hydrocarbons.title}"
 						}
 						items: [
 							{
@@ -2378,7 +2372,7 @@
 			id: "4E6158880F47AACC"
 			tasks: [{
 				id: "18FD48B4E6F632C6"
-				title: "{ftbquests.resource_production.quest114.task_1800675367824274118.title}"
+				title: "{ftbquests.resource_production.nether_drilling.title}"
 				type: "checkmark"
 			}]
 			x: 8.5d
@@ -2412,13 +2406,13 @@
 				"30AB8331D0B80859"
 				"2FF64174BEF10D64"
 			]
-			description: ["[\"\",{\"underlined\":1,\"translate\":\"ftbquests.resource_production.quest117.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"3EA66E80E1F54265\"}}]"]
+			description: ["{ftbquests.resource_production.processing_lines_71.description}"]
 			id: "4D7583FF99404C6D"
 			tasks: [{
 				id: "7BDD424C5B7480B1"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.resource_production.quest117.title}"
+			title: "{ftbquests.resource_production.processing_lines_71.title}"
 			x: 8.5d
 			y: 7.5d
 		}
