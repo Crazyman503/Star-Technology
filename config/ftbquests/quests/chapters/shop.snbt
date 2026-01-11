@@ -35,7 +35,7 @@
 				item: { Count: 4, id: "kubejs:coin" }
 				type: "item"
 			}]
-			title: "{ftbquests.shop.quest1.title}"
+			title: "{ftbquests.shop.bronze.title}"
 			x: -5.0d
 			y: -3.5d
 		}
@@ -57,7 +57,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			title: "{ftbquests.shop.quest2.title}"
+			title: "{ftbquests.shop.gravel.title}"
 			x: -5.0d
 			y: -2.0d
 		}
@@ -465,7 +465,7 @@
 		{
 			can_repeat: true
 			dependencies: ["2587E109968EFBB4"]
-			icon: { Count: 16, id: "gtceu:naquadah_ingot" }
+			icon: { Count: 16, id: "gtceu:naquadah_alloy_ingot" }
 			id: "73CD5F0A87F340EB"
 			rewards: [{
 				count: 16
@@ -481,7 +481,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			title: "{ftbquests.shop.naquadah.title}"
+			title: "{ftbquests.shop.naquadah_alloy.title}"
 			x: 3.0d
 			y: 0.5d
 		}

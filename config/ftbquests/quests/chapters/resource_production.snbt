@@ -1562,9 +1562,7 @@
 		}
 		{
 			dependencies: ["05FB44E437E88BE7"]
-			description: [
-				"{ftbquests.resource_production.easy_molten_ore_mixture.description}"
-			]
+			description: ["{ftbquests.resource_production.easy_molten_ore_mixture.description}"]
 			icon: "gtceu:ev_mixer"
 			id: "39CF5BCF84727BB3"
 			optional: true
@@ -2249,9 +2247,6 @@
 					Count: 1
 					id: "itemfilters:or"
 					tag: {
-						display: {
-							Name: "{ftbquests.resource_production.hydrocarbons.title}"
-						}
 						items: [
 							{
 								Count: 1b
@@ -2361,6 +2356,7 @@
 						]
 					}
 				}
+				title: "{ftbquests.resource_production.hydrocarbons.title}"
 				type: "item"
 			}]
 			x: -2.5d
