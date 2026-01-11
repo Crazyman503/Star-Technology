@@ -29,9 +29,9 @@
 				"1B32FFCDA1C87B90"
 			]
 			description: [
-				"{ftbquests.chapter.power.quest1.description1}"
+				"{ftbquests.power.quest1.description1}"
 				""
-				"{ftbquests.chapter.power.quest1.description2}"
+				"{ftbquests.power.quest1.description2}"
 			]
 			id: "102F057123D31D85"
 			shape: "square"
@@ -49,9 +49,9 @@
 				"1B32FFCDA1C87B90"
 			]
 			description: [
-				"{ftbquests.chapter.power.quest2.description1}"
+				"{ftbquests.power.quest2.description1}"
 				""
-				"{ftbquests.chapter.power.quest2.description2}"
+				"{ftbquests.power.quest2.description2}"
 			]
 			id: "092ACDF732CE78F0"
 			shape: "square"
@@ -68,7 +68,7 @@
 				"614071EB90CB89F5"
 				"1B32FFCDA1C87B90"
 			]
-			description: ["{ftbquests.chapter.power.quest3.description1}"]
+			description: ["{ftbquests.power.quest3.description1}"]
 			id: "7910F6A8087A9E85"
 			shape: "square"
 			tasks: [{
@@ -181,16 +181,16 @@
 				"7AAF2D8BC72919DB"
 			]
 			description: [
-				"{ftbquests.chapter.power.quest12.description1}"
+				"{ftbquests.power.quest12.description1}"
 				""
-				"{ftbquests.chapter.power.quest12.description2}"
+				"{ftbquests.power.quest12.description2}"
 				""
-				"{ftbquests.chapter.power.quest12.description3}"
+				"{ftbquests.power.quest12.description3}"
 			]
 			icon: "systeams:steam_dynamo"
 			id: "67452BE135FAD1C3"
 			shape: "square"
-			subtitle: "{ftbquests.chapter.power.quest12.subtitle}"
+			subtitle: "{ftbquests.power.quest12.subtitle}"
 			tasks: [
 				{
 					id: "7C19C4AB7C36C6FD"
@@ -203,16 +203,16 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.power.quest12.title}"
+			title: "{ftbquests.power.quest12.title}"
 			x: -6.0d
 			y: 2.0d
 		}
 		{
 			description: [
-				"{ftbquests.chapter.power.quest13.description1}"
-				"{ftbquests.chapter.power.quest13.description2}"
-				"{ftbquests.chapter.power.quest13.description3}"
-				"{ftbquests.chapter.power.quest13.description4}"
+				"{ftbquests.power.quest13.description1}"
+				"{ftbquests.power.quest13.description2}"
+				"{ftbquests.power.quest13.description3}"
+				"{ftbquests.power.quest13.description4}"
 			]
 			icon: {
 				Count: 1
@@ -226,7 +226,7 @@
 			size: 1.25d
 			tasks: [{
 				id: "0020A1ED81A0ACE0"
-				title: "{ftbquests.chapter.power.quest13.task_9185240708852960.title}"
+				title: "{ftbquests.power.quest13.task_9185240708852960.title}"
 				type: "checkmark"
 			}]
 			x: -5.0d
@@ -234,9 +234,9 @@
 		}
 		{
 			description: [
-				"{ftbquests.chapter.power.quest14.description1}"
-				"{ftbquests.chapter.power.quest14.description2}"
-				"{ftbquests.chapter.power.quest14.description3}"
+				"{ftbquests.power.quest14.description1}"
+				"{ftbquests.power.quest14.description2}"
+				"{ftbquests.power.quest14.description3}"
 			]
 			icon: {
 				Count: 1
@@ -250,7 +250,7 @@
 			size: 1.25d
 			tasks: [{
 				id: "2739B3C9FA296C7F"
-				title: "{ftbquests.chapter.power.quest14.task_2826487921218514047.title}"
+				title: "{ftbquests.power.quest14.task_2826487921218514047.title}"
 				type: "checkmark"
 			}]
 			x: -3.0d
@@ -329,9 +329,9 @@
 				"51F889E1432E4DAD"
 			]
 			description: [
-				"{ftbquests.chapter.power.quest19.description1}"
+				"{ftbquests.power.quest19.description1}"
 				""
-				"{ftbquests.chapter.power.quest19.description2}"
+				"{ftbquests.power.quest19.description2}"
 			]
 			id: "6622E66A2FA19BA1"
 			shape: "square"
@@ -349,9 +349,9 @@
 				"1B32FFCDA1C87B90"
 			]
 			description: [
-				"{ftbquests.chapter.power.quest20.description1}"
+				"{ftbquests.power.quest20.description1}"
 				""
-				"{ftbquests.chapter.power.quest20.description2}"
+				"{ftbquests.power.quest20.description2}"
 			]
 			id: "214ADEEEA6FFF4BC"
 			shape: "square"
@@ -399,12 +399,12 @@
 				"1B32FFCDA1C87B90"
 			]
 			description: [
-				"{ftbquests.chapter.power.quest23.description1}"
+				"{ftbquests.power.quest23.description1}"
 				""
-				"{ftbquests.chapter.power.quest23.description2}"
+				"{ftbquests.power.quest23.description2}"
 				""
-				"{ftbquests.chapter.power.quest23.description3}"
-				"{ftbquests.chapter.power.quest23.description4}"
+				"{ftbquests.power.quest23.description3}"
+				"{ftbquests.power.quest23.description4}"
 			]
 			id: "52D3EE2184A501B8"
 			shape: "square"
@@ -452,9 +452,9 @@
 				"1B32FFCDA1C87B90"
 			]
 			description: [
-				"{ftbquests.chapter.power.quest26.description1}"
+				"{ftbquests.power.quest26.description1}"
 				""
-				"{ftbquests.chapter.power.quest26.description2}"
+				"{ftbquests.power.quest26.description2}"
 			]
 			id: "2D7AD0E25BF9F651"
 			shape: "square"
@@ -501,7 +501,7 @@
 				"614071EB90CB89F5"
 				"1B32FFCDA1C87B90"
 			]
-			description: ["{ftbquests.chapter.power.quest29.description1}"]
+			description: ["{ftbquests.power.quest29.description1}"]
 			id: "08F1DEFEB060C74C"
 			shape: "square"
 			tasks: [{
@@ -598,7 +598,7 @@
 				"614071EB90CB89F5"
 				"1B32FFCDA1C87B90"
 			]
-			description: ["{ftbquests.chapter.power.quest33.description1}"]
+			description: ["{ftbquests.power.quest33.description1}"]
 			id: "7B16D5BEC4CDB611"
 			shape: "square"
 			tasks: [{
@@ -700,9 +700,9 @@
 				"2490AD30E2772475"
 			]
 			description: [
-				"{ftbquests.chapter.power.quest37.description1}"
+				"{ftbquests.power.quest37.description1}"
 				""
-				"{ftbquests.chapter.power.quest37.description2}"
+				"{ftbquests.power.quest37.description2}"
 			]
 			id: "38B3A7FC309E12E2"
 			rewards: [{
@@ -736,7 +736,7 @@
 				"38B3A7FC309E12E2"
 				"1B32FFCDA1C87B90"
 			]
-			description: ["{ftbquests.chapter.power.quest38.description1}"]
+			description: ["{ftbquests.power.quest38.description1}"]
 			id: "61E90638F79C5867"
 			shape: "square"
 			tasks: [{
@@ -762,7 +762,7 @@
 				"38B3A7FC309E12E2"
 				"1B32FFCDA1C87B90"
 			]
-			description: ["{ftbquests.chapter.power.quest39.description1}"]
+			description: ["{ftbquests.power.quest39.description1}"]
 			id: "78D71074F1F5968D"
 			shape: "square"
 			tasks: [{
@@ -788,7 +788,7 @@
 				"38B3A7FC309E12E2"
 				"1B32FFCDA1C87B90"
 			]
-			description: ["{ftbquests.chapter.power.quest40.description1}"]
+			description: ["{ftbquests.power.quest40.description1}"]
 			id: "30280927DB01667B"
 			shape: "square"
 			tasks: [{
@@ -892,11 +892,11 @@
 		{
 			dependencies: ["0055CE82469F239C"]
 			description: [
-				"{ftbquests.chapter.power.quest46.description1}"
+				"{ftbquests.power.quest46.description1}"
 				""
-				"{ftbquests.chapter.power.quest46.description2}"
+				"{ftbquests.power.quest46.description2}"
 				""
-				"{ftbquests.chapter.power.quest46.description3}"
+				"{ftbquests.power.quest46.description3}"
 			]
 			icon: "gtceu:active_transformer"
 			id: "2FCCE10E5C3E858D"
@@ -919,7 +919,7 @@
 		}
 		{
 			dependencies: ["51639FA6915BC51A"]
-			description: ["{ftbquests.chapter.power.quest47.description1}"]
+			description: ["{ftbquests.power.quest47.description1}"]
 			id: "3DB836585182F614"
 			tasks: [{
 				id: "5AFD383C58F00AFC"
@@ -1532,7 +1532,7 @@
 				"1820787D031EAB15"
 				"4F2692F874F68EF8"
 			]
-			description: ["{ftbquests.chapter.power.quest80.description1}"]
+			description: ["{ftbquests.power.quest80.description1}"]
 			id: "6BE70F5B5287034B"
 			shape: "octagon"
 			size: 1.25d
@@ -1547,9 +1547,9 @@
 		{
 			dependencies: ["6BE70F5B5287034B"]
 			description: [
-				"{ftbquests.chapter.power.quest81.description1}"
+				"{ftbquests.power.quest81.description1}"
 				""
-				"{ftbquests.chapter.power.quest81.description2}"
+				"{ftbquests.power.quest81.description2}"
 			]
 			id: "69F43BE9D0935398"
 			tasks: [{
@@ -1562,7 +1562,7 @@
 		}
 		{
 			dependencies: ["69F43BE9D0935398"]
-			description: ["{ftbquests.chapter.power.quest82.description1}"]
+			description: ["{ftbquests.power.quest82.description1}"]
 			id: "63BC24882A9477FC"
 			tasks: [{
 				id: "660384F905E060F0"
@@ -1574,7 +1574,7 @@
 		}
 		{
 			dependencies: ["69F43BE9D0935398"]
-			description: ["{ftbquests.chapter.power.quest83.description1}"]
+			description: ["{ftbquests.power.quest83.description1}"]
 			id: "0B5F19D1FB43ACF5"
 			tasks: [{
 				id: "4CEF6EE62E77E81C"
@@ -1586,7 +1586,7 @@
 		}
 		{
 			dependencies: ["69F43BE9D0935398"]
-			description: ["{ftbquests.chapter.power.quest84.description1}"]
+			description: ["{ftbquests.power.quest84.description1}"]
 			id: "5F0540C28B46F4B4"
 			tasks: [{
 				id: "11D42B54E7FC569D"
@@ -1598,7 +1598,7 @@
 		}
 		{
 			dependencies: ["63BC24882A9477FC"]
-			description: ["{ftbquests.chapter.power.quest85.description1}"]
+			description: ["{ftbquests.power.quest85.description1}"]
 			id: "0E5CA4D9E70B6765"
 			tasks: [{
 				id: "793F4AC360E0901D"
@@ -1610,7 +1610,7 @@
 		}
 		{
 			dependencies: ["0E5CA4D9E70B6765"]
-			description: ["{ftbquests.chapter.power.quest86.description1}"]
+			description: ["{ftbquests.power.quest86.description1}"]
 			id: "25E66BD9F536A3F2"
 			tasks: [{
 				id: "5ADC12CE566588F7"
@@ -1625,7 +1625,7 @@
 				"1DBE1786C8F14A9E"
 				"4F2692F874F68EF8"
 			]
-			description: ["{ftbquests.chapter.power.quest87.description1}"]
+			description: ["{ftbquests.power.quest87.description1}"]
 			id: "5DDDD7D45FF6A06D"
 			tasks: [
 				{
@@ -1644,7 +1644,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.power.quest87.title}"
+			title: "{ftbquests.power.quest87.title}"
 			x: -1.5d
 			y: 5.0d
 		}
@@ -1693,14 +1693,14 @@
 				"1B32FFCDA1C87B90"
 			]
 			description: [
-				"{ftbquests.chapter.power.quest90.description1}"
+				"{ftbquests.power.quest90.description1}"
 				""
-				"{ftbquests.chapter.power.quest90.description2}"
-				"{ftbquests.chapter.power.quest90.description3}"
-				"{ftbquests.chapter.power.quest90.description4}"
-				"{ftbquests.chapter.power.quest90.description5}"
-				"{ftbquests.chapter.power.quest90.description6}"
-				"{ftbquests.chapter.power.quest90.description7}"
+				"{ftbquests.power.quest90.description2}"
+				"{ftbquests.power.quest90.description3}"
+				"{ftbquests.power.quest90.description4}"
+				"{ftbquests.power.quest90.description5}"
+				"{ftbquests.power.quest90.description6}"
+				"{ftbquests.power.quest90.description7}"
 			]
 			id: "50DED4576C89E893"
 			tasks: [{
@@ -1771,9 +1771,9 @@
 		{
 			dependencies: ["7DDFBCDFC3F09A6B"]
 			description: [
-				"{ftbquests.chapter.power.quest93.description1}"
+				"{ftbquests.power.quest93.description1}"
 				""
-				"{ftbquests.chapter.power.quest93.description2}"
+				"{ftbquests.power.quest93.description2}"
 			]
 			icon: {
 				Count: 1
@@ -1785,7 +1785,7 @@
 			id: "344260A6F9D36843"
 			tasks: [{
 				id: "04DD118048A34595"
-				title: "{ftbquests.chapter.power.quest93.task_350455588676912533.title}"
+				title: "{ftbquests.power.quest93.task_350455588676912533.title}"
 				type: "checkmark"
 			}]
 			x: -3.0d
@@ -1850,9 +1850,9 @@
 		{
 			dependencies: ["1B32FFCDA1C87B90"]
 			description: [
-				"{ftbquests.chapter.power.quest95.description1}"
+				"{ftbquests.power.quest95.description1}"
 				""
-				"{ftbquests.chapter.power.quest95.description2}"
+				"{ftbquests.power.quest95.description2}"
 			]
 			id: "16E96E304325E38C"
 			shape: "octagon"
@@ -1875,15 +1875,15 @@
 		{
 			dependencies: ["16E96E304325E38C"]
 			description: [
-				"{ftbquests.chapter.power.quest96.description1}"
+				"{ftbquests.power.quest96.description1}"
 				""
-				"{ftbquests.chapter.power.quest96.description2}"
+				"{ftbquests.power.quest96.description2}"
 				""
-				"{ftbquests.chapter.power.quest96.description3}"
-				"{ftbquests.chapter.power.quest96.description4}"
+				"{ftbquests.power.quest96.description3}"
+				"{ftbquests.power.quest96.description4}"
 				""
-				"{ftbquests.chapter.power.quest96.description5}"
-				"{ftbquests.chapter.power.quest96.description6}"
+				"{ftbquests.power.quest96.description5}"
+				"{ftbquests.power.quest96.description6}"
 			]
 			id: "729283139D778F0B"
 			tasks: [
@@ -1918,7 +1918,7 @@
 		}
 		{
 			dependencies: ["16E96E304325E38C"]
-			description: ["{ftbquests.chapter.power.quest97.description1}"]
+			description: ["{ftbquests.power.quest97.description1}"]
 			id: "45D1535F842964DA"
 			tasks: [
 				{
@@ -2046,12 +2046,12 @@
 		{
 			dependencies: ["5BDA17962F4630EB"]
 			description: [
-				"{ftbquests.chapter.power.quest105.description1}"
+				"{ftbquests.power.quest105.description1}"
 				""
-				"{ftbquests.chapter.power.quest105.description2}"
+				"{ftbquests.power.quest105.description2}"
 			]
 			id: "178F411F38970DAB"
-			subtitle: "{ftbquests.chapter.power.quest105.subtitle}"
+			subtitle: "{ftbquests.power.quest105.subtitle}"
 			tasks: [{
 				id: "53D65FFA68E3620D"
 				item: "gtceu:empty_tier_iii_battery"
@@ -2061,9 +2061,9 @@
 			y: 3.0d
 		}
 		{
-			description: ["{ftbquests.chapter.power.quest106.description1}"]
+			description: ["{ftbquests.power.quest106.description1}"]
 			id: "2CBF80C9C2CEE2AD"
-			subtitle: "{ftbquests.chapter.power.quest106.subtitle}"
+			subtitle: "{ftbquests.power.quest106.subtitle}"
 			tasks: [{
 				id: "14D896841610C86E"
 				item: "gtceu:empty_tier_ii_battery"
@@ -2074,12 +2074,12 @@
 		}
 		{
 			description: [
-				"{ftbquests.chapter.power.quest107.description1}"
+				"{ftbquests.power.quest107.description1}"
 				""
-				"{ftbquests.chapter.power.quest107.description2}"
+				"{ftbquests.power.quest107.description2}"
 			]
 			id: "2018D0A87008C089"
-			subtitle: "{ftbquests.chapter.power.quest107.subtitle}"
+			subtitle: "{ftbquests.power.quest107.subtitle}"
 			tasks: [{
 				id: "0CEF754E3143F0D5"
 				item: "gtceu:empty_tier_i_battery"
@@ -2099,7 +2099,7 @@
 			id: "1B32FFCDA1C87B90"
 			tasks: [{
 				id: "1A1E0BA9021B4EBF"
-				title: "{ftbquests.chapter.power.quest108.task_1881954514800168639.title}"
+				title: "{ftbquests.power.quest108.task_1881954514800168639.title}"
 				type: "checkmark"
 			}]
 			x: 2.0d
@@ -2112,7 +2112,7 @@
 			id: "7AAF2D8BC72919DB"
 			tasks: [{
 				id: "06A3B205812C9136"
-				title: "{ftbquests.chapter.power.quest109.task_478421722143166774.title}"
+				title: "{ftbquests.power.quest109.task_478421722143166774.title}"
 				type: "checkmark"
 			}]
 			x: 2.0d
@@ -2125,7 +2125,7 @@
 			id: "4F2692F874F68EF8"
 			tasks: [{
 				id: "3CE8700342934626"
-				title: "{ftbquests.chapter.power.quest110.task_4388880996176709158.title}"
+				title: "{ftbquests.power.quest110.task_4388880996176709158.title}"
 				type: "checkmark"
 			}]
 			x: 2.0d
@@ -2138,7 +2138,7 @@
 			id: "121EFB24BE239D59"
 			tasks: [{
 				id: "7C32E6DD5B0172DE"
-				title: "{ftbquests.chapter.power.quest111.task_8949469247927579358.title}"
+				title: "{ftbquests.power.quest111.task_8949469247927579358.title}"
 				type: "checkmark"
 			}]
 			x: 2.0d
@@ -2151,7 +2151,7 @@
 			id: "51F889E1432E4DAD"
 			tasks: [{
 				id: "6D68F14C4CE64B1B"
-				title: "{ftbquests.chapter.power.quest112.task_7883816457722022683.title}"
+				title: "{ftbquests.power.quest112.task_7883816457722022683.title}"
 				type: "checkmark"
 			}]
 			x: 2.0d
@@ -2164,7 +2164,7 @@
 			id: "0055CE82469F239C"
 			tasks: [{
 				id: "2F6EF045C5556BE5"
-				title: "{ftbquests.chapter.power.quest113.task_3417933349674904549.title}"
+				title: "{ftbquests.power.quest113.task_3417933349674904549.title}"
 				type: "checkmark"
 			}]
 			x: 2.0d
@@ -2177,7 +2177,7 @@
 			id: "5D107FD21879F54B"
 			tasks: [{
 				id: "52FC6219EA1AA5C6"
-				title: "{ftbquests.chapter.power.quest114.task_5979762268682495430.title}"
+				title: "{ftbquests.power.quest114.task_5979762268682495430.title}"
 				type: "checkmark"
 			}]
 			x: 2.0d
@@ -2190,7 +2190,7 @@
 			id: "007D5B58CBF1BBE2"
 			tasks: [{
 				id: "48767E7FA86DF600"
-				title: "{ftbquests.chapter.power.quest115.task_5221499904734393856.title}"
+				title: "{ftbquests.power.quest115.task_5221499904734393856.title}"
 				type: "checkmark"
 			}]
 			x: 2.0d
@@ -2204,7 +2204,7 @@
 			id: "21B905AA3AE6059F"
 			tasks: [{
 				id: "3739C0B4B9C3525F"
-				title: "{ftbquests.chapter.power.quest116.task_3979423628201775711.title}"
+				title: "{ftbquests.power.quest116.task_3979423628201775711.title}"
 				type: "checkmark"
 			}]
 			x: 2.0d
@@ -2217,7 +2217,7 @@
 			id: "3F34F4AC99C45E6F"
 			tasks: [{
 				id: "5C887C50FEA79C1D"
-				title: "{ftbquests.chapter.power.quest117.task_6667715935633644573.title}"
+				title: "{ftbquests.power.quest117.task_6667715935633644573.title}"
 				type: "checkmark"
 			}]
 			x: 2.0d
@@ -2230,7 +2230,7 @@
 			id: "6FB365E6C91B482E"
 			tasks: [{
 				id: "34900E6146D45F27"
-				title: "{ftbquests.chapter.power.quest118.task_3787543097581526823.title}"
+				title: "{ftbquests.power.quest118.task_3787543097581526823.title}"
 				type: "checkmark"
 			}]
 			x: 2.0d
@@ -2239,12 +2239,12 @@
 		{
 			dependencies: ["6FB365E6C91B482E"]
 			description: [
-				"{ftbquests.chapter.power.quest119.description1}"
+				"{ftbquests.power.quest119.description1}"
 				""
-				"{ftbquests.chapter.power.quest119.description2}"
-				"{ftbquests.chapter.power.quest119.description3}"
+				"{ftbquests.power.quest119.description2}"
+				"{ftbquests.power.quest119.description3}"
 				""
-				"{ftbquests.chapter.power.quest119.image0}"
+				"{ftbquests.power.quest119.image0}"
 			]
 			hide_dependent_lines: true
 			icon: {
@@ -2257,7 +2257,7 @@
 			id: "611614FF7006D32B"
 			tasks: [{
 				id: "3546E07C5D849D76"
-				title: "{ftbquests.chapter.power.quest119.task_3839002557129465206.title}"
+				title: "{ftbquests.power.quest119.task_3839002557129465206.title}"
 				type: "checkmark"
 			}]
 			x: 2.0d
@@ -2321,7 +2321,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "77E920F0529FA4BD"
-				title: "{ftbquests.chapter.power.quest124.task_8640473576637441213.title}"
+				title: "{ftbquests.power.quest124.task_8640473576637441213.title}"
 				type: "checkmark"
 			}]
 			x: 2.0d
@@ -2332,7 +2332,7 @@
 				"7DDFBCDFC3F09A6B"
 				"121EFB24BE239D59"
 			]
-			description: ["{ftbquests.chapter.power.quest125.description1}"]
+			description: ["{ftbquests.power.quest125.description1}"]
 			id: "29A144BD0E7C524F"
 			tasks: [{
 				id: "0D35589F9644A1F9"
@@ -2439,7 +2439,7 @@
 			y: -7.0d
 		}
 		{
-			description: ["{ftbquests.chapter.power.quest133.description1}"]
+			description: ["{ftbquests.power.quest133.description1}"]
 			icon: {
 				Count: 1
 				id: "ftbquests:custom_icon"
@@ -2452,7 +2452,7 @@
 			size: 1.25d
 			tasks: [{
 				id: "2880D8142FDC174B"
-				title: "{ftbquests.chapter.power.quest133.task_2918570139749979979.title}"
+				title: "{ftbquests.power.quest133.task_2918570139749979979.title}"
 				type: "checkmark"
 			}]
 			x: -8.5d
@@ -2464,13 +2464,13 @@
 				"21B905AA3AE6059F"
 			]
 			description: [
-				"{ftbquests.chapter.power.quest134.description1}"
+				"{ftbquests.power.quest134.description1}"
 				""
-				"{ftbquests.chapter.power.quest134.description2}"
+				"{ftbquests.power.quest134.description2}"
 				""
-				"{ftbquests.chapter.power.quest134.description3}"
+				"{ftbquests.power.quest134.description3}"
 				""
-				"{ftbquests.chapter.power.quest134.description4}"
+				"{ftbquests.power.quest134.description4}"
 			]
 			id: "1EE1007BA8202CC1"
 			tasks: [{
@@ -2486,7 +2486,7 @@
 				"2D9EFD27A3C32062"
 				"21B905AA3AE6059F"
 			]
-			description: ["{ftbquests.chapter.power.quest135.description1}"]
+			description: ["{ftbquests.power.quest135.description1}"]
 			id: "13675CDA1DE4A69A"
 			tasks: [{
 				id: "217C172DEC161D6F"
@@ -2511,5 +2511,5 @@
 			y: -2.0d
 		}
 	]
-	title: "{ftbquests.chapter.power.title}"
+	title: "{ftbquests.power.title}"
 }

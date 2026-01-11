@@ -474,7 +474,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.line_of_progression.quest51.title}"
+			title: "{ftbquests.line_of_progression.quest51.title}"
 			x: -8.0d
 			y: 0.5d
 		}
@@ -508,7 +508,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.line_of_progression.quest52.title}"
+			title: "{ftbquests.line_of_progression.quest52.title}"
 			x: -8.0d
 			y: 2.0d
 		}
@@ -527,7 +527,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.line_of_progression.quest53.title}"
+			title: "{ftbquests.line_of_progression.quest53.title}"
 			x: -8.0d
 			y: 5.0d
 		}
@@ -546,7 +546,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.line_of_progression.quest54.title}"
+			title: "{ftbquests.line_of_progression.quest54.title}"
 			x: -8.0d
 			y: 3.5d
 		}
@@ -593,7 +593,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.line_of_progression.quest55.title}"
+			title: "{ftbquests.line_of_progression.quest55.title}"
 			x: -6.5d
 			y: 3.5d
 		}
@@ -615,7 +615,7 @@
 			optional: true
 			tasks: [{
 				id: "03D2F19E7E4E8C5A"
-				title: "{ftbquests.chapter.line_of_progression.quest59.task_275548190249225306.title}"
+				title: "{ftbquests.line_of_progression.quest59.task_275548190249225306.title}"
 				type: "checkmark"
 			}]
 			x: 0.0d
@@ -786,7 +786,7 @@
 		{
 			dependencies: ["75942788374CDEF3"]
 			id: "297CE2423324B92B"
-			subtitle: "{ftbquests.chapter.line_of_progression.quest89.subtitle}"
+			subtitle: "{ftbquests.line_of_progression.quest89.subtitle}"
 			tasks: [{
 				id: "3B54565722872EC4"
 				item: "gtceu:nand_chip"
@@ -849,7 +849,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.line_of_progression.quest95.title}"
+			title: "{ftbquests.line_of_progression.quest95.title}"
 			x: -8.0d
 			y: 6.5d
 		}
@@ -913,9 +913,9 @@
 		}
 		{
 			dependencies: ["52FE319F5E176C37"]
-			description: ["{ftbquests.chapter.automation_age.quest25.description1}"]
+			description: ["{ftbquests.automation_age.quest25.description1}"]
 			id: "123F0103224A8C43"
-			subtitle: "{ftbquests.chapter.automation_age.quest25.subtitle}"
+			subtitle: "{ftbquests.automation_age.quest25.subtitle}"
 			tasks: [{
 				id: "7931ADCF2E9D396D"
 				item: "gtceu:micro_processor_mainframe"
@@ -927,7 +927,7 @@
 		{
 			dependencies: ["25583D0BF59E1BC8"]
 			id: "1B2DAB9E61F1BC8D"
-			subtitle: "{ftbquests.chapter.adventures_in_abydos.quest60.subtitle}"
+			subtitle: "{ftbquests.abydos.quest60.subtitle}"
 			tasks: [{
 				id: "5D29BD3CAD284868"
 				item: "start_core:uhv_parallel_hatch"
@@ -1134,7 +1134,7 @@
 		}
 		{
 			dependencies: ["5B70B63D4157594F"]
-			description: ["[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.automation_age.quest92.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"0C78BD4A7A0B98E4\"}}]"]
+			description: ["[\"\",{\"underlined\":1,\"translate\":\"ftbquests.automation_age.quest92.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"0C78BD4A7A0B98E4\"}}]"]
 			id: "59A2D2A6FAB6B857"
 			tasks: [{
 				id: "6838C385EDE13940"
@@ -1254,9 +1254,9 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.early_game.quest66.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"73D5AA58DE5B72AA\"}}]"
+				"[\"\",{\"underlined\":1,\"translate\":\"ftbquests.early_game.quest66.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"73D5AA58DE5B72AA\"}}]"
 				""
-				"[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.early_game.quest66.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"48374090EA89E869\"}}]"
+				"[\"\",{\"underlined\":1,\"translate\":\"ftbquests.early_game.quest66.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"48374090EA89E869\"}}]"
 			]
 			id: "5433FBE02D3113D2"
 			tasks: [{
@@ -1315,7 +1315,7 @@
 		}
 		{
 			dependencies: ["1F5CCE8CFD02903A"]
-			description: ["[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.industrial_revolution.quest81.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"34EDF98BDC245F77\"}}]"]
+			description: ["[\"\",{\"underlined\":1,\"translate\":\"ftbquests.industrial_revolution.quest81.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"34EDF98BDC245F77\"}}]"]
 			id: "7C0D6B4B6BEB2A90"
 			tasks: [{
 				id: "3C8A122102F67A52"
@@ -1688,5 +1688,5 @@
 			y: -4.0d
 		}
 	]
-	title: "{ftbquests.chapter.line_of_progression.title}"
+	title: "{ftbquests.line_of_progression.title}"
 }

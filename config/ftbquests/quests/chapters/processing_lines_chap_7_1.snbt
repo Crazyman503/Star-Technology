@@ -250,7 +250,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.processing_lines_chap_7_1.quest14.title}"
+			title: "{ftbquests.processing_lines_chap_3.quest14.title}"
 			x: -7.5d
 			y: -4.5d
 		}
@@ -820,7 +820,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.processing_lines_chap_7_1.quest50.title}"
+			title: "{ftbquests.processing_lines_chap_3.quest50.title}"
 			x: 5.0d
 			y: -2.0d
 		}
@@ -973,7 +973,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "55FB41FCEAAE689F"
-				title: "{ftbquests.chapter.processing_lines_chap_7_1.quest60.task_6195618266903111839.title}"
+				title: "{ftbquests.processing_lines_chap_3.quest60.task_6195618266903111839.title}"
 				type: "checkmark"
 			}]
 			x: -12.0d
@@ -3831,5 +3831,5 @@
 			y: 7.5d
 		}
 	]
-	title: "{ftbquests.chapter.processing_lines_chap_7_1.title}"
+	title: "{ftbquests.processing_lines_chap_3.title}"
 }
