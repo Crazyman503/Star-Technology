@@ -18,6 +18,12 @@ ServerEvents.recipes(event => {
     const asmdResistor = 'gtceu:advanced_smd_resistor';
     const asmdCapacitor = 'gtceu:advanced_smd_capacitor';
 
+    const lsmdDiode = 'kubejs:living_smd_diode';
+    const lsmdInductor = 'kubejs:living_smd_inductor';
+    const lsmdTransistor = 'kubejs:living_smd_transistor';
+    const lsmdResistor = 'kubejs:living_smd_resistor';
+    const lsmdCapacitor = 'kubejs:living_smd_capacitor';
+
     const assemblyLineCircuitNoRS = (type, mod, inputs, fluids, eut, dura, toScan) => {
         event.recipes.gtceu.assembly_line(id(type))
             .itemInputs(inputs)
@@ -170,6 +176,7 @@ ServerEvents.recipes(event => {
         ], 600000, 1800, 'kubejs:runic_wetware_processor_computer', 160, 400000
     );
 
+    // === Boards and Wafers ===
     event.recipes.gtceu.runic_circuitry_assembling_station(id('runic_convergence_circuit_board'))
         .itemInputs(`128x gtceu:wetware_circuit_board`,'6x #gtceu:circuits/luv','kubejs:runic_engraved_plating')
         .perTick(true)

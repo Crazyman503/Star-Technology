@@ -321,6 +321,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     matmod('nichrome', small_spring);
     matmod('tantalum_carbide', foil);
     matmod('dysprosium', long_rod);
+    matmod('trinium', fine_wire);
+    matmod('naquadah_alloy', round);
+    matmod('ruridit', [small_gear, rotor]);
 
     // Blast Properties of periodic table metals
     const blast = global.blastProperty;
@@ -663,17 +666,17 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     compLiquid('cryptand_li', ['1x lithium', '18x carbon', '36x hydrogen', '6x oxygen', '2x nitrogen'], 0x602020, [no_decomp]);
 
     // Mystical Agriculture Alloys
-    [
-        {tier: 'inferium', color: 0x66ff33},
-        {tier: 'prudentium', color: 0x336600},
-        {tier: 'tertium', color: 0xff6600},
-        {tier: 'imperium', color: 0x0099ff},
-        {tier: 'supremium', color: 0xff0000},
-        {tier: 'awakened_supremium', color: 0xff3300},
-        {tier: 'insanium', color: 0x9900cc},
-    ].forEach(essence => {
-        compIngot(`${essence.tier}_steel`, ['1x steel', '1x mystery'], essence.color, DULL, [], [plates, rod, no_decomp]);
-    })
+    // [
+    //     {tier: 'inferium', color: 0x66ff33},
+    //     {tier: 'prudentium', color: 0x336600},
+    //     {tier: 'tertium', color: 0xff6600},
+    //     {tier: 'imperium', color: 0x0099ff},
+    //     {tier: 'supremium', color: 0xff0000},
+    //     {tier: 'awakened_supremium', color: 0xff3300},
+    //     {tier: 'insanium', color: 0x9900cc},
+    // ].forEach(essence => {
+    //     compIngot(`${essence.tier}_steel`, ['1x steel', '1x mystery'], essence.color, DULL, [], [plates, rod, no_decomp]);
+    // })
 
     // Diatrons
     compGem('diatron', [], 0x6699ff, LAPIS, [no_decomp]);

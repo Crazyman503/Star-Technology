@@ -282,6 +282,14 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VH[GTValues.UHV])
         .circuit(8);
 
+    event.remove({ output: 'gtceu:uv_voltage_coil' });
+    event.recipes.gtceu.assembler(id('uv_voltage_coil'))
+        .itemInputs('gtceu:magnetic_dysprosium_rod', '16x gtceu:fine_tritanium_wire')
+        .itemOutputs('gtceu:uv_voltage_coil')
+        .circuit(1)
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.UV]);
+
     event.shaped('bingus:floppa_orb', [
         'ABA',
         'BCB',

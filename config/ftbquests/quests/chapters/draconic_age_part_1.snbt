@@ -44,8 +44,8 @@
 		{
 			id: "7F751F6B23BCF63D"
 			linked_quest: "1B6159E114BA50ED"
-			x: -1.0d
-			y: -7.0d
+			x: -5.0d
+			y: -1.0d
 		}
 	]
 	quests: [
@@ -486,7 +486,10 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["059CB064A515B157"]
+			dependencies: [
+				"059CB064A515B157"
+				"1B6159E114BA50ED"
+			]
 			description: ["{ftbquests.chapter.draconic_age_part_1.quest18.description1}"]
 			id: "498E36C4683EAA6C"
 			rewards: [{
@@ -1002,10 +1005,7 @@
 			y: -4.0d
 		}
 		{
-			dependencies: [
-				"310FC3F86513555F"
-				"1B6159E114BA50ED"
-			]
+			dependencies: ["310FC3F86513555F"]
 			description: ["{ftbquests.chapter.draconic_age_part_1.quest40.description1}"]
 			hide_dependent_lines: true
 			id: "032E72446266F7D4"
@@ -1197,8 +1197,8 @@
 		}
 		{
 			dependencies: [
-				"1B6159E114BA50ED"
 				"709EF5314988C381"
+				"7F751F6B23BCF63D"
 			]
 			description: ["{ftbquests.chapter.draconic_age_part_1.quest52.description1}"]
 			id: "5FEC7470D01CEBDD"
@@ -1940,7 +1940,7 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["1B6159E114BA50ED"]
+			dependencies: ["218CABD676F3B732"]
 			description: ["{ftbquests.chapter.draconic_age_part_1.quest84.description1}"]
 			id: "61E082759BC89A1E"
 			rewards: [{
