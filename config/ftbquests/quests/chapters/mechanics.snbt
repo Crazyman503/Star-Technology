@@ -10,18 +10,12 @@
 	quests: [
 		{
 			dependencies: ["26E81A8B2EB80A6C"]
-			description: [
-				"{ftbquests.mechanics.quest1.description1}"
-				""
-				"{ftbquests.mechanics.quest1.description2}"
-				""
-				"{ftbquests.mechanics.quest1.description3}"
-			]
+			description: ["{ftbquests.mechanics.multiblocks.description}"]
 			icon: "gtceu:electric_blast_furnace"
 			id: "73D5AA58DE5B72AA"
 			tasks: [{
 				id: "7ACFE29FEF327178"
-				title: "{ftbquests.mechanics.quest1.task_8849540969347051896.title}"
+				title: "{ftbquests.mechanics.multiblocks.title}"
 				type: "checkmark"
 			}]
 			x: -1.5d
@@ -29,16 +23,12 @@
 		}
 		{
 			dependencies: ["26E81A8B2EB80A6C"]
-			description: [
-				"{ftbquests.mechanics.quest2.description1}"
-				""
-				"{ftbquests.mechanics.quest2.description2}"
-			]
+			description: ["{ftbquests.mechanics.wall_sharing.description}"]
 			icon: "gtceu:multi_smelter"
 			id: "48374090EA89E869"
 			tasks: [{
 				id: "7A308EF75BC2E098"
-				title: "{ftbquests.mechanics.quest2.task_8804694464556884120.title}"
+				title: "{ftbquests.mechanics.wall_sharing.title}"
 				type: "checkmark"
 			}]
 			x: 0.0d
@@ -46,36 +36,26 @@
 		}
 		{
 			dependencies: ["7E74A114F4054345"]
-			description: [
-				"{ftbquests.mechanics.quest3.description1}"
-				""
-				"{ftbquests.mechanics.quest3.description2}"
-				"{ftbquests.mechanics.quest3.description3}"
-			]
+			description: ["{ftbquests.mechanics.distinct_buses.description}"]
 			icon: "gtceu:mv_input_bus"
 			id: "2757CDEC1D8F5CCE"
 			tasks: [{
 				id: "2119AA3F34C6DB0F"
-				title: "{ftbquests.mechanics.quest3.task_2385124666114497295.title}"
+				title: "{ftbquests.mechanics.distinct_buses.item_title}"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.mechanics.quest3.title}"
+			title: "{ftbquests.mechanics.distinct_buses.title}"
 			x: -1.5d
 			y: -2.0d
 		}
 		{
 			dependencies: ["6EBA06E5F9B25100"]
-			description: [
-				"{ftbquests.mechanics.quest4.description1}"
-				"{ftbquests.mechanics.quest4.description2}"
-				""
-				"{ftbquests.mechanics.quest4.description3}"
-			]
+			description: ["{ftbquests.mechanics.overclocking.description}"]
 			icon: "gtceu:lv_energy_input_hatch"
 			id: "34EDF98BDC245F77"
 			tasks: [{
 				id: "71D295023BB7E3F5"
-				title: "{ftbquests.mechanics.quest4.task_8201781708219474933.title}"
+				title: "{ftbquests.mechanics.overclocking.title}"
 				type: "checkmark"
 			}]
 			x: -1.5d
@@ -83,17 +63,12 @@
 		}
 		{
 			dependencies: ["775AAF108AFAF707"]
-			description: [
-				"{ftbquests.mechanics.quest5.description1}"
-				"{ftbquests.mechanics.quest5.description2}"
-				""
-				"{ftbquests.mechanics.quest5.description3}"
-			]
+			description: ["{ftbquests.mechanics.perfect_overclocking.description}"]
 			icon: "gtceu:ev_energy_input_hatch"
 			id: "0C78BD4A7A0B98E4"
 			tasks: [{
 				id: "1869A59961DFCE24"
-				title: "{ftbquests.mechanics.quest5.task_1759119207655525924.title}"
+				title: "{ftbquests.mechanics.perfect_overclocking.title}"
 				type: "checkmark"
 			}]
 			x: 0.0d
@@ -101,18 +76,12 @@
 		}
 		{
 			dependencies: ["4840218DA8E61B65"]
-			description: [
-				"{ftbquests.mechanics.quest6.description1}"
-				""
-				"{ftbquests.mechanics.quest6.description2}"
-				""
-				"{ftbquests.mechanics.quest6.description3}"
-			]
+			description: ["{ftbquests.mechanics.large_chemical_reactor_skips.description}"]
 			icon: "gtceu:large_chemical_reactor"
 			id: "0F4C5DF2922568B2"
 			tasks: [{
 				id: "70814049DBEF16DA"
-				title: "{ftbquests.mechanics.quest6.task_8106831490210272986.title}"
+				title: "{ftbquests.mechanics.large_chemical_reactor_skips.title}"
 				type: "checkmark"
 			}]
 			x: 1.5d
@@ -120,16 +89,12 @@
 		}
 		{
 			dependencies: ["171BD0E155CF98CA"]
-			description: [
-				"{ftbquests.mechanics.quest7.description1}"
-				""
-				"{ftbquests.mechanics.quest7.description2}"
-			]
+			description: ["{ftbquests.mechanics.lockable_fluid_hatches.description}"]
 			icon: "gtceu:mv_input_hatch"
 			id: "4A4275186719AD8D"
 			tasks: [{
 				id: "5948FBA874C4FE68"
-				title: "{ftbquests.mechanics.quest7.task_6433668768630898280.title}"
+				title: "{ftbquests.mechanics.lockable_fluid_hatches.title}"
 				type: "checkmark"
 			}]
 			x: 0.0d
@@ -137,30 +102,12 @@
 		}
 		{
 			dependencies: ["6C5688897B6A4C42"]
-			description: [
-				"{ftbquests.mechanics.quest8.description1}"
-				""
-				"{ftbquests.mechanics.quest8.description2}"
-				"{ftbquests.mechanics.quest8.description3}"
-				"{ftbquests.mechanics.quest8.description4}"
-				"{ftbquests.mechanics.quest8.description5}"
-				"{ftbquests.mechanics.quest8.description6}"
-				"{ftbquests.mechanics.quest8.description7}"
-				"{ftbquests.mechanics.quest8.description8}"
-				"{ftbquests.mechanics.quest8.description9}"
-				"{ftbquests.mechanics.quest8.description10}"
-				"{ftbquests.mechanics.quest8.description11}"
-				"{ftbquests.mechanics.quest8.description12}"
-				"{ftbquests.mechanics.quest8.description13}"
-				""
-				"{ftbquests.mechanics.quest8.description14}"
-				"{ftbquests.mechanics.quest8.description15}"
-			]
+			description: ["{ftbquests.mechanics.superconductors.description}"]
 			icon: "gtceu:soul_infused_hex_wire"
 			id: "18080B4F89AD24D2"
 			tasks: [{
 				id: "2902228D7DFFED96"
-				title: "{ftbquests.mechanics.quest8.task_2954962296608124310.title}"
+				title: "{ftbquests.mechanics.superconductors.title}"
 				type: "checkmark"
 			}]
 			x: -1.5d
@@ -168,80 +115,49 @@
 		}
 		{
 			dependencies: ["14A9381889183318"]
-			description: [
-				"{ftbquests.mechanics.quest9.description1}"
-				""
-				"{ftbquests.mechanics.quest9.description2}"
-				""
-				"{ftbquests.mechanics.quest9.description3}"
-			]
+			description: ["{ftbquests.mechanics.cheaper_circuits.description}"]
 			icon: "gtceu:basic_integrated_circuit"
 			id: "6F7EE9A1BC718801"
 			tasks: [{
 				id: "5C3E946968BBEC0C"
-				title: "{ftbquests.mechanics.quest9.task_6646913280495053836.title}"
+				title: "{ftbquests.mechanics.cheaper_circuits.title}"
 				type: "checkmark"
 			}]
 			x: 1.5d
 			y: -2.0d
 		}
 		{
-			description: [
-				"{ftbquests.mechanics.quest10.description1}"
-				""
-				"{ftbquests.mechanics.quest10.description2}"
-				"{ftbquests.mechanics.quest10.description3}"
-				"{ftbquests.mechanics.quest10.description4}"
-				"{ftbquests.mechanics.quest10.description5}"
-				""
-				"&5- &rKeep in mind that hovering over an item and clicking \"r\" will should the ways to acquire it and clicking \"u\" will show uses of it. "
-				""
-				"&7Make sure to check your keybinds and experiment it is a &l&nvery&r&7 useful tool."
-			]
+			description: ["{ftbquests.mechanics.emi.description}"]
 			id: "69D57FE912CAF112"
 			tasks: [{
 				id: "0D132FC336812CBD"
-				title: "{ftbquests.mechanics.quest10.task_942149262530129085.title}"
+				title: "{ftbquests.mechanics.emi.title}"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.mechanics.quest10.title}"
 			x: 0.0d
 			y: -3.5d
 		}
 		{
 			dependencies: ["0F9486CD70580835"]
-			description: [
-				"{ftbquests.mechanics.quest11.description1}"
-				""
-				"{ftbquests.mechanics.quest11.description2}"
-				""
-				"{ftbquests.mechanics.quest11.description3}"
-			]
+			description: ["{ftbquests.mechanics.ghost_circuits.description}"]
 			icon: "kubejs:ulv_universal_circuit"
 			id: "2A608D87158DF4CB"
 			tasks: [{
 				id: "66C48E64A4B5CC1B"
-				title: "{ftbquests.mechanics.quest11.task_7405200250215189531.title}"
+				title: "{ftbquests.mechanics.ghost_circuits.title}"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.mechanics.quest11.title}"
 			x: 1.5d
 			y: -0.5d
 		}
 		{
 			dependencies: ["0A1BF10244D43021"]
-			description: [
-				"{ftbquests.mechanics.quest12.description1}"
-				""
-				"{ftbquests.mechanics.quest12.description2}"
-				""
-				"{ftbquests.mechanics.quest12.description3}"
-			]
+			description: ["{ftbquests.mechanics.machine_modes.description}"]
 			icon: "gtceu:lv_robot_arm"
 			id: "76CD29559C341985"
 			tasks: [{
 				id: "2E13FEFD769A142F"
-				title: "{ftbquests.mechanics.quest12.task_3320277714872177711.title}"
+				title: "{ftbquests.mechanics.machine_modes.title}"
 				type: "checkmark"
 			}]
 			x: 1.5d
@@ -250,41 +166,17 @@
 		{
 			dependencies: ["0A6534BD104A2B08"]
 			description: [
-				"{ftbquests.mechanics.quest13.description1}"
-				""
-				"{ftbquests.mechanics.quest13.description2}"
-				""
-				"{ftbquests.mechanics.quest13.description3}"
-				""
-				"{ftbquests.mechanics.quest13.description4}"
+				"{ftbquests.mechanics.parallels.description.1}"
 				"{@pagebreak}"
-				""
-				"{ftbquests.mechanics.quest13.description5}"
-				""
-				"{ftbquests.mechanics.quest13.description6}"
+				"{ftbquests.mechanics.parallels.description.2}"
 				"{@pagebreak}"
-				""
-				"{ftbquests.mechanics.quest13.description7}"
-				""
-				"{ftbquests.mechanics.quest13.description8}"
-				""
-				"{ftbquests.mechanics.quest13.description9}"
-				""
-				"{ftbquests.mechanics.quest13.description10}"
-				""
-				"{ftbquests.mechanics.quest13.description11}"
-				""
-				"{ftbquests.mechanics.quest13.description12}"
-				""
-				"{ftbquests.mechanics.quest13.description13}"
-				""
-				"{ftbquests.mechanics.quest13.description14}"
+				"{ftbquests.mechanics.parallels.description.3}"
 			]
 			icon: "gtceu:zpm_parallel_hatch"
 			id: "70EE9D4811A27CF2"
 			tasks: [{
 				id: "71769BC93B85A6BA"
-				title: "{ftbquests.mechanics.quest13.task_8175893462127060666.title}"
+				title: "{ftbquests.mechanics.parallels.title}"
 				type: "checkmark"
 			}]
 			x: -1.5d
@@ -292,29 +184,12 @@
 		}
 		{
 			dependencies: ["141911C5DD68CD2A"]
-			description: [
-				"{ftbquests.mechanics.quest14.description1}"
-				""
-				"{ftbquests.mechanics.quest14.description2}"
-				""
-				"{ftbquests.mechanics.quest14.description3}"
-				""
-				"{ftbquests.mechanics.quest14.description4}"
-				""
-				"{ftbquests.mechanics.quest14.description5}"
-				""
-				"{ftbquests.mechanics.quest14.description6}"
-				"{ftbquests.mechanics.quest14.description7}"
-				"{ftbquests.mechanics.quest14.description8}"
-				"{ftbquests.mechanics.quest14.description9}"
-				"{ftbquests.mechanics.quest14.description10}"
-				"{ftbquests.mechanics.quest14.description11}"
-			]
+			description: ["{ftbquests.mechanics.wireless_power.description}"]
 			icon: "start_core:uhv_64a_dream_link_energy_hatch"
 			id: "2F63F0E239737E38"
 			tasks: [{
 				id: "6FCD3DDD086DB963"
-				title: "{ftbquests.mechanics.quest14.task_8056163327974160739.title}"
+				title: "{ftbquests.mechanics.wireless_power.title}"
 				type: "checkmark"
 			}]
 			x: 0.0d

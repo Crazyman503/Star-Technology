@@ -10,7 +10,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["{ftbquests.welcome.intro.description1}"]
+			description: ["{ftbquests.welcome.intro.description}"]
 			icon: "gtceu:creative_energy"
 			id: "7168A2D5D4EE14E9"
 			size: 5.0d
@@ -23,13 +23,7 @@
 			y: 0.5d
 		}
 		{
-			description: [
-				"{ftbquests.welcome.lore.description1}"
-				""
-				"{ftbquests.welcome.lore.description2}"
-				""
-				"{ftbquests.welcome.lore.description3}"
-			]
+			description: ["{ftbquests.welcome.lore.description}"]
 			icon: "effortlessbuilding:building_techniques_book"
 			id: "0873486517E58FE4"
 			size: 3.0d
@@ -43,32 +37,19 @@
 		}
 		{
 			description: [
-				"{ftbquests.welcome.changelog.description1}"
-				"{ftbquests.welcome.changelog.description2}"
-				"{ftbquests.welcome.changelog.description3}"
+				"{ftbquests.welcome.changelog.description.1}"
 				"{@pagebreak}"
-				"{ftbquests.welcome.changelog.description4}"
-				"{ftbquests.welcome.changelog.description5}"
+				"{ftbquests.welcome.changelog.description.2}"
 				"{@pagebreak}"
-				"{ftbquests.welcome.changelog.description6}"
-				"{ftbquests.welcome.changelog.description7}"
+				"{ftbquests.welcome.changelog.description.3}"
 				"{@pagebreak}"
-				"{ftbquests.welcome.changelog.description8}"
-				"{ftbquests.welcome.changelog.description9}"
+				"{ftbquests.welcome.changelog.description.4}"
 				"{@pagebreak}"
-				"{ftbquests.welcome.changelog.description10}"
-				"{ftbquests.welcome.changelog.description11}"
-				"{ftbquests.welcome.changelog.description12}"
+				"{ftbquests.welcome.changelog.description.5}"
 				"{@pagebreak}"
-				"{ftbquests.welcome.changelog.description13}"
-				"{ftbquests.welcome.changelog.description14}"
-				"{ftbquests.welcome.changelog.description15}"
-				"{ftbquests.welcome.changelog.description16}"
-				"{ftbquests.welcome.changelog.description17}"
-				"{ftbquests.welcome.changelog.description18}"
-				"{ftbquests.welcome.changelog.description19}"
+				"{ftbquests.welcome.changelog.description.6}"
 				"{@pagebreak}"
-				"{ftbquests.welcome.changelog.description20}"
+				"{ftbquests.welcome.changelog.description.7}"
 			]
 			icon: "minecraft:writable_book"
 			id: "7389DA5CB69998BC"
@@ -82,18 +63,7 @@
 			y: 0.5d
 		}
 		{
-			description: [
-				"{ftbquests.welcome.discord.description1}"
-				"{ftbquests.welcome.discord.description2}"
-				""
-				"{ftbquests.welcome.discord.description3}"
-				""
-				"{ftbquests.welcome.discord.description4}"
-				""
-				"{ftbquests.welcome.discord.description5}"
-				""
-				"{ftbquests.welcome.discord.description6}"
-			]
+			description: ["{ftbquests.welcome.discord.description}"]
 			icon: "kubejs:coin"
 			id: "0B677BF5FCD2884F"
 			size: 2.0d
@@ -106,7 +76,7 @@
 			y: -3.0d
 		}
 		{
-			description: ["{ftbquests.welcome.server_files.description1}"]
+			description: ["{ftbquests.welcome.server_files.description}"]
 			icon: "kubejs:draconic_wetware_processor_mainframe"
 			id: "00C537F19FBE1A6E"
 			size: 2.0d
@@ -120,7 +90,7 @@
 		}
 		{
 			can_repeat: true
-			description: ["{ftbquests.welcome.1x_channels.description1}"]
+			description: ["{ftbquests.welcome.1x_channels.description}"]
 			icon: "ae2:controller"
 			id: "01D554315C80E32A"
 			optional: true
@@ -141,7 +111,7 @@
 		}
 		{
 			can_repeat: true
-			description: ["{ftbquests.welcome.2x_channels.description1}"]
+			description: ["{ftbquests.welcome.2x_channels.description}"]
 			icon: "ae2:controller"
 			id: "1D223731850769CF"
 			optional: true
@@ -162,7 +132,7 @@
 		}
 		{
 			can_repeat: true
-			description: ["{ftbquests.welcome.3x_channels.description1}"]
+			description: ["{ftbquests.welcome.3x_channels.description}"]
 			icon: "ae2:controller"
 			id: "650968485BE86ECC"
 			optional: true
@@ -183,7 +153,7 @@
 		}
 		{
 			can_repeat: true
-			description: ["{ftbquests.welcome.4x_channels.description1}"]
+			description: ["{ftbquests.welcome.4x_channels.description}"]
 			icon: "ae2:controller"
 			id: "2EE5068AEA2B2F0C"
 			optional: true
@@ -204,7 +174,7 @@
 		}
 		{
 			can_repeat: true
-			description: ["{ftbquests.welcome.disable_channels.description1}"]
+			description: ["{ftbquests.welcome.disable_channels.description}"]
 			icon: "ae2:controller"
 			id: "3CCF44ACC8A78039"
 			optional: true
