@@ -1,0 +1,19 @@
+Ultra, do not forget the following things
+
+General:
+- You broke all the quest links, make sure they redirect properly
+- Check all images, multiple broken ones already spotted
+
+Specific:
+- Tasks are called OR-filter
+    - Essence Burner (MA)
+    - Mystical Greenhouse (MA)
+    - Rotor Holders (Power)
+
+
+quantum_processor_mainframe => first zpm_circuit
+micro_processor_mainframe => first iv circuit
+basic_electronic_circuit => first lv circuit
+
+epic parallel => 1024
+mega parallel => 2048
