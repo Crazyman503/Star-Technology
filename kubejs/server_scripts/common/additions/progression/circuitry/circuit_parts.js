@@ -96,7 +96,7 @@ ServerEvents.recipes(event => {
     dracoQMD('capacitor', 16, [
             '2x gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate_foil', 
             '3x gtceu:zalloy_foil', 
-            'gtceu:nyanium_foil'
+            'gtceu:mythrolic_alloy_foil'
         ], 144
     );
 
@@ -161,7 +161,7 @@ ServerEvents.recipes(event => {
     dracoQMDInMCSF(`draconic_qmd_capacitor`, 16, [
             `${scalerMCSF * .75 * 2}x gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate_foil`, 
             `${scalerMCSF * .75 * 3}x gtceu:zalloy_foil`, 
-            `${scalerMCSF * .75}x gtceu:nyanium_foil`
+            `${scalerMCSF * .75}x gtceu:mythrolic_alloy_foil`
         ], [
             `gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate ${scalerMCSF * .75 * 144}`,`gtceu:naquadated_soldering_alloy ${scalerMCSF * .75 * 216}`
         ], 240

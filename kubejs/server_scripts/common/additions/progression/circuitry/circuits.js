@@ -109,7 +109,7 @@ ServerEvents.recipes(event => {
             `4x ${lsmdCapacitor}`,
             `4x ${lsmdTransistor}`,
             '8x gtceu:fine_yttrium_barium_cuprate_wire'
-        ], 38400, 200, CleanroomType.CLEANROOM
+        ], 38400, 100, CleanroomType.CLEANROOM
     );
 
     circuitAssembler(2,'wetware_processor_assembly','gtceu',[
@@ -283,7 +283,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.UEV]);  
         
     event.recipes.gtceu.circuit_assembler(id('abyssal_processing_unit'))
-        .itemInputs('1x kubejs:draconic_printed_circuit_board','16x kubejs:draconic_brain_matter_cells','8x gtceu:nyanium_small_fluid_pipe', 
+        .itemInputs('1x kubejs:abyssal_printed_circuit_board','16x kubejs:draconic_brain_matter_cells','8x gtceu:nyanium_small_fluid_pipe', 
             '32x gtceu:polyimide_foil','8x gtceu:abyssal_alloy_plate','8x gtceu:hvga_steel_bolt')
         .inputFluids('gtceu:draconic_enrichment_serum 200')
         .itemOutputs('1x kubejs:abyssal_processing_unit')
