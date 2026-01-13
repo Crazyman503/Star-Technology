@@ -69,20 +69,6 @@ ServerEvents.recipes(event => {
         .duration(124)
         .EUt(380644);
 
-    event.recipes.gtceu.mixer(id('astatine_bis_tritelluride_cobo_selenium'))
-        .itemInputs('gtceu:astatine_dust', 'gtceu:bismuth_tritelluride_dust', '4x gtceu:cobalt_dust', 'gtceu:selenium_dust')
-        .itemOutputs('7x gtceu:astatine_bis_tritelluride_cobo_selenium_dust')
-        .duration(360)
-        .circuit(3)
-        .EUt(GTValues.VHA[GTValues.UV]);
-
-    event.recipes.gtceu.mixer(id('astatine_bis_tritelluride_cobo_selenium_over_iron_titanium_oxide_dust'))
-        .itemInputs('gtceu:astatine_bis_tritelluride_cobo_selenium_dust', 'gtceu:iron_titanium_oxide_dust')
-        .itemOutputs('2x gtceu:astatine_bis_tritelluride_cobo_selenium_over_iron_titanium_oxide_dust')
-        .duration(480)
-        .circuit(1)
-        .EUt(GTValues.VHA[GTValues.UHV]);
-
     event.recipes.gtceu.autoclave(id('brimstone'))
         .itemInputs('kubejs:brimstone', '64x minecraft:netherrack')
         .inputFluids('gtceu:blaze 500')

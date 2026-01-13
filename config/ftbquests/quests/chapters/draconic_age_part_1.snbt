@@ -849,7 +849,7 @@
 			subtitle: "{ftbquests.chapter.draconic_age_part_1.quest31.subtitle}"
 			tasks: [{
 				id: "34FC1D181B3F8239"
-				item: "kubejs:draconic_wetware_microchip_processor"
+				item: "kubejs:draconic_microchip_processor"
 				type: "item"
 			}]
 			x: -2.0d
@@ -867,7 +867,7 @@
 			subtitle: "{ftbquests.chapter.draconic_age_part_1.quest32.subtitle}"
 			tasks: [{
 				id: "608B93EA8632BE4E"
-				item: "kubejs:draconic_wetware_processor"
+				item: "kubejs:draconic_processor"
 				type: "item"
 			}]
 			x: 0.0d
@@ -885,7 +885,7 @@
 			subtitle: "{ftbquests.chapter.draconic_age_part_1.quest33.subtitle}"
 			tasks: [{
 				id: "1D0AA38E67A6E6D1"
-				item: "kubejs:draconic_wetware_processor_assembly"
+				item: "kubejs:draconic_processor_assembly"
 				type: "item"
 			}]
 			x: 0.0d
@@ -903,7 +903,7 @@
 			subtitle: "{ftbquests.chapter.draconic_age_part_1.quest34.subtitle}"
 			tasks: [{
 				id: "5ECC7A631E155695"
-				item: "kubejs:draconic_wetware_processor_computer"
+				item: "kubejs:draconic_processor_computer"
 				type: "item"
 			}]
 			x: 0.0d
@@ -924,7 +924,7 @@
 			subtitle: "{ftbquests.chapter.draconic_age_part_1.quest35.subtitle}"
 			tasks: [{
 				id: "6EF791353FFC298F"
-				item: "kubejs:draconic_wetware_processor_mainframe"
+				item: "kubejs:draconic_processor_mainframe"
 				type: "item"
 			}]
 			x: 2.0d
@@ -1637,7 +1637,7 @@
 			subtitle: "{ftbquests.chapter.draconic_age_part_1.quest69.subtitle}"
 			tasks: [{
 				id: "6046733B28E6F322"
-				item: "kubejs:awakened_draconic_wetware_processor_mainframe"
+				item: "kubejs:abyssal_processor_mainframe"
 				type: "item"
 			}]
 			x: 8.0d
@@ -1655,7 +1655,7 @@
 			subtitle: "{ftbquests.chapter.draconic_age_part_1.quest70.subtitle}"
 			tasks: [{
 				id: "0E34320F90BA0A53"
-				item: "kubejs:awakened_draconic_wetware_processor_computer"
+				item: "kubejs:abyssal_processor_computer"
 				type: "item"
 			}]
 			x: 8.0d
@@ -1673,7 +1673,7 @@
 			subtitle: "{ftbquests.chapter.draconic_age_part_1.quest71.subtitle}"
 			tasks: [{
 				id: "29F972DC18F645E4"
-				item: "kubejs:awakened_draconic_wetware_processor_assembly"
+				item: "kubejs:abyssal_processor_assembly"
 				type: "item"
 			}]
 			x: 8.0d
@@ -1738,14 +1738,14 @@
 			tasks: [
 				{
 					id: "3DA83C02A0B67056"
-					item: "kubejs:draconic_wetware_printed_circuit_board"
+					item: "kubejs:draconic_printed_circuit_board"
 					type: "item"
 				}
 				{
 					id: "149D5BC68EC06EBB"
 					item: {
 						Count: 1
-						id: "kubejs:draconic_wetware_circuit_board"
+						id: "kubejs:draconic_circuit_board"
 						tag: { }
 					}
 					type: "item"
@@ -1765,7 +1765,7 @@
 			}]
 			tasks: [{
 				id: "156168FA92AD01CA"
-				item: "kubejs:awakened_draconic_wetware_circuit_board"
+				item: "kubejs:abyssal_circuit_board"
 				type: "item"
 			}]
 			x: 6.0d
@@ -2142,7 +2142,7 @@
 			}]
 			tasks: [{
 				id: "1FC13A74F9418DDB"
-				item: "kubejs:awakened_draconic_wetware_printed_circuit_board"
+				item: "kubejs:abyssal_printed_circuit_board"
 				type: "item"
 			}]
 			x: 6.0d

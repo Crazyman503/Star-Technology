@@ -2044,7 +2044,7 @@
 			subtitle: "{ftbquests.chapter.adventures_in_abydos.quest82.subtitle}"
 			tasks: [{
 				id: "0F71C952D6EC490A"
-				item: "kubejs:runic_wetware_processor_mainframe"
+				item: "kubejs:runic_processor_mainframe"
 				type: "item"
 			}]
 			x: -2.5d
@@ -2056,7 +2056,7 @@
 			subtitle: "{ftbquests.chapter.adventures_in_abydos.quest83.subtitle}"
 			tasks: [{
 				id: "0AB6135CF248B2E9"
-				item: "kubejs:runic_wetware_processor_computer"
+				item: "kubejs:runic_processor_computer"
 				type: "item"
 			}]
 			x: -0.5d
@@ -2071,7 +2071,7 @@
 			subtitle: "{ftbquests.chapter.adventures_in_abydos.quest84.subtitle}"
 			tasks: [{
 				id: "6D1079B819FF51A6"
-				item: "kubejs:runic_wetware_processor_assembly"
+				item: "kubejs:runic_processor_assembly"
 				type: "item"
 			}]
 			x: 1.5d

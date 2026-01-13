@@ -578,7 +578,7 @@
 					id: "52D95FC49A9BF283"
 					item: {
 						Count: 1
-						id: "kubejs:3d_nand_chip"
+						id: "kubejs:hyper_nand_memory_chip"
 						tag: { }
 					}
 					type: "item"
@@ -587,7 +587,7 @@
 					id: "0F08F84FC51DEADD"
 					item: {
 						Count: 1
-						id: "kubejs:3d_nor_chip"
+						id: "kubejs:hyper_nor_memory_chip"
 						tag: { }
 					}
 					type: "item"

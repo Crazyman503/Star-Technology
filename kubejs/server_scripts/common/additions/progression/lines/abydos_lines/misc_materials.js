@@ -21,13 +21,6 @@ ServerEvents.recipes(event => {
         .duration(360)
         .EUt(320);
 
-    event.recipes.gtceu.large_chemical_reactor(id('strontium_oxide'))
-        .itemInputs('gtceu:strontium_dust')
-        .inputFluids('gtceu:oxygen 1000')
-        .itemOutputs('2x gtceu:strontium_oxide_dust')
-        .duration(360)
-        .EUt(320);
-
     event.recipes.gtceu.chemical_reactor(id('titanium_oxide'))
         .itemInputs('gtceu:titanium_dust')
         .inputFluids('gtceu:oxygen 1000')
@@ -35,36 +28,11 @@ ServerEvents.recipes(event => {
         .duration(360)
         .EUt(320);
 
-    event.recipes.gtceu.large_chemical_reactor(id('titanium_oxide'))
-        .itemInputs('gtceu:titanium_dust')
-        .inputFluids('gtceu:oxygen 1000')
-        .itemOutputs('2x gtceu:titanium_oxide_dust')
-        .duration(360)
-        .EUt(320);
-
-    event.recipes.gtceu.mixer(id('strontium_titanium_oxide'))
+    event.recipes.gtceu.chemical_reactor(id('strontium_titanium_oxide'))
         .itemInputs('gtceu:strontium_oxide_dust', 'gtceu:titanium_oxide_dust')
         .itemOutputs('2x gtceu:strontium_titanium_oxide_dust')
         .duration(400)
         .EUt(420);
-
-    event.recipes.gtceu.chemical_reactor(id('iron_selenide'))
-        .itemInputs('gtceu:iron_dust', 'gtceu:selenium_dust')
-        .itemOutputs('gtceu:iron_selenide_dust')
-        .duration(360)
-        .EUt(1460);
-
-    event.recipes.gtceu.large_chemical_reactor(id('iron_selenide'))
-        .itemInputs('gtceu:iron_dust', 'gtceu:selenium_dust')
-        .itemOutputs('gtceu:iron_selenide_dust')
-        .duration(360)
-        .EUt(1460);
-
-    event.recipes.gtceu.mixer(id('iron_selenide_over_strontium_titanium_oxide'))
-        .itemInputs('gtceu:iron_selenide_dust', 'gtceu:strontium_titanium_oxide_dust')
-        .itemOutputs('2x gtceu:iron_selenide_over_strontium_titanium_oxide_dust')
-        .duration(1200)
-        .EUt(240000);
 
     event.recipes.gtceu.large_chemical_reactor(id('iron_titanium_oxide'))
         .itemInputs('5x gtceu:ferrosilite_dust', '2x gtceu:titanium_oxide_dust')

@@ -5,9 +5,12 @@ StartupEvents.registry('item', event => {
             .texture(`kubejs:item/circuits_and_components/circuit_chips/empty_${boule}_chip`);
     });
 
-    ['ae2_soc_wafer', 'ae2_soc_chip', '3d_nand_chip', '3d_nor_chip', 'qram_wafer', 'qram_chip', 'uepic_wafer',
-        'uepic_chip', 'draco_boule', 'draco_wafer', 'draco_advanced_soc_wafer', 'draco_advanced_soc',
-        'uipic_wafer', 'uipic_chip'].forEach(item => {
+    [
+        'ae2_soc_wafer', 'ae2_soc_chip', 'hyper_nand_memory_wafer', 'hyper_nand_memory_chip', 'hyper_nor_memory_wafer',
+        'hyper_nor_memory_chip', 'qram_wafer', 'qram_chip', 'stellar_ram_wafer','stellar_ram_chip',
+        'uepic_wafer','uepic_chip','uipic_wafer', 'uipic_chip', 'draco_boule', 'draco_wafer',
+        'draco_advanced_soc_wafer','draco_advanced_soc', 'riftic_soc'
+    ].forEach(item => {
         event.create(`${item}`)
             .tooltip(Text.translate(`item.kubejs.${item}.tooltip`))
             .texture(`kubejs:item/circuits_and_components/circuit_chips/${item}`);

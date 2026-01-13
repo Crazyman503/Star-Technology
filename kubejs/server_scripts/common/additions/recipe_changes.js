@@ -142,8 +142,8 @@ ServerEvents.recipes(event => {
         .EUt(30);
 
     event.recipes.gtceu.circuit_assembler(id('data_dna_disk'))
-        .itemInputs('kubejs:runic_convergence_printed_circuit_board','2x #gtceu:circuits/uhv','24x kubejs:qram_chip', 
-            '16x kubejs:3d_nor_chip','16x kubejs:3d_nand_chip','32x gtceu:fine_europium_wire')
+        .itemInputs('kubejs:runic_printed_circuit_board','2x #gtceu:circuits/uhv','24x kubejs:qram_chip', 
+            '16x kubejs:hyper_nor_memory_chip','16x kubejs:hyper_nand_memory_chip','32x gtceu:fine_europium_wire')
         .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 144')
         .itemOutputs('start_core:data_dna_disk')
         .duration(400)
@@ -151,8 +151,8 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.V[GTValues.UHV]);
 
     event.recipes.gtceu.circuit_assembler(id('component_data_core'))
-        .itemInputs('kubejs:awakened_draconic_wetware_printed_circuit_board','2x #gtceu:circuits/uiv','56x kubejs:qram_chip', 
-            '48x kubejs:3d_nor_chip','48x kubejs:3d_nand_chip','32x gtceu:fine_polonium_bismide_wire')
+        .itemInputs('kubejs:abyssal_printed_circuit_board','2x #gtceu:circuits/uiv','56x kubejs:qram_chip', 
+            '48x kubejs:hyper_nor_memory_chip','48x kubejs:hyper_nand_memory_chip','32x gtceu:fine_polonium_bismide_wire')
         .inputFluids('gtceu:naquadated_soldering_alloy 1152')
         .itemOutputs('start_core:component_data_core')
         .duration(400)

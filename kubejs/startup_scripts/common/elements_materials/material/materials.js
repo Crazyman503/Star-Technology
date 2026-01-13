@@ -280,7 +280,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     // Plasmas
     
-    // Materials used as placeholders
+    // Materials used as placeholdeFrs
     [
         'mystery','star','dragon','excited','soul'
     ].forEach(elem => {
@@ -708,8 +708,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     compDust('sodium_oxide', ['2x sodium', '1x oxygen'], 0x6666ff, []);
 
-    compDust('iron_selenide', ['1x iron', '1x selenium'], 0xb3ff66, []);
-
     compDust('strontium_oxide', ['1x strontium', '1x oxygen'], 0xffcc99, []);
 
     compDust('titanium_oxide', ['1x titanium', '2x oxygen'], 0xff66cc, []);
@@ -927,8 +925,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         conductor('zirconium_selenide_diiodide', ['1x zirconium', '1x selenium', '2x iodine'], 0x6600cc, DULL, [8900, 'higher', VA('luv'), 4000], [V('uhv'), 8, 16, false], [spring]);
 
         compIngotLiquid('zircalloy_4', ['251x zirconium', '3x tin', '2x chromium', '1x iron'], 0xff9999, DULL, [8900, 'higher', VA('luv'), 2000], [gear, small_gear, rotor, round, frame]);
-
-        conductor('iron_selenide_over_strontium_titanium_oxide', ['1x iron_selenide', '1x strontium_titanium_oxide'], 0x66ff33, DULL, [10299, 'highest', VA('uv'), 2500], [V('uhv'), 4, 12, false], [fine_wire, bolt_and_screw]);
 
     // Misc
     compIngotLiquid('indium_tin_lead_cadmium_soldering_alloy', ['14x indium', '3x tin', '2x lead', '1x cadmium'], 0xa6a6a6, [], [], []);
@@ -1554,11 +1550,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     compDust('iron_titanium_oxide', ['3x iron', '2x titanium', '7x oxygen'], 0x82229b, [no_decomp]);
 
-    compDust('astatine_bis_tritelluride_cobo_selenium', ['1x astatine', '1x bismuth_tritelluride', '4x cobalt', '2x selenium'], 0x123718, [no_decomp]);
-
     conductor('astatium_bioselex_carbonite', ['1x astatine', '2x bismuth', '3x selenium', '2x thallium', '4x sulfur', '1x carbon'], 0x305f84, DULL, [13475, 'highest', VA('uv'), 3500], [V('uev'), 3, 16, false] ,[spring, no_decomp]);
-
-    conductor('astatine_bis_tritelluride_cobo_selenium_over_iron_titanium_oxide', ['1x astatine_bis_tritelluride_cobo_selenium', 'iron_titanium_oxide'], 0xe61485, DULL, [14799, 'highest', VA('uhv'), 2500], [V('uev'), 2, 12, false], [fine_wire, bolt_and_screw, no_decomp]);
 
     compLiquidStill('borealic_concentrate', ['1x aurourium', '15x stellarium'], [no_decomp]);
 
@@ -1584,12 +1576,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     compDust('indium_tin_oxide', ['2x indium', '2x tin', '3x oxygen'], 0xA1C1E0, [no_decomp]);
 
     conductor('hafnide_ito_ceramic', ['4x hafnium', '5x tantalum', '5x carbon', '2x indium', '2x tin', '3x oxygen'], 0x798CA5, DULL, [14520, 'highest', VA('uhv'), 3200], [V('uiv'), 2, 36, false], [spring, no_decomp, no_abs_recipe, ring]);
-
-    compLiquid('polonium_iridide_acid', ['1x iridium', '2x polonium', '1x phosphoric_acid'], 0x8F8B73, [no_decomp]);
-
-    compDust('platinum_yttrium_composite', ['3x platinum', '6x carbon', '2x yttrium', '6x copper', '4x barium'], 0x9F99AA, [no_decomp]);
-
-    conductor('polonium_flux', ['2x iridium', '4x polonium', '2x phosphorus', '3x platinum', '6x carbon', '2x yttrium', '6x copper', '4x barium'], 0x948B90, DULL, [17625, 'highest', VA('uev'), 1650], [V('uiv'), 3, 24, false], [fine_wire, bolt_and_screw, no_decomp, no_abs_recipe]);
 
     conductorPlasma('rhenium_super_composite_alloy', ['4x rhenium', '2x weapon_grade_naquadah', '7x mercury_barium_calcium_cuprate', '2x titanium_carbide', '1x samarium'], 0xA78B72, DULL, [18850, 'highest', VA('uxv'), 600], [V('uiv'), 40, 0, true], [no_decomp, no_abs_recipe, fine_wire]);
 
@@ -1654,7 +1640,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     compIngotPlasmaSecColor('borealic_steel',['2x prismalium', '4x rose_gold', '11x aurourium', '2x titan_steel', '1x ancient_netherite'],0x8f7090,0x70907c,SHINY,[18880, 'highest', VA('uxv'), 600],[plates, frame, rod, bolt_and_screw, dense_plate, long_rod, gear, small_gear, no_decomp, no_abs_recipe]);
 
-    compIngotPlasmaSecColor('hvga_steel',['1x signalum','3x hssg','1x shadowwyrm_holder','8x hsla_steel','3x titan_steel'],0x280c6c,0x2561b7,SHINY,[18880, 'highest', VA('uxv'), 600],[plates, frame, rod, bolt_and_screw, dense_plate, long_rod, gear, small_gear, no_decomp, no_abs_recipe]);
+    compIngotPlasmaSecColor('hvga_steel',['1x signalum','3x hssg','1x shadowwyrm_holder','8x hsla_steel','3x titan_steel'],0x280c6c,0x2561b7,SHINY,[18880, 'highest', VA('uxv'), 600],[plates, frame, rod, bolt_and_screw, dense_plate, long_rod, gear, small_gear, no_decomp, no_abs_recipe, foil]);
 
     compIngotPlasmaSecColor('melastrium_mox',['2x osmiridium','7x astrenalloy_nx','3x melodium','1x potin'],0x7d486d,0x4c487d,SHINY,[18880, 'highest', VA('uxv'), 600],[plates, frame, rod, bolt_and_screw, dense_plate, long_rod, gear, small_gear, no_decomp, no_abs_recipe]);
 

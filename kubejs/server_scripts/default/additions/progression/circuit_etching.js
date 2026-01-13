@@ -50,14 +50,14 @@ global.not_hardmode(() => {
 
         event.remove({output: 'gtceu:wetware_printed_circuit_board'});
         CR(id(`wetware_circuit_board_iron3`))
-            .itemInputs(`gtceu:wetware_circuit_board`, `16x gtceu:niobium_titanium_foil`)
+            .itemInputs(`gtceu:wetware_circuit_board`, `12x gtceu:niobium_titanium_foil`)
             .inputFluids(`gtceu:iron_iii_chloride 5000`)
             .itemOutputs(`gtceu:wetware_printed_circuit_board`)
             .cleanroom(CleanroomType.CLEANROOM)
             .duration(1800)
             .EUt(480);
         CR(id(`wetware_circuit_board_persulfate`))
-            .itemInputs(`gtceu:wetware_circuit_board`, `16x gtceu:niobium_titanium_foil`)
+            .itemInputs(`gtceu:wetware_circuit_board`, `12x gtceu:niobium_titanium_foil`)
             .inputFluids(`gtceu:sodium_persulfate 10000`)
             .itemOutputs(`gtceu:wetware_printed_circuit_board`)
             .cleanroom(CleanroomType.CLEANROOM)
@@ -66,9 +66,9 @@ global.not_hardmode(() => {
     
         // cleanroom etching with new boards
         [
-            {board: 'runic_convergence', foil: 'yttrium_barium_cuprate', foil_count: 24, amount: 5000, duration: 2100, energy: 1920},
-            {board: 'draconic_wetware', foil: 'europium', foil_count: 32, amount: 10000, duration: 2400, energy: 7680},
-            {board: 'awakened_draconic_wetware', foil: 'polonium_bismide', foil_count: 40, amount: 20000, duration: 2700, energy: 30720}
+            {board: 'runic', foil: 'yttrium_barium_cuprate', foil_count: 16, amount: 5000, duration: 2100, energy: 1920},
+            {board: 'draconic', foil: 'europium', foil_count: 24, amount: 10000, duration: 2400, energy: 7680},
+            {board: 'abyssal', foil: 'polonium_bismide', foil_count: 32, amount: 20000, duration: 2700, energy: 30720}
         ].forEach(type=> {
             [
             {id: 'copper', name: 'cupric_chloride_solution', multiplier: 1},

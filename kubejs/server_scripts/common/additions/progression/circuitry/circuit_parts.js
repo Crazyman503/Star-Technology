@@ -46,14 +46,14 @@ ServerEvents.recipes(event => {
     );
 
     livingSMD('diode', 32, [
-            '2x gtceu:neutronium_silicon_carbide_dust', 
+            '2x gtceu:nickel_zinc_ferrite_dust', 
             'kubejs:naquadah_chip', 
             '6x gtceu:fine_indium_tin_barium_titanium_cuprate_wire'
         ], 288, 180
     );
 
 // === Draco-QMDs ===
-    const dracoQMD = (type, quantity, inputs, polymerAmount, cwu) => {
+    const dracoQMD = (type, quantity, inputs, polymerAmount) => {
 
         event.recipes.gtceu.component_part_assembly(id(`draconic_qmd_${type}`))
             .itemInputs(inputs)
@@ -65,18 +65,16 @@ ServerEvents.recipes(event => {
                 researchRecipeBuilder => researchRecipeBuilder
                     .researchStack(Item.of(`kubejs:living_smd_${type}`))
                     .EUt(GTValues.VHA[GTValues.UHV] * .8)
-                    .CWUt(cwu)
+                    .CWUt(180)
                 )
             .EUt(GTValues.VHA[GTValues.UHV]);
-
-        let dataItem = getDataItem(cwu);
         
         event.recipes.gtceu.research_station(`1_x_gtceu_advanced_smd_${type}`)
-            .itemInputs(dataItem)
+            .itemInputs('start_core:data_dna_disk')
             .itemInputs(`kubejs:living_smd_${type}`)
-            .itemOutputs(Item.of(`${dataItem}`, `{assembly_line_research:{research_id:"1x_gtceu_advanced_smd_${type}",research_type:"gtceu:component_part_assembly"}}`))
-            .CWUt(cwu)
-            .totalCWU(cwu * 120 * 20)
+            .itemOutputs(Item.of(`start_core:data_dna_disk`, `{assembly_line_research:{research_id:"1x_kubejs_living_smd_${type}",research_type:"gtceu:component_part_assembly"}}`))
+            .CWUt(180)
+            .totalCWU(180 * 120 * 20)
             .EUt(GTValues.VHA[GTValues.UHV] / 4);
             
     };
@@ -84,36 +82,36 @@ ServerEvents.recipes(event => {
     dracoQMD('inductor', 16, [
             'gtceu:neutronium_ring', 
             '4x gtceu:fine_prismalium_wire', 
-            'gtceu:strontium_titanium_oxide_dust'
-        ], 216, 180
+            'gtceu:iron_titanium_oxide_dust'
+        ], 216
     );
     
     dracoQMD('transistor', 16, [
             '2x gtceu:ancient_netherite_foil', 
             '8x gtceu:fine_trinaquadalloy_wire', 
             'gtceu:aurourium_foil'
-        ], 216, 180
+        ], 216
     );
 
     dracoQMD('capacitor', 16, [
             '2x gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate_foil', 
             '3x gtceu:zalloy_foil', 
             'gtceu:nyanium_foil'
-        ], 144, 180
+        ], 144
     );
 
     dracoQMD('resistor', 16, [
             'gtceu:diamane_dust', 
             '6x gtceu:fine_adamantine_wire', 
             '4x gtceu:bismuth_iridate_foil'
-        ], 216, 180
+        ], 216
     );
 
     dracoQMD('diode', 32, [
             '2x gtceu:silicon_carbide_over_bismuth_tritelluride_dust', 
             'kubejs:neutronium_chip', 
             '8x gtceu:fine_stellarium_wire'
-        ], 432, 180
+        ], 432
     );
 
     const dracoQMDInMCSF = (type, outQuant, inputs, fluids, duration) => {
@@ -145,7 +143,7 @@ ServerEvents.recipes(event => {
     dracoQMDInMCSF('draconic_qmd_inductor', 16, [
             `${scalerMCSF * .75}x gtceu:neutronium_ring`, 
             `${scalerMCSF * .75 * 4}x gtceu:fine_prismalium_wire`, 
-            `${scalerMCSF * .75}x gtceu:strontium_titanium_oxide_dust`
+            `${scalerMCSF * .75}x gtceu:iron_titanium_oxide_dust`
         ], [
             `gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate ${scalerMCSF * .75 * 216}`,`gtceu:naquadated_soldering_alloy ${scalerMCSF * .75 * 324}`
         ], 240
