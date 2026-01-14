@@ -5,7 +5,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .category('resource_production')
         .setEUIO('in')
         .setMaxIOSize(1, 1, 2, 0)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_MACERATE , FillDirection.LEFT_TO_RIGHT)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_MACERATE, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.FORGE_HAMMER);
 
 });
@@ -34,7 +34,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .where(' ', Predicates.air())
                 .build())
             .workableCasingRenderer(`kubejs:block/casings/large_cubes/${casing}_casing`,
-            `gtceu:block/machines/${type}`, false);
+                `gtceu:block/machines/${type}`, false);
 
     }
 
@@ -74,6 +74,29 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where(' ', Predicates.air())
             .build())
         .workableCasingRenderer('kubejs:block/casings/large_cubes/red_steel_casing',
-        'gtceu:block/machines/rock_crusher', false);
+            'gtceu:block/machines/rock_crusher', false);
 
+
+    // Pulverizer
+    event.create('t_large_pulverizer', 'multiblock')
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeType('pulverizer')
+        .recipeModifiers([GTRecipeModifiers.OC_PERFECT])
+        .appearanceBlock(() => Block.getBlock(`kubejs:blue_steel_casing`))
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle('CCC', 'CCC', 'CCC')
+            .aisle('CCC', 'C C', 'CCC')
+            .aisle('CCC', 'CKC', 'CCC')
+            .where('K', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('C', Predicates.blocks(`kubejs:blue_steel_casing`).setMinGlobalLimited(5)
+                .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
+                .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setExactLimit(1)))
+            .where(' ', Predicates.air())
+            .build())
+        .workableCasingRenderer(`kubejs:block/casings/large_cubes/blue_steel_casing`,
+            `gtceu:block/machines/macerator`, false);
 });
