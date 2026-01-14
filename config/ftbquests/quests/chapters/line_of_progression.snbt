@@ -949,7 +949,7 @@
 		}
 		{
 			dependencies: ["21B885A85E5764F9"]
-			description: [{ftbquests.line_of_progression.parallel_machines.description}"]
+			description: ["{ftbquests.line_of_progression.parallel_machines.description}"]
 			id: "3377AD18FED17C17"
 			subtitle: "{ftbquests.line_of_progression.parallel_machines.subtitle}"
 			tasks: [
@@ -1496,7 +1496,7 @@
 					id: "itemfilters:or"
 					tag: {
 						display: {
-							Name: "{"ftbquests.line_of_progression.gate_multiblocks.title"}"
+							Name: "{ftbquests.line_of_progression.gate_multiblocks.title}"
 						}
 						items: [
 							{
@@ -1562,7 +1562,7 @@
 					id: "itemfilters:or"
 					tag: {
 						display: {
-							Name: "{"ftbquests.line_of_progression.boosted_multiblocks.title"}"
+							Name: "{ftbquests.line_of_progression.boosted_multiblocks.title}"
 						}
 						items: [
 							{

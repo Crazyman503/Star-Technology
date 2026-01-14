@@ -54,11 +54,7 @@
 				"5E7153B7A10FC241"
 				"59B0F5DB2C1E96DC"
 			]
-			description: [
-				"{ftbquests.draconic_age.quest1.description1}"
-				""
-				"{ftbquests.draconic_age.quest1.description2}"
-			]
+			description: ["{ftbquests.draconic_age.the_nether.description}"]
 			icon: {
 				Count: 1
 				id: "ftbquests:custom_icon"
@@ -73,7 +69,7 @@
 				dimension: "minecraft:the_nether"
 				icon: "minecraft:netherrack"
 				id: "59EB1DD611632624"
-				title: "{ftbquests.draconic_age.quest1.task_6479305294154507812.title}"
+				title: "{ftbquests.draconic_age.the_nether.title}"
 				type: "dimension"
 			}]
 			x: -8.0d
@@ -81,11 +77,7 @@
 		}
 		{
 			dependencies: ["4DF07CB3D60C901C"]
-			description: [
-				"{ftbquests.draconic_age.quest2.description1}"
-				""
-				"{ftbquests.draconic_age.quest2.image0}"
-			]
+			description: ["{ftbquests.draconic_age.husk_of_the_flame.description}"]
 			id: "71145B6D6BA8016A"
 			rewards: [{
 				id: "71AD72BA81F1063D"
@@ -102,13 +94,7 @@
 		}
 		{
 			dependencies: ["4DF07CB3D60C901C"]
-			description: [
-				"{ftbquests.draconic_age.quest3.description1}"
-				""
-				"{ftbquests.draconic_age.quest3.description2}"
-				""
-				"{ftbquests.draconic_age.quest3.description3}"
-			]
+			description: ["{ftbquests.draconic_age.hellstones.description}"]
 			id: "709EF5314988C381"
 			rewards: [{
 				id: "5D45784E429EBA2F"
@@ -127,7 +113,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.draconic_age.quest3.title}"
+			title: "{ftbquests.draconic_age.hellstones.title}"
 			x: -6.0d
 			y: -6.0d
 		}
@@ -136,7 +122,7 @@
 				"709EF5314988C381"
 				"0032335FFAE6E012"
 			]
-			description: ["{ftbquests.draconic_age.quest4.description1}"]
+			description: ["{ftbquests.draconic_age.cryostate_quantum_chiller.description}"]
 			id: "665FC02BC2BC414F"
 			rewards: [{
 				count: 2
@@ -163,7 +149,7 @@
 				"3D4DCC8FD9A1EA3A"
 				"4777033988C9F512"
 			]
-			description: ["{ftbquests.draconic_age.quest5.description1}"]
+			description: ["{ftbquests.draconic_age.hellforge.description}"]
 			id: "1EB60E6DE2086158"
 			rewards: [{
 				count: 2
@@ -186,7 +172,7 @@
 				"1EB60E6DE2086158"
 				"70EEDB38B78F5C7F"
 			]
-			description: ["{ftbquests.draconic_age.quest6.description1}"]
+			description: ["{ftbquests.draconic_age.uev_alloys.description}"]
 			id: "059CB064A515B157"
 			rewards: [{
 				id: "31E5B85946E6668B"
@@ -210,7 +196,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.draconic_age.quest6.title}"
+			title: "{ftbquests.draconic_age.uev_alloys.title}"
 			x: -4.0d
 			y: -4.0d
 		}
@@ -219,7 +205,7 @@
 				"665FC02BC2BC414F"
 				"126DB96C50CC815F"
 			]
-			description: ["{ftbquests.draconic_age.quest7.description1}"]
+			description: ["{ftbquests.draconic_age.coolants.description}"]
 			icon: "gtceu:bec_og_bucket"
 			id: "70EEDB38B78F5C7F"
 			rewards: [{
@@ -245,13 +231,13 @@
 					type: "item"
 				}
 			]
-			title: "Advanced Cooling Materials"
+			title: "{ftbquests.draconic_age.coolants.title}"
 			x: -5.0d
 			y: -5.0d
 		}
 		{
 			dependencies: ["5224152A7D22A0B5"]
-			description: ["{ftbquests.draconic_age.quest8.description1}"]
+			description: ["{ftbquests.draconic_age.magmada_alloy_coil.description}"]
 			id: "310FC3F86513555F"
 			rewards: [{
 				count: 2
@@ -274,7 +260,7 @@
 				"498E36C4683EAA6C"
 				"218CABD676F3B732"
 			]
-			description: ["{ftbquests.draconic_age.quest9.description1}"]
+			description: ["{ftbquests.draconic_age.uev_energy_input_hatch.description}"]
 			id: "799F6F79B9FF86DF"
 			rewards: [{
 				id: "074DD9323BA686E2"
@@ -291,7 +277,7 @@
 		}
 		{
 			dependencies: ["799F6F79B9FF86DF"]
-			description: ["{ftbquests.draconic_age.quest10.description1}"]
+			description: ["{ftbquests.draconic_age.uev_energy_input_hatch_4a.description}"]
 			id: "538113DD6E1EA84D"
 			rewards: [{
 				id: "2F4C85BFA986611D"
@@ -311,7 +297,7 @@
 				"538113DD6E1EA84D"
 				"00333140377A33F5"
 			]
-			description: ["{ftbquests.draconic_age.quest11.description1}"]
+			description: ["{ftbquests.draconic_age.uev_energy_input_hatch_16a.description}"]
 			id: "11971C9E5BF28E5C"
 			rewards: [{
 				id: "7F047D7FFE2D5BA3"
@@ -328,7 +314,7 @@
 		}
 		{
 			dependencies: ["310FC3F86513555F"]
-			description: ["{ftbquests.draconic_age.quest12.description1}"]
+			description: ["{ftbquests.draconic_age.end_armor.description}"]
 			hide_dependent_lines: true
 			id: "6180202612DCDBF4"
 			rewards: [{
@@ -390,11 +376,7 @@
 				"5E7153B7A10FC241"
 				"6180202612DCDBF4"
 			]
-			description: [
-				"{ftbquests.draconic_age.quest13.description1}"
-				""
-				"{ftbquests.draconic_age.quest13.description2}"
-			]
+			description: ["{ftbquests.draconic_age.the_end.description}"]
 			icon: {
 				Count: 1
 				id: "ftbquests:custom_icon"
@@ -409,7 +391,7 @@
 				dimension: "minecraft:the_end"
 				icon: "minecraft:end_stone"
 				id: "4DEF021D751349A6"
-				title: "{ftbquests.draconic_age.quest13.task_5615709585895803302.title}"
+				title: "{ftbquests.draconic_age.the_end.title}"
 				type: "dimension"
 			}]
 			x: -8.0d
@@ -417,7 +399,7 @@
 		}
 		{
 			dependencies: ["28DE3D2A96C4D0C8"]
-			description: ["{ftbquests.draconic_age.quest14.description1}"]
+			description: ["{ftbquests.draconic_age.dragon_kill.description}"]
 			id: "01FBF9CDD9066AF5"
 			rewards: [{
 				id: "36D556CAA34324E0"
@@ -430,13 +412,13 @@
 				id: "6C9EDCB58D56F0EE"
 				type: "advancement"
 			}]
-			title: "{ftbquests.draconic_age.quest14.title}"
+			title: "{ftbquests.draconic_age.dragon_kill.title}"
 			x: -8.0d
 			y: 6.0d
 		}
 		{
 			dependencies: ["0168A45EB73911AC"]
-			description: ["{ftbquests.draconic_age.quest16.description1}"]
+			description: ["{ftbquests.draconic_age.abyssal_harvester.description}"]
 			id: "18FD654260DFF1D6"
 			rewards: [{
 				id: "3E63D34C298D5B9F"
@@ -454,11 +436,7 @@
 		{
 			dependencies: ["395C32B51E768458"]
 			dependency_requirement: "one_completed"
-			description: [
-				"{ftbquests.draconic_age.quest17.description1}"
-				""
-				"{ftbquests.draconic_age.quest17.description2}"
-			]
+			description: ["{ftbquests.draconic_age.dragon_cells.description}"]
 			id: "0168A45EB73911AC"
 			rewards: [{
 				id: "2208D0AE73F8D04F"
@@ -487,7 +465,7 @@
 		}
 		{
 			dependencies: ["059CB064A515B157"]
-			description: ["{ftbquests.draconic_age.quest18.description1}"]
+			description: ["{ftbquests.draconic_age.uev_machine_hull.description}"]
 			id: "498E36C4683EAA6C"
 			rewards: [{
 				id: "31D0FBC77051AC9D"
@@ -507,7 +485,7 @@
 				"1C9396E2587051F7"
 				"0168A45EB73911AC"
 			]
-			description: ["{ftbquests.draconic_age.quest19.description1}"]
+			description: ["{ftbquests.draconic_age.draconic_neuro_processing_unit.description}"]
 			id: "1AF4BF803FEF14FE"
 			rewards: [{
 				id: "2E1CEDC71658AC53"
@@ -527,7 +505,7 @@
 				"5080743917931298"
 				"2F6115002741F26F"
 			]
-			description: ["{ftbquests.draconic_age.quest20.description1}"]
+			description: ["{ftbquests.draconic_age.voidic_metals.description}"]
 			id: "7EB9C44EE7515882"
 			rewards: [{
 				id: "1BB07819120B3601"
@@ -551,7 +529,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.draconic_age.quest20.title}"
+			title: "{ftbquests.draconic_age.voidic_metals.title}"
 			x: -5.0d
 			y: 7.0d
 		}
@@ -562,24 +540,9 @@
 				"1D94473AA9436C60"
 			]
 			description: [
-				"{ftbquests.draconic_age.quest21.description1}"
-				""
-				"{ftbquests.draconic_age.quest21.description2}"
-				"{ftbquests.draconic_age.quest21.image0}"
+				"{ftbquests.draconic_age.draco_infusion.description.1}"
 				"{@pagebreak}"
-				"{ftbquests.draconic_age.quest21.description3}"
-				""
-				"{ftbquests.draconic_age.quest21.description4}"
-				"{ftbquests.draconic_age.quest21.description5}"
-				"{ftbquests.draconic_age.quest21.description6}"
-				"{ftbquests.draconic_age.quest21.description7}"
-				"{ftbquests.draconic_age.quest21.description8}"
-				""
-				"{ftbquests.draconic_age.quest21.description9}"
-				""
-				"{ftbquests.draconic_age.quest21.description10}"
-				""
-				"{ftbquests.draconic_age.quest21.description11}"
+				"{ftbquests.draconic_age.draco_infusion.description.2}"
 			]
 			id: "395C32B51E768458"
 			rewards: [{
@@ -603,7 +566,7 @@
 				"7EB9C44EE7515882"
 				"75C33909E2CD5EC0"
 			]
-			description: ["{ftbquests.draconic_age.quest22.description1}"]
+			description: ["{ftbquests.draconic_age.uiv_alloys.description}"]
 			hide_dependency_lines: true
 			id: "097D8B4DF03A8617"
 			rewards: [{
@@ -631,7 +594,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.draconic_age.quest22.title}"
+			title: "{ftbquests.draconic_age.uiv_alloys.title}"
 			x: -4.0d
 			y: 8.0d
 		}
@@ -640,7 +603,7 @@
 				"33FBF8561A3D901D"
 				"37F9C85CFCFFDA5F"
 			]
-			description: ["{ftbquests.draconic_age.quest23.description1}"]
+			description: ["{ftbquests.draconic_age.abyssal_alloy_coil.description}"]
 			id: "2DACE6EF41A118D9"
 			rewards: [{
 				count: 2
@@ -660,7 +623,7 @@
 		}
 		{
 			dependencies: ["097D8B4DF03A8617"]
-			description: ["{ftbquests.draconic_age.quest24.description1}"]
+			description: ["{ftbquests.draconic_age.uiv_machine_hull.description}"]
 			id: "3F9D1B0CED0D4133"
 			rewards: [{
 				id: "48554ED3B7411A9C"
@@ -677,7 +640,7 @@
 		}
 		{
 			dependencies: ["3F9D1B0CED0D4133"]
-			description: ["{ftbquests.draconic_age.quest25.description1}"]
+			description: ["{ftbquests.draconic_age.uiv_energy_input_hatch.description}"]
 			id: "45E628CF1DA8D380"
 			rewards: [{
 				id: "3931D2A84A679EEC"
@@ -694,7 +657,7 @@
 		}
 		{
 			dependencies: ["45E628CF1DA8D380"]
-			description: ["{ftbquests.draconic_age.quest26.description1}"]
+			description: ["{ftbquests.draconic_age.uiv_energy_input_hatch_4a.description}"]
 			id: "69493DCA3D764771"
 			rewards: [{
 				id: "2592355F8935A980"
@@ -714,7 +677,7 @@
 				"69493DCA3D764771"
 				"31F87896FF834E63"
 			]
-			description: ["{ftbquests.draconic_age.quest27.description1}"]
+			description: ["{ftbquests.draconic_age.uiv_energy_input_hatch_16a.description}"]
 			id: "54944370404CEA94"
 			rewards: [{
 				id: "3ACAFF1C700E1EFF"
@@ -731,7 +694,7 @@
 		}
 		{
 			dependencies: ["4DF07CB3D60C901C"]
-			description: ["{ftbquests.draconic_age.quest28.description1}"]
+			description: ["{ftbquests.draconic_age.hellish_magmas.description}"]
 			icon: "gtceu:highly_unstable_nether_magma_bucket"
 			id: "1AEBAE3050B72906"
 			rewards: [{
@@ -742,7 +705,7 @@
 			tasks: [
 				{
 					id: "1CE16522433B325A"
-					title: "{ftbquests.draconic_age.quest28.task_2081055700653126234.title}"
+					title: "{ftbquests.draconic_age.hellish_magmas.title}"
 					type: "checkmark"
 				}
 				{
@@ -763,7 +726,7 @@
 		}
 		{
 			dependencies: ["1AEBAE3050B72906"]
-			description: ["{ftbquests.draconic_age.quest29.description1}"]
+			description: ["{ftbquests.draconic_age.mystical_metals.description}"]
 			hide_dependent_lines: true
 			id: "0032335FFAE6E012"
 			rewards: [{
@@ -809,13 +772,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.draconic_age.quest29.title}"
+			title: "{ftbquests.draconic_age.mystical_metals.title}"
 			x: -8.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["0168A45EB73911AC"]
-			description: ["{ftbquests.draconic_age.quest30.description1}"]
+			description: ["{ftbquests.draconic_age.draco_circuit_assembler.description}"]
 			id: "1772F46C9EAF6FB7"
 			rewards: [{
 				id: "2149BF78BEF347F5"
@@ -836,14 +799,14 @@
 				"1772F46C9EAF6FB7"
 				"61E082759BC89A1E"
 			]
-			description: ["Quantum Mainframes Who?"]
+			description: ["{ftbquests.draconic_age.draconic_wetware_microchip_processor.description}"]
 			id: "169C2E9DA1CF8F53"
 			rewards: [{
 				id: "3767B7D9C3E1212A"
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.draconic_age.quest31.subtitle}"
+			subtitle: "{ftbquests.draconic_age.draconic_wetware_microchip_processor.subtitle}"
 			tasks: [{
 				id: "34FC1D181B3F8239"
 				item: "kubejs:draconic_wetware_microchip_processor"
@@ -854,14 +817,14 @@
 		}
 		{
 			dependencies: ["169C2E9DA1CF8F53"]
-			description: ["Crystal Mainframes Who?"]
+			description: ["{ftbquests.draconic_age.draconic_wetware_processor.description}"]
 			id: "26FDB9612063F49D"
 			rewards: [{
 				id: "369733BBEC093142"
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.draconic_age.quest32.subtitle}"
+			subtitle: "{ftbquests.draconic_age.draconic_wetware_processor.subtitle}"
 			tasks: [{
 				id: "608B93EA8632BE4E"
 				item: "kubejs:draconic_wetware_processor"
@@ -872,14 +835,14 @@
 		}
 		{
 			dependencies: ["26FDB9612063F49D"]
-			description: ["Wetware Mainframes Who?"]
+			description: ["{ftbquests.draconic_age.draconic_wetware_processor_assembly.description}"]
 			id: "66D49CB8D8819E3F"
 			rewards: [{
 				id: "4F559A2D7738B87F"
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.draconic_age.quest33.subtitle}"
+			subtitle: "{ftbquests.draconic_age.draconic_wetware_processor_assembly.subtitle}"
 			tasks: [{
 				id: "1D0AA38E67A6E6D1"
 				item: "kubejs:draconic_wetware_processor_assembly"
@@ -890,14 +853,14 @@
 		}
 		{
 			dependencies: ["66D49CB8D8819E3F"]
-			description: ["Runic Wetware Mainframes Who?"]
+			description: ["{ftbquests.draconic_age.draconic_wetware_processor_computer.description}"]
 			id: "6F3DF16481990D99"
 			rewards: [{
 				id: "4D321A14B798F316"
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.draconic_age.quest34.subtitle}"
+			subtitle: "{ftbquests.draconic_age.draconic_wetware_processor_computer.subtitle}"
 			tasks: [{
 				id: "5ECC7A631E155695"
 				item: "kubejs:draconic_wetware_processor_computer"
@@ -908,7 +871,7 @@
 		}
 		{
 			dependencies: ["6F3DF16481990D99"]
-			description: ["{ftbquests.draconic_age.quest35.description1}"]
+			description: ["{ftbquests.draconic_age.draconic_wetware_processor_mainframe.description}"]
 			id: "5944C4DE27F98FF3"
 			rewards: [{
 				count: 2
@@ -918,7 +881,7 @@
 			}]
 			shape: "gear"
 			size: 1.5d
-			subtitle: "{ftbquests.draconic_age.quest35.subtitle}"
+			subtitle: "{ftbquests.draconic_age.draconic_wetware_processor_mainframe.subtitle}"
 			tasks: [{
 				id: "6EF791353FFC298F"
 				item: "kubejs:draconic_wetware_processor_mainframe"
@@ -929,7 +892,7 @@
 		}
 		{
 			dependencies: ["5944C4DE27F98FF3"]
-			description: ["{ftbquests.draconic_age.quest36.description1}"]
+			description: ["{ftbquests.draconic_age.uev_fusion_reactor.description}"]
 			id: "2E34F23A42004285"
 			rewards: [{
 				count: 2
@@ -949,7 +912,7 @@
 		}
 		{
 			dependencies: ["3AE729D3F47E9A2B"]
-			description: ["A boule purified to immense capabilities allowing for even stronger of circuits"]
+			description: ["{ftbquests.draconic_age.draco_boule.description}"]
 			id: "06EC98F6E6AFC2AF"
 			rewards: [{
 				id: "25348F8CF999B3FB"
@@ -966,7 +929,7 @@
 		}
 		{
 			dependencies: ["06EC98F6E6AFC2AF"]
-			description: ["Wafer go nom nom"]
+			description: ["{ftbquests.draconic_age.draco_wafer.description}"]
 			id: "0DF30CDA8DE68E0C"
 			rewards: [{
 				count: 2
@@ -986,7 +949,7 @@
 		}
 		{
 			dependencies: ["0DF30CDA8DE68E0C"]
-			description: ["Cheapest &cZPM&r and &3UV&r circuits..... and bug?"]
+			description: ["{ftbquests.draconic_age.draco_advanced_soc_wafer.description}"]
 			id: "074635DC3322DC99"
 			rewards: [{
 				id: "741879FCA3600628"
@@ -1006,7 +969,7 @@
 				"310FC3F86513555F"
 				"1B6159E114BA50ED"
 			]
-			description: ["{ftbquests.draconic_age.quest40.description1}"]
+			description: ["{ftbquests.draconic_age.sterile_cleaning_maintenance_hatch.description}"]
 			hide_dependent_lines: true
 			id: "032E72446266F7D4"
 			rewards: [{
@@ -1027,7 +990,7 @@
 				"6A82CC9F01960097"
 				"31F87896FF834E63"
 			]
-			description: ["A machines capable of simulating the end in an uncorrupted and pure state"]
+			description: ["{ftbquests.draconic_age.abyssal_containment_room.description}"]
 			id: "09B55AFE7C06EC82"
 			rewards: [{
 				id: "5C220EE9FD21B829"
@@ -1046,7 +1009,7 @@
 		}
 		{
 			dependencies: ["45E628CF1DA8D380"]
-			description: ["The material of \"DrAgON\"s"]
+			description: ["{ftbquests.draconic_age.draconyallium_ingot.description}"]
 			id: "37F9C85CFCFFDA5F"
 			rewards: [{
 				id: "60D4025181F9B52A"
@@ -1066,7 +1029,7 @@
 				"3B1453C435E3950B"
 				"694E1F6458D5F72F"
 			]
-			description: ["An Auxiliary Fusion Ractor capable of running MK4 recipes and more"]
+			description: ["{ftbquests.draconic_age.uiv_auxiliary_boosted_fusion_reactor.description}"]
 			id: "38C2E3061C764F05"
 			rewards: [{
 				count: 2
@@ -1090,7 +1053,7 @@
 				"749AB3A73D3744EA"
 				"54A48D25CC69507E"
 			]
-			description: ["Refined as intended"]
+			description: ["{ftbquests.draconic_age.pure_dragon_breath.description}"]
 			id: "3AE729D3F47E9A2B"
 			rewards: [{
 				count: 3
@@ -1104,12 +1067,13 @@
 				optional_task: true
 				type: "item"
 			}]
+			title: "{ftbquests.draconic_age.pure_dragon_breath.title}"
 			x: 2.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["3AE729D3F47E9A2B"]
-			description: ["Core of technology for the long lost Draconic Empires"]
+			description: ["{ftbquests.draconic_age.uipic_chip.description}"]
 			hide_dependent_lines: true
 			id: "694E1F6458D5F72F"
 			rewards: [{
@@ -1134,14 +1098,13 @@
 		}
 		{
 			dependencies: ["3B1453C435E3950B"]
-			description: [""]
 			id: "7FABD2E818B70D35"
 			rewards: [{
 				id: "5913DB9A14802483"
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			subtitle: "&74096x Parallel Hatch"
+			subtitle: "{ftbquests.draconic_age.uiv_parallel_hatch.subtitle}"
 			tasks: [{
 				id: "1A9F5B4EAFB66C03"
 				item: "start_core:uiv_parallel_hatch"
@@ -1160,7 +1123,7 @@
 				item: "minecraft:bedrock"
 				type: "item"
 			}]
-			title: "{ftbquests.draconic_age.quest49.title}"
+			title: "{ftbquests.draconic_age.dsg_gate_line.title}"
 			x: 16.5d
 			y: -3.0d
 		}
@@ -1172,6 +1135,7 @@
 				id: "19E2EB40AB845664"
 				type: "checkmark"
 			}]
+            title: "{ftbquests.draconic_age.positioner.title}"
 			x: 4.0d
 			y: 1.0d
 		}
@@ -1180,7 +1144,7 @@
 				"6C8C6EA426060065"
 				"22A4164AD4303C20"
 			]
-			description: ["{ftbquests.draconic_age.quest51.description1}"]
+			description: ["{ftbquests.draconic_age.aurourium_ingot.description}"]
 			id: "218CABD676F3B732"
 			rewards: [{
 				id: "265BFA194E2D1AB4"
@@ -1200,7 +1164,7 @@
 				"1B6159E114BA50ED"
 				"709EF5314988C381"
 			]
-			description: ["{ftbquests.draconic_age.quest52.description1}"]
+			description: ["{ftbquests.draconic_age.mega_abs.description}"]
 			id: "5FEC7470D01CEBDD"
 			rewards: [{
 				count: 2
@@ -1220,18 +1184,14 @@
 		}
 		{
 			dependencies: ["5944C4DE27F98FF3"]
-			description: [
-				"2048 Regular Parallels"
-				""
-				"8 Absolute Parallels"
-			]
+			description: ["{ftbquests.draconic_age.uev_parallels.description}"]
 			id: "0ECE55AB7BBDAAA4"
 			rewards: [{
 				id: "19D703078F0CF47C"
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.draconic_age.quest53.subtitle}"
+			subtitle: "{ftbquests.draconic_age.uev_parallels.subtitle}"
 			tasks: [
 				{
 					id: "1BD274EF66F992D9"
@@ -1244,7 +1204,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.draconic_age.quest53.title}"
+			title: "{ftbquests.draconic_age.uev_parallels.title}"
 			x: 4.0d
 			y: -6.0d
 		}
@@ -1259,13 +1219,13 @@
 				item: "sgjourney:pegasus_stargate"
 				type: "item"
 			}]
-			title: "{ftbquests.draconic_age.quest54.title}"
+			title: "{ftbquests.draconic_age.draconic_stargate.title}"
 			x: 16.5d
 			y: 1.0d
 		}
 		{
 			dependencies: ["218CABD676F3B732"]
-			description: ["{ftbquests.draconic_age.quest55.description1}"]
+			description: ["{ftbquests.draconic_age.nyanium_ingot.description}"]
 			id: "1D94473AA9436C60"
 			rewards: [{
 				id: "6FD29172BC5919BE"
@@ -1282,7 +1242,7 @@
 		}
 		{
 			dependencies: ["01FBF9CDD9066AF5"]
-			description: ["{ftbquests.draconic_age.quest56.description1}"]
+			description: ["{ftbquests.draconic_age.dragon_breath.description}"]
 			id: "262BD3D9D1DF7F13"
 			rewards: [{
 				id: "494EA2A06676FE57"
@@ -1307,93 +1267,9 @@
 				"2F62965D05463E44"
 			]
 			description: [
-				"{ftbquests.draconic_age.quest57.description1}"
-				""
-				""
-				"&7{ftbquests.draconic_age.quest57.description2}"
-				""
-				"&7{ftbquests.draconic_age.quest57.description3}"
-				""
-				"&7{ftbquests.draconic_age.quest57.description4}"
-				""
-				"&7Hardmode is currently on development hiatus with expected return mid-late 2026"
+				"{ftbquests.draconic_age.maxwell.description.1}"
 				"{@pagebreak}"
-				"{ftbquests.draconic_age.quest57.description5}"
-				""
-				"{ftbquests.draconic_age.quest57.description6}"
-				"{ftbquests.draconic_age.quest57.description7}"
-				"{ftbquests.draconic_age.quest57.description8}"
-				"{ftbquests.draconic_age.quest57.description9}"
-				""
-				"{ftbquests.draconic_age.quest57.description10}"
-				"{ftbquests.draconic_age.quest57.description11}"
-				""
-				"{ftbquests.draconic_age.quest57.description12}"
-				"{ftbquests.draconic_age.quest57.description13}"
-				"{ftbquests.draconic_age.quest57.description14}"
-				"{ftbquests.draconic_age.quest57.description15}"
-				"{ftbquests.draconic_age.quest57.description16}"
-				"{ftbquests.draconic_age.quest57.description17}"
-				""
-				"{ftbquests.draconic_age.quest57.description18}"
-				"{ftbquests.draconic_age.quest57.description19}"
-				"{ftbquests.draconic_age.quest57.description20}"
-				"{ftbquests.draconic_age.quest57.description21}"
-				"{ftbquests.draconic_age.quest57.description22}"
-				""
-				"{ftbquests.draconic_age.quest57.description23}"
-				"{ftbquests.draconic_age.quest57.description24}"
-				""
-				"{ftbquests.draconic_age.quest57.description25}"
-				"{ftbquests.draconic_age.quest57.description26}"
-				"{ftbquests.draconic_age.quest57.description27}"
-				"{ftbquests.draconic_age.quest57.description28}"
-				"{ftbquests.draconic_age.quest57.description29}"
-				"{ftbquests.draconic_age.quest57.description30}"
-				""
-				"{ftbquests.draconic_age.quest57.description31}"
-				"{ftbquests.draconic_age.quest57.description32}"
-				"{ftbquests.draconic_age.quest57.description33}"
-				"{ftbquests.draconic_age.quest57.description34}"
-				"{ftbquests.draconic_age.quest57.description35}"
-				"{ftbquests.draconic_age.quest57.description36}"
-				""
-				"{ftbquests.draconic_age.quest57.description37}"
-				"{ftbquests.draconic_age.quest57.description38}"
-				"{ftbquests.draconic_age.quest57.description39}"
-				"{ftbquests.draconic_age.quest57.description40}"
-				"{ftbquests.draconic_age.quest57.description41}"
-				"{ftbquests.draconic_age.quest57.description42}"
-				""
-				"{ftbquests.draconic_age.quest57.description43}"
-				"{ftbquests.draconic_age.quest57.description44}"
-				"{ftbquests.draconic_age.quest57.description45}"
-				"{ftbquests.draconic_age.quest57.description46}"
-				"{ftbquests.draconic_age.quest57.description47}"
-				""
-				"{ftbquests.draconic_age.quest57.description48}"
-				"{ftbquests.draconic_age.quest57.description49}"
-				""
-				"{ftbquests.draconic_age.quest57.description50}"
-				"{ftbquests.draconic_age.quest57.description51}"
-				"{ftbquests.draconic_age.quest57.description52}"
-				"{ftbquests.draconic_age.quest57.description53}"
-				"{ftbquests.draconic_age.quest57.description54}"
-				"{ftbquests.draconic_age.quest57.description55}"
-				""
-				"{ftbquests.draconic_age.quest57.description56}"
-				"{ftbquests.draconic_age.quest57.description57}"
-				"{ftbquests.draconic_age.quest57.description58}"
-				"{ftbquests.draconic_age.quest57.description59}"
-				"{ftbquests.draconic_age.quest57.description60}"
-				"{ftbquests.draconic_age.quest57.description61}"
-				""
-				"{ftbquests.draconic_age.quest57.description62}"
-				"{ftbquests.draconic_age.quest57.description63}"
-				"{ftbquests.draconic_age.quest57.description64}"
-				"{ftbquests.draconic_age.quest57.description65}"
-				"{ftbquests.draconic_age.quest57.description66}"
-				"{ftbquests.draconic_age.quest57.description67}"
+				"{ftbquests.draconic_age.maxwell.description.2}"
 			]
 			id: "3BB8848F84026B45"
 			rewards: [{
@@ -1404,43 +1280,34 @@
 			}]
 			shape: "none"
 			size: 2.0d
-			subtitle: "{ftbquests.draconic_age.quest57.subtitle}"
+			subtitle: "{ftbquests.draconic_age.maxwell.subtitle}"
 			tasks: [{
 				id: "184862475E5F6DB3"
 				item: "placeablemaxwell:maxwell"
 				type: "item"
 			}]
-			x: 13.560000000000002d
-			y: 0.21500000000000075d
+			x: 13.56d
+			y: 0.215d
 		}
 		{
 			dependencies: ["3BB8848F84026B45"]
-			description: [
-				"{ftbquests.draconic_age.quest58.description1}"
-				""
-				"{ftbquests.draconic_age.quest58.description2}"
-				""
-				""
-				"{ftbquests.draconic_age.quest58.description3}"
-				""
-				"&7cya in 2026"
-			]
+			description: ["{ftbquests.draconic_age.completion.description}"]
 			id: "46982CD51A50CD07"
 			shape: "pentagon"
 			size: 1.25d
-			subtitle: "{ftbquests.draconic_age.quest58.subtitle}"
+			subtitle: "{ftbquests.draconic_age.completion.subtitle}"
 			tasks: [{
 				id: "5163F1D911C227BB"
-				title: "{ftbquests.draconic_age.quest58.task_5864797054374651835.title}"
+				title: "{ftbquests.draconic_age.completion.item_title}"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.draconic_age.quest58.title}"
+			title: "{ftbquests.draconic_age.completion.title}"
 			x: 13.875d
 			y: 2.245d
 		}
 		{
 			dependencies: ["2DACE6EF41A118D9"]
-			description: ["{ftbquests.draconic_age.quest59.description1}"]
+			description: ["{ftbquests.draconic_age.vasilisa.description}"]
 			hide_dependency_lines: true
 			id: "0B475E2385B478C0"
 			rewards: [{
@@ -1450,18 +1317,18 @@
 			}]
 			shape: "none"
 			size: 1.25d
-			subtitle: "{ftbquests.draconic_age.quest59.subtitle}"
+			subtitle: "{ftbquests.draconic_age.vasilisa.subtitle}"
 			tasks: [{
 				id: "29314FA6BB5D9A2A"
 				item: "placeablemaxwell:vasilisa"
 				type: "item"
 			}]
 			x: 11.5d
-			y: -0.8799999999999999d
+			y: -0.87d
 		}
 		{
 			dependencies: ["2DACE6EF41A118D9"]
-			description: ["{ftbquests.draconic_age.quest60.description1}"]
+			description: ["{ftbquests.draconic_age.valenok.description}"]
 			hide_dependency_lines: true
 			id: "53E595EAB1C90884"
 			rewards: [{
@@ -1471,7 +1338,7 @@
 			}]
 			shape: "none"
 			size: 1.25d
-			subtitle: "{ftbquests.draconic_age.quest60.subtitle}"
+			subtitle: "{ftbquests.draconic_age.valenok.subtitle}"
 			tasks: [{
 				id: "1738781A05EE828F"
 				item: "placeablemaxwell:valenok"
@@ -1483,7 +1350,7 @@
 		{
 			dependencies: ["2DACE6EF41A118D9"]
 			dependency_requirement: "one_started"
-			description: ["{ftbquests.draconic_age.quest61.description1}"]
+			description: ["{ftbquests.draconic_age.mars.description}"]
 			hide_dependency_lines: true
 			id: "61C534992FB17066"
 			rewards: [{
@@ -1493,7 +1360,7 @@
 			}]
 			shape: "none"
 			size: 1.25d
-			subtitle: "{ftbquests.draconic_age.quest61.subtitle}"
+			subtitle: "{ftbquests.draconic_age.mars.subtitle}"
 			tasks: [{
 				id: "4646C0AA2053021D"
 				item: "placeablemaxwell:mars"
@@ -1504,7 +1371,7 @@
 		}
 		{
 			dependencies: ["01FBF9CDD9066AF5"]
-			description: ["{ftbquests.draconic_age.quest62.description1}"]
+			description: ["{ftbquests.draconic_age.end_again.description}"]
 			id: "7EACF5C37C73E6B9"
 			tasks: [
 				{
@@ -1520,13 +1387,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.draconic_age.quest62.title}"
+			title: "{ftbquests.draconic_age.end_again.title}"
 			x: -8.0d
 			y: 8.0d
 		}
 		{
 			dependencies: ["28DE3D2A96C4D0C8"]
-			description: ["{ftbquests.draconic_age.quest63.description1}"]
+			description: ["{ftbquests.draconic_age.end_city.description}"]
 			id: "64780055536CEEF3"
 			rewards: [{
 				id: "25078307CEF39E7F"
@@ -1537,7 +1404,7 @@
 				icon: "minecraft:purpur_pillar"
 				id: "238739D7E00CDAE2"
 				structure: "minecraft:end_city"
-				title: "{ftbquests.draconic_age.quest63.task_2560078512523107042.title}"
+				title: "{ftbquests.draconic_age.end_city.title}"
 				type: "structure"
 			}]
 			x: -8.0d
@@ -1548,12 +1415,12 @@
 				"0168A45EB73911AC"
 				"032E72446266F7D4"
 			]
-			description: ["{ftbquests.draconic_age.quest64.description1}"]
+			description: ["{ftbquests.draconic_age.dragon_breath_looping.description}"]
 			icon: "minecraft:dragon_breath"
 			id: "46DD931FCA5AF574"
 			tasks: [{
 				id: "10E4C7905079E82E"
-				title: "{ftbquests.draconic_age.quest64.task_1217317221936261166.title}"
+				title: "{ftbquests.draconic_age.dragon_breath_looping.title}"
 				type: "checkmark"
 			}]
 			x: -3.0d
@@ -1565,11 +1432,7 @@
 				"5A3365B01BF98E8E"
 			]
 			dependency_requirement: "one_completed"
-			description: [
-				"{ftbquests.draconic_age.quest65.description1}"
-				""
-				"{ftbquests.draconic_age.quest65.description2}"
-			]
+			description: ["{ftbquests.draconic_age.nether_talisman.description}"]
 			id: "7C65EDBD752F898D"
 			rewards: [{
 				id: "7D864BD9CC68CDDB"
@@ -1590,11 +1453,7 @@
 				"6C03B25DB18C6546"
 			]
 			dependency_requirement: "one_completed"
-			description: [
-				"{ftbquests.draconic_age.quest66.description1}"
-				""
-				"{ftbquests.draconic_age.quest66.description2}"
-			]
+			description: ["{ftbquests.draconic_age.end_talisman.description}]
 			id: "4397DEEDB7C52BAC"
 			rewards: [{
 				id: "44B118BD6E9873F6"
@@ -1627,14 +1486,14 @@
 		}
 		{
 			dependencies: ["16FDCABFC80579D5"]
-			description: ["The tip of technology the Draconic Empires were capable of.... it knows what you did"]
+			description: ["{ftbquests.draconic_age.awakened_draconic_wetware_processor_mainframe.description}"]
 			id: "3B1453C435E3950B"
 			rewards: [{
 				id: "6CB5C3D8188E33D0"
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.draconic_age.quest69.subtitle}"
+			subtitle: "{ftbquests.draconic_age.awakened_draconic_wetware_processor_mainframe.subtitle}"
 			tasks: [{
 				id: "6046733B28E6F322"
 				item: "kubejs:awakened_draconic_wetware_processor_mainframe"
@@ -1645,14 +1504,14 @@
 		}
 		{
 			dependencies: ["3AE6E85C2FC76DE9"]
-			description: ["Scheming......"]
+			description: ["{ftbquests.draconic_age.awakened_draconic_wetware_processor_computer.description}"]
 			id: "16FDCABFC80579D5"
 			rewards: [{
 				id: "748B871094F29C87"
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.draconic_age.quest70.subtitle}"
+			subtitle: "{ftbquests.draconic_age.awakened_draconic_wetware_processor_computer.subtitle}"
 			tasks: [{
 				id: "0E34320F90BA0A53"
 				item: "kubejs:awakened_draconic_wetware_processor_computer"
@@ -1663,14 +1522,14 @@
 		}
 		{
 			dependencies: ["5A724E912A475EAB"]
-			description: ["Awoken and aware"]
+			description: ["{ftbquests.draconic_age.awakened_draconic_wetware_processor_assembly.description}"]
 			id: "3AE6E85C2FC76DE9"
 			rewards: [{
 				id: "1307F45A07A8F297"
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.draconic_age.quest71.subtitle}"
+			subtitle: "{ftbquests.draconic_age.awakened_draconic_wetware_processor_assembly.subtitle}"
 			tasks: [{
 				id: "29F972DC18F645E4"
 				item: "kubejs:awakened_draconic_wetware_processor_assembly"
@@ -1685,7 +1544,7 @@
 				"25436E09A8F9E9C8"
 				"058533FBFBA38DC8"
 			]
-			description: ["A medium of growth DNA for even more capable neuro-technology"]
+			description: ["{ftbquests.draconic_age.draconic_enrichment_serum.description}"]
 			id: "1799430093ABCC64"
 			rewards: [{
 				count: 3
@@ -1706,14 +1565,13 @@
 				"7FABD2E818B70D35"
 				"694E1F6458D5F72F"
 			]
-			description: [""]
 			id: "4D556DE76399E083"
 			rewards: [{
 				id: "058BF3F098253930"
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			subtitle: "&716x Absolute Parallel Hatch"
+			subtitle: "{ftbquests.draconic_age.uiv_absolute_parallel_hatch.subtitle}"
 			tasks: [{
 				id: "2388751B6210D3C4"
 				item: "start_core:uiv_absolute_parallel_hatch"
@@ -1727,7 +1585,7 @@
 				"78777C3EE2DA5D0F"
 				"2D064F759D13FE4B"
 			]
-			description: ["{ftbquests.draconic_age.quest75.description1}"]
+			description: ["{ftbquests.draconic_age.draconic_wetware_circuit_board.description}"]
 			id: "1C9396E2587051F7"
 			rewards: [{
 				id: "170A7AD04A8BFCA6"
@@ -1756,7 +1614,7 @@
 		}
 		{
 			dependencies: ["1799430093ABCC64"]
-			description: ["This is what Draconic Circuits were meant to be"]
+			description: ["{ftbquests.draconic_age.awakened_draconic_wetware_circuit_board.description}"]
 			id: "6D6C79E7CBBCC893"
 			rewards: [{
 				id: "0D4F24ECDD2D65B4"
@@ -1776,7 +1634,7 @@
 				"2DACE6EF41A118D9"
 				"3FBD3851CCB3F14E"
 			]
-			description: ["&eUXV&r Cable Material"]
+			description: ["{ftbquests.draconic_age.lepton_resonant_thallium_antimonide_ingot.description}"]
 			hide_dependent_lines: true
 			id: "31F87896FF834E63"
 			rewards: [{
@@ -1798,7 +1656,7 @@
 				"37F9C85CFCFFDA5F"
 				"3D239E0F7B45AE92"
 			]
-			description: ["Corrupted by the abyss it is the closest thing known to primordial wyrms"]
+			description: ["{ftbquests.draconic_age.draco_abyssal_ingot.description}"]
 			id: "6A82CC9F01960097"
 			rewards: [{
 				id: "3210FE0BBF45E34D"
@@ -1818,7 +1676,7 @@
 				"799F6F79B9FF86DF"
 				"4777033988C9F512"
 			]
-			description: ["The &aUEV&r superconductor used in your machines and components."]
+			description: ["{ftbquests.draconic_age.seaborgium_palladium_enriched_estalt_flerovium_alloy_ingot.description}"]
 			id: "5224152A7D22A0B5"
 			rewards: [{
 				id: "0A16190629DBA7B9"
@@ -1835,7 +1693,7 @@
 		}
 		{
 			dependencies: ["1AEBAE3050B72906"]
-			description: ["Somehow, some way, they just refuse to decay."]
+			description: ["{ftbquests.draconic_age.super_heavy_elements.description}"]
 			hide_dependent_lines: true
 			id: "4777033988C9F512"
 			rewards: [{
@@ -1881,13 +1739,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.draconic_age.quest80.title}"
+			title: "{ftbquests.draconic_age.super_heavy_elements.title}"
 			x: -7.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["45E628CF1DA8D380"]
-			description: ["The &2UIV&r superconductor used in your machines and components."]
+			description: ["{ftbquests.draconic_age.rhenium_super_composite_alloy_ingot.description}"]
 			id: "33FBF8561A3D901D"
 			rewards: [{
 				id: "703863528004F25F"
@@ -1904,7 +1762,7 @@
 		}
 		{
 			dependencies: ["38C2E3061C764F05"]
-			description: ["Do do do do do do, dodododo do, odododododo do, dooo, dooo, dooo, dooo, dododododo do, ododododo do, dododododododdoooooddo da"]
+			description: ["{ftbquests.draconic_age.maxwellium.description}"]
 			hide_dependent_lines: true
 			id: "2F62965D05463E44"
 			rewards: [{
@@ -1922,7 +1780,7 @@
 		}
 		{
 			dependencies: ["4DF07CB3D60C901C"]
-			description: ["{ftbquests.draconic_age.quest83.description1}"]
+			description: ["{ftbquests.draconic_age.bastion.description}"]
 			id: "68970C6696FA90E6"
 			rewards: [{
 				id: "49A048AE15AAE4F1"
@@ -1933,7 +1791,7 @@
 				icon: "minecraft:chiseled_polished_blackstone"
 				id: "618C5C0D5013A3A9"
 				structure: "minecraft:bastion_remnant"
-				title: "{ftbquests.draconic_age.quest83.task_7029094330666296233.title}"
+				title: "{ftbquests.draconic_age.bastion.title}"
 				type: "structure"
 			}]
 			x: -8.0d
@@ -1941,7 +1799,7 @@
 		}
 		{
 			dependencies: ["1B6159E114BA50ED"]
-			description: ["{ftbquests.draconic_age.quest84.description1}"]
+			description: ["{ftbquests.draconic_age.draconic_qmds.description}"]
 			id: "61E082759BC89A1E"
 			rewards: [{
 				id: "1460A867F3CE58DC"
@@ -1975,13 +1833,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.draconic_age.quest84.title}"
+			title: "{ftbquests.draconic_age.draconic_qmds.title}"
 			x: -1.0d
 			y: 1.0d
 		}
 		{
 			dependencies: ["310FC3F86513555F"]
-			description: ["&2UIV&r Cable Material"]
+			description: ["{ftbquests.draconic_age.polonium_bismide_ingot.description}"]
 			hide_dependent_lines: true
 			id: "00333140377A33F5"
 			rewards: [{
@@ -2002,13 +1860,7 @@
 				"694E1F6458D5F72F"
 				"076F21506A7C19D5"
 			]
-			description: [
-				"Stabilization? Threads? Stocking? Research? It is faster than all of your assembly lines."
-				""
-				"This...."
-				""
-				"This is the pinnacle of component creation"
-			]
+			description: ["{ftbquests.draconic_age.multithreaded_component_synthesis_forge.description}"]
 			id: "4A13D4F1B22DBCAF"
 			shape: "gear"
 			size: 1.5d
@@ -2037,11 +1889,7 @@
 				"6A82CC9F01960097"
 				"2DACE6EF41A118D9"
 			]
-			description: [
-				"You like the Chemical Plant?"
-				""
-				"Well this is its older sibling"
-			]
+			description: ["{ftbquests.draconic_age.atomic_synthesis_plant.description}"]
 			id: "7C050BBD087D46BD"
 			rewards: [{
 				id: "0624D90E24CCA3B2"
@@ -2058,7 +1906,7 @@
 		}
 		{
 			dependencies: ["0168A45EB73911AC"]
-			description: ["A component part assembly with all the trinkets"]
+			description: ["{ftbquests.draconic_age.component_part_hub.description}"]
 			id: "49E80236C69B95C1"
 			rewards: [{
 				id: "32CC08CCB827F2D6"
@@ -2075,7 +1923,7 @@
 		}
 		{
 			dependencies: ["2DACE6EF41A118D9"]
-			description: ["{ftbquests.draconic_age.quest61.description1} But differently?"]
+			description: ["{ftbquests.draconic_age.poomba.description}"]
 			hide_dependency_lines: true
 			id: "208863E121666BF4"
 			shape: "none"
@@ -2112,7 +1960,7 @@
 		}
 		{
 			dependencies: ["5A724E912A475EAB"]
-			description: ["We're going to need some powerful data containers"]
+			description: ["{ftbquests.draconic_age.poomba.component_data_core}"]
 			id: "681FD6DF05A9DF79"
 			rewards: [{
 				id: "1E34E2CB3DC6C4E4"
@@ -2133,7 +1981,7 @@
 		}
 		{
 			dependencies: ["6D6C79E7CBBCC893"]
-			description: ["Engraved with only the toughest of conductors available"]
+			description: ["{ftbquests.draconic_age.awakened_draconic_wetware_printed_circuit_board.description}"]
 			id: "5A724E912A475EAB"
 			rewards: [{
 				id: "2EB652113BA6B7C9"
@@ -2153,13 +2001,7 @@
 				"4A13D4F1B22DBCAF"
 				"2F62965D05463E44"
 			]
-			description: [
-				"I said not to worry about it."
-				""
-				""
-				""
-				"&d&mBingus"
-			]
+			description: ["{ftbquests.draconic_age.worries_about_it.description}"]
 			hide_dependent_lines: true
 			hide_until_deps_complete: true
 			id: "1359FB7E009CD041"
@@ -2181,9 +2023,9 @@
 				"4D556DE76399E083"
 				"578BB997FB677D37"
 			]
-			description: ["The Stats assigner for ALL of your threaded multiblock needs"]
+			description: ["{ftbquests.draconic_age.threading_controller.description}"]
 			id: "076F21506A7C19D5"
-			subtitle: "The Final Control Hatch"
+			subtitle: "{ftbquests.draconic_age.threading_controller.subtitle}"
 			tasks: [{
 				id: "37C21F56452F96BB"
 				item: "start_core:threading_controller"
@@ -2194,12 +2036,12 @@
 		}
 		{
 			dependencies: ["076F21506A7C19D5"]
-			description: ["[\"\",{\"underlined\":1,\"translate\":\"Read About It Here\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"143CFCE710B59455\"}}]"]
+			description: ["{ftbquests.draconic_age.read_about_threading.description}"]
 			icon: "ftbquests:book"
 			id: "553A8FA2F468DD90"
 			tasks: [{
 				id: "418FB6F41909F13D"
-				title: "Go Read About Threading"
+				title: "{ftbquests.draconic_age.read_about_threading.title}"
 				type: "checkmark"
 			}]
 			x: 6.0d
@@ -2207,7 +2049,7 @@
 		}
 		{
 			dependencies: ["4450509C08F416EC"]
-			description: ["Tier 1 Universal Helix"]
+			description: ["{ftbquests.draconic_age.uv_supreme_thread_helix.description}"]
 			id: "1B661108D7577FBE"
 			rewards: [{
 				id: "61A47D7B7315FA63"
@@ -2228,7 +2070,7 @@
 				"35C687F2D0931ECB"
 				"652C158FF3FC6090"
 			]
-			description: ["Tier 2 Universal Helix"]
+			description: ["{ftbquests.draconic_age.uev_supreme_thread_helix.description}"]
 			id: "13508A2A55EAA6E1"
 			rewards: [{
 				id: "6F25641E021199E7"
@@ -2245,7 +2087,7 @@
 		}
 		{
 			dependencies: ["1B661108D7577FBE"]
-			description: ["Tier 1 Speed Helix"]
+			description: ["{ftbquests.draconic_age.uhv_overdrive_thread_helix.description}"]
 			id: "35C687F2D0931ECB"
 			rewards: [{
 				id: "3A4D32FE9DDB3536"
@@ -2262,7 +2104,7 @@
 		}
 		{
 			dependencies: ["1B661108D7577FBE"]
-			description: ["Tier 1 Parallel Helix"]
+			description: ["{ftbquests.draconic_age.uhv_coprocessor_thread_helix.description}"]
 			id: "549D02412C9707FB"
 			rewards: [{
 				id: "22CC66F9103CED04"
@@ -2279,7 +2121,7 @@
 		}
 		{
 			dependencies: ["1B661108D7577FBE"]
-			description: ["Tier 1 Thread Helix"]
+			description: ["{ftbquests.draconic_age.uhv_weaving_thread_helix.description}"]
 			id: "652C158FF3FC6090"
 			rewards: [{
 				id: "12CBB464B420E04F"
@@ -2296,7 +2138,7 @@
 		}
 		{
 			dependencies: ["1EB60E6DE2086158"]
-			description: ["By using special catalyst you can achieve a &a33%&r reduction in recipe time. The same type of bonus you would get with Gas Boosting in an &7EBF&r or &7ABS&r."]
+			description: ["{ftbquests.draconic_age.hell_forge_catalysts.description}"]
 			id: "68204750A7B0569E"
 			tasks: [{
 				id: "06B0A98E6FE20328"
@@ -2305,7 +2147,7 @@
 					id: "itemfilters:or"
 					tag: {
 						display: {
-							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Hell Forge Catalyst\"}"
+							Name: "{ftbquests.draconic_age.hell_forge_catalysts.item_title}"
 						}
 						items: [
 							{
@@ -2325,7 +2167,7 @@
 				}
 				type: "item"
 			}]
-			title: "Catalyst Boosting"
+			title: "{ftbquests.draconic_age.hell_forge_catalysts.title}"
 			x: -6.0d
 			y: -2.0d
 		}
@@ -2349,7 +2191,7 @@
 					id: "itemfilters:or"
 					tag: {
 						display: {
-							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Threading Multiblocks\"}"
+							Name: "{ftbquests.draconic_age.threading_multiblocks.title}"
 						}
 						items: [
 							{
@@ -2406,7 +2248,7 @@
 		}
 		{
 			dependencies: ["074635DC3322DC99"]
-			description: ["Buzz buzz, its Helixing time"]
+			description: ["{ftbquests.draconic_age.prismalic_helix_core.title}"]
 			id: "4450509C08F416EC"
 			rewards: [{
 				id: "7F794F231F8464BA"
@@ -2426,7 +2268,7 @@
 				"4450509C08F416EC"
 				"694E1F6458D5F72F"
 			]
-			description: ["You spin me right round....."]
+			description: ["{ftbquests.draconic_age.prisma_helical_nucleus.title}"]
 			id: "578BB997FB677D37"
 			rewards: [{
 				id: "5520D9C4880B014D"
@@ -2447,7 +2289,7 @@
 				"20ABDF48307586F2"
 				"549D02412C9707FB"
 			]
-			description: ["Tier 2 Parallel Helix"]
+			description: ["{ftbquests.draconic_age.uiv_coprocessor_thread_helix.title}"]
 			hide_until_deps_complete: true
 			id: "47EEF1366A681004"
 			rewards: [{
@@ -2469,7 +2311,7 @@
 				"20ABDF48307586F2"
 				"652C158FF3FC6090"
 			]
-			description: ["Tier 2 Thread Helix"]
+			description: ["{ftbquests.draconic_age.uiv_weaving_thread_helix.title}"]
 			hide_until_deps_complete: true
 			id: "56E208A3DA6183B8"
 			rewards: [{

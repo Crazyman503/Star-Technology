@@ -1633,7 +1633,7 @@
 		}
 		{
 			dependencies: ["16A71D038D996289"]
-			description: ["{"ftbquests.industrial_revolution.ae2_chapter.description"}"]
+			description: ["{ftbquests.industrial_revolution.ae2_chapter.description}"]
 			icon: "ae2:fluix_glass_cable"
 			id: "352E17B4D7719638"
 			tasks: [{
@@ -1739,7 +1739,7 @@
 		}
 		{
 			dependencies: ["1F5CCE8CFD02903A"]
-			description: ["{ftbquests.industrial_revolution.mechanical_sieve.description}]
+			description: ["{ftbquests.industrial_revolution.mechanical_sieve.description}"]
 			id: "569A70F811536F5F"
 			optional: true
 			tasks: [{
