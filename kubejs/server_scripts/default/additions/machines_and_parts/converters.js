@@ -21,6 +21,21 @@ global.not_hardmode(() => {
             uev: 'ancient_runicalium'
         }
         
+        const PRMrecycleMaterials = {
+            lv: ['steel', 'tin' , `soul_infused`],
+            mv: ['aluminium', 'copper', `signalum`],
+            hv: [`stainless_steel`, `gold`, `lumium`]
+        }
+        const ADVrecycleMaterials = {
+            ev: [`titanium`, `aluminium`, `enderium`],
+            iv: [`tungstensteel`, `platinum`, `shellite`],
+            luv: [`rhodium_plated_palladium`, `niobium_titanium`, `twinite`],
+            zpm: [`naquadah_alloy`, `vanadium_gallium`, `dragonsteel`],
+            uv: [`darmstadtium`, `yttrium_barium_cuprate`, `prismalium`],
+        }
+
+
+
         function converterCraftingRecipe(amps,thickness){
             for (const [tier, superconductor] of Object.entries(ADVconverterMaterials)) {
                 event.shaped(Item.of(`gtceu:${tier}_${amps}_energy_converter`), [
@@ -60,6 +75,63 @@ global.not_hardmode(() => {
                 .EUt(1625)
         }
 
+        function converterRecycles(amps /*int*/){
+            for (const [tier, [casing,cable,superconductor]] of Object.entries(PRMrecycleMaterials)) {
+                console.log
+                if (cable == `copper`){
+                    event.recipes.gtceu.arc_furnace(`gtceu:${superconductor}_ingot`)
+                        .itemInput(`gtceu:${tier}_${amps}a_energy_converter`)
+                        .itemOutputs(`8x gtceu:${casing}_ingot`, `gtceu:annealed_copper_ingot`, 
+                            `${amps*2}x gtceu:${superconductor}_ingot`, `2x gtceu:tiny_ash_dust`)
+                        .duration(400) //temp just to test
+                        .EUt(30)
+                        .category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
+                    event.recipes.gtceu.macerator(`gtceu:${superconductor}_ingot`)
+                        .itemInput(`gtceu:${tier}_${amps}a_energy_converter`)
+                        .itemOutputs(`8x gtceu:${casing}_dust`, `gtceu:${cable}_dust`, 
+                            `${amps*2}x gtceu:${superconductor}_dust`, `2x gtceu:rubber_dust`)
+                        .duration(400) //temp just to test
+                        .EUt(8)
+                        .category(GTRecipeCategories.MACERATOR_RECYCLING)
+                }else {
+                    event.recipes.gtceu.arc_furnace(`gtceu:${superconductor}_ingot`)
+                        .itemInput(`gtceu:${tier}_${amps}a_energy_converter`)
+                        .itemOutputs(`8x gtceu:${casing}_ingot`, `gtceu:${cable}_ingot`, 
+                            `${amps*2}x gtceu:${superconductor}_ingot`, `2x gtceu:tiny_ash_dust`)
+                        .duration(400) //temp just to test
+                        .EUt(30)
+                        .category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
+                    event.recipes.gtceu.macerator(`gtceu:${superconductor}_ingot`)
+                        .itemInput(`gtceu:${tier}_${amps}a_energy_converter`)
+                        .itemOutputs(`8x gtceu:${casing}_ingot`, `gtceu:${cable}_ingot`, 
+                            `${amps*2}x gtceu:${superconductor}_ingot`, `2x gtceu:rubber_dust`)
+                        .duration(400) //temp just to test
+                        .EUt(8)
+                        .category(GTRecipeCategories.MACERATOR_RECYCLING)
+                }
+            }
+            for (const [casing,cable,superconductor] of Object.entries(ADVrecycleMaterials)) {
+                console.log
+                event.recipes.gtceu.arc_furnace(`gtceu:${superconductor}_ingot`)
+                        .itemInput(`gtceu:${tier}_${amps}a_energy_converter`)
+                        .itemOutputs(`8x gtceu:${casing}_ingot`, `gtceu:${cable}_ingot`, 
+                            `${amps*2}x gtceu:${superconductor}_ingot`, `2x gtceu:tiny_ash_dust`)
+                        .duration(400) //temp just to test
+                        .EUt(30)
+                        .category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
+                    event.recipes.gtceu.macerator(`gtceu:${superconductor}_ingot`)
+                        .itemInput(`gtceu:${tier}_${amps}a_energy_converter`)
+                        .itemOutputs(`8x gtceu:${casing}_ingot`, `gtceu:${cable}_ingot`, 
+                            `${amps*2}x gtceu:${superconductor}_ingot`, `2x gtceu:rubber_dust`)
+                        .duration(400) //temp just to test
+                        .EUt(8)
+                        .category(GTRecipeCategories.MACERATOR_RECYCLING)
+            }
+        }
+        converterRecycles(1);
+        converterRecycles(4);
+        converterRecycles(8);
+        converterRecycles(16);
     });
 });
 
