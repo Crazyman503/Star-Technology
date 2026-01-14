@@ -416,8 +416,8 @@
 
     "item.kubejs.draconic_circuit_board": "Draconic Circuit Board",
     "item.kubejs.draconic_printed_circuit_board": "Draconic Printed Circuit Board",
-    "item.kubejs.draconic_neuro_processing_unit": "Draconic Neuro Processing Unit",
-    "item.kubejs.draconic_neuro_processing_unit.tooltip": "§d§oNeuro-sama!§r§7's CPU",
+    "item.kubejs.draconic_processing_unit": "Draconic Processing Unit",
+    "item.kubejs.draconic_processing_unit.tooltip": "§d§oNeuro-sama!§r§7's CPU",
     "item.kubejs.draconic_microchip_processor": "Draconic Microchip Processor",
     "item.kubejs.draconic_microchip_processor.tooltip": "§5Dr. Conic approved ZPM Circuit",
     "item.kubejs.draconic_processor": "Draconic Processor",

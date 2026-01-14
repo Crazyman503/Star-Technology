@@ -3,7 +3,7 @@ ServerEvents.recipes(event => {
 
     //Input Loaders
         const DrCirBoard = 'kubejs:draconic_printed_circuit_board';
-        const DrCPU = 'kubejs:draconic_neuro_processing_unit';
+        const DrCPU = 'kubejs:draconic_processing_unit';
         const AbCirBoard = 'kubejs:abyssal_printed_circuit_board';
         const AbCPU = 'kubejs:abyssal_processing_unit';
         const Tra = 'kubejs:draconic_qmd_transistor';

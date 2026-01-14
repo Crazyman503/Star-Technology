@@ -263,12 +263,12 @@ ServerEvents.recipes(event => {
         .cleanroom(CleanroomType.STERILE_CLEANROOM)
         .EUt(GTValues.VA[GTValues.UV]);
 
-    event.recipes.gtceu.circuit_assembler(id('draconic_neuro_processing_unit'))
+    event.recipes.gtceu.circuit_assembler(id('draconic_processing_unit'))
         .itemInputs('1x kubejs:draconic_printed_circuit_board','4x kubejs:draconic_brain_matter_cells',
             '8x gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate_small_fluid_pipe', 
             '16x gtceu:polyimide_foil','8x gtceu:void_plate','8x gtceu:titan_steel_bolt')
         .inputFluids('gtceu:dragon_breath 75')
-        .itemOutputs('1x kubejs:draconic_neuro_processing_unit')
+        .itemOutputs('1x kubejs:draconic_processing_unit')
         .duration(600)
         .cleanroom(CleanroomType.STERILE_CLEANROOM)
         .EUt(GTValues.VHA[GTValues.UHV]);

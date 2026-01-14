@@ -519,7 +519,7 @@
 			}]
 			tasks: [{
 				id: "54CFEDC276799BE3"
-				item: "kubejs:draconic_neuro_processing_unit"
+				item: "kubejs:draconic_processing_unit"
 				type: "item"
 			}]
 			x: -2.0d

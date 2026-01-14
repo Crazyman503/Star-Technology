@@ -34,8 +34,8 @@ StartupEvents.registry('item', event => {
     event.create('draconic_printed_circuit_board')
         .texture('kubejs:item/circuits_and_components/circuits/draconic/printed_circuit_board');
 
-    event.create('draconic_neuro_processing_unit')
-        .tooltip(Text.translate('item.kubejs.draconic_neuro_processing_unit.tooltip'))
+    event.create('draconic_processing_unit')
+        .tooltip(Text.translate('item.kubejs.draconic_processing_unit.tooltip'))
         .texture('kubejs:item/circuits_and_components/circuits/draconic/processing_unit');
 
     event.create('draconic_microchip_processor')
