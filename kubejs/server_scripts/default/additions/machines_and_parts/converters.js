@@ -2,146 +2,136 @@ global.not_hardmode(() => {
 
     ServerEvents.recipes(event => {
         const id = global.id;
+        const ST = global.ST;
 
         event.remove({ output: /gtceu:.*_energy_converter/ });
-        
-        const PRMconverterMaterials = {
-            lv: 'soul_infused',
-            mv: 'signalum',
-            hv: 'lumium'
-        }
+        // remove recyling recipes
+        event.remove({ input: /gtceu:.*_energy_converter/, type: 'gtceu:macerator' });
+        event.remove({ input: /gtceu:.*_energy_converter/, type: 'gtceu:arc_furnace' });
 
-        const ADVconverterMaterials = {
-            ev: 'enderium',
-            iv: 'shellite',
-            luv: 'twinite',
-            zpm: 'dragonsteel',
-            uv: 'prismalium',
-            uhv: 'stellarium',
-            uev: 'ancient_runicalium'
-        }
-        
-        const PRMrecycleMaterials = {
-            lv: ['gtceu:steel', 'gtceu:tin' , `gtceu:soul_infused`, 15],
-            mv: ['gtceu:aluminium', 'gtceu:copper' /*to make copper dust easier to manage*/, `gtceu:signalum`, 25],
-            hv: [`gtceu:stainless_steel`, `minecraft:gold`, `gtceu:lumium`, 35]
-        }
-        const ADVrecycleMaterials = {
-            ev: [`gtceu:titanium`, `gtceu:aluminium`, `gtceu:enderium`, 45],
-            iv: [`gtceu:tungsten_steel`, `gtceu:platinum`, `gtceu:shellite`, 55],
-            luv: [`gtceu:rhodium_plated_palladium`, `gtceu:niobium_titanium`, `gtceu:twinite`, 65],
-            zpm: [`gtceu:naquadah_alloy`, `gtceu:vanadium_gallium`, `gtceu:dragonsteel`, 75],
-            uv: [`gtceu:darmstadtium`, `gtceu:yttrium_barium_cuprate`, `gtceu:prismalium`, 85],
-            uhv: [`gtceu:neutronium`, `gtceu:europium`, `gtceu:stellarium`, 95],
-            uev: [`gtceu:mythrolic_alloy`, `gtceu:cerium_tritelluride`, `gtceu:ancient_runicalium`, 105]
-        }
+        const converterMaterials = {
+            lv: {
+                superconductor: 'gtceu:soul_infused',
+                casing: 'gtceu:steel',
+                cable: 'gtceu:tin',
+                has64aConverter: false,
+            },
+            mv: {
+                superconductor: 'gtceu:signalum',
+                casing: 'gtceu:aluminium',
+                cable: 'gtceu:copper',
+                has64aConverter: false,
+            },
+            hv: {
+                superconductor: 'gtceu:lumium',
+                casing: 'gtceu:stainless_steel',
+                cable: 'minecraft:gold',
+                has64aConverter: false,
+            },
+            ev: {
+                superconductor: 'gtceu:enderium',
+                casing: 'gtceu:titanium',
+                cable: 'gtceu:aluminium',
+                has64aConverter: true,
+            },
+            iv: {
+                superconductor: 'gtceu:shellite',
+                casing: 'gtceu:tungsten_steel',
+                cable: 'gtceu:platinum',
+                has64aConverter: true,
+            },
+            luv: {
+                superconductor: 'gtceu:twinite',
+                casing: 'gtceu:rhodium_plated_palladium',
+                cable: 'gtceu:niobium_titanium',
+                has64aConverter: true,
+            },
+            zpm: {
+                superconductor: 'gtceu:dragonsteel',
+                casing: 'gtceu:naquadah_alloy',
+                cable: 'gtceu:vanadium_gallium',
+                has64aConverter: true,
+            },
+            uv: {
+                superconductor: 'gtceu:prismalium',
+                casing: 'gtceu:darmstadtium',
+                cable: 'gtceu:yttrium_barium_cuprate',
+                has64aConverter: true,
+            },
+            uhv: {
+                superconductor: 'gtceu:stellarium',
+                casing: 'gtceu:neutronium',
+                cable: 'gtceu:europium',
+                has64aConverter: true,
+            },
+            uev: {
+                superconductor: 'gtceu:ancient_runicalium',
+                casing: 'gtceu:mythrolic_alloy',
+                cable: 'gtceu:cerium_tritelluride',
+                has64aConverter: true,
+            }
+        };
 
-
-
-        function converterCraftingRecipe(amps,thickness){
-            for (const [tier, superconductor] of Object.entries(ADVconverterMaterials)) {
-                event.shaped(Item.of(`gtceu:${tier}_${amps}_energy_converter`), [
+        function converterCraftingRecipe(amps, thickness){
+            for (const [tier, info] of Object.entries(converterMaterials)) {
+                event.shaped(Item.of(`gtceu:${tier}_${amps}a_energy_converter`), [
                     '   ',
                     'WCW',
                     'WSW'
                 ], {
-                    W: `gtceu:${superconductor}_${thickness}_wire`,
+                    W: `${info.superconductor}_${thickness}_wire`,
                     C: `#gtceu:circuits/${tier}`,
                     S: `gtceu:${tier}_machine_hull`
-                }).id(`start:shaped/${tier}_${amps}_energy_converter`);
-            };
-            for (const [tier, superconductor] of Object.entries(PRMconverterMaterials)) {
-                event.shaped(Item.of(`gtceu:${tier}_${amps}_energy_converter`), [
-                    '   ',
-                    'WCW',
-                    'WSW'
-                ], {
-                    W: `gtceu:${superconductor}_${thickness}_wire`,
-                    C: `#gtceu:circuits/${tier}`,
-                    S: `gtceu:${tier}_machine_hull`
-                }).id(`start:shaped/${tier}_${amps}_energy_converter`);
+                }).id(`start:shaped/${tier}_${amps}a_energy_converter`);
             };
         };
-        
-        converterCraftingRecipe('1a','single');
-        converterCraftingRecipe('4a','quadruple');
-        converterCraftingRecipe('8a','octal');
-        converterCraftingRecipe('16a','hex');
+
+        converterCraftingRecipe(1, 'single');
+        converterCraftingRecipe(4, 'quadruple');
+        converterCraftingRecipe(8, 'octal');
+        converterCraftingRecipe(16, 'hex');
 
         // 64A Converter Recipe
-        for (const [tier, superconductor] of Object.entries(ADVconverterMaterials)) {
+        for (const [tier, info] of Object.entries(converterMaterials)) {
+            if (!info.has64aConverter) continue;
             event.recipes.gtceu.assembler(`start_core:${tier}_64a_energy_converter`)
-                .itemInputs(`#gtceu:circuits/${tier}`, `16x gtceu:${superconductor}_hex_wire`, `gtceu:${tier}_machine_hull`)
+                .itemInputs(`#gtceu:circuits/${tier}`, `16x ${info.superconductor}_hex_wire`, `gtceu:${tier}_machine_hull`)
                 .itemOutputs(Item.of(`start_core:${tier}_64a_energy_converter`))
                 .duration(600)
                 .EUt(1625)
         }
 
-        function converterRecycles(amps /*int*/, duraMod){
-            if (amps != 64){
-                for (const [tier, [casing,cable,superconductor,baseDuration]] of Object.entries(PRMrecycleMaterials)) {
-                event.remove({id:`gtceu:arc_furnace/arc_${tier}_${amps}a_energy_converter`});
-                event.remove({id:`gtceu:macerator/macerate_${tier}_${amps}a_energy_converter`});
-                let cableArc = (cable == `gtceu:copper`) ? `gtceu:annealed_copper` : cable;
-                let cableMac = (cable == `minecraft:gold`) ? `gtceu:gold` : cable;
-                let totalDura = baseDuration*duraMod*20;
+        for (let amps of [1, 4, 8, 16, 64]) {
+            for (let [tier, info] of Object.entries(converterMaterials)) {
+                if (amps === 64 && !info.has64aConverter) continue;
+
+                let converterPrefix = amps === 64 ? "start_core" : "gtceu";
+
+                let cableArc = info.cable === 'gtceu:copper' ? 'gtceu:annealed_copper' : info.cable;
+                let outputsArc = [`8x ${info.casing}_ingot`, `${cableArc}_ingot`, `2x gtceu:tiny_ash_dust`];
+                let appendArc = amps === 64 ? [`64x ${info.superconductor}_ingot`, `64x ${info.superconductor}_ingot`] : [`${amps * 2}x ${info.superconductor}_ingot`];
+                outputsArc.splice.apply(outputsArc, [amps < 8 ? 1 : 0, 0].concat(appendArc));
+
+                let cableMacerator = info.cable === 'minecraft:gold' ? 'gtceu:gold' : info.cable;
+                let outputsMacerator = [`8x ${info.casing}_dust`, `2x gtceu:rubber_dust`, `${cableMacerator}_dust`];
+                let appendMacerator = amps === 64 ? [`64x ${info.superconductor}_dust`, `64x ${info.superconductor}_dust`] : [`${amps * 2}x ${info.superconductor}_dust`];
+                outputsMacerator.splice.apply(outputsMacerator, [amps < 8 ? 1 : 0, 0].concat(appendMacerator));
 
                 event.recipes.gtceu.arc_furnace(id(`arc_${tier}_${amps}a_energy_converter`))
-                    .itemInputs(`gtceu:${tier}_${amps}a_energy_converter`)
-                    .inputFluids(`gtceu:oxygen ${totalDura}`)
-                    .itemOutputs(`8x ${casing}_ingot`, `${cableArc}_ingot`, `${amps*2}x ${superconductor}_ingot`, `2x gtceu:tiny_ash_dust`)
-                    .duration(totalDura)
-                    .EUt(30)
-                    .category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
+                    .itemInputs(`${converterPrefix}:${tier}_${amps}a_energy_converter`)
+                    .itemOutputs(outputsArc)
+                    .duration(ST.recycling.calculateDuration(outputsArc))
+                    .EUt(GTValues.VA[GTValues.LV])
+                    .category(GTRecipeCategories.ARC_FURNACE_RECYCLING);
+
                 event.recipes.gtceu.macerator(id(`macerate_${tier}_${amps}a_energy_converter`))
-                    .itemInputs(`gtceu:${tier}_${amps}a_energy_converter`)
-                    .itemOutputs(`8x ${casing}_dust`, `${cableMac}_dust`, `${amps*2}x ${superconductor}_dust`, `2x gtceu:rubber_dust`)
-                    .duration(totalDura)
-                    .EUt(8)
-                    .category(GTRecipeCategories.MACERATOR_RECYCLING)
-                }
-            }
-            for (const [tier, [casing,cable,superconductor,baseDuration]] of Object.entries(ADVrecycleMaterials)) {
-                event.remove({id:`gtceu:arc_furnace/arc_${tier}_${amps}a_energy_converter`});
-                event.remove({id:`gtceu:macerator/macerate_${tier}_${amps}a_energy_converter`});
-                let totalDura = baseDuration*duraMod*20;
-                
-                if (amps == 64) {
-                    event.recipes.gtceu.arc_furnace(id(`arc_${tier}_${amps}a_energy_converter`))
-                        .itemInputs(`start_core:${tier}_${amps}a_energy_converter`)
-                        .inputFluids(`gtceu:oxygen ${totalDura}`)
-                        .itemOutputs(`8x ${casing}_ingot`, `${cable}_ingot`, `${amps}x ${superconductor}_ingot`, `${amps}x ${superconductor}_ingot`, `2x gtceu:tiny_ash_dust`)
-                        .duration(totalDura)
-                        .EUt(30)
-                        .category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-                    event.recipes.gtceu.macerator(id(`macerate_${tier}_${amps}a_energy_converter`))
-                        .itemInputs(`start_core:${tier}_${amps}a_energy_converter`)
-                        .itemOutputs(`8x ${casing}_dust`, `${cable}_dust`, `${amps}x ${superconductor}_dust`, `${amps}x ${superconductor}_dust`, `2x gtceu:rubber_dust`)
-                        .duration(totalDura)
-                        .EUt(8)
-                        .category(GTRecipeCategories.MACERATOR_RECYCLING)
-                } else {
-                    event.recipes.gtceu.arc_furnace(id(`arc_${tier}_${amps}a_energy_converter`))
-                        .itemInputs(`gtceu:${tier}_${amps}a_energy_converter`)
-                        .inputFluids(`gtceu:oxygen ${totalDura}`)
-                        .itemOutputs(`8x ${casing}_ingot`, `${cable}_ingot`, `${2 * amps}x ${superconductor}_ingot`, `2x gtceu:tiny_ash_dust`)
-                        .duration(totalDura)
-                        .EUt(30)
-                        .category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-                    event.recipes.gtceu.macerator(id(`macerate_${tier}_${amps}a_energy_converter`))
-                        .itemInputs(`gtceu:${tier}_${amps}a_energy_converter`)
-                        .itemOutputs(`8x ${casing}_dust`, `${cable}_dust`, `${2 * amps}x ${superconductor}_dust`, `2x gtceu:rubber_dust`)
-                        .duration(totalDura)
-                        .EUt(8)
-                        .category(GTRecipeCategories.MACERATOR_RECYCLING)
-                }
+                    .itemInputs(`${converterPrefix}:${tier}_${amps}a_energy_converter`)
+                    .itemOutputs(outputsMacerator)
+                    .duration(ST.recycling.calculateDuration(outputsMacerator))
+                    .EUt(2 * ST.recycling.calculateVoltageMultiplier(outputsMacerator))
+                    .category(GTRecipeCategories.MACERATOR_RECYCLING);
             }
         }
-        converterRecycles(1,1);
-        converterRecycles(4,2);
-        converterRecycles(8,3);
-        converterRecycles(16,4);
-        converterRecycles(64,8);
     });
 });
 
