@@ -13,6 +13,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .definition((tier, builder) => {
             builder
                 .recipeType('pulverizer')
-                .workableTieredHullRenderer('gtceu:block/machines/macerator')
+                .workableTieredHullRenderer('gtceu:block/machines/pulverizer')
         });
 });
