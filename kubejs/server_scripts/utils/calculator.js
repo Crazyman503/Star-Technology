@@ -186,6 +186,16 @@ var calculatorExec = (() => {
           case "/":
             validateArguments("division", ["number", "number"], [left, right]);
             return left / right;
+          case "//":
+            validateArguments(
+              "floor division",
+              ["number", "number"],
+              [left, right]
+            );
+            return Math.floor(left / right);
+          case "%":
+            validateArguments("division", ["number", "number"], [left, right]);
+            return left % right;
           case "^":
             validateArguments(
               "exponentiation",
@@ -220,13 +230,13 @@ var calculatorExec = (() => {
   return calculate;
 })();
 
-var token_operator = ["**", "*", "/", "+", "-", "^"];
-
 /**
  * @typedef {{ t: "(" }} TokenLParen
  * @typedef {{ t: ")" }} TokenRParen
  * @typedef {{ t: "*" }} TokenTimes
  * @typedef {{ t: "/" }} TokenSlash
+ * @typedef {{ t: "//" }} TokenDSlash
+ * @typedef {{ t: "%" }} TokenMod
  * @typedef {{ t: "+" }} TokenPlus
  * @typedef {{ t: "-" }} TokenDash
  * @typedef {{ t: "," }} TokenComma
@@ -234,7 +244,7 @@ var token_operator = ["**", "*", "/", "+", "-", "^"];
  * @typedef {{ t: "^", v: "^" | "**" }} TokenExp
  * @typedef {{ t: "ident", v: string }} TokenIdent
  * @typedef {{ t: "number", v: number }} TokenNumber
- * @typedef {TokenLParen | TokenRParen | TokenTimes | TokenSlash | TokenPlus | TokenDash | TokenComma | TokenEof | TokenExp | TokenIdent | TokenNumber} Token
+ * @typedef {TokenLParen | TokenRParen | TokenTimes | TokenSlash | TokenDSlash | TokenMod | TokenPlus | TokenDash | TokenComma | TokenEof | TokenExp | TokenIdent | TokenNumber} Token
  */
 
 /**
@@ -294,7 +304,14 @@ function calculatorLex(input) {
         prev();
         return { t: "*" };
       case "/":
+        ch = next();
+        if (ch == "/") {
+          return { t: "//" };
+        }
+        prev();
         return { t: "/" };
+      case "%":
+        return { t: "%" };
       case "^":
         return { t: "^", v: "^" };
       case ",":
@@ -337,7 +354,7 @@ function calculatorLex(input) {
 }
 
 /**
- * @typedef {"*" | "/" | "+" | "-" | "^"} BinaryOperator
+ * @typedef {"*" | "/" | "+" | "-" | "^" | "%" | "//"} BinaryOperator
  * @typedef {"+" | "-"} UnaryOperator
  * @typedef {{ type: "binOp", operator: BinaryOperator, left: NodeExpr, right: NodeExpr }} NodeExprBinary
  * @typedef {{ type: "unOp", operator: UnaryOperator, value: NodeExpr }} NodeExprUnary
@@ -359,6 +376,8 @@ function calculatorParse(tokens) {
   var operators = {
     "*": { prec: 3, assoc: "left" },
     "/": { prec: 3, assoc: "left" },
+    "//": { prec: 3, assoc: "left" },
+    "%": { prec: 3, assoc: "left" },
     "+": { prec: 2, assoc: "left" },
     "-": { prec: 2, assoc: "left" },
     "^": { prec: 4, assoc: "right" },
@@ -382,6 +401,10 @@ function calculatorParse(tokens) {
         return "'*'";
       case "/":
         return "'/'";
+      case "//":
+        return "'//'";
+      case "%":
+        return "'%'";
       case "^":
         return "'" + token.v + "'";
       case ",":
