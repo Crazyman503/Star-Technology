@@ -89,15 +89,13 @@ global.not_hardmode(() => {
                 event.recipes.gtceu.arc_furnace(id(`arc_${tier}_${amps}a_energy_converter`))
                     .itemInputs(`gtceu:${tier}_${amps}a_energy_converter`)
                     .inputFluids(`gtceu:oxygen ${totalDura}`)
-                    .itemOutputs(`8x ${casing}_ingot`, `${cableArc}_ingot`, 
-                        `${amps*2}x ${superconductor}_ingot`, `2x gtceu:tiny_ash_dust`)
+                    .itemOutputs(`8x ${casing}_ingot`, `${cableArc}_ingot`, `${amps*2}x ${superconductor}_ingot`, `2x gtceu:tiny_ash_dust`)
                     .duration(totalDura)
                     .EUt(30)
                     .category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
                 event.recipes.gtceu.macerator(id(`macerate_${tier}_${amps}a_energy_converter`))
                     .itemInputs(`gtceu:${tier}_${amps}a_energy_converter`)
-                    .itemOutputs(`8x ${casing}_dust`, `${cableMac}_dust`,
-                        `${amps*2}x ${superconductor}_dust`, `2x gtceu:rubber_dust`)
+                    .itemOutputs(`8x ${casing}_dust`, `${cableMac}_dust`, `${amps*2}x ${superconductor}_dust`, `2x gtceu:rubber_dust`)
                     .duration(totalDura)
                     .EUt(8)
                     .category(GTRecipeCategories.MACERATOR_RECYCLING)
