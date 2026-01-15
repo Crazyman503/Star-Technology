@@ -189,7 +189,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.ae2.quest13.title}"
+			title: "{ftbquests.ae2.cell_housings.title}"
 			x: 9.0d
 			y: -5.0d
 		}
@@ -266,7 +266,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.ae2.quest19.title}"
+			title: "{ftbquests.ae2.me_export_import_buses.title}"
 			x: 5.0d
 			y: -1.0d
 		}
@@ -374,7 +374,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.ae2.quest27.title}"
+			title: "{ftbquests.ae2.me_buses.title}"
 			x: -3.0d
 			y: 7.0d
 		}
@@ -508,7 +508,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.ae2.quest31.title}"
+			title: "{ftbquests.ae2.infinity_cells.title}"
 			x: -3.0d
 			y: -9.0d
 		}
@@ -665,7 +665,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.ae2.quest42.title}"
+			title: "{ftbquests.ae2.processors.title}"
 			x: 3.0d
 			y: -3.0d
 		}
@@ -694,7 +694,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.ae2.quest43.title}"
+			title: "{ftbquests.ae2.printed_circuits.title}"
 			x: 5.0d
 			y: -3.0d
 		}
@@ -756,7 +756,7 @@
 						]
 					}
 				}
-				title: "{ftbquests.ae2.quest44.task_3136592264272534550.title}"
+				title: "{ftbquests.ae2.me_assembler.title}"
 				type: "item"
 			}]
 			x: 1.0d
@@ -782,7 +782,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.ae2.quest45.title}"
+			title: "{ftbquests.ae2.skystone_alloys.title}"
 			x: 7.0d
 			y: -3.0d
 		}
@@ -858,7 +858,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.ae2.quest51.title}"
+			title: "{ftbquests.ae2.cheaper_cores.title}"
 			x: 1.0d
 			y: -1.0d
 		}
@@ -922,7 +922,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.ae2.quest56.title}"
+			title: "{ftbquests.ae2.netherite_skystone_alloys.title}"
 			x: 5.0d
 			y: -5.0d
 		}
@@ -949,7 +949,7 @@
 				item: "gtceu:large_me_assembler"
 				type: "item"
 			}]
-			title: "{ftbquests.ae2.quest58.title}"
+			title: "{ftbquests.ae2.large_me_assembler.title}"
 			x: -1.0d
 			y: 5.0d
 		}
@@ -1054,7 +1054,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.ae2.quest65.title}"
+			title: "{ftbquests.ae2.quantum_linking.title}"
 			x: 5.0d
 			y: 7.0d
 		}
@@ -1093,11 +1093,7 @@
 		}
 		{
 			dependencies: ["534F27BC96F104A2"]
-			description: [
-				"{ftbquests.ae2.quest69.description1}"
-				""
-				"{ftbquests.ae2.quest69.description2}"
-			]
+			description: ["{ftbquests.ae2.terminals.description}"]
 			id: "3FC037156B8DB553"
 			tasks: [
 				{
@@ -1111,7 +1107,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.ae2.quest69.title}"
+			title: "{ftbquests.ae2.terminals.title}"
 			x: 11.0d
 			y: 3.0d
 		}
@@ -1143,18 +1139,14 @@
 				"617E17824856450D"
 				"372842AD602BB1BF"
 			]
-			description: [
-				"{ftbquests.ae2.quest72.description1}"
-				""
-				"{ftbquests.ae2.quest72.description2}"
-			]
+			description: ["{ftbquests.ae2.autocrafting.description}"]
 			id: "54D3F6BC8F7BC609"
 			tasks: [{
 				id: "6AF795E95BA5BDDB"
 				item: "ae2:blank_pattern"
 				type: "item"
 			}]
-			title: "{ftbquests.ae2.quest72.title}"
+			title: "{ftbquests.ae2.autocrafting.title}"
 			x: 11.0d
 			y: -1.0d
 		}
@@ -1258,7 +1250,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.ae2.quest80.title}"
+			title: "{ftbquests.ae2.ex_export_import_bus.title}"
 			x: -9.0d
 			y: 5.0d
 		}
@@ -1381,7 +1373,7 @@
 						]
 					}
 				}
-				title: "{ftbquests.ae2.quest89.task_2642030594883886347.title}"
+				title: "{ftbquests.ae2.spatial_cell_components.title}"
 				type: "item"
 			}]
 			x: -3.0d
@@ -1425,7 +1417,7 @@
 			id: "45EA9095FAF7DDD6"
 			tasks: [{
 				id: "1BEA9D6C9EB86103"
-				title: "{ftbquests.ae2.quest93.task_2011593273419260163.title}"
+				title: "{ftbquests.ae2.extended_machines.title}"
 				type: "checkmark"
 			}]
 			x: -7.0d
@@ -1436,7 +1428,7 @@
 			invisible: true
 			tasks: [{
 				id: "76B74EE25F58E344"
-				title: "{ftbquests.ae2.quest94.task_8554392751382782788.title}"
+				title: "{ftbquests.ae2.positioner.title}"
 				type: "checkmark"
 			}]
 			x: 0.0d
@@ -1481,7 +1473,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.ae2.quest95.title}"
+			title: "{ftbquests.ae2.assembler_matrix.title}"
 			x: -11.0d
 			y: 3.0d
 		}
@@ -1741,14 +1733,14 @@
 		}
 		{
 			dependencies: ["29FCED9F85FB2882"]
-			description: ["{ftbquests.ae2.quest97.description1}"]
+			description: ["{ftbquests.ae2.mega_component_skip.description}"]
 			id: "334AE7B73C221920"
 			tasks: [{
 				id: "3CAA8DC4BE329DE5"
 				item: "megacells:cell_component_1m"
 				type: "item"
 			}]
-			title: "{ftbquests.ae2.quest96.title}"
+			title: "{ftbquests.ae2.mega_component_skip.title}"
 			x: -7.0d
 			y: -9.0d
 		}
