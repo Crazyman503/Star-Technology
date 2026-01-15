@@ -299,6 +299,16 @@ global.not_hardmode(() => {
             .EUt(GTValues.VA[GTValues.IV]);
     };
 
+    const pulverizer = (event, materialObj) => {
+        event.recipes.gtceu.pulverizer(id(`${materialObj.material}_dust`))
+            .itemInputs(crushed_ore(materialObj.material, 1))
+            .itemOutputs(dust(materialObj.material, 1))
+            .chancedOutput(dust(materialObj.material, 1), 2500, 250)
+            .circuit(0)
+            .duration(300)
+            .EUt(GTValues.VA[GTValues.LV])
+    };
+
     /* Final Product */
     ServerEvents.recipes(event => {
 
@@ -371,6 +381,8 @@ global.not_hardmode(() => {
         // Iterate over each tier and processable item and register the recipes
         Object.keys(oreProcessableTiers).forEach((tier) => {
             oreProcessableTiers[tier].forEach((item) => {
+                pulverizer(event, item);
+
                 if (tier == 'primitive') {
                     primitive_processing(event, item);
                     electric_primitive_processing(event, item);

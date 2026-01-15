@@ -5,7 +5,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .category('resource_production')
         .setEUIO('in')
         .setMaxIOSize(1, 1, 2, 0)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_MACERATE , FillDirection.LEFT_TO_RIGHT)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_MACERATE, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.FORGE_HAMMER);
 
 });
@@ -34,7 +34,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .where(' ', Predicates.air())
                 .build())
             .workableCasingRenderer(`kubejs:block/casings/large_cubes/${casing}_casing`,
-            `gtceu:block/machines/${type}`, false);
+                `gtceu:block/machines/${type}`, false);
 
     }
 
@@ -52,6 +52,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     largeCube('thermal_centrifuge', 'silicon_bronze');
     largeCube('wiremill', 'sterling_silver');
     largeCube('autoclave', 'silicone_rubber');
+    largeCube('pulverizer', 'blue_steel');
 
 
     // Large Rock Crusher
@@ -74,6 +75,5 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where(' ', Predicates.air())
             .build())
         .workableCasingRenderer('kubejs:block/casings/large_cubes/red_steel_casing',
-        'gtceu:block/machines/rock_crusher', false);
-
+            'gtceu:block/machines/rock_crusher', false);
 });
