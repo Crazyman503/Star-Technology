@@ -1,22 +1,17 @@
 PlayerEvents.chat((event) => {
-  /** @type {Token[]} */
-  var tokens;
-  /** @type {NodeExpr} */
-  var ast;
-  /** @type {any} */
-  var result;
   /** @type {string} */
-  var error;
-  /** @type {string} */
-  var message = (message = ("" + event.message).trim());
+  let message = (message = ("" + event.message).trim());
 
   if (message.startsWith("=")) {
     message = ("" + message).replace(/^=\s*/, "");
 
     try {
-      tokens = calculatorLex(message);
-      ast = calculatorParse(tokens);
-      result = calculatorExec(ast);
+      /** @type {Token[]} */
+      let tokens = calculatorLex(message);
+      /** @type {NodeExpr} */
+      let ast = calculatorParse(tokens);
+      /** @type {any} */
+      let result = calculatorExec(ast);
 
       if (typeof result === "number") {
         result = result.toFixed(5).replace(/\.?0+$/, "");
@@ -34,7 +29,8 @@ PlayerEvents.chat((event) => {
           .hover(Text.of("Click to copy"))
       );
     } catch (e) {
-      error = e.message || e.toString();
+      /** @type {string} */
+      let error = e.message || e.toString();
       event.player.tell(
         Text.join([
           Text.red("Error evaluating "),
@@ -48,9 +44,9 @@ PlayerEvents.chat((event) => {
   }
 });
 
-var calculatorExec = (() => {
+let calculatorExec = (() => {
   /** @type {Record<string, { arguments?: string[], fn: (...args: any[]) => any }>} */
-  var functions = {
+  let functions = {
     sqrt: {
       arguments: ["number"],
       fn: (value) => Math.sqrt(value),
@@ -89,7 +85,7 @@ var calculatorExec = (() => {
     },
     min: {
       fn: function () {
-        var args = Array.from(arguments);
+        let args = Array.from(arguments);
         if (args.length === 0) {
           throw new Error(
             "wrong argument count for max: expected 1 or more, got 0"
@@ -103,7 +99,7 @@ var calculatorExec = (() => {
     },
     max: {
       fn: function () {
-        var args = Array.from(arguments);
+        let args = Array.from(arguments);
         if (args.length === 0) {
           throw new Error(
             "wrong argument count for max: expected 1 or more, got 0"
@@ -118,7 +114,7 @@ var calculatorExec = (() => {
   };
 
   /** @type {Record<string, any>} */
-  var constants = {
+  let constants = {
     e: JavaMath.E,
     pi: JavaMath.PI,
   };
@@ -129,7 +125,6 @@ var calculatorExec = (() => {
    * @param {any[]} args the arguments
    */
   function validateArguments(name, expectedArgs, args) {
-    var argTypes;
     if (expectedArgs.length !== args.length) {
       throw new Error(
         "wrong arguments count for " +
@@ -140,7 +135,7 @@ var calculatorExec = (() => {
           args.length
       );
     }
-    argTypes = args.map((arg) => typeof arg);
+    let argTypes = args.map((arg) => typeof arg);
     if (argTypes.every((arg, i) => arg === expectedArgs[i])) return;
 
     throw new Error(
@@ -159,12 +154,10 @@ var calculatorExec = (() => {
    * @returns {any}
    */
   function calculate(node) {
-    var left, right, fn, args, constant;
-
     switch (node.type) {
-      case "binOp":
-        left = calculate(node.left);
-        right = calculate(node.right);
+      case "binOp": {
+        let left = calculate(node.left);
+        let right = calculate(node.right);
         switch (node.operator) {
           case "+":
             validateArguments("addition", ["number", "number"], [left, right]);
@@ -194,7 +187,7 @@ var calculatorExec = (() => {
             );
             return Math.floor(left / right);
           case "%":
-            validateArguments("division", ["number", "number"], [left, right]);
+            validateArguments("modulo", ["number", "number"], [left, right]);
             return left % right;
           case "^":
             validateArguments(
@@ -204,26 +197,31 @@ var calculatorExec = (() => {
             );
             return Math.pow(left, right);
         }
-      case "call":
-        fn = functions[node.identifier];
+      }
+      case "call": {
+        let fn = functions[node.identifier];
         if (!fn) {
           throw new Error("unknown identifier " + node.identifier);
         }
-        args = node.arguments.map((arg) => calculate(arg));
+        let args = node.arguments.map((arg) => calculate(arg));
         if (fn.arguments) {
           validateArguments(node.identifier, fn.arguments, args);
         }
         return fn.fn.apply(null, args);
-      case "number":
+      }
+      case "number": {
         return node.value;
-      case "const":
-        constant = constants[node.identifier];
+      }
+      case "const": {
+        let constant = constants[node.identifier];
         if (!constant) {
           throw new Error("unknown identifier " + node.identifier);
         }
         return constant;
-      default:
+      }
+      default: {
         throw new Error("unknown node type " + node.type);
+      }
     }
   }
 
@@ -253,16 +251,23 @@ var calculatorExec = (() => {
  */
 function calculatorLex(input) {
   /** @type {Token[]} */
-  var tokens = [];
-  var index = 0;
-  var token;
+  let tokens = [];
+  let index = 0;
+
+  while (true) {
+    let token = lexToken();
+    if (!token) break;
+    tokens.push(token);
+  }
+  tokens.push({ t: "eof" });
+  return tokens;
 
   /** @returns {string | null} */
   function next() {
     if (index > input.length) {
       return null;
     }
-    var ch = input.substring(index, index + 1) || null;
+    let ch = input.substring(index, index + 1) || null;
     index += 1;
     return ch;
   }
@@ -273,7 +278,7 @@ function calculatorLex(input) {
 
   /** @returns {Token | null} */
   function lexToken() {
-    var ch = next();
+    let ch = next();
     if (!ch) {
       return null;
     }
@@ -323,34 +328,26 @@ function calculatorLex(input) {
 
   /** @returns {Token | null} */
   function lexIdent() {
-    var ch, pos, text;
-    pos = index - 1;
+    let pos = index - 1;
+    let ch;
     while ((ch = next()) && ch.match(/^[a-zA-Z0-9_]$/));
     prev();
-    text = input.substring(pos, index);
+    let text = input.substring(pos, index);
     return { t: "ident", v: text };
   }
 
   /** @returns {Token | null} */
   function lexNumber() {
-    var ch, pos, text;
-    pos = index - 1;
+    let pos = index - 1;
+    let ch;
     while ((ch = next()) && ch.match(/^[0-9]$/));
     if (ch === ".") {
       while ((ch = next()) && ch.match(/^[0-9]$/));
     }
     prev();
-    text = input.substring(pos, index);
+    let text = input.substring(pos, index);
     return { t: "number", v: parseFloat(text) };
   }
-
-  while (true) {
-    token = lexToken();
-    if (!token) break;
-    tokens.push(token);
-  }
-  tokens.push({ t: "eof" });
-  return tokens;
 }
 
 /**
@@ -369,11 +366,8 @@ function calculatorLex(input) {
  * @returns {NodeExpr}
  */
 function calculatorParse(tokens) {
-  /** @type {NodeExpr} */
-  var result;
-  var index = 0;
   /** @type {Record<"*" | "/" | "+" | "-" | "^", { prec: number, assoc: "left" | "right" }>} */
-  var operators = {
+  let operators = {
     "*": { prec: 3, assoc: "left" },
     "/": { prec: 3, assoc: "left" },
     "//": { prec: 3, assoc: "left" },
@@ -382,6 +376,13 @@ function calculatorParse(tokens) {
     "-": { prec: 2, assoc: "left" },
     "^": { prec: 4, assoc: "right" },
   };
+
+  let index = 0;
+
+  /** @type {NodeExpr} */
+  let result = parseExpression();
+  expect("eof");
+  return result;
 
   /**
    * @param {Token} token
@@ -481,21 +482,18 @@ function calculatorParse(tokens) {
    * @returns {NodeExpr}
    */
   function parseBinOp(prec) {
-    var left = parseUnOp();
-    /** @type {NodeExpr} */
-    var right;
+    let left = parseUnOp();
     /** @type {Token["t"]} */
-    var op, tprec;
-
+    let op;
     while (
       (op = next().t) &&
       isBinaryOperator(op) &&
       operators[op].prec > prec
     ) {
       accept(op);
-      tprec = operators[op].prec;
+      let tprec = operators[op].prec;
       if (operators[op].assoc === "right") tprec -= 1;
-      right = parseBinOp(tprec);
+      let right = parseBinOp(tprec);
       left = { type: "binOp", operator: op, left: left, right: right };
     }
 
@@ -504,7 +502,8 @@ function calculatorParse(tokens) {
 
   /** @returns {NodeExpr} */
   function parseUnOp() {
-    var op;
+    /** @type {Token["t"]} */
+    let op;
     switch ((op = next().t)) {
       case "+":
       case "-":
@@ -516,7 +515,7 @@ function calculatorParse(tokens) {
 
   /** @returns {NodeExpr[]} */
   function parseArgList() {
-    var args = [];
+    let args = [];
     expect("(");
     while (true) {
       if (accept(")")) {
@@ -534,19 +533,17 @@ function calculatorParse(tokens) {
 
   /** @returns {NodeExpr} */
   function parseTerm() {
-    var expr, ident, args, number;
-
     if (accept("(")) {
-      expr = parseExpression();
+      let expr = parseExpression();
       expect(")");
       return expr;
     }
 
     if (accept("ident")) {
       // prettier-ignore
-      ident = (/** @type {TokenIdent} */ (current())).v;
+      let ident = (/** @type {TokenIdent} */ (current())).v;
       if (peek("(")) {
-        args = parseArgList();
+        let args = parseArgList();
         return { type: "call", identifier: ident, arguments: args };
       }
       return { type: "const", identifier: ident };
@@ -554,14 +551,10 @@ function calculatorParse(tokens) {
 
     if (accept("number")) {
       // prettier-ignore
-      number = (/** @type {TokenNumber} */ (current())).v;
+      let number = (/** @type {TokenNumber} */ (current())).v;
       return { type: "number", value: number };
     }
 
     throw new Error("expected (, identifier or number");
   }
-
-  result = parseExpression();
-  expect("eof");
-  return result;
 }
