@@ -1520,7 +1520,6 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["73931EAA3EC5C9A9"]
 			hide_dependency_lines: true
 			id: "6AC8588F6172617D"
 			shape: "rsquare"
@@ -1533,7 +1532,6 @@
 			y: -8.0d
 		}
 		{
-			dependencies: ["3CB63B290C9EFAA2"]
 			id: "63A83F8EC256BE94"
 			shape: "rsquare"
 			tasks: [{

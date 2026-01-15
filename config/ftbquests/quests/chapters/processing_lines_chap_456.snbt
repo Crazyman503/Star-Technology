@@ -359,7 +359,6 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["3CB63B290C9EFAA2"]
 			id: "073FA13EEEA78C5F"
 			size: 1.0d
 			tasks: [{
@@ -489,7 +488,6 @@
 			y: 11.5d
 		}
 		{
-			dependencies: ["7CACFC7C9101EA59"]
 			icon: "gtceu:fluorobenzene_bucket"
 			id: "4042E4B274934623"
 			size: 1.0d
@@ -1162,7 +1160,6 @@
 			y: 5.5d
 		}
 		{
-			dependencies: ["1820787D031EAB15"]
 			id: "357F58FB592B9628"
 			tasks: [{
 				id: "6D47324C12489CA6"
@@ -1897,7 +1894,6 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["170C262792DA7123"]
 			icon: {
 				Count: 1
 				id: "gtceu:benzene_bucket"
@@ -2939,7 +2935,6 @@
 			y: 14.0d
 		}
 		{
-			dependencies: ["1820787D031EAB15"]
 			icon: "gtceu:methanol_bucket"
 			id: "042874C597262403"
 			tasks: [
@@ -3052,7 +3047,6 @@
 			y: 16.0d
 		}
 		{
-			dependencies: ["170C262792DA7123"]
 			icon: "gtceu:butadiene_bucket"
 			id: "424C253C168CF038"
 			tasks: [
@@ -3109,7 +3103,6 @@
 			y: 13.0d
 		}
 		{
-			dependencies: ["7CACFC7C9101EA59"]
 			icon: "gtceu:maleic_anhydride_bucket"
 			id: "188295DEDBC77EAD"
 			tasks: [
@@ -3278,7 +3271,6 @@
 			y: 15.5d
 		}
 		{
-			dependencies: ["1820787D031EAB15"]
 			icon: "gtceu:nitrobenzene_bucket"
 			id: "5CFDB5A139301559"
 			tasks: [
@@ -3338,7 +3330,6 @@
 			y: 16.0d
 		}
 		{
-			dependencies: ["1820787D031EAB15"]
 			icon: "gtceu:methanol_bucket"
 			id: "7AB2F356B5B0FDFD"
 			tasks: [
@@ -3357,7 +3348,6 @@
 			y: 16.0d
 		}
 		{
-			dependencies: ["1820787D031EAB15"]
 			icon: "gtceu:ammonia_bucket"
 			id: "75B49A50671FBADE"
 			tasks: [
@@ -3510,7 +3500,6 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["7CACFC7C9101EA59"]
 			icon: "gtceu:magnesium_nitride_bucket"
 			id: "4DDA332F7E9B545E"
 			tasks: [

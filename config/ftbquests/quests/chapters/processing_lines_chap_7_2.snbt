@@ -74,30 +74,6 @@
 			x: 6.5d
 			y: 3.0d
 		}
-		{
-			id: "5471BFD2D05A173F"
-			linked_quest: "3AE729D3F47E9A2B"
-			shape: "gear"
-			size: 1.5d
-			x: 17.5d
-			y: 2.0d
-		}
-		{
-			id: "6619BD72D7AC92AB"
-			linked_quest: "1799430093ABCC64"
-			shape: "gear"
-			size: 1.5d
-			x: 17.5d
-			y: 7.0d
-		}
-		{
-			id: "67B0A8BEF1D69846"
-			linked_quest: "31F87896FF834E63"
-			shape: "gear"
-			size: 1.5d
-			x: 17.5d
-			y: -4.0d
-		}
 	]
 	quests: [
 		{
@@ -320,7 +296,6 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["1820787D031EAB15"]
 			id: "192A52EDB919A08A"
 			tasks: [{
 				id: "5BF6872B5BB7C8BE"
@@ -443,7 +418,6 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["1820787D031EAB15"]
 			icon: "gtceu:phosphoric_acid_bucket"
 			id: "70CC0AACE1B75966"
 			tasks: [
@@ -519,7 +493,6 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["1820787D031EAB15"]
 			icon: "gtceu:dimethylamine_bucket"
 			id: "070904889C20A5FD"
 			tasks: [
@@ -730,7 +703,6 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["1820787D031EAB15"]
 			icon: "gtceu:ethylene_glycol_bucket"
 			id: "74B8AA9E737343E3"
 			tasks: [
@@ -986,7 +958,6 @@
 			y: 0.5d
 		}
 		{
-			dependencies: ["7CACFC7C9101EA59"]
 			icon: "gtceu:benzoyl_chloride_bucket"
 			id: "42A52C68EF9C8F05"
 			tasks: [
@@ -1005,7 +976,6 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["1820787D031EAB15"]
 			id: "0743ACC2DC774C7E"
 			tasks: [{
 				id: "1D3F8BCAB722E6BA"
@@ -1016,7 +986,6 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["1820787D031EAB15"]
 			icon: "gtceu:hydrogen_chloride_bucket"
 			id: "1E9691AB96D72E15"
 			tasks: [
@@ -1054,7 +1023,6 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["18FD654260DFF1D6"]
 			icon: "kubejs:void_core"
 			id: "1D3052F94EE128F4"
 			shape: "circle"
@@ -1417,7 +1385,6 @@
 				"68B378F9C61A4476"
 				"64B6D570D8C43249"
 				"2A51E0AEDCCC8F9E"
-				"18FD654260DFF1D6"
 			]
 			icon: "gtceu:order_centric_void_bucket"
 			id: "5080743917931298"
@@ -1446,7 +1413,6 @@
 				"26795C8AEFF36410"
 				"622AB20A4B3D2DB6"
 				"0B9426D5788B0337"
-				"18FD654260DFF1D6"
 			]
 			icon: "gtceu:chaos_centric_void_bucket"
 			id: "2F6115002741F26F"
@@ -1680,7 +1646,6 @@
 			y: 7.0d
 		}
 		{
-			dependencies: ["262BD3D9D1DF7F13"]
 			icon: "gtceu:dragon_breath_bucket"
 			id: "749AB3A73D3744EA"
 			tasks: [
@@ -2013,7 +1978,6 @@
 			y: 7.0d
 		}
 		{
-			dependencies: ["218CABD676F3B732"]
 			id: "1599CBA5069B1B4C"
 			tasks: [{
 				id: "2DE1FA566DC988C4"
@@ -2326,7 +2290,6 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["37F9C85CFCFFDA5F"]
 			id: "253FE2C976FBCA5D"
 			shape: "circle"
 			size: 1.5d
@@ -2376,7 +2339,6 @@
 			y: 0.5d
 		}
 		{
-			dependencies: ["1799430093ABCC64"]
 			id: "2C80DB1A0465B07E"
 			shape: "gear"
 			tasks: [{

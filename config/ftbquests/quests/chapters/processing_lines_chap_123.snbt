@@ -21,14 +21,6 @@
 			y: 11.5d
 		}
 		{
-			id: "6A4A35ABD8D3F320"
-			linked_quest: "2DB216B224F2E8EF"
-			shape: "gear"
-			size: 1.5d
-			x: 20.0d
-			y: 19.5d
-		}
-		{
 			id: "4FC4729DDEC1BBA6"
 			linked_quest: "5B2F29A61D270031"
 			x: 11.5d
@@ -630,7 +622,6 @@
 			dependencies: [
 				"24822D31D8005519"
 				"5EEC5C529072CE0F"
-				"3CB63B290C9EFAA2"
 			]
 			icon: "gtceu:tetrafluoroethylene_bucket"
 			id: "6373DC17B2A31150"
@@ -1009,7 +1000,6 @@
 			y: 16.0d
 		}
 		{
-			dependencies: ["170C262792DA7123"]
 			icon: "gtceu:chlorobenzene_bucket"
 			id: "5CC771EE56C124DE"
 			size: 1.0d
@@ -1076,7 +1066,6 @@
 			y: 18.0d
 		}
 		{
-			dependencies: ["439D8AE6D3DC41AF"]
 			icon: "gtceu:potassium_dust"
 			id: "1B4EE859F06B93B6"
 			optional: true
@@ -1104,7 +1093,6 @@
 			y: 19.0d
 		}
 		{
-			dependencies: ["439D8AE6D3DC41AF"]
 			icon: "gtceu:potassium_dichromate_dust"
 			id: "50935F187F392F12"
 			optional: true
@@ -1191,10 +1179,7 @@
 			y: 23.5d
 		}
 		{
-			dependencies: [
-				"76C3740D5841D569"
-				"1646D6D439B260D3"
-			]
+			dependencies: ["76C3740D5841D569"]
 			id: "235423100BBE5C81"
 			rewards: [{
 				count: 3
@@ -1304,7 +1289,6 @@
 			y: 11.5d
 		}
 		{
-			dependencies: ["3CB63B290C9EFAA2"]
 			id: "7F33069798736793"
 			size: 1.0d
 			tasks: [{
@@ -1316,7 +1300,6 @@
 			y: 14.5d
 		}
 		{
-			dependencies: ["3CB63B290C9EFAA2"]
 			id: "158885A1FD330FD8"
 			size: 1.0d
 			tasks: [{
@@ -1328,7 +1311,6 @@
 			y: 13.5d
 		}
 		{
-			dependencies: ["74749B089D50329C"]
 			id: "161853249C63EDCB"
 			size: 1.0d
 			tasks: [{
@@ -1340,7 +1322,6 @@
 			y: 12.5d
 		}
 		{
-			dependencies: ["4D9DAED52FF74B8B"]
 			id: "6172BFE1494E9D28"
 			size: 1.0d
 			tasks: [{
@@ -1355,7 +1336,6 @@
 			dependencies: [
 				"0FBB34B21DA41C5D"
 				"73B438B7A98354EA"
-				"4D9DAED52FF74B8B"
 			]
 			id: "4BCC078B76C6CAE3"
 			rewards: [{
@@ -1375,7 +1355,6 @@
 			y: 13.0d
 		}
 		{
-			dependencies: ["73931EAA3EC5C9A9"]
 			hide_dependency_lines: true
 			id: "0FBB34B21DA41C5D"
 			size: 1.0d
@@ -1388,7 +1367,6 @@
 			y: 14.5d
 		}
 		{
-			dependencies: ["4D9DAED52FF74B8B"]
 			hide_dependency_lines: true
 			id: "58037316F922EBF0"
 			size: 1.0d
@@ -1936,7 +1914,6 @@
 			dependencies: [
 				"7F66E57359872C20"
 				"03B49B558B85346B"
-				"439D8AE6D3DC41AF"
 			]
 			description: ["{ftbquests.processing_lines_chap.polyvinyl_butyral.description}"]
 			id: "3306CAE5E57839A2"
@@ -1957,7 +1934,6 @@
 			y: 23.5d
 		}
 		{
-			dependencies: ["3CB63B290C9EFAA2"]
 			icon: "gtceu:butyraldehyde_bucket"
 			id: "7F66E57359872C20"
 			size: 1.0d
@@ -2881,7 +2857,6 @@
 			y: 21.0d
 		}
 		{
-			dependencies: ["1820787D031EAB15"]
 			id: "74CEC1F2ABC2E6D5"
 			tasks: [{
 				id: "578152828DBF5E4B"
@@ -2917,7 +2892,6 @@
 			y: 19.5d
 		}
 		{
-			dependencies: ["1820787D031EAB15"]
 			id: "1D3F29ED5112617E"
 			tasks: [{
 				id: "4A5A90D90E79B4C4"
@@ -2928,10 +2902,7 @@
 			y: 19.5d
 		}
 		{
-			dependencies: [
-				"7F4D5331B59AA5F0"
-				"68865F1DDBFFFACE"
-			]
+			dependencies: ["7F4D5331B59AA5F0"]
 			hide_until_deps_complete: true
 			id: "14BCBC516D35FEC1"
 			tasks: [{
@@ -2943,10 +2914,7 @@
 			y: 7.0d
 		}
 		{
-			dependencies: [
-				"5E894DC47896785B"
-				"68865F1DDBFFFACE"
-			]
+			dependencies: ["5E894DC47896785B"]
 			description: ["{ftbquests.processing_lines_chap.highly_enriched_uranium_fuel_rod.description}"]
 			hide_until_deps_complete: true
 			id: "733685E002AAE489"
@@ -2959,10 +2927,7 @@
 			y: 7.0d
 		}
 		{
-			dependencies: [
-				"206859C2B2272102"
-				"68865F1DDBFFFACE"
-			]
+			dependencies: ["206859C2B2272102"]
 			hide_until_deps_complete: true
 			id: "2750AC5453EB3184"
 			tasks: [{

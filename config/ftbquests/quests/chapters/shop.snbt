@@ -291,7 +291,6 @@
 		}
 		{
 			can_repeat: true
-			dependencies: ["1820787D031EAB15"]
 			icon: "fluxnetworks:flux_point"
 			id: "1E4A1D40A74B104B"
 			rewards: [
@@ -418,7 +417,6 @@
 		}
 		{
 			can_repeat: true
-			dependencies: ["4BCE8A9EBDF113CE"]
 			icon: { Count: 16, id: "gtceu:tungsten_steel_ingot" }
 			id: "27981BCACA9A36FF"
 			rewards: [{
@@ -579,7 +577,6 @@
 		}
 		{
 			can_repeat: true
-			dependencies: ["73931EAA3EC5C9A9"]
 			icon: "kubejs:hv_universal_circuit"
 			id: "2C0031FF5C5B444C"
 			rewards: [{
@@ -602,7 +599,6 @@
 		}
 		{
 			can_repeat: true
-			dependencies: ["52FE319F5E176C37"]
 			icon: "kubejs:ev_universal_circuit"
 			id: "017A2CD82D56969A"
 			rewards: [{
@@ -625,7 +621,6 @@
 		}
 		{
 			can_repeat: true
-			dependencies: ["62BA581B2918BB7B"]
 			icon: "kubejs:iv_universal_circuit"
 			id: "52DD5020950CC1FA"
 			rewards: [{
@@ -1516,7 +1511,6 @@
 		}
 		{
 			can_repeat: true
-			dependencies: ["262BD3D9D1DF7F13"]
 			hide_until_deps_complete: true
 			icon: "minecraft:dragon_breath"
 			id: "7A188FDFA4C591D7"

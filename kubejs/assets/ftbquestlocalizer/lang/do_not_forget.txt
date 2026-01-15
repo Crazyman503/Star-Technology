@@ -10,10 +10,6 @@ Specific:
     - Mystical Greenhouse (MA)
     - Rotor Holders (Power)
 
-
-quantum_processor_mainframe => first zpm_circuit
-micro_processor_mainframe => first iv circuit
-basic_electronic_circuit => first lv circuit
-
-epic parallel => 1024
-mega parallel => 2048
+- mechanics > throughput boosting = format error 2nd page
+- mechanics > bulking = format error
+- mechanics > threading = format error 3rd, 4th, 5th page

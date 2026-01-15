@@ -6,7 +6,7 @@
 	group: "1E0FC4EA21F735F7"
 	icon: "minecraft:sand"
 	id: "459D60183D34C29E"
-	order_index: 5
+	order_index: 4
 	progression_mode: "linear"
 	quest_links: [
 		{

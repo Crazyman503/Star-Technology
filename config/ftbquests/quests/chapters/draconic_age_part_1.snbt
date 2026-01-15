@@ -6,6 +6,8 @@
 	group: "1E0FC4EA21F735F7"
 	icon: "minecraft:dragon_egg"
 	id: "5617484BFC479624"
+	order_index: 6
+	progression_mode: "linear"
 	images: [{
 		height: 2.5d
 		image: "sgjourney:item/pegasus_stargate"
@@ -14,8 +16,6 @@
 		x: 13.560000000000002d
 		y: 0.21500000000000075d
 	}]
-	order_index: 6
-	progression_mode: "linear"
 	quest_links: [
 		{
 			id: "5CAD94E1138B5355"

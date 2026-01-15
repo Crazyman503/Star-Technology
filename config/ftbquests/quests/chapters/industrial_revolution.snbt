@@ -16,14 +16,6 @@
 			y: -7.5d
 		}
 		{
-			id: "46DF7D3C17E47774"
-			linked_quest: "73931EAA3EC5C9A9"
-			shape: "gear"
-			size: 1.5d
-			x: 16.0d
-			y: 3.5d
-		}
-		{
 			id: "356A14F888032D0F"
 			linked_quest: "261174370DC87FCB"
 			x: 16.0d
@@ -957,12 +949,12 @@
 			}]
 			shape: "gear"
 			size: 1.5d
+			subtitle: "{ftbquests.industrial_revolution.good_electronic_circuit.subtitle}"
 			tasks: [{
 				id: "4362380E2C0F1E25"
 				item: "gtceu:good_electronic_circuit"
 				type: "item"
 			}]
-            subtitle: "{ftbquests.industrial_revolution.good_electronic_circuit.subtitle}"
 			x: 8.0d
 			y: 6.5d
 		}

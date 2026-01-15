@@ -23,22 +23,6 @@
 			y: -8.5d
 		}
 		{
-			id: "401EBC740289B8B1"
-			linked_quest: "439D8AE6D3DC41AF"
-			shape: "gear"
-			size: 1.5d
-			x: -2.5d
-			y: 6.0d
-		}
-		{
-			id: "31A47C784DBE6072"
-			linked_quest: "22BC7BDE5E132A30"
-			shape: "gear"
-			size: 1.5d
-			x: 6.5d
-			y: 3.0d
-		}
-		{
 			id: "3A4F00438DDCEF22"
 			linked_quest: "0AB3A8C14C3A0512"
 			shape: "gear"
@@ -1588,7 +1572,6 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["22BC7BDE5E132A30"]
 			icon: {
 				Count: 1
 				id: "minecraft:grass_block"
@@ -1604,7 +1587,6 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["22BC7BDE5E132A30"]
 			icon: {
 				Count: 1
 				id: "minecraft:sand"
@@ -2239,7 +2221,6 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["439D8AE6D3DC41AF"]
 			id: "2C10C159C75C3068"
 			tasks: [{
 				id: "7062C551157615DB"
@@ -2363,7 +2344,6 @@
 			y: 8.5d
 		}
 		{
-			dependencies: ["22BC7BDE5E132A30"]
 			icon: "minecraft:netherrack"
 			id: "4E6158880F47AACC"
 			tasks: [{

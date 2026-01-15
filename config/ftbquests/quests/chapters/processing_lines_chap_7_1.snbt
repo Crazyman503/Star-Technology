@@ -737,10 +737,7 @@
 			y: -4.0d
 		}
 		{
-			dependencies: [
-				"1820787D031EAB15"
-				"1EDA7840DBAC4B6E"
-			]
+			dependencies: ["1EDA7840DBAC4B6E"]
 			icon: "gtceu:iron_ii_chloride_bucket"
 			id: "181B1275C964F1ED"
 			tasks: [
@@ -966,7 +963,6 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["4DF07CB3D60C901C"]
 			icon: "minecraft:netherrack"
 			id: "3EA66E80E1F54265"
 			shape: "circle"
@@ -1458,7 +1454,6 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["1820787D031EAB15"]
 			icon: "gtceu:fluoroantimonic_acid_bucket"
 			id: "426CF59C9CF52E99"
 			tasks: [
@@ -2327,7 +2322,6 @@
 			y: 8.5d
 		}
 		{
-			dependencies: ["1820787D031EAB15"]
 			id: "602201333E3C0A36"
 			tasks: [{
 				id: "247B19E6BC2E01A2"
@@ -2793,7 +2787,6 @@
 			y: 11.5d
 		}
 		{
-			dependencies: ["1820787D031EAB15"]
 			id: "3960BC820E5B62BC"
 			tasks: [{
 				id: "2430A4A50D864C4A"
@@ -2917,7 +2910,6 @@
 			y: 17.5d
 		}
 		{
-			dependencies: ["1820787D031EAB15"]
 			id: "166EE7BB3EB48192"
 			tasks: [{
 				id: "3B3AF7D5D8D51312"
@@ -3209,7 +3201,6 @@
 			y: 13.0d
 		}
 		{
-			dependencies: ["7CACFC7C9101EA59"]
 			id: "6DDA7E241DDE6A91"
 			tasks: [{
 				id: "3E46CF6544C4E3A3"
@@ -3239,7 +3230,6 @@
 			y: 14.0d
 		}
 		{
-			dependencies: ["1820787D031EAB15"]
 			id: "1BEE0053B443D65C"
 			tasks: [{
 				id: "00B056AAE7CA39B9"
@@ -3297,10 +3287,7 @@
 			y: 2.0d
 		}
 		{
-			dependencies: [
-				"1AB8A88BA38BC989"
-				"2E34F23A42004285"
-			]
+			dependencies: ["1AB8A88BA38BC989"]
 			icon: "start_core:emberheart_nectar_bucket"
 			id: "75C33909E2CD5EC0"
 			rewards: [{

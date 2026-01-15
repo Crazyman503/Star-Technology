@@ -228,7 +228,6 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["73931EAA3EC5C9A9"]
 			description: ["{ftbquests.quality_of_life.ender_transport.description}"]
 			id: "48D2144395562A62"
 			shape: "rsquare"

@@ -59,48 +59,6 @@
 			y: -5.5d
 		}
 		{
-			id: "0D4FCC2A57D9CC38"
-			linked_quest: "73931EAA3EC5C9A9"
-			x: -6.5d
-			y: -5.5d
-		}
-		{
-			id: "25D74DD92BBCFCC3"
-			linked_quest: "363F5B598683A074"
-			x: -8.0d
-			y: -4.0d
-		}
-		{
-			id: "198F1866583016C8"
-			linked_quest: "7399429099302C6C"
-			x: -6.5d
-			y: -4.0d
-		}
-		{
-			id: "2DFE5AD66EBD118F"
-			linked_quest: "52FE319F5E176C37"
-			x: -5.0d
-			y: -4.0d
-		}
-		{
-			id: "1A81FEB878D2E821"
-			linked_quest: "0514DE717001A062"
-			x: -6.5d
-			y: -2.5d
-		}
-		{
-			id: "3959159D9A23E4D9"
-			linked_quest: "497833345EB46A47"
-			x: -5.0d
-			y: -2.5d
-		}
-		{
-			id: "11D511076D303258"
-			linked_quest: "0C0C0FBDE1760110"
-			x: -3.5d
-			y: -2.5d
-		}
-		{
 			id: "0CF0B36FA1A0ABE2"
 			linked_quest: "707C2E9BA62A60C5"
 			x: 2.5d
@@ -111,12 +69,6 @@
 			linked_quest: "5C15427D1679D4C3"
 			x: -9.5d
 			y: 0.5d
-		}
-		{
-			id: "6D220F5D5B6F0922"
-			linked_quest: "6EB85BBD539AEB57"
-			x: -9.5d
-			y: 2.0d
 		}
 		{
 			id: "607658C8752D8C32"
@@ -209,60 +161,6 @@
 			y: 3.5d
 		}
 		{
-			id: "4859BD22DD506CA2"
-			linked_quest: "06EC98F6E6AFC2AF"
-			x: -9.5d
-			y: 6.5d
-		}
-		{
-			id: "6AB29E1D4E89028E"
-			linked_quest: "169C2E9DA1CF8F53"
-			x: -0.5d
-			y: 5.0d
-		}
-		{
-			id: "59203BC9137AFD14"
-			linked_quest: "26FDB9612063F49D"
-			x: 1.0d
-			y: 5.0d
-		}
-		{
-			id: "37522879F10FA2B4"
-			linked_quest: "66D49CB8D8819E3F"
-			x: 2.5d
-			y: 5.0d
-		}
-		{
-			id: "71EDB7690C7DF368"
-			linked_quest: "6F3DF16481990D99"
-			x: 4.0d
-			y: 5.0d
-		}
-		{
-			id: "50B0B354A232D17D"
-			linked_quest: "5944C4DE27F98FF3"
-			x: 5.5d
-			y: 5.0d
-		}
-		{
-			id: "2AE98446AB0DE449"
-			linked_quest: "3AE6E85C2FC76DE9"
-			x: 4.0d
-			y: 6.5d
-		}
-		{
-			id: "2044A7BF828FC33A"
-			linked_quest: "16FDCABFC80579D5"
-			x: 5.5d
-			y: 6.5d
-		}
-		{
-			id: "795BD231E833447C"
-			linked_quest: "3B1453C435E3950B"
-			x: 7.0d
-			y: 6.5d
-		}
-		{
 			id: "37A2A19154D2A360"
 			linked_quest: "0A6534BD104A2B08"
 			x: 8.5d
@@ -291,18 +189,6 @@
 			linked_quest: "25583D0BF59E1BC8"
 			x: 4.0d
 			y: 3.5d
-		}
-		{
-			id: "6E063E3ECCA383E2"
-			linked_quest: "7FABD2E818B70D35"
-			x: 8.5d
-			y: 6.5d
-		}
-		{
-			id: "354C977EF0391CB6"
-			linked_quest: "088FE0CF9D07F9C6"
-			x: -9.5d
-			y: -4.0d
 		}
 	]
 	quests: [
@@ -348,10 +234,7 @@
 			y: -7.0d
 		}
 		{
-			dependencies: [
-				"2DC49C15916A65C2"
-				"1DA6B3308C263A6F"
-			]
+			dependencies: ["2DC49C15916A65C2"]
 			disable_toast: true
 			id: "29A965DF6AD94B80"
 			tasks: [{
@@ -363,10 +246,7 @@
 			y: -5.5d
 		}
 		{
-			dependencies: [
-				"29A965DF6AD94B80"
-				"3B2D79D40B9617D5"
-			]
+			dependencies: ["29A965DF6AD94B80"]
 			disable_toast: true
 			id: "760F3F2D5BAA554D"
 			tasks: [{
@@ -378,10 +258,7 @@
 			y: -4.0d
 		}
 		{
-			dependencies: [
-				"760F3F2D5BAA554D"
-				"689150D2A185216C"
-			]
+			dependencies: ["760F3F2D5BAA554D"]
 			disable_toast: true
 			id: "289AF2AEBB2759A5"
 			tasks: [{
@@ -479,7 +356,6 @@
 			y: 0.5d
 		}
 		{
-			dependencies: ["6EB85BBD539AEB57"]
 			id: "603BAC558368B935"
 			tasks: [
 				{
@@ -551,7 +427,6 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["4FF433145C67693F"]
 			disable_toast: true
 			id: "32BC114D5C9630BC"
 			tasks: [
@@ -622,10 +497,7 @@
 			y: -1.0d
 		}
 		{
-			dependencies: [
-				"62BA581B2918BB7B"
-				"123F0103224A8C43"
-			]
+			dependencies: ["123F0103224A8C43"]
 			id: "6C6BD459EC785524"
 			tasks: [{
 				id: "02B80B4707C41992"
@@ -636,7 +508,6 @@
 			y: -8.5d
 		}
 		{
-			dependencies: ["52FE319F5E176C37"]
 			id: "2C1F52216F0003E6"
 			tasks: [{
 				id: "7CD0CAE01546EEB9"
@@ -647,7 +518,6 @@
 			y: -8.5d
 		}
 		{
-			dependencies: ["73931EAA3EC5C9A9"]
 			id: "4CDBB14A234A17CC"
 			tasks: [{
 				id: "62DFADAAB182EEAF"
@@ -757,7 +627,6 @@
 			y: -8.5d
 		}
 		{
-			dependencies: ["5944C4DE27F98FF3"]
 			id: "73B54F4D395FB5EC"
 			optional: true
 			tasks: [{
@@ -784,7 +653,6 @@
 			y: -7.0d
 		}
 		{
-			dependencies: ["75942788374CDEF3"]
 			id: "297CE2423324B92B"
 			subtitle: "{ftbquests.line_of_progression.nand_chip.subtitle}"
 			tasks: [{
@@ -832,10 +700,6 @@
 			y: 6.5d
 		}
 		{
-			dependencies: [
-				"06EC98F6E6AFC2AF"
-				"395C32B51E768458"
-			]
 			id: "5FE5E2D9034DA872"
 			tasks: [
 				{
@@ -901,7 +765,6 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["3B1453C435E3950B"]
 			id: "0B105880E4EC0BD1"
 			tasks: [{
 				id: "6086AB2EA119E261"
@@ -912,7 +775,6 @@
 			y: -8.5d
 		}
 		{
-			dependencies: ["52FE319F5E176C37"]
 			id: "123F0103224A8C43"
 			subtitle: "{ftbquests.line_of_progression.micro_processor_mainframe.subtitle}"
 			tasks: [{
@@ -936,7 +798,6 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["5944C4DE27F98FF3"]
 			id: "1BCB63466873E3F4"
 			subtitle: "{ftbquests.line_of_progression.uev_parallel_hatch.subtitle}"
 			tasks: [{
@@ -948,7 +809,6 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["21B885A85E5764F9"]
 			description: ["{ftbquests.line_of_progression.parallel_machines.description}"]
 			id: "3377AD18FED17C17"
 			subtitle: "{ftbquests.line_of_progression.parallel_machines.subtitle}"
@@ -1132,7 +992,6 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["5B70B63D4157594F"]
 			description: ["{ftbquests.line_of_progression.perfect_overclock_machines.description}"]
 			id: "59A2D2A6FAB6B857"
 			tasks: [{
@@ -1236,7 +1095,6 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["7FABD2E818B70D35"]
 			id: "1F31C14571D0E728"
 			tasks: [{
 				id: "3A46A0E4A0E1C7C1"
@@ -1417,7 +1275,6 @@
 			y: -7.0d
 		}
 		{
-			dependencies: ["076F21506A7C19D5"]
 			description: ["{ftbquests.line_of_progression.threading_multiblocks.description}"]
 			id: "15A8836C76F01893"
 			tasks: [{
