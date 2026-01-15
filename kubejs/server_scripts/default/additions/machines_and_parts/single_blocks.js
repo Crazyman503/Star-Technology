@@ -103,17 +103,17 @@ global.not_hardmode(() => {
 
         // === Pulverizer ===
         [
-            {voltage: 'lv', conductor: 'copper', cable: 'tin'},
-            {voltage: 'mv', conductor: 'cupronickel', cable: 'copper'},
-            {voltage: 'hv', conductor: 'kanthal', cable: 'gold'},
-            {voltage: 'ev', conductor: 'nichrome', cable: 'aluminium'},
-            {voltage: 'iv', conductor: 'rtm_alloy', cable: 'platinum'},
-            {voltage: 'luv', conductor: 'hssg', cable: 'niobium_titanium'},
-            {voltage: 'zpm', conductor: 'naquadah', cable: 'vanadium_gallium'},
-            {voltage: 'uv', conductor: 'naquadah_alloy', cable: 'yttrium_barium_cuprate'},
-            {voltage: 'uhv', conductor: 'zirconium_selenide_diiodide', cable: 'europium'},
-            {voltage: 'uev', conductor: 'astatium_bioselex_carbonite', cable: 'cerium_tritelluride'},
-            {voltage: 'uiv', conductor: 'hafnide_ito_ceramic', cable: 'polonium_bismide'},
+            {voltage: 'lv', conductor: 'copper', cable: 'tin', grind: 'minecraft:diamond'},
+            {voltage: 'mv', conductor: 'cupronickel', cable: 'copper', grind: 'minecraft:diamond'},
+            {voltage: 'hv', conductor: 'kanthal', cable: 'gold', grind: 'gtceu:diamond_grinding_head'},
+            {voltage: 'ev', conductor: 'nichrome', cable: 'aluminium', grind: 'gtceu:diamond_grinding_head'},
+            {voltage: 'iv', conductor: 'rtm_alloy', cable: 'platinum', grind: 'gtceu:tungsten_grinding_head'},
+            {voltage: 'luv', conductor: 'hssg', cable: 'niobium_titanium', grind: 'gtceu:tungsten_grinding_head'},
+            {voltage: 'zpm', conductor: 'naquadah', cable: 'vanadium_gallium', grind: 'gtceu:tungsten_grinding_head'},
+            {voltage: 'uv', conductor: 'naquadah_alloy', cable: 'yttrium_barium_cuprate', grind: 'gtceu:tungsten_grinding_head'},
+            {voltage: 'uhv', conductor: 'zirconium_selenide_diiodide', cable: 'europium', grind: 'gtceu:tungsten_grinding_head'},
+            {voltage: 'uev', conductor: 'astatium_bioselex_carbonite', cable: 'cerium_tritelluride', grind: 'gtceu:tungsten_grinding_head'},
+            {voltage: 'uiv', conductor: 'hafnide_ito_ceramic', cable: 'polonium_bismide', grind: 'gtceu:tungsten_grinding_head'},
         ].forEach(tier => {
             event.shaped(`gtceu:${tier.voltage}_pulverizer`, [
                 'ABC',
@@ -125,7 +125,7 @@ global.not_hardmode(() => {
                 C: `gtceu:${tier.voltage}_electric_motor`,
                 D: `gtceu:${tier.conductor}_quadruple_wire`,
                 E: `gtceu:${tier.voltage}_machine_hull`,
-                F: 'minecraft:diamond',
+                F: tier.grind,
                 G: 'minecraft:anvil',
                 H: `#gtceu:circuits/${tier.voltage}`,
             })
