@@ -82,7 +82,7 @@ global.not_hardmode(() => {
                 for (const [tier, [casing,cable,superconductor,baseDuration]] of Object.entries(PRMrecycleMaterials)) {
                 event.remove({id:`gtceu:arc_furnace/arc_${tier}_${amps}a_energy_converter`});
                 event.remove({id:`gtceu:macerator/macerate_${tier}_${amps}a_energy_converter`});
-                let cableArc = (cable == `minecraft:copper`) ? `gtceu:annealed_copper` : cable;
+                let cableArc = (cable == `gtceu:copper`) ? `gtceu:annealed_copper` : cable;
                 let cableMac = (cable == `minecraft:gold`) ? `gtceu:gold` : cable;
                 let totalDura = baseDuration*duraMod*20;
 
