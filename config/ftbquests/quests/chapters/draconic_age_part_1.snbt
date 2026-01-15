@@ -2173,11 +2173,7 @@
 		}
 		{
 			dependencies: ["076F21506A7C19D5"]
-			description: [
-				"Machines at the pinnacle of technology...."
-				""
-				"They are slightly powerful"
-			]
+			description: ["{ftbquests.draconic_age.threading_multiblocks.description}"]
 			id: "589A4AA6BF7C5097"
 			rewards: [{
 				id: "6363036C2FF73E28"

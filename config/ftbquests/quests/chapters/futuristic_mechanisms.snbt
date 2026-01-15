@@ -1928,7 +1928,7 @@
 					type: "item"
 				}
 			]
-			title: "Naquadah Byproducts"
+			title: "{ftbquests.futuristic_mechanisms.naquadah_byproducts.title}"
 			x: 4.0d
 			y: 1.0d
 		}

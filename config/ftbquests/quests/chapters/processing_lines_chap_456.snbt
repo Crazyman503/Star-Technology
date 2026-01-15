@@ -796,7 +796,7 @@
 				"0491A3097C6BA6AE"
 				"40A015DBF6603208"
 			]
-			description: ["A semi-conductor worthy of this technology"]
+			description: ["{ftbquests.processing_lines_chap.silicon_carbide_over_bismuth_tritelluride_dust.description}"]
 			id: "22B85F7F13C66730"
 			rewards: [{
 				count: 3

@@ -1261,7 +1261,7 @@
 		}
 		{
 			dependencies: ["1C81273869C0EC9F"]
-			description: ["[\"\",{\"underlined\":1,\"translate\":\"Read About It Here\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"62D06C72396A9375\"}}]"]
+			description: ["{ftbquests.preparing_for_dimensional_travel.bulking.description}"]
 			icon: "ftbquests:book"
 			id: "79CFAA5E52FF8766"
 			tasks: [{

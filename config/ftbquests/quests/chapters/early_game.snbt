@@ -1977,7 +1977,7 @@
 					type: "item"
 				}
 			]
-			title: "Clay"
+			title: "{ftbquests.early_game.clay.title}"
 			x: -5.5d
 			y: 4.5d
 		}
@@ -2229,7 +2229,7 @@
 		{
 			dependencies: ["6B059D530FCE7428"]
 			dependency_requirement: "one_completed"
-			description: ["{ftbquests.early_game.steam_parallels.description} "]
+			description: ["{ftbquests.early_game.steam_parallels.description}"]
 			icon: "minecraft:book"
 			id: "27F5DD0860E43CFF"
 			optional: true

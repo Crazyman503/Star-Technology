@@ -654,7 +654,7 @@
 				"7ADE549CFFB6AB36"
 				"7791705FF3192010"
 			]
-			description: ["Only the longest of polymer names"]
+			description: ["{ftbquests.processing_lines_chap.pedot_pss.description}"]
 			id: "1B6159E114BA50ED"
 			rewards: [{
 				count: 4
