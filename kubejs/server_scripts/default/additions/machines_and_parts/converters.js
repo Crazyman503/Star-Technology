@@ -23,7 +23,7 @@ global.not_hardmode(() => {
         
         const PRMrecycleMaterials = {
             lv: ['gtceu:steel', 'gtceu:tin' , `gtceu:soul_infused`, 15],
-            mv: ['gtceu:aluminium', 'minecraft:copper', `gtceu:signalum`, 25],
+            mv: ['gtceu:aluminium', 'gtceu:copper' /*to make copper dust easier to manage*/, `gtceu:signalum`, 25],
             hv: [`gtceu:stainless_steel`, `minecraft:gold`, `gtceu:lumium`, 35]
         }
         const ADVrecycleMaterials = {
