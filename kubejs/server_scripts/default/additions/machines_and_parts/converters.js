@@ -2,7 +2,8 @@ global.not_hardmode(() => {
 
     ServerEvents.recipes(event => {
         const id = global.id;
-        const ST = global.ST;
+        const calculateDuration = global.calculateRecyclingDuration;
+        const calculateVoltageMultiplier = global.calculateRecyclingVoltageMultiplier;
 
         event.remove({ output: /gtceu:.*_energy_converter/ });
         // remove recyling recipes
@@ -120,15 +121,15 @@ global.not_hardmode(() => {
                 event.recipes.gtceu.arc_furnace(id(`arc_${tier}_${amps}a_energy_converter`))
                     .itemInputs(`${converterPrefix}:${tier}_${amps}a_energy_converter`)
                     .itemOutputs(outputsArc)
-                    .duration(ST.recycling.calculateDuration(outputsArc))
+                    .duration(calculateDuration(outputsArc))
                     .EUt(GTValues.VA[GTValues.LV])
                     .category(GTRecipeCategories.ARC_FURNACE_RECYCLING);
 
                 event.recipes.gtceu.macerator(id(`macerate_${tier}_${amps}a_energy_converter`))
                     .itemInputs(`${converterPrefix}:${tier}_${amps}a_energy_converter`)
                     .itemOutputs(outputsMacerator)
-                    .duration(ST.recycling.calculateDuration(outputsMacerator))
-                    .EUt(2 * ST.recycling.calculateVoltageMultiplier(outputsMacerator))
+                    .duration(calculateDuration(outputsMacerator))
+                    .EUt(2 * calculateVoltageMultiplier(outputsMacerator))
                     .category(GTRecipeCategories.MACERATOR_RECYCLING);
             }
         }
