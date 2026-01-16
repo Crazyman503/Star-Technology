@@ -2204,7 +2204,7 @@
 				"2DB216B224F2E8EF"
 				"1E981BDF3F2C577D"
 			]
-			description: ["{ftbquests.automation_age.super_ebf.description}]
+			description: ["{ftbquests.automation_age.super_ebf.description}"]
 			hide_dependent_lines: true
 			id: "09C1739F3FE3298F"
 			rewards: [{
@@ -2225,7 +2225,7 @@
 		}
 		{
 			dependencies: ["4D9DAED52FF74B8B"]
-			description: ["{ftbquests.automation_age.large_machines.description}]
+			description: ["{ftbquests.automation_age.large_machines.description}"]
 			id: "21B885A85E5764F9"
 			rewards: [{
 				count: 2

@@ -1453,7 +1453,7 @@
 				"6C03B25DB18C6546"
 			]
 			dependency_requirement: "one_completed"
-			description: ["{ftbquests.draconic_age.end_talisman.description}]
+			description: ["{ftbquests.draconic_age.end_talisman.description}"]
 			id: "4397DEEDB7C52BAC"
 			rewards: [{
 				id: "44B118BD6E9873F6"
