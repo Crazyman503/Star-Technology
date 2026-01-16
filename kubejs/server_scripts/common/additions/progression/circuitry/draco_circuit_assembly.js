@@ -146,7 +146,7 @@ ServerEvents.recipes(event => {
         'kubejs:draco_advanced_soc', 
         '4x gtceu:fine_europium_wire', 
         '4x gtceu:yttrium_barium_cuprate_bolt'
-        ], [`${Solder} 72`, `${DB} 25`], 
+        ], [`${Solder} 72`,`${PEDOT_PSS} 18`,`${DB} 25`], 
         100, GTValues.VHA[GTValues.UEV] * 1.2, 
         'kubejs:draco_advanced_soc', 160
     );
@@ -155,7 +155,7 @@ ServerEvents.recipes(event => {
         'kubejs:draco_advanced_soc', 
         '4x gtceu:fine_polonium_bismide_wire', 
         '4x gtceu:europium_bolt'
-        ], [`${Solder} 144`, `${DB} 50`], 
+        ], [`${Solder} 72`,`${PEDOT_PSS} 36`,`${DB} 50`], 
         100, GTValues.VHA[GTValues.UIV] * 1.2, 
         'kubejs:draco_advanced_soc_wafer', 160
     );
