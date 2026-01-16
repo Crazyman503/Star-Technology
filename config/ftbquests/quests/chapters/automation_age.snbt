@@ -378,16 +378,7 @@
 				"3CB63B290C9EFAA2"
 				"73931EAA3EC5C9A9"
 			]
-			description: [
-				"{ftbquests.automation_age.quest14.description}"
-				""
-				"{ftbquests.automation_age.quest14.description2}"
-				""
-				"{ftbquests.automation_age.quest14.description3}"
-				"{ftbquests.automation_age.quest14.description4}"
-				""
-				"{ftbquests.automation_age.quest14.description5}"
-			]
+			description: ["{ftbquests.automation_age.maintenance_hatch_types.description}"]
 			id: "0F144FEF99D7D04C"
 			rewards: [{
 				id: "5A529DFCB691E409"
@@ -699,7 +690,7 @@
 				"74749B089D50329C"
 				"77303F30F0A44393"
 			]
-			description: ["{ftbquests.automation_age.quest26.description}"]
+			description: ["{ftbquests.automation_age.ev_64a_energy_converter.description}"]
 			id: "5D3006AB62E2CE9B"
 			rewards: [{
 				id: "601186952EBAB995"

@@ -6,7 +6,7 @@
 	group: "1E0FC4EA21F735F7"
 	icon: "minecraft:sand"
 	id: "459D60183D34C29E"
-	order_index: 4
+	order_index: 5
 	progression_mode: "linear"
 	quest_links: [
 		{
@@ -2093,7 +2093,7 @@
 				"25583D0BF59E1BC8"
 				"7AC55BA8BDD0F3D2"
 			]
-			description: ["{ftbquests.draconic_age.quest67.description}"]
+			description: ["{ftbquests.abydos.oneiric_relay.description}"]
 			id: "0DFAD40205E5D899"
 			rewards: [{
 				id: "6C05E0C359C06382"

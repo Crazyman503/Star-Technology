@@ -6,7 +6,7 @@
 	group: "1E0FC4EA21F735F7"
 	icon: "sgjourney:classic_stargate"
 	id: "62A72817F92AC262"
-	order_index: 3
+	order_index: 4
 	progression_mode: "linear"
 	quest_links: [{
 		id: "6AA4625E98ED37B8"

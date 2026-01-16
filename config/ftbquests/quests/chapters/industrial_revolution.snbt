@@ -1509,7 +1509,7 @@
 				"13B656D92E651FB4"
 				"54549EC141659C30"
 			]
-			description: ["{ftbquests.industrial_revolution.quest69.description}"]
+			description: ["{ftbquests.industrial_revolution.void_extractor.description}"]
 			icon: "gtceu:void_extractor"
 			id: "30B2688F8387048F"
 			rewards: [{
