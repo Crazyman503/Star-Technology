@@ -50,7 +50,7 @@ ItemEvents.rightClicked('kubejs:compass_of_the_flame', event => {
     let structureHolder = structureRegistry.getHolderOrThrow(structureKey);
 
     if (!structureHolder){
-        player.tell(Text.translate(`§7You can only use this in §4The Nether§7, please try again`));
+        player.tell(Text.translate(`item.kubejs.compass_of_the_flame.failed`));
         return
     }
 
@@ -69,9 +69,9 @@ ItemEvents.rightClicked('kubejs:compass_of_the_flame', event => {
         if (start && start.isValid()) {
             let piece = start.getPieces()[0];
             let {x, y, z} = piece.locatorPosition;
-            event.player.tell(Text.translate(`§7The nearest shrine is at§6 { ${x}, ${y}, ${z} }`));
+            event.player.tell(Text.translate(`item.kubejs.compass_of_the_flame.located` + `§6 { ${x}, ${y}, ${z} }`));
         }
     } else {
-        player.tell(Text.translate(`§7You can only use this in §4The Nether§7, please try again`));
+        player.tell(Text.translate(`item.kubejs.compass_of_the_flame.failed`));
     }
 })
