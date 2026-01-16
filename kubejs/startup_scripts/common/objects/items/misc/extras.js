@@ -17,6 +17,11 @@ StartupEvents.registry('item', event => {
     event.create('zalloyic_fluid_mold')
         .texture('kubejs:item/misc/extra/zalloyic_fluid_mold');
 
+    event.create(`compass_of_the_flame`)
+        .tooltip(Text.translate(`item.kubejs.compass_of_the_flame.tooltip`))
+        .texture(`kubejs:item/misc/extra/compass_of_the_flame`)
+        .maxStackSize(1);
+
     //Tier Multiblocks
     event.create('multiblock_upgrade_kit')
         .tooltip(Text.translate('item.kubejs.multiblock_upgrade_kit.tooltip'))
