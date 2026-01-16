@@ -506,7 +506,7 @@
     "item.kubejs.ingot_ceramic_casting_mold": "Ingot Ceramic Casting Mold",
     "item.kubejs.ball_ceramic_casting_mold": "Ball Ceramic Casting Mold",
 
-    "item.kubejs.compass_of_the_flame.located": "§7The nearest shrine is at",
+    "item.kubejs.compass_of_the_flame.success": "§7The nearest shrine is at:",
     "item.kubejs.compass_of_the_flame.failed": "§7You can only use this in §4The Nether§7, please try again",
     "item.kubejs.compass_of_the_flame": "§6Compass of the Flame",
     "item.kubejs.compass_of_the_flame.tooltip": "§7Right click to locate nearest nether shrine",

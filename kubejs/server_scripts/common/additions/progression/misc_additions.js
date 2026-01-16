@@ -69,7 +69,9 @@ ItemEvents.rightClicked('kubejs:compass_of_the_flame', event => {
         if (start && start.isValid()) {
             let piece = start.getPieces()[0];
             let {x, y, z} = piece.locatorPosition;
-            event.player.tell(Text.translate(`item.kubejs.compass_of_the_flame.located` + `§6 { ${x}, ${y}, ${z} }`));
+            player.tell(Text.translate(`item.kubejs.compass_of_the_flame.success`)); 
+            player.tell(`§6{ ${x}, ${y}, ${z} }`);
+            console.log(Text.translate(`item.kubejs.compass_of_the_flame.success`));
         }
     } else {
         player.tell(Text.translate(`item.kubejs.compass_of_the_flame.failed`));
