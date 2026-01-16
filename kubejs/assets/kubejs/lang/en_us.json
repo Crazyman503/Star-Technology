@@ -507,8 +507,8 @@
     "item.kubejs.ball_ceramic_casting_mold": "Ball Ceramic Casting Mold",
 
     
-    "item.kubejs.compass_of_the_flame": "Compass of the Flame",
-    "item.kubejs.compass_of_the_flame.tooltip": "Right click to locate nearest nether shrine",
+    "item.kubejs.compass_of_the_flame": "§6Compass of the Flame",
+    "item.kubejs.compass_of_the_flame.tooltip": "§7Right click to locate nearest nether shrine",
 
     "block.kubejs.reinforced_stone_bricks": "Reinforced Stone Bricks",
     "block.kubejs.high_steam_machine_casing": "Sturdy Steam Machine Casing",

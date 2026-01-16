@@ -10,19 +10,36 @@ let Holder = Java.loadClass("net.minecraft.core.Holder")
 ServerEvents.recipes (event => {
     const id = global.id;
 
-    event.recipes.gtceu.assembly_line(id(`compass_of_the_flame`))
-        .itemInputs(`gtceu:calamatium_frame`, `4x gtceu:dense_ancient_netherite_plate`, `4x #gtceu:circuits/uev`,`gtceu:uhv_sensor`, `4x gtceu:long_magnetic_zapolgium_rod`,`8x gtceu:isovol_screw`)
+
+    let cpaRecipe = event.recipes.gtceu.component_part_assembly(id(`compass_of_the_flame`))
+        .itemInputs(`gtceu:calamatium_frame`, `4x gtceu:dense_ancient_netherite_plate`, `4x #gtceu:circuits/uev`,`gtceu:uhv_sensor`, `gtceu:long_magnetic_zapolgium_rod`,`8x gtceu:isovol_screw`)
         .inputFluids(`gtceu:indium_tin_lead_cadmium_soldering_alloy 1520`, `start_core:flamewake_solvent 10000`)
         .itemOutputs(`kubejs:compass_of_the_flame`)
         .duration(4000)
-        .stationResearch (
-            researchRecipeBuilder => researchRecipeBuilder
-                .researchStack(Item.of(`gtceu:dense_ancient_netherite_plate`))
+        .EUt(4194304);
+    
+    cpaRecipe = cpaRecipe.stationResearch(
+        researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of(`minecraft:recovery_compass`))
                 .EUt(983040)
                 .CWUt(160)
+    );
+
+    event.recipes.gtceu.research_station(`1_x_compass_of_the_flame_cpa`)
+        .itemInputs(`start_core:data_dna_disk`)
+        .itemInputs(`minecraft:recovery_compass`)
+        .itemOutputs(
+            Item.of(
+                `start_core:data_dna_disk`,
+                `{assembly_line_research:{research_id:"1x_minecraft_recovery_compass",research_type:"gtceu:component_part_assembly"}}`
+            )
         )
-        .EUt(4194304);
-})
+        .CWUt(160)
+        .totalCWU(640000)
+        .EUt (983040);
+}) 
+
+        
 
 ItemEvents.rightClicked('kubejs:compass_of_the_flame', event => {
     let { level,player } = event;
@@ -33,7 +50,7 @@ ItemEvents.rightClicked('kubejs:compass_of_the_flame', event => {
     let structureHolder = structureRegistry.getHolderOrThrow(structureKey);
 
     if (!structureHolder){
-        player.tell(`You can only use this in the nether, please try again`);
+        player.tell(Text.translate(`§7You can only use this in §4The Nether§7, please try again`));
         return
     }
 
@@ -52,9 +69,9 @@ ItemEvents.rightClicked('kubejs:compass_of_the_flame', event => {
         if (start && start.isValid()) {
             let piece = start.getPieces()[0];
             let {x, y, z} = piece.locatorPosition;
-            event.player.tell(Text.translate(`The nearest shrine is at ${x}, ${y}, ${z}`));
+            event.player.tell(Text.translate(`§7The nearest shrine is at§6 { ${x}, ${y}, ${z} }`));
         }
     } else {
-        player.tell(`You can only use this in the nether, please try again`);
+        player.tell(Text.translate(`§7You can only use this in §4The Nether§7, please try again`));
     }
 })
