@@ -308,6 +308,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["3B2D79D40B9617D5"]
 			description: ["{ftbquests.futuristic_mechanisms.rhodium_plated_palladium_ingot.description}"]
 			id: "1C154476DB77B773"
 			rewards: [{

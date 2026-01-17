@@ -1605,7 +1605,12 @@
 				"7908E8C196F82F9B"
 			]
 			dependency_requirement: "one_completed"
-			description: ["{ftbquests.industrial_revolution.etching_liquids.description}"]
+			description: [
+				"{ftbquests.industrial_revolution.etching_liquids.description}"
+				""
+				"[ \"===> [\", { \"text\": \"Na2S2O8\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"261B946701411D9C\" } }, \"] <===\" ]"
+				"[ \"===> [\", { \"text\": \"FeCl3\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"261B946701411D9C\" } }, \"] <===\" ]"
+			]
 			icon: "gtceu:sodium_bisulfate_dust"
 			id: "3A20504009C70217"
 			tasks: [{
@@ -1735,7 +1740,10 @@
 		}
 		{
 			dependencies: ["53E98CFC7934FA67"]
-			description: ["{ftbquests.industrial_revolution.power_chapter.description}"]
+			description: [
+				"{ftbquests.industrial_revolution.power_chapter.description}"
+				"[ \"===> [\", { \"text\": \"X\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"10A89CD14C4DAF63\" } }, \"] <===\" ]"
+			]
 			icon: "gtceu:tin_quadruple_cable"
 			id: "36BE4A7635DF3A1B"
 			optional: true
