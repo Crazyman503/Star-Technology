@@ -1,12 +1,3 @@
-let ServerLevel = Java.loadClass("net.minecraft.server.level.ServerLevel")
-let BlockPos = Java.loadClass("net.minecraft.core.BlockPos")
-let ChunkPos = Java.loadClass("net.minecraft.world.level.ChunkPos")
-let SectionPos = Java.loadClass("net.minecraft.core.SectionPos")
-let ResourceLocation = Java.loadClass("net.minecraft.resources.ResourceLocation")
-let Registries = Java.loadClass("net.minecraft.core.registries.Registries")
-let HolderSet = Java.loadClass("net.minecraft.core.HolderSet")
-let Holder = Java.loadClass("net.minecraft.core.Holder")
-
 ServerEvents.recipes (event => {
     const id = global.id;
 
