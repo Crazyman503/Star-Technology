@@ -228,12 +228,12 @@ ServerEvents.recipes(event => {
     );
     DracoCircuitAssembler('cheap_abyssal_processor','4x kubejs:abyssal_processor',[
         AbCPU, 
-        'kubejs:riftic_soc', 
+        'kubejs:rift_infused_soc', 
         '4x gtceu:fine_lepton_resonant_thallium_antimonide_wire', 
         '4x gtceu:polonium_bismide_bolt'
         ], [`${Solder} 432`, `${PEDOT_PSS} 216`, `${DES} 75`], 
         100, GTValues.VHA[GTValues.UIV] * 1.2, 
-        'kubejs:riftic_soc', 216
+        'kubejs:rift_infused_soc', 216
     );
     
 });

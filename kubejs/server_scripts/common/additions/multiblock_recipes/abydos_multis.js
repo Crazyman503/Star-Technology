@@ -76,16 +76,30 @@ ServerEvents.recipes(event => {
     //     )
     //     .EUt(GTValues.VHA[GTValues.UV]); 
 
+    event.recipes.gtceu.assembly_line(id('compact_assembly_line'))
+        .itemInputs('4x gtceu:assembly_line','8x #gtceu:circuits/uhv','8x gtceu:uv_robot_arm','2x gtceu:uhv_electric_pump',
+            '32x gtceu:fine_trinaquadalloy_wire','16x gtceu:pure_netherite_screw','64x gtceu:uhpic_chip','32x gtceu:uhpic_chip')
+        .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 14688', 'gtceu:tungsten_disulfide 9504', 'gtceu:naquadria 1152')
+        .itemOutputs('gtceu:compact_assembly_line')
+        .duration(1500)
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of('gtceu:assembly_line'))
+                .EUt(GTValues.VHA[GTValues.UV])
+                .CWUt(128)
+        )
+        .EUt(GTValues.VHA[GTValues.UHV]);
+
     event.recipes.gtceu.assembly_line(id('component_nexus'))
-        .itemInputs('4x gtceu:assembly_line','6x #gtceu:circuits/uev','6x gtceu:uhv_robot_arm','8x kubejs:uhv_high_strength_panel',
-            '2x gtceu:uhv_fluid_regulator', '4x kubejs:uhv_voltage_coil', '32x gtceu:fine_stellarium_wire', '16x gtceu:neutronium_screw',
+        .itemInputs('2x gtceu:compact_assembly_line','6x #gtceu:circuits/uev','6x gtceu:uhv_robot_arm','8x kubejs:uhv_high_strength_panel',
+            '4x gtceu:uhv_conveyor_module', '4x kubejs:uhv_voltage_coil', '64x gtceu:fine_stellarium_wire', '32x gtceu:neutronium_screw',
             '64x gtceu:uhpic_chip','64x gtceu:uhpic_chip','32x gtceu:uhpic_chip')
-        .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 25056', 'gtceu:lubricant 16000', 'gtceu:utopian_akreyrium 1000')
+        .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 25056', 'gtceu:tungsten_disulfide 16000', 'gtceu:utopian_akreyrium 1000')
         .itemOutputs('gtceu:component_nexus')
         .duration(1800)
         .stationResearch(
             researchRecipeBuilder => researchRecipeBuilder
-                .researchStack(Item.of('gtceu:large_assembler'))
+                .researchStack(Item.of('gtceu:compact_assembly_line'))
                 .EUt(GTValues.VHA[GTValues.UHV])
                 .CWUt(144)
         )

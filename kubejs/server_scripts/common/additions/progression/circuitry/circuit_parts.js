@@ -47,7 +47,7 @@ ServerEvents.recipes(event => {
 
     livingSMD('diode', 32, [
             '2x gtceu:nickel_zinc_ferrite_dust', 
-            'kubejs:naquadah_chip', 
+            'gtceu:naquadah_wafer', 
             '6x gtceu:fine_indium_tin_barium_titanium_cuprate_wire'
         ], 288, 180
     );
@@ -109,7 +109,7 @@ ServerEvents.recipes(event => {
 
     dracoQMD('diode', 32, [
             '2x gtceu:silicon_carbide_over_bismuth_tritelluride_dust', 
-            'kubejs:neutronium_chip', 
+            'gtceu:neutronium_wafer', 
             '8x gtceu:fine_stellarium_wire'
         ], 432
     );
@@ -178,7 +178,7 @@ ServerEvents.recipes(event => {
         
     dracoQMDInMCSF(`draconic_qmd_diode`, 32, [
             `${scalerMCSF * .75 * 2}x gtceu:silicon_carbide_over_bismuth_tritelluride_dust`, 
-            `${scalerMCSF * .75}x kubejs:neutronium_chip`, 
+            `${scalerMCSF * .75}x gtceu:neutronium_wafer`, 
             `${scalerMCSF * .75 * 8}x gtceu:fine_stellarium_wire`
         ], [
             `gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate ${scalerMCSF * .75 * 432}`,`gtceu:naquadated_soldering_alloy ${scalerMCSF * .75 * 648}`
