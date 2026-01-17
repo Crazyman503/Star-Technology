@@ -26,6 +26,7 @@
 	]
 	quests: [
 		{
+			dependencies: ["0C0C0FBDE1760110"]
 			id: "53A9F3758C218CDC"
 			rewards: [{
 				count: 2
@@ -45,7 +46,10 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["53A9F3758C218CDC"]
+			dependencies: [
+				"53A9F3758C218CDC"
+				"272CE9BF358D64FE"
+			]
 			description: ["{ftbquests.futuristic_mechanisms.iv_circuit_assembler.description}"]
 			id: "4ED562DC235425FE"
 			rewards: [{
@@ -121,7 +125,10 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["421DF7880AD00F58"]
+			dependencies: [
+				"421DF7880AD00F58"
+				"18A88F62B17CE9EC"
+			]
 			hide_dependent_lines: true
 			id: "79428BAEAA7856E1"
 			rewards: [{
@@ -142,6 +149,10 @@
 			y: 5.0d
 		}
 		{
+			dependencies: [
+				"6F008C23D5DE50D6"
+				"2DB216B224F2E8EF"
+			]
 			icon: "gtceu:qbit_cpu_chip"
 			id: "1E1DF0982ECDD7D0"
 			rewards: [{
@@ -329,6 +340,7 @@
 		}
 		{
 			dependencies: [
+				"020048FAC9576691"
 				"53A9F3758C218CDC"
 				"0055CE82469F239C"
 			]
@@ -351,7 +363,11 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["138E77CDBA50A619"]
+			dependencies: [
+				"020048FAC9576691"
+				"138E77CDBA50A619"
+				"272CE9BF358D64FE"
+			]
 			description: ["{ftbquests.futuristic_mechanisms.assembly_line.description}"]
 			icon: "gtceu:assembly_line"
 			id: "0094C2E72105E8CA"
@@ -384,9 +400,6 @@
 						Count: 1
 						id: "itemfilters:or"
 						tag: {
-							display: {
-								Name: "{ftbquests.futuristic_mechanisms.assembly_line.item_title}"
-							}
 							items: [
 								{
 									Count: 1b
@@ -399,6 +412,7 @@
 							]
 						}
 					}
+					title: "{ftbquests.futuristic_mechanisms.assembly_line.item_title}"
 					type: "item"
 				}
 			]
@@ -458,6 +472,7 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["3B2D79D40B9617D5"]
 			description: ["{ftbquests.futuristic_mechanisms.ruridit_ingot.description}"]
 			id: "138E77CDBA50A619"
 			rewards: [{
@@ -1238,7 +1253,10 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["445BC7DFD3387DD4"]
+			dependencies: [
+				"05F2C7351FF1B0E5"
+				"445BC7DFD3387DD4"
+			]
 			description: ["{ftbquests.futuristic_mechanisms.uhpic_chip.description}"]
 			icon: "gtceu:uhpic_chip"
 			id: "5BA69EDC3C223B2C"
@@ -1696,6 +1714,10 @@
 			y: 3.0d
 		}
 		{
+			dependencies: [
+				"5B575348D2A871BB"
+				"4FF433145C67693F"
+			]
 			dependency_requirement: "one_completed"
 			description: ["{ftbquests.futuristic_mechanisms.reinforced_epoxy_resin_plate.description}"]
 			id: "45AAA2B53069E806"
@@ -1776,6 +1798,7 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["059FD3E475A05070"]
 			description: ["{ftbquests.futuristic_mechanisms.data_orb.description}"]
 			id: "507FE905D3BB8B3D"
 			rewards: [{
@@ -1793,6 +1816,7 @@
 			y: -8.0d
 		}
 		{
+			dependencies: ["1DA6B3308C263A6F"]
 			id: "4DE577541BB6DD00"
 			shape: "circle"
 			tasks: [{

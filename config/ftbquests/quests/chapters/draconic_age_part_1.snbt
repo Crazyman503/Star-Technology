@@ -77,7 +77,11 @@
 		}
 		{
 			dependencies: ["4DF07CB3D60C901C"]
-			description: ["{ftbquests.draconic_age.husk_of_the_flame.description}"]
+			description: [
+				"{ftbquests.draconic_age.husk_of_the_flame.description}"
+				""
+				"{image:kubejs:textures/quests/husk_structure.png width:360 height:180 align:center fit:true}"
+			]
 			id: "71145B6D6BA8016A"
 			rewards: [{
 				id: "71AD72BA81F1063D"
@@ -541,6 +545,7 @@
 			]
 			description: [
 				"{ftbquests.draconic_age.draco_infusion.description.1}"
+				"{image:kubejs:textures/quests/infusion_recipe.png width:120 height:80 align:center}"
 				"{@pagebreak}"
 				"{ftbquests.draconic_age.draco_infusion.description.2}"
 			]
@@ -2146,9 +2151,6 @@
 					Count: 1
 					id: "itemfilters:or"
 					tag: {
-						display: {
-							Name: "{ftbquests.draconic_age.hell_forge_catalysts.item_title}"
-						}
 						items: [
 							{
 								Count: 1b
@@ -2165,6 +2167,7 @@
 						]
 					}
 				}
+				title: "{ftbquests.draconic_age.hell_forge_catalysts.item_title}"
 				type: "item"
 			}]
 			title: "{ftbquests.draconic_age.hell_forge_catalysts.title}"
@@ -2186,9 +2189,6 @@
 					Count: 1
 					id: "itemfilters:or"
 					tag: {
-						display: {
-							Name: "{ftbquests.draconic_age.threading_multiblocks.title}"
-						}
 						items: [
 							{
 								Count: 1b
@@ -2237,6 +2237,7 @@
 						]
 					}
 				}
+				title: "{ftbquests.draconic_age.threading_multiblocks.title}"
 				type: "item"
 			}]
 			x: 10.0d

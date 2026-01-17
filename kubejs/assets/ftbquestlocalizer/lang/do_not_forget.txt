@@ -2,14 +2,3 @@ Ultra, do not forget the following things
 
 General:
 - You broke all the quest links, make sure they redirect properly
-- Check all images, multiple broken ones already spotted
-
-Specific:
-- Tasks are called OR-filter
-    - Essence Burner (MA)
-    - Mystical Greenhouse (MA)
-    - Rotor Holders (Power)
-
-- mechanics > throughput boosting = format error 2nd page
-- mechanics > bulking = format error
-- mechanics > threading = format error 3rd, 4th, 5th page

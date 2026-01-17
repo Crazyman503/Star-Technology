@@ -28,6 +28,14 @@
 			x: 5.0d
 			y: 5.5d
 		}
+		{
+			id: "46DF7D3C17E47774"
+			linked_quest: "73931EAA3EC5C9A9"
+			shape: "gear"
+			size: 1.5d
+			x: 16.0d
+			y: 3.5d
+		}
 	]
 	quests: [
 		{
@@ -853,9 +861,6 @@
 					Count: 1
 					id: "itemfilters:or"
 					tag: {
-						display: {
-							Name: "{ftbquests.industrial_revolution.mv_energy_converter.title}"
-						}
 						items: [
 							{
 								Count: 1b
@@ -880,6 +885,7 @@
 						]
 					}
 				}
+				title: "{ftbquests.industrial_revolution.mv_energy_converter.title}"
 				type: "item"
 			}]
 			x: 8.0d

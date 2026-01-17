@@ -11,6 +11,22 @@
 	progression_mode: "flexible"
 	quest_links: [
 		{
+			id: "401EBC740289B8B1"
+			linked_quest: "439D8AE6D3DC41AF"
+			shape: "gear"
+			size: 1.5d
+			x: -2.5d
+			y: 6.0d
+		}
+		{
+			id: "31A47C784DBE6072"
+			linked_quest: "22BC7BDE5E132A30"
+			shape: "gear"
+			size: 1.5d
+			x: 6.5d
+			y: 3.0d
+		}
+		{
 			id: "427772AB7DFDCDFA"
 			linked_quest: "26D3E2C0599B43B2"
 			x: -7.0d
@@ -68,9 +84,6 @@
 						Count: 1
 						id: "itemfilters:or"
 						tag: {
-							display: {
-								Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Saplings\"}"
-							}
 							items: [
 								{
 									Count: 1b
@@ -103,6 +116,7 @@
 							]
 						}
 					}
+					title: "{ftbquests.resource_production.sieving_dirt.item_title}"
 					type: "item"
 				}
 				{
@@ -1572,6 +1586,7 @@
 			y: -4.5d
 		}
 		{
+			dependencies: ["22BC7BDE5E132A30"]
 			icon: {
 				Count: 1
 				id: "minecraft:grass_block"
@@ -1587,6 +1602,7 @@
 			y: 4.5d
 		}
 		{
+			dependencies: ["22BC7BDE5E132A30"]
 			icon: {
 				Count: 1
 				id: "minecraft:sand"
@@ -2096,9 +2112,6 @@
 						Count: 1
 						id: "itemfilters:or"
 						tag: {
-							display: {
-								Name: "{ftbquests.resource_production.wood_products.title}"
-							}
 							items: [
 								{
 									Count: 1b
@@ -2124,6 +2137,7 @@
 						}
 					}
 					optional_task: true
+					title: "{ftbquests.resource_production.wood_products.title}"
 					type: "item"
 				}
 			]
@@ -2151,9 +2165,6 @@
 						Count: 1
 						id: "itemfilters:or"
 						tag: {
-							display: {
-								Name: "{ftbquests.resource_production.coal_products.title}"
-							}
 							items: [
 								{
 									Count: 1b
@@ -2169,6 +2180,7 @@
 						}
 					}
 					optional_task: true
+					title: "{ftbquests.resource_production.coal_products.title}"
 					type: "item"
 				}
 			]
@@ -2196,9 +2208,6 @@
 						Count: 1
 						id: "itemfilters:or"
 						tag: {
-							display: {
-								Name: "{ftbquests.resource_production.bio_products.title}"
-							}
 							items: [
 								{
 									Count: 1b
@@ -2214,6 +2223,7 @@
 						}
 					}
 					optional_task: true
+					title: "{ftbquests.resource_production.bio_products.title}"
 					type: "item"
 				}
 			]
@@ -2221,6 +2231,7 @@
 			y: 4.5d
 		}
 		{
+			dependencies: ["439D8AE6D3DC41AF"]
 			id: "2C10C159C75C3068"
 			tasks: [{
 				id: "7062C551157615DB"
@@ -2344,6 +2355,7 @@
 			y: 8.5d
 		}
 		{
+			dependencies: ["22BC7BDE5E132A30"]
 			icon: "minecraft:netherrack"
 			id: "4E6158880F47AACC"
 			tasks: [{
@@ -2382,7 +2394,6 @@
 				"30AB8331D0B80859"
 				"2FF64174BEF10D64"
 			]
-			description: ["{ftbquests.resource_production.processing_lines_71.description}"]
 			id: "4D7583FF99404C6D"
 			tasks: [{
 				id: "7BDD424C5B7480B1"

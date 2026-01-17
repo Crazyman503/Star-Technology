@@ -6,14 +6,22 @@
 	icon: "kubejs:mv_upgrade_kit"
 	id: "10A89CD14C4DAF63"
 	order_index: 0
-	quest_links: [{
-		id: "13C9063DC43B058F"
-		linked_quest: "3232A7A69C2905D9"
-		shape: "octagon"
-		size: 1.25d
-		x: -6.5d
-		y: -2.0d
-	}]
+	quest_links: [
+		{
+			id: "564046CF37ECA3FE"
+			linked_quest: "7B0133D388101F68"
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			id: "13C9063DC43B058F"
+			linked_quest: "3232A7A69C2905D9"
+			shape: "octagon"
+			size: 1.25d
+			x: -6.5d
+			y: -2.0d
+		}
+	]
 	quests: [
 		{
 			dependencies: [
@@ -219,7 +227,7 @@
 			size: 1.25d
 			tasks: [{
 				id: "2739B3C9FA296C7F"
-				title: "{ftbquests.power.gregtech_generators.task_2826487921218514047.title}"
+				title: "{ftbquests.power.gregtech_generators.title}"
 				type: "checkmark"
 			}]
 			x: -3.0d
@@ -227,6 +235,8 @@
 		}
 		{
 			dependencies: [
+				"3CB63B290C9EFAA2"
+				"73931EAA3EC5C9A9"
 				"05C51AB556798DB5"
 				"4F2692F874F68EF8"
 			]
@@ -242,6 +252,8 @@
 		}
 		{
 			dependencies: [
+				"74749B089D50329C"
+				"62BA581B2918BB7B"
 				"3686ABF30E4B9ED6"
 				"121EFB24BE239D59"
 			]
@@ -257,6 +269,7 @@
 		}
 		{
 			dependencies: [
+				"4D9DAED52FF74B8B"
 				"1AE561E8FE98FB21"
 				"51F889E1432E4DAD"
 			]
@@ -272,6 +285,8 @@
 		}
 		{
 			dependencies: [
+				"74749B089D50329C"
+				"52FE319F5E176C37"
 				"2E47A710168F7FF8"
 				"121EFB24BE239D59"
 			]
@@ -1461,7 +1476,10 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["4F2692F874F68EF8"]
+			dependencies: [
+				"1820787D031EAB15"
+				"4F2692F874F68EF8"
+			]
 			description: ["{ftbquests.power.flux_dust.description}"]
 			id: "6BE70F5B5287034B"
 			shape: "octagon"
@@ -1639,6 +1657,7 @@
 		}
 		{
 			dependencies: [
+				"759FF87FC22D814D"
 				"3A485956C34C8840"
 				"4F2692F874F68EF8"
 			]
@@ -1662,6 +1681,7 @@
 		}
 		{
 			dependencies: [
+				"60EB030A899ADE28"
 				"3FE17E376E30FFE4"
 				"121EFB24BE239D59"
 			]
@@ -1714,9 +1734,6 @@
 					Count: 1
 					id: "itemfilters:or"
 					tag: {
-						display: {
-							Name: "{ftbquests.power.rotor_holders.title}"
-						}
 						items: [
 							{
 								Count: 1b
@@ -1753,6 +1770,7 @@
 						]
 					}
 				}
+				title: "{ftbquests.power.rotor_holders.title}"
 				type: "item"
 			}]
 			x: -1.5d
@@ -1857,7 +1875,10 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["121EFB24BE239D59"]
+			dependencies: [
+				"7B0133D388101F68"
+				"121EFB24BE239D59"
+			]
 			id: "41EAECAF8750C84A"
 			tasks: [{
 				id: "24AF90BE6D218315"
@@ -2124,7 +2145,10 @@
 		}
 		{
 			dependencies: ["6FB365E6C91B482E"]
-			description: ["{ftbquests.power.dont_worry_about_it.description}"]
+			description: [
+				"{ftbquests.power.dont_worry_about_it.description}"
+				"{image:komarumod:textures/painting/komaru_god.png width:100 height:100 align:center}"
+			]
 			hide_dependent_lines: true
 			icon: {
 				Count: 1

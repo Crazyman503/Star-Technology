@@ -1520,6 +1520,7 @@
 			y: -4.0d
 		}
 		{
+			dependencies: ["73931EAA3EC5C9A9"]
 			hide_dependency_lines: true
 			id: "6AC8588F6172617D"
 			shape: "rsquare"
@@ -1532,6 +1533,7 @@
 			y: -8.0d
 		}
 		{
+			dependencies: ["3CB63B290C9EFAA2"]
 			id: "63A83F8EC256BE94"
 			shape: "rsquare"
 			tasks: [{
@@ -1551,9 +1553,6 @@
 					Count: 1
 					id: "itemfilters:or"
 					tag: {
-						display: {
-							Name: "{ftbquests.mystical_agriculture_gregified.mystical_greenhouse.item_title}"
-						}
 						items: [
 							{
 								Count: 1b
@@ -1590,6 +1589,7 @@
 						]
 					}
 				}
+				title: "{ftbquests.mystical_agriculture_gregified.mystical_greenhouse.item_title}"
 				type: "item"
 			}]
 			title: "{ftbquests.mystical_agriculture_gregified.mystical_greenhouse.title}"
@@ -1605,9 +1605,6 @@
 					Count: 1
 					id: "itemfilters:or"
 					tag: {
-						display: {
-							Name: "{ftbquests.mystical_agriculture_gregified.essence_burner.irwm_title}"
-						}
 						items: [
 							{
 								Count: 1b
@@ -1644,6 +1641,7 @@
 						]
 					}
 				}
+				title: "{ftbquests.mystical_agriculture_gregified.essence_burner.item_title}"
 				type: "item"
 			}]
 			title: "{ftbquests.mystical_agriculture_gregified.essence_burner.title}"

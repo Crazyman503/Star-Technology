@@ -267,9 +267,6 @@
 						Count: 1
 						id: "itemfilters:or"
 						tag: {
-							display: {
-								Name: "{ftbquests.early_game.hammers.item_title}"
-							}
 							items: [
 								{
 									Count: 1b
@@ -309,6 +306,7 @@
 							]
 						}
 					}
+					title: "{ftbquests.early_game.hammers.item_title}"
 					type: "item"
 				}
 			]
@@ -1480,9 +1478,9 @@
 						]
 					}
 				}
+				title: "{ftbquests.early_game.create.title}"
 				type: "item"
 			}]
-			title: "{ftbquests.early_game.create.title}"
 			x: -1.0d
 			y: -6.0d
 		}
@@ -1581,10 +1579,10 @@
 							]
 						}
 					}
+					title: "{ftbquests.early_game.diesel_engine.title}"
 					type: "item"
 				}
 			]
-			title: "{ftbquests.early_game.diesel_engine.title}"
 			x: 0.0d
 			y: -5.0d
 		}
@@ -2033,9 +2031,6 @@
 						Count: 1
 						id: "itemfilters:or"
 						tag: {
-							display: {
-								Name: "{ftbquests.early_game.steam_boilers.item.low}"
-							}
 							items: [
 								{
 									Count: 1b
@@ -2053,6 +2048,7 @@
 						}
 					}
 					optional_task: true
+					title: "{ftbquests.early_game.steam_boilers.item.low}"
 					type: "item"
 				}
 				{
@@ -2061,9 +2057,6 @@
 						Count: 1
 						id: "itemfilters:or"
 						tag: {
-							display: {
-								Name: "{ftbquests.early_game.steam_boilers.item.high}"
-							}
 							items: [
 								{
 									Count: 1b
@@ -2081,6 +2074,7 @@
 						}
 					}
 					optional_task: true
+					title: "{ftbquests.early_game.steam_boilers.item.high}"
 					type: "item"
 				}
 			]
@@ -2256,9 +2250,6 @@
 					Count: 1
 					id: "itemfilters:or"
 					tag: {
-						display: {
-							Name: "{ftbquests.early_game.reach_upgrades.title}"
-						}
 						items: [
 							{
 								Count: 1b
@@ -2275,6 +2266,7 @@
 						]
 					}
 				}
+				title: "{ftbquests.early_game.reach_upgrades.title}"
 				type: "item"
 			}]
 			x: 2.0d

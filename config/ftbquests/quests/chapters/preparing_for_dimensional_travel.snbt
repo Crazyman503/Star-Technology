@@ -1290,9 +1290,6 @@
 					Count: 1
 					id: "itemfilters:or"
 					tag: {
-						display: {
-							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"UV Wireless Power\"}"
-						}
 						items: [
 							{
 								Count: 1b
@@ -1318,6 +1315,7 @@
 					}
 				}
 				optional_task: true
+				title: "{ftbquests.preparing_for_dimensional_travel.wireless_covers_hatches.item_title}"
 				type: "item"
 			}]
 			title: "{ftbquests.preparing_for_dimensional_travel.wireless_covers_hatches.title}"
