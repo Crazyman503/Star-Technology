@@ -13,7 +13,7 @@ GTCEuServerEvents.fluidVeins(event => {
   ] // Remove All doesnt exist for fluids
 
   fluidVeinRemoved.forEach(vein => {
-    event.remove(vein);
+    event.remove(`gtceu:${vein}`);
   });
 
   // === Abydos Veins ===
