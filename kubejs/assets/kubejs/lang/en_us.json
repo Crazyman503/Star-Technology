@@ -398,6 +398,11 @@
     "item.kubejs.uxv_universal_circuit": "§eUXV§r Universal Circuit",
     "item.kubejs.uxv_universal_circuit.tooltip": "§o§7For use with AE2 autocrafting",
 
+    "item.kubejs.compass_of_the_flame.success": "§7The nearest shrine is at:",
+    "item.kubejs.compass_of_the_flame.failed": "§7You can only use this in §4The Nether§7, please try again",
+    "item.kubejs.compass_of_the_flame": "§6Compass of the Flame",
+    "item.kubejs.compass_of_the_flame.tooltip": "§7Right click to locate nearest nether shrine",
+
     "item.kubejs.uhv_voltage_coil": "Ultra High Voltage Coil",
     "item.kubejs.uhv_voltage_coil.tooltip": "§l§4P§fe§4p§fp§4e§fr§4m§fi§4n§ft§r Coil",
     "item.kubejs.uev_voltage_coil": "Ultra Excessive Voltage Coil",
