@@ -35,6 +35,36 @@
 			x: 1.5d
 			y: -4.0d
 		}
+		{
+			id: "251255FB361F38BE"
+			linked_quest: "4A4275186719AD8D"
+			x: -9.5d
+			y: -1.0d
+		}
+		{
+			id: "055E80BF97224848"
+			linked_quest: "2152FBCC48D5D7AC"
+			x: -9.5d
+			y: -9.0d
+		}
+		{
+			id: "47F30AD6A9815E83"
+			linked_quest: "2757CDEC1D8F5CCE"
+			x: -7.5d
+			y: 1.0d
+		}
+		{
+			id: "73FA3B070F6B92B4"
+			linked_quest: "0F4C5DF2922568B2"
+			x: -11.5d
+			y: -3.0d
+		}
+		{
+			id: "400BFC5E40D565E2"
+			linked_quest: "0C78BD4A7A0B98E4"
+			x: -9.5d
+			y: -3.0d
+		}
 	]
 	quests: [
 		{
@@ -1994,23 +2024,6 @@
 			y: 4.0d
 		}
 		{
-			dependencies: [
-				"1820787D031EAB15"
-				"5B70B63D4157594F"
-			]
-			dependency_requirement: "one_completed"
-			description: ["{ftbquests.automation_age.perfect_overclock.description}"]
-			icon: "ftbquests:book"
-			id: "775AAF108AFAF707"
-			tasks: [{
-				id: "39A4828A672AE4A1"
-				title: "{ftbquests.automation_age.perfect_overclock.title}"
-				type: "checkmark"
-			}]
-			x: -9.5d
-			y: -3.0d
-		}
-		{
 			id: "56B0A897E7C7C25C"
 			invisible: true
 			optional: true
@@ -2047,51 +2060,6 @@
 			title: "{ftbquests.automation_age.nand_chips.title}"
 			x: 7.5d
 			y: 4.0d
-		}
-		{
-			dependencies: ["1820787D031EAB15"]
-			description: ["{ftbquests.automation_age.chemical_skips.description}"]
-			icon: "ftbquests:book"
-			id: "4840218DA8E61B65"
-			optional: true
-			tasks: [{
-				id: "6B319AA87C949FE7"
-				title: "{ftbquests.automation_age.chemical_skips.title}"
-				type: "checkmark"
-			}]
-			x: -11.5d
-			y: -3.0d
-		}
-		{
-			dependencies: ["5B70B63D4157594F"]
-			dependency_requirement: "one_completed"
-			description: ["{ftbquests.automation_age.distinct_buses.description}"]
-			icon: "ftbquests:book"
-			id: "7E74A114F4054345"
-			tasks: [{
-				id: "52333CEF18B39599"
-				title: "{ftbquests.automation_age.distinct_buses.title}"
-				type: "checkmark"
-			}]
-			x: -7.5d
-			y: 1.0d
-		}
-		{
-			dependencies: [
-				"1820787D031EAB15"
-				"5B70B63D4157594F"
-			]
-			dependency_requirement: "one_completed"
-			description: ["{ftbquests.automation_age.lockable_hatches.description}"]
-			icon: "ftbquests:book"
-			id: "171BD0E155CF98CA"
-			tasks: [{
-				id: "75801F4A6F213865"
-				title: "{ftbquests.automation_age.lockable_hatches.title}"
-				type: "checkmark"
-			}]
-			x: -9.5d
-			y: -1.0d
 		}
 		{
 			dependencies: ["7B0133D388101F68"]
@@ -2415,24 +2383,6 @@
 			}]
 			x: -9.5d
 			y: -7.0d
-		}
-		{
-			dependencies: [
-				"4BDAE5D4790ED230"
-				"2027351D670E4CC6"
-				"09C1739F3FE3298F"
-			]
-			dependency_requirement: "one_completed"
-			description: ["{ftbquests.automation_age.read_boosting.description}"]
-			icon: "ftbquests:book"
-			id: "02BC9C8FF2AE1650"
-			tasks: [{
-				id: "54823A71E8D104D4"
-				title: "{ftbquests.automation_age.read_boosting.title}"
-				type: "checkmark"
-			}]
-			x: -9.5d
-			y: -9.0d
 		}
 		{
 			dependencies: [

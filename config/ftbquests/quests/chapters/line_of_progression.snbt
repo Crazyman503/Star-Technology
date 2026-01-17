@@ -951,7 +951,10 @@
 		}
 		{
 			dependencies: ["21B885A85E5764F9"]
-			description: ["{ftbquests.line_of_progression.parallel_multiblocks.description}"]
+			description: [
+				"{ftbquests.line_of_progression.parallel_multiblocks.description}"
+				"[ \"===> [\", { \"text\": \"X\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"70EE9D4811A27CF2\" } }, \"] <===\" ]"
+			]
 			id: "3377AD18FED17C17"
 			subtitle: "{ftbquests.line_of_progression.parallel_multiblocks.subtitle}"
 			tasks: [
@@ -1131,7 +1134,10 @@
 		}
 		{
 			dependencies: ["5B70B63D4157594F"]
-			description: ["{ftbquests.line_of_progression.perfect_overclock_multiblocks.description}"]
+			description: [
+				"{ftbquests.line_of_progression.perfect_overclock_multiblocks.description}"
+				"[ \"===> [\", { \"text\": \"X\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"0C78BD4A7A0B98E4\" } }, \"] <===\" ]"
+			]
 			id: "59A2D2A6FAB6B857"
 			tasks: [{
 				id: "6838C385EDE13940"
@@ -1304,7 +1310,10 @@
 		}
 		{
 			dependencies: ["1F5CCE8CFD02903A"]
-			description: ["{ftbquests.line_of_progression.electric_multiblocks.description}"]
+			description: [
+				"{ftbquests.line_of_progression.electric_multiblocks.description}"
+				"[ \"===> [\", { \"text\": \"X\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"34EDF98BDC245F77\" } }, \"] <===\" ]"
+			]
 			id: "7C0D6B4B6BEB2A90"
 			tasks: [{
 				id: "3C8A122102F67A52"
@@ -1368,7 +1377,10 @@
 		}
 		{
 			dependencies: ["1289465781707205"]
-			description: ["{ftbquests.line_of_progression.steam_multiblocks.description}"]
+			description: [
+				"{ftbquests.line_of_progression.steam_multiblocks.description}"
+				"[ \"===> [\", { \"text\": \"X\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"27F5DD0860E43CFF\" } }, \"] <===\" ]"
+			]
 			id: "7285911FDF79FFD6"
 			tasks: [{
 				id: "0475B22953A6154C"
@@ -1408,7 +1420,10 @@
 		}
 		{
 			dependencies: ["076F21506A7C19D5"]
-			description: ["{ftbquests.line_of_progression.threading_multiblocks.description}"]
+			description: [
+				"{ftbquests.line_of_progression.threading_multiblocks.description}"
+				"[ \"===> [\", { \"text\": \"X\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"143CFCE710B59455\" } }, \"] <===\" ]"
+			]
 			id: "15A8836C76F01893"
 			tasks: [{
 				id: "54C1B737D6BEACB9"
@@ -1539,7 +1554,10 @@
 		}
 		{
 			dependencies: ["2152FBCC48D5D7AC"]
-			description: ["{ftbquests.line_of_progression.boosted_multiblocks.description}"]
+			description: [
+				"{ftbquests.line_of_progression.boosted_multiblocks.description}"
+				"[ \"===> [\", { \"text\": \"X\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"2152FBCC48D5D7AC\" } }, \"] <===\" ]"
+			]
 			id: "6C2A5583F90D6298"
 			tasks: [{
 				id: "2DD2E38EBE0CE6B8"

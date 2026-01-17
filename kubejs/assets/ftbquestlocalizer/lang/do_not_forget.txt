@@ -1,4 +1,0 @@
-Ultra, do not forget the following things
-
-General:
-- You broke all the quest links, make sure they redirect properly

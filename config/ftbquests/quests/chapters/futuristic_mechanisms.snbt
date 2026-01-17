@@ -23,6 +23,12 @@
 			x: 16.0d
 			y: -3.0d
 		}
+		{
+			id: "44FE2B6F74FCFC9B"
+			linked_quest: "70EE9D4811A27CF2"
+			x: -1.5d
+			y: 1.5d
+		}
 	]
 	quests: [
 		{
@@ -335,8 +341,8 @@
 				item: "gtceu:iv_parallel_hatch"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 1.0d
+			x: -2.5d
+			y: 0.5d
 		}
 		{
 			dependencies: [

@@ -7,7 +7,44 @@
 	id: "75C4C0229F2D2798"
 	order_index: 0
 	progression_mode: "linear"
-	quest_links: [ ]
+	quest_links: [
+		{
+			id: "2964E2E996CAC834"
+			linked_quest: "18080B4F89AD24D2"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			id: "7A004610C6ADD6AC"
+			linked_quest: "73D5AA58DE5B72AA"
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			id: "0ABFD9248555F0BF"
+			linked_quest: "48374090EA89E869"
+			x: 2.5d
+			y: 3.0d
+		}
+		{
+			id: "01400DBE45C98AB4"
+			linked_quest: "76CD29559C341985"
+			x: -6.25d
+			y: 2.0d
+		}
+		{
+			id: "3FE7870C91953C80"
+			linked_quest: "2A608D87158DF4CB"
+			x: -7.0d
+			y: 6.0d
+		}
+		{
+			id: "73A12DB8625E666F"
+			linked_quest: "27F5DD0860E43CFF"
+			x: 0.25d
+			y: -2.25d
+		}
+	]
 	quests: [
 		{
 			dependencies: ["16A9D8E864A18B9E"]
@@ -1859,40 +1896,13 @@
 			y: 0.5d
 		}
 		{
-			dependencies: ["0742EF8F43044102"]
-			description: ["{ftbquests.early_game.ghost_circuits.description}"]
-			icon: "ftbquests:book"
-			id: "0F9486CD70580835"
-			optional: true
-			tasks: [{
-				id: "3C73A5AD42AC13F0"
-				title: "{ftbquests.early_game.ghost_circuits.title}"
-				type: "checkmark"
-			}]
-			x: -7.0d
-			y: 6.0d
-		}
-		{
-			dependencies: ["2D1184752D7ACA66"]
-			description: ["{ftbquests.early_game.machine_modes.description}"]
-			icon: "ftbquests:book"
-			id: "0A1BF10244D43021"
-			optional: true
-			tasks: [{
-				id: "26970240ABB065B0"
-				title: "{ftbquests.early_game.machine_modes.title}"
-				type: "checkmark"
-			}]
-			x: -6.25d
-			y: 2.0d
-		}
-		{
 			dependencies: [
 				"37451F8CF7504596"
 				"5324A7F20CA973C6"
 				"64F15C7160BF5CBB"
 			]
 			description: ["{ftbquests.early_game.steam_ore_factory.description}"]
+			hide_dependent_lines: true
 			id: "7E33792C89BA85E3"
 			optional: true
 			rewards: [{
@@ -2083,34 +2093,6 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["3AF688ADC18E580C"]
-			description: ["{ftbquests.early_game.superconductors.description}"]
-			icon: "ftbquests:book"
-			id: "6C5688897B6A4C42"
-			optional: true
-			tasks: [{
-				id: "524EF615621F4DCD"
-				title: "{ftbquests.early_game.superconductors.title}"
-				type: "checkmark"
-			}]
-			x: 0.0d
-			y: 6.0d
-		}
-		{
-			dependencies: ["390CB178FC2D2CCC"]
-			description: ["{ftbquests.early_game.multiblocks.description}"]
-			icon: "ftbquests:book"
-			id: "26E81A8B2EB80A6C"
-			optional: true
-			tasks: [{
-				id: "31807AD3BF647D18"
-				title: "{ftbquests.early_game.multiblocks.title}"
-				type: "checkmark"
-			}]
-			x: 3.0d
-			y: 3.0d
-		}
-		{
 			dependencies: ["7EE1BE4043827F35"]
 			description: ["{ftbquests.early_game.advanced_composter.description}"]
 			id: "0FD7200A8D4F09AE"
@@ -2205,6 +2187,7 @@
 				"33A6D849B77F93CC"
 			]
 			description: ["{ftbquests.early_game.steam_kiln.description}"]
+			hide_dependent_lines: true
 			id: "7FC7558E1A72DCEC"
 			optional: true
 			rewards: [{
@@ -2219,21 +2202,6 @@
 			}]
 			x: -0.5d
 			y: 1.0d
-		}
-		{
-			dependencies: ["6B059D530FCE7428"]
-			dependency_requirement: "one_completed"
-			description: ["{ftbquests.early_game.steam_parallels.description}"]
-			icon: "minecraft:book"
-			id: "27F5DD0860E43CFF"
-			optional: true
-			tasks: [{
-				id: "687924A523C9E5A8"
-				title: "{ftbquests.early_game.steam_parallels.title}"
-				type: "checkmark"
-			}]
-			x: 0.25d
-			y: -2.25d
 		}
 		{
 			dependencies: ["6D5287A0FB892DFF"]

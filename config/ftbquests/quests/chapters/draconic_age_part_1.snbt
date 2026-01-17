@@ -47,6 +47,12 @@
 			x: -1.0d
 			y: -7.0d
 		}
+		{
+			id: "79C75C36CC2FA699"
+			linked_quest: "143CFCE710B59455"
+			x: 6.5d
+			y: -1.5d
+		}
 	]
 	quests: [
 		{
@@ -2038,19 +2044,6 @@
 			}]
 			x: 8.0d
 			y: 0.0d
-		}
-		{
-			dependencies: ["076F21506A7C19D5"]
-			description: ["{ftbquests.draconic_age.read_about_threading.description}"]
-			icon: "ftbquests:book"
-			id: "553A8FA2F468DD90"
-			tasks: [{
-				id: "418FB6F41909F13D"
-				title: "{ftbquests.draconic_age.read_about_threading.title}"
-				type: "checkmark"
-			}]
-			x: 6.0d
-			y: -2.0d
 		}
 		{
 			dependencies: ["4450509C08F416EC"]
