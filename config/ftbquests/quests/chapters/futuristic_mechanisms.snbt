@@ -1806,7 +1806,10 @@
 		}
 		{
 			dependencies: ["059FD3E475A05070"]
-			description: ["{ftbquests.futuristic_mechanisms.data_orb.description}"]
+			description: [
+				"{ftbquests.futuristic_mechanisms.data_orb.description}"
+				"[ \"===> [\", { \"text\": \"X\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"0094C2E72105E8CA\" } }, \"] <===\" ]"
+			]
 			id: "507FE905D3BB8B3D"
 			rewards: [{
 				id: "542233E8F0EBA3E3"
