@@ -6,13 +6,13 @@ ServerEvents.recipes (event => {
         .itemInputs(`gtceu:calamatium_frame`, `4x gtceu:dense_ancient_netherite_plate`, `4x #gtceu:circuits/uev`,`gtceu:uhv_sensor`, `gtceu:long_magnetic_zapolgium_rod`,`8x gtceu:isovol_screw`)
         .inputFluids(`gtceu:indium_tin_lead_cadmium_soldering_alloy 1520`, `start_core:flamewake_solvent 10000`)
         .itemOutputs(`kubejs:compass_of_the_flame`)
-        .duration(4000)
-        .EUt(4194304);
+        .duration(1800)
+        .EUt(GTValues.VH[GTValues.UEV]);
     
     cpaRecipe = cpaRecipe.stationResearch(
         researchRecipeBuilder => researchRecipeBuilder
                 .researchStack(Item.of(`minecraft:recovery_compass`))
-                .EUt(983040)
+                .EUt(GTValues.VHA[GTValues.UHV])
                 .CWUt(160)
     );
 
@@ -26,8 +26,8 @@ ServerEvents.recipes (event => {
             )
         )
         .CWUt(160)
-        .totalCWU(640000)
-        .EUt (983040);
+        .totalCWU(160*20*60)
+        .EUt (GTValues.VHA[GTValues.UHV]);
 }) 
 
         
