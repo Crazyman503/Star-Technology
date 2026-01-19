@@ -4,46 +4,6 @@ ServerEvents.recipes(event => {
     global.not_hardmode(() => {
         const components = global.componentMaterials;
 
-        function luvUVMachines(tierKey) {
-            const tierData = components[tierKey];
-
-            if (!tierData) return;
-
-            const {
-                tiers: { tier },
-                materials: { 
-                    tierMaterial, 
-                    plastic, 
-                    cable
-                }
-            } = tierData;
-
-            event.remove({ output: `gtceu:${tier}_machine_hull` });
-
-            event.shaped(Item.of(`gtceu:${tier}_machine_hull`), [
-                '   ',
-                'LPL',
-                'CMC'
-            ], {
-                P: `gtceu:${tierMaterial}_plate`,
-                L: `gtceu:${plastic}_plate`,
-                C: `gtceu:${cable}_single_cable`,
-                M: `gtceu:${tier}_machine_casing`
-            }).id(`start:shaped/${tier}_machine_hull`);
-
-            event.recipes.gtceu.assembler(id(`${tier}_machine_hull`))
-                .itemInputs(`gtceu:${tier}_machine_casing`, `2x gtceu:${cable}_single_cable`)
-                .inputFluids(`gtceu:${plastic} 288`)
-                .itemOutputs(`gtceu:${tier}_machine_hull`)
-                .duration(50)
-                .EUt(16);
-
-        }
-
-        luvUVMachines('luv');
-        luvUVMachines('zpm');
-        luvUVMachines('uv');
-
         //UV/UHV Regular IO, No UEV or higher as they all scale the same as UHV as of current
 
         function tierIOHatches(tierKey) {

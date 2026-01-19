@@ -91,7 +91,7 @@ ServerEvents.recipes(event => {
         
         components('electric_pump', [
                 `gtceu:${tier}_electric_motor`, 
-                `gtceu:${tierMaterial}_normal_fluid_pipe`, 
+                `gtceu:${pipeMaterial}_normal_fluid_pipe`, 
                 `kubejs:${tier}_microfluidic_flow_valve`,
                 `8x gtceu:${supRubber}_ring`, 
                 `gtceu:${supMaterial}_rotor`, 
