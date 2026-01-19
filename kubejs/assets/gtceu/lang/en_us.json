@@ -1204,7 +1204,7 @@
 
     "block.gtceu.component_nexus": "Component Nexus",
     "block.gtceu.component_nexus.tooltip.0": "§6§lBoosted Component Assembler",
-    "block.gtceu.component_nexus.tooltip.1": "§7Once stabilized this amalgamation of a machine is able to assemble components from §dLuV§7 to §3UV§7 without the need for ordered inputs.",
+    "block.gtceu.component_nexus.tooltip.1": "§7Once stabilized this amalgamation of a machine is able to assemble components from §dLuV§7 to §3UV§7 without the need for ordered inputs and at double the speeds.",
     "block.gtceu.component_nexus.tooltip.2": "§8-----------------------------------",
     "block.gtceu.component_nexus.tooltip.3": "Can only have §bone§r Energy Hatch",
     "block.gtceu.component_nexus.tooltip.4": "Has §cSubtick Parallels§f and §bThroughput Boosting",
