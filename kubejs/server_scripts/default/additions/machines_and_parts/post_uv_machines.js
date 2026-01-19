@@ -22,123 +22,503 @@ ServerEvents.recipes(event => {
         {tier:'uiv',tier1up:'uxv',tier1under:'uev',main:'chaotixic_alloy',cable:'polonium_bismide',wire:'hafnide_ito_ceramic',glass:'kubejs:draco_resilient_fusion_glass',plastic:'poly_34_ethylenedioxythiophene_polystyrene_sulfate',cable1up:'lepton_resonant_thallium_antimonide',mag:'zapolgium',pipe:'chaotixic_alloy',buzz:'neutronium',elctrlyzWire:'polonium_flux',chip:'kubejs:uepic',math:'3'}
     ]
 
-    input.forEach(i=>{
+    input.forEach(i=>{ 
+    // should be formatted like luv_to_uv_components or component_nexus files to where it pulls from material list, 
+    // needs to apply to UV=>UIV
 
         //Machines
-        event.shaped(Item.of(`gtceu:${i.tier}_machine_casing`), 
-            ['PPP','PWP','PPP'], 
-            {P: `gtceu:${i.main}_plate`,W: '#forge:tools/wrenches'}).id(`start:shaped/${i.tier}_machine_casing`);
+        event.shaped(Item.of(`gtceu:${i.tier}_machine_casing`),[ //this is example of proper format
+                'PPP',
+                'PWP',
+                'PPP'
+            ], {
+                P: `gtceu:${i.main}_plate`,
+                W: '#forge:tools/wrenches'
+            }).id(`start:shaped/${i.tier}_machine_casing`);
+
         event.recipes.gtceu.assembler(id(`${i.tier}_machine_casing`)) 
             .itemInputs(`8x gtceu:${i.main}_plate`) 
             .circuit(8) 
             .itemOutputs(`gtceu:${i.tier}_machine_casing`) 
             .duration(50) 
             .EUt(16);
+
         event.shaped(Item.of(`gtceu:${i.tier}_machine_hull`),
-            ['   ','LPL','CMC'],
-            {P: `gtceu:${i.main}_plate`,L: `gtceu:${i.plastic}_plate`,C: `gtceu:${i.cable}_single_cable`, M: `gtceu:${i.tier}_machine_casing`}).id(`start:shaped/${i.tier}_machine_hull`);
+            [
+                '   ',
+                'LPL',
+                'CMC'
+            ],
+            {
+                P: `gtceu:${i.main}_plate`,
+                L: `gtceu:${i.plastic}_plate`,
+                C: `gtceu:${i.cable}_single_cable`, 
+                M: `gtceu:${i.tier}_machine_casing`
+            }).id(`start:shaped/${i.tier}_machine_hull`);
+
         event.recipes.gtceu.assembler(id(`${i.tier}_machine_hull`)) 
             .itemInputs(`gtceu:${i.tier}_machine_casing`, `2x gtceu:${i.cable}_single_cable`) 
             .inputFluids(`gtceu:${i.plastic} 288`) 
             .itemOutputs(`gtceu:${i.tier}_machine_hull`) 
             .duration(50) 
             .EUt(16);
+
         event.shaped(Item.of(`gtceu:${i.tier}_electric_furnace`),
-            ['IWI','WHW','CWC'], 
-            {I: `#gtceu:circuits/${i.tier}`, W: `gtceu:${i.wire}_double_wire`, C: `gtceu:${i.cable}_single_cable`, H: `gtceu:${i.tier}_machine_hull`}).id(`start:shaped/${i.tier}_electric_furnace`);
+            [
+                'IWI',
+                'WHW',
+                'CWC'
+            ], 
+            {
+                I: `#gtceu:circuits/${i.tier}`,
+                W: `gtceu:${i.wire}_double_wire`, 
+                C: `gtceu:${i.cable}_single_cable`, 
+                H: `gtceu:${i.tier}_machine_hull`
+            }).id(`start:shaped/${i.tier}_electric_furnace`);
+
         event.shaped(Item.of(`gtceu:${i.tier}_alloy_smelter`), 
-            ['IWI','WHW','CWC'], 
-            {I: `#gtceu:circuits/${i.tier}`, W: `gtceu:${i.wire}_quadruple_wire`, C: `gtceu:${i.cable}_single_cable`, H: `gtceu:${i.tier}_machine_hull`}).id(`start:shaped/${i.tier}_alloy_smelter`);
+            [
+                'IWI',
+                'WHW',
+                'CWC'
+            ], 
+            {
+                I: `#gtceu:circuits/${i.tier}`, 
+                W: `gtceu:${i.wire}_quadruple_wire`, 
+                C: `gtceu:${i.cable}_single_cable`, 
+                H: `gtceu:${i.tier}_machine_hull`
+            }).id(`start:shaped/${i.tier}_alloy_smelter`);
+
         event.shaped(Item.of(`gtceu:${i.tier}_arc_furnace`), 
-            ['CGC','IHI','PPP'], 
-            {I: `#gtceu:circuits/${i.tier}`, G: `gtceu:graphite_dust`, C: `gtceu:${i.cable}_quadruple_cable`, H: `gtceu:${i.tier}_machine_hull`, P: `gtceu:${i.main}_plate`}).id(`start:shaped/${i.tier}_arc_furnace`);
+            [
+                'CGC',
+                'IHI',
+                'PPP'
+            ], 
+            {
+                I: `#gtceu:circuits/${i.tier}`, 
+                G: `gtceu:graphite_dust`, 
+                C: `gtceu:${i.cable}_quadruple_cable`, 
+                H: `gtceu:${i.tier}_machine_hull`, 
+                P: `gtceu:${i.main}_plate`
+            }).id(`start:shaped/${i.tier}_arc_furnace`);
+
         event.shaped(Item.of(`gtceu:${i.tier}_assembler`), 
-            ['AIA','VHV','CIC'], 
-            {I: `#gtceu:circuits/${i.tier}`, C: `gtceu:${i.cable}_single_cable`, H: `gtceu:${i.tier}_machine_hull`, A: `gtceu:${i.tier}_robot_arm`, V: `gtceu:${i.tier}_conveyor_module`}).id(`start:shaped/${i.tier}_assembler`);
+            [
+                'AIA',
+                'VHV',
+                'CIC'
+            ], 
+            {
+                I: `#gtceu:circuits/${i.tier}`, 
+                C: `gtceu:${i.cable}_single_cable`, 
+                H: `gtceu:${i.tier}_machine_hull`, 
+                A: `gtceu:${i.tier}_robot_arm`, 
+                V: `gtceu:${i.tier}_conveyor_module`
+            }).id(`start:shaped/${i.tier}_assembler`);
+
         event.shaped(Item.of(`gtceu:${i.tier}_autoclave`), 
-            ['PGP','PHP','IUI'], 
-            {I: `#gtceu:circuits/${i.tier}`, G: `${i.glass}`, H: `gtceu:${i.tier}_machine_hull`,P: `gtceu:${i.main}_plate`, U: `gtceu:${i.tier}_electric_pump`}).id(`start:shaped/${i.tier}_autoclave`);
+            [
+                'PGP',
+                'PHP',
+                'IUI'
+            ], 
+            {
+                I: `#gtceu:circuits/${i.tier}`, 
+                G: `${i.glass}`, 
+                H: `gtceu:${i.tier}_machine_hull`,
+                P: `gtceu:${i.main}_plate`, 
+                U: `gtceu:${i.tier}_electric_pump`
+            }).id(`start:shaped/${i.tier}_autoclave`);
+
         event.shaped(Item.of(`gtceu:${i.tier}_bender`), 
-            ['SPS','IHI','MCM'], 
-            {I: `#gtceu:circuits/${i.tier}`, H: `gtceu:${i.tier}_machine_hull`, C: `gtceu:${i.cable}_single_cable`,P: `gtceu:${i.main}_plate`, M: `gtceu:${i.tier}_electric_motor`, S: `gtceu:${i.tier}_electric_piston`}).id(`start:shaped/${i.tier}_bender`);
+            [
+                'SPS',
+                'IHI',
+                'MCM'
+            ], 
+            {
+                I: `#gtceu:circuits/${i.tier}`, 
+                H: `gtceu:${i.tier}_machine_hull`, 
+                C: `gtceu:${i.cable}_single_cable`,
+                P: `gtceu:${i.main}_plate`, 
+                M: `gtceu:${i.tier}_electric_motor`, 
+                S: `gtceu:${i.tier}_electric_piston`
+            }).id(`start:shaped/${i.tier}_bender`);
+
         event.shaped(Item.of(`gtceu:${i.tier}_brewery`), 
-            ['GUG','CHC','ISI'], 
-            {G: `${i.glass}`, I: `#gtceu:circuits/${i.tier}`, H: `gtceu:${i.tier}_machine_hull`, C: `gtceu:${i.cable}_single_cable`, U: `gtceu:${i.tier}_electric_pump`, S: `gtceu:${i.wire}_spring`}).id(`start:shaped/${i.tier}_brewery`);
+            [
+                'GUG',
+                'CHC',
+                'ISI'
+            ], 
+            {
+                G: `${i.glass}`, 
+                I: `#gtceu:circuits/${i.tier}`, 
+                H: `gtceu:${i.tier}_machine_hull`, 
+                C: `gtceu:${i.cable}_single_cable`, 
+                U: `gtceu:${i.tier}_electric_pump`, 
+                S: `gtceu:${i.wire}_spring`
+            }).id(`start:shaped/${i.tier}_brewery`);
+
         event.shaped(Item.of(`gtceu:${i.tier}_canner`), 
-            ['CUC','IHI','GGG'], 
-            {G: `${i.glass}`, I: `#gtceu:circuits/${i.tier}`, H: `gtceu:${i.tier}_machine_hull`, C: `gtceu:${i.cable}_single_cable`, U: `gtceu:${i.tier}_electric_pump`}).id(`start:shaped/${i.tier}_canner`);
+            [
+                'CUC',
+                'IHI',
+                'GGG'
+            ], 
+            {
+                G: `${i.glass}`, 
+                I: `#gtceu:circuits/${i.tier}`, 
+                H: `gtceu:${i.tier}_machine_hull`, 
+                C: `gtceu:${i.cable}_single_cable`, 
+                U: `gtceu:${i.tier}_electric_pump`
+            }).id(`start:shaped/${i.tier}_canner`);
+
         event.shaped(Item.of(`gtceu:${i.tier}_centrifuge`), 
-            ['IMI','CHC','IMI'], 
-            {I: `#gtceu:circuits/${i.tier}`, H: `gtceu:${i.tier}_machine_hull`,C: `gtceu:${i.cable}_single_cable`, M: `gtceu:${i.tier}_electric_motor`}).id(`start:shaped/${i.tier}_centrifuge`);
+            [
+                'IMI',
+                'CHC',
+                'IMI'
+            ], 
+            {
+                I: `#gtceu:circuits/${i.tier}`, 
+                H: `gtceu:${i.tier}_machine_hull`,
+                C: `gtceu:${i.cable}_single_cable`, 
+                M: `gtceu:${i.tier}_electric_motor`
+            }).id(`start:shaped/${i.tier}_centrifuge`);
+
         event.shaped(Item.of(`gtceu:${i.tier}_chemical_bath`), 
-            ['VGC','UGV','IHI'], 
-            {I: `#gtceu:circuits/${i.tier}`, H: `gtceu:${i.tier}_machine_hull`,C: `gtceu:${i.cable}_single_cable`, U: `gtceu:${i.tier}_electric_pump`, V: `gtceu:${i.tier}_conveyor_module`, G: `${i.glass}`}).id(`start:shaped/${i.tier}_chemical_bath`);
+            [
+                'VGC',
+                'UGV',
+                'IHI'
+            ], 
+            {
+                I: `#gtceu:circuits/${i.tier}`, 
+                H: `gtceu:${i.tier}_machine_hull`,
+                C: `gtceu:${i.cable}_single_cable`, 
+                U: `gtceu:${i.tier}_electric_pump`, 
+                V: `gtceu:${i.tier}_conveyor_module`, 
+                G: `${i.glass}`
+            }).id(`start:shaped/${i.tier}_chemical_bath`);
+
         event.shaped(Item.of(`gtceu:${i.tier}_chemical_reactor`), 
-            ['ERE','CMC','IHI'], 
-            {I: `#gtceu:circuits/${i.tier}`, H: `gtceu:${i.tier}_machine_hull`,C: `gtceu:${i.cable}_single_cable`, E: `gtceu:${i.plastic}_large_fluid_pipe`, R: `gtceu:${i.main}_rotor`, M: `gtceu:${i.tier}_electric_motor`}).id(`start:shaped/${i.tier}_chemical_reactor`);
+            [
+                'ERE',
+                'CMC',
+                'IHI'
+            ], 
+            {
+                I: `#gtceu:circuits/${i.tier}`, 
+                H: `gtceu:${i.tier}_machine_hull`,
+                C: `gtceu:${i.cable}_single_cable`, 
+                E: `gtceu:${i.plastic}_large_fluid_pipe`, 
+                R: `gtceu:${i.main}_rotor`, 
+                M: `gtceu:${i.tier}_electric_motor`
+            }).id(`start:shaped/${i.tier}_chemical_reactor`);
+
         event.shaped(Item.of(`gtceu:${i.tier}_compressor`), 
-            [' I ','SHS','CIC'], 
-            {I: `#gtceu:circuits/${i.tier}`, H: `gtceu:${i.tier}_machine_hull`,C: `gtceu:${i.cable}_single_cable`, S: `gtceu:${i.tier}_electric_piston`}).id(`start:shaped/${i.tier}_compressor`);
+            [
+                ' I ',
+                'SHS',
+                'CIC'
+            ], 
+            {
+                I: `#gtceu:circuits/${i.tier}`, 
+                H: `gtceu:${i.tier}_machine_hull`,
+                C: `gtceu:${i.cable}_single_cable`, 
+                S: `gtceu:${i.tier}_electric_piston`
+            }).id(`start:shaped/${i.tier}_compressor`);
+
         event.shaped(Item.of(`gtceu:${i.tier}_cutter`), 
-            ['CIG','VHB','ICM'], 
-            {I: `#gtceu:circuits/${i.tier}`, H: `gtceu:${i.tier}_machine_hull`,C: `gtceu:${i.cable}_single_cable`, V: `gtceu:${i.tier}_conveyor_module`, M: `gtceu:${i.tier}_electric_motor`, G: `${i.glass}`, B: `gtceu:${i.buzz}_buzz_saw_blade`}).id(`start:shaped/${i.tier}_cutter`);
+            [
+                'CIG',
+                'VHB',
+                'ICM'
+            ], 
+            {
+                I: `#gtceu:circuits/${i.tier}`, 
+                H: `gtceu:${i.tier}_machine_hull`,
+                C: `gtceu:${i.cable}_single_cable`, 
+                V: `gtceu:${i.tier}_conveyor_module`, 
+                M: `gtceu:${i.tier}_electric_motor`, 
+                G: `${i.glass}`, 
+                B: `gtceu:${i.buzz}_buzz_saw_blade`
+            }).id(`start:shaped/${i.tier}_cutter`);
+
         event.shaped(Item.of(`gtceu:${i.tier}_distillery`), 
-            ['GSG','IHI','CUC'], 
-            {I: `#gtceu:circuits/${i.tier}`, H: `gtceu:${i.tier}_machine_hull`,C: `gtceu:${i.cable}_single_cable`, G: `${i.glass}`, S: `gtceu:${i.wire}_spring`, U: `gtceu:${i.tier}_electric_pump`}).id(`start:shaped/${i.tier}_distillery`);
+            [
+                'GSG',
+                'IHI',
+                'CUC'
+            ], 
+            {
+                I: `#gtceu:circuits/${i.tier}`, 
+                H: `gtceu:${i.tier}_machine_hull`,
+                C: `gtceu:${i.cable}_single_cable`, 
+                G: `${i.glass}`, 
+                S: `gtceu:${i.wire}_spring`, 
+                U: `gtceu:${i.tier}_electric_pump`
+            }).id(`start:shaped/${i.tier}_distillery`);
+
         event.shaped(Item.of(`gtceu:${i.tier}_electrolyzer`), 
-            ['WGW','WHW','ICI'], 
-            {I: `#gtceu:circuits/${i.tier}`, H: `gtceu:${i.tier}_machine_hull`,C: `gtceu:${i.cable}_single_cable`, G: `${i.glass}`, W: `gtceu:${i.elctrlyzWire}_single_wire`}).id(`start:shaped/${i.tier}_electrolyzer`);
+            [
+                'WGW',
+                'WHW',
+                'ICI'
+            ], 
+            {
+                I: `#gtceu:circuits/${i.tier}`, 
+                H: `gtceu:${i.tier}_machine_hull`,
+                C: `gtceu:${i.cable}_single_cable`, 
+                G: `${i.glass}`, 
+                W: `gtceu:${i.elctrlyzWire}_single_wire`
+            }).id(`start:shaped/${i.tier}_electrolyzer`);
+
         event.shaped(Item.of(`gtceu:${i.tier}_electromagnetic_separator`), 
-            ['VCW','CHG','ICW'], 
-            {I: `#gtceu:circuits/${i.tier}`, H: `gtceu:${i.tier}_machine_hull`,C: `gtceu:${i.cable}_single_cable`, G: `gtceu:${i.mag}_rod`, W: `gtceu:${i.cable}_octal_wire`, V: `gtceu:${i.tier}_conveyor_module`}).id(`start:shaped/${i.tier}_electromagnetic_separator`);
+            [
+                'VCW',
+                'CHG',
+                'ICW'
+            ], 
+            {
+                I: `#gtceu:circuits/${i.tier}`, 
+                H: `gtceu:${i.tier}_machine_hull`,
+                C: `gtceu:${i.cable}_single_cable`, 
+                G: `gtceu:${i.mag}_rod`, 
+                W: `gtceu:${i.cable}_octal_wire`, 
+                V: `gtceu:${i.tier}_conveyor_module`
+            }).id(`start:shaped/${i.tier}_electromagnetic_separator`);
+
         event.shaped(Item.of(`gtceu:${i.tier}_extractor`), 
-            ['GIG','SHU','CIC'], 
-            {I: `#gtceu:circuits/${i.tier}`, H: `gtceu:${i.tier}_machine_hull`,C: `gtceu:${i.cable}_single_cable`, G: `${i.glass}`, U: `gtceu:${i.tier}_electric_pump`, S: `gtceu:${i.tier}_electric_piston`}).id(`start:shaped/${i.tier}_extractor`);
+            [
+                'GIG',
+                'SHU',
+                'CIC'
+            ], 
+            {
+                I: `#gtceu:circuits/${i.tier}`, 
+                H: `gtceu:${i.tier}_machine_hull`,
+                C: `gtceu:${i.cable}_single_cable`, 
+                G: `${i.glass}`, 
+                U: `gtceu:${i.tier}_electric_pump`, 
+                S: `gtceu:${i.tier}_electric_piston`
+            }).id(`start:shaped/${i.tier}_extractor`);
+
         event.shaped(Item.of(`gtceu:${i.tier}_extruder`), 
-            ['WWI','SHE','WWI'], 
-            {I: `#gtceu:circuits/${i.tier}`, H: `gtceu:${i.tier}_machine_hull`,S: `gtceu:${i.tier}_electric_piston`, W: `gtceu:${i.wire}_quadruple_wire`, E: `gtceu:${i.pipe}_normal_fluid_pipe`}).id(`start:shaped/${i.tier}_extruder`);
+            [
+                'WWI',
+                'SHE',
+                'WWI'
+            ], 
+            {
+                I: `#gtceu:circuits/${i.tier}`, 
+                H: `gtceu:${i.tier}_machine_hull`,
+                S: `gtceu:${i.tier}_electric_piston`, 
+                W: `gtceu:${i.wire}_quadruple_wire`, 
+                E: `gtceu:${i.pipe}_normal_fluid_pipe`
+            }).id(`start:shaped/${i.tier}_extruder`);
+
         event.shaped(Item.of(`gtceu:${i.tier}_fermenter`), 
-            ['CUC','GHG','CIC'], 
-            {I: `#gtceu:circuits/${i.tier}`, H: `gtceu:${i.tier}_machine_hull`,C: `gtceu:${i.cable}_single_cable`, G: `${i.glass}`, U: `gtceu:${i.tier}_electric_pump`}).id(`start:shaped/${i.tier}_fermenter`);
+            [
+                'CUC',
+                'GHG',
+                'CIC'
+            ], 
+            {
+                I: `#gtceu:circuits/${i.tier}`, 
+                H: `gtceu:${i.tier}_machine_hull`,
+                C: `gtceu:${i.cable}_single_cable`, 
+                G: `${i.glass}`, 
+                U: `gtceu:${i.tier}_electric_pump`
+            }).id(`start:shaped/${i.tier}_fermenter`);
+
         event.shaped(Item.of(`gtceu:${i.tier}_fluid_heater`), 
-            ['WGW','UHU','CIC'], 
-            {I: `#gtceu:circuits/${i.tier}`, H: `gtceu:${i.tier}_machine_hull`,C: `gtceu:${i.cable}_single_cable`, G: `${i.glass}`, U: `gtceu:${i.tier}_electric_pump`, W: `gtceu:${i.wire}_quadruple_wire`}).id(`start:shaped/${i.tier}_fluid_heater`);
+            [
+                'WGW',
+                'UHU',
+                'CIC'
+            ], 
+            {
+                I: `#gtceu:circuits/${i.tier}`, 
+                H: `gtceu:${i.tier}_machine_hull`,
+                C: `gtceu:${i.cable}_single_cable`, 
+                G: `${i.glass}`, 
+                U: `gtceu:${i.tier}_electric_pump`, 
+                W: `gtceu:${i.wire}_quadruple_wire`
+            }).id(`start:shaped/${i.tier}_fluid_heater`);
+
         event.shaped(Item.of(`gtceu:${i.tier}_fluid_solidifier`), 
-            ['UGU','CHC','IRI'], 
-            {I: `#gtceu:circuits/${i.tier}`, H: `gtceu:${i.tier}_machine_hull`,C: `gtceu:${i.cable}_single_cable`,G: `${i.glass}`,R: 'minecraft:chest', U: `gtceu:${i.tier}_electric_pump`}).id(`start:shaped/${i.tier}_fluid_solidifier`);
+            [
+                'UGU',
+                'CHC',
+                'IRI'
+            ], 
+            {
+                I: `#gtceu:circuits/${i.tier}`, 
+                H: `gtceu:${i.tier}_machine_hull`,
+                C: `gtceu:${i.cable}_single_cable`,
+                G: `${i.glass}`,R: 'minecraft:chest', 
+                U: `gtceu:${i.tier}_electric_pump`
+            }).id(`start:shaped/${i.tier}_fluid_solidifier`);
+
         event.shaped(Item.of(`gtceu:${i.tier}_forge_hammer`), 
-            ['CSC','IHI','CRC'], 
-            {I: `#gtceu:circuits/${i.tier}`, H: `gtceu:${i.tier}_machine_hull`,C: `gtceu:${i.cable}_single_cable`,S: `gtceu:${i.tier}_electric_piston`,R: 'minecraft:anvil'}).id(`start:shaped/${i.tier}_forge_hammer`);
+            [
+                'CSC',
+                'IHI',
+                'CRC'
+            ], 
+            {
+                I: `#gtceu:circuits/${i.tier}`, 
+                H: `gtceu:${i.tier}_machine_hull`,
+                C: `gtceu:${i.cable}_single_cable`,
+                S: `gtceu:${i.tier}_electric_piston`,
+                R: 'minecraft:anvil'
+            }).id(`start:shaped/${i.tier}_forge_hammer`);
+
         event.shaped(Item.of(`gtceu:${i.tier}_forming_press`), 
-            ['CSC','IHI','CSC'], 
-            {I: `#gtceu:circuits/${i.tier}`, H: `gtceu:${i.tier}_machine_hull`,C: `gtceu:${i.cable}_single_cable`,S: `gtceu:${i.tier}_electric_piston`}).id(`start:shaped/${i.tier}_forming_press`);
+            [
+                'CSC',
+                'IHI',
+                'CSC'
+            ], 
+            {
+                I: `#gtceu:circuits/${i.tier}`, 
+                H: `gtceu:${i.tier}_machine_hull`,
+                C: `gtceu:${i.cable}_single_cable`,
+                S: `gtceu:${i.tier}_electric_piston`
+            }).id(`start:shaped/${i.tier}_forming_press`);
+
         event.shaped(Item.of(`gtceu:${i.tier}_lathe`), 
-            ['CIC','MHR','ICS'], 
-            {I: `#gtceu:circuits/${i.tier}`, H: `gtceu:${i.tier}_machine_hull`,C: `gtceu:${i.cable}_single_cable`, S: `gtceu:${i.tier}_electric_piston`, M: `gtceu:${i.tier}_electric_motor`, R: 'gtceu:tungsten_grinding_head'}).id(`start:shaped/${i.tier}_lathe`);
+            [
+                'CIC',
+                'MHR',
+                'ICS'
+            ], 
+            {
+                I: `#gtceu:circuits/${i.tier}`, 
+                H: `gtceu:${i.tier}_machine_hull`,
+                C: `gtceu:${i.cable}_single_cable`, 
+                S: `gtceu:${i.tier}_electric_piston`, 
+                M: `gtceu:${i.tier}_electric_motor`, 
+                R: 'gtceu:tungsten_grinding_head'
+            }).id(`start:shaped/${i.tier}_lathe`);
+
         event.shaped(Item.of(`gtceu:${i.tier}_scanner`), 
-            ['IEI','CHC','ISI'], 
-            {I: `#gtceu:circuits/${i.tier1up}`, H: `gtceu:${i.tier}_machine_hull`,C: `gtceu:${i.cable}_single_cable`, E: `gtceu:${i.tier}_emitter`, S: `gtceu:${i.tier}_sensor`}).id(`start:shaped/${i.tier}_scanner`);
+            [
+                'IEI',
+                'CHC',
+                'ISI'
+            ], 
+            {
+                I: `#gtceu:circuits/${i.tier1up}`, 
+                H: `gtceu:${i.tier}_machine_hull`,
+                C: `gtceu:${i.cable}_single_cable`, 
+                E: `gtceu:${i.tier}_emitter`, 
+                S: `gtceu:${i.tier}_sensor`
+            }).id(`start:shaped/${i.tier}_scanner`);
+
         event.shaped(Item.of(`gtceu:${i.tier}_mixer`), 
-            ['GRG','GMG','IHI'], 
-            {I: `#gtceu:circuits/${i.tier}`, H: `gtceu:${i.tier}_machine_hull`, G: `${i.glass}`, R: `gtceu:${i.main}_rotor`, M: `gtceu:${i.tier}_electric_motor`}).id(`start:shaped/${i.tier}_mixer`);
+            [
+                'GRG',
+                'GMG',
+                'IHI'
+            ], 
+            {
+                I: `#gtceu:circuits/${i.tier}`, 
+                H: `gtceu:${i.tier}_machine_hull`, 
+                G: `${i.glass}`, 
+                R: `gtceu:${i.main}_rotor`, 
+                M: `gtceu:${i.tier}_electric_motor`
+            }).id(`start:shaped/${i.tier}_mixer`);
+
         event.shaped(Item.of(`gtceu:${i.tier}_ore_washer`), 
-            ['RGR','IMI','CHC'], 
-            {I: `#gtceu:circuits/${i.tier}`, H: `gtceu:${i.tier}_machine_hull`,C: `gtceu:${i.cable}_single_cable`, G: `${i.glass}`, R: `gtceu:${i.main}_rotor`, M: `gtceu:${i.tier}_electric_motor`}).id(`start:shaped/${i.tier}_ore_washer`);
+            [
+                'RGR',
+                'IMI',
+                'CHC'
+            ], 
+            {
+                I: `#gtceu:circuits/${i.tier}`, 
+                H: `gtceu:${i.tier}_machine_hull`,
+                C: `gtceu:${i.cable}_single_cable`, 
+                G: `${i.glass}`, 
+                R: `gtceu:${i.main}_rotor`, 
+                M: `gtceu:${i.tier}_electric_motor`
+            }).id(`start:shaped/${i.tier}_ore_washer`);
+
         event.shaped(Item.of(`gtceu:${i.tier}_packer`), 
-            ['RIR','AHV','CIC'], 
-            {I: `#gtceu:circuits/${i.tier}`, H: `gtceu:${i.tier}_machine_hull`,C: `gtceu:${i.cable}_single_cable`, A: `gtceu:${i.tier}_robot_arm`, V: `gtceu:${i.tier}_conveyor_module`, R: 'minecraft:chest'}).id(`start:shaped/${i.tier}_packer`);
+            [
+                'RIR',
+                'AHV',
+                'CIC'
+            ], 
+            {
+                I: `#gtceu:circuits/${i.tier}`, 
+                H: `gtceu:${i.tier}_machine_hull`,
+                C: `gtceu:${i.cable}_single_cable`, 
+                A: `gtceu:${i.tier}_robot_arm`, 
+                V: `gtceu:${i.tier}_conveyor_module`, 
+                R: 'minecraft:chest'
+            }).id(`start:shaped/${i.tier}_packer`);
+
         event.shaped(Item.of(`gtceu:${i.tier}_polarizer`), 
-            ['WGW','CHC','WGW'], 
-            {H: `gtceu:${i.tier}_machine_hull`,C: `gtceu:${i.cable}_single_cable`,G: `gtceu:${i.mag}_rod`,W: `gtceu:${i.cable}_octal_wire`}).id(`start:shaped/${i.tier}_polarizer`);
+            [
+                'WGW',
+                'CHC',
+                'WGW'
+            ], 
+            {
+                H: `gtceu:${i.tier}_machine_hull`,
+                C: `gtceu:${i.cable}_single_cable`,
+                G: `gtceu:${i.mag}_rod`,
+                W: `gtceu:${i.cable}_octal_wire`
+            }).id(`start:shaped/${i.tier}_polarizer`);
+
         event.shaped(Item.of(`gtceu:${i.tier}_laser_engraver`), 
-            ['SES','IHI','CIC'], 
-            {I: `#gtceu:circuits/${i.tier}`, H: `gtceu:${i.tier}_machine_hull`,C: `gtceu:${i.cable}_single_cable`, E: `gtceu:${i.tier}_emitter`, S: `gtceu:${i.tier}_electric_piston`}).id(`start:shaped/${i.tier}_laser_engraver`);
+            [
+                'SES',
+                'IHI',
+                'CIC'
+            ], 
+            {
+                I: `#gtceu:circuits/${i.tier}`, 
+                H: `gtceu:${i.tier}_machine_hull`,
+                C: `gtceu:${i.cable}_single_cable`, 
+                E: `gtceu:${i.tier}_emitter`, 
+                S: `gtceu:${i.tier}_electric_piston`
+            }).id(`start:shaped/${i.tier}_laser_engraver`);
+
         event.shaped(Item.of(`gtceu:${i.tier}_sifter`), 
-            ['CFC','SHS','IFI'], 
-            {I: `#gtceu:circuits/${i.tier}`, H: `gtceu:${i.tier}_machine_hull`,C: `gtceu:${i.cable}_single_cable`, F: `gtceu:item_filter`, S: `gtceu:${i.tier}_electric_piston`}).id(`start:shaped/${i.tier}_sifter`);
+            [
+                'CFC',
+                'SHS',
+                'IFI'
+            ], 
+            {
+                I: `#gtceu:circuits/${i.tier}`, 
+                H: `gtceu:${i.tier}_machine_hull`,
+                C: `gtceu:${i.cable}_single_cable`, 
+                F: `gtceu:item_filter`, 
+                S: `gtceu:${i.tier}_electric_piston`
+            }).id(`start:shaped/${i.tier}_sifter`);
+
         event.shaped(Item.of(`gtceu:${i.tier}_thermal_centrifuge`), 
-            ['IMI','WHW','CMC'], 
-            {I: `#gtceu:circuits/${i.tier}`, H: `gtceu:${i.tier}_machine_hull`,C: `gtceu:${i.cable}_single_cable`, M: `gtceu:${i.tier}_electric_motor`, W: `gtceu:${i.wire}_quadruple_wire`}).id(`start:shaped/${i.tier}_thermal_centrifuge`);
+            [
+                'IMI',
+                'WHW',
+                'CMC'
+            ], 
+            {
+                I: `#gtceu:circuits/${i.tier}`, 
+                H: `gtceu:${i.tier}_machine_hull`,
+                C: `gtceu:${i.cable}_single_cable`, 
+                M: `gtceu:${i.tier}_electric_motor`, 
+                W: `gtceu:${i.wire}_quadruple_wire`
+            }).id(`start:shaped/${i.tier}_thermal_centrifuge`);
+
+        //rest to be formatted
         event.shaped(Item.of(`gtceu:${i.tier}_wiremill`), 
             ['MCM','IHI','MCM'], 
             {I: `#gtceu:circuits/${i.tier}`, H: `gtceu:${i.tier}_machine_hull`,C: `gtceu:${i.cable}_single_cable`, M: `gtceu:${i.tier}_electric_motor`}).id(`start:shaped/${i.tier}_wiremill`);

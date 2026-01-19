@@ -1,6 +1,22 @@
-// priority: 100
+// priority: 1000
 
 global.componentMaterials = {
+
+    //Current use of materials in post_uv_machines
+
+        // {tier:'uhv',tier1up:'uev',tier1under:'uv',    //needs another arguement to tiers: {} added for the tier up (use tier0)
+        // main:'neutronium', //exist
+        // cable:'europium', //exist
+        // wire:'zirconium_selenide_diiodide', //luv is hssg, zpm is naq, uv is naq alloy, uhv is ZrSeI2, uev is AstBioselexCarb, UIV is hafnide ITO
+        // glass:'gtceu:fusion_glass', //exist, luv=>uv need to be updated, luv is laminated, zpm/uv is fusion
+        // plastic:'polyether_ether_ketone', //exist
+        // cable1up:'cerium_tritelluride', //need to add (cable1 works)
+        // mag:'pure_netherite', //exist
+        // pipe:'neutronium', //exist
+        // buzz:'neutronium', //luv is niobium titanium, zpm is naq alloy, uv is duranium, uhv+ is neutronium
+        // elctrlyzWire:'iron_selenide_over_strontium_titanium_oxide',  // LuV/ZPM is osmium now, UV/UHV is trinium now, UEV/UIV is tritanium now
+        // chip:'gtceu:uhpic',  //luv is gtceu:hpic, zpm/uv/uhv is gtceu:uhpic, uev/uiv is kubejs:uepic
+        // math:'1'}, //would need to adjust energy hatch equations to utilize scaler
 
     luv: {
         tiers: { tier: 'luv', tier1: 'iv', tier2: 'ev' },
