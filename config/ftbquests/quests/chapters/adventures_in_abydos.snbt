@@ -25,7 +25,7 @@
 	quests: [
 		{
 			dependencies: ["1FB502D770A4A59B"]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest1.description1}"]
+			description: ["{ftbquests.abydos.world.description}"]
 			icon: {
 				Count: 1
 				id: "ftbquests:custom_icon"
@@ -41,10 +41,10 @@
 			}]
 			shape: "rsquare"
 			size: 1.5d
-			subtitle: "{ftbquests.chapter.adventures_in_abydos.quest1.subtitle}"
+			subtitle: "{ftbquests.abydos.world.subtitle}"
 			tasks: [{
 				id: "015668E3D80CF755"
-				title: "{ftbquests.chapter.adventures_in_abydos.quest1.task_96379769826637653.title}"
+				title: "{ftbquests.abydos.world.title}"
 				type: "checkmark"
 			}]
 			x: -2.5d
@@ -58,7 +58,7 @@
 				"3DF4C45A9424D4D1"
 				"490C3ED5E2E7C000"
 			]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest2.description1}"]
+			description: ["{ftbquests.abydos.uhv_computational_matrix.description}"]
 			id: "4DD3C38FCD8D704D"
 			rewards: [{
 				id: "0FA7D7BA54BC6792"
@@ -79,7 +79,7 @@
 				"73D0DC357821B395"
 				"4E761937069F4A8D"
 			]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest3.description1}"]
+			description: ["{ftbquests.abydos.uhv_transmission_assembly.description}"]
 			id: "06F8BF8FB54B3BEE"
 			rewards: [{
 				id: "6F4F9E0DD0FF5BD4"
@@ -102,7 +102,7 @@
 				"120E7C97781B59E9"
 				"19834448E1EA758C"
 			]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest4.description1}"]
+			description: ["{ftbquests.abydos.uhv_precision_drive_mechanism.description}"]
 			id: "0A321FE2FB18EA8B"
 			rewards: [{
 				id: "3F1880871D2A1F70"
@@ -123,7 +123,7 @@
 				"73D0DC357821B395"
 				"05B9D0B5977E3F05"
 			]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest5.description1}"]
+			description: ["{ftbquests.abydos.uhv_microfluidic_flow_valve.description}"]
 			id: "05EEBCD256194C78"
 			rewards: [{
 				id: "15E0AA677E224833"
@@ -145,7 +145,7 @@
 				"73D0DC357821B395"
 				"0D4EFA300817A74D"
 			]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest6.description1}"]
+			description: ["{ftbquests.abydos.uhv_super_magnetic_core.description}"]
 			id: "6D7188F8CA92DAAF"
 			rewards: [{
 				id: "0F419A2561844A0E"
@@ -167,7 +167,7 @@
 				"00B6B1AFD9AB29C3"
 				"120E7C97781B59E9"
 			]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest7.description1}"]
+			description: ["{ftbquests.abydos.uhv_catalyst_core.description}"]
 			id: "77E6700262CDB4E0"
 			rewards: [{
 				id: "577AB092403F0B3D"
@@ -189,7 +189,7 @@
 				"1D259520871C3A28"
 				"120E7C97781B59E9"
 			]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest8.description1}"]
+			description: ["{ftbquests.abydos.uhv_high_strength_panel.description}"]
 			id: "433B94A266536D86"
 			rewards: [{
 				id: "2C0891BA24962E56"
@@ -212,7 +212,7 @@
 				"490C3ED5E2E7C000"
 				"7F8ADE8B1AFE2807"
 			]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest9.description1}"]
+			description: ["{ftbquests.abydos.uhv_micropower_router.description}"]
 			id: "7BBEB3C2DADBAD8B"
 			rewards: [{
 				id: "43BD55C54E2A6076"
@@ -229,7 +229,7 @@
 		}
 		{
 			dependencies: ["37E3EF96EDE85C86"]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest10.description1}"]
+			description: ["{ftbquests.abydos.zalloy_ingot.description}"]
 			id: "6110BA7B3E84F06F"
 			rewards: [{
 				id: "61B75FB189A66E73"
@@ -398,7 +398,7 @@
 				"179A15014A5716B5"
 				"7AC55BA8BDD0F3D2"
 			]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest19.description1}"]
+			description: ["{ftbquests.abydos.cyclonic_sifter.description}"]
 			id: "1A8F645AC1B30411"
 			rewards: [{
 				count: 2
@@ -413,13 +413,13 @@
 				item: "gtceu:cyclonic_sifter"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.adventures_in_abydos.quest19.title}"
+			title: "{ftbquests.abydos.cyclonic_sifter.title}"
 			x: -4.5d
 			y: 3.0d
 		}
 		{
 			dependencies: ["7AC55BA8BDD0F3D2"]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest20.description1}"]
+			description: ["{ftbquests.abydos.folding_akreyrium_stabiliser.description}"]
 			id: "5368269646BC0F27"
 			rewards: [{
 				id: "3E1E31EFB499CF8F"
@@ -436,7 +436,7 @@
 		}
 		{
 			dependencies: ["07AD6651D0B40E22"]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest21.description1}"]
+			description: ["{ftbquests.abydos.more_ultimate_multiblocks.description}"]
 			hide_dependent_lines: true
 			id: "7F203254ACDF8C88"
 			optional: true
@@ -457,13 +457,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.adventures_in_abydos.quest21.title}"
+			title: "{ftbquests.abydos.more_ultimate_multiblocks.title}"
 			x: -0.5d
 			y: 1.0d
 		}
 		{
 			dependencies: ["5368269646BC0F27"]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest22.description1}"]
+			description: ["{ftbquests.abydos.utopian_akreyrium.description}"]
 			icon: {
 				Count: 1
 				id: "gtceu:utopian_akreyrium_bucket"
@@ -490,13 +490,13 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.adventures_in_abydos.quest22.title}"
+			title: "{ftbquests.abydos.utopian_akreyrium.title}"
 			x: -0.5d
 			y: 3.0d
 		}
 		{
 			dependencies: ["305974D431F17AF0"]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest23.description1}"]
+			description: ["{ftbquests.abydos.bacterial_breeding_vat.description}"]
 			id: "6356F875511B2610"
 			rewards: [{
 				id: "6115048882C1189D"
@@ -517,7 +517,7 @@
 		}
 		{
 			dependencies: ["305974D431F17AF0"]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest24.description1}"]
+			description: ["{ftbquests.abydos.bacterial_hydrocarbon_harvester.description}"]
 			id: "47DF7968E9B98C65"
 			rewards: [{
 				id: "217E675CB4B89D49"
@@ -538,13 +538,7 @@
 		}
 		{
 			dependencies: ["6F05FAE3F5AAC357"]
-			description: [
-				"{ftbquests.chapter.adventures_in_abydos.quest25.description1}"
-				"{ftbquests.chapter.adventures_in_abydos.quest25.description2}"
-				"{ftbquests.chapter.adventures_in_abydos.quest25.description3}"
-				"{ftbquests.chapter.adventures_in_abydos.quest25.description4}"
-				"{ftbquests.chapter.adventures_in_abydos.quest25.description5}"
-			]
+			description: ["{ftbquests.abydos.bacterial_runic_mutator.description}"]
 			id: "7F72F9E28713D965"
 			rewards: [{
 				count: 2
@@ -568,10 +562,7 @@
 		}
 		{
 			dependencies: ["493DD013C818BB7B"]
-			description: [
-				"{ftbquests.chapter.adventures_in_abydos.quest26.description1}"
-				"{ftbquests.chapter.adventures_in_abydos.quest26.description2}"
-			]
+			description: ["{ftbquests.abydos.temples.description}"]
 			id: "3479CEBD73550718"
 			rewards: [{
 				id: "7FC500BE090ABC2E"
@@ -582,7 +573,7 @@
 				icon: "sgjourney:golden_idol"
 				id: "53D64E8D434ECA9C"
 				structure: "sgjourney:goauld_temple/desert_pyramid/desert_pyramid"
-				title: "{ftbquests.chapter.adventures_in_abydos.quest26.task_6041102318790691484.title}"
+				title: "{ftbquests.abydos.temples.title}"
 				type: "structure"
 			}]
 			x: -0.5d
@@ -590,7 +581,7 @@
 		}
 		{
 			dependencies: ["3479CEBD73550718"]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest27.description1}"]
+			description: ["{ftbquests.abydos.bacteria_dormant.description}"]
 			id: "6F05FAE3F5AAC357"
 			rewards: [{
 				id: "1C5C5256EB429800"
@@ -606,13 +597,13 @@
 				}
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.adventures_in_abydos.quest27.title}"
+			title: "{ftbquests.abydos.bacteria_dormant.title}"
 			x: -0.5d
 			y: -3.0d
 		}
 		{
 			dependencies: ["7F72F9E28713D965"]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest28.description1}"]
+			description: ["{ftbquests.abydos.bacteria.description}"]
 			id: "305974D431F17AF0"
 			rewards: [{
 				id: "0707F4889D91098E"
@@ -651,13 +642,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.adventures_in_abydos.quest28.title}"
+			title: "{ftbquests.abydos.bacteria.title}"
 			x: 3.5d
 			y: -5.0d
 		}
 		{
 			dependencies: ["3479CEBD73550718"]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest29.description1}"]
+			description: ["{ftbquests.abydos.runic_tablet_fragments.description}"]
 			id: "5744150A5658FE4D"
 			rewards: [{
 				id: "615C650D39461500"
@@ -696,13 +687,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.adventures_in_abydos.quest29.title}"
+			title: "{ftbquests.abydos.runic_tablet_fragments.title}"
 			x: 1.5d
 			y: -1.0d
 		}
 		{
 			dependencies: ["5744150A5658FE4D"]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest30.description1}"]
+			description: ["{ftbquests.abydos.runic_tablet_complete.description}"]
 			id: "146F88E5C1119649"
 			rewards: [{
 				id: "2DDF7ACB3920B1DA"
@@ -722,7 +713,7 @@
 				"4D04123F036F181E"
 				"1BE69DB2DFDC35C8"
 			]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest31.description1}"]
+			description: ["{ftbquests.abydos.ancient_runicalium_ingot.description}"]
 			id: "30C974448C57F0EC"
 			rewards: [{
 				id: "470268845820F4F7"
@@ -739,11 +730,7 @@
 		}
 		{
 			dependencies: ["30C974448C57F0EC"]
-			description: [
-				"{ftbquests.chapter.adventures_in_abydos.quest32.description1}"
-				""
-				"{ftbquests.chapter.adventures_in_abydos.quest32.description2}"
-			]
+			description: ["{ftbquests.abydos.ancient_runicalium_wire.description}"]
 			id: "1C0B16612DBBE8CA"
 			rewards: [{
 				id: "7EE50E0E44FBAE00"
@@ -764,11 +751,7 @@
 				"5B91E94506FB37D6"
 				"25583D0BF59E1BC8"
 			]
-			description: [
-				"{ftbquests.chapter.adventures_in_abydos.quest33.description1}"
-				""
-				"{ftbquests.chapter.adventures_in_abydos.quest33.description2}"
-			]
+			description: ["{ftbquests.abydos.uhv_auxiliary_boosted_fusion_reactor.description}"]
 			id: "6C8C6EA426060065"
 			rewards: [{
 				count: 2
@@ -792,7 +775,7 @@
 		}
 		{
 			dependencies: ["7AC55BA8BDD0F3D2"]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest34.description1}"]
+			description: ["{ftbquests.abydos.exotic_gas_siphon.description}"]
 			id: "2659B3AA9108BC43"
 			rewards: [{
 				id: "518D145AEA79CC76"
@@ -809,7 +792,7 @@
 		}
 		{
 			dependencies: ["3540AE6C940F985B"]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest35.description1}"]
+			description: ["{ftbquests.abydos.ancient_stargate_computer_core.description}"]
 			id: "34585406B4A18F41"
 			rewards: [{
 				count: 2
@@ -832,11 +815,7 @@
 				"34585406B4A18F41"
 				"5DADD2204991B4D5"
 			]
-			description: [
-				"{ftbquests.chapter.adventures_in_abydos.quest36.description1}"
-				""
-				"{ftbquests.chapter.adventures_in_abydos.quest36.description2}"
-			]
+			description: ["{ftbquests.abydos.ancient_stargate_base_block.description}"]
 			id: "6F9793149DE81FCC"
 			rewards: [{
 				id: "5A3140CEAF2772E4"
@@ -863,11 +842,7 @@
 				"29A86F882D68239F"
 				"78117340F3D4549A"
 			]
-			description: [
-				"{ftbquests.chapter.adventures_in_abydos.quest37.description1}"
-				""
-				"{ftbquests.chapter.adventures_in_abydos.quest37.description2}"
-			]
+			description: ["{ftbquests.abydos.ancient_stargate_ring_block.description}"]
 			id: "5DADD2204991B4D5"
 			rewards: [{
 				id: "0C6EE8224B97BBA5"
@@ -893,7 +868,7 @@
 				"5DADD2204991B4D5"
 				"425A865B6B617DEC"
 			]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest38.description1}"]
+			description: ["{ftbquests.abydos.ancient_stargate_chevron_block.description}"]
 			id: "63E36421AE07BC42"
 			rewards: [{
 				id: "1E1781F6129AF097"
@@ -919,7 +894,7 @@
 				"442233119AED645F"
 				"04DCB3F7F8B80717"
 			]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest39.description1}"]
+			description: ["{ftbquests.abydos.ancient_chevron_disk.description}"]
 			id: "425A865B6B617DEC"
 			rewards: [{
 				count: 2
@@ -939,7 +914,7 @@
 		}
 		{
 			dependencies: ["379D69A44FC5B2F2"]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest40.description1}"]
+			description: ["{ftbquests.abydos.gate_assembly.description}"]
 			hide_dependent_lines: true
 			id: "64F0BB858EEB7913"
 			rewards: [{
@@ -967,7 +942,7 @@
 				"21188AF95E6D5030"
 				"5FAD11260BC2F305"
 			]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest41.description1}"]
+			description: ["{ftbquests.abydos.draconic_coordinate_core.description}"]
 			id: "3540AE6C940F985B"
 			rewards: [{
 				id: "4C923D283D3BE0EA"
@@ -984,7 +959,7 @@
 		}
 		{
 			dependencies: ["2D064F759D13FE4B"]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest42.description1}"]
+			description: ["{ftbquests.abydos.nether_coordinate_crystal.description}"]
 			id: "29DAE5F27A1D4115"
 			rewards: [{
 				id: "361187FB10BF0C39"
@@ -1001,7 +976,7 @@
 		}
 		{
 			dependencies: ["2D064F759D13FE4B"]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest43.description1}"]
+			description: ["{ftbquests.abydos.end_coordinate_crystal.description}"]
 			id: "14479FB9FCF478D6"
 			rewards: [{
 				id: "2EFAEEDC5007A402"
@@ -1023,13 +998,7 @@
 				"63E36421AE07BC42"
 				"5DADD2204991B4D5"
 			]
-			description: [
-				"{ftbquests.chapter.adventures_in_abydos.quest44.description1}"
-				""
-				""
-				""
-				"{ftbquests.chapter.adventures_in_abydos.quest44.description2}"
-			]
+			description: ["{ftbquests.abydos.milky_way_stargate.description}"]
 			icon: {
 				Count: 1
 				id: "sgjourney:milky_way_stargate"
@@ -1122,19 +1091,19 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.adventures_in_abydos.quest44.title}"
+			title: "{ftbquests.abydos.milky_way_stargate.title}"
 			x: 11.5d
 			y: 1.0d
 		}
 		{
 			dependencies: ["47DF7968E9B98C65"]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest45.description1}"]
+			description: ["{ftbquests.abydos.ethylbenzene.description}"]
 			icon: "gtceu:ethylbenzene_bucket"
 			id: "2F91771A1872EB4E"
 			optional: true
 			tasks: [{
 				id: "78C1C4C6A34B9E8B"
-				title: "{ftbquests.chapter.adventures_in_abydos.quest45.task_8701452312478719627.title}"
+				title: "{ftbquests.abydos.ethylbenzene.title}"
 				type: "checkmark"
 			}]
 			x: -0.5d
@@ -1146,7 +1115,7 @@
 				"4A0AD203617FEF0E"
 				"7F203254ACDF8C88"
 			]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest46.description1}"]
+			description: ["{ftbquests.abydos.void_core.description}"]
 			id: "5FAD11260BC2F305"
 			rewards: [{
 				id: "0433F422BDFFAF25"
@@ -1167,7 +1136,7 @@
 				"4A0AD203617FEF0E"
 				"7F203254ACDF8C88"
 			]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest47.description1}"]
+			description: ["{ftbquests.abydos.hell_core.description}"]
 			id: "21188AF95E6D5030"
 			rewards: [{
 				id: "4AE809F68AD3D5B3"
@@ -1187,7 +1156,7 @@
 				"5022ABEA367576E7"
 				"3DF4C45A9424D4D1"
 			]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest48.description1}"]
+			description: ["{ftbquests.abydos.data_dna_disk.description}"]
 			hide_dependent_lines: true
 			id: "43DAD4B63603BFC3"
 			rewards: [{
@@ -1214,7 +1183,7 @@
 				"3ECCE739DE8F5F2C"
 				"3C99D83398AFC31C"
 			]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest49.description1}"]
+			description: ["{ftbquests.abydos.zalloy_coil.description}"]
 			id: "4D04123F036F181E"
 			rewards: [{
 				count: 2
@@ -1234,7 +1203,7 @@
 		}
 		{
 			dependencies: ["22B85F7F13C66730"]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest50.description1}"]
+			description: ["{ftbquests.abydos.uepic_chip.description}"]
 			id: "7AC55BA8BDD0F3D2"
 			rewards: [{
 				id: "7B8476986ACF57ED"
@@ -1253,7 +1222,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.adventures_in_abydos.quest50.title}"
+			title: "{ftbquests.abydos.uepic_chip.title}"
 			x: -4.5d
 			y: 5.0d
 		}
@@ -1262,7 +1231,7 @@
 				"2C354B0735DF8023"
 				"3C3E585C933C9515"
 			]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest51.description1}"]
+			description: ["{ftbquests.abydos.runic_casings.description}"]
 			id: "379D69A44FC5B2F2"
 			rewards: [{
 				id: "06D88EE9C7DC14A5"
@@ -1286,7 +1255,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.adventures_in_abydos.quest51.title}"
+			title: "{ftbquests.abydos.runic_casings.title}"
 			x: 7.5d
 			y: -3.0d
 		}
@@ -1295,7 +1264,7 @@
 				"2C354B0735DF8023"
 				"3C3E585C933C9515"
 			]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest52.description1}"]
+			description: ["{ftbquests.abydos.multi_runic_plating.description}"]
 			id: "5FCA8ED151CEB5C1"
 			rewards: [{
 				id: "7FDA3D0E34F6806E"
@@ -1318,7 +1287,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.adventures_in_abydos.quest52.title}"
+			title: "{ftbquests.abydos.multi_runic_plating.title}"
 			x: 7.5d
 			y: -1.0d
 		}
@@ -1327,7 +1296,7 @@
 				"146F88E5C1119649"
 				"624480A1E62B52EF"
 			]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest53.description1}"]
+			description: ["{ftbquests.abydos.runic_inscribe_manipulate.description}"]
 			id: "2C354B0735DF8023"
 			rewards: [{
 				count: 2
@@ -1355,7 +1324,7 @@
 				"4D5EEE7D7EC1FAFA"
 				"6D573ACD05D0EF96"
 			]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest54.description1}"]
+			description: ["{ftbquests.abydos.runic_plating.description}"]
 			id: "3C3E585C933C9515"
 			rewards: [{
 				id: "187EF22FCDECD230"
@@ -1379,7 +1348,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.adventures_in_abydos.quest54.title}"
+			title: "{ftbquests.abydos.runic_plating.title}"
 			x: 9.5d
 			y: -3.0d
 		}
@@ -1388,7 +1357,7 @@
 				"1E47910C2F2112E1"
 				"3212A3351DAD4492"
 			]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest55.description1}"]
+			description: ["{ftbquests.abydos.classic_chevron_assembly.description}"]
 			hide_dependency_lines: true
 			id: "442233119AED645F"
 			rewards: [{
@@ -1409,12 +1378,17 @@
 			y: 7.0d
 		}
 		{
+<<<<<<< HEAD
 			dependencies: [
 				"493DD013C818BB7B"
 				"69CCC4E36528A4FC"
 				"66E5020B15598CCD"
 			]
 			description: ["{ftbquests.chapter.adventures_in_abydos.quest56.description1}"]
+=======
+			dependencies: ["493DD013C818BB7B"]
+			description: ["{ftbquests.abydos.gritty_akreyrium.description}"]
+>>>>>>> 98d66ba4563ab527642efb634cb4edd0a4c43086
 			icon: {
 				Count: 1
 				id: "gtceu:gritty_akreyrium_bucket"
@@ -1442,13 +1416,13 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.adventures_in_abydos.quest56.title}"
+			title: "{ftbquests.abydos.gritty_akreyrium.title}"
 			x: -2.5d
 			y: 1.0d
 		}
 		{
 			dependencies: ["07AD6651D0B40E22"]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest57.description1}"]
+			description: ["{ftbquests.abydos.nanofluidic_heat_sink.description}"]
 			id: "6E40FC247C876DB2"
 			optional: true
 			rewards: [{
@@ -1461,7 +1435,7 @@
 				item: "start_core:hpca_nanofluidic_heat_sink_component"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.adventures_in_abydos.quest57.title}"
+			title: "{ftbquests.abydos.nanofluidic_heat_sink.title}"
 			x: 0.5d
 			y: 2.0d
 		}
@@ -1471,7 +1445,7 @@
 			optional: true
 			tasks: [{
 				id: "6A826ED481004E31"
-				title: "{ftbquests.chapter.adventures_in_abydos.quest58.task_7674818573969149489.title}"
+				title: "{ftbquests.abydos.positioner.title}"
 				type: "checkmark"
 			}]
 			x: 1.0d
@@ -1483,7 +1457,7 @@
 				"30C974448C57F0EC"
 				"3212A3351DAD4492"
 			]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest59.description1}"]
+			description: ["{ftbquests.abydos.inscribe_casing.description}"]
 			hide_dependency_lines: true
 			id: "624480A1E62B52EF"
 			rewards: [{
@@ -1501,7 +1475,7 @@
 		}
 		{
 			dependencies: ["25583D0BF59E1BC8"]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest60.description1}"]
+			description: ["{ftbquests.abydos.uhv_parallel_hatch.description}"]
 			hide_dependency_lines: true
 			id: "320ADA7E07856560"
 			rewards: [{
@@ -1509,7 +1483,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.adventures_in_abydos.quest60.subtitle}"
+			subtitle: "{ftbquests.abydos.uhv_parallel_hatch.subtitle}"
 			tasks: [{
 				id: "03A50D522C002B0C"
 				item: "start_core:uhv_parallel_hatch"
@@ -1523,18 +1497,14 @@
 				"320ADA7E07856560"
 				"7AC55BA8BDD0F3D2"
 			]
-			description: [
-				"{ftbquests.chapter.adventures_in_abydos.quest61.description1}"
-				""
-				"{ftbquests.chapter.adventures_in_abydos.quest61.description2}"
-			]
+			description: ["{ftbquests.abydos.uhv_absolute_parallel_hatch.description}"]
 			id: "230A202BB7D02C1A"
 			rewards: [{
 				id: "70C56357C02E5DF6"
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.adventures_in_abydos.quest61.subtitle}"
+			subtitle: "{ftbquests.abydos.uhv_absolute_parallel_hatch.subtitle}"
 			tasks: [{
 				id: "59E8F04BD1D95FD9"
 				item: "start_core:uhv_absolute_parallel_hatch"
@@ -1545,17 +1515,13 @@
 		}
 		{
 			dependencies: ["2659B3AA9108BC43"]
-			description: [
-				"{ftbquests.chapter.adventures_in_abydos.quest62.description1}"
-				""
-				"{ftbquests.chapter.adventures_in_abydos.quest62.description2}"
-			]
+			description: ["{ftbquests.abydos.radon.description}"]
 			icon: "gtceu:radon_bucket"
 			id: "6849929CF7E4477F"
 			optional: true
 			tasks: [{
 				id: "2635BED4229F491B"
-				title: "{ftbquests.chapter.adventures_in_abydos.quest62.task_2753316565530134811.title}"
+				title: "{ftbquests.abydos.radon.title}"
 				type: "checkmark"
 			}]
 			x: -8.5d
@@ -1566,7 +1532,7 @@
 				"2F26A144D29B00A5"
 				"3C3E585C933C9515"
 			]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest63.description1}"]
+			description: ["{ftbquests.abydos.nether_armor.description}"]
 			hide_dependent_lines: true
 			id: "59B0F5DB2C1E96DC"
 			rewards: [{
@@ -1620,7 +1586,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.adventures_in_abydos.quest63.title}"
+			title: "{ftbquests.abydos.nether_armor.title}"
 			x: 10.5d
 			y: -2.0d
 		}
@@ -1629,12 +1595,12 @@
 				"05E824087CE7825D"
 				"493DD013C818BB7B"
 			]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest64.description1}"]
+			description: ["{ftbquests.abydos.magma_processing.description}"]
 			icon: "gtceu:abydos_zapolite_rich_magma_bucket"
 			id: "5BD0047E69D79476"
 			tasks: [{
 				id: "630CDF3A4731333F"
-				title: "{ftbquests.chapter.adventures_in_abydos.quest64.task_7137324950870897471.title}"
+				title: "{ftbquests.abydos.magma_processing.title}"
 				type: "checkmark"
 			}]
 			x: -4.5d
@@ -1645,7 +1611,7 @@
 				"707C2E9BA62A60C5"
 				"5C39B74171CC21F9"
 			]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest65.description1}"]
+			description: ["{ftbquests.abydos.molten_destabilizer.description}"]
 			id: "05E824087CE7825D"
 			shape: "gear"
 			size: 1.5d
@@ -1662,13 +1628,7 @@
 				"14479FB9FCF478D6"
 				"43DAD4B63603BFC3"
 			]
-			description: [
-				"{ftbquests.chapter.adventures_in_abydos.quest66.description1}"
-				""
-				"{ftbquests.chapter.adventures_in_abydos.quest66.description2}"
-				""
-				"{ftbquests.chapter.adventures_in_abydos.quest66.description3}"
-			]
+			description: ["{ftbquests.abydos.abyss_fragment.description}"]
 			id: "63AD0F905F2A262B"
 			rewards: [{
 				id: "06E28D11F33EF9D8"
@@ -1690,13 +1650,7 @@
 				"29DAE5F27A1D4115"
 				"43DAD4B63603BFC3"
 			]
-			description: [
-				"{ftbquests.chapter.adventures_in_abydos.quest67.description1}"
-				""
-				"{ftbquests.chapter.adventures_in_abydos.quest67.description2}"
-				""
-				"{ftbquests.chapter.adventures_in_abydos.quest67.description3}"
-			]
+			description: ["{ftbquests.abydos.inferno_fragment.description}"]
 			id: "5BA6FB8F852C2629"
 			rewards: [{
 				id: "389B052A7F666317"
@@ -1718,7 +1672,7 @@
 				"07AD6651D0B40E22"
 				"43DAD4B63603BFC3"
 			]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest68.description1}"]
+			description: ["{ftbquests.abydos.empty_coordinate_core.description}"]
 			hide_dependency_lines: true
 			id: "4A0AD203617FEF0E"
 			rewards: [{
@@ -1736,11 +1690,7 @@
 		}
 		{
 			dependencies: ["509F0DE97411C0CD"]
-			description: [
-				"{ftbquests.chapter.adventures_in_abydos.quest69.description1}"
-				""
-				"{ftbquests.chapter.adventures_in_abydos.quest69.description2}"
-			]
+			description: ["{ftbquests.abydos.abyssal_stargate_rod.description}"]
 			hide_dependent_lines: true
 			id: "29A86F882D68239F"
 			rewards: [{
@@ -1758,11 +1708,7 @@
 		}
 		{
 			dependencies: ["5829828FB6290587"]
-			description: [
-				"{ftbquests.chapter.adventures_in_abydos.quest70.description1}"
-				""
-				"{ftbquests.chapter.adventures_in_abydos.quest70.description2}"
-			]
+			description: ["{ftbquests.abydos.infernal_stargate_rod.description}"]
 			hide_dependent_lines: true
 			id: "78117340F3D4549A"
 			rewards: [{
@@ -1780,7 +1726,7 @@
 		}
 		{
 			dependencies: ["63AD0F905F2A262B"]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest71.description1}"]
+			description: ["{ftbquests.abydos.untreated_abyssal_stargate_rod.description}"]
 			id: "509F0DE97411C0CD"
 			rewards: [{
 				id: "73F3B1BFF6FAF98D"
@@ -1797,7 +1743,7 @@
 		}
 		{
 			dependencies: ["5BA6FB8F852C2629"]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest72.description1}"]
+			description: ["{ftbquests.abydos.untreated_infernal_stargate_rod.description}"]
 			id: "5829828FB6290587"
 			rewards: [{
 				id: "6CEE5EE948F04928"
@@ -1814,11 +1760,7 @@
 		}
 		{
 			dependencies: ["07AD6651D0B40E22"]
-			description: [
-				"{ftbquests.chapter.adventures_in_abydos.quest73.description1}"
-				""
-				"{ftbquests.chapter.adventures_in_abydos.quest73.description2}"
-			]
+			description: ["{ftbquests.abydos.bulk_ore_processing_array.description}"]
 			id: "13118B7518370623"
 			rewards: [{
 				id: "5F1C87DDDBE0917F"
@@ -1835,7 +1777,7 @@
 		}
 		{
 			dependencies: ["630F50E03EC3D144"]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest74.description1}"]
+			description: ["{ftbquests.abydos.singularities.description}"]
 			id: "4D5EEE7D7EC1FAFA"
 			rewards: [{
 				id: "370282BF6FAD644A"
@@ -1859,17 +1801,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.adventures_in_abydos.quest74.title}"
+			title: "{ftbquests.abydos.singularities.title}"
 			x: 9.5d
 			y: -5.0d
 		}
 		{
 			dependencies: ["652809D17FCE8B11"]
-			description: [
-				"{ftbquests.chapter.adventures_in_abydos.quest77.description1}"
-				""
-				"{ftbquests.chapter.adventures_in_abydos.quest77.description2}"
-			]
+			description: ["{ftbquests.abydos.ruined_components.description}"]
 			id: "077F46BD75F325FD"
 			tasks: [
 				{
@@ -1913,13 +1851,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.adventures_in_abydos.quest77.title}"
+			title: "{ftbquests.abydos.ruined_components.title}"
 			x: -3.5d
 			y: -4.0d
 		}
 		{
 			dependencies: ["652809D17FCE8B11"]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest78.description1}"]
+			description: ["{ftbquests.abydos.abydos_talisman.description}"]
 			id: "7FBEF894C1FC4CCF"
 			tasks: [{
 				id: "16690ECAFD8AF4A4"
@@ -1942,7 +1880,7 @@
 				icon: "sgjourney:sandstone_cartouche"
 				id: "7B142445383BC74F"
 				structure: "sgjourney:cartouche/abydos_cartouche"
-				title: "{ftbquests.chapter.adventures_in_abydos.quest79.task_8868753445914134351.title}"
+				title: "{ftbquests.abydos.cartouche.title}"
 				type: "structure"
 			}]
 			x: -2.5d
@@ -1950,7 +1888,7 @@
 		}
 		{
 			dependencies: ["3479CEBD73550718"]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest80.description1}"]
+			description: ["{ftbquests.abydos.naquadah_armor.description}"]
 			hide_dependency_lines: true
 			id: "2F26A144D29B00A5"
 			rewards: [{
@@ -2004,13 +1942,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.adventures_in_abydos.quest80.title}"
+			title: "{ftbquests.abydos.naquadah_armor.title}"
 			x: 10.5d
 			y: -4.0d
 		}
 		{
 			dependencies: ["5BD0047E69D79476"]
-			description: ["{ftbquests.chapter.adventures_in_abydos.quest81.description1}"]
+			description: ["{ftbquests.abydos.abydos_alloys.description}"]
 			hide_dependent_lines: true
 			id: "3BFB8DA58BED12D1"
 			tasks: [
@@ -2030,7 +1968,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.adventures_in_abydos.quest81.title}"
+			title: "{ftbquests.abydos.abydos_alloys.title}"
 			x: -4.5d
 			y: -3.0d
 		}
@@ -2041,7 +1979,7 @@
 				"43DAD4B63603BFC3"
 			]
 			id: "25583D0BF59E1BC8"
-			subtitle: "{ftbquests.chapter.adventures_in_abydos.quest82.subtitle}"
+			subtitle: "{ftbquests.abydos.runic_wetware_processor_mainframe.subtitle}"
 			tasks: [{
 				id: "0F71C952D6EC490A"
 				item: "kubejs:runic_processor_mainframe"
@@ -2053,7 +1991,7 @@
 		{
 			dependencies: ["4F994F04EF1710B9"]
 			id: "67E52B5738FC7398"
-			subtitle: "{ftbquests.chapter.adventures_in_abydos.quest83.subtitle}"
+			subtitle: "{ftbquests.abydos.runic_wetware_processor_computer.subtitle}"
 			tasks: [{
 				id: "0AB6135CF248B2E9"
 				item: "kubejs:runic_processor_computer"
@@ -2068,7 +2006,7 @@
 				"5DC3B85B63641F6C"
 			]
 			id: "4F994F04EF1710B9"
-			subtitle: "{ftbquests.chapter.adventures_in_abydos.quest84.subtitle}"
+			subtitle: "{ftbquests.abydos.runic_wetware_processor_assembly.subtitle}"
 			tasks: [{
 				id: "6D1079B819FF51A6"
 				item: "kubejs:runic_processor_assembly"
@@ -2098,7 +2036,7 @@
 		}
 		{
 			dependencies: ["5BDA17962F4630EB"]
-			description: ["Only the strongests of coil insulators"]
+			description: ["{ftbquests.abydos.neutronium_silicon_carbide_ingot.description}"]
 			id: "06BE744AEAA6C217"
 			rewards: [{
 				id: "21070641AEDDEF98"
@@ -2116,11 +2054,7 @@
 		}
 		{
 			dependencies: ["1BE69DB2DFDC35C8"]
-			description: [
-				"{ftbquests.chapter.adventures_in_abydos.quest87.description1}"
-				""
-				"{ftbquests.chapter.adventures_in_abydos.quest87.description2}"
-			]
+			description: ["{ftbquests.abydos.zirconium_ingot.description}"]
 			id: "3C99D83398AFC31C"
 			rewards: [{
 				id: "6A32F9EDDCD8304C"
@@ -2168,7 +2102,7 @@
 				"25583D0BF59E1BC8"
 				"7AC55BA8BDD0F3D2"
 			]
-			description: ["{ftbquests.chapter.draconic_age_part_1.quest67.description1}"]
+			description: ["{ftbquests.abydos.oneiric_relay.description}"]
 			id: "0DFAD40205E5D899"
 			rewards: [{
 				id: "6C05E0C359C06382"
@@ -2185,7 +2119,7 @@
 		}
 		{
 			dependencies: ["22B85F7F13C66730"]
-			description: ["A way to copy the dream network your machines are on"]
+			description: ["{ftbquests.abydos.lucinducer.description}"]
 			id: "7E9A5A626648A859"
 			rewards: [{
 				id: "4A257F294C4D4C76"
@@ -2202,7 +2136,7 @@
 		}
 		{
 			dependencies: ["07AD6651D0B40E22"]
-			description: ["A machine capable of combining all the resource generation you needed."]
+			description: ["{ftbquests.abydos.ancient_refinement_center.description}"]
 			id: "413999F83FD85CF2"
 			tasks: [{
 				id: "173058FFEEC146AB"
@@ -2213,5 +2147,5 @@
 			y: 4.0d
 		}
 	]
-	title: "{ftbquests.chapter.adventures_in_abydos.title}"
+	title: "{ftbquests.abydos.title}"
 }
