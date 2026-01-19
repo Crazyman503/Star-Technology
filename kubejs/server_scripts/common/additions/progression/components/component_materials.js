@@ -1,31 +1,16 @@
 // priority: 1000
 
 global.componentMaterials = {
-
-    //Current use of materials in post_uv_machines
-
-        // {tier:'uhv',tier1up:'uev',tier1under:'uv',    //needs another arguement to tiers: {} added for the tier up (use tier0)
-        // main:'neutronium', //exist
-        // cable:'europium', //exist
-        // wire:'zirconium_selenide_diiodide', //luv is hssg, zpm is naq, uv is naq alloy, uhv is ZrSeI2, uev is AstBioselexCarb, UIV is hafnide ITO
-        // glass:'gtceu:fusion_glass', //exist, luv=>uv need to be updated, luv is laminated, zpm/uv is fusion
-        // plastic:'polyether_ether_ketone', //exist
-        // cable1up:'cerium_tritelluride', //need to add (cable1 works)
-        // mag:'pure_netherite', //exist
-        // pipe:'neutronium', //exist
-        // buzz:'neutronium', //luv is niobium titanium, zpm is naq alloy, uv is duranium, uhv+ is neutronium
-        // elctrlyzWire:'iron_selenide_over_strontium_titanium_oxide',  // LuV/ZPM is osmium now, UV/UHV is trinium now, UEV/UIV is tritanium now
-        // chip:'gtceu:uhpic',  //luv is gtceu:hpic, zpm/uv/uhv is gtceu:uhpic, uev/uiv is kubejs:uepic
-        // math:'1'}, //would need to adjust energy hatch equations to utilize scaler
-
     luv: {
-        tiers: { tier: 'luv', tier1: 'iv', tier2: 'ev' },
+        tiers: { tier: 'luv', tier0: 'zpm', tier1: 'iv', tier2: 'ev' },
         materials: {
             tierMaterial: 'rhodium_plated_palladium',
             primMaterial: 'hsss',
             supMaterial: 'ruridit',
+            wire: 'hssg',
             wireMechanical: 'palladium',
             wireCoil: 'osmiridium',
+            elctrlyzWire: 'osmium',
             tierFluid: '',
             coolant: '',
             solder: 'soldering_alloy',
@@ -34,13 +19,17 @@ global.componentMaterials = {
             supRubber: 'silicone_rubber',
             plastic: 'polytetrafluoroethylene',
             cable: 'niobium_titanium',
+            cable1: 'vanadium_gallium',
             catalyst: '1x gtceu:quantum_star',
             primMagnet: 'samarium',
             supMagnet: '',
             pipeMaterial: 'niobium_titanium',
             miscMaterial: 'rhodium',
-            glass: '',
-            superconductor: 'indium_tin_barium_titanium_cuprate'
+            glass: 'gtceu:laminated_glass',
+            superconductor: 'indium_tin_barium_titanium_cuprate',
+            buzz: 'niobium_titanium',
+            chip: 'gtceu:hpic',
+            math: 0
         },
         scaling: {
             scaler: 1,
@@ -53,13 +42,15 @@ global.componentMaterials = {
     },
 
     zpm: {
-        tiers: { tier: 'zpm', tier1: 'luv', tier2: 'iv' },
+        tiers: { tier: 'zpm', tier0: 'uv', tier1: 'luv', tier2: 'iv' },
         materials: {
             tierMaterial: 'naquadah_alloy',
             primMaterial: 'naquadah_alloy',
             supMaterial: 'osmiridium',
+            wire: 'naquadah',
             wireMechanical: 'europium',
             wireCoil: 'europium',
+            elctrlyzWire: 'osmium',
             tierFluid: '',
             coolant: '',
             solder: 'soldering_alloy',
@@ -68,13 +59,17 @@ global.componentMaterials = {
             supRubber: 'silicone_rubber',
             plastic: 'polybenzimidazole',
             cable: 'vanadium_gallium',
+            cable1: 'yttrium_barium_cuprate',
             catalyst: '2x gtceu:quantum_star',
             primMagnet: 'samarium',
             supMagnet: '',
             pipeMaterial: 'polybenzimidazole',
             miscMaterial: 'trinium',
-            glass: '',
-            superconductor: 'uranium_rhodium_dinaquadide'
+            glass: 'gtceu:fusion_glass',
+            superconductor: 'uranium_rhodium_dinaquadide',
+            buzz: 'naquadah_alloy',
+            chip: 'gtceu:uhpic',
+            math: 0
         },
         scaling: {
             scaler: 2,
@@ -87,13 +82,15 @@ global.componentMaterials = {
     },
 
     uv: {
-        tiers: { tier: 'uv', tier1: 'zpm', tier2: 'luv' },
+        tiers: { tier: 'uv', tier0: 'uhv', tier1: 'zpm', tier2: 'luv' },
         materials: {
             tierMaterial: 'darmstadtium',
             primMaterial: 'titan_steel',
             supMaterial: 'pure_netherite',
+            wire: 'naquadah_alloy',
             wireMechanical: 'americium',
             wireCoil: 'tritanium',
+            elctrlyzWire: 'trinium',
             tierFluid: 'naquadria',
             coolant: '',
             solder: 'indium_tin_lead_cadmium_soldering_alloy',
@@ -102,13 +99,17 @@ global.componentMaterials = {
             supRubber: 'styrene_butadiene_rubber',
             plastic: 'polyether_ether_ketone',
             cable: 'yttrium_barium_cuprate',
+            cable1: 'europium',
             catalyst: '1x gtceu:gravi_star',
             primMagnet: 'dysprosium',
             supMagnet: '',
             pipeMaterial: 'naquadah',
             miscMaterial: 'naquadria',
-            glass: '',
-            superconductor: 'enriched_naquadah_trinium_europium_duranide'
+            glass: 'gtceu:fusion_glass',
+            superconductor: 'enriched_naquadah_trinium_europium_duranide',
+            buzz: 'duranium',
+            chip: 'gtceu:uhpic',
+            math: 0
         },
         scaling: {
             scaler: 3,
@@ -121,13 +122,15 @@ global.componentMaterials = {
     },
 
     uhv: {
-        tiers: { tier: 'uhv', tier1: 'uv', tier2: 'zpm' },
+        tiers: { tier: 'uhv', tier0: 'uev', tier1: 'uv', tier2: 'zpm' },
         materials: {
             tierMaterial: 'neutronium',
             primMaterial: 'zalloy',
             supMaterial: 'zircalloy_4',
+            wire: 'zirconium_selenide_diiodide',
             wireMechanical: 'zirconium',
             wireCoil: 'thorium_plut_duranide_241',
+            elctrlyzWire: 'trinium',
             tierFluid: 'naquadria',
             coolant: 'liquid_helium',
             solder: 'indium_tin_lead_cadmium_soldering_alloy',
@@ -136,13 +139,17 @@ global.componentMaterials = {
             supRubber: 'styrene_butadiene_rubber',
             plastic: 'polyether_ether_ketone',
             cable: 'europium',
+            cable1: 'cerium_tritelluride',
             catalyst: '2x gtceu:gravi_star',
             primMagnet: 'dysprosium',
             supMagnet: 'samarium',
             pipeMaterial: 'neutronium',
             miscMaterial: 'neutronium',
             glass: 'gtceu:fusion_glass',
-            superconductor: 'ruthenium_trinium_americium_neutronate'
+            superconductor: 'ruthenium_trinium_americium_neutronate',
+            buzz: 'neutronium',
+            chip: 'gtceu:uhpic',
+            math: 1
         },
         scaling: {
             scaler: 4,
@@ -155,13 +162,15 @@ global.componentMaterials = {
     },
 
     uev: {
-        tiers: { tier: 'uev', tier1: 'uhv', tier2: 'uv' },
+        tiers: { tier: 'uev', tier0: 'uiv', tier1: 'uhv', tier2: 'uv' },
         materials: {
             tierMaterial: 'mythrolic_alloy',
             primMaterial: 'starium_alloy',
             supMaterial: 'magmada_alloy',
+            wire: 'astatium_bioselex_carbonite',
             wireMechanical: 'adamantine',
             wireCoil: 'aurourium',
+            elctrlyzWire: 'tritanium',
             tierFluid: 'isovol',
             coolant: 'superstate_helium_3',
             solder: 'naquadated_soldering_alloy',
@@ -170,13 +179,17 @@ global.componentMaterials = {
             supRubber: 'styrene_butadiene_rubber',
             plastic: 'poly_34_ethylenedioxythiophene_polystyrene_sulfate',
             cable: 'cerium_tritelluride',
+            cable1: 'polonium_bismide',
             catalyst: '2x kubejs:helish_star',
             primMagnet: 'zapolgium',
             supMagnet: 'dysprosium',
             pipeMaterial: 'mythrolic_alloy',
             miscMaterial: 'mythrolic_alloy',
             glass: 'gtceu:fusion_glass',
-            superconductor: 'seaborgium_palladium_enriched_estalt_flerovium_alloy'
+            superconductor: 'seaborgium_palladium_enriched_estalt_flerovium_alloy',
+            buzz: 'neutronium',
+            chip: 'kubejs:uepic',
+            math: 2
         },
         scaling: {
             scaler: 5,
@@ -189,13 +202,15 @@ global.componentMaterials = {
     },
 
     uiv: {
-        tiers: { tier: 'uiv', tier1: 'uev', tier2: 'uhv' },
+        tiers: { tier: 'uiv', tier0: 'uxv', tier1: 'uev', tier2: 'uhv' },
         materials: {
             tierMaterial: 'chaotixic_alloy',
             primMaterial: 'ohmderblux_alloy',
             supMaterial: 'abyssal_alloy',
+            wire: 'hafnide_ito_ceramic',
             wireMechanical: 'xeproda',
             wireCoil: 'magmada_alloy',
+            elctrlyzWire: 'tritanium',
             tierFluid: 'calamatium',
             coolant: 'superstate_helium_3',
             solder: 'naquadated_soldering_alloy',
@@ -204,15 +219,19 @@ global.componentMaterials = {
             supRubber: 'perfluoroelastomer_rubber',
             plastic: 'poly_34_ethylenedioxythiophene_polystyrene_sulfate',
             cable: 'polonium_bismide',
+            cable1: 'lepton_resonant_thallium_antimonide',
             catalyst: '1x kubejs:dragonic_eye',
             primMagnet: 'zapolgium',
             supMagnet: 'dysprosium',
             pipeMaterial: 'chaotixic_alloy',
             miscMaterial: 'chaotixic_alloy',
             glass: 'kubejs:draco_resilient_fusion_glass',
-            superconductor: 'rhenium_super_composite_alloy'
+            superconductor: 'rhenium_super_composite_alloy',
+            buzz: 'neutronium',
+            chip: 'kubejs:uepic',
+            math: 3
         },
-            scaling: {
+        scaling: {
             scaler: 6,
             EU: GTValues.VA[GTValues.UEV]
         },
