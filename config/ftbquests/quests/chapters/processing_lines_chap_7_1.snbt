@@ -250,7 +250,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.processing_lines_chap_7_1.quest14.title}"
+			title: "{ftbquests.processing_lines_chap.enriched_mystical_fluids.title}"
 			x: -7.5d
 			y: -4.5d
 		}
@@ -820,7 +820,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.processing_lines_chap_7_1.quest50.title}"
+			title: "{ftbquests.processing_lines_chap.titanium.title}"
 			x: 5.0d
 			y: -2.0d
 		}
@@ -973,7 +973,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "55FB41FCEAAE689F"
-				title: "{ftbquests.chapter.processing_lines_chap_7_1.quest60.task_6195618266903111839.title}"
+				title: "{ftbquests.processing_lines_chap.nether_drilling.title}"
 				type: "checkmark"
 			}]
 			x: -12.0d
@@ -3581,7 +3581,7 @@
 				}
 				{
 					id: "4FEC77C9901A2916"
-					title: "Concentrated Bromine Solution"
+					title: "{ftbquests.processing_lines_chap.concentrated_bromine_solution.title}"
 					type: "checkmark"
 				}
 			]
@@ -3601,7 +3601,7 @@
 				}
 				{
 					id: "6AB51AF8AAF32F05"
-					title: "Acidic Bromine Solution"
+					title: "{ftbquests.processing_lines_chap.acidic_bromine_solution.title}"
 					type: "checkmark"
 				}
 			]
@@ -3621,7 +3621,7 @@
 				}
 				{
 					id: "7AA4976128855159"
-					title: "Brominated Chlorine Vapor"
+					title: "{ftbquests.processing_lines_chap.brominated_chlorine_vapor.title}"
 					type: "checkmark"
 				}
 			]
@@ -3641,7 +3641,7 @@
 				}
 				{
 					id: "1E17F518616149E2"
-					title: "Hot Chlorinated Brominated Brine"
+					title: "{ftbquests.processing_lines_chap.hot_chlorinated_brominated_brine.title}"
 					type: "checkmark"
 				}
 			]
@@ -3664,7 +3664,7 @@
 				}
 				{
 					id: "6B41042C6EA92503"
-					title: "Hot Brine"
+					title: "{ftbquests.processing_lines_chap.hot_brine.title}"
 					type: "checkmark"
 				}
 			]
@@ -3684,7 +3684,7 @@
 				}
 				{
 					id: "2B604113D4EFF74C"
-					title: "Raw Brine"
+					title: "{ftbquests.processing_lines_chap.raw_brine.title}"
 					type: "checkmark"
 				}
 			]
@@ -3704,7 +3704,7 @@
 				}
 				{
 					id: "51043E6430D95FB7"
-					title: "Hot Alkaline Debrominated Brine"
+					title: "{ftbquests.processing_lines_chap.hot_alkaline_debrominated_brine.title}"
 					type: "checkmark"
 				}
 			]
@@ -3724,7 +3724,7 @@
 				}
 				{
 					id: "2CF9A32E88ED095F"
-					title: "Hot Debrominated Brine"
+					title: "{ftbquests.processing_lines_chap.hot_debrominated_brine.title}"
 					type: "checkmark"
 				}
 			]
@@ -3744,7 +3744,7 @@
 				}
 				{
 					id: "0CC2251D32527FF6"
-					title: "Debrominated Brine"
+					title: "{ftbquests.processing_lines_chap.debrominated_brine.title}"
 					type: "checkmark"
 				}
 			]
@@ -3764,7 +3764,7 @@
 				}
 				{
 					id: "32E722FFBBEABECA"
-					title: "Hot Brine"
+					title: "{ftbquests.processing_lines_chap.hot_brine.title}"
 					type: "checkmark"
 				}
 			]
@@ -3784,7 +3784,7 @@
 				}
 				{
 					id: "2244321FCC5D2FB3"
-					title: "Salt Water"
+					title: "{ftbquests.processing_lines_chap.salt_water.title}"
 					type: "checkmark"
 				}
 			]
@@ -3804,7 +3804,7 @@
 				}
 				{
 					id: "686AD61F8E1B0D36"
-					title: "Acidic Bromine Exhaust"
+					title: "{ftbquests.processing_lines_chap.acidic_bromine_exhaust.title}"
 					type: "checkmark"
 				}
 			]
@@ -3831,5 +3831,5 @@
 			y: 7.5d
 		}
 	]
-	title: "{ftbquests.chapter.processing_lines_chap_7_1.title}"
+	title: "{ftbquests.processing_lines_chap_7-1.title}"
 }

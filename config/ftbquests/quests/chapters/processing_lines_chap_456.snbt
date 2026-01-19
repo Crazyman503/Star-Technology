@@ -40,7 +40,7 @@
 			tasks: [
 				{
 					id: "632E07BAB3C511C3"
-					title: "{ftbquests.chapter.processing_lines_chap_456.quest2.task_7146658157144904131.title}"
+					title: "{ftbquests.processing_lines_chap.hot_naquadah_ingot.title}"
 					type: "checkmark"
 				}
 				{
@@ -61,7 +61,7 @@
 			tasks: [
 				{
 					id: "11232B9188CE6D47"
-					title: "{ftbquests.chapter.processing_lines_chap_456.quest3.task_1234878626895129927.title}"
+					title: "{ftbquests.processing_lines_chap.impure_enriched_naquadah_solution.title}"
 					type: "checkmark"
 				}
 				{
@@ -82,7 +82,7 @@
 			tasks: [
 				{
 					id: "117918C7D0538504"
-					title: "{ftbquests.chapter.processing_lines_chap_456.quest4.task_1259064817299457284.title}"
+					title: "{ftbquests.processing_lines_chap.impure_naquadria_solution.title}"
 					type: "checkmark"
 				}
 				{
@@ -100,7 +100,7 @@
 				"0743A08E81AB84D3"
 				"1F416C7A641914EC"
 			]
-			description: ["{ftbquests.chapter.processing_lines_chap_456.quest5.description1}"]
+			description: ["{ftbquests.processing_lines_chap.naquadah_ingot.description}"]
 			id: "445BC7DFD3387DD4"
 			rewards: [{
 				count: 3
@@ -138,7 +138,7 @@
 			tasks: [
 				{
 					id: "080549D49691AC4F"
-					title: "{ftbquests.chapter.processing_lines_chap_456.quest7.task_577949304595000399.title}"
+					title: "{ftbquests.processing_lines_chap.enriched_naquadah_solution.title}"
 					type: "checkmark"
 				}
 				{
@@ -159,7 +159,7 @@
 			tasks: [
 				{
 					id: "5C7C7BD5A3888932"
-					title: "{ftbquests.chapter.processing_lines_chap_456.quest8.task_6664337706103376178.title}"
+					title: "{ftbquests.processing_lines_chap.acidic_enriched_naquadah_solution.title}"
 					type: "checkmark"
 				}
 				{
@@ -192,7 +192,7 @@
 			tasks: [
 				{
 					id: "5C519C32B01BA776"
-					title: "{ftbquests.chapter.processing_lines_chap_456.quest10.task_6652269866119833462.title}"
+					title: "{ftbquests.processing_lines_chap.hot_enriched_naquadah_ingot.title}"
 					type: "checkmark"
 				}
 				{
@@ -232,7 +232,7 @@
 			tasks: [
 				{
 					id: "420B8EB885F5F2E4"
-					title: "{ftbquests.chapter.processing_lines_chap_456.quest12.task_4759054354419675876.title}"
+					title: "{ftbquests.processing_lines_chap.hot_trinium_ingot.title}"
 					type: "checkmark"
 				}
 				{
@@ -272,7 +272,7 @@
 			tasks: [
 				{
 					id: "6E78318257063B21"
-					title: "{ftbquests.chapter.processing_lines_chap_456.quest14.task_7960166777252887329.title}"
+					title: "{ftbquests.processing_lines_chap.naquadria_solution.title}"
 					type: "checkmark"
 				}
 				{
@@ -293,7 +293,7 @@
 			tasks: [
 				{
 					id: "3D44822AA7B4D618"
-					title: "{ftbquests.chapter.processing_lines_chap_456.quest15.task_4414796654443812376.title}"
+					title: "{ftbquests.processing_lines_chap.acidic_naquadria_solution.title}"
 					type: "checkmark"
 				}
 				{
@@ -326,7 +326,7 @@
 			tasks: [
 				{
 					id: "4D23139AB83241E6"
-					title: "{ftbquests.chapter.processing_lines_chap_456.quest17.task_5558307920341516774.title}"
+					title: "{ftbquests.processing_lines_chap.hot_naquadria_ingot.title}"
 					type: "checkmark"
 				}
 				{
@@ -378,7 +378,7 @@
 			tasks: [
 				{
 					id: "66228796EFF3C400"
-					title: "{ftbquests.chapter.processing_lines_chap_456.quest20.task_7359593823417385984.title}"
+					title: "{ftbquests.processing_lines_chap.polychlorinated_biphenyl.title}"
 					type: "checkmark"
 				}
 				{
@@ -418,7 +418,7 @@
 			tasks: [
 				{
 					id: "1609921B3C9372BF"
-					title: "{ftbquests.chapter.processing_lines_chap_456.quest22.task_1587960989302878911.title}"
+					title: "{ftbquests.processing_lines_chap.benzotrichloride.title}"
 					type: "checkmark"
 				}
 				{
@@ -439,7 +439,7 @@
 			tasks: [
 				{
 					id: "2AEB4CCD7C180D78"
-					title: "{ftbquests.chapter.processing_lines_chap_456.quest23.task_3092650014553935224.title}"
+					title: "{ftbquests.processing_lines_chap.benzoyl_chloride.title}"
 					type: "checkmark"
 				}
 				{
@@ -460,7 +460,7 @@
 			tasks: [
 				{
 					id: "15A8697511899135"
-					title: "{ftbquests.chapter.processing_lines_chap_456.quest24.task_1560613222410195253.title}"
+					title: "{ftbquests.processing_lines_chap.fluorobenzoyl_chloride.title}"
 					type: "checkmark"
 				}
 				{
@@ -496,7 +496,7 @@
 			tasks: [
 				{
 					id: "6DE47056203EB7E5"
-					title: "{ftbquests.chapter.processing_lines_chap_456.quest26.task_7918577560034654181.title}"
+					title: "{ftbquests.processing_lines_chap.fluorobenzene.title}"
 					type: "checkmark"
 				}
 				{
@@ -552,20 +552,20 @@
 				item: "gtceu:polyether_ether_ketone_bucket"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.processing_lines_chap_456.quest29.title}"
+			title: "{ftbquests.processing_lines_chap.liquid_peek.title}"
 			x: 6.75d
 			y: 10.5d
 		}
 		{
 			dependencies: ["6CC13BE9AD447218"]
-			description: ["{ftbquests.chapter.processing_lines_chap_456.quest30.description1}"]
+			description: ["{ftbquests.processing_lines_chap.bacteria.description}"]
 			icon: "gtceu:bacteria_bucket"
 			id: "24AE98EABF69F2D1"
 			size: 1.0d
 			tasks: [
 				{
 					id: "38060588E29D23DC"
-					title: "{ftbquests.chapter.processing_lines_chap_456.quest30.task_4036920201459868636.title}"
+					title: "{ftbquests.processing_lines_chap.bacteria.title}"
 					type: "checkmark"
 				}
 				{
@@ -586,7 +586,7 @@
 			tasks: [
 				{
 					id: "79FE294740C94AF4"
-					title: "{ftbquests.chapter.processing_lines_chap_456.quest31.task_8790508908680137460.title}"
+					title: "{ftbquests.processing_lines_chap.bacterial_sludge.title}"
 					type: "checkmark"
 				}
 				{
@@ -607,7 +607,7 @@
 			tasks: [
 				{
 					id: "69354C3F77402E73"
-					title: "{ftbquests.chapter.processing_lines_chap_456.quest32.task_7581049383215443571.title}"
+					title: "{ftbquests.processing_lines_chap.enriched_bacterial_sludge.title}"
 					type: "checkmark"
 				}
 				{
@@ -628,7 +628,7 @@
 			tasks: [
 				{
 					id: "3A9BAC2494B830B8"
-					title: "{ftbquests.chapter.processing_lines_chap_456.quest33.task_4223158348703871160.title}"
+					title: "{ftbquests.processing_lines_chap.mutagen.title}"
 					type: "checkmark"
 				}
 				{
@@ -653,7 +653,7 @@
 			tasks: [
 				{
 					id: "2EB6451DFA1D8FF1"
-					title: "{ftbquests.chapter.processing_lines_chap_456.quest34.task_3365953766558633969.title}"
+					title: "{ftbquests.processing_lines_chap.raw_growth_medium.title}"
 					type: "checkmark"
 				}
 				{
@@ -667,7 +667,7 @@
 			y: 6.5d
 		}
 		{
-			description: ["{ftbquests.chapter.processing_lines_chap_456.quest35.description1}"]
+			description: ["{ftbquests.processing_lines_chap.meat_dust.description}"]
 			id: "3DB8A5E51DB80275"
 			size: 1.0d
 			tasks: [{
@@ -698,7 +698,7 @@
 			tasks: [
 				{
 					id: "4028128489137766"
-					title: "{ftbquests.chapter.processing_lines_chap_456.quest37.task_4622965377940551526.title}"
+					title: "{ftbquests.processing_lines_chap.gelatin_mixture.title}"
 					type: "checkmark"
 				}
 				{
@@ -740,7 +740,7 @@
 				"59BA8A76701B3739"
 				"5BD0047E69D79476"
 			]
-			description: ["{ftbquests.chapter.processing_lines_chap_456.quest40.description1}"]
+			description: ["{ftbquests.processing_lines_chap.zirconium.description}"]
 			id: "1BE69DB2DFDC35C8"
 			rewards: [{
 				count: 3
@@ -767,7 +767,7 @@
 				"7658E16BA79A7632"
 				"5BD0047E69D79476"
 			]
-			description: ["{ftbquests.chapter.processing_lines_chap_456.quest41.description1}"]
+			description: ["{ftbquests.processing_lines_chap.zapolgium.description}"]
 			id: "37E3EF96EDE85C86"
 			rewards: [{
 				count: 3
@@ -796,7 +796,7 @@
 				"0491A3097C6BA6AE"
 				"40A015DBF6603208"
 			]
-			description: ["A semi-conductor worthy of this technology"]
+			description: ["{ftbquests.processing_lines_chap.silicon_carbide_over_bismuth_tritelluride_dust.description}"]
 			id: "22B85F7F13C66730"
 			rewards: [{
 				count: 3
@@ -857,7 +857,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.processing_lines_chap_456.quest44.title}"
+			title: "{ftbquests.processing_lines_chap.titanium_tetrachloride_mixture.title}"
 			x: 23.5d
 			y: -0.5d
 		}
@@ -885,7 +885,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.processing_lines_chap_456.quest45.title}"
+			title: "{ftbquests.processing_lines_chap.titanite_residue.title}"
 			x: 22.0d
 			y: -0.5d
 		}
@@ -916,7 +916,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.processing_lines_chap_456.quest46.title}"
+			title: "{ftbquests.processing_lines_chap.hydroxo_dioxo_titanite_mixture.title}"
 			x: 20.5d
 			y: -0.5d
 		}
@@ -947,7 +947,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.processing_lines_chap_456.quest47.title}"
+			title: "{ftbquests.processing_lines_chap.titanite_slurry.title}"
 			x: 17.5d
 			y: -0.5d
 		}
@@ -975,7 +975,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.processing_lines_chap_456.quest48.title}"
+			title: "{ftbquests.processing_lines_chap.titanite_slurry_residue.title}"
 			x: 19.0d
 			y: -0.5d
 		}
@@ -1021,7 +1021,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.processing_lines_chap_456.quest50.title}"
+			title: "{ftbquests.processing_lines_chap.perchloric_acid.title}"
 			x: 16.5d
 			y: -1.5d
 		}
@@ -1064,7 +1064,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.processing_lines_chap_456.quest52.title}"
+			title: "{ftbquests.processing_lines_chap.silica_gel.title}"
 			x: 18.0d
 			y: 0.5d
 		}
@@ -1324,13 +1324,13 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.processing_lines_chap_456.quest66.title}"
+			title: "{ftbquests.processing_lines_chap.lepton_sparse_akreyrium.title}"
 			x: 22.5d
 			y: 9.0d
 		}
 		{
 			dependencies: ["5BD0047E69D79476"]
-			description: ["{ftbquests.chapter.processing_lines_chap_456.quest67.description1}"]
+			description: ["{ftbquests.processing_lines_chap.tellurium.description}"]
 			id: "0C19C040CA121E3B"
 			rewards: [{
 				id: "4A6E9001EC8CD83D"
@@ -1454,7 +1454,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.processing_lines_chap_456.quest73.title}"
+			title: "{ftbquests.processing_lines_chap.nitric_acid.title}"
 			x: 14.0d
 			y: 7.5d
 		}
@@ -1508,7 +1508,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.processing_lines_chap_456.quest76.title}"
+			title: "{ftbquests.processing_lines_chap.steam.title}"
 			x: 25.5d
 			y: 6.5d
 		}
@@ -1536,7 +1536,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.processing_lines_chap_456.quest77.title}"
+			title: "{ftbquests.processing_lines_chap.carbon_monoxide.title}"
 			x: 25.5d
 			y: 4.5d
 		}
@@ -1557,7 +1557,7 @@
 		}
 		{
 			dependencies: ["7E99889B3427A842"]
-			description: ["{ftbquests.chapter.processing_lines_chap_456.quest79.description1}"]
+			description: ["{ftbquests.processing_lines_chap.sterilized_growth_medium.description}"]
 			id: "01AF9486EA6DA792"
 			rewards: [{
 				count: 3
@@ -1622,7 +1622,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.processing_lines_chap_456.quest81.title}"
+			title: "{ftbquests.processing_lines_chap.pcb_coolant.title}"
 			x: -0.5d
 			y: 1.5d
 		}
@@ -1650,7 +1650,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.processing_lines_chap_456.quest82.title}"
+			title: "{ftbquests.processing_lines_chap.hot_pcb_coolant.title}"
 			x: 0.5d
 			y: 1.5d
 		}
@@ -1660,7 +1660,7 @@
 				"1C81273869C0EC9F"
 				"60ECE277341A9408"
 			]
-			description: ["{ftbquests.chapter.processing_lines_chap_456.quest83.description1}"]
+			description: ["{ftbquests.processing_lines_chap.echo_shard.description}"]
 			id: "2F87FC1D5BB43220"
 			rewards: [{
 				count: 3
@@ -1777,7 +1777,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.processing_lines_chap_456.quest88.title}"
+			title: "{ftbquests.processing_lines_chap.rich_abydos_magma.title}"
 			x: 14.5d
 			y: 1.5d
 		}
@@ -1849,7 +1849,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.processing_lines_chap_456.quest91.title}"
+			title: "{ftbquests.processing_lines_chap.dichlorobenzene.title}"
 			x: 11.0d
 			y: -1.0d
 		}
@@ -1892,7 +1892,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.processing_lines_chap_456.quest93.title}"
+			title: "{ftbquests.processing_lines_chap.chlorine.title}"
 			x: 10.0d
 			y: -0.5d
 		}
@@ -1920,7 +1920,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.processing_lines_chap_456.quest94.title}"
+			title: "{ftbquests.processing_lines_chap.benzene.title}"
 			x: 10.0d
 			y: -1.5d
 		}
@@ -1930,7 +1930,7 @@
 			optional: true
 			tasks: [{
 				id: "1DF81F94D45BC87C"
-				title: "{ftbquests.chapter.processing_lines_chap_456.quest95.task_2159510745402558588.title}"
+				title: "{ftbquests.processing_lines_chap.positioner.title}"
 				type: "checkmark"
 			}]
 			x: 14.0d
@@ -2020,7 +2020,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.processing_lines_chap_456.quest97.title}"
+			title: "{ftbquests.processing_lines_chap.magma_byproducts.title}"
 			x: 16.0d
 			y: 2.5d
 		}
@@ -2050,7 +2050,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.processing_lines_chap_456.quest98.title}"
+			title: "{ftbquests.processing_lines_chap.tellurides.title}"
 			x: 17.5d
 			y: 1.5d
 		}
@@ -2092,7 +2092,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.processing_lines_chap_456.quest100.title}"
+			title: "{ftbquests.processing_lines_chap.selenides.title}"
 			x: 17.5d
 			y: 3.5d
 		}
@@ -2191,7 +2191,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.processing_lines_chap_456.quest106.title}"
+			title: "{ftbquests.processing_lines_chap.lepton_flux_akreyrium.title}"
 			x: 24.5d
 			y: 9.0d
 		}
@@ -2244,7 +2244,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.processing_lines_chap_456.quest109.title}"
+			title: "{ftbquests.processing_lines_chap.electron_sparse_akreyrium.title}"
 			x: 22.5d
 			y: 11.0d
 		}
@@ -2264,7 +2264,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.processing_lines_chap_456.quest110.title}"
+			title: "{ftbquests.processing_lines_chap.muon_sparse_akreyrium.title}"
 			x: 22.5d
 			y: 15.0d
 		}
@@ -2284,7 +2284,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.processing_lines_chap_456.quest111.title}"
+			title: "{ftbquests.processing_lines_chap.tau_sparse_akreyrium.title}"
 			x: 22.5d
 			y: 13.0d
 		}
@@ -2293,7 +2293,7 @@
 				"2C9FFC93C52399F3"
 				"3FF8A91DA67DDD97"
 			]
-			description: ["{ftbquests.chapter.processing_lines_chap_456.quest112.description1}"]
+			description: ["{ftbquests.processing_lines_chap.electron_injection_catalyst.description}"]
 			id: "3BE8A9FAFBB4DEDD"
 			tasks: [{
 				id: "275036A577A31726"
@@ -2308,7 +2308,7 @@
 				"2C9FFC93C52399F3"
 				"37229FB72AB997FC"
 			]
-			description: ["{ftbquests.chapter.processing_lines_chap_456.quest113.description1}"]
+			description: ["{ftbquests.processing_lines_chap.muon_injection_catalyst.description}"]
 			id: "60E2F170BC0CBCB6"
 			tasks: [{
 				id: "4838181402B28B0C"
@@ -2323,7 +2323,7 @@
 				"2C9FFC93C52399F3"
 				"40394150F71A72BA"
 			]
-			description: ["{ftbquests.chapter.processing_lines_chap_456.quest114.description1}"]
+			description: ["{ftbquests.processing_lines_chap.tau_injection_catalyst.description}"]
 			id: "5A127232CB963785"
 			tasks: [{
 				id: "3DB30CBF26B6B2FE"
@@ -2436,7 +2436,7 @@
 				item: "gtceu:utopian_akreyrium_bucket"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.processing_lines_chap_456.quest118.title}"
+			title: "{ftbquests.processing_lines_chap.better_akreyrium.title}"
 			x: 26.5d
 			y: 13.0d
 		}
@@ -2460,7 +2460,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.processing_lines_chap_456.quest119.title}"
+			title: "{ftbquests.processing_lines_chap.superalloy_looping.title}"
 			x: 26.5d
 			y: 11.0d
 		}
@@ -2472,7 +2472,7 @@
 				item: "kubejs:damaged_injection_catalyst"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.processing_lines_chap_456.quest120.title}"
+			title: "{ftbquests.processing_lines_chap.catalyst_recycling.title}"
 			x: 28.5d
 			y: 13.0d
 		}
@@ -2507,7 +2507,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.processing_lines_chap_456.quest122.title}"
+			title: "{ftbquests.processing_lines_chap.alternating_electron_infused_flux.title}"
 			x: 21.5d
 			y: 12.0d
 		}
@@ -2532,7 +2532,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.processing_lines_chap_456.quest123.title}"
+			title: "{ftbquests.processing_lines_chap.brilliant_muon_infused_flux.title}"
 			x: 21.5d
 			y: 16.0d
 		}
@@ -2556,7 +2556,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.processing_lines_chap_456.quest124.title}"
+			title: "{ftbquests.processing_lines_chap.ethereal_tau_infused_flux.title}"
 			x: 21.5d
 			y: 14.0d
 		}
@@ -2659,7 +2659,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.processing_lines_chap_456.quest132.title}"
+			title: "{ftbquests.processing_lines_chap.monophase_eletron_infused_flux.title}"
 			x: 15.5d
 			y: 14.0d
 		}
@@ -2682,7 +2682,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.processing_lines_chap_456.quest133.title}"
+			title: "{ftbquests.processing_lines_chap.foundational_flux.title}"
 			x: 15.5d
 			y: 16.0d
 		}
@@ -2714,7 +2714,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.processing_lines_chap_456.quest135.title}"
+			title: "{ftbquests.processing_lines_chap.superlight_tau_infused_flux.title}"
 			x: 19.5d
 			y: 14.0d
 		}
@@ -2737,7 +2737,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.processing_lines_chap_456.quest136.title}"
+			title: "{ftbquests.processing_lines_chap.superheavy_tau_infused_flux.title}"
 			x: 20.5d
 			y: 15.0d
 		}
@@ -2773,7 +2773,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.processing_lines_chap_456.quest138.title}"
+			title: "{ftbquests.processing_lines_chap.heavy_tau_infused_flux.title}"
 			x: 18.5d
 			y: 15.0d
 		}
@@ -2793,7 +2793,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.processing_lines_chap_456.quest139.title}"
+			title: "{ftbquests.processing_lines_chap.light_tau_infused_flux.title}"
 			x: 17.5d
 			y: 14.0d
 		}
@@ -2813,7 +2813,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.processing_lines_chap_456.quest140.title}"
+			title: "{ftbquests.processing_lines_chap.radiant_muon_infused_flux.title}"
 			x: 22.5d
 			y: 17.0d
 		}
@@ -2833,7 +2833,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.processing_lines_chap_456.quest141.title}"
+			title: "{ftbquests.processing_lines_chap.shining_muon_infused_flux.title}"
 			x: 21.5d
 			y: 18.0d
 		}
@@ -2853,7 +2853,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.processing_lines_chap_456.quest142.title}"
+			title: "{ftbquests.processing_lines_chap.glowing_muon_infused_flux.title}"
 			x: 20.5d
 			y: 17.0d
 		}
@@ -2873,7 +2873,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.processing_lines_chap_456.quest143.title}"
+			title: "{ftbquests.processing_lines_chap.twinkling_muon_infused_flux.title}"
 			x: 19.5d
 			y: 16.0d
 		}
@@ -3544,7 +3544,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.processing_lines_chap_456.quest179.title}"
+			title: "{ftbquests.processing_lines_chap.crookesite.title}"
 			x: 18.5d
 			y: 3.0d
 		}
@@ -3562,18 +3562,13 @@
 		}
 		{
 			dependencies: ["7C33054877B2DB16"]
-			description: [
-				"{ftbquests.chapter.processing_lines_chap_456.quest181.description1}"
-				""
-				""
-				"[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.processing_lines_chap_456.quest181.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"17FC1E92368D840B\"}}]"
-			]
+			description: ["{ftbquests.processing_lines_chap.leptonic_akreyrium_catalyst.description}"]
 			icon: "kubejs:leptonic_akreyrium_catalyst"
 			id: "39202B7E28ABD0EC"
 			optional: true
 			tasks: [{
 				id: "0560BAFCBFA5335C"
-				title: "{ftbquests.chapter.processing_lines_chap_456.quest181.task_387515162663662428.title}"
+				title: "{ftbquests.processing_lines_chap.leptonic_akreyrium_catalyst.title}"
 				type: "checkmark"
 			}]
 			x: 26.5d
@@ -3601,10 +3596,10 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.processing_lines_chap_456.quest182.title}"
+			title: "{ftbquests.processing_lines_chap.abydos_magmas.title}"
 			x: 14.5d
 			y: 3.5d
 		}
 	]
-	title: "{ftbquests.chapter.processing_lines_chap_456.title}"
+	title: "{ftbquests.processing_lines_chap_456.title}"
 }
