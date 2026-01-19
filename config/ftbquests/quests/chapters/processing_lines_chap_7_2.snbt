@@ -654,7 +654,7 @@
 				"7ADE549CFFB6AB36"
 				"7791705FF3192010"
 			]
-			description: ["{ftbquests.processing_lines_chap.pedot_pss.description}"]
+			description: ["Only the longest of polymer names"]
 			id: "1B6159E114BA50ED"
 			rewards: [{
 				count: 4
@@ -669,7 +669,7 @@
 				item: "gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate_bucket"
 				type: "item"
 			}]
-			title: "{ftbquests.processing_lines_chap.pedot_pss.title}"
+			title: "{ftbquests.chapter.processing_lines_chap_7_2.quest33.title}"
 			x: 2.0d
 			y: -4.5d
 		}
@@ -1061,7 +1061,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "1F8B168C07797665"
-				title: "{ftbquests.processing_lines_chap.abyss_harvesting.title}"
+				title: "{ftbquests.chapter.processing_lines_chap_7_2.quest55.task_2272935227615180389.title}"
 				type: "checkmark"
 			}]
 			x: -10.5d
@@ -2243,7 +2243,7 @@
 		}
 		{
 			dependencies: ["01AF9486EA6DA792"]
-			description: ["{ftbquests.processing_lines_chap.sterile_growth_medium.description}"]
+			description: ["{ftbquests.chapter.processing_lines_chap_7_2.quest119.description1}"]
 			icon: {
 				Count: 1
 				id: "gtceu:sterilized_growth_medium_bucket"
@@ -2278,7 +2278,7 @@
 		}
 		{
 			dependencies: ["2F87FC1D5BB43220"]
-			description: ["{ftbquests.processing_lines_chap.echo.description}"]
+			description: ["{ftbquests.chapter.processing_lines_chap_7_2.quest120.description1}"]
 			icon: {
 				Count: 1
 				id: "gtceu:echo_r_bucket"
@@ -2302,7 +2302,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.processing_lines_chap.echo.title}"
+			title: "{ftbquests.chapter.processing_lines_chap_7_2.quest120.title}"
 			x: 10.0d
 			y: 1.0d
 		}
@@ -2358,7 +2358,7 @@
 				item: "kubejs:draconic_scale_cells"
 				type: "item"
 			}]
-			title: "{ftbquests.processing_lines_chap.cheaper_draconic_scale_cell.title}"
+			title: "{ftbquests.chapter.processing_lines_chap_7_2.quest125.title}"
 			x: 5.5d
 			y: 1.5d
 		}
@@ -2371,7 +2371,7 @@
 				item: "gtceu:dragon_breath_bucket"
 				type: "item"
 			}]
-			title: "{ftbquests.processing_lines_chap.cheaper_dragon_breath.title}"
+			title: "{ftbquests.chapter.processing_lines_chap_7_2.quest126.title}"
 			x: 16.5d
 			y: 0.5d
 		}
@@ -2384,7 +2384,7 @@
 				item: "kubejs:draconic_stem_cells"
 				type: "item"
 			}]
-			title: "{ftbquests.processing_lines_chap.cheaper_draconic_stem_cells.title}"
+			title: "{ftbquests.chapter.processing_lines_chap_7_2.quest127.title}"
 			x: 18.5d
 			y: 5.5d
 		}
@@ -2414,5 +2414,5 @@
 			y: -3.0d
 		}
 	]
-	title: "{ftbquests.processing_lines_chap_7-2.title}"
+	title: "{ftbquests.chapter.processing_lines_chap_7_2.title}"
 }

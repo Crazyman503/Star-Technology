@@ -47,7 +47,7 @@
     "block.gtceu.exotic_gas_siphon.tooltip.1": "§7Utilising precision filtration and molecular isolation technologies, it efficiently separates exotic compounds from ambient environments, ensuring high-purity yields for any applications.",
     "block.gtceu.exotic_gas_siphon.tooltip.2": "§8-----------------------------------",
     "block.gtceu.exotic_gas_siphon.tooltip.3": "§6Exotic Gas Siphoning:",
-    "block.gtceu.exotic_gas_siphon.tooltip.4": "§7Siphons exotic gases directly from the atmosphere through a complex filtration and refining process, directly condensing traditional collection and distillation methods.",
+    "block.gtceu.exotic_gas_siphon.tooltip.4": "§7Siphons exotic gasses directly from the atmosphere through a complex filtration and refining process, directly condensing traditional collection and distillation methods.",
     "block.gtceu.exotic_gas_siphon.tooltip.5": "",
     "block.gtceu.exotic_gas_siphon.tooltip.6": "§6Gas Collector:",
     "block.gtceu.exotic_gas_siphon.tooltip.7": "§7This machine can collect the ambient air in the surrounding atmosphere, providing the same functionality as a basic §fGas Collector§7.",
@@ -64,11 +64,11 @@
     "block.gtceu.nuclear_reactor.tooltip.1": "Can use §3Parallel§r hatches",
 
     "block.gtceu.primitive_ore_factory.tooltip.0": "§7Your first all in one ore processing machine.",
-
+    
     "block.gtceu.steam_ore_factory.tooltip.0": "§7A slightly more advanced ore processor, that can accept inputs from buses and hatches, and because of that can be automated.",
 
     "block.gtceu.electric_ore_factory.tooltip.0": "§7The electric all in one ore processing machine.",
-
+    
     "block.gtceu.ore_processing_plant.tooltip.0": "§7A new tier of ore processing machine that far exceeds the throughput capacity of the previous tier.",
     "block.gtceu.ore_processing_plant.tooltip.1": "Can use §3Parallel§r hatches",
 
@@ -76,7 +76,7 @@
     "gtceu.bulk_ore_processing_array": "Bulk Ore Processing",
     "block.gtceu.bulk_ore_processing_array.tooltip.0": "§7The §4ULTIMATE§7 tier of ore processing machine that far exceeds the throughput capacity of all previous tiers.",
     "block.gtceu.bulk_ore_processing_array.tooltip.1": "Can use §3Parallel§r hatches§r, has §cSubtick Parallels§r, §2Bulking§r, and §bThroughput Boosting",
-
+    
     "block.gtceu.industrial_barrel": "Industrial Barrel",
     "gtceu.industrial_barrel_aqueous": "Industrial Barrel - Aqueous",
     "gtceu.industrial_barrel_magmatic": "Industrial Barrel - Magmatic",
@@ -84,11 +84,11 @@
     "block.gtceu.industrial_barrel.tooltip.1": "Has §cSubtick Parallels",
 
     "block.gtceu.large_barrel.tooltip.0": "§7A larger and better barrel, that can process larger amounts of items faster than the small one, along with having some new recipes.",
-
+    
     "block.gtceu.large_farm.tooltip.0": "§7An automated farm that runs during the day, providing you with some early sources of crops.",
-
+    
     "block.gtceu.large_stone_barrel.tooltip.0": "§7A larger stone barrel that can make all kinds of stones and lava.",
-
+    
     "block.gtceu.solid_blast_furnace.tooltip.0": "§7An upgraded primitive blast furnace.",
 
     "block.gtceu.rock_filtrator.tooltip.0": "§7A multiblock that can sieve through gravel and sand more precisely than a basic sieve could ever achieve, uncovering the gems hidden inside.",
@@ -113,95 +113,95 @@
     "block.gtceu.void_extractor.tooltip.0": "§7A machine that uses the ever present abyss under your feet to extract resources. Where they come from is unknown, but there is no time for those questions.",
     "block.gtceu.void_extractor.tooltip.1": "Can only have §bone§r Energy Hatch",
     "block.gtceu.void_extractor.tooltip.2": "§7You are gonna need multiple Output Buses and Hatches",
-
+    
     "block.gtceu.essence_enchancer.tooltip.0": "§7A convoluted machine, that can infuse mystical essences with large amounts of electricity to trigger a change in their composition, making them more useful.",
     "block.gtceu.essence_enchancer.tooltip.1": "Has §6Perfect Overclock",
     "block.gtceu.essence_enchancer.tooltip.2": "Can use §3Parallel§r hatches",
-
+    
     "block.gtceu.essence_replicator.tooltip.0": "§7A machine that can duplicate essences indefinitely, although for the more advanced ones, it requires special fluids to function properly.",
     "block.gtceu.essence_replicator.tooltip.1": "Has §6Perfect Overclock",
     "block.gtceu.essence_replicator.tooltip.2": "Can use §3Parallel§r hatches",
-
+    
     "block.gtceu.dimensional_destabiliser.tooltip.0": "§7A mysterious structure that can stimulate cracks in space to harvest heavy elements from it that have never been observed before.",
     "block.gtceu.dimensional_destabiliser.tooltip.1": "Can use §3Parallel§r hatches",
-
+    
     "block.gtceu.greenhouse.tooltip.0": "§7An electrical machine that stimulates the growth of plants, flowers and saplings, allowing you to more easily farm them.",
-
+    
     "block.gtceu.latex_plantation.tooltip.0": "§7A multiblock that is way faster then the arboreal extractor for gathering latex",
-
+    
     "block.gtceu.molten_destabilizer.tooltip.0": "§7A powerful machine that can splice complex molten chemicals into smaller chunks for processing",
     "block.gtceu.molten_destabilizer.tooltip.1": "Can use §3Parallel§r hatches",
-
+    
     "block.gtceu.vibration_laser_engraver.tooltip.0": "§7A multiblock that uses precise lasers and vibrations to effortlessly reform and engrave gems, chips, and crystals, changing them in whatever way you need.",
     "block.gtceu.vibration_laser_engraver.tooltip.1": "Can use §3Parallel§r hatches§r, has §cSubtick Parallels§r, §2Bulking§r, and §bThroughput Boosting",
-
+    
     "block.gtceu.cyclonic_sifter.tooltip.0": "§7An advanced tier of sifter that is more precise and stronger than the basic tier, allowing it to run better recipes.",
     "block.gtceu.cyclonic_sifter.tooltip.1": "Can use §3Parallel§r hatches",
-
+    
     "block.gtceu.injection_mixer.tooltip.0": "§7An advanced tier of mixer that can create more precise mixtures than the basic tier, allowing it to run better recipes.",
     "block.gtceu.injection_mixer.tooltip.1": "Can use §3Parallel§r hatches",
-
+    
     "block.gtceu.manifold_centrifuge.tooltip.0": "§7An advanced tier of centrifuge that is more powerful than the basic tier, allowing it to run better recipes.",
     "block.gtceu.manifold_centrifuge.tooltip.1": "Can use §3Parallel§r hatches",
-
+    
     "block.gtceu.classic_stargate_display.tooltip.0": "§7This is not a mandatory multiblock, but just exists to assist you with building the §3Classic Stargate",
-
+    
     "block.gtceu.t_large_bender.tooltip.0": "§7A larger variant of the bender that can process materials with more energy efficiency.",
     "block.gtceu.t_large_bender.tooltip.1": "Has §6Perfect Overclock",
     "block.gtceu.t_large_bender.tooltip.2": "Can only have §bone§r Energy Hatch",
-
+    
     "block.gtceu.t_large_centrifuge.tooltip.0": "§7A larger variant of the centrifuge that can process materials with more energy efficiency.",
     "block.gtceu.t_large_centrifuge.tooltip.1": "Has §6Perfect Overclock",
     "block.gtceu.t_large_centrifuge.tooltip.2": "Can only have §bone§r Energy Hatch",
-
+    
     "block.gtceu.t_large_electrolyzer.tooltip.0": "§7A larger variant of the electrolyzer that can process materials with more energy efficiency.",
     "block.gtceu.t_large_electrolyzer.tooltip.1": "Has §6Perfect Overclock",
     "block.gtceu.t_large_electrolyzer.tooltip.2": "Can only have §bone§r Energy Hatch",
-
+    
     "block.gtceu.t_large_extruder.tooltip.0": "§7A larger variant of the extruder that can process materials with more energy efficiency.",
     "block.gtceu.t_large_extruder.tooltip.1": "Has §6Perfect Overclock",
     "block.gtceu.t_large_extruder.tooltip.2": "Can only have §bone§r Energy Hatch",
-
+    
     "block.gtceu.t_large_forming_press.tooltip.0": "§7A larger variant of the forming press that can process materials with more energy efficiency.",
     "block.gtceu.t_large_forming_press.tooltip.1": "Has §6Perfect Overclock",
     "block.gtceu.t_large_forming_press.tooltip.2": "Can only have §bone§r Energy Hatch",
-
+    
     "block.gtceu.t_large_lathe.tooltip.0": "§7A larger variant of the lathe that can process materials with more energy efficiency.",
     "block.gtceu.t_large_lathe.tooltip.1": "Has §6Perfect Overclock",
     "block.gtceu.t_large_lathe.tooltip.2": "Can only have §bone§r Energy Hatch",
-
+    
     "block.gtceu.t_large_macerator.tooltip.0": "§7A larger variant of the macerator that can process materials with more energy efficiency.",
     "block.gtceu.t_large_macerator.tooltip.1": "Has §6Perfect Overclock",
     "block.gtceu.t_large_macerator.tooltip.2": "Can only have §bone§r Energy Hatch",
-
+    
     "block.gtceu.t_large_mixer.tooltip.0": "§7A larger variant of the mixer that can process materials with more energy efficiency.",
     "block.gtceu.t_large_mixer.tooltip.1": "Has §6Perfect Overclock",
     "block.gtceu.t_large_mixer.tooltip.2": "Can only have §bone§r Energy Hatch",
-
+    
     "block.gtceu.t_large_ore_washer.tooltip.0": "§7A larger variant of the ore washer that can process materials with more energy efficiency.",
     "block.gtceu.t_large_ore_washer.tooltip.1": "Has §6Perfect Overclock",
     "block.gtceu.t_large_ore_washer.tooltip.2": "Can only have §bone§r Energy Hatch",
-
+    
     "block.gtceu.t_large_sifter.tooltip.0": "§7A larger variant of the sifter that can process materials with more energy efficiency.",
     "block.gtceu.t_large_sifter.tooltip.1": "Has §6Perfect Overclock",
     "block.gtceu.t_large_sifter.tooltip.2": "Can only have §bone§r Energy Hatch",
-
+    
     "block.gtceu.t_large_thermal_centrifuge.tooltip.0": "§7A larger variant of the thermal centrifuge that can process materials with more energy efficiency.",
     "block.gtceu.t_large_thermal_centrifuge.tooltip.1": "Has §6Perfect Overclock",
     "block.gtceu.t_large_thermal_centrifuge.tooltip.2": "Can only have §bone§r Energy Hatch",
-
+    
     "block.gtceu.t_large_wiremill.tooltip.0": "§7A larger variant of the wiremill that can process materials with more energy efficiency.",
     "block.gtceu.t_large_wiremill.tooltip.1": "Has §6Perfect Overclock",
     "block.gtceu.t_large_wiremill.tooltip.2": "Can only have §bone§r Energy Hatch",
-
+    
     "block.gtceu.t_large_autoclave.tooltip.0": "§7A larger variant of the autoclave that can process materials with more energy efficiency.",
     "block.gtceu.t_large_autoclave.tooltip.1": "Has §6Perfect Overclock",
     "block.gtceu.t_large_autoclave.tooltip.2": "Can only have §bone§r Energy Hatch",
-
+    
     "block.gtceu.large_rock_crusher.tooltip.0": "§7A larger variant of the rock crusher that can process materials with more energy efficiency.",
     "block.gtceu.large_rock_crusher.tooltip.1": "Has §6Perfect Overclock",
     "block.gtceu.large_rock_crusher.tooltip.2": "Can only have §bone§r Energy Hatch",
-
+    
     "material.gtceu.soul_infused": "Soul Infused",
     "material.gtceu.signalum": "Signalum",
     "material.gtceu.lumium": "Lumium",
@@ -570,7 +570,7 @@
     "block.gtceu.exotic_gas_siphon": "Exotic Gas Siphon",
     "gtceu.exotic_gas_siphon": "Exotic Gas Siphoning",
     "material.gtceu.indium_oxide": "Indium Oxide",
-
+    
     "material.gtceu.blitz": "Liquid Blitz",
     "material.gtceu.blizz": "Liquid Blizz",
     "material.gtceu.basalz": "Liquid Basalz",
@@ -650,7 +650,7 @@
     "gtceu.composting": "Composting",
     "block.gtceu.ulv_casket": "Fermenting Casket",
     "gtceu.fermenting": "Fermenting",
-
+    
     "material.gtceu.warped": "Warped",
 
     "block.gtceu.classic_stargate_display": "Classic Stargate Shape Helper",
@@ -769,7 +769,7 @@
     "material.gtceu.primordial_nitrosilicate": "Primordial Nitrosilicate",
     "material.gtceu.magnesium_nitride": "Magnesium Nitride",
     "material.gtceu.runic_convergence_infusion": "Runic Convergence Infusion",
-
+    
     "material.gtceu.crude_infernal_concentrate": "Crude Infernal Concentrate",
     "material.gtceu.infernal_concentrate": "Infernal Concentrate",
     "material.gtceu.superheated_infernal_concentrate": "Superheated Infernal Concentrate",
@@ -959,7 +959,7 @@
     "block.gtceu.kiln": "Kiln",
     "gtceu.kiln": "Kiln",
     "block.gtceu.kiln.tooltip.0": "§7A stronger, beefier version of the campfire for your manufacturing needs.",
-
+    
     "block.gtceu.steam_kiln": "Steam Kiln",
     "gtceu.steam_kiln": "Steam Kiln",
     "block.gtceu.steam_kiln.tooltip.0": "§7A Kiln with buses and steam parallels.",
@@ -1014,8 +1014,8 @@
     "block.gtceu.auto_scavenger.tooltip.0": "§7Scavenges for you.",
     "block.gtceu.auto_scavenger.tooltip.1": "§4Hardmode§7 Exclusive",
 
-    "gtceu.industrial_pump": "Industrial Pump",
-    "block.gtceu.industrial_pump": "Industrial Pump",
+    "gtceu.industrial_pump" : "Industrial Pump",
+    "block.gtceu.industrial_pump" : "Industrial Pump",
     "block.gtceu.industrial_pump.tooltip.0": "§7A Stronger Primitive Pump",
     "block.gtceu.industrial_pump.tooltip.1": "§4Hardmode§7 Exclusive",
 
@@ -1131,7 +1131,7 @@
     "material.gtceu.diamond_skystone_alloy": "Diamond Skystone Alloy",
     "material.gtceu.certus_quartz_skystone_alloy": "Certus Quartz Skystone Alloy",
     "material.gtceu.fluix": "Fluix",
-    "material.gtceu.fluix_steel": "Fluix Steel",
+    "material.gtceu.fluix_steel": "Fluix Steel", 
     "material.gtceu.netherite_gold_skystone_alloy": "Netherite-Gold Skystone Alloy",
     "material.gtceu.netherite_certus_quartz_skystone_alloy": "Netherite-Certus Quartz Skystone Alloy",
 
@@ -1162,7 +1162,7 @@
     "block.gtceu.hydroponic_garden": "Hydroponic Garden",
     "block.gtceu.hydroponic_garden.tooltip.0": "§7A water based growing pod that can grow massive quantities of crops in seconds.",
     "block.gtceu.hydroponic_garden.tooltip.1": "Can use §3Parallel§r hatches and has §cSubtick Parallels",
-
+    
     "gtceu.composting_factory": "Composting Factory",
     "block.gtceu.composting_factory": "Composting Factory",
     "block.gtceu.composting_factory.tooltip.0": "§7A very quick composter that can provide you with enough bonemeal to last lifetimes.",
@@ -1320,7 +1320,7 @@
     "block.gtceu.electro_magnetic_material_ripper.tooltip.0": "§3§lMulti-threaded Energizer",
     "block.gtceu.electro_magnetic_material_ripper.tooltip.1": "§7A violent yet impossibly controlled field-flux engine that tears molecular alignments apart and reconfigures them under overwhelming authority.",
     "block.gtceu.electro_magnetic_material_ripper.tooltip.2": "§8-----------------------------------",
-    "block.gtceu.electro_magnetic_material_ripper.tooltip.3": "§7Available Recipe Types: §fPolarizer§7, §fElectromagnetic Separator§7, §fElectrolyzer",
+    "block.gtceu.electro_magnetic_material_ripper.tooltip.3": "§7Available Recipe Types: §fPolarizer§7, §fElectro-Magnetic Separator§7, §fElectrolyzer",
     "block.gtceu.electro_magnetic_material_ripper.tooltip.4": "Can use §3Parallel§r hatches§r, has §5Threading§r, §2Bulking§r, and §cSubtick Parallels§r",
 
     "block.gtceu.fermenting_arboreal_rejuvination_monstronsity": "Fermenting Arboreal Rejuvination Monstronsity",
@@ -1370,11 +1370,6 @@
     "block.gtceu.yielding_excression_advanced_seperation_transformator.tooltip.1": "§7A multiphase thermal-reactive refinery that fractionates complex fluids, vapors, and slurries into immaculate phases through relentless distillation and controlled fermentation cycles.",
     "block.gtceu.yielding_excression_advanced_seperation_transformator.tooltip.2": "§8-----------------------------------",
     "block.gtceu.yielding_excression_advanced_seperation_transformator.tooltip.3": "§7Available Recipe Types: §fDistillation Tower§7, §fDistillery§7, §fBrewery§7, §fFermenter§7, §fFluid Heater",
-    "block.gtceu.yielding_excression_advanced_seperation_transformator.tooltip.4": "Can use §3Parallel§r hatches§r, has §5Threading§r, §2Bulking§r, and §cSubtick Parallels§r",
+    "block.gtceu.yielding_excression_advanced_seperation_transformator.tooltip.4": "Can use §3Parallel§r hatches§r, has §5Threading§r, §2Bulking§r, and §cSubtick Parallels§r"
 
-    "gtceu.pulverizer": "Pulverizer",
-    "block.gtceu.t_large_pulverizer": "Large Pulverizer",
-    "block.gtceu.t_large_pulverizer.tooltip.0": "§7A larger variant of the pulverizier that can process materials with more energy efficiency.",
-    "block.gtceu.t_large_pulverizer.tooltip.1": "Has §6Perfect Overclock",
-    "block.gtceu.t_large_pulverizer.tooltip.2": "Can only have §bone§r Energy Hatch"
 }

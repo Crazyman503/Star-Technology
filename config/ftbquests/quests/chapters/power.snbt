@@ -28,7 +28,11 @@
 				"614071EB90CB89F5"
 				"1B32FFCDA1C87B90"
 			]
-			description: ["{ftbquests.power.stirling_dynamo.description}"]
+			description: [
+				"{ftbquests.chapter.power.quest1.description1}"
+				""
+				"{ftbquests.chapter.power.quest1.description2}"
+			]
 			id: "102F057123D31D85"
 			shape: "square"
 			tasks: [{
@@ -44,7 +48,11 @@
 				"614071EB90CB89F5"
 				"1B32FFCDA1C87B90"
 			]
-			description: ["{ftbquests.power.lapidary_dynamo.description}"]
+			description: [
+				"{ftbquests.chapter.power.quest2.description1}"
+				""
+				"{ftbquests.chapter.power.quest2.description2}"
+			]
 			id: "092ACDF732CE78F0"
 			shape: "square"
 			tasks: [{
@@ -60,7 +68,7 @@
 				"614071EB90CB89F5"
 				"1B32FFCDA1C87B90"
 			]
-			description: ["{ftbquests.power.compression_dynamo.description}"]
+			description: ["{ftbquests.chapter.power.quest3.description1}"]
 			id: "7910F6A8087A9E85"
 			shape: "square"
 			tasks: [{
@@ -172,11 +180,17 @@
 				"614071EB90CB89F5"
 				"7AAF2D8BC72919DB"
 			]
-			description: ["{ftbquests.power.boilers.description}"]
+			description: [
+				"{ftbquests.chapter.power.quest12.description1}"
+				""
+				"{ftbquests.chapter.power.quest12.description2}"
+				""
+				"{ftbquests.chapter.power.quest12.description3}"
+			]
 			icon: "systeams:steam_dynamo"
 			id: "67452BE135FAD1C3"
 			shape: "square"
-			subtitle: "{ftbquests.power.boilers.subtitle}"
+			subtitle: "{ftbquests.chapter.power.quest12.subtitle}"
 			tasks: [
 				{
 					id: "7C19C4AB7C36C6FD"
@@ -189,12 +203,17 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.power.boilers.title}"
+			title: "{ftbquests.chapter.power.quest12.title}"
 			x: -6.0d
 			y: 2.0d
 		}
 		{
-			description: ["{ftbquests.power.thermal_dynamos.description}"]
+			description: [
+				"{ftbquests.chapter.power.quest13.description1}"
+				"{ftbquests.chapter.power.quest13.description2}"
+				"{ftbquests.chapter.power.quest13.description3}"
+				"{ftbquests.chapter.power.quest13.description4}"
+			]
 			icon: {
 				Count: 1
 				id: "ftbquests:custom_icon"
@@ -207,14 +226,18 @@
 			size: 1.25d
 			tasks: [{
 				id: "0020A1ED81A0ACE0"
-				title: "{ftbquests.power.thermal_dynamos.title}"
+				title: "{ftbquests.chapter.power.quest13.task_9185240708852960.title}"
 				type: "checkmark"
 			}]
 			x: -5.0d
 			y: 3.5d
 		}
 		{
-			description: ["{ftbquests.power.gregtech_generators.description}"]
+			description: [
+				"{ftbquests.chapter.power.quest14.description1}"
+				"{ftbquests.chapter.power.quest14.description2}"
+				"{ftbquests.chapter.power.quest14.description3}"
+			]
 			icon: {
 				Count: 1
 				id: "ftbquests:custom_icon"
@@ -227,7 +250,7 @@
 			size: 1.25d
 			tasks: [{
 				id: "2739B3C9FA296C7F"
-				title: "{ftbquests.power.gregtech_generators.title}"
+				title: "{ftbquests.chapter.power.quest14.task_2826487921218514047.title}"
 				type: "checkmark"
 			}]
 			x: -3.0d
@@ -305,7 +328,11 @@
 				"7DDFBCDFC3F09A6B"
 				"51F889E1432E4DAD"
 			]
-			description: ["{ftbquests.power.large_plasma_turbine.description}"]
+			description: [
+				"{ftbquests.chapter.power.quest19.description1}"
+				""
+				"{ftbquests.chapter.power.quest19.description2}"
+			]
 			id: "6622E66A2FA19BA1"
 			shape: "square"
 			tasks: [{
@@ -321,7 +348,11 @@
 				"7DDFBCDFC3F09A6B"
 				"1B32FFCDA1C87B90"
 			]
-			description: ["{ftbquests.power.steam_turbine.description}"]
+			description: [
+				"{ftbquests.chapter.power.quest20.description1}"
+				""
+				"{ftbquests.chapter.power.quest20.description2}"
+			]
 			id: "214ADEEEA6FFF4BC"
 			shape: "square"
 			tasks: [{
@@ -367,7 +398,14 @@
 				"7DDFBCDFC3F09A6B"
 				"1B32FFCDA1C87B90"
 			]
-			description: ["{ftbquests.power.combustion.description}"]
+			description: [
+				"{ftbquests.chapter.power.quest23.description1}"
+				""
+				"{ftbquests.chapter.power.quest23.description2}"
+				""
+				"{ftbquests.chapter.power.quest23.description3}"
+				"{ftbquests.chapter.power.quest23.description4}"
+			]
 			id: "52D3EE2184A501B8"
 			shape: "square"
 			tasks: [{
@@ -413,7 +451,11 @@
 				"7DDFBCDFC3F09A6B"
 				"1B32FFCDA1C87B90"
 			]
-			description: ["{ftbquests.power.gas_turbine.description}"]
+			description: [
+				"{ftbquests.chapter.power.quest26.description1}"
+				""
+				"{ftbquests.chapter.power.quest26.description2}"
+			]
 			id: "2D7AD0E25BF9F651"
 			shape: "square"
 			tasks: [{
@@ -459,7 +501,7 @@
 				"614071EB90CB89F5"
 				"1B32FFCDA1C87B90"
 			]
-			description: ["{ftbquests.power.mci_kit.description}"]
+			description: ["{ftbquests.chapter.power.quest29.description1}"]
 			id: "08F1DEFEB060C74C"
 			shape: "square"
 			tasks: [{
@@ -556,7 +598,7 @@
 				"614071EB90CB89F5"
 				"1B32FFCDA1C87B90"
 			]
-			description: ["{ftbquests.power.arc_kit.description}"]
+			description: ["{ftbquests.chapter.power.quest33.description1}"]
 			id: "7B16D5BEC4CDB611"
 			shape: "square"
 			tasks: [{
@@ -657,7 +699,11 @@
 				"568B71C405BD66DF"
 				"2490AD30E2772475"
 			]
-			description: ["{ftbquests.power.redstone_flux_cell.description}"]
+			description: [
+				"{ftbquests.chapter.power.quest37.description1}"
+				""
+				"{ftbquests.chapter.power.quest37.description2}"
+			]
 			id: "38B3A7FC309E12E2"
 			rewards: [{
 				id: "3A1BB8F69976E897"
@@ -690,7 +736,7 @@
 				"38B3A7FC309E12E2"
 				"1B32FFCDA1C87B90"
 			]
-			description: ["{ftbquests.power.rfc_kit.description}"]
+			description: ["{ftbquests.chapter.power.quest38.description1}"]
 			id: "61E90638F79C5867"
 			shape: "square"
 			tasks: [{
@@ -716,7 +762,7 @@
 				"38B3A7FC309E12E2"
 				"1B32FFCDA1C87B90"
 			]
-			description: ["{ftbquests.power.rfs_kit.description}"]
+			description: ["{ftbquests.chapter.power.quest39.description1}"]
 			id: "78D71074F1F5968D"
 			shape: "square"
 			tasks: [{
@@ -742,7 +788,7 @@
 				"38B3A7FC309E12E2"
 				"1B32FFCDA1C87B90"
 			]
-			description: ["{ftbquests.power.rft_kit.description}"]
+			description: ["{ftbquests.chapter.power.quest40.description1}"]
 			id: "30280927DB01667B"
 			shape: "square"
 			tasks: [{
@@ -845,7 +891,13 @@
 		}
 		{
 			dependencies: ["0055CE82469F239C"]
-			description: ["{ftbquests.power.laser_transfer.description}"]
+			description: [
+				"{ftbquests.chapter.power.quest46.description1}"
+				""
+				"{ftbquests.chapter.power.quest46.description2}"
+				""
+				"{ftbquests.chapter.power.quest46.description3}"
+			]
 			icon: "gtceu:active_transformer"
 			id: "2FCCE10E5C3E858D"
 			shape: "octagon"
@@ -867,7 +919,7 @@
 		}
 		{
 			dependencies: ["51639FA6915BC51A"]
-			description: ["{ftbquests.power.basic_energy_core.description}"]
+			description: ["{ftbquests.chapter.power.quest47.description1}"]
 			id: "3DB836585182F614"
 			tasks: [{
 				id: "5AFD383C58F00AFC"
@@ -1480,7 +1532,7 @@
 				"1820787D031EAB15"
 				"4F2692F874F68EF8"
 			]
-			description: ["{ftbquests.power.flux_dust.description}"]
+			description: ["{ftbquests.chapter.power.quest80.description1}"]
 			id: "6BE70F5B5287034B"
 			shape: "octagon"
 			size: 1.25d
@@ -1494,7 +1546,11 @@
 		}
 		{
 			dependencies: ["6BE70F5B5287034B"]
-			description: ["{ftbquests.power.flux_controller.description}"]
+			description: [
+				"{ftbquests.chapter.power.quest81.description1}"
+				""
+				"{ftbquests.chapter.power.quest81.description2}"
+			]
 			id: "69F43BE9D0935398"
 			tasks: [{
 				id: "77A1F9E62DE67358"
@@ -1506,7 +1562,7 @@
 		}
 		{
 			dependencies: ["69F43BE9D0935398"]
-			description: ["{ftbquests.power.basic_flux_storage.description}"]
+			description: ["{ftbquests.chapter.power.quest82.description1}"]
 			id: "63BC24882A9477FC"
 			tasks: [{
 				id: "660384F905E060F0"
@@ -1518,7 +1574,7 @@
 		}
 		{
 			dependencies: ["69F43BE9D0935398"]
-			description: ["{ftbquests.power.flux_plug.description}"]
+			description: ["{ftbquests.chapter.power.quest83.description1}"]
 			id: "0B5F19D1FB43ACF5"
 			tasks: [{
 				id: "4CEF6EE62E77E81C"
@@ -1530,7 +1586,7 @@
 		}
 		{
 			dependencies: ["69F43BE9D0935398"]
-			description: ["{ftbquests.power.flux_point.description}"]
+			description: ["{ftbquests.chapter.power.quest84.description1}"]
 			id: "5F0540C28B46F4B4"
 			tasks: [{
 				id: "11D42B54E7FC569D"
@@ -1542,7 +1598,7 @@
 		}
 		{
 			dependencies: ["63BC24882A9477FC"]
-			description: ["{ftbquests.power.herculean_flux_storage.description}"]
+			description: ["{ftbquests.chapter.power.quest85.description1}"]
 			id: "0E5CA4D9E70B6765"
 			tasks: [{
 				id: "793F4AC360E0901D"
@@ -1554,7 +1610,7 @@
 		}
 		{
 			dependencies: ["0E5CA4D9E70B6765"]
-			description: ["{ftbquests.power.gargantuan_flux_storage.description}"]
+			description: ["{ftbquests.chapter.power.quest86.description1}"]
 			id: "25E66BD9F536A3F2"
 			tasks: [{
 				id: "5ADC12CE566588F7"
@@ -1569,7 +1625,7 @@
 				"1DBE1786C8F14A9E"
 				"4F2692F874F68EF8"
 			]
-			description: ["{ftbquests.power.diatrons.description}"]
+			description: ["{ftbquests.chapter.power.quest87.description1}"]
 			id: "5DDDD7D45FF6A06D"
 			tasks: [
 				{
@@ -1588,7 +1644,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.power.diatrons.title}"
+			title: "{ftbquests.chapter.power.quest87.title}"
 			x: -1.5d
 			y: 5.0d
 		}
@@ -1636,7 +1692,16 @@
 				"574CA65B67D79A6E"
 				"1B32FFCDA1C87B90"
 			]
-			description: ["{ftbquests.power.upgrade_kit.description}"]
+			description: [
+				"{ftbquests.chapter.power.quest90.description1}"
+				""
+				"{ftbquests.chapter.power.quest90.description2}"
+				"{ftbquests.chapter.power.quest90.description3}"
+				"{ftbquests.chapter.power.quest90.description4}"
+				"{ftbquests.chapter.power.quest90.description5}"
+				"{ftbquests.chapter.power.quest90.description6}"
+				"{ftbquests.chapter.power.quest90.description7}"
+			]
 			id: "50DED4576C89E893"
 			tasks: [{
 				id: "0FFFC4310BE7E52C"
@@ -1681,8 +1746,8 @@
 		}
 		{
 			dependencies: [
-				"60EB030A899ADE28"
 				"3FE17E376E30FFE4"
+				"60EB030A899ADE28"
 				"121EFB24BE239D59"
 			]
 			id: "40F4E7B58257EF09"
@@ -1705,7 +1770,11 @@
 		}
 		{
 			dependencies: ["7DDFBCDFC3F09A6B"]
-			description: ["{ftbquests.power.rotor_holder_oc.description}"]
+			description: [
+				"{ftbquests.chapter.power.quest93.description1}"
+				""
+				"{ftbquests.chapter.power.quest93.description2}"
+			]
 			icon: {
 				Count: 1
 				id: "ftbquests:custom_icon"
@@ -1716,7 +1785,7 @@
 			id: "344260A6F9D36843"
 			tasks: [{
 				id: "04DD118048A34595"
-				title: "{ftbquests.power.rotor_holder_oc.title}"
+				title: "{ftbquests.chapter.power.quest93.task_350455588676912533.title}"
 				type: "checkmark"
 			}]
 			x: -3.0d
@@ -1734,6 +1803,9 @@
 					Count: 1
 					id: "itemfilters:or"
 					tag: {
+						display: {
+							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Rotor Holders\"}"
+						}
 						items: [
 							{
 								Count: 1b
@@ -1770,7 +1842,6 @@
 						]
 					}
 				}
-				title: "{ftbquests.power.rotor_holders.title}"
 				type: "item"
 			}]
 			x: -1.5d
@@ -1778,7 +1849,11 @@
 		}
 		{
 			dependencies: ["1B32FFCDA1C87B90"]
-			description: ["{ftbquests.power.carbon_brushes.description}"]
+			description: [
+				"{ftbquests.chapter.power.quest95.description1}"
+				""
+				"{ftbquests.chapter.power.quest95.description2}"
+			]
 			id: "16E96E304325E38C"
 			shape: "octagon"
 			size: 1.25d
@@ -1799,7 +1874,17 @@
 		}
 		{
 			dependencies: ["16E96E304325E38C"]
-			description: ["{ftbquests.power.magnets.description}"]
+			description: [
+				"{ftbquests.chapter.power.quest96.description1}"
+				""
+				"{ftbquests.chapter.power.quest96.description2}"
+				""
+				"{ftbquests.chapter.power.quest96.description3}"
+				"{ftbquests.chapter.power.quest96.description4}"
+				""
+				"{ftbquests.chapter.power.quest96.description5}"
+				"{ftbquests.chapter.power.quest96.description6}"
+			]
 			id: "729283139D778F0B"
 			tasks: [
 				{
@@ -1833,7 +1918,7 @@
 		}
 		{
 			dependencies: ["16E96E304325E38C"]
-			description: ["{ftbquests.power.new_age_wires.description}"]
+			description: ["{ftbquests.chapter.power.quest97.description1}"]
 			id: "45D1535F842964DA"
 			tasks: [
 				{
@@ -1960,9 +2045,13 @@
 		}
 		{
 			dependencies: ["5BDA17962F4630EB"]
-			description: ["{ftbquests.power.empty_tier_iii_battery.description}"]
+			description: [
+				"{ftbquests.chapter.power.quest105.description1}"
+				""
+				"{ftbquests.chapter.power.quest105.description2}"
+			]
 			id: "178F411F38970DAB"
-			subtitle: "{ftbquests.power.empty_tier_iii_battery.subtitle}"
+			subtitle: "{ftbquests.chapter.power.quest105.subtitle}"
 			tasks: [{
 				id: "53D65FFA68E3620D"
 				item: "gtceu:empty_tier_iii_battery"
@@ -1972,9 +2061,9 @@
 			y: 3.0d
 		}
 		{
-			description: ["{ftbquests.power.empty_tier_ii_battery.description}"]
+			description: ["{ftbquests.chapter.power.quest106.description1}"]
 			id: "2CBF80C9C2CEE2AD"
-			subtitle: "{ftbquests.power.empty_tier_ii_battery.subtitle}"
+			subtitle: "{ftbquests.chapter.power.quest106.subtitle}"
 			tasks: [{
 				id: "14D896841610C86E"
 				item: "gtceu:empty_tier_ii_battery"
@@ -1984,9 +2073,13 @@
 			y: 3.0d
 		}
 		{
-			description: ["{ftbquests.power.empty_tier_i_battery.description}"]
+			description: [
+				"{ftbquests.chapter.power.quest107.description1}"
+				""
+				"{ftbquests.chapter.power.quest107.description2}"
+			]
 			id: "2018D0A87008C089"
-			subtitle: "{ftbquests.power.empty_tier_i_battery.subtitle}"
+			subtitle: "{ftbquests.chapter.power.quest107.subtitle}"
 			tasks: [{
 				id: "0CEF754E3143F0D5"
 				item: "gtceu:empty_tier_i_battery"
@@ -2006,7 +2099,7 @@
 			id: "1B32FFCDA1C87B90"
 			tasks: [{
 				id: "1A1E0BA9021B4EBF"
-				title: "{ftbquests.power.lv_power.title}"
+				title: "{ftbquests.chapter.power.quest108.task_1881954514800168639.title}"
 				type: "checkmark"
 			}]
 			x: 2.0d
@@ -2019,7 +2112,7 @@
 			id: "7AAF2D8BC72919DB"
 			tasks: [{
 				id: "06A3B205812C9136"
-				title: "{ftbquests.power.mv_power.title}"
+				title: "{ftbquests.chapter.power.quest109.task_478421722143166774.title}"
 				type: "checkmark"
 			}]
 			x: 2.0d
@@ -2032,7 +2125,7 @@
 			id: "4F2692F874F68EF8"
 			tasks: [{
 				id: "3CE8700342934626"
-				title: "{ftbquests.power.hv_power.title}"
+				title: "{ftbquests.chapter.power.quest110.task_4388880996176709158.title}"
 				type: "checkmark"
 			}]
 			x: 2.0d
@@ -2045,7 +2138,7 @@
 			id: "121EFB24BE239D59"
 			tasks: [{
 				id: "7C32E6DD5B0172DE"
-				title: "{ftbquests.power.ev_power.title}"
+				title: "{ftbquests.chapter.power.quest111.task_8949469247927579358.title}"
 				type: "checkmark"
 			}]
 			x: 2.0d
@@ -2058,7 +2151,7 @@
 			id: "51F889E1432E4DAD"
 			tasks: [{
 				id: "6D68F14C4CE64B1B"
-				title: "{ftbquests.power.iv_power.title}"
+				title: "{ftbquests.chapter.power.quest112.task_7883816457722022683.title}"
 				type: "checkmark"
 			}]
 			x: 2.0d
@@ -2071,7 +2164,7 @@
 			id: "0055CE82469F239C"
 			tasks: [{
 				id: "2F6EF045C5556BE5"
-				title: "{ftbquests.power.luv_power.title}"
+				title: "{ftbquests.chapter.power.quest113.task_3417933349674904549.title}"
 				type: "checkmark"
 			}]
 			x: 2.0d
@@ -2084,7 +2177,7 @@
 			id: "5D107FD21879F54B"
 			tasks: [{
 				id: "52FC6219EA1AA5C6"
-				title: "{ftbquests.power.zpm_power.title}"
+				title: "{ftbquests.chapter.power.quest114.task_5979762268682495430.title}"
 				type: "checkmark"
 			}]
 			x: 2.0d
@@ -2097,7 +2190,7 @@
 			id: "007D5B58CBF1BBE2"
 			tasks: [{
 				id: "48767E7FA86DF600"
-				title: "{ftbquests.power.uv_power.title}"
+				title: "{ftbquests.chapter.power.quest115.task_5221499904734393856.title}"
 				type: "checkmark"
 			}]
 			x: 2.0d
@@ -2111,7 +2204,7 @@
 			id: "21B905AA3AE6059F"
 			tasks: [{
 				id: "3739C0B4B9C3525F"
-				title: "{ftbquests.power.uhv_power.title}"
+				title: "{ftbquests.chapter.power.quest116.task_3979423628201775711.title}"
 				type: "checkmark"
 			}]
 			x: 2.0d
@@ -2124,7 +2217,7 @@
 			id: "3F34F4AC99C45E6F"
 			tasks: [{
 				id: "5C887C50FEA79C1D"
-				title: "{ftbquests.power.uev_power.title}"
+				title: "{ftbquests.chapter.power.quest117.task_6667715935633644573.title}"
 				type: "checkmark"
 			}]
 			x: 2.0d
@@ -2137,7 +2230,7 @@
 			id: "6FB365E6C91B482E"
 			tasks: [{
 				id: "34900E6146D45F27"
-				title: "{ftbquests.power.uiv_power.title}"
+				title: "{ftbquests.chapter.power.quest118.task_3787543097581526823.title}"
 				type: "checkmark"
 			}]
 			x: 2.0d
@@ -2146,8 +2239,12 @@
 		{
 			dependencies: ["6FB365E6C91B482E"]
 			description: [
-				"{ftbquests.power.dont_worry_about_it.description}"
-				"{image:komarumod:textures/painting/komaru_god.png width:100 height:100 align:center}"
+				"{ftbquests.chapter.power.quest119.description1}"
+				""
+				"{ftbquests.chapter.power.quest119.description2}"
+				"{ftbquests.chapter.power.quest119.description3}"
+				""
+				"{ftbquests.chapter.power.quest119.image0}"
 			]
 			hide_dependent_lines: true
 			icon: {
@@ -2160,7 +2257,7 @@
 			id: "611614FF7006D32B"
 			tasks: [{
 				id: "3546E07C5D849D76"
-				title: "{ftbquests.power.dont_worry_about_it.title}"
+				title: "{ftbquests.chapter.power.quest119.task_3839002557129465206.title}"
 				type: "checkmark"
 			}]
 			x: 2.0d
@@ -2224,7 +2321,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "77E920F0529FA4BD"
-				title: "{ftbquests.power.power_through_tiers.title}"
+				title: "{ftbquests.chapter.power.quest124.task_8640473576637441213.title}"
 				type: "checkmark"
 			}]
 			x: 2.0d
@@ -2235,7 +2332,7 @@
 				"7DDFBCDFC3F09A6B"
 				"121EFB24BE239D59"
 			]
-			description: ["{ftbquests.power.nuclear_reactor.description}"]
+			description: ["{ftbquests.chapter.power.quest125.description1}"]
 			id: "29A144BD0E7C524F"
 			tasks: [{
 				id: "0D35589F9644A1F9"
@@ -2342,7 +2439,7 @@
 			y: -7.0d
 		}
 		{
-			description: ["{ftbquests.power.solar.description}"]
+			description: ["{ftbquests.chapter.power.quest133.description1}"]
 			icon: {
 				Count: 1
 				id: "ftbquests:custom_icon"
@@ -2355,7 +2452,7 @@
 			size: 1.25d
 			tasks: [{
 				id: "2880D8142FDC174B"
-				title: "{ftbquests.power.solar.title}"
+				title: "{ftbquests.chapter.power.quest133.task_2918570139749979979.title}"
 				type: "checkmark"
 			}]
 			x: -8.5d
@@ -2366,7 +2463,15 @@
 				"6622E66A2FA19BA1"
 				"21B905AA3AE6059F"
 			]
-			description: ["{ftbquests.power.supreme_plasma_turbine.description}"]
+			description: [
+				"{ftbquests.chapter.power.quest134.description1}"
+				""
+				"{ftbquests.chapter.power.quest134.description2}"
+				""
+				"{ftbquests.chapter.power.quest134.description3}"
+				""
+				"{ftbquests.chapter.power.quest134.description4}"
+			]
 			id: "1EE1007BA8202CC1"
 			tasks: [{
 				id: "78F0AF086C547FA4"
@@ -2381,7 +2486,7 @@
 				"2D9EFD27A3C32062"
 				"21B905AA3AE6059F"
 			]
-			description: ["{ftbquests.power.solar_panel_8.description}"]
+			description: ["{ftbquests.chapter.power.quest135.description1}"]
 			id: "13675CDA1DE4A69A"
 			tasks: [{
 				id: "217C172DEC161D6F"
@@ -2406,5 +2511,5 @@
 			y: -2.0d
 		}
 	]
-	title: "{ftbquests.power.title}"
+	title: "{ftbquests.chapter.power.title}"
 }

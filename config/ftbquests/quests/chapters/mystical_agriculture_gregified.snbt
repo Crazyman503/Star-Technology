@@ -10,7 +10,11 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["{ftbquests.mystical_agriculture_gregified.inferium_essence.description}"]
+			description: [
+				"{ftbquests.chapter.mystical_agriculture_gregified.quest1.description1}"
+				""
+				"{ftbquests.chapter.mystical_agriculture_gregified.quest1.description2}"
+			]
 			id: "56B697F3D73D8A5F"
 			shape: "hexagon"
 			size: 1.5d
@@ -993,7 +997,7 @@
 			tasks: [
 				{
 					id: "30138EDA3C6FE9B3"
-					title: "{ftbquests.mystical_agriculture_gregified.12_crown_4_li.title}"
+					title: "{ftbquests.chapter.mystical_agriculture_gregified.quest71.task_3464269606346025395.title}"
 					type: "checkmark"
 				}
 				{
@@ -1017,7 +1021,7 @@
 			tasks: [
 				{
 					id: "318CC75FFEEE528F"
-					title: "{ftbquests.mystical_agriculture_gregified.15_crown_5_na.title}"
+					title: "{ftbquests.chapter.mystical_agriculture_gregified.quest72.task_3570447819710812815.title}"
 					type: "checkmark"
 				}
 				{
@@ -1041,7 +1045,7 @@
 			tasks: [
 				{
 					id: "00E6FA8B41200FA2"
-					title: "{ftbquests.mystical_agriculture_gregified.18_crown_6_k.title}"
+					title: "{ftbquests.chapter.mystical_agriculture_gregified.quest73.task_65014720643469218.title}"
 					type: "checkmark"
 				}
 				{
@@ -1064,7 +1068,7 @@
 			tasks: [
 				{
 					id: "0B6D2540F53713E5"
-					title: "{ftbquests.mystical_agriculture_gregified.12_crown_4.title}"
+					title: "{ftbquests.chapter.mystical_agriculture_gregified.quest74.task_823355267800830949.title}"
 					type: "checkmark"
 				}
 				{
@@ -1087,7 +1091,7 @@
 			tasks: [
 				{
 					id: "4AFEA8AC008A1AFD"
-					title: "{ftbquests.mystical_agriculture_gregified.15_crown_5.title}"
+					title: "{ftbquests.chapter.mystical_agriculture_gregified.quest75.task_5403942059588066045.title}"
 					type: "checkmark"
 				}
 				{
@@ -1111,7 +1115,7 @@
 			tasks: [
 				{
 					id: "1B4778C80E9F9878"
-					title: "{ftbquests.mystical_agriculture_gregified.18_crown_6.title}"
+					title: "{ftbquests.chapter.mystical_agriculture_gregified.quest76.task_1965672563004643448.title}"
 					type: "checkmark"
 				}
 				{
@@ -1167,7 +1171,7 @@
 			tasks: [
 				{
 					id: "68A26B9D231E9B2D"
-					title: "{ftbquests.mystical_agriculture_gregified.triethylene_glycol.title}"
+					title: "{ftbquests.chapter.mystical_agriculture_gregified.quest80.task_7539707048814877485.title}"
 					type: "checkmark"
 				}
 				{
@@ -1187,7 +1191,7 @@
 			tasks: [
 				{
 					id: "642BC1768FE93CA0"
-					title: "{ftbquests.mystical_agriculture_gregified.diethylene_glycol.title}"
+					title: "{ftbquests.chapter.mystical_agriculture_gregified.quest81.task_7218075542756080800.title}"
 					type: "checkmark"
 				}
 				{
@@ -1207,7 +1211,7 @@
 			tasks: [
 				{
 					id: "235D598914EE8CFA"
-					title: "{ftbquests.mystical_agriculture_gregified.ethylene_glycol.title}"
+					title: "{ftbquests.chapter.mystical_agriculture_gregified.quest82.task_2548291409458138362.title}"
 					type: "checkmark"
 				}
 				{
@@ -1226,7 +1230,7 @@
 			tasks: [
 				{
 					id: "0FECC619EB444387"
-					title: "{ftbquests.mystical_agriculture_gregified.ethylene_oxide.title}"
+					title: "{ftbquests.chapter.mystical_agriculture_gregified.quest83.task_1147509819696235399.title}"
 					type: "checkmark"
 				}
 				{
@@ -1249,7 +1253,7 @@
 			tasks: [
 				{
 					id: "392237AF8F56116D"
-					title: "{ftbquests.mystical_agriculture_gregified.triglycol_dichloride.title}"
+					title: "{ftbquests.chapter.mystical_agriculture_gregified.quest84.task_4116914236533641581.title}"
 					type: "checkmark"
 				}
 				{
@@ -1269,7 +1273,7 @@
 			tasks: [
 				{
 					id: "0D5205DEB891B798"
-					title: "{ftbquests.mystical_agriculture_gregified.sulfuryl_chloride.title}"
+					title: "{ftbquests.chapter.mystical_agriculture_gregified.quest85.task_959836124720773016.title}"
 					type: "checkmark"
 				}
 				{
@@ -1288,7 +1292,7 @@
 			tasks: [
 				{
 					id: "6D761274B55A8662"
-					title: "{ftbquests.mystical_agriculture_gregified.sulfuryl_dichloride.title}"
+					title: "{ftbquests.chapter.mystical_agriculture_gregified.quest86.task_7887512089854117474.title}"
 					type: "checkmark"
 				}
 				{
@@ -1307,7 +1311,7 @@
 			tasks: [
 				{
 					id: "3894238C15DA8510"
-					title: "{ftbquests.mystical_agriculture_gregified.thionyl_chloride.title}"
+					title: "{ftbquests.chapter.mystical_agriculture_gregified.quest87.task_4076922647246177552.title}"
 					type: "checkmark"
 				}
 				{
@@ -1326,7 +1330,7 @@
 			tasks: [
 				{
 					id: "4E8490312406ED92"
-					title: "{ftbquests.mystical_agriculture_gregified.toluene.title}"
+					title: "{ftbquests.chapter.mystical_agriculture_gregified.quest88.task_5657805572616416658.title}"
 					type: "checkmark"
 				}
 				{
@@ -1434,7 +1438,7 @@
 			tasks: [
 				{
 					id: "14E37DD56C9480D2"
-					title: "{ftbquests.mystical_agriculture_gregified.222_cryptand.title}"
+					title: "{ftbquests.chapter.mystical_agriculture_gregified.quest96.task_1505185056075055314.title}"
 					type: "checkmark"
 				}
 				{
@@ -1458,7 +1462,7 @@
 			tasks: [
 				{
 					id: "5BCF019BE4A97B03"
-					title: "{ftbquests.mystical_agriculture_gregified.222_cryptand_li.title}"
+					title: "{ftbquests.chapter.mystical_agriculture_gregified.quest97.task_6615508146698418947.title}"
 					type: "checkmark"
 				}
 				{
@@ -1482,7 +1486,7 @@
 			tasks: [
 				{
 					id: "6583FF1119FE6457"
-					title: "{ftbquests.mystical_agriculture_gregified.222_cryptand_na.title}"
+					title: "{ftbquests.chapter.mystical_agriculture_gregified.quest98.task_7314970668695446615.title}"
 					type: "checkmark"
 				}
 				{
@@ -1506,7 +1510,7 @@
 			tasks: [
 				{
 					id: "0597F4E0A3FECE31"
-					title: "{ftbquests.mystical_agriculture_gregified.222_cryptand_k.title}"
+					title: "{ftbquests.chapter.mystical_agriculture_gregified.quest99.task_403059937334185521.title}"
 					type: "checkmark"
 				}
 				{
@@ -1553,6 +1557,9 @@
 					Count: 1
 					id: "itemfilters:or"
 					tag: {
+						display: {
+							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Mystical Greenhouses\"}"
+						}
 						items: [
 							{
 								Count: 1b
@@ -1589,10 +1596,9 @@
 						]
 					}
 				}
-				title: "{ftbquests.mystical_agriculture_gregified.mystical_greenhouse.item_title}"
 				type: "item"
 			}]
-			title: "{ftbquests.mystical_agriculture_gregified.mystical_greenhouse.title}"
+			title: "{ftbquests.chapter.mystical_agriculture_gregified.quest102.title}"
 			x: -11.5d
 			y: -7.0d
 		}
@@ -1605,6 +1611,9 @@
 					Count: 1
 					id: "itemfilters:or"
 					tag: {
+						display: {
+							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Essence Burners\"}"
+						}
 						items: [
 							{
 								Count: 1b
@@ -1641,10 +1650,9 @@
 						]
 					}
 				}
-				title: "{ftbquests.mystical_agriculture_gregified.essence_burner.item_title}"
 				type: "item"
 			}]
-			title: "{ftbquests.mystical_agriculture_gregified.essence_burner.title}"
+			title: "{ftbquests.chapter.mystical_agriculture_gregified.quest103.title}"
 			x: -12.5d
 			y: -7.0d
 		}
@@ -1665,16 +1673,16 @@
 				"6D9D31BEE724E7F2"
 			]
 			dependency_requirement: "one_completed"
-			description: ["{ftbquests.mystical_agriculture_gregified.ma_chem_looping.description}"]
+			description: ["{ftbquests.chapter.mystical_agriculture_gregified.quest105.description1}"]
 			id: "31FE488A7302A0D2"
 			tasks: [{
 				id: "39AAE923E4183A6D"
-				title: "{ftbquests.mystical_agriculture_gregified.ma_chem_looping.title}"
+				title: "{ftbquests.chapter.mystical_agriculture_gregified.quest105.task_4155389946562624109.title}"
 				type: "checkmark"
 			}]
 			x: -10.5d
 			y: 4.0d
 		}
 	]
-	title: "{ftbquests.mystical_agriculture_gregified.title}"
+	title: "{ftbquests.chapter.mystical_agriculture_gregified.title}"
 }

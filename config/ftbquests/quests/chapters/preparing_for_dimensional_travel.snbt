@@ -8,30 +8,16 @@
 	id: "62A72817F92AC262"
 	order_index: 4
 	progression_mode: "linear"
-	quest_links: [
-		{
-			id: "6AA4625E98ED37B8"
-			linked_quest: "2F87FC1D5BB43220"
-			x: 4.0d
-			y: 0.5d
-		}
-		{
-			id: "0A5474BE35062610"
-			linked_quest: "2F63F0E239737E38"
-			x: 9.0d
-			y: 5.5d
-		}
-		{
-			id: "23C36BA08644EF38"
-			linked_quest: "33FE3C68B0BD21B1"
-			x: 5.0d
-			y: 3.5d
-		}
-	]
+	quest_links: [{
+		id: "6AA4625E98ED37B8"
+		linked_quest: "2F87FC1D5BB43220"
+		x: 4.0d
+		y: 0.5d
+	}]
 	quests: [
 		{
 			dependencies: ["4C5DBB94345FF33B"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.wetware_processor_mainframe.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest1.description1}"]
 			id: "707C2E9BA62A60C5"
 			rewards: [{
 				count: 2
@@ -41,7 +27,7 @@
 			}]
 			shape: "gear"
 			size: 1.5d
-			subtitle: "{ftbquests.preparing_for_dimensional_travel.wetware_processor_mainframe.subtitle}"
+			subtitle: "{ftbquests.chapter.preparing_for_dimensional_travel.quest1.subtitle}"
 			tasks: [{
 				id: "7D57266E37ABED15"
 				item: "gtceu:wetware_processor_mainframe"
@@ -52,7 +38,7 @@
 		}
 		{
 			dependencies: ["707C2E9BA62A60C5"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.uv_fusion_reactor.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest2.description1}"]
 			id: "314B6ABE72E4A438"
 			rewards: [{
 				count: 2
@@ -72,7 +58,11 @@
 		}
 		{
 			dependencies: ["314B6ABE72E4A438"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.neutronium.description}"]
+			description: [
+				"{ftbquests.chapter.preparing_for_dimensional_travel.quest3.description1}"
+				""
+				"{ftbquests.chapter.preparing_for_dimensional_travel.quest3.description2}"
+			]
 			id: "5BDA17962F4630EB"
 			rewards: [{
 				count: 2
@@ -92,7 +82,7 @@
 		}
 		{
 			dependencies: ["5BDA17962F4630EB"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.ruthenium_trinium_americium_neutronate_ingot.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest4.description1}"]
 			id: "3ECCE739DE8F5F2C"
 			rewards: [{
 				id: "3DA5E57A968DB4AE"
@@ -113,7 +103,11 @@
 				"31EADD276ECB7B25"
 				"444598F0FA4D23BC"
 			]
-			description: ["{ftbquests.preparing_for_dimensional_travel.uhv_machine_hull.description}"]
+			description: [
+				"{ftbquests.chapter.preparing_for_dimensional_travel.quest5.description1}"
+				""
+				"{ftbquests.chapter.preparing_for_dimensional_travel.quest5.description2}"
+			]
 			id: "5C39B74171CC21F9"
 			rewards: [{
 				id: "0183789A1E5AA702"
@@ -135,7 +129,7 @@
 				"4F6B1F4261874B65"
 				"783865A56909D3C7"
 			]
-			description: ["{ftbquests.preparing_for_dimensional_travel.uhv_energy_input_hatch.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest6.description1}"]
 			id: "11D51899B980082B"
 			rewards: [{
 				id: "2E474FF058F620B3"
@@ -152,7 +146,7 @@
 		}
 		{
 			dependencies: ["11D51899B980082B"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.uhv_energy_input_hatch_4a.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest7.description1}"]
 			id: "44B43694312BAAC8"
 			rewards: [{
 				id: "439C3636390FF949"
@@ -168,16 +162,8 @@
 			y: 2.5d
 		}
 		{
-<<<<<<< HEAD
 			dependencies: ["44B43694312BAAC8"]
 			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest8.description1}"]
-=======
-			dependencies: [
-				"44B43694312BAAC8"
-				"0C19C040CA121E3B"
-			]
-			description: ["{ftbquests.preparing_for_dimensional_travel.uhv_energy_input_hatch_16a.description}"]
->>>>>>> 98d66ba4563ab527642efb634cb4edd0a4c43086
 			id: "581B9922CC4B457F"
 			rewards: [{
 				id: "354EE1013EA404DB"
@@ -197,14 +183,14 @@
 				"7FFCAD92772A175F"
 				"707C2E9BA62A60C5"
 			]
-			description: ["{ftbquests.preparing_for_dimensional_travel.uv_parallel_hatch.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest9.description1}"]
 			id: "27E656FA93E2A1F4"
 			rewards: [{
 				id: "2FC0A2A1510D510B"
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.preparing_for_dimensional_travel.uv_parallel_hatch.subtitle}"
+			subtitle: "{ftbquests.chapter.preparing_for_dimensional_travel.quest9.subtitle}"
 			tasks: [{
 				id: "24F1943A992D624E"
 				item: "gtceu:uv_parallel_hatch"
@@ -215,7 +201,7 @@
 		}
 		{
 			dependencies: ["1AC8CBF01196D1F3"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.highly_advanced_soc_wafer.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest10.description1}"]
 			id: "3FE0B664F2D15942"
 			rewards: [{
 				id: "01E1C3C603E976E8"
@@ -232,7 +218,7 @@
 		}
 		{
 			dependencies: ["0F7A1EA1AB52F795"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.neutronium_wafer.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest11.description1}"]
 			id: "1AC8CBF01196D1F3"
 			rewards: [{
 				count: 2
@@ -252,7 +238,7 @@
 		}
 		{
 			dependencies: ["5BDA17962F4630EB"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.neutronium_boule.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest12.description1}"]
 			id: "0F7A1EA1AB52F795"
 			rewards: [{
 				id: "42D6FB3B7E75DE20"
@@ -272,7 +258,7 @@
 				"239A0034C8425661"
 				"5BDA17962F4630EB"
 			]
-			description: ["{ftbquests.preparing_for_dimensional_travel.raw_void_ingot.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest13.description1}"]
 			id: "0889A97E22C484CC"
 			rewards: [{
 				id: "515734ACECDB08A0"
@@ -289,7 +275,7 @@
 		}
 		{
 			dependencies: ["2577C7EC42AF00C9"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.heat_chamber.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest14.description1}"]
 			id: "60ECE277341A9408"
 			rewards: [{
 				id: "23F129E3F9D9FFE1"
@@ -310,7 +296,7 @@
 				"60ECE277341A9408"
 				"0889A97E22C484CC"
 			]
-			description: ["{ftbquests.preparing_for_dimensional_travel.void_ingot.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest15.description1}"]
 			id: "7A5734E3CF682EBA"
 			rewards: [{
 				count: 2
@@ -330,7 +316,7 @@
 		}
 		{
 			dependencies: ["7A5734E3CF682EBA"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.large_rotor_machine.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest16.description1}"]
 			id: "027C5CE3CFCB5649"
 			rewards: [{
 				id: "32443F1B809654D6"
@@ -352,7 +338,7 @@
 				"7FB86A5B9F6F6F35"
 				"7FFCAD92772A175F"
 			]
-			description: ["{ftbquests.preparing_for_dimensional_travel.crude_stargate_rod.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest17.description1}"]
 			id: "5E9936C099FF589C"
 			rewards: [{
 				id: "05AE9E61C946D871"
@@ -369,7 +355,7 @@
 		}
 		{
 			dependencies: ["2F87FC1D5BB43220"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.echo_r.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest18.description1}"]
 			icon: {
 				Count: 1
 				id: "gtceu:echo_r_bucket"
@@ -392,13 +378,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.preparing_for_dimensional_travel.echo_r.title}"
+			title: "{ftbquests.chapter.preparing_for_dimensional_travel.quest18.title}"
 			x: 2.0d
 			y: 0.5d
 		}
 		{
 			dependencies: ["182D948925141764"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.naquadic_netherite_dust.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest19.description1}"]
 			id: "1C515302A357B1B8"
 			rewards: [{
 				id: "7DDE8773170387CB"
@@ -416,7 +402,7 @@
 		}
 		{
 			dependencies: ["1C515302A357B1B8"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.runic_laser_source_base_dust.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest20.description1}"]
 			id: "5C3AF136913CF8BE"
 			rewards: [{
 				id: "4AC09D2CB06E6B4B"
@@ -433,7 +419,7 @@
 		}
 		{
 			dependencies: ["5C3AF136913CF8BE"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.exquisite_runic_laser_source_base_gem.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest21.description1}"]
 			id: "3B85A08B2E08C6FC"
 			rewards: [{
 				id: "31146EC2D33D4B75"
@@ -454,7 +440,7 @@
 				"52B553FDB34B1475"
 				"253AECE450920D99"
 			]
-			description: ["{ftbquests.preparing_for_dimensional_travel.runic_wave_generator.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest22.description1}"]
 			id: "75F0388FAB52E0B3"
 			rewards: [{
 				count: 2
@@ -474,7 +460,7 @@
 		}
 		{
 			dependencies: ["75F0388FAB52E0B3"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.laser_casing.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest23.description1}"]
 			id: "10D78E10735CD210"
 			rewards: [{
 				id: "3A14DEA6D1AA0502"
@@ -494,7 +480,7 @@
 				"10D78E10735CD210"
 				"7FFCAD92772A175F"
 			]
-			description: ["{ftbquests.preparing_for_dimensional_travel.runic_circuitry_assembling_station.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest24.description1}"]
 			hide_dependency_lines: false
 			id: "6D169C5E35C9EF6C"
 			rewards: [{
@@ -515,7 +501,7 @@
 		}
 		{
 			dependencies: ["52B553FDB34B1475"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.melodium_wire.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest25.description1}"]
 			id: "622066696CCF9754"
 			rewards: [{
 				id: "17C57D476BB71F90"
@@ -532,7 +518,11 @@
 		}
 		{
 			dependencies: ["678B90BF2ACE2BBA"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.melodium_ingot.description}"]
+			description: [
+				"{ftbquests.chapter.preparing_for_dimensional_travel.quest26.description1}"
+				""
+				"{ftbquests.chapter.preparing_for_dimensional_travel.quest26.description2}"
+			]
 			id: "52B553FDB34B1475"
 			rewards: [{
 				id: "0A7609C4179CF5A2"
@@ -550,7 +540,11 @@
 		}
 		{
 			dependencies: ["52B553FDB34B1475"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.stellarium_ingot.description}"]
+			description: [
+				"{ftbquests.chapter.preparing_for_dimensional_travel.quest27.description1}"
+				""
+				"{ftbquests.chapter.preparing_for_dimensional_travel.quest27.description2}"
+			]
 			id: "253AECE450920D99"
 			rewards: [{
 				id: "70C887ECBA6B4542"
@@ -567,7 +561,7 @@
 		}
 		{
 			dependencies: ["253AECE450920D99"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.stellarium_wire.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest28.description1}"]
 			id: "55102B0E5D0238E1"
 			rewards: [{
 				id: "664E3AF7B9872F12"
@@ -587,7 +581,7 @@
 				"5E9936C099FF589C"
 				"59711F987DE95924"
 			]
-			description: ["{ftbquests.preparing_for_dimensional_travel.stargate_rod.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest29.description1}"]
 			id: "3792C5D89B1301A0"
 			rewards: [
 				{
@@ -603,7 +597,7 @@
 					icon: "kubejs:stargate_rod"
 					id: "7ECEC393EDED498B"
 					silent: true
-					title: "{ftbquests.preparing_for_dimensional_travel.stargate_rod.reward_title}"
+					title: "{ftbquests.chapter.preparing_for_dimensional_travel.quest29.reward_9137455734100674955.title}"
 					type: "command"
 				}
 			]
@@ -622,7 +616,7 @@
 				"7FFCAD92772A175F"
 				"3792C5D89B1301A0"
 			]
-			description: ["{ftbquests.preparing_for_dimensional_travel.stargate_component_assembly.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest30.description1}"]
 			id: "1004D6D7636E0321"
 			rewards: [{
 				count: 2
@@ -646,7 +640,7 @@
 				"1102670352911334"
 				"6D573ACD05D0EF96"
 			]
-			description: ["{ftbquests.preparing_for_dimensional_travel.runic_plates.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest31.description1}"]
 			id: "0508AE03C730BE6C"
 			rewards: [{
 				id: "2B9821F0ED86771C"
@@ -665,13 +659,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.preparing_for_dimensional_travel.runic_plates.title}"
+			title: "{ftbquests.chapter.preparing_for_dimensional_travel.quest31.title}"
 			x: 4.0d
 			y: -3.5d
 		}
 		{
 			dependencies: ["60ECE277341A9408"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.super_pressure_heat_chamber.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest32.description1}"]
 			id: "59711F987DE95924"
 			rewards: [{
 				id: "1B33E52F7FEAD5E8"
@@ -688,7 +682,7 @@
 		}
 		{
 			dependencies: ["5BDA17962F4630EB"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.gravi_star.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest33.description1}"]
 			hide_dependent_lines: true
 			id: "7FFCAD92772A175F"
 			rewards: [{
@@ -710,7 +704,7 @@
 				"5C7A92625D07C55D"
 				"433E2BCC63E779AF"
 			]
-			description: ["{ftbquests.preparing_for_dimensional_travel.classic_stargate.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest34.description1}"]
 			icon: "sgjourney:classic_stargate"
 			id: "2EDE996312B1C69E"
 			rewards: [{
@@ -721,7 +715,7 @@
 			}]
 			shape: "gear"
 			size: 3.0d
-			subtitle: "{ftbquests.preparing_for_dimensional_travel.classic_stargate.subtitle}"
+			subtitle: "{ftbquests.chapter.preparing_for_dimensional_travel.quest34.subtitle}"
 			tasks: [
 				{
 					id: "3794D8CD2FFF022C"
@@ -751,7 +745,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.preparing_for_dimensional_travel.classic_stargate.title}"
+			title: "{ftbquests.chapter.preparing_for_dimensional_travel.quest34.title}"
 			x: 6.0d
 			y: -8.0d
 		}
@@ -760,7 +754,7 @@
 				"664F435508073B8E"
 				"66D2FB63E81E03AB"
 			]
-			description: ["{ftbquests.preparing_for_dimensional_travel.classic_stargate_computer_core.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest35.description1}"]
 			id: "43B5477B959B2736"
 			rewards: [{
 				count: 2
@@ -780,7 +774,7 @@
 		}
 		{
 			dependencies: ["56D5872D2C33A9CC"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.abydos_coordinate_crystal.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest36.description1}"]
 			id: "66D2FB63E81E03AB"
 			rewards: [{
 				id: "37AFE192D0BE0925"
@@ -798,7 +792,7 @@
 		}
 		{
 			dependencies: ["7A38469EAAABEAAE"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.dimensional_finder.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest37.description1}"]
 			id: "56D5872D2C33A9CC"
 			rewards: [{
 				count: 2
@@ -818,7 +812,7 @@
 		}
 		{
 			dependencies: ["2F87FC1D5BB43220"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.coordinate_crystal.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest38.description1}"]
 			hide_dependency_lines: true
 			id: "7A38469EAAABEAAE"
 			rewards: [{
@@ -837,7 +831,7 @@
 		}
 		{
 			dependencies: ["707C2E9BA62A60C5"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.computational_super_matrix.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest39.description1}"]
 			id: "664F435508073B8E"
 			rewards: [{
 				id: "5170CA1F3DC88A00"
@@ -855,7 +849,7 @@
 		}
 		{
 			dependencies: ["707C2E9BA62A60C5"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.mega_blast_furnace.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest40.description1}"]
 			id: "2EE4C6540FE3D4CF"
 			optional: true
 			rewards: [{
@@ -877,7 +871,14 @@
 				"2EDE996312B1C69E"
 				"5FB0649F878A32D5"
 			]
-			description: ["{ftbquests.preparing_for_dimensional_travel.abydos.description}"]
+			description: [
+				"{ftbquests.chapter.preparing_for_dimensional_travel.quest41.description1}"
+				"{ftbquests.chapter.preparing_for_dimensional_travel.quest41.description2}"
+				"[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.preparing_for_dimensional_travel.quest41.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"6AA4CC44DE1C8E1E\"}}]"
+				""
+				"{ftbquests.chapter.preparing_for_dimensional_travel.quest41.description4}"
+				"{ftbquests.chapter.preparing_for_dimensional_travel.quest41.description5}"
+			]
 			icon: "minecraft:sand"
 			id: "1FB502D770A4A59B"
 			rewards: [{
@@ -891,16 +892,16 @@
 				dimension: "sgjourney:abydos"
 				icon: "minecraft:suspicious_sand"
 				id: "57F00393CAEA3780"
-				title: "{ftbquests.preparing_for_dimensional_travel.abydos.item_title}"
+				title: "{ftbquests.chapter.preparing_for_dimensional_travel.quest41.task_6336568609009710976.title}"
 				type: "dimension"
 			}]
-			title: "{ftbquests.preparing_for_dimensional_travel.abydos.title}"
+			title: "{ftbquests.chapter.preparing_for_dimensional_travel.quest41.title}"
 			x: 9.0d
 			y: -8.0d
 		}
 		{
 			dependencies: ["707C2E9BA62A60C5"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.component_part_assembly.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest42.description1}"]
 			id: "73D0DC357821B395"
 			rewards: [{
 				count: 2
@@ -923,7 +924,7 @@
 				"0508AE03C730BE6C"
 				"1004D6D7636E0321"
 			]
-			description: ["{ftbquests.preparing_for_dimensional_travel.classic_stargate_ring_block.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest43.description1}"]
 			id: "70D35B4C1D6A143D"
 			rewards: [{
 				id: "3B90C26F72F5A63B"
@@ -945,7 +946,7 @@
 				"70D35B4C1D6A143D"
 				"1E47910C2F2112E1"
 			]
-			description: ["{ftbquests.preparing_for_dimensional_travel.classic_stargate_chevron_block.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest44.description1}"]
 			id: "433E2BCC63E779AF"
 			rewards: [{
 				id: "3D4753FAE4D98706"
@@ -967,7 +968,7 @@
 				"70D35B4C1D6A143D"
 				"43B5477B959B2736"
 			]
-			description: ["{ftbquests.preparing_for_dimensional_travel.classic_stargate_base_block.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest45.description1}"]
 			id: "5C7A92625D07C55D"
 			rewards: [{
 				id: "398ACC54F4F42715"
@@ -986,7 +987,7 @@
 		}
 		{
 			dependencies: ["2D713622FA2D6FCA"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.classic_chevron_disk.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest46.description1}"]
 			id: "1E47910C2F2112E1"
 			rewards: [{
 				count: 2
@@ -1006,7 +1007,13 @@
 		}
 		{
 			dependencies: ["2EDE996312B1C69E"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.classic_stargate_display.description}"]
+			description: [
+				"{ftbquests.chapter.preparing_for_dimensional_travel.quest47.description1}"
+				""
+				"{ftbquests.chapter.preparing_for_dimensional_travel.quest47.description2}"
+				""
+				"{ftbquests.chapter.preparing_for_dimensional_travel.quest47.description3}"
+			]
 			id: "653AD979AE4D0581"
 			optional: true
 			tasks: [{
@@ -1015,13 +1022,13 @@
 				optional_task: true
 				type: "item"
 			}]
-			title: "{ftbquests.preparing_for_dimensional_travel.classic_stargate_display.title}"
+			title: "{ftbquests.chapter.preparing_for_dimensional_travel.quest47.title}"
 			x: 3.5d
 			y: -8.0d
 		}
 		{
 			dependencies: ["1C515302A357B1B8"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.exquisite_naquadic_netherite_gem.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest48.description1}"]
 			id: "2D713622FA2D6FCA"
 			rewards: [{
 				id: "1C8DB8447086E212"
@@ -1038,7 +1045,7 @@
 		}
 		{
 			dependencies: ["7FFCAD92772A175F"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.vibration_laser_engraver.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest49.description1}"]
 			id: "1C81273869C0EC9F"
 			rewards: [{
 				id: "32925D70150DF477"
@@ -1059,7 +1066,7 @@
 				"182D948925141764"
 				"5BDA17962F4630EB"
 			]
-			description: ["{ftbquests.preparing_for_dimensional_travel.weapon_grade_naquadah_ingot.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest50.description1}"]
 			hide_dependency_lines: true
 			id: "4DE40B37D609B921"
 			rewards: [{
@@ -1084,7 +1091,7 @@
 				"7F4D5331B59AA5F0"
 				"783BDF78D6C56815"
 			]
-			description: ["{ftbquests.preparing_for_dimensional_travel.thorium_plut_duranide_241_ingot.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest51.description1}"]
 			id: "4F6B1F4261874B65"
 			rewards: [{
 				id: "4CF383A332D3E16B"
@@ -1107,7 +1114,7 @@
 		{
 			can_repeat: true
 			dependencies: ["2EDE996312B1C69E"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.emergency_rescue.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest52.description1}"]
 			icon: "minecraft:red_bed"
 			id: "481D42E3473FDCED"
 			optional: true
@@ -1118,12 +1125,12 @@
 				icon: "minecraft:grass_block"
 				id: "21A225E597A188CD"
 				silent: true
-				title: "{ftbquests.preparing_for_dimensional_travel.emergency_rescue.item_title}"
+				title: "{ftbquests.chapter.preparing_for_dimensional_travel.quest52.reward_2423541217500432589.title}"
 				type: "command"
 			}]
 			tasks: [{
 				id: "10FD7D062F28C45C"
-				title: "{ftbquests.preparing_for_dimensional_travel.emergency_rescue.title}"
+				title: "{ftbquests.chapter.preparing_for_dimensional_travel.quest52.task_1224272139229119580.title}"
 				type: "checkmark"
 			}]
 			x: 0.5d
@@ -1131,7 +1138,7 @@
 		}
 		{
 			dependencies: ["074A6D7A3072E11F"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.indium_tin_lead_cadmium_soldering_alloy_dust.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest53.description1}"]
 			id: "783865A56909D3C7"
 			shape: "circle"
 			tasks: [{
@@ -1151,7 +1158,7 @@
 				"630F50E03EC3D144"
 				"7FFCAD92772A175F"
 			]
-			description: ["{ftbquests.preparing_for_dimensional_travel.singularities.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest54.description1}"]
 			id: "1102670352911334"
 			rewards: [{
 				id: "256ED95E87DEA426"
@@ -1170,13 +1177,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.preparing_for_dimensional_travel.singularities.title}"
+			title: "{ftbquests.chapter.preparing_for_dimensional_travel.quest54.title}"
 			x: 4.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["52B553FDB34B1475"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.large_quantum_compressor.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest55.description1}"]
 			id: "630F50E03EC3D144"
 			rewards: [{
 				count: 2
@@ -1201,7 +1208,7 @@
 			size: 1.0d
 			tasks: [{
 				id: "1B20B3B25785E3AF"
-				title: "{ftbquests.preparing_for_dimensional_travel.positioner.title}"
+				title: "{ftbquests.chapter.preparing_for_dimensional_travel.quest56.task_1954759816832738223.title}"
 				type: "checkmark"
 			}]
 			x: 4.0d
@@ -1209,7 +1216,7 @@
 		}
 		{
 			dependencies: ["2EDE996312B1C69E"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.power_failure.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest57.description1}"]
 			icon: {
 				Count: 1
 				id: "ftbquests:custom_icon"
@@ -1221,7 +1228,7 @@
 			optional: true
 			tasks: [{
 				id: "205A758A70420DB8"
-				title: "{ftbquests.preparing_for_dimensional_travel.power_failure.title}"
+				title: "{ftbquests.chapter.preparing_for_dimensional_travel.quest57.task_2331304994566966712.title}"
 				type: "checkmark"
 			}]
 			x: 2.0d
@@ -1229,7 +1236,11 @@
 		}
 		{
 			dependencies: ["66D2FB63E81E03AB"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.coordinate_crystal_usage.description}"]
+			description: [
+				"{ftbquests.chapter.preparing_for_dimensional_travel.quest58.description1}"
+				""
+				"{ftbquests.chapter.preparing_for_dimensional_travel.quest58.description2}"
+			]
 			hide_dependent_lines: true
 			icon: {
 				Count: 1
@@ -1241,10 +1252,10 @@
 			id: "5FB0649F878A32D5"
 			tasks: [{
 				id: "154528EA5CC03F6C"
-				title: "{ftbquests.preparing_for_dimensional_travel.coordinate_crystal_usage.item_title}"
+				title: "{ftbquests.chapter.preparing_for_dimensional_travel.quest58.task_1532676235233083244.title}"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.preparing_for_dimensional_travel.coordinate_crystal_usage.title}"
+			title: "{ftbquests.chapter.preparing_for_dimensional_travel.quest58.title}"
 			x: 10.0d
 			y: -3.5d
 		}
@@ -1253,7 +1264,7 @@
 				"11D51899B980082B"
 				"60ECE277341A9408"
 			]
-			description: ["{ftbquests.preparing_for_dimensional_travel.nether_star_concentrate.description}"]
+			description: ["{ftbquests.chapter.preparing_for_dimensional_travel.quest59.description1}"]
 			hide_dependency_lines: true
 			icon: "gtceu:nether_star_concentrate_bucket"
 			id: "7FB86A5B9F6F6F35"
@@ -1274,13 +1285,32 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.preparing_for_dimensional_travel.nether_star_concentrate.title}"
+			title: "{ftbquests.chapter.preparing_for_dimensional_travel.quest59.title}"
 			x: -2.0d
 			y: -5.5d
 		}
 		{
+			dependencies: ["1C81273869C0EC9F"]
+			description: ["[\"\",{\"underlined\":1,\"translate\":\"Read About It Here\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"62D06C72396A9375\"}}]"]
+			icon: "ftbquests:book"
+			id: "79CFAA5E52FF8766"
+			tasks: [{
+				id: "79EEB4B57AA13EBD"
+				title: "Go Read About Bulking"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: 3.5d
+		}
+		{
 			dependencies: ["141911C5DD68CD2A"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.wireless_covers_hatches.description}"]
+			description: [
+				"{ftbquests.chapter.adventures_in_abydos.quest76.description1}"
+				""
+				"{ftbquests.chapter.adventures_in_abydos.quest76.description2}"
+				""
+				"{ftbquests.chapter.adventures_in_abydos.quest76.description3}"
+			]
 			id: "659690E81B3E3AE7"
 			rewards: [{
 				count: 2
@@ -1296,6 +1326,9 @@
 					Count: 1
 					id: "itemfilters:or"
 					tag: {
+						display: {
+							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"UV Wireless Power\"}"
+						}
 						items: [
 							{
 								Count: 1b
@@ -1321,10 +1354,9 @@
 					}
 				}
 				optional_task: true
-				title: "{ftbquests.preparing_for_dimensional_travel.wireless_covers_hatches.item_title}"
 				type: "item"
 			}]
-			title: "{ftbquests.preparing_for_dimensional_travel.wireless_covers_hatches.title}"
+			title: "{ftbquests.chapter.adventures_in_abydos.quest76.title}"
 			x: 10.0d
 			y: 6.5d
 		}
@@ -1334,7 +1366,14 @@
 				"52B553FDB34B1475"
 				"707C2E9BA62A60C5"
 			]
-			description: ["{ftbquests.preparing_for_dimensional_travel.wireless_energy.description}"]
+			description: [
+				"{ftbquests.chapter.adventures_in_abydos.quest75.description1}"
+				""
+				"{ftbquests.chapter.adventures_in_abydos.quest75.description2}"
+				""
+				""
+				"[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.adventures_in_abydos.quest75.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"2F63F0E239737E38\"}}]"
+			]
 			id: "141911C5DD68CD2A"
 			rewards: [{
 				id: "73B232401A84DDAC"
@@ -1350,5 +1389,5 @@
 			y: 6.5d
 		}
 	]
-	title: "{ftbquests.preparing_for_dimensional_travel.title}"
+	title: "{ftbquests.chapter.preparing_for_dimensional_travel.title}"
 }

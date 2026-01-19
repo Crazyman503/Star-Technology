@@ -35,36 +35,6 @@
 			x: 1.5d
 			y: -4.0d
 		}
-		{
-			id: "251255FB361F38BE"
-			linked_quest: "4A4275186719AD8D"
-			x: -9.5d
-			y: -1.0d
-		}
-		{
-			id: "055E80BF97224848"
-			linked_quest: "2152FBCC48D5D7AC"
-			x: -9.5d
-			y: -9.0d
-		}
-		{
-			id: "47F30AD6A9815E83"
-			linked_quest: "2757CDEC1D8F5CCE"
-			x: -7.5d
-			y: 1.0d
-		}
-		{
-			id: "73FA3B070F6B92B4"
-			linked_quest: "0F4C5DF2922568B2"
-			x: -11.5d
-			y: -3.0d
-		}
-		{
-			id: "400BFC5E40D565E2"
-			linked_quest: "0C78BD4A7A0B98E4"
-			x: -9.5d
-			y: -3.0d
-		}
 	]
 	quests: [
 		{
@@ -74,7 +44,7 @@
 				"724BAC3F48CE91AA"
 				"45591A05A0A61821"
 			]
-			description: ["{ftbquests.automation_age.advanced_integrated_circuit.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest1.description1}"]
 			id: "73931EAA3EC5C9A9"
 			rewards: [{
 				count: 2
@@ -84,7 +54,7 @@
 			}]
 			shape: "gear"
 			size: 1.5d
-			subtitle: "{ftbquests.automation_age.advanced_integrated_circuit.subtitle}"
+			subtitle: "{ftbquests.chapter.automation_age.quest1.subtitle}"
 			tasks: [{
 				id: "3A642B129CDFDF9D"
 				item: "gtceu:advanced_integrated_circuit"
@@ -99,7 +69,7 @@
 				"68EB3C1DABB1869C"
 				"3CB63B290C9EFAA2"
 			]
-			description: ["{ftbquests.automation_age.hv_converters.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest2.description1}"]
 			id: "34EF34E0E41A6618"
 			rewards: [{
 				id: "65CC51C78EE6F9E2"
@@ -113,6 +83,9 @@
 					Count: 1
 					id: "itemfilters:or"
 					tag: {
+						display: {
+							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Any HV Converter\"}"
+						}
 						items: [
 							{
 								Count: 1b
@@ -137,7 +110,6 @@
 						]
 					}
 				}
-				title: "{ftbquests.automation_age.hv_converters.title}"
 				type: "item"
 			}]
 			x: -12.5d
@@ -145,7 +117,7 @@
 		}
 		{
 			dependencies: ["3F49250E7CE2E282"]
-			description: ["{ftbquests.automation_age.lumium_wire.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest3.description1}"]
 			id: "68EB3C1DABB1869C"
 			rewards: [{
 				id: "0ECE3B40ACFB4B01"
@@ -166,7 +138,7 @@
 				"56BA79287C4DBE52"
 				"0A03B4D352DCF148"
 			]
-			description: ["{ftbquests.automation_age.lumium_ingot.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest4.description1}"]
 			id: "3F49250E7CE2E282"
 			rewards: [{
 				id: "512E1AEBD727940D"
@@ -188,7 +160,7 @@
 				"7E6BF5B40EA057F5"
 				"261174370DC87FCB"
 			]
-			description: ["{ftbquests.automation_age.hv_machine_hull.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest5.description1}"]
 			id: "3CB63B290C9EFAA2"
 			rewards: [{
 				id: "0103A1EEE577BCBC"
@@ -206,7 +178,7 @@
 		}
 		{
 			dependencies: ["73931EAA3EC5C9A9"]
-			description: ["{ftbquests.automation_age.mv_circuit_assembler.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest6.description1}"]
 			id: "75942788374CDEF3"
 			rewards: [{
 				id: "47D65386785B5F06"
@@ -224,7 +196,7 @@
 		}
 		{
 			dependencies: ["73931EAA3EC5C9A9"]
-			description: ["{ftbquests.automation_age.multi_smelter.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest7.description1}"]
 			id: "649596731FFA9C9A"
 			rewards: [{
 				id: "1CC5497D89B6D364"
@@ -242,7 +214,7 @@
 		}
 		{
 			dependencies: ["088FE0CF9D07F9C6"]
-			description: ["{ftbquests.automation_age.micro_processor.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest8.description1}"]
 			id: "363F5B598683A074"
 			rewards: [{
 				id: "3A3BA9FB7E4765D6"
@@ -250,7 +222,7 @@
 				type: "item"
 			}]
 			size: 1.0d
-			subtitle: "{ftbquests.automation_age.micro_processor.subtitle}"
+			subtitle: "{ftbquests.chapter.automation_age.quest8.subtitle}"
 			tasks: [{
 				id: "0637F58BAD80A44A"
 				item: "gtceu:micro_processor"
@@ -265,7 +237,7 @@
 				"470EBC3C75C6748E"
 				"41D5FABA8D0BB0AC"
 			]
-			description: ["{ftbquests.automation_age.microchip_processor.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest9.description1}"]
 			id: "088FE0CF9D07F9C6"
 			rewards: [{
 				id: "36565CD30876ABD0"
@@ -273,7 +245,7 @@
 				type: "item"
 			}]
 			size: 1.0d
-			subtitle: "{ftbquests.automation_age.microchip_processor.subtitle}"
+			subtitle: "{ftbquests.chapter.automation_age.quest9.subtitle}"
 			tasks: [{
 				id: "11003EED75374430"
 				item: "gtceu:microchip_processor"
@@ -284,7 +256,11 @@
 		}
 		{
 			dependencies: ["363F5B598683A074"]
-			description: ["{ftbquests.automation_age.micro_processor_assembly.description}"]
+			description: [
+				"{ftbquests.chapter.automation_age.quest10.description1}"
+				""
+				"{ftbquests.chapter.automation_age.quest10.description2}"
+			]
 			id: "7399429099302C6C"
 			rewards: [{
 				id: "4962712B3775941E"
@@ -292,7 +268,7 @@
 				type: "item"
 			}]
 			size: 1.0d
-			subtitle: "{ftbquests.automation_age.micro_processor_assembly.subtitle}"
+			subtitle: "{ftbquests.chapter.automation_age.quest10.subtitle}"
 			tasks: [{
 				id: "2E2AE862474C9506"
 				item: "gtceu:micro_processor_assembly"
@@ -306,7 +282,7 @@
 				"7399429099302C6C"
 				"17C1292018AE363E"
 			]
-			description: ["{ftbquests.automation_age.micro_processor_computer.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest11.description1}"]
 			id: "52FE319F5E176C37"
 			rewards: [{
 				count: 2
@@ -316,7 +292,7 @@
 			}]
 			shape: "gear"
 			size: 1.5d
-			subtitle: "{ftbquests.automation_age.micro_processor_computer.subtitle}"
+			subtitle: "{ftbquests.chapter.automation_age.quest11.subtitle}"
 			tasks: [{
 				id: "269EFDE7CEAC3968"
 				item: "gtceu:micro_processor_computer"
@@ -330,7 +306,7 @@
 				"0DEEBB486450E74E"
 				"491C4CECC6C24DDF"
 			]
-			description: ["{ftbquests.automation_age.cpu_chip.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest12.description1}"]
 			icon: "gtceu:cpu_chip"
 			id: "470EBC3C75C6748E"
 			rewards: [{
@@ -349,7 +325,7 @@
 							value: "forge:lenses/light_blue"
 						}
 					}
-					title: "{ftbquests.automation_age.cpu_chip.item_title}"
+					title: "{ftbquests.chapter.automation_age.quest12.task_5477683903789442826.title}"
 					type: "item"
 				}
 				{
@@ -363,7 +339,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.automation_age.cpu_chip.title}"
+			title: "{ftbquests.chapter.automation_age.quest12.title}"
 			x: -14.5d
 			y: -2.0d
 		}
@@ -373,7 +349,7 @@
 				"250C897A70DB797F"
 			]
 			dependency_requirement: "one_completed"
-			description: ["{ftbquests.automation_age.plastic_circuit_board.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest13.description1}"]
 			id: "41D5FABA8D0BB0AC"
 			rewards: [{
 				id: "138F9541C5275C03"
@@ -381,7 +357,7 @@
 				type: "item"
 			}]
 			size: 1.0d
-			subtitle: "{ftbquests.automation_age.plastic_circuit_board.subtitle}"
+			subtitle: "{ftbquests.chapter.automation_age.quest13.subtitle}"
 			tasks: [
 				{
 					id: "11E2B1CE93A78156"
@@ -406,7 +382,16 @@
 				"3CB63B290C9EFAA2"
 				"73931EAA3EC5C9A9"
 			]
-			description: ["{ftbquests.automation_age.maintenance_hatch_types.description}"]
+			description: [
+				"{ftbquests.chapter.automation_age.quest14.description1}"
+				""
+				"{ftbquests.chapter.automation_age.quest14.description2}"
+				""
+				"{ftbquests.chapter.automation_age.quest14.description3}"
+				"{ftbquests.chapter.automation_age.quest14.description4}"
+				""
+				"{ftbquests.chapter.automation_age.quest14.description5}"
+			]
 			id: "0F144FEF99D7D04C"
 			rewards: [{
 				id: "5A529DFCB691E409"
@@ -426,13 +411,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.automation_age.maintenance_hatch_types.title}"
+			title: "{ftbquests.chapter.automation_age.quest14.title}"
 			x: -12.5d
 			y: -6.0d
 		}
 		{
 			dependencies: ["3CB63B290C9EFAA2"]
-			description: ["{ftbquests.automation_age.hv_assembler.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest15.description1}"]
 			id: "1B697A89954BA5FE"
 			rewards: [{
 				count: 2
@@ -455,7 +440,7 @@
 				"2681E878121B1CF6"
 				"1B697A89954BA5FE"
 			]
-			description: ["{ftbquests.automation_age.hv_energy_input_hatch.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest16.description1}"]
 			id: "50CBF077613B6161"
 			rewards: [{
 				id: "5894C32B49A197DE"
@@ -477,7 +462,7 @@
 				"0DEEBB486450E74E"
 				"17C1292018AE363E"
 			]
-			description: ["{ftbquests.automation_age.lpic_chip.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest17.description1}"]
 			hide_dependency_lines: true
 			icon: "gtceu:lpic_chip"
 			id: "2681E878121B1CF6"
@@ -504,13 +489,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.automation_age.lpic_chip.title}"
+			title: "{ftbquests.chapter.automation_age.quest17.title}"
 			x: -8.5d
 			y: -10.0d
 		}
 		{
 			dependencies: ["1B697A89954BA5FE"]
-			description: ["{ftbquests.automation_age.smds.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest18.description1}"]
 			id: "55D8D982524DA85E"
 			rewards: [{
 				id: "596F793272FE0A6A"
@@ -545,13 +530,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.automation_age.smds.title}"
+			title: "{ftbquests.chapter.automation_age.quest18.title}"
 			x: -7.5d
 			y: -5.0d
 		}
 		{
 			dependencies: ["1B697A89954BA5FE"]
-			description: ["{ftbquests.automation_age.hv_upgrade_kit.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest19.description1}"]
 			id: "759FF87FC22D814D"
 			rewards: [{
 				id: "76A50DFAE09F8998"
@@ -581,7 +566,7 @@
 				"2D089B0427CFDBBE"
 				"4F2692F874F68EF8"
 			]
-			description: ["{ftbquests.automation_age.energy_crystal.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest20.description1}"]
 			id: "7B0133D388101F68"
 			rewards: [{
 				id: "3FDC70995B21E529"
@@ -599,7 +584,11 @@
 		}
 		{
 			dependencies: ["3CB63B290C9EFAA2"]
-			description: ["{ftbquests.automation_age.hv_autoclave.description}"]
+			description: [
+				"{ftbquests.chapter.automation_age.quest21.description1}"
+				""
+				"{ftbquests.chapter.automation_age.quest21.description2}"
+			]
 			id: "2D089B0427CFDBBE"
 			rewards: [{
 				id: "289E7492A240586B"
@@ -617,7 +606,7 @@
 		}
 		{
 			dependencies: ["7B0133D388101F68"]
-			description: ["{ftbquests.automation_age.nanomuscle_armor.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest22.description1}"]
 			id: "7E670308A773A07E"
 			rewards: [{
 				id: "6B9D1D6EEF48C5A4"
@@ -651,13 +640,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.automation_age.nanomuscle_armor.title}"
+			title: "{ftbquests.chapter.automation_age.quest22.title}"
 			x: -9.5d
 			y: -11.0d
 		}
 		{
 			dependencies: ["3CB63B290C9EFAA2"]
-			description: ["{ftbquests.automation_age.cleanroom.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest23.description1}"]
 			id: "17C1292018AE363E"
 			rewards: [{
 				id: "0DF694E3A6C0799D"
@@ -665,7 +654,7 @@
 				type: "item"
 			}]
 			size: 1.0d
-			subtitle: "{ftbquests.automation_age.cleanroom.subtitle}"
+			subtitle: "{ftbquests.chapter.automation_age.quest23.subtitle}"
 			tasks: [{
 				id: "2E6892722E099A15"
 				item: "gtceu:cleanroom"
@@ -676,7 +665,7 @@
 		}
 		{
 			dependencies: ["52FE319F5E176C37"]
-			description: ["{ftbquests.automation_age.hv_circuit_assembler.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest24.description1}"]
 			id: "47CD61D6ECD3DC7D"
 			rewards: [{
 				id: "02612C98685AC3EB"
@@ -694,7 +683,7 @@
 		}
 		{
 			dependencies: ["47CD61D6ECD3DC7D"]
-			description: ["{ftbquests.automation_age.micro_processor_mainframe.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest25.description1}"]
 			id: "62BA581B2918BB7B"
 			rewards: [{
 				count: 2
@@ -704,7 +693,7 @@
 			}]
 			shape: "gear"
 			size: 1.5d
-			subtitle: "{ftbquests.automation_age.micro_processor_mainframe.subtitle}"
+			subtitle: "{ftbquests.chapter.automation_age.quest25.subtitle}"
 			tasks: [{
 				id: "46ED792D357D166C"
 				item: "gtceu:micro_processor_mainframe"
@@ -718,7 +707,11 @@
 				"74749B089D50329C"
 				"77303F30F0A44393"
 			]
-			description: ["{ftbquests.automation_age.ev_64a_energy_converter.description}"]
+			description: [
+				"{ftbquests.chapter.automation_age.quest26.description1}"
+				""
+				"{ftbquests.chapter.automation_age.quest26.description2}"
+			]
 			id: "5D3006AB62E2CE9B"
 			rewards: [{
 				id: "601186952EBAB995"
@@ -733,6 +726,9 @@
 						Count: 1
 						id: "itemfilters:or"
 						tag: {
+							display: {
+								Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Any EV Converter\"}"
+							}
 							items: [
 								{
 									Count: 1b
@@ -757,7 +753,6 @@
 							]
 						}
 					}
-					title: "{ftbquests.automation_age.ev_64a_energy_converter.title}"
 					type: "item"
 				}
 				{
@@ -772,7 +767,7 @@
 		}
 		{
 			dependencies: ["5BA3F17E1C7BE599"]
-			description: ["{ftbquests.automation_age.enderium_wire.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest27.description1}"]
 			id: "77303F30F0A44393"
 			rewards: [{
 				id: "59B7A01CB85BA964"
@@ -790,7 +785,7 @@
 		}
 		{
 			dependencies: ["1DA6B3308C263A6F"]
-			description: ["{ftbquests.automation_age.enderium_ingot.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest28.description1}"]
 			id: "5BA3F17E1C7BE599"
 			rewards: [{
 				id: "363322517E6CC58D"
@@ -811,7 +806,7 @@
 				"0E61DC74B2E2C962"
 				"1646D6D439B260D3"
 			]
-			description: ["{ftbquests.automation_age.nichrome_ingot.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest29.description1}"]
 			id: "32B878D63A6AB6D3"
 			rewards: [{
 				id: "6998E98E8D6DD7F7"
@@ -832,7 +827,11 @@
 				"32B878D63A6AB6D3"
 				"5B575348D2A871BB"
 			]
-			description: ["{ftbquests.automation_age.nichrome_coil.description}"]
+			description: [
+				"{ftbquests.chapter.automation_age.quest30.description1}"
+				""
+				"{ftbquests.chapter.automation_age.quest30.description2}"
+			]
 			id: "1DA6B3308C263A6F"
 			rewards: [{
 				count: 2
@@ -855,7 +854,7 @@
 				"235423100BBE5C81"
 				"250C897A70DB797F"
 			]
-			description: ["{ftbquests.automation_age.ev_machine_hull.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest31.description1}"]
 			id: "74749B089D50329C"
 			rewards: [{
 				id: "27CD4AD7BE3E9087"
@@ -876,7 +875,7 @@
 				"5BA3F17E1C7BE599"
 				"6060E79B2D08912D"
 			]
-			description: ["{ftbquests.automation_age.ev_upgrade_kit.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest32.description1}"]
 			id: "60EB030A899ADE28"
 			rewards: [{
 				id: "510254539341E7E3"
@@ -903,7 +902,7 @@
 		}
 		{
 			dependencies: ["74749B089D50329C"]
-			description: ["{ftbquests.automation_age.ev_assembler.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest33.description1}"]
 			id: "6060E79B2D08912D"
 			rewards: [{
 				count: 2
@@ -923,7 +922,7 @@
 		}
 		{
 			dependencies: ["52FE319F5E176C37"]
-			description: ["{ftbquests.automation_age.vacuum_freezer.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest34.description1}"]
 			hide_dependent_lines: true
 			id: "1646D6D439B260D3"
 			rewards: [{
@@ -942,7 +941,7 @@
 		}
 		{
 			dependencies: ["52FE319F5E176C37"]
-			description: ["{ftbquests.automation_age.multiblock_upgrade_kit.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest35.description1}"]
 			hide_dependent_lines: true
 			id: "5B70B63D4157594F"
 			rewards: [{
@@ -967,7 +966,11 @@
 				"1B0A7CF5BE5D71FE"
 			]
 			dependency_requirement: "one_completed"
-			description: ["{ftbquests.automation_age.distillation_tower.description}"]
+			description: [
+				"{ftbquests.chapter.automation_age.quest36.description1}"
+				""
+				"{ftbquests.chapter.automation_age.quest36.description2}"
+			]
 			icon: "gtceu:distillation_tower"
 			id: "170C262792DA7123"
 			rewards: [{
@@ -985,11 +988,11 @@
 				}
 				{
 					id: "4EF2A5F41BF53145"
-					title: "{ftbquests.automation_age.distillation_tower.item_title}"
+					title: "{ftbquests.chapter.automation_age.quest36.task_5688791747182014789.title}"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.automation_age.distillation_tower.title}"
+			title: "{ftbquests.chapter.automation_age.quest36.title}"
 			x: -6.5d
 			y: 2.0d
 		}
@@ -999,7 +1002,7 @@
 				"74186F521D41913D"
 			]
 			dependency_requirement: "one_completed"
-			description: ["{ftbquests.automation_age.oil.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest37.description1}"]
 			icon: "gtceu:oil_bucket"
 			id: "1B0A7CF5BE5D71FE"
 			rewards: [{
@@ -1010,7 +1013,7 @@
 			size: 1.0d
 			tasks: [{
 				id: "73EEEC72819C9305"
-				title: "{ftbquests.automation_age.oil.title}"
+				title: "{ftbquests.chapter.automation_age.quest37.task_8353874335363797765.title}"
 				type: "checkmark"
 			}]
 			x: -8.5d
@@ -1018,7 +1021,11 @@
 		}
 		{
 			dependencies: ["4FFD2642BC183495"]
-			description: ["{ftbquests.automation_age.drilling_rig.description}"]
+			description: [
+				"{ftbquests.chapter.automation_age.quest38.description1}"
+				""
+				"{ftbquests.chapter.automation_age.quest38.description2}"
+			]
 			id: "22BC7BDE5E132A30"
 			rewards: [{
 				id: "26043A495658B8EF"
@@ -1026,13 +1033,16 @@
 				type: "item"
 			}]
 			size: 1.0d
-			subtitle: "{ftbquests.automation_age.drilling_rig.subtitle}"
+			subtitle: "{ftbquests.chapter.automation_age.quest38.subtitle}"
 			tasks: [{
 				id: "7857528275E1A624"
 				item: {
 					Count: 1
 					id: "itemfilters:or"
 					tag: {
+						display: {
+							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Fluid Drilling\"}"
+						}
 						items: [
 							{
 								Count: 1b
@@ -1052,7 +1062,6 @@
 						]
 					}
 				}
-				title: "{ftbquests.automation_age.drilling_rig.title}"
 				type: "item"
 			}]
 			x: -10.5d
@@ -1060,7 +1069,11 @@
 		}
 		{
 			dependencies: ["73931EAA3EC5C9A9"]
-			description: ["{ftbquests.automation_age.prospector.description}"]
+			description: [
+				"{ftbquests.chapter.automation_age.quest39.description1}"
+				""
+				"{ftbquests.chapter.automation_age.quest39.description2}"
+			]
 			hide_dependency_lines: true
 			id: "4FFD2642BC183495"
 			rewards: [{
@@ -1079,7 +1092,7 @@
 		}
 		{
 			dependencies: ["170C262792DA7123"]
-			description: ["{ftbquests.automation_age.desulfurize.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest40.description1}"]
 			icon: "gtceu:sulfur_dust"
 			id: "1A05644388327FA4"
 			rewards: [{
@@ -1090,7 +1103,7 @@
 			size: 1.0d
 			tasks: [{
 				id: "1F4744E75B385516"
-				title: "{ftbquests.automation_age.desulfurize.title}"
+				title: "{ftbquests.chapter.automation_age.quest40.task_2253845898980775190.title}"
 				type: "checkmark"
 			}]
 			x: -8.5d
@@ -1098,7 +1111,13 @@
 		}
 		{
 			dependencies: ["1A05644388327FA4"]
-			description: ["{ftbquests.automation_age.cracker.description}"]
+			description: [
+				"{ftbquests.chapter.automation_age.quest41.description1}"
+				""
+				"{ftbquests.chapter.automation_age.quest41.description2}"
+				""
+				"{ftbquests.chapter.automation_age.quest41.description3}"
+			]
 			icon: "gtceu:cracker"
 			id: "22F56435C5449158"
 			rewards: [{
@@ -1107,7 +1126,7 @@
 				type: "item"
 			}]
 			size: 1.0d
-			subtitle: "{ftbquests.automation_age.cracker.subtitle}"
+			subtitle: "{ftbquests.chapter.automation_age.quest41.subtitle}"
 			tasks: [
 				{
 					id: "0654E39159A0538C"
@@ -1120,7 +1139,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.automation_age.cracker.title}"
+			title: "{ftbquests.chapter.automation_age.quest41.title}"
 			x: -10.5d
 			y: 4.0d
 		}
@@ -1135,7 +1154,7 @@
 				"4BA7A1EBD0E9A16B"
 			]
 			dependency_requirement: "one_completed"
-			description: ["{ftbquests.automation_age.distilling.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest42.description1}"]
 			icon: "gtceu:dichlorobenzene_bucket"
 			id: "439D8AE6D3DC41AF"
 			rewards: [{
@@ -1148,7 +1167,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "4436BD62EA28EC5E"
-				title: "{ftbquests.automation_age.distilling.title}"
+				title: "{ftbquests.chapter.automation_age.quest42.task_4915324275854470238.title}"
 				type: "checkmark"
 			}]
 			x: -12.5d
@@ -1156,7 +1175,11 @@
 		}
 		{
 			dependencies: ["439D8AE6D3DC41AF"]
-			description: ["{ftbquests.automation_age.styrene_butadiene_rubber.description}"]
+			description: [
+				"{ftbquests.chapter.automation_age.quest43.description1}"
+				""
+				"{ftbquests.chapter.automation_age.quest43.description2}"
+			]
 			id: "38C9D56C7F821B5C"
 			rewards: [{
 				id: "31FAA10AB69D2B2D"
@@ -1177,7 +1200,7 @@
 				"6060E79B2D08912D"
 				"2D4F9DFF6B559C65"
 			]
-			description: ["{ftbquests.automation_age.ev_energy_input_hatch.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest44.description1}"]
 			id: "75CCD3B6125B55C4"
 			rewards: [{
 				id: "7F2DC78F0E3D256E"
@@ -1199,7 +1222,11 @@
 				"1E981BDF3F2C577D"
 				"54EA865EC1ABDA36"
 			]
-			description: ["{ftbquests.automation_age.rtm_alloy_coil.description}"]
+			description: [
+				"{ftbquests.chapter.automation_age.quest45.description1}"
+				""
+				"{ftbquests.chapter.automation_age.quest45.description2}"
+			]
 			id: "3B2D79D40B9617D5"
 			rewards: [{
 				id: "732A7D6E95439379"
@@ -1208,7 +1235,7 @@
 			}]
 			shape: "gear"
 			size: 1.5d
-			subtitle: "{ftbquests.automation_age.rtm_alloy_coil.subtitle}"
+			subtitle: "{ftbquests.chapter.automation_age.quest45.subtitle}"
 			tasks: [{
 				id: "5F7791E30C08A2D8"
 				item: "gtceu:rtm_alloy_coil_block"
@@ -1222,7 +1249,11 @@
 				"1E981BDF3F2C577D"
 				"74749B089D50329C"
 			]
-			description: ["{ftbquests.automation_age.tungsten_steel_ingot.description}"]
+			description: [
+				"{ftbquests.chapter.automation_age.quest46.description1}"
+				""
+				"{ftbquests.chapter.automation_age.quest46.description2}"
+			]
 			id: "4BCE8A9EBDF113CE"
 			rewards: [{
 				id: "0CB27DBB660355C2"
@@ -1244,7 +1275,7 @@
 				"170C262792DA7123"
 			]
 			dependency_requirement: "one_completed"
-			description: ["{ftbquests.automation_age.liquid_airs.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest47.description1}"]
 			id: "39FF89B370D09B88"
 			rewards: [{
 				count: 2
@@ -1273,13 +1304,17 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.automation_age.liquid_airs.title}"
+			title: "{ftbquests.chapter.automation_age.quest47.title}"
 			x: -6.5d
 			y: 4.0d
 		}
 		{
 			dependencies: ["74749B089D50329C"]
-			description: ["{ftbquests.automation_age.cupric_chloride_solution.description}"]
+			description: [
+				"{ftbquests.chapter.automation_age.quest48.description1}"
+				""
+				"{ftbquests.chapter.automation_age.quest48.description2}"
+			]
 			id: "001252911D2DA7C3"
 			rewards: [{
 				id: "04F9F912A7019060"
@@ -1297,7 +1332,7 @@
 		}
 		{
 			dependencies: ["2CABFCC73E33E133"]
-			description: ["{ftbquests.automation_age.mpic_chip.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest49.description1}"]
 			icon: "gtceu:mpic_chip"
 			id: "2D4F9DFF6B559C65"
 			rewards: [{
@@ -1323,13 +1358,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.automation_age.mpic_chip.title}"
+			title: "{ftbquests.chapter.automation_age.quest49.title}"
 			x: 3.5d
 			y: 2.0d
 		}
 		{
 			dependencies: ["6EB85BBD539AEB57"]
-			description: ["{ftbquests.automation_age.phosphorus_wafer.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest50.description1}"]
 			id: "2CABFCC73E33E133"
 			rewards: [{
 				count: 2
@@ -1349,7 +1384,15 @@
 		}
 		{
 			dependencies: ["75CCD3B6125B55C4"]
-			description: ["{ftbquests.automation_age.ev_energy_input_hatch_4a.description}"]
+			description: [
+				"{ftbquests.chapter.automation_age.quest51.description1}"
+				""
+				"{ftbquests.chapter.automation_age.quest51.description2}"
+				""
+				"{ftbquests.chapter.automation_age.quest51.description3}"
+				""
+				"{ftbquests.chapter.automation_age.quest51.description4}"
+			]
 			id: "32FF3127152DCD7D"
 			rewards: [{
 				id: "3C609B1EA15887CC"
@@ -1367,7 +1410,7 @@
 		}
 		{
 			dependencies: ["32FF3127152DCD7D"]
-			description: ["{ftbquests.automation_age.ev_energy_input_hatch_16a.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest52.description1}"]
 			id: "65705AECA837EE4C"
 			rewards: [{
 				id: "05AD2B7C5A5ECE0E"
@@ -1385,7 +1428,7 @@
 		}
 		{
 			dependencies: ["2231C06CE59E0074"]
-			description: ["{ftbquests.automation_age.phosphorus_boule.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest53.description1}"]
 			id: "6EB85BBD539AEB57"
 			rewards: [{
 				id: "0E4C76EDAE1E68F1"
@@ -1407,7 +1450,6 @@
 				"71523C429C7CA007"
 			]
 			dependency_requirement: "one_completed"
-			description: ["{ftbquests.automation_age.phosphorus_dust.description}"]
 			id: "2231C06CE59E0074"
 			rewards: [{
 				id: "437765BD288B060E"
@@ -1433,7 +1475,7 @@
 				type: "item"
 			}]
 			size: 1.0d
-			subtitle: "{ftbquests.automation_age.soc.subtitle}"
+			subtitle: "{ftbquests.chapter.automation_age.quest56.subtitle}"
 			tasks: [
 				{
 					id: "3E6960F178BA0BF3"
@@ -1451,7 +1493,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.automation_age.soc.title}"
+			title: "{ftbquests.chapter.automation_age.quest56.title}"
 			x: 5.5d
 			y: 0.0d
 		}
@@ -1460,7 +1502,7 @@
 				"62BA581B2918BB7B"
 				"2DB216B224F2E8EF"
 			]
-			description: ["{ftbquests.automation_age.ev_circuit_assembler.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest66.description1}"]
 			id: "574ECD841D0D2AD7"
 			rewards: [{
 				id: "454446B7F35018F3"
@@ -1482,7 +1524,7 @@
 				"6F008C23D5DE50D6"
 				"059FD3E475A05070"
 			]
-			description: ["{ftbquests.automation_age.nano_processor.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest67.description1}"]
 			id: "0514DE717001A062"
 			rewards: [{
 				id: "546570E01303C2B2"
@@ -1490,7 +1532,7 @@
 				type: "item"
 			}]
 			size: 1.0d
-			subtitle: "{ftbquests.automation_age.nano_processor.subtitle}"
+			subtitle: "{ftbquests.chapter.automation_age.quest67.subtitle}"
 			tasks: [{
 				id: "2715D4C52D4AA483"
 				item: "gtceu:nano_processor"
@@ -1508,7 +1550,7 @@
 				type: "item"
 			}]
 			size: 1.0d
-			subtitle: "{ftbquests.automation_age.nano_processor_assembly.subtitle}"
+			subtitle: "{ftbquests.chapter.automation_age.quest68.subtitle}"
 			tasks: [{
 				id: "07F894DAEF532D68"
 				item: "gtceu:nano_processor_assembly"
@@ -1531,7 +1573,7 @@
 			}]
 			shape: "gear"
 			size: 1.5d
-			subtitle: "{ftbquests.automation_age.nano_processor_computer.subtitle}"
+			subtitle: "{ftbquests.chapter.automation_age.quest69.subtitle}"
 			tasks: [{
 				id: "77593C4C1AF06416"
 				item: "gtceu:nano_processor_computer"
@@ -1542,7 +1584,7 @@
 		}
 		{
 			dependencies: ["076532C492102F8E"]
-			description: ["{ftbquests.automation_age.epoxy_circuit_board.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest70.description1}"]
 			id: "059FD3E475A05070"
 			rewards: [{
 				id: "1F3EC27C4996E6A2"
@@ -1571,7 +1613,7 @@
 		}
 		{
 			dependencies: ["4FF433145C67693F"]
-			description: ["{ftbquests.automation_age.nano_cpu_chip.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest71.description1}"]
 			icon: "gtceu:nano_cpu_chip"
 			id: "6F008C23D5DE50D6"
 			rewards: [{
@@ -1592,7 +1634,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.automation_age.nano_cpu_chip.title}"
+			title: "{ftbquests.chapter.automation_age.quest71.title}"
 			x: -6.5d
 			y: -8.0d
 		}
@@ -1615,7 +1657,7 @@
 		}
 		{
 			dependencies: ["2CABFCC73E33E133"]
-			description: ["{ftbquests.automation_age.nor_memory_chip.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest73.description1}"]
 			hide_dependent_lines: true
 			icon: "gtceu:nor_memory_chip"
 			id: "737C84EA25886EC9"
@@ -1642,7 +1684,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.automation_age.nor_memory_chip.title}"
+			title: "{ftbquests.chapter.automation_age.quest73.title}"
 			x: 7.5d
 			y: 2.0d
 		}
@@ -1651,7 +1693,7 @@
 				"5CB82E9BED342EB2"
 				"05F2C7351FF1B0E5"
 			]
-			description: ["{ftbquests.automation_age.iv_energy_input_hatch.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest74.description1}"]
 			id: "7CACFC7C9101EA59"
 			rewards: [{
 				id: "524F28B3FD185A74"
@@ -1672,7 +1714,7 @@
 				"62BA581B2918BB7B"
 				"4D9DAED52FF74B8B"
 			]
-			description: ["{ftbquests.automation_age.iv_assembler.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest75.description1}"]
 			id: "5CB82E9BED342EB2"
 			rewards: [{
 				count: 2
@@ -1692,7 +1734,7 @@
 		}
 		{
 			dependencies: ["4BCE8A9EBDF113CE"]
-			description: ["{ftbquests.automation_age.iv_machine_hull.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest76.description1}"]
 			id: "4D9DAED52FF74B8B"
 			rewards: [{
 				id: "2F601584CF53D9C4"
@@ -1710,7 +1752,7 @@
 		}
 		{
 			dependencies: ["7CACFC7C9101EA59"]
-			description: ["{ftbquests.automation_age.iv_energy_input_hatch_4a.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest77.description1}"]
 			id: "4A45669665626026"
 			rewards: [{
 				id: "5DE3ED7BA8D48DB0"
@@ -1728,7 +1770,7 @@
 		}
 		{
 			dependencies: ["4A45669665626026"]
-			description: ["{ftbquests.automation_age.iv_energy_input_hatch_16a.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest78.description1}"]
 			id: "528253AC30E635F1"
 			rewards: [{
 				id: "6EA3EBDFA6E4910A"
@@ -1746,7 +1788,7 @@
 		}
 		{
 			dependencies: ["1C05C80BCB4736B6"]
-			description: ["{ftbquests.automation_age.shellite_wire.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest80.description1}"]
 			id: "15CAE17A4EF1F7E9"
 			rewards: [{
 				id: "258640534B0E3510"
@@ -1764,7 +1806,7 @@
 		}
 		{
 			dependencies: ["3B2D79D40B9617D5"]
-			description: ["{ftbquests.automation_age.shellite_ingot.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest81.description1}"]
 			id: "1C05C80BCB4736B6"
 			rewards: [{
 				id: "415D9C74355CF8C9"
@@ -1785,7 +1827,7 @@
 				"2D4F9DFF6B559C65"
 				"215D430EAC4CE323"
 			]
-			description: ["{ftbquests.automation_age.hpic_chip.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest82.description1}"]
 			hide_dependency_lines: true
 			icon: "gtceu:hpic_chip"
 			id: "05F2C7351FF1B0E5"
@@ -1807,7 +1849,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.automation_age.hpic_chip.title}"
+			title: "{ftbquests.chapter.automation_age.quest82.title}"
 			x: -2.5d
 			y: -8.0d
 		}
@@ -1817,7 +1859,7 @@
 				"71A44D3F0F20E329"
 				"687C720033164A7B"
 			]
-			description: ["{ftbquests.automation_age.advanced_smds.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest83.description1}"]
 			id: "18A88F62B17CE9EC"
 			rewards: [{
 				id: "2CA1A500A6D1550C"
@@ -1852,7 +1894,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.automation_age.advanced_smds.title}"
+			title: "{ftbquests.chapter.automation_age.quest83.title}"
 			x: 5.5d
 			y: -10.0d
 		}
@@ -1861,7 +1903,11 @@
 				"5CB82E9BED342EB2"
 				"06FCA7209B892A81"
 			]
-			description: ["{ftbquests.automation_age.hssg_coil.description}"]
+			description: [
+				"{ftbquests.chapter.automation_age.quest84.description1}"
+				""
+				"{ftbquests.chapter.automation_age.quest84.description2}"
+			]
 			id: "689150D2A185216C"
 			rewards: [{
 				id: "0E893C06186BCA22"
@@ -1880,7 +1926,7 @@
 		}
 		{
 			dependencies: ["3B2D79D40B9617D5"]
-			description: ["{ftbquests.automation_age.hssg_ingot.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest85.description1}"]
 			hide_dependency_lines: true
 			id: "06FCA7209B892A81"
 			rewards: [{
@@ -1899,7 +1945,7 @@
 		}
 		{
 			dependencies: ["689150D2A185216C"]
-			description: ["{ftbquests.automation_age.hsse_ingot.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest86.description1}"]
 			id: "630C93730FCF07D7"
 			rewards: [{
 				id: "2731573D0E9BEDAA"
@@ -1917,7 +1963,7 @@
 		}
 		{
 			dependencies: ["689150D2A185216C"]
-			description: ["{ftbquests.automation_age.hsss_ingot.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest87.description1}"]
 			id: "71A44D3F0F20E329"
 			rewards: [{
 				id: "101A195EDCC51F0C"
@@ -1935,7 +1981,7 @@
 		}
 		{
 			dependencies: ["10F2237FF0C87F62"]
-			description: ["{ftbquests.automation_age.graphene_dust.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest88.description1}"]
 			id: "687C720033164A7B"
 			rewards: [{
 				id: "0BD87C29D60BCC50"
@@ -1953,7 +1999,13 @@
 		}
 		{
 			dependencies: ["3B2D79D40B9617D5"]
-			description: ["{ftbquests.automation_age.alloy_blast_smelter.description}"]
+			description: [
+				"{ftbquests.chapter.automation_age.quest89.description1}"
+				""
+				"{ftbquests.chapter.automation_age.quest89.description2}"
+				""
+				"{ftbquests.chapter.automation_age.quest89.description3}"
+			]
 			id: "664E782C6A24D9F1"
 			rewards: [{
 				count: 2
@@ -1976,7 +2028,13 @@
 				"3B2D79D40B9617D5"
 				"020048FAC9576691"
 			]
-			description: ["{ftbquests.automation_age.nuclear_reactor.description}"]
+			description: [
+				"{ftbquests.chapter.automation_age.quest90.description1}"
+				""
+				"{ftbquests.chapter.automation_age.quest90.description2}"
+				""
+				"{ftbquests.chapter.automation_age.quest90.description3}"
+			]
 			hide_dependency_lines: true
 			id: "68865F1DDBFFFACE"
 			optional: true
@@ -1988,7 +2046,7 @@
 			}]
 			shape: "gear"
 			size: 1.5d
-			subtitle: "{ftbquests.automation_age.nuclear_reactor.subtitle}"
+			subtitle: "{ftbquests.chapter.automation_age.quest90.subtitle}"
 			tasks: [{
 				id: "388DD36D47A45596"
 				item: "gtceu:nuclear_reactor"
@@ -2005,7 +2063,11 @@
 				"3C099AFD41C38BC3"
 			]
 			dependency_requirement: "one_completed"
-			description: ["{ftbquests.automation_age.radon.description}"]
+			description: [
+				"{ftbquests.chapter.automation_age.quest91.description1}"
+				""
+				"{ftbquests.chapter.automation_age.quest91.description2}"
+			]
 			hide_dependent_lines: true
 			id: "2DB216B224F2E8EF"
 			rewards: [{
@@ -2024,12 +2086,29 @@
 			y: 4.0d
 		}
 		{
+			dependencies: [
+				"1820787D031EAB15"
+				"5B70B63D4157594F"
+			]
+			dependency_requirement: "one_completed"
+			description: ["[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.automation_age.quest92.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"0C78BD4A7A0B98E4\"}}]"]
+			icon: "ftbquests:book"
+			id: "775AAF108AFAF707"
+			tasks: [{
+				id: "39A4828A672AE4A1"
+				title: "{ftbquests.chapter.automation_age.quest92.task_4153588287290401953.title}"
+				type: "checkmark"
+			}]
+			x: -9.5d
+			y: -3.0d
+		}
+		{
 			id: "56B0A897E7C7C25C"
 			invisible: true
 			optional: true
 			tasks: [{
 				id: "02A369FF9CB41D88"
-				title: "{ftbquests.automation_age.positioner.title}"
+				title: "{ftbquests.chapter.automation_age.quest93.task_190112155846319496.title}"
 				type: "checkmark"
 			}]
 			x: -4.0d
@@ -2039,7 +2118,7 @@
 			dependencies: ["2CABFCC73E33E133"]
 			icon: "gtceu:nand_memory_chip"
 			id: "5026437079530A67"
-			subtitle: "{ftbquests.automation_age.nand_chips.subtitle}"
+			subtitle: "{ftbquests.chapter.automation_age.quest94.subtitle}"
 			tasks: [
 				{
 					id: "78983E5E875409CA"
@@ -2057,18 +2136,67 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.automation_age.nand_chips.title}"
+			title: "{ftbquests.chapter.automation_age.quest94.title}"
 			x: 7.5d
 			y: 4.0d
 		}
 		{
+			dependencies: ["1820787D031EAB15"]
+			description: ["[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.automation_age.quest95.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"0F4C5DF2922568B2\"}}]"]
+			icon: "ftbquests:book"
+			id: "4840218DA8E61B65"
+			optional: true
+			tasks: [{
+				id: "6B319AA87C949FE7"
+				title: "{ftbquests.chapter.automation_age.quest95.task_7724124884352409575.title}"
+				type: "checkmark"
+			}]
+			x: -11.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5B70B63D4157594F"]
+			dependency_requirement: "one_completed"
+			description: ["[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.automation_age.quest96.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"2757CDEC1D8F5CCE\"}}]"]
+			icon: "ftbquests:book"
+			id: "7E74A114F4054345"
+			tasks: [{
+				id: "52333CEF18B39599"
+				title: "{ftbquests.chapter.automation_age.quest96.task_5923144932531606937.title}"
+				type: "checkmark"
+			}]
+			x: -7.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"1820787D031EAB15"
+				"5B70B63D4157594F"
+			]
+			dependency_requirement: "one_completed"
+			description: ["[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.automation_age.quest97.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"4A4275186719AD8D\"}}]"]
+			icon: "ftbquests:book"
+			id: "171BD0E155CF98CA"
+			tasks: [{
+				id: "75801F4A6F213865"
+				title: "{ftbquests.chapter.automation_age.quest97.task_8466801704009021541.title}"
+				type: "checkmark"
+			}]
+			x: -9.5d
+			y: -1.0d
+		}
+		{
 			dependencies: ["7B0133D388101F68"]
-			description: ["{ftbquests.automation_age.power_chapter.description}"]
+			description: [
+				"{ftbquests.chapter.automation_age.quest98.description1}"
+				""
+				"[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.automation_age.quest98.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"564046CF37ECA3FE\"}}]"
+			]
 			icon: "gtceu:europium_quadruple_cable"
 			id: "0B36E111D8F13F49"
 			tasks: [{
 				id: "6CBB8D7367F787C3"
-				title: "{ftbquests.automation_age.power_chapter.title}"
+				title: "{ftbquests.chapter.automation_age.quest98.task_7835011503546140611.title}"
 				type: "checkmark"
 			}]
 			x: -11.5d
@@ -2076,7 +2204,7 @@
 		}
 		{
 			dependencies: ["3306CAE5E57839A2"]
-			description: ["{ftbquests.automation_age.laminated_glass.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest99.description1}"]
 			id: "020048FAC9576691"
 			rewards: [{
 				id: "64A00C5F06E018B8"
@@ -2094,7 +2222,7 @@
 		}
 		{
 			dependencies: ["020048FAC9576691"]
-			description: ["{ftbquests.automation_age.industrial_barrel.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest100.description1}"]
 			id: "3DBCF29F5183C6C5"
 			rewards: [{
 				id: "07A08D452D47B133"
@@ -2111,12 +2239,12 @@
 		}
 		{
 			dependencies: ["0AB3A8C14C3A0512"]
-			description: ["{ftbquests.automation_age.pyrolysed_oil.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest101.description1}"]
 			icon: "minecraft:spruce_log"
 			id: "74186F521D41913D"
 			tasks: [{
 				id: "0E8DB02CDB2185B9"
-				title: "{ftbquests.automation_age.pyrolysed_oil.title}"
+				title: "{ftbquests.chapter.automation_age.quest101.task_1048687994948650425.title}"
 				type: "checkmark"
 			}]
 			x: -10.5d
@@ -2124,7 +2252,7 @@
 		}
 		{
 			dependencies: ["261174370DC87FCB"]
-			description: ["{ftbquests.automation_age.carbon_fibers.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest102.description1}"]
 			id: "4FF433145C67693F"
 			optional: true
 			rewards: [{
@@ -2143,7 +2271,7 @@
 		}
 		{
 			dependencies: ["550DB81B8DC91730"]
-			description: ["{ftbquests.automation_age.borosilicate_glass_ingot.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest103.description1}"]
 			id: "5B575348D2A871BB"
 			optional: true
 			rewards: [{
@@ -2166,7 +2294,13 @@
 				"2DB216B224F2E8EF"
 				"1E981BDF3F2C577D"
 			]
-			description: ["{ftbquests.automation_age.super_ebf.description}"]
+			description: [
+				"A Boosted EBF....."
+				""
+				"Oh yeah this is where it's at"
+				""
+				"Wait what do you mean it can only have 1 energy hatch?"
+			]
 			hide_dependent_lines: true
 			id: "09C1739F3FE3298F"
 			rewards: [{
@@ -2187,7 +2321,11 @@
 		}
 		{
 			dependencies: ["4D9DAED52FF74B8B"]
-			description: ["{ftbquests.automation_age.large_machines.description}"]
+			description: [
+				"Large Variants of nearly all of the single blocks they allow you to overclock some machines you couldn't prior."
+				""
+				"Also capable of using parallel hatches, something you'll get familiar with soon."
+			]
 			id: "21B885A85E5764F9"
 			rewards: [{
 				count: 2
@@ -2203,6 +2341,9 @@
 					Count: 1
 					id: "itemfilters:or"
 					tag: {
+						display: {
+							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Large (Parallel) Multiblocks\"}"
+						}
 						items: [
 							{
 								Count: 1b
@@ -2295,7 +2436,6 @@
 						]
 					}
 				}
-				title: "{ftbquests.automation_age.large_machines.title}"
 				type: "item"
 			}]
 			x: 1.5d
@@ -2322,7 +2462,7 @@
 		}
 		{
 			dependencies: ["46D5CAA2666803D4"]
-			description: ["{ftbquests.automation_age.twinite_wire.description}"]
+			description: ["&dLuV&r superconductor, can hold 64 amps in a 1x cable."]
 			id: "26126E2FA2B406E8"
 			rewards: [{
 				id: "7A89F0E0D13FB121"
@@ -2339,7 +2479,7 @@
 		}
 		{
 			dependencies: ["689150D2A185216C"]
-			description: ["{ftbquests.automation_age.twinite_ingot.description}"]
+			description: ["Your &dLuV&r Superconductor"]
 			id: "46D5CAA2666803D4"
 			rewards: [{
 				id: "559DE76C9E59DA34"
@@ -2369,7 +2509,7 @@
 		}
 		{
 			dependencies: ["3CB63B290C9EFAA2"]
-			description: ["{ftbquests.automation_age.super_electric_ore_factory.description}"]
+			description: ["A Boosted Electric Ore Factory which allows you to break down you ores at an even more accelerated rate."]
 			id: "4BDAE5D4790ED230"
 			rewards: [{
 				id: "29E0C0EB00DB8AC2"
@@ -2386,10 +2526,28 @@
 		}
 		{
 			dependencies: [
+				"4BDAE5D4790ED230"
+				"2027351D670E4CC6"
+				"09C1739F3FE3298F"
+			]
+			dependency_requirement: "one_completed"
+			description: ["[\"\",{\"underlined\":1,\"translate\":\"Read About It Here\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"2152FBCC48D5D7AC\"}}]"]
+			icon: "ftbquests:book"
+			id: "02BC9C8FF2AE1650"
+			tasks: [{
+				id: "54823A71E8D104D4"
+				title: "Go Read About Throughput Boosting"
+				type: "checkmark"
+			}]
+			x: -9.5d
+			y: -9.0d
+		}
+		{
+			dependencies: [
 				"0F0FEE1952A3CB4F"
 				"3CB63B290C9EFAA2"
 			]
-			description: ["{ftbquests.automation_age.large_chemical_reactor.description}"]
+			description: ["{ftbquests.chapter.automation_age.quest65.description1}"]
 			hide_dependent_lines: true
 			id: "1820787D031EAB15"
 			rewards: [{
@@ -2405,10 +2563,10 @@
 				item: "gtceu:large_chemical_reactor"
 				type: "item"
 			}]
-			title: "{ftbquests.automation_age.large_chemical_reactor.title}"
+			title: "{ftbquests.chapter.automation_age.quest65.title}"
 			x: -10.5d
 			y: -4.0d
 		}
 	]
-	title: "{ftbquests.automation_age.title}"
+	title: "{ftbquests.chapter.automation_age.title}"
 }
