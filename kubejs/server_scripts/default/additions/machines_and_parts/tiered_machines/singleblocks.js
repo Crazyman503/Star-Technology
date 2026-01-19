@@ -1,7 +1,6 @@
 ServerEvents.recipes(event => {
     const id = global.id;
 
-    // event.remove({ output: /gtceu:uv.*/, type: "minecraft:crafting_shaped" });
     event.remove({ not: { output: 'gtceu:uhv_ultimate_battery' }, output: /gtceu:uhv.*/ });
     event.remove({ not: { input: 'gtceu:uhv_ultimate_battery' }, input: /gtceu:uhv.*/ });
     event.remove({ output: /gtceu:uev.*/ });
@@ -14,12 +13,6 @@ ServerEvents.recipes(event => {
     event.remove({ input: /gtceu:opv.*/ });
     event.remove({ not: { output: 'gtceu:max_battery' }, output: /gtceu:max.*/ });
     event.remove({ not: { input: 'gtceu:max_battery' }, input: /gtceu:max.*/ });
-    event.remove({ output: `gtceu:uv_input_hatch` });
-    event.remove({ output: `gtceu:uv_input_bus` });
-    event.remove({ output: `gtceu:uv_dual_input_hatch` });
-    event.remove({ output: `gtceu:uv_output_hatch` });
-    event.remove({ output: `gtceu:uv_output_bus` });
-    event.remove({ output: `gtceu:uv_dual_output_hatch` });
 
     global.not_hardmode(() => {
         const components = global.componentMaterials;
@@ -31,8 +24,26 @@ ServerEvents.recipes(event => {
 
             const {
                 tiers: { tier, tier0, tier1 },
-                materials: { tierMaterial, wire, elctrlyzWire, tierFluid, plastic, cable, cable1, primMagnet, pipeMaterial, glass, buzz, chip, math }
+                materials: { 
+                    tierMaterial, 
+                    wire, 
+                    elctrlyzWire, 
+                    tierFluid, 
+                    plastic, 
+                    cable,
+                    cable1, 
+                    primMagnet, 
+                    pipeMaterial, 
+                    glass, 
+                    buzz, 
+                    chip
+                },
+                scaling: {
+                    scaler
+                }
             } = tierData;
+
+            let math = scaler - 3;
 
             // Machines
             event.shaped(Item.of(`gtceu:${tier}_machine_casing`), [
@@ -630,188 +641,11 @@ ServerEvents.recipes(event => {
                     .duration(1200).circuit(3)
                     .EUt(491520 * (4 ** math));
             });
-
-            // Parallel Hatches
-            event.shaped(Item.of(`start_core:${tier}_parallel_hatch`), [
-                'SCE',
-                'CHC',
-                'BCB'
-            ], {
-                S: `gtceu:${tier}_sensor`,
-                E: `gtceu:${tier}_emitter`,
-                C: `#gtceu:circuits/${tier0}`,
-                H: `gtceu:${tier}_machine_hull`,
-                B: `gtceu:${cable}_double_cable`
-            }).id(`start:shaped/${tier}_parallel_hatch`);
-
-            event.recipes.gtceu.assembler(id(`${tier}_absolute_parallel_hatch`))
-                .itemInputs(
-                    `start_core:${tier}_parallel_hatch`,
-                    `4x gtceu:${tier}_sensor`,
-                    `4x gtceu:${tier}_emitter`,
-                    `2x #gtceu:circuits/${tier0}`,
-                    `4x ${chip}_chip`)
-                .inputFluids(`gtceu:${tierFluid} 576`)
-                .itemOutputs(`start_core:${tier}_absolute_parallel_hatch`)
-                .duration(320)
-                .EUt(GTValues.VA[GTValues[tier.toUpperCase()]]);
         }
 
         postUVMachines('uhv');
         postUVMachines('uev');
         postUVMachines('uiv');
 
-        //UV/UHV Regular IO, No UEV or higher as they all scale the same as UHV as of current
-        [
-            { tier: "uv", lowerTier: "lv", mod: 0, pipeMaterial: 'naquadah', frameMaterial: 'naquadah_alloy' },
-            { tier: "uhv", lowerTier: "mv", mod: 1, pipeMaterial: 'zapolgium', frameMaterial: 'neutronium' }
-        ].forEach(tierData => {
-            [
-                { typeIO: 'input', circ: '1' },
-                { typeIO: 'output', circ: '2' }
-            ].forEach(ioData => {
-                event.recipes.gtceu.assembler(id(`${tierData.tier}_${ioData.typeIO}_bus`))
-                    .itemInputs(`gtceu:${tierData.tier}_machine_hull`, `gtceu:${tierData.lowerTier}_super_chest`)
-                    .inputFluids(`gtceu:polyether_ether_ketone ${324 + (tierData.mod * 36)}`)
-                    .itemOutputs(`gtceu:${tierData.tier}_${ioData.typeIO}_bus`)
-                    .duration(300)
-                    .EUt(GTValues.VA[GTValues[tierData.tier.toUpperCase()]])
-                    .circuit(ioData.circ);
-
-                event.recipes.gtceu.assembler(id(`${tierData.tier}_${ioData.typeIO}_hatch`))
-                    .itemInputs(`gtceu:${tierData.tier}_machine_hull`, `gtceu:${tierData.lowerTier}_super_tank`)
-                    .inputFluids(`gtceu:polyether_ether_ketone ${324 + (tierData.mod * 36)}`)
-                    .itemOutputs(`gtceu:${tierData.tier}_${ioData.typeIO}_hatch`)
-                    .duration(300)
-                    .EUt(GTValues.VA[GTValues[tierData.tier.toUpperCase()]])
-                    .circuit(ioData.circ);
-
-                event.recipes.gtceu.assembler(id(`${tierData.tier}_dual_${ioData.typeIO}_hatch`))
-                    .itemInputs(`gtceu:${tierData.tier}_${ioData.typeIO}_bus`, `gtceu:${tierData.tier}_${ioData.typeIO}_hatch`, `gtceu:${tierData.pipeMaterial}_nonuple_fluid_pipe`, `3x gtceu:${tierData.frameMaterial}_frame`)
-                    .inputFluids(`gtceu:polyether_ether_ketone ${1296 + (tierData.mod * 144)}`)
-                    .itemOutputs(`gtceu:${tierData.tier}_dual_${ioData.typeIO}_hatch`)
-                    .duration(300)
-                    .EUt(GTValues.VA[GTValues[tierData.tier.toUpperCase()]])
-                    .circuit(ioData.circ);
-            });
-
-            event.shaped(Item.of(`gtceu:${tierData.tier}_dual_input_hatch`), [
-                'S',
-                'H'
-            ], {
-                S: '#forge:tools/screwdrivers',
-                H: `gtceu:${tierData.tier}_dual_output_hatch`
-            }).id(`start:shaped/${tierData.tier}_dual_input_hatch_flip`);
-
-            event.shaped(Item.of(`gtceu:${tierData.tier}_dual_output_hatch`), [
-                'S',
-                'H'
-            ], {
-                S: '#forge:tools/screwdrivers',
-                H: `gtceu:${tierData.tier}_dual_input_hatch`
-            }).id(`start:shaped/${tierData.tier}_dual_output_hatch_flip`);
-
-            event.shaped(Item.of(`gtceu:${tierData.tier}_input_hatch`), [
-                'S',
-                'H'
-            ], {
-                S: '#forge:tools/screwdrivers',
-                H: `gtceu:${tierData.tier}_output_hatch`
-            }).id(`start:shaped/${tierData.tier}_input_hatch`);
-
-            event.shaped(Item.of(`gtceu:${tierData.tier}_output_hatch`), [
-                'S',
-                'H'
-            ], {
-                S: '#forge:tools/screwdrivers',
-                H: `gtceu:${tierData.tier}_input_hatch`
-            }).id(`start:shaped/${tierData.tier}_output_hatch`);
-
-            event.shaped(Item.of(`gtceu:${tierData.tier}_input_bus`), [
-                'S',
-                'H'
-            ], {
-                S: '#forge:tools/screwdrivers',
-                H: `gtceu:${tierData.tier}_output_bus`
-            }).id(`start:shaped/${tierData.tier}_input_bus`);
-
-            event.shaped(Item.of(`gtceu:${tierData.tier}_output_bus`), [
-                'S',
-                'H'
-            ], {
-                S: '#forge:tools/screwdrivers',
-                H: `gtceu:${tierData.tier}_input_bus`
-            }).id(`start:shaped/${tierData.tier}_output_bus`);
-        });
-
-        [
-            { type: '4x', pipe: 'quadruple' },
-            { type: '9x', pipe: 'nonuple' }
-        ].forEach(hatchScaleData => {
-            event.shaped(Item.of(`gtceu:uhv_input_hatch_${hatchScaleData.type}`), [
-                'P',
-                'H'
-            ], {
-                H: `gtceu:uhv_input_hatch`,
-                P: `gtceu:zapolgium_${hatchScaleData.pipe}_fluid_pipe`
-            }).id(`start:shaped/uhv_input_hatch_${hatchScaleData.type}`);
-
-            event.shaped(Item.of(`gtceu:uhv_input_hatch_${hatchScaleData.type}`), [
-                'S',
-                'H'
-            ], {
-                S: `#forge:tools/screwdrivers`,
-                H: `gtceu:uhv_output_hatch_${hatchScaleData.type}`
-            }).id(`start:shaped/uhv_input_hatch_${hatchScaleData.type}_flip`);
-
-            event.shaped(Item.of(`gtceu:uhv_output_hatch_${hatchScaleData.type}`), [
-                'H',
-                'P'
-            ], {
-                H: `gtceu:uhv_output_hatch`,
-                P: `gtceu:zapolgium_${hatchScaleData.pipe}_fluid_pipe`
-            }).id(`start:shaped/uhv_output_hatch_${hatchScaleData.type}`);
-
-            event.shaped(Item.of(`gtceu:uhv_output_hatch_${hatchScaleData.type}`), [
-                'S',
-                'H'
-            ], {
-                S: `#forge:tools/screwdrivers`,
-                H: `gtceu:uhv_input_hatch_${hatchScaleData.type}`
-            }).id(`start:shaped/uhv_output_hatch_${hatchScaleData.type}_flip`);
-        });
-
-        // UHV Containers
-        event.shaped('gtceu:uhv_quantum_chest', [
-            'CPC',
-            'PHP',
-            'CFC'
-        ], {
-            C: '#gtceu:circuits/uhv',
-            P: 'gtceu:dense_neutronium_plate',
-            H: 'gtceu:uhv_machine_hull',
-            F: 'gtceu:zpm_field_generator'
-        }).id(id('uhv_quantum_chest'));
-
-        event.shaped('gtceu:uhv_quantum_tank', [
-            'CFC',
-            'PHP',
-            'CMC'
-        ], {
-            C: '#gtceu:circuits/uhv',
-            P: 'gtceu:dense_neutronium_plate',
-            H: 'gtceu:uhv_hermetic_casing',
-            F: 'gtceu:zpm_field_generator',
-            M: 'gtceu:uhv_electric_pump'
-        }).id(id('uhv_quantum_tank'));
-
-        event.shaped('gtceu:uhv_hermetic_casing', [
-            'PPP',
-            'PHP',
-            'PPP'
-        ], {
-            P: 'gtceu:neutronium_plate',
-            H: 'gtceu:polyether_ether_ketone_large_fluid_pipe'
-        }).id(id('uhv_hermetic_casing'));
     });
 });

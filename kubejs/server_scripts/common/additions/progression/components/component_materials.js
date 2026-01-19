@@ -11,25 +11,26 @@ global.componentMaterials = {
             wireMechanical: 'palladium',
             wireCoil: 'osmiridium',
             elctrlyzWire: 'osmium',
-            tierFluid: '',
-            coolant: '',
+            tierFluid: '', //none exist
+            coolant: '', //none exist
             solder: 'soldering_alloy',
             lubricant: 'lubricant',
             primRubber: 'styrene_butadiene_rubber',
             supRubber: 'silicone_rubber',
-            plastic: 'polytetrafluoroethylene',
+            plastic: 'polybenzimidazole',
             cable: 'niobium_titanium',
             cable1: 'vanadium_gallium',
             catalyst: '1x gtceu:quantum_star',
             primMagnet: 'samarium',
-            supMagnet: '',
+            supMagnet: '', //none exist
             pipeMaterial: 'niobium_titanium',
             miscMaterial: 'rhodium',
             glass: 'gtceu:laminated_glass',
             superconductor: 'indium_tin_barium_titanium_cuprate',
             buzz: 'niobium_titanium',
             chip: 'gtceu:hpic',
-            math: 0
+            fluidStorage: 'gtceu:titanium_drum',
+            itemStorage: 'gtceu:titanium_crate'
         },
         scaling: {
             scaler: 1,
@@ -51,8 +52,8 @@ global.componentMaterials = {
             wireMechanical: 'europium',
             wireCoil: 'europium',
             elctrlyzWire: 'osmium',
-            tierFluid: '',
-            coolant: '',
+            tierFluid: '', //none exist
+            coolant: '', //none exist
             solder: 'soldering_alloy',
             lubricant: 'lubricant',
             primRubber: 'styrene_butadiene_rubber',
@@ -62,14 +63,15 @@ global.componentMaterials = {
             cable1: 'yttrium_barium_cuprate',
             catalyst: '2x gtceu:quantum_star',
             primMagnet: 'samarium',
-            supMagnet: '',
+            supMagnet: '', //none exist
             pipeMaterial: 'polybenzimidazole',
             miscMaterial: 'trinium',
             glass: 'gtceu:fusion_glass',
             superconductor: 'uranium_rhodium_dinaquadide',
             buzz: 'naquadah_alloy',
             chip: 'gtceu:uhpic',
-            math: 0
+            fluidStorage: 'gtceu:tungsten_steel_drum',
+            itemStorage: 'gtceu:tungsten_steel_crate'
         },
         scaling: {
             scaler: 2,
@@ -92,7 +94,7 @@ global.componentMaterials = {
             wireCoil: 'tritanium',
             elctrlyzWire: 'trinium',
             tierFluid: 'naquadria',
-            coolant: '',
+            coolant: '', //none exist
             solder: 'indium_tin_lead_cadmium_soldering_alloy',
             lubricant: 'lubricant',
             primRubber: 'styrene_butadiene_rubber',
@@ -109,7 +111,8 @@ global.componentMaterials = {
             superconductor: 'enriched_naquadah_trinium_europium_duranide',
             buzz: 'duranium',
             chip: 'gtceu:uhpic',
-            math: 0
+            fluidStorage: 'start_core:enriched_naquadah_drum',
+            itemStorage: 'gtceu:lv_super_chest' //to be ENaq Crate when added
         },
         scaling: {
             scaler: 3,
@@ -143,13 +146,14 @@ global.componentMaterials = {
             catalyst: '2x gtceu:gravi_star',
             primMagnet: 'dysprosium',
             supMagnet: 'samarium',
-            pipeMaterial: 'neutronium',
+            pipeMaterial: 'zapolgium',
             miscMaterial: 'neutronium',
             glass: 'gtceu:fusion_glass',
             superconductor: 'ruthenium_trinium_americium_neutronate',
             buzz: 'neutronium',
             chip: 'gtceu:uhpic',
-            math: 1
+            fluidStorage: 'start_core:neutronium_drum',
+            itemStorage: 'gtceu:mv_super_chest' //to be Nt Crate when added
         },
         scaling: {
             scaler: 4,
@@ -189,7 +193,8 @@ global.componentMaterials = {
             superconductor: 'seaborgium_palladium_enriched_estalt_flerovium_alloy',
             buzz: 'neutronium',
             chip: 'kubejs:uepic',
-            math: 2
+            fluidStorage: '', //none exist
+            itemStorage: '' //none exist
         },
         scaling: {
             scaler: 5,
@@ -223,13 +228,14 @@ global.componentMaterials = {
             catalyst: '1x kubejs:dragonic_eye',
             primMagnet: 'zapolgium',
             supMagnet: 'dysprosium',
-            pipeMaterial: 'chaotixic_alloy',
+            pipeMaterial: 'nyanium',
             miscMaterial: 'chaotixic_alloy',
             glass: 'kubejs:draco_resilient_fusion_glass',
             superconductor: 'rhenium_super_composite_alloy',
             buzz: 'neutronium',
             chip: 'kubejs:uepic',
-            math: 3
+            fluidStorage: '', //none exist
+            itemStorage: '' //none exist
         },
         scaling: {
             scaler: 6,

@@ -1,3 +1,5 @@
+// priority: 1
+
 ServerEvents.tags('item', event => {
     event.add('gtceu:circuits/uv', 'kubejs:runic_processor_assembly');
     event.add('gtceu:circuits/zpm', 'kubejs:runic_processor');
