@@ -177,6 +177,14 @@ ServerEvents.recipes(event => {
         .duration(175)
         .EUt(GTValues.VHA[GTValues.ZPM]);
 
+    event.recipes.gtceu.chemical_skip(id('scheelite_line'))
+        .itemInputs('1x gtceu:scheelite_dust')
+        .inputFluids('gtceu:hydrochloric_acid 2000')
+        .itemOutputs('1x gtceu:tungsten_trioxide_dust','1x gtceu:calcium_dust')
+        .outputFluids('gtceu:chlorine 2000','gtceu:hydrogen 2000')
+        .duration(175)
+        .EUt(GTValues.VHA[GTValues.ZPM]);
+
     event.recipes.gtceu.chemical_skip(id('mutagen_skip'))
         .itemInputs('64x gtceu:bio_chaff','64x gtceu:bio_chaff','64x gtceu:bio_chaff','24x gtceu:bio_chaff','5x gtceu:naquadria_dust')
         .inputFluids('gtceu:distilled_water 77250')

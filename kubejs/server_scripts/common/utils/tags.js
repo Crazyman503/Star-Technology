@@ -1,15 +1,19 @@
+// priority: 1
+
 ServerEvents.tags('item', event => {
-    event.add('gtceu:circuits/uv', 'kubejs:runic_wetware_processor_assembly');
-    event.add('gtceu:circuits/uhv', 'kubejs:runic_wetware_processor_computer');
-    event.add('gtceu:circuits/uev', 'kubejs:runic_wetware_processor_mainframe');
-    event.add('gtceu:circuits/zpm', 'kubejs:draconic_wetware_microchip_processor');
-    event.add('gtceu:circuits/uv', 'kubejs:draconic_wetware_processor');
-    event.add('gtceu:circuits/uhv', 'kubejs:draconic_wetware_processor_assembly');
-    event.add('gtceu:circuits/uev', 'kubejs:draconic_wetware_processor_computer');
-    event.add('gtceu:circuits/uiv', 'kubejs:draconic_wetware_processor_mainframe');
-    event.add('gtceu:circuits/uev', 'kubejs:awakened_draconic_wetware_processor_assembly');
-    event.add('gtceu:circuits/uiv', 'kubejs:awakened_draconic_wetware_processor_computer');
-    event.add('gtceu:circuits/uxv', 'kubejs:awakened_draconic_wetware_processor_mainframe');
+    event.add('gtceu:circuits/uv', 'kubejs:runic_processor_assembly');
+    event.add('gtceu:circuits/zpm', 'kubejs:runic_processor');
+    event.add('gtceu:circuits/uhv', 'kubejs:runic_processor_computer');
+    event.add('gtceu:circuits/uev', 'kubejs:runic_processor_mainframe');
+    event.add('gtceu:circuits/zpm', 'kubejs:draconic_microchip_processor');
+    event.add('gtceu:circuits/uv', 'kubejs:draconic_processor');
+    event.add('gtceu:circuits/uhv', 'kubejs:draconic_processor_assembly');
+    event.add('gtceu:circuits/uev', 'kubejs:draconic_processor_computer');
+    event.add('gtceu:circuits/uiv', 'kubejs:draconic_processor_mainframe');
+    event.add('gtceu:circuits/uhv', 'kubejs:abyssal_processor');
+    event.add('gtceu:circuits/uev', 'kubejs:abyssal_processor_assembly');
+    event.add('gtceu:circuits/uiv', 'kubejs:abyssal_processor_computer');
+    event.add('gtceu:circuits/uxv', 'kubejs:abyssal_processor_mainframe');
     event.remove('minecraft:planks', 'gtceu:treated_wood_planks');
     event.remove('minecraft:wooden_slabs', 'gtceu:treated_wood_slab');
 

@@ -1,7 +1,3 @@
-// priority: 1000000
-
-global.id = (id) => `start:${id}`;
-
 ServerEvents.recipes(event => {
     const id = global.id;
 

@@ -43,9 +43,22 @@
 			y: -2.5d
 		}
 		{
+			id: "52C3F702006D771B"
+			linked_quest: "261174370DC87FCB"
+			x: 16.0d
+			y: -3.5d
+		}
+		{
 			id: "48E65B5F36753A0C"
 			linked_quest: "6F7EE9A1BC718801"
 			x: 13.0d
+			y: 5.5d
+		}
+		{
+			id: "55744AFFF2FDE97F"
+			linked_quest: "119983C3240B8F66"
+			shape: "circle"
+			x: 5.0d
 			y: 5.5d
 		}
 	]

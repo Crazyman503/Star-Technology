@@ -77,7 +77,7 @@
 		}
 		{
 			description: ["{ftbquests.welcome.server_files.description}"]
-			icon: "kubejs:draconic_wetware_processor_mainframe"
+			icon: "kubejs:draconic_processor_mainframe"
 			id: "00C537F19FBE1A6E"
 			size: 2.0d
 			tasks: [{

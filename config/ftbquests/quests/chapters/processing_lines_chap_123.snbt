@@ -1104,6 +1104,7 @@
 			y: 19.0d
 		}
 		{
+			dependencies: ["439D8AE6D3DC41AF"]
 			icon: "gtceu:potassium_dichromate_dust"
 			id: "50935F187F392F12"
 			optional: true

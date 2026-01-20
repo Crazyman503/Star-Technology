@@ -7,7 +7,8 @@ ServerEvents.recipes(event => {
         'gtceu:circuit_assembler/crystal_computer_zpm','gtceu:circuit_assembler/crystal_computer_zpm_soldering_alloy',
         'gtceu:assembly_line/crystal_mainframe_uv', 'gtceu:research_station/1_x_gtceu_crystal_processor_computer',
         'gtceu:assembly_line/wetware_super_computer_uv','gtceu:research_station/1_x_gtceu_wetware_processor_assembly',
-        'gtceu:assembly_line/wetware_mainframe_uhv', 'gtceu:research_station/1_x_gtceu_wetware_processor_computer'
+        'gtceu:assembly_line/wetware_mainframe_uhv', 'gtceu:research_station/1_x_gtceu_wetware_processor_computer',
+        'gtceu:circuit_assembler/wetware_board'
     ].forEach( idRemoved => {
         event.remove({ id: idRemoved });
     });
@@ -17,6 +18,21 @@ ServerEvents.recipes(event => {
     const asmdTransistor = 'gtceu:advanced_smd_transistor';
     const asmdResistor = 'gtceu:advanced_smd_resistor';
     const asmdCapacitor = 'gtceu:advanced_smd_capacitor';
+
+    const lsmdDiode = 'kubejs:living_smd_diode';
+    const lsmdInductor = 'kubejs:living_smd_inductor';
+    const lsmdTransistor = 'kubejs:living_smd_transistor';
+    const lsmdResistor = 'kubejs:living_smd_resistor';
+    const lsmdCapacitor = 'kubejs:living_smd_capacitor';
+
+    const circuitAssembler = (quant, type, mod, inputs, eu, dura, clean) => {
+        event.recipes.gtceu.circuit_assembler(id(type))
+            .itemInputs(inputs)
+            .itemOutputs(`${quant}x ${mod}:${type}`)
+            .duration(dura)
+            .cleanroom(clean)
+            .EUt(eu);
+    };
 
     const assemblyLineCircuitNoRS = (type, mod, inputs, fluids, eut, dura, toScan) => {
         event.recipes.gtceu.assembly_line(id(type))
@@ -33,11 +49,11 @@ ServerEvents.recipes(event => {
             .EUt(eut);
     };
 
-    const assemblyLineCircuitRS = (type, mod, inputs, fluids, eut, dura, from, cwu, eutFrom) => {
+    const assemblyLineCircuitRS = (quant, type, mod, inputs, fluids, eut, dura, from, cwu, eutFrom) => {
         event.recipes.gtceu.assembly_line(id(type))
             .itemInputs(inputs)
             .inputFluids(fluids)
-            .itemOutputs(`${mod}:${type}`)
+            .itemOutputs(`${quant}x ${mod}:${type}`)
             .duration(dura)
             .stationResearch(
             researchRecipeBuilder => researchRecipeBuilder
@@ -72,7 +88,7 @@ ServerEvents.recipes(event => {
         ], 'gtceu:soldering_alloy 576', 30720, 400,'gtceu:crystal_processor_assembly'
     );
 
-    assemblyLineCircuitRS('crystal_processor_mainframe', 'gtceu', [
+    assemblyLineCircuitRS(1,'crystal_processor_mainframe', 'gtceu', [
             '2x gtceu:hsse_frame',
             '2x gtceu:crystal_processor_computer',
             '32x gtceu:ram_chip',
@@ -86,98 +102,196 @@ ServerEvents.recipes(event => {
         ], 'gtceu:soldering_alloy 1152', 61440, 1000, 'gtceu:crystal_processor_computer', 16, 38400
     );
 
-    assemblyLineCircuitRS('wetware_processor_computer', 'gtceu', [
+    circuitAssembler(2,'wetware_processor','gtceu',[
+            'gtceu:neuro_processing_unit',
+            'gtceu:crystal_cpu',
+            'gtceu:nano_cpu_chip',
+            `4x ${lsmdCapacitor}`,
+            `4x ${lsmdTransistor}`,
+            '8x gtceu:fine_yttrium_barium_cuprate_wire'
+        ], 38400, 100, CleanroomType.CLEANROOM
+    );
+
+    circuitAssembler(2,'wetware_processor_assembly','gtceu',[
+            'gtceu:wetware_printed_circuit_board',
+            '2x gtceu:wetware_processor',
+            `3x ${lsmdInductor}`,
+            `6x ${lsmdCapacitor}`,
+            '6x kubejs:qram_chip',
+            '16x gtceu:fine_yttrium_barium_cuprate_wire'
+        ], 38400, 200, CleanroomType.CLEANROOM
+    );
+
+    assemblyLineCircuitRS(1,'wetware_processor_computer', 'gtceu', [
             'gtceu:wetware_printed_circuit_board',
             '2x gtceu:wetware_processor_assembly',
-            `8x ${asmdDiode}`,
-            '32x gtceu:ram_chip',
+            `4x ${lsmdDiode}`,
+            '12x kubejs:qram_chip',
             '24x gtceu:nor_memory_chip',
             '48x gtceu:nand_memory_chip',
             '32x gtceu:fine_yttrium_barium_cuprate_wire',
             '2x gtceu:europium_plate'
         ], [
-            'gtceu:soldering_alloy 1152',
+            'gtceu:indium_tin_lead_cadmium_soldering_alloy 864',
             'gtceu:polybenzimidazole 576'
         ], 64000, 600, 'gtceu:wetware_processor_assembly', 64, 38400
     );
 
-    assemblyLineCircuitRS('wetware_processor_mainframe', 'gtceu', [ 
+    assemblyLineCircuitRS(1,'wetware_processor_mainframe', 'gtceu', [ 
             '2x gtceu:tritanium_frame',
             '2x gtceu:wetware_processor_computer',
-            '48x gtceu:ram_chip',
+            '24x kubejs:qram_chip',
             '2x gtceu:uhpic_chip',
-            `24x ${asmdInductor}`,
-            `32x ${asmdCapacitor}`,
-            `24x ${asmdDiode}`,
-            `24x ${asmdResistor}`,
-            `24x ${asmdTransistor}`,
+            `12x ${lsmdInductor}`,
+            `16x ${lsmdCapacitor}`,
+            `12x ${lsmdDiode}`,
+            `12x ${lsmdResistor}`,
+            `12x ${lsmdTransistor}`,
             '16x gtceu:yttrium_barium_cuprate_single_wire',
             '4x gtceu:europium_plate'
         ],[
-            'gtceu:soldering_alloy 2304',
+            'gtceu:indium_tin_lead_cadmium_soldering_alloy 1728',
             'gtceu:polybenzimidazole 1152'
         ], 300000, 1400, 'gtceu:wetware_processor_computer', 96, 64000
     );
 
-    //Runics
-    assemblyLineCircuitRS('runic_wetware_processor_assembly', 'kubejs', [
-            'kubejs:runic_convergence_printed_circuit_board',
-            'gtceu:wetware_processor_assembly',
-            '4x gtceu:ancient_runicalium_bolt',
-            '8x kubejs:qram_chip',
-            `4x ${asmdInductor}`,
-            `8x ${asmdCapacitor}`,
-            '16x gtceu:fine_europium_wire'
-        ],[
-            'gtceu:indium_tin_lead_cadmium_soldering_alloy 288',
-            'gtceu:polyether_ether_ketone 72',
-            'gtceu:runic_convergence_infusion 50'
-        ], 240000, 400, 'gtceu:ancient_runicalium_screw', 128, 120000);
+    //Runics - to be redone
+    circuitAssembler(3,'runic_processor','kubejs',[
+            'kubejs:runic_convergence_processing_unit',
+            'gtceu:crystal_soc',
+            'gtceu:advanced_soc',
+            `8x ${lsmdCapacitor}`,
+            `8x ${lsmdTransistor}`,
+            '8x gtceu:fine_europium_wire'
+        ], 120000, 200, CleanroomType.CLEANROOM
+    );
 
-    assemblyLineCircuitRS('runic_wetware_processor_computer', 'kubejs', [
-            'kubejs:runic_convergence_printed_circuit_board',
-            '2x kubejs:runic_wetware_processor_assembly',
-            `12x ${asmdDiode}`,
+    assemblyLineCircuitRS(2,'runic_processor_assembly', 'kubejs', [
+            'kubejs:runic_printed_circuit_board',
+            '2x kubejs:runic_processor',
+            '4x gtceu:ancient_runicalium_bolt',
+            `6x ${lsmdInductor}`,
+            `12x ${lsmdCapacitor}`,
             '16x kubejs:qram_chip',
-            '4x kubejs:3d_nor_chip',
-            '8x kubejs:3d_nand_chip',
-            '32x gtceu:fine_europium_wire',
-            '2x gtceu:ancient_runicalium_plate'
+            '16x gtceu:fine_europium_wire'
         ],[
             'gtceu:indium_tin_lead_cadmium_soldering_alloy 576',
             'gtceu:polyether_ether_ketone 216',
-            'gtceu:runic_convergence_infusion 75'
-        ], 240000, 800, 'kubejs:runic_wetware_processor_assembly', 128, 160000
+            'gtceu:runic_convergence_infusion 500'
+        ], 240000, 400, 'kubejs:runic_processor', 128, 120000);
+
+    assemblyLineCircuitRS(1,'runic_processor_computer', 'kubejs', [
+            'kubejs:runic_printed_circuit_board',
+            '2x kubejs:runic_processor_assembly',
+            `8x ${lsmdDiode}`,
+            '24x kubejs:qram_chip',
+            '8x kubejs:hyper_nor_memory_chip',
+            '16x kubejs:hyper_nand_memory_chip',
+            '32x gtceu:fine_europium_wire',
+            '32x gtceu:polyether_ether_ketone_foil',
+            '4x gtceu:enriched_naquadah_tiny_fluid_pipe',
+            '2x gtceu:naquadah_alloy_plate'
+        ],[
+            'gtceu:indium_tin_lead_cadmium_soldering_alloy 1152',
+            'gtceu:polyether_ether_ketone 576',
+            'gtceu:runic_convergence_infusion 750'
+        ], 240000, 800, 'kubejs:runic_processor_assembly', 128, 160000
     );
 
-    assemblyLineCircuitRS('runic_wetware_processor_mainframe', 'kubejs', [
+    assemblyLineCircuitRS(1,'runic_processor_mainframe', 'kubejs', [
             '2x gtceu:ancient_runicalium_frame',
-            '2x kubejs:runic_wetware_processor_computer',
-            '24x kubejs:qram_chip',
+            '2x kubejs:runic_processor_computer',
+            '32x kubejs:qram_chip',
             '4x gtceu:uhpic_chip',
-            `48x ${asmdInductor}`,
-            `64x ${asmdCapacitor}`,
-            `48x ${asmdDiode}`,
-            `48x ${asmdResistor}`,
-            `48x ${asmdTransistor}`,
+            `24x ${lsmdInductor}`,
+            `32x ${lsmdCapacitor}`,
+            `24x ${lsmdDiode}`,
+            `24x ${lsmdResistor}`,
+            `24x ${lsmdTransistor}`,
             '24x gtceu:europium_single_wire',
             '64x gtceu:polyether_ether_ketone_foil',
-            '4x gtceu:ancient_runicalium_plate'
+            '4x gtceu:trinaquadalloy_plate'
         ], [
-            'gtceu:indium_tin_lead_cadmium_soldering_alloy 1152',
-            'gtceu:polyether_ether_ketone 432',
-            'gtceu:runic_convergence_infusion 150'
-        ], 600000, 1800, 'kubejs:runic_wetware_processor_computer', 160, 400000
+            'gtceu:indium_tin_lead_cadmium_soldering_alloy 2304',
+            'gtceu:polyether_ether_ketone 864',
+            'gtceu:runic_convergence_infusion 1000'
+        ], 600000, 1800, 'kubejs:runic_processor_computer', 160, 400000
     );
+    
+    // === Misc ===
+    event.recipes.gtceu.mixer(id('raw_growth_medium_boosted'))
+        .itemInputs('4x gtceu:meat_dust','4x gtceu:salt_dust','3x gtceu:calcium_dust','4x gtceu:agar_dust','1x gtceu:strontium_dust')
+        .inputFluids('gtceu:mutagen 4000')
+        .outputFluids('gtceu:raw_growth_medium 7500')
+        .duration(1500)
+        .EUt(GTValues.VA[GTValues.IV]);
 
-    event.recipes.gtceu.runic_circuitry_assembling_station(id('runic_convergence_circuit_board'))
-        .itemInputs(`128x gtceu:wetware_circuit_board`,'6x #gtceu:circuits/luv','kubejs:runic_engraved_plating')
-        .perTick(true)
-        .inputFluids(`gtceu:runic_convergence_infusion 5`)
-        .perTick(false)
-        .itemOutputs(`128x kubejs:runic_convergence_circuit_board`)
-        .duration(1800)
-        .EUt(GTValues.VA[GTValues.UHV]);
+    // === Boards and PUs ===
+    event.recipes.gtceu.circuit_assembler(id('wetware_circuit_board'))
+        .itemInputs(`16x gtceu:multilayer_fiber_reinforced_circuit_board`,'gtceu:petri_dish','gtceu:luv_electric_pump',
+            'gtceu:luv_sensor','2x #gtceu:circuits/iv','16x gtceu:osmiridium_foil')
+        .inputFluids(`gtceu:sterilized_growth_medium 4000`)
+        .itemOutputs(`16x gtceu:wetware_circuit_board`)
+        .duration(1200)
+        .cleanroom(CleanroomType.CLEANROOM)
+        .EUt(GTValues.VA[GTValues.LuV]);
+
+    event.recipes.gtceu.circuit_assembler(id('runic_circuit_board'))
+        .itemInputs(`32x gtceu:wetware_circuit_board`,'1x start_core:enriched_naquadah_fluid_cell','gtceu:zpm_electric_pump',
+            'gtceu:zpm_sensor','2x #gtceu:circuits/luv','16x gtceu:naquadah_alloy_foil')
+        .inputFluids(`gtceu:runic_convergence_infusion 7500`)
+        .itemOutputs(`32x kubejs:runic_circuit_board`)
+        .duration(1200)
+        .cleanroom(CleanroomType.CLEANROOM)
+        .EUt(GTValues.VA[GTValues.ZPM]);
+
+    event.recipes.gtceu.circuit_assembler(id('runic_convergence_processing_unit'))
+        .itemInputs(`1x kubejs:runic_printed_circuit_board`,'kubejs:runic_engraved_plating','8x gtceu:polyether_ether_ketone_small_fluid_pipe',
+            '32x gtceu:silicone_rubber_foil','8x gtceu:trinaquadalloy_plate','8x gtceu:zircalloy_4_bolt')
+        .inputFluids(`gtceu:runic_convergence_infusion 250`)
+        .itemOutputs(`1x kubejs:runic_convergence_processing_unit`)
+        .duration(600)
+        .cleanroom(CleanroomType.CLEANROOM)
+        .EUt(GTValues.VA[GTValues.UV]);
+
+    event.recipes.gtceu.circuit_assembler(id('draconic_circuit_board'))
+        .itemInputs('48x kubejs:runic_circuit_board','1x start_core:neutronium_drum','gtceu:uv_electric_pump',
+             '1x gtceu:uv_sensor','2x #gtceu:circuits/zpm','16x gtceu:aurourium_foil')
+        .inputFluids('gtceu:dragon_breath 2000')
+        .itemOutputs('48x kubejs:draconic_circuit_board')
+        .duration(1200)
+        .cleanroom(CleanroomType.STERILE_CLEANROOM)
+        .EUt(GTValues.VA[GTValues.UV]);
+
+    event.recipes.gtceu.circuit_assembler(id('draconic_processing_unit'))
+        .itemInputs('1x kubejs:draconic_printed_circuit_board','4x kubejs:draconic_brain_matter_cells',
+            '8x gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate_small_fluid_pipe', 
+            '16x gtceu:polyimide_foil','8x gtceu:void_plate','8x gtceu:titan_steel_bolt')
+        .inputFluids('gtceu:dragon_breath 75')
+        .itemOutputs('1x kubejs:draconic_processing_unit')
+        .duration(600)
+        .cleanroom(CleanroomType.STERILE_CLEANROOM)
+        .EUt(GTValues.VHA[GTValues.UHV]);
+
+    event.recipes.gtceu.circuit_assembler(id('abyssal_circuit_board'))
+        .itemInputs('64x kubejs:draconic_circuit_board','1x kubejs:blank_injection_catalyst','gtceu:uhv_electric_pump',
+             '1x gtceu:uhv_sensor','2x #gtceu:circuits/uv','16x gtceu:draco_abyssal_foil')
+        .inputFluids('gtceu:draconic_enrichment_serum 6000')
+        .itemOutputs('64x kubejs:abyssal_circuit_board')
+        .duration(1200)
+        .cleanroom($StarTAbyssalContainmentMachine.ABYSSAL_CONTAINMENT_ROOM)
+        .EUt(GTValues.VHA[GTValues.UEV]);  
+        
+    event.recipes.gtceu.circuit_assembler(id('abyssal_processing_unit'))
+        .itemInputs('1x kubejs:abyssal_printed_circuit_board','16x kubejs:draconic_brain_matter_cells','8x gtceu:nyanium_small_fluid_pipe', 
+            '32x gtceu:polyimide_foil','8x gtceu:abyssal_alloy_plate','8x gtceu:hvga_steel_bolt')
+        .inputFluids('gtceu:draconic_enrichment_serum 200')
+        .itemOutputs('1x kubejs:abyssal_processing_unit')
+        .duration(1200)
+        .cleanroom($StarTAbyssalContainmentMachine.ABYSSAL_CONTAINMENT_ROOM)
+        .EUt(GTValues.VHA[GTValues.UEV]);  
+
+    // === Wafers and Chips ===
 
     event.recipes.gtceu.chemical_reactor(id('uepic_wafer'))
         .itemInputs('gtceu:uhpic_wafer','4x gtceu:silicon_carbide_over_bismuth_tritelluride_dust')
@@ -223,36 +337,67 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.ZPM])
         .cleanroom(CleanroomType.STERILE_CLEANROOM);
 
-    event.recipes.gtceu.circuit_assembler(id('3d_nand_chip'))
-        .itemInputs('64x gtceu:nand_memory_chip', '12x gtceu:cerium_tritelluride_bolt', '2x #gtceu:circuits/iv')
-        .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 216')
-        .itemOutputs('6x kubejs:3d_nand_chip')
-        .duration(600)
-        .EUt(GTValues.VA[GTValues.ZPM])
-        .cleanroom(CleanroomType.STERILE_CLEANROOM);
+    event.recipes.gtceu.chemical_reactor(id('hyper_nand_memory_wafer'))
+        .itemInputs('gtceu:nand_memory_wafer','2x gtceu:strontium_titanium_oxide_dust')
+        .inputFluids('gtceu:carbon 500')
+        .itemOutputs('kubejs:hyper_nand_memory_wafer')
+        .duration(1200)
+        .EUt(GTValues.VHA[GTValues.LuV])
+        .cleanroom(CleanroomType.CLEANROOM);
 
-    event.recipes.gtceu.circuit_assembler(id('3d_nor_chip'))
-        .itemInputs('64x gtceu:nor_memory_chip', '12x gtceu:cerium_tritelluride_bolt', '2x #gtceu:circuits/iv')
-        .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 216')
-        .itemOutputs('6x kubejs:3d_nor_chip')
-        .duration(600)
-        .EUt(GTValues.VA[GTValues.ZPM])
-        .cleanroom(CleanroomType.STERILE_CLEANROOM);
+    event.recipes.gtceu.cutter(id('hyper_nand_memory_chip'))
+        .itemInputs('kubejs:hyper_nand_memory_wafer')
+        .itemOutputs('12x kubejs:hyper_nand_memory_chip')
+        .duration(900)
+        .EUt(GTValues.VA[GTValues.IV])
+        .cleanroom(CleanroomType.CLEANROOM);
 
-    event.recipes.gtceu.chemical_reactor(id('qram'))
+    event.recipes.gtceu.chemical_reactor(id('hyper_hyper_nor_memory_wafer'))
+        .itemInputs('gtceu:nor_memory_wafer','2x gtceu:strontium_titanium_oxide_dust')
+        .inputFluids('gtceu:carbon 500')
+        .itemOutputs('kubejs:hyper_nor_memory_wafer')
+        .duration(1200)
+        .EUt(GTValues.VHA[GTValues.LuV])
+        .cleanroom(CleanroomType.CLEANROOM);
+
+    event.recipes.gtceu.cutter(id('hyper_nor_memory_chip'))
+        .itemInputs('kubejs:hyper_nor_memory_wafer')
+        .itemOutputs('6x kubejs:hyper_nor_memory_chip')
+        .duration(900)
+        .EUt(GTValues.VA[GTValues.IV])
+        .cleanroom(CleanroomType.CLEANROOM);
+
+    event.recipes.gtceu.chemical_reactor(id('qram_wafer'))
         .itemInputs('gtceu:ram_wafer','2x gtceu:silicon_carbide_over_bismuth_tritelluride_dust')
-        .inputFluids('gtceu:radon 250')
+        .inputFluids('gtceu:radon 500')
         .itemOutputs('kubejs:qram_wafer')
-        .duration(1500)
-        .EUt(GTValues.VA[GTValues.UV])
+        .duration(1200)
+        .EUt(GTValues.VHA[GTValues.ZPM])
         .cleanroom(CleanroomType.STERILE_CLEANROOM);
 
     event.recipes.gtceu.cutter(id('qram_chip'))
         .itemInputs('kubejs:qram_wafer')
         .itemOutputs('12x kubejs:qram_chip')
         .duration(900)
-        .EUt(GTValues.VHA[GTValues.UHV] * .6)
+        .EUt(GTValues.VA[GTValues.LuV])
         .cleanroom(CleanroomType.STERILE_CLEANROOM);
+
+    event.recipes.gtceu.chemical_reactor(id('stellar_ram_wafer'))
+        .itemInputs('kubejs:qram_wafer','2x gtceu:void_dust')
+        .inputFluids('gtceu:borealic_concentrate 432')
+        .itemOutputs('kubejs:stellar_ram_wafer')
+        .duration(1200)
+        .EUt(GTValues.VHA[GTValues.UHV])
+        .cleanroom($StarTAbyssalContainmentMachine.ABYSSAL_CONTAINMENT_ROOM);
+
+    event.recipes.gtceu.cutter(id('stellar_ram_chip'))
+        .itemInputs('kubejs:stellar_ram_wafer')
+        .itemOutputs('8x kubejs:stellar_ram_chip')
+        .duration(900)
+        .EUt(GTValues.VA[GTValues.UV])
+        .cleanroom($StarTAbyssalContainmentMachine.ABYSSAL_CONTAINMENT_ROOM);
+
+    // === Wafer Engraving ===
 
     const WAFER_DURATION = {
         silicon: 20,

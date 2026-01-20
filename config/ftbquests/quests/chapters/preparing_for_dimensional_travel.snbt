@@ -27,6 +27,12 @@
 			x: 5.0d
 			y: 3.5d
 		}
+		{
+			id: "112C653450CC39A2"
+			linked_quest: "2F87FC1D5BB43220"
+			x: 4.0d
+			y: 0.5d
+		}
 	]
 	quests: [
 		{
@@ -170,7 +176,7 @@
 		{
 			dependencies: [
 				"44B43694312BAAC8"
-				"0C19C040CA121E3B"
+				"7E33A485E30B47EA"
 			]
 			description: ["{ftbquests.preparing_for_dimensional_travel.uhv_energy_input_hatch_16a.description}"]
 			id: "581B9922CC4B457F"
