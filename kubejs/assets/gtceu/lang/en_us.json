@@ -801,7 +801,7 @@
     "material.gtceu.voidic_waste_residue": "Voidic Waste Residue",
 
     "material.gtceu.abydos_refractory_dense_magma": "Abydos-Refractory Dense Magma",
-    "material.gtceu.abydos_reactive_dense_magma": "Abydos-Reactivity Dense Magma",    
+    "material.gtceu.abydos_reactive_dense_magma": "Abydos-Reactivity Dense Magma",
     "material.gtceu.refractory_dense_residue": "Refractory Dense Residue",
     "material.gtceu.reactive_dense_residue": "Reactivity Dense Residue",
     "material.gtceu.rare_earth_sulfate_solution": "Rare Earth Sulfate Solution",
@@ -1141,7 +1141,7 @@
     "block.gtceu.tungstensteel_large_boiler.tooltip.4": "DISABLED DUE TO BUG",
 
     "gtceu.jei.bedrock_fluid.brackish_water": "Brackish Water Vein",
-    "gtceu.jei.bedrock_fluid.debris_rich_nether_magma_deposit": "Debris-Rich Nether Magma Deposit", 
+    "gtceu.jei.bedrock_fluid.debris_rich_nether_magma_deposit": "Debris-Rich Nether Magma Deposit",
     "gtceu.jei.bedrock_fluid.abydos_reactive_dense_magma_deposit": "Abydos-Reactivity Dense Magma",
     "gtceu.jei.bedrock_fluid.gritty_akreyrium": "Gritty Akreyrium Deposit",
     "gtceu.jei.bedrock_fluid.abydos_refractory_dense_magma_deposit": "Abydos-Refractory Dense Magma",
@@ -1372,9 +1372,21 @@
     "block.gtceu.yielding_excression_advanced_seperation_transformator.tooltip.3": "§7Available Recipe Types: §fDistillation Tower§7, §fDistillery§7, §fBrewery§7, §fFermenter§7, §fFluid Heater",
     "block.gtceu.yielding_excression_advanced_seperation_transformator.tooltip.4": "Can use §3Parallel§r hatches§r, has §5Threading§r, §2Bulking§r, and §cSubtick Parallels§r",
 
+    "material.gtceu.galvanized_steel": "Galvanized Steel",
     "gtceu.pulverizer": "Pulverizer",
     "block.gtceu.t_large_pulverizer": "Large Pulverizer",
     "block.gtceu.t_large_pulverizer.tooltip.0": "§7A larger variant of the pulverizier that can process materials with more energy efficiency.",
     "block.gtceu.t_large_pulverizer.tooltip.1": "Has §6Perfect Overclock",
-    "block.gtceu.t_large_pulverizer.tooltip.2": "Can only have §bone§r Energy Hatch"
+    "block.gtceu.t_large_pulverizer.tooltip.2": "Can only have §bone§r Energy Hatch",
+
+    "block.gtceu.t_large_arc_furnace": "Large Arc Furnace",
+    "block.gtceu.t_large_arc_furnace.tooltip.0": "§7A larger variant of the arc furnace that can process materials with more energy efficiency.",
+    "block.gtceu.t_large_arc_furnace.tooltip.1": "Has §6Perfect Overclock",
+    "block.gtceu.t_large_arc_furnace.tooltip.2": "Can only have §bone§r Energy Hatch",
+
+    "material.gtceu.manganin": "Manganin",
+    "block.gtceu.t_large_electromagnetic_separator": "Large Electromagnetic Separator",
+    "block.gtceu.t_large_electromagnetic_separator.tooltip.0": "§7A larger variant of the electromagnetic separator that can process materials with more energy efficiency.",
+    "block.gtceu.t_large_electromagnetic_separator.tooltip.1": "Has §6Perfect Overclock",
+    "block.gtceu.t_large_electromagnetic_separator.tooltip.2": "Can only have §bone§r Energy Hatch"
 }
