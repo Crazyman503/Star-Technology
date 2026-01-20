@@ -70,4 +70,10 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.HV])
         .circuit(4);
 
+    event.recipes.gtceu.mixer(id('manganin'))
+        .itemInputs('20x gtceu:copper_dust', '6x gtceu:manganese_dust', '1x gtceu:nickel_dust')
+        .itemOutputs('27x gtceu:manganin_dust')
+        .duration(470)
+        .EUt(GTValues.VHA[GTValues.HV])
+        .circuit(4);
 });
