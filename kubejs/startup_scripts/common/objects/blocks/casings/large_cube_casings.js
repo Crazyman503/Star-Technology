@@ -1,8 +1,5 @@
-
 StartupEvents.registry('block', event => {
-
     const KubeCasing = (type) => {
-
         event.create(`${type}_casing`)
             .hardness(5)
             .resistance(1)
@@ -11,9 +8,8 @@ StartupEvents.registry('block', event => {
             .tagBlock('mineable/pickaxe')
             .tagBlock('minecraft:needs_iron_tool')
             .textureAll(`kubejs:block/casings/large_cubes/${type}_casing`);
-
     }
-    
+
     KubeCasing('beryllium_aluminium_alloy');
     KubeCasing('birmabright');
     KubeCasing('beryllium_bronze');
@@ -28,5 +24,5 @@ StartupEvents.registry('block', event => {
     KubeCasing('zamak');
     KubeCasing('tumbaga');
     KubeCasing('silicone_rubber');
-    
+    KubeCasing('kanthal');
 });

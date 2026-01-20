@@ -801,7 +801,7 @@
     "material.gtceu.voidic_waste_residue": "Voidic Waste Residue",
 
     "material.gtceu.abydos_refractory_dense_magma": "Abydos-Refractory Dense Magma",
-    "material.gtceu.abydos_reactive_dense_magma": "Abydos-Reactivity Dense Magma",    
+    "material.gtceu.abydos_reactive_dense_magma": "Abydos-Reactivity Dense Magma",
     "material.gtceu.refractory_dense_residue": "Refractory Dense Residue",
     "material.gtceu.reactive_dense_residue": "Reactivity Dense Residue",
     "material.gtceu.rare_earth_sulfate_solution": "Rare Earth Sulfate Solution",
@@ -1141,7 +1141,7 @@
     "block.gtceu.tungstensteel_large_boiler.tooltip.4": "DISABLED DUE TO BUG",
 
     "gtceu.jei.bedrock_fluid.brackish_water": "Brackish Water Vein",
-    "gtceu.jei.bedrock_fluid.debris_rich_nether_magma_deposit": "Debris-Rich Nether Magma Deposit", 
+    "gtceu.jei.bedrock_fluid.debris_rich_nether_magma_deposit": "Debris-Rich Nether Magma Deposit",
     "gtceu.jei.bedrock_fluid.abydos_reactive_dense_magma_deposit": "Abydos-Reactivity Dense Magma",
     "gtceu.jei.bedrock_fluid.gritty_akreyrium": "Gritty Akreyrium Deposit",
     "gtceu.jei.bedrock_fluid.abydos_refractory_dense_magma_deposit": "Abydos-Refractory Dense Magma",
@@ -1376,5 +1376,10 @@
     "block.gtceu.t_large_pulverizer": "Large Pulverizer",
     "block.gtceu.t_large_pulverizer.tooltip.0": "§7A larger variant of the pulverizier that can process materials with more energy efficiency.",
     "block.gtceu.t_large_pulverizer.tooltip.1": "Has §6Perfect Overclock",
-    "block.gtceu.t_large_pulverizer.tooltip.2": "Can only have §bone§r Energy Hatch"
+    "block.gtceu.t_large_pulverizer.tooltip.2": "Can only have §bone§r Energy Hatch",
+
+    "block.gtceu.t_large_arc_furnace": "Large Arc Furnace",
+    "block.gtceu.t_large_arc_furnace.tooltip.0": "§7A larger variant of the arc furnace that can process materials with more energy efficiency.",
+    "block.gtceu.t_large_arc_furnace.tooltip.1": "Has §6Perfect Overclock",
+    "block.gtceu.t_large_arc_furnace.tooltip.2": "Can only have §bone§r Energy Hatch"
 }
