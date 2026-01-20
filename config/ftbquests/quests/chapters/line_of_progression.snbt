@@ -474,7 +474,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.line_of_progression.quest51.title}"
+			title: "{ftbquests.line_of_progression.basic_chips.title}"
 			x: -8.0d
 			y: 0.5d
 		}
@@ -508,7 +508,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.line_of_progression.quest52.title}"
+			title: "{ftbquests.line_of_progression.better_chips.title}"
 			x: -8.0d
 			y: 2.0d
 		}
@@ -527,7 +527,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.line_of_progression.quest53.title}"
+			title: "{ftbquests.line_of_progression.highly_advanced_chips.title}"
 			x: -8.0d
 			y: 5.0d
 		}
@@ -546,7 +546,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.line_of_progression.quest54.title}"
+			title: "{ftbquests.line_of_progression.advanced.title}"
 			x: -8.0d
 			y: 3.5d
 		}
@@ -593,7 +593,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.line_of_progression.quest55.title}"
+			title: "{ftbquests.line_of_progression.enhanced.title}"
 			x: -6.5d
 			y: 3.5d
 		}
@@ -615,7 +615,7 @@
 			optional: true
 			tasks: [{
 				id: "03D2F19E7E4E8C5A"
-				title: "{ftbquests.chapter.line_of_progression.quest59.task_275548190249225306.title}"
+				title: "{ftbquests.line_of_progression.positioner.title}"
 				type: "checkmark"
 			}]
 			x: 0.0d
@@ -775,6 +775,7 @@
 		{
 			dependencies: ["3B81632EF4586280"]
 			id: "4E1271A47BFEE3B9"
+			subtitle: "{ftbquests.line_of_progression.basic_electronic_circuit.subtitle}"
 			tasks: [{
 				id: "7B2E15771AD1AAC7"
 				item: "gtceu:basic_electronic_circuit"
@@ -786,7 +787,7 @@
 		{
 			dependencies: ["75942788374CDEF3"]
 			id: "297CE2423324B92B"
-			subtitle: "{ftbquests.chapter.line_of_progression.quest89.subtitle}"
+			subtitle: "{ftbquests.line_of_progression.nand_chip.subtitle}"
 			tasks: [{
 				id: "3B54565722872EC4"
 				item: "gtceu:nand_chip"
@@ -849,7 +850,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.line_of_progression.quest95.title}"
+			title: "{ftbquests.line_of_progression.draconically_advanced_chips.title}"
 			x: -8.0d
 			y: 6.5d
 		}
@@ -892,6 +893,7 @@
 		{
 			dependencies: ["421DF7880AD00F58"]
 			id: "26250BA1D20AE2DC"
+			subtitle: "{ftbquests.line_of_progression.quantum_processor_mainframe.subtitle}"
 			tasks: [{
 				id: "4A26D2B8B936BCEF"
 				item: "gtceu:quantum_processor_mainframe"
@@ -913,9 +915,8 @@
 		}
 		{
 			dependencies: ["52FE319F5E176C37"]
-			description: ["{ftbquests.chapter.automation_age.quest25.description1}"]
 			id: "123F0103224A8C43"
-			subtitle: "{ftbquests.chapter.automation_age.quest25.subtitle}"
+			subtitle: "{ftbquests.line_of_progression.micro_processor_mainframe.subtitle}"
 			tasks: [{
 				id: "7931ADCF2E9D396D"
 				item: "gtceu:micro_processor_mainframe"
@@ -927,7 +928,7 @@
 		{
 			dependencies: ["25583D0BF59E1BC8"]
 			id: "1B2DAB9E61F1BC8D"
-			subtitle: "{ftbquests.chapter.adventures_in_abydos.quest60.subtitle}"
+			subtitle: "{ftbquests.line_of_progression.uhv_parallel_hatch.subtitle}"
 			tasks: [{
 				id: "5D29BD3CAD284868"
 				item: "start_core:uhv_parallel_hatch"
@@ -939,7 +940,7 @@
 		{
 			dependencies: ["5944C4DE27F98FF3"]
 			id: "1BCB63466873E3F4"
-			subtitle: "&72048x Parallel Hatch"
+			subtitle: "{ftbquests.line_of_progression.uev_parallel_hatch.subtitle}"
 			tasks: [{
 				id: "2EABAEDD0AB34282"
 				item: "start_core:uev_parallel_hatch"
@@ -950,9 +951,12 @@
 		}
 		{
 			dependencies: ["21B885A85E5764F9"]
-			description: ["[\"\",{\"underlined\":1,\"translate\":\"Go Read About Parallels\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"70EE9D4811A27CF2\"}}]"]
+			description: [
+				"{ftbquests.line_of_progression.parallel_multiblocks.description}"
+				"[ \"===> [\", { \"text\": \"X\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"70EE9D4811A27CF2\" } }, \"] <===\" ]"
+			]
 			id: "3377AD18FED17C17"
-			subtitle: "Buffed Up Machines"
+			subtitle: "{ftbquests.line_of_progression.parallel_multiblocks.subtitle}"
 			tasks: [
 				{
 					id: "33180B5FFC0BA018"
@@ -960,9 +964,6 @@
 						Count: 1
 						id: "itemfilters:or"
 						tag: {
-							display: {
-								Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Parallel Machine\"}"
-							}
 							items: [
 								{
 									Count: 1b
@@ -1075,6 +1076,7 @@
 							]
 						}
 					}
+					title: "{ftbquests.line_of_progression.parallel_multiblocks.title}"
 					type: "item"
 				}
 				{
@@ -1083,9 +1085,6 @@
 						Count: 1
 						id: "itemfilters:or"
 						tag: {
-							display: {
-								Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"More Parallel Machines\"}"
-							}
 							items: [
 								{
 									Count: 1b
@@ -1126,6 +1125,7 @@
 							]
 						}
 					}
+					title: "{ftbquests.line_of_progression.parallel_multiblocks.item_title}"
 					type: "item"
 				}
 			]
@@ -1134,7 +1134,10 @@
 		}
 		{
 			dependencies: ["5B70B63D4157594F"]
-			description: ["[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.automation_age.quest92.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"0C78BD4A7A0B98E4\"}}]"]
+			description: [
+				"{ftbquests.line_of_progression.perfect_overclock_multiblocks.description}"
+				"[ \"===> [\", { \"text\": \"X\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"0C78BD4A7A0B98E4\" } }, \"] <===\" ]"
+			]
 			id: "59A2D2A6FAB6B857"
 			tasks: [{
 				id: "6838C385EDE13940"
@@ -1142,9 +1145,6 @@
 					Count: 1
 					id: "itemfilters:or"
 					tag: {
-						display: {
-							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Perfect Overclock Machines\"}"
-						}
 						items: [
 							{
 								Count: 1b
@@ -1209,6 +1209,7 @@
 						]
 					}
 				}
+				title: "{ftbquests.line_of_progression.perfect_overclock_multiblocks.title}"
 				type: "item"
 			}]
 			x: 10.0d
@@ -1253,11 +1254,7 @@
 				"753ECD744470EFF2"
 			]
 			dependency_requirement: "one_completed"
-			description: [
-				"[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.early_game.quest66.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"73D5AA58DE5B72AA\"}}]"
-				""
-				"[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.early_game.quest66.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"48374090EA89E869\"}}]"
-			]
+			description: ["{ftbquests.line_of_progression.primitive_multiblocks.description}"]
 			id: "5433FBE02D3113D2"
 			tasks: [{
 				id: "100C1BE8C7FA79BD"
@@ -1265,9 +1262,6 @@
 					Count: 1
 					id: "itemfilters:or"
 					tag: {
-						display: {
-							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Primitive Machines\"}"
-						}
 						items: [
 							{
 								Count: 1b
@@ -1308,6 +1302,7 @@
 						]
 					}
 				}
+				title: "{ftbquests.line_of_progression.primitive_multiblocks.title}"
 				type: "item"
 			}]
 			x: 8.5d
@@ -1315,7 +1310,10 @@
 		}
 		{
 			dependencies: ["1F5CCE8CFD02903A"]
-			description: ["[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.industrial_revolution.quest81.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"34EDF98BDC245F77\"}}]"]
+			description: [
+				"{ftbquests.line_of_progression.electric_multiblocks.description}"
+				"[ \"===> [\", { \"text\": \"X\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"34EDF98BDC245F77\" } }, \"] <===\" ]"
+			]
 			id: "7C0D6B4B6BEB2A90"
 			tasks: [{
 				id: "3C8A122102F67A52"
@@ -1323,9 +1321,6 @@
 					Count: 1
 					id: "itemfilters:or"
 					tag: {
-						display: {
-							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Electric Machines\"}"
-						}
 						items: [
 							{
 								Count: 1b
@@ -1374,6 +1369,7 @@
 						]
 					}
 				}
+				title: "{ftbquests.line_of_progression.electric_multiblocks.title}"
 				type: "item"
 			}]
 			x: 8.5d
@@ -1381,7 +1377,10 @@
 		}
 		{
 			dependencies: ["1289465781707205"]
-			description: ["[\"\",{\"underlined\":1,\"translate\":\"Go Read About Steam Parallels\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"687924A523C9E5A8\"}}]"]
+			description: [
+				"{ftbquests.line_of_progression.steam_multiblocks.description}"
+				"[ \"===> [\", { \"text\": \"X\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"27F5DD0860E43CFF\" } }, \"] <===\" ]"
+			]
 			id: "7285911FDF79FFD6"
 			tasks: [{
 				id: "0475B22953A6154C"
@@ -1389,9 +1388,6 @@
 					Count: 1
 					id: "itemfilters:or"
 					tag: {
-						display: {
-							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Steam Machines\"}"
-						}
 						items: [
 							{
 								Count: 1b
@@ -1416,6 +1412,7 @@
 						]
 					}
 				}
+				title: "{ftbquests.line_of_progression.steam_multiblocks.title}"
 				type: "item"
 			}]
 			x: 10.0d
@@ -1423,7 +1420,10 @@
 		}
 		{
 			dependencies: ["076F21506A7C19D5"]
-			description: ["[\"\",{\"underlined\":1,\"translate\":\"Read About Threading Here\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"143CFCE710B59455\"}}]"]
+			description: [
+				"{ftbquests.line_of_progression.threading_multiblocks.description}"
+				"[ \"===> [\", { \"text\": \"X\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"143CFCE710B59455\" } }, \"] <===\" ]"
+			]
 			id: "15A8836C76F01893"
 			tasks: [{
 				id: "54C1B737D6BEACB9"
@@ -1431,9 +1431,6 @@
 					Count: 1
 					id: "itemfilters:or"
 					tag: {
-						display: {
-							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Threading Multiblocks\"}"
-						}
 						items: [
 							{
 								Count: 1b
@@ -1486,6 +1483,7 @@
 						]
 					}
 				}
+				title: "{ftbquests.line_of_progression.threading_multiblocks.title}"
 				type: "item"
 			}]
 			x: 11.5d
@@ -1500,9 +1498,6 @@
 					Count: 1
 					id: "itemfilters:or"
 					tag: {
-						display: {
-							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Gate Creation Machines\"}"
-						}
 						items: [
 							{
 								Count: 1b
@@ -1551,6 +1546,7 @@
 						]
 					}
 				}
+				title: "{ftbquests.line_of_progression.gate_multiblocks.title}"
 				type: "item"
 			}]
 			x: 11.5d
@@ -1558,7 +1554,10 @@
 		}
 		{
 			dependencies: ["2152FBCC48D5D7AC"]
-			description: ["[\"\",{\"underlined\":1,\"translate\":\"Read About Throughout Boosting Here\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"2152FBCC48D5D7AC\"}}]"]
+			description: [
+				"{ftbquests.line_of_progression.boosted_multiblocks.description}"
+				"[ \"===> [\", { \"text\": \"X\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"2152FBCC48D5D7AC\" } }, \"] <===\" ]"
+			]
 			id: "6C2A5583F90D6298"
 			tasks: [{
 				id: "2DD2E38EBE0CE6B8"
@@ -1566,9 +1565,6 @@
 					Count: 1
 					id: "itemfilters:or"
 					tag: {
-						display: {
-							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Boosted Machines\"}"
-						}
 						items: [
 							{
 								Count: 1b
@@ -1597,6 +1593,7 @@
 						]
 					}
 				}
+				title: "{ftbquests.line_of_progression.boosted_multiblocks.title}"
 				type: "item"
 			}]
 			x: 11.5d
@@ -1611,9 +1608,6 @@
 					Count: 1
 					id: "itemfilters:or"
 					tag: {
-						display: {
-							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Ultimate Machines\"}"
-						}
 						items: [
 							{
 								Count: 1b
@@ -1682,11 +1676,12 @@
 						]
 					}
 				}
+				title: "{ftbquests.line_of_progression.ultimate_multiblocks.title}"
 				type: "item"
 			}]
 			x: 10.0d
 			y: -4.0d
 		}
 	]
-	title: "{ftbquests.chapter.line_of_progression.title}"
+	title: "{ftbquests.line_of_progression.title}"
 }
