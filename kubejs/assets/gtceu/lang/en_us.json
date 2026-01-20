@@ -1372,6 +1372,7 @@
     "block.gtceu.yielding_excression_advanced_seperation_transformator.tooltip.3": "§7Available Recipe Types: §fDistillation Tower§7, §fDistillery§7, §fBrewery§7, §fFermenter§7, §fFluid Heater",
     "block.gtceu.yielding_excression_advanced_seperation_transformator.tooltip.4": "Can use §3Parallel§r hatches§r, has §5Threading§r, §2Bulking§r, and §cSubtick Parallels§r",
 
+    "material.gtceu.galvanized_steel": "Galvanized Steel",
     "gtceu.pulverizer": "Pulverizer",
     "block.gtceu.t_large_pulverizer": "Large Pulverizer",
     "block.gtceu.t_large_pulverizer.tooltip.0": "§7A larger variant of the pulverizier that can process materials with more energy efficiency.",

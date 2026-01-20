@@ -76,4 +76,11 @@ ServerEvents.recipes(event => {
         .duration(470)
         .EUt(GTValues.VHA[GTValues.HV])
         .circuit(4);
+
+    event.recipes.gtceu.mixer(id('galvanized_steel'))
+        .itemInputs('7x gtceu:steel_dust', '1x gtceu:zinc_dust')
+        .itemOutputs('8x gtceu:galvanized_steel_dust')
+        .duration(350)
+        .EUt(GTValues.VHA[GTValues.HV])
+        .circuit(4);
 });

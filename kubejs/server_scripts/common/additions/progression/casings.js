@@ -53,6 +53,7 @@ ServerEvents.recipes(event => {
     casing('fluix_steel', 'fluix_steel', 'kubejs');
     casing('kanthal', 'kanthal', 'kubejs');
     casing('manganin', 'manganin', 'kubejs');
+    casing('galvanized_steel', 'galvanized_steel', 'kubejs');
 
     const casingDouble = (type, material, casing_id) => {
 
