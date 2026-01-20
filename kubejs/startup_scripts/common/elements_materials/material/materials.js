@@ -324,6 +324,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     matmod('trinium', fine_wire);
     matmod('naquadah_alloy', round);
     matmod('ruridit', [small_gear, rotor]);
+    matmod("kanthal", [frame]);
 
     // Blast Properties of periodic table metals
     const blast = global.blastProperty;
