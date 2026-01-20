@@ -1383,6 +1383,7 @@
     "block.gtceu.t_large_arc_furnace.tooltip.1": "Has §6Perfect Overclock",
     "block.gtceu.t_large_arc_furnace.tooltip.2": "Can only have §bone§r Energy Hatch",
 
+    "material.gtceu.manganin": "Manganin",
     "block.gtceu.t_large_electromagnetic_separator": "Large Electromagnetic Separator",
     "block.gtceu.t_large_electromagnetic_separator.tooltip.0": "§7A larger variant of the electromagnetic separator that can process materials with more energy efficiency.",
     "block.gtceu.t_large_electromagnetic_separator.tooltip.1": "Has §6Perfect Overclock",
