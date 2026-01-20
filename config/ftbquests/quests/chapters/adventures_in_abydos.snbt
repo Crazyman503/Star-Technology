@@ -56,7 +56,6 @@
 				"73D0DC357821B395"
 				"588B98BE82BB689C"
 				"3DF4C45A9424D4D1"
-				"490C3ED5E2E7C000"
 			]
 			description: ["{ftbquests.abydos.uhv_computational_matrix.description}"]
 			id: "4DD3C38FCD8D704D"
@@ -209,7 +208,6 @@
 				"6110BA7B3E84F06F"
 				"73D0DC357821B395"
 				"05B9D0B5977E3F05"
-				"490C3ED5E2E7C000"
 				"7F8ADE8B1AFE2807"
 			]
 			description: ["{ftbquests.abydos.uhv_micropower_router.description}"]
@@ -1587,7 +1585,7 @@
 				"493DD013C818BB7B"
 			]
 			description: ["{ftbquests.abydos.magma_processing.description}"]
-			icon: "gtceu:abydos_zapolite_rich_magma_bucket"
+			icon: "gtceu:abydos_reactive_dense_magma_bucket"
 			id: "5BD0047E69D79476"
 			tasks: [{
 				id: "630CDF3A4731333F"
@@ -1949,11 +1947,6 @@
 					type: "item"
 				}
 				{
-					id: "490C3ED5E2E7C000"
-					item: "gtceu:iron_selenide_over_strontium_titanium_oxide_ingot"
-					type: "item"
-				}
-				{
 					id: "7F8ADE8B1AFE2807"
 					item: "gtceu:zirconium_selenide_diiodide_ingot"
 					type: "item"
@@ -1970,7 +1963,7 @@
 				"43DAD4B63603BFC3"
 			]
 			id: "25583D0BF59E1BC8"
-			subtitle: "{ftbquests.abydos.runic_wetware_processor_mainframe.subtitle}"
+			subtitle: "{ftbquests.abydos.runic_processor_mainframe.subtitle}"
 			tasks: [{
 				id: "0F71C952D6EC490A"
 				item: "kubejs:runic_processor_mainframe"
@@ -1982,7 +1975,7 @@
 		{
 			dependencies: ["4F994F04EF1710B9"]
 			id: "67E52B5738FC7398"
-			subtitle: "{ftbquests.abydos.runic_wetware_processor_computer.subtitle}"
+			subtitle: "{ftbquests.abydos.runic_processor_computer.subtitle}"
 			tasks: [{
 				id: "0AB6135CF248B2E9"
 				item: "kubejs:runic_processor_computer"
@@ -1995,16 +1988,17 @@
 			dependencies: [
 				"5022ABEA367576E7"
 				"5DC3B85B63641F6C"
+				"1341EFC24A45EFF8"
 			]
 			id: "4F994F04EF1710B9"
-			subtitle: "{ftbquests.abydos.runic_wetware_processor_assembly.subtitle}"
+			subtitle: "{ftbquests.abydos.runic_processor_assembly.subtitle}"
 			tasks: [{
 				id: "6D1079B819FF51A6"
 				item: "kubejs:runic_processor_assembly"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 7.0d
+			x: -0.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["0508AE03C730BE6C"]
@@ -2013,16 +2007,16 @@
 			tasks: [
 				{
 					id: "507020635FBF83C5"
-					item: "kubejs:runic_convergence_circuit_board"
+					item: "kubejs:runic_circuit_board"
 					type: "item"
 				}
 				{
 					id: "305E4313D43D9B0D"
-					item: "kubejs:runic_convergence_printed_circuit_board"
+					item: "kubejs:runic_printed_circuit_board"
 					type: "item"
 				}
 			]
-			x: 3.5d
+			x: 1.5d
 			y: 7.0d
 		}
 		{
@@ -2136,6 +2130,29 @@
 			}]
 			x: 0.5d
 			y: 4.0d
+		}
+		{
+			dependencies: ["5ED2EA63EE112E24"]
+			id: "1341EFC24A45EFF8"
+			subtitle: "{ftbquests.abydos.runic_processor.subtitle}"
+			tasks: [{
+				id: "279F6BE7CBC5E784"
+				item: "kubejs:runic_processor"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["5022ABEA367576E7"]
+			id: "5ED2EA63EE112E24"
+			tasks: [{
+				id: "5F7D932EF545205D"
+				item: "kubejs:runic_convergence_processing_unit"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 7.0d
 		}
 	]
 	title: "{ftbquests.abydos.title}"

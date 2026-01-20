@@ -304,6 +304,18 @@
 			x: -9.5d
 			y: -4.0d
 		}
+		{
+			id: "45E9C356F31AC62B"
+			linked_quest: "1341EFC24A45EFF8"
+			x: -0.5d
+			y: 3.5d
+		}
+		{
+			id: "2BBA276C399132E3"
+			linked_quest: "6F50E6C2CBCF8272"
+			x: 2.5d
+			y: 6.5d
+		}
 	]
 	quests: [
 		{

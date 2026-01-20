@@ -16,6 +16,19 @@
 			y: -7.5d
 		}
 		{
+			id: "356A14F888032D0F"
+			linked_quest: "261174370DC87FCB"
+			x: 16.0d
+			y: -3.5d
+		}
+		{
+			id: "5D572FCE21AE3A67"
+			linked_quest: "119983C3240B8F66"
+			shape: "circle"
+			x: 5.0d
+			y: 5.5d
+		}
+		{
 			id: "46DF7D3C17E47774"
 			linked_quest: "73931EAA3EC5C9A9"
 			shape: "gear"
@@ -24,13 +37,25 @@
 			y: 3.5d
 		}
 		{
-			id: "356A14F888032D0F"
+			id: "26F528AF6BE91442"
+			linked_quest: "34EDF98BDC245F77"
+			x: 7.0d
+			y: -2.5d
+		}
+		{
+			id: "52C3F702006D771B"
 			linked_quest: "261174370DC87FCB"
 			x: 16.0d
 			y: -3.5d
 		}
 		{
-			id: "5D572FCE21AE3A67"
+			id: "48E65B5F36753A0C"
+			linked_quest: "6F7EE9A1BC718801"
+			x: 13.0d
+			y: 5.5d
+		}
+		{
+			id: "55744AFFF2FDE97F"
 			linked_quest: "119983C3240B8F66"
 			shape: "circle"
 			x: 5.0d

@@ -47,6 +47,12 @@
 			x: -5.0d
 			y: -1.0d
 		}
+		{
+			id: "79C75C36CC2FA699"
+			linked_quest: "143CFCE710B59455"
+			x: 6.5d
+			y: -1.5d
+		}
 	]
 	quests: [
 		{
@@ -489,7 +495,7 @@
 				"1C9396E2587051F7"
 				"0168A45EB73911AC"
 			]
-			description: ["{ftbquests.draconic_age.draconic_neuro_processing_unit.description}"]
+			description: ["{ftbquests.draconic_age.draconic_processing_unit.description}"]
 			id: "1AF4BF803FEF14FE"
 			rewards: [{
 				id: "2E1CEDC71658AC53"
@@ -804,14 +810,14 @@
 				"1772F46C9EAF6FB7"
 				"61E082759BC89A1E"
 			]
-			description: ["{ftbquests.draconic_age.draconic_wetware_microchip_processor.description}"]
+			description: ["{ftbquests.draconic_age.draconic_microchip_processor.description}"]
 			id: "169C2E9DA1CF8F53"
 			rewards: [{
 				id: "3767B7D9C3E1212A"
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.draconic_age.draconic_wetware_microchip_processor.subtitle}"
+			subtitle: "{ftbquests.draconic_age.draconic_microchip_processor.subtitle}"
 			tasks: [{
 				id: "34FC1D181B3F8239"
 				item: "kubejs:draconic_microchip_processor"
@@ -822,14 +828,14 @@
 		}
 		{
 			dependencies: ["169C2E9DA1CF8F53"]
-			description: ["{ftbquests.draconic_age.draconic_wetware_processor.description}"]
+			description: ["{ftbquests.draconic_age.draconic_processor.description}"]
 			id: "26FDB9612063F49D"
 			rewards: [{
 				id: "369733BBEC093142"
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.draconic_age.draconic_wetware_processor.subtitle}"
+			subtitle: "{ftbquests.draconic_age.draconic_processor.subtitle}"
 			tasks: [{
 				id: "608B93EA8632BE4E"
 				item: "kubejs:draconic_processor"
@@ -840,14 +846,14 @@
 		}
 		{
 			dependencies: ["26FDB9612063F49D"]
-			description: ["{ftbquests.draconic_age.draconic_wetware_processor_assembly.description}"]
+			description: ["{ftbquests.draconic_age.draconic_processor_assembly.description}"]
 			id: "66D49CB8D8819E3F"
 			rewards: [{
 				id: "4F559A2D7738B87F"
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.draconic_age.draconic_wetware_processor_assembly.subtitle}"
+			subtitle: "{ftbquests.draconic_age.draconic_processor_assembly.subtitle}"
 			tasks: [{
 				id: "1D0AA38E67A6E6D1"
 				item: "kubejs:draconic_processor_assembly"
@@ -858,14 +864,14 @@
 		}
 		{
 			dependencies: ["66D49CB8D8819E3F"]
-			description: ["{ftbquests.draconic_age.draconic_wetware_processor_computer.description}"]
+			description: ["{ftbquests.draconic_age.draconic_processor_computer.description}"]
 			id: "6F3DF16481990D99"
 			rewards: [{
 				id: "4D321A14B798F316"
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.draconic_age.draconic_wetware_processor_computer.subtitle}"
+			subtitle: "{ftbquests.draconic_age.draconic_processor_computer.subtitle}"
 			tasks: [{
 				id: "5ECC7A631E155695"
 				item: "kubejs:draconic_processor_computer"
@@ -876,7 +882,7 @@
 		}
 		{
 			dependencies: ["6F3DF16481990D99"]
-			description: ["{ftbquests.draconic_age.draconic_wetware_processor_mainframe.description}"]
+			description: ["{ftbquests.draconic_age.draconic_processor_mainframe.description}"]
 			id: "5944C4DE27F98FF3"
 			rewards: [{
 				count: 2
@@ -886,7 +892,7 @@
 			}]
 			shape: "gear"
 			size: 1.5d
-			subtitle: "{ftbquests.draconic_age.draconic_wetware_processor_mainframe.subtitle}"
+			subtitle: "{ftbquests.draconic_age.draconic_processor_mainframe.subtitle}"
 			tasks: [{
 				id: "6EF791353FFC298F"
 				item: "kubejs:draconic_processor_mainframe"
@@ -1491,14 +1497,14 @@
 		}
 		{
 			dependencies: ["16FDCABFC80579D5"]
-			description: ["{ftbquests.draconic_age.awakened_draconic_wetware_processor_mainframe.description}"]
+			description: ["{ftbquests.draconic_age.abyssal_processor_mainframe.description}"]
 			id: "3B1453C435E3950B"
 			rewards: [{
 				id: "6CB5C3D8188E33D0"
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.draconic_age.awakened_draconic_wetware_processor_mainframe.subtitle}"
+			subtitle: "{ftbquests.draconic_age.abyssal_processor_mainframe.subtitle}"
 			tasks: [{
 				id: "6046733B28E6F322"
 				item: "kubejs:abyssal_processor_mainframe"
@@ -1509,14 +1515,14 @@
 		}
 		{
 			dependencies: ["3AE6E85C2FC76DE9"]
-			description: ["{ftbquests.draconic_age.awakened_draconic_wetware_processor_computer.description}"]
+			description: ["{ftbquests.draconic_age.abyssal_processor_computer.description}"]
 			id: "16FDCABFC80579D5"
 			rewards: [{
 				id: "748B871094F29C87"
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.draconic_age.awakened_draconic_wetware_processor_computer.subtitle}"
+			subtitle: "{ftbquests.draconic_age.abyssal_processor_computer.subtitle}"
 			tasks: [{
 				id: "0E34320F90BA0A53"
 				item: "kubejs:abyssal_processor_computer"
@@ -1526,15 +1532,18 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["5A724E912A475EAB"]
-			description: ["{ftbquests.draconic_age.awakened_draconic_wetware_processor_assembly.description}"]
+			dependencies: [
+				"5A724E912A475EAB"
+				"6F50E6C2CBCF8272"
+			]
+			description: ["{ftbquests.draconic_age.abyssal_processor_assembly.description}"]
 			id: "3AE6E85C2FC76DE9"
 			rewards: [{
 				id: "1307F45A07A8F297"
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.draconic_age.awakened_draconic_wetware_processor_assembly.subtitle}"
+			subtitle: "{ftbquests.draconic_age.abyssal_processor_assembly.subtitle}"
 			tasks: [{
 				id: "29F972DC18F645E4"
 				item: "kubejs:abyssal_processor_assembly"
@@ -1590,7 +1599,7 @@
 				"78777C3EE2DA5D0F"
 				"2D064F759D13FE4B"
 			]
-			description: ["{ftbquests.draconic_age.draconic_wetware_circuit_board.description}"]
+			description: ["{ftbquests.draconic_age.draconic_circuit_board.description}"]
 			id: "1C9396E2587051F7"
 			rewards: [{
 				id: "170A7AD04A8BFCA6"
@@ -1619,7 +1628,7 @@
 		}
 		{
 			dependencies: ["1799430093ABCC64"]
-			description: ["{ftbquests.draconic_age.awakened_draconic_wetware_circuit_board.description}"]
+			description: ["{ftbquests.draconic_age.abyssal_circuit_board.description}"]
 			id: "6D6C79E7CBBCC893"
 			rewards: [{
 				id: "0D4F24ECDD2D65B4"
@@ -1986,7 +1995,7 @@
 		}
 		{
 			dependencies: ["6D6C79E7CBBCC893"]
-			description: ["{ftbquests.draconic_age.awakened_draconic_wetware_printed_circuit_board.description}"]
+			description: ["{ftbquests.draconic_age.abyssal_printed_circuit_board.description}"]
 			id: "5A724E912A475EAB"
 			rewards: [{
 				id: "2EB652113BA6B7C9"
@@ -2324,6 +2333,29 @@
 			}]
 			x: 2.0d
 			y: 5.0d
+		}
+		{
+			dependencies: ["7C7300975C25047A"]
+			id: "6F50E6C2CBCF8272"
+			subtitle: "{ftbquests.draconic_age.abyssal_processor.subtitle}"
+			tasks: [{
+				id: "3583D680BB94770A"
+				item: "kubejs:abyssal_processor"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["5A724E912A475EAB"]
+			id: "7C7300975C25047A"
+			tasks: [{
+				id: "568E6E799FB86802"
+				item: "kubejs:abyssal_processing_unit"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 8.0d
 		}
 	]
 	title: "{ftbquests.draconic_age.title}"

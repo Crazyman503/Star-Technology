@@ -1949,7 +1949,7 @@
 					type: "item"
 				}
 			]
-			title: "Strontium Rich Ores"
+			title: "{ftbquests.processing_lines_chap.strontium_ores.title}"
 			x: 20.0d
 			y: 1.0d
 		}

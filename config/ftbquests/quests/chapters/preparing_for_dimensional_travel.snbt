@@ -8,12 +8,32 @@
 	id: "62A72817F92AC262"
 	order_index: 4
 	progression_mode: "linear"
-	quest_links: [{
-		id: "6AA4625E98ED37B8"
-		linked_quest: "2F87FC1D5BB43220"
-		x: 4.0d
-		y: 0.5d
-	}]
+	quest_links: [
+		{
+			id: "6AA4625E98ED37B8"
+			linked_quest: "2F87FC1D5BB43220"
+			x: 4.0d
+			y: 0.5d
+		}
+		{
+			id: "0A5474BE35062610"
+			linked_quest: "2F63F0E239737E38"
+			x: 9.0d
+			y: 5.5d
+		}
+		{
+			id: "23C36BA08644EF38"
+			linked_quest: "33FE3C68B0BD21B1"
+			x: 5.0d
+			y: 3.5d
+		}
+		{
+			id: "112C653450CC39A2"
+			linked_quest: "2F87FC1D5BB43220"
+			x: 4.0d
+			y: 0.5d
+		}
+	]
 	quests: [
 		{
 			dependencies: ["4C5DBB94345FF33B"]
@@ -154,7 +174,10 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["44B43694312BAAC8"]
+			dependencies: [
+				"44B43694312BAAC8"
+				"7E33A485E30B47EA"
+			]
 			description: ["{ftbquests.preparing_for_dimensional_travel.uhv_energy_input_hatch_16a.description}"]
 			id: "581B9922CC4B457F"
 			rewards: [{
@@ -1255,19 +1278,6 @@
 			title: "{ftbquests.preparing_for_dimensional_travel.nether_star_concentrate.title}"
 			x: -2.0d
 			y: -5.5d
-		}
-		{
-			dependencies: ["1C81273869C0EC9F"]
-			description: ["[\"\",{\"underlined\":1,\"translate\":\"Read About It Here\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"62D06C72396A9375\"}}]"]
-			icon: "ftbquests:book"
-			id: "79CFAA5E52FF8766"
-			tasks: [{
-				id: "79EEB4B57AA13EBD"
-				title: "Go Read About Bulking"
-				type: "checkmark"
-			}]
-			x: 5.0d
-			y: 3.5d
 		}
 		{
 			dependencies: ["141911C5DD68CD2A"]

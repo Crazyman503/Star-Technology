@@ -7,7 +7,44 @@
 	id: "75C4C0229F2D2798"
 	order_index: 0
 	progression_mode: "linear"
-	quest_links: [ ]
+	quest_links: [
+		{
+			id: "2964E2E996CAC834"
+			linked_quest: "18080B4F89AD24D2"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			id: "7A004610C6ADD6AC"
+			linked_quest: "73D5AA58DE5B72AA"
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			id: "0ABFD9248555F0BF"
+			linked_quest: "48374090EA89E869"
+			x: 2.5d
+			y: 3.0d
+		}
+		{
+			id: "01400DBE45C98AB4"
+			linked_quest: "76CD29559C341985"
+			x: -6.25d
+			y: 2.0d
+		}
+		{
+			id: "3FE7870C91953C80"
+			linked_quest: "2A608D87158DF4CB"
+			x: -7.0d
+			y: 6.0d
+		}
+		{
+			id: "73A12DB8625E666F"
+			linked_quest: "27F5DD0860E43CFF"
+			x: 0.25d
+			y: -2.25d
+		}
+	]
 	quests: [
 		{
 			dependencies: ["16A9D8E864A18B9E"]
