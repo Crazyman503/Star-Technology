@@ -54,6 +54,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     largeCube('autoclave', 'silicone_rubber');
     largeCube('pulverizer', 'blue_steel');
     largeCube('arc_furnace', 'kanthal');
+    largeCube('electromagnetic_separator', 'manganin');
 
 
     // Large Rock Crusher

@@ -1219,6 +1219,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     largeMulti('kovar', ['18x iron', '11x nickel', '6x cobalt'], 0x000080);
     largeMulti('zamak', ['1x zinc', '4x aluminium', '3x copper'], 0x8c8c8c);
     largeMulti('tumbaga', ['20x copper', '6x gold', '1x silver'], 0xffdb4d);
+    largeMulti('manganin', ['20x copper', '6x manganese', '1x nickel'], 0xF8AA92);
 
     // Ultimate (Akreyrium-Tier-Start) Multiblocks
 

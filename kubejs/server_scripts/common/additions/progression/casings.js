@@ -52,6 +52,7 @@ ServerEvents.recipes(event => {
     casing('enriched_naquadah_machine', 'enriched_naquadah', 'kubejs');
     casing('fluix_steel', 'fluix_steel', 'kubejs');
     casing('kanthal', 'kanthal', 'kubejs');
+    casing('manganin', 'manganin', 'kubejs');
 
     const casingDouble = (type, material, casing_id) => {
 
