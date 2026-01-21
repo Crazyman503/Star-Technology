@@ -36,25 +36,25 @@ global.not_hardmode(() => {
         // });
 
         [
-            {modID: 'minecraft', metal: 'copper', rod: true, spring: true, small_spring: true, double_plate: true},
-            {modID: 'minecraft', metal: 'gold', rod: true, spring: true, small_spring: true, double_plate: true},
-            {modID: 'minecraft', metal: 'iron', rod: true, spring: true, small_spring: true, double_plate: true},
-            {modID: 'gtceu', metal: 'lead', rod: true, spring: true, small_spring: true, double_plate: true},
-            {modID: 'gtceu', metal: 'tin', rod: true, spring: true, small_spring: true, double_plate: true},
-            {modID: 'gtceu', metal: 'red_alloy', rod: true, spring: true, small_spring: false, double_plate: true},
-            {modID: 'gtceu', metal: 'wrought_iron', rod: true, spring: false, small_spring: false, double_plate: true},
-            {modID: 'gtceu', metal: 'bronze', rod: true, spring: false, small_spring: false, double_plate: true},
-            {modID: 'gtceu', metal: 'silver', rod: true, spring: false, small_spring: false, double_plate: true},
-            {modID: 'gtceu', metal: 'brass', rod: true, spring: false, small_spring: false, double_plate: true},
-            {modID: 'gtceu', metal: 'invar', rod: true, spring: false, small_spring: false, double_plate: true},
-            {modID: 'gtceu', metal: 'soul_infused', rod: true, spring: false, small_spring: false, double_plate: true},
-            {modID: 'gtceu', metal: 'zinc', rod: true, spring: false, small_spring: false, double_plate: true},
-            {modID: 'gtceu', metal: 'potin', rod: true, spring: false, small_spring: false, double_plate: true},
-            {modID: 'gtceu', metal: 'cobalt_brass', rod: true, spring: false, small_spring: false, double_plate: true},
-            {modID: 'gtceu', metal: 'tin_alloy', rod: true, spring: false, small_spring: false, double_plate: true},
-            {modID: 'gtceu', metal: 'nickel', rod: false, spring: false, small_spring: false, double_plate: true}
+            {modID: 'minecraft', metal: 'copper', rod: true, spring: true, small_spring: true, double_plate: true, long_rod: true},
+            {modID: 'minecraft', metal: 'gold', rod: true, spring: true, small_spring: true, double_plate: true, long_rod: true},
+            {modID: 'minecraft', metal: 'iron', rod: true, spring: true, small_spring: true, double_plate: true, long_rod: true},
+            {modID: 'gtceu', metal: 'lead', rod: true, spring: true, small_spring: true, double_plate: true, long_rod: true},
+            {modID: 'gtceu', metal: 'tin', rod: true, spring: true, small_spring: true, double_plate: true, long_rod: true},
+            {modID: 'gtceu', metal: 'red_alloy', rod: true, spring: true, small_spring: false, double_plate: true, long_rod: false},
+            {modID: 'gtceu', metal: 'wrought_iron', rod: true, spring: false, small_spring: false, double_plate: true, long_rod: true},
+            {modID: 'gtceu', metal: 'bronze', rod: true, spring: false, small_spring: false, double_plate: true, long_rod: true},
+            {modID: 'gtceu', metal: 'silver', rod: true, spring: false, small_spring: false, double_plate: true, long_rod: true},
+            {modID: 'gtceu', metal: 'brass', rod: true, spring: false, small_spring: false, double_plate: true, long_rod: true},
+            {modID: 'gtceu', metal: 'invar', rod: true, spring: false, small_spring: false, double_plate: true, long_rod: true},
+            {modID: 'gtceu', metal: 'soul_infused', rod: true, spring: false, small_spring: false, double_plate: true, long_rod: false},
+            {modID: 'gtceu', metal: 'zinc', rod: true, spring: false, small_spring: false, double_plate: true, long_rod: false},
+            {modID: 'gtceu', metal: 'potin', rod: true, spring: false, small_spring: false, double_plate: true, long_rod: true},
+            {modID: 'gtceu', metal: 'cobalt_brass', rod: true, spring: false, small_spring: false, double_plate: true, long_rod: true},
+            {modID: 'gtceu', metal: 'tin_alloy', rod: true, spring: false, small_spring: false, double_plate: true, long_rod: true},
+            {modID: 'gtceu', metal: 'nickel', rod: false, spring: false, small_spring: false, double_plate: true, long_rod: false},
         ].forEach(material => {
-            const {modID, metal, rod, spring, small_spring, double_plate} = material;
+            const {modID, metal, rod, spring, small_spring, double_plate, long_rod} = material;
             vintage.polishing(`gtceu:${metal}_dust`, `${modID}:${metal}_ingot`).id(id(`polishing/${metal}_ingot`));
             if (rod) {
                 vintage.turning(`gtceu:${metal}_rod`, `${modID}:${metal}_ingot`).id(id(`turning/${metal}_rod`));
@@ -67,6 +67,9 @@ global.not_hardmode(() => {
             }
             if (double_plate) {// For some reason Item.of(`gtceu:${metal}_plate`, 2) does not work
                 vintage.hammering(`gtceu:double_${metal}_plate`, [`gtceu:${metal}_plate`, `gtceu:${metal}_plate`]).hammerBlows(3).id(id(`hammering/double_${metal}_plate`));
+            }
+            if (long_rod) {
+                vintage.hammering(`gtceu:long_${metal}_rod`, [`gtceu:${metal}_rod`, `gtceu:${metal}_rod`]).hammerBlows(3).id(id(`hammering/long_${metal}_rod`));
             }
         });
 
