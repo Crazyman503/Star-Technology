@@ -286,8 +286,10 @@
 			dependencies: [
 				"79428BAEAA7856E1"
 				"6AA4CC44DE1C8E1E"
+				"084F23122E4CA277"
 			]
 			description: ["{ftbquests.futuristic_mechanisms.advanced_quarktech_chestplate.description}"]
+			hide_dependent_lines: true
 			id: "1602A4A4D00C9724"
 			rewards: [{
 				id: "3BD74F896357D2D8"
@@ -327,7 +329,10 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["53A9F3758C218CDC"]
+			dependencies: [
+				"53A9F3758C218CDC"
+				"272CE9BF358D64FE"
+			]
 			description: ["{ftbquests.futuristic_mechanisms.iv_parallel_hatch.description}"]
 			id: "0A6534BD104A2B08"
 			rewards: [{
@@ -616,6 +621,7 @@
 		{
 			dependencies: ["67ABB3BF6D0C183B"]
 			description: ["{ftbquests.futuristic_mechanisms.europium.description}"]
+			hide_dependent_lines: true
 			id: "084F23122E4CA277"
 			rewards: [{
 				id: "71877D22B63F1155"
