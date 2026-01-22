@@ -43,7 +43,6 @@ ItemEvents.tooltip(event => {
     //Custom Colossal Chest Tooltips
     const colossalTypes = [`wood`, `copper`, `iron`, `silver`, `gold`, `diamond`, `obsidian`];
     colossalTypes.forEach(type => {
-        event.add(`colossalchests:colossal_chest_${type}`, Text.translate(`item.colossalchests.colossal_chest_${type}.tooltip`));
+        event.add(`colossalchests:colossal_chest_${type}`, Text.translate(`item.colossalchests.colossal_chest.tooltip`));
     });
-
 });
