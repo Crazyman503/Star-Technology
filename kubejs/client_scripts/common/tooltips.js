@@ -40,4 +40,9 @@ ItemEvents.tooltip(event => {
         text.add(4, Text.of('   §bAbsolute Stabilization'));
     });
 
+    //Custom Colossal Chest Tooltips
+    const colossalTypes = [`wood`, `copper`, `iron`, `silver`, `gold`, `diamond`, `obsidian`];
+    colossalTypes.forEach(type => {
+        event.add(`colossalchests:colossal_chest_${type}`, Text.translate(`item.colossalchests.colossal_chest.tooltip`));
+    });
 });
