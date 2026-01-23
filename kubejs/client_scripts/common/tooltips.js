@@ -45,4 +45,32 @@ ItemEvents.tooltip(event => {
     colossalTypes.forEach(type => {
         event.add(`colossalchests:colossal_chest_${type}`, Text.translate(`item.colossalchests.colossal_chest.tooltip`));
     });
+
+    //Theta 2 removals 
+    const removalTooltip = Text.translate(`item.kubejs.theta_2_removals`);
+    const MAMultisPlusNuc = [`gtceu:essence_enchancer`, `gtceu:essence_replicator`, `gtceu:nuclear_reactor`];
+    const MABurnerGreenhouseDeprecation = (tier) => {
+        event.addAdvanced(`gtceu:${tier}_essence_burner`, (item, advanced, text) => {
+            text.add(2, `${removalTooltip}`);
+        });
+        event.addAdvanced(`gtceu:${tier}_mystical_greenhouse`, (item, advanced, text) => {
+            text.add(2, `${removalTooltip}`);
+        });
+    };
+    const techTiers = [`lv`, `mv`, `hv`, `ev`, `iv`, `luv`, `zpm`, `uv`, `uhv`];
+    techTiers.forEach(techTier => {
+        MABurnerGreenhouseDeprecation(tier)
+    })
+    MAMultisPlusNuc.forEach(controller =>{
+        event.addAdvanced(controller, (item, advanced, text) => {
+            text.add(2, `${removalTooltip}`);
+        });
+    })
+    for (let x=1; x<=8; x++) {
+        event.addAdvanced (`solarflux:sp_${x}`, (item, advanced, text) => {
+                text.add(4, `${removalTooltip}`);
+        });
+    } 
+
+
 });
