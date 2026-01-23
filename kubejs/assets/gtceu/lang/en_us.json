@@ -1,12 +1,14 @@
 {
-    "block.gtceu.lv_mystical_greenhouse.tooltip": "§7Sieving is boring. How about some agriculture?",
-    "block.gtceu.mv_mystical_greenhouse.tooltip": "§7Sieving is boring. How about some agriculture?",
-    "block.gtceu.hv_mystical_greenhouse.tooltip": "§7Sieving is boring. How about some agriculture?",
-    "block.gtceu.ev_mystical_greenhouse.tooltip": "§7Sieving is boring. How about some agriculture?",
-    "block.gtceu.iv_mystical_greenhouse.tooltip": "§7Sieving is boring. How about some agriculture?",
-    "block.gtceu.luv_mystical_greenhouse.tooltip": "§7Sieving is boring. How about some agriculture?",
-    "block.gtceu.zpm_mystical_greenhouse.tooltip": "§7Sieving is boring. How about some agriculture?",
-    "block.gtceu.uv_mystical_greenhouse.tooltip": "§7Sieving is boring. How about some agriculture?",
+    "block.gtceu.lv_mystical_greenhouse.tooltip": "§4§lDeprecated. Will be removed in Theta 2\n§7Sieving is boring. How about some agriculture?",
+    "block.gtceu.mv_mystical_greenhouse.tooltip": "§4§lDeprecated. Will be removed in Theta 2\n§7Sieving is boring. How about some agriculture?",
+    "block.gtceu.hv_mystical_greenhouse.tooltip": "§4§lDeprecated. Will be removed in Theta 2\n§7Sieving is boring. How about some agriculture?",
+    "block.gtceu.ev_mystical_greenhouse.tooltip": "§4§lDeprecated. Will be removed in Theta 2\n§7Sieving is boring. How about some agriculture?",
+    "block.gtceu.iv_mystical_greenhouse.tooltip": "§4§lDeprecated. Will be removed in Theta 2\n§7Sieving is boring. How about some agriculture?",
+    "block.gtceu.luv_mystical_greenhouse.tooltip": "§4§lDeprecated. Will be removed in Theta 2\n§7Sieving is boring. How about some agriculture?",
+    "block.gtceu.zpm_mystical_greenhouse.tooltip": "§4§lDeprecated. Will be removed in Theta 2\n§7Sieving is boring. How about some agriculture?",
+    "block.gtceu.uv_mystical_greenhouse.tooltip": "§4§lDeprecated. Will be removed in Theta 2\n§7Sieving is boring. How about some agriculture?",
+    
+    "block.gtceu.essence_burner.tooltip": "§4§lDeprecated. Will be removed in Theta 2",
 
     "block.gtceu.dimensional_finder.tooltip.0": "§7Get Dimensionally Pinged",
     "block.gtceu.dimensional_finder.tooltip.1": "§7This machine can send pulses into deep space, recording the echoes on crystals, and can sometimes triangulate a region's location based on that data.",
@@ -60,7 +62,7 @@
     "block.gtceu.super_pressure_heat_chamber.tooltip.0": "§7A machine that can provide incredible heat and pressure, making it capable of fusing together incomplete products into some of the most resilient materials known across the galaxy.",
     "block.gtceu.super_pressure_heat_chamber.tooltip.1": "Can use §3Parallel§r hatches and has §cSubtick Parallels",
 
-    "block.gtceu.nuclear_reactor.tooltip.0": "§7A medium sized reactor that can use relatively simple nuclear reactions to make some extremely useful materials.",
+    "block.gtceu.nuclear_reactor.tooltip.0": "§4§lDeprecated. Will be removed in Theta 2\n§7A medium sized reactor that can use relatively simple nuclear reactions to make some extremely useful materials.",
     "block.gtceu.nuclear_reactor.tooltip.1": "Can use §3Parallel§r hatches",
 
     "block.gtceu.primitive_ore_factory.tooltip.0": "§7Your first all in one ore processing machine.",
@@ -114,11 +116,11 @@
     "block.gtceu.void_extractor.tooltip.1": "Can only have §bone§r Energy Hatch",
     "block.gtceu.void_extractor.tooltip.2": "§7You are gonna need multiple Output Buses and Hatches",
 
-    "block.gtceu.essence_enchancer.tooltip.0": "§7A convoluted machine, that can infuse mystical essences with large amounts of electricity to trigger a change in their composition, making them more useful.",
+    "block.gtceu.essence_enchancer.tooltip.0": "§4§lDeprecated. Will be removed in Theta 2\n§7A convoluted machine, that can infuse mystical essences with large amounts of electricity to trigger a change in their composition, making them more useful.",
     "block.gtceu.essence_enchancer.tooltip.1": "Has §6Perfect Overclock",
     "block.gtceu.essence_enchancer.tooltip.2": "Can use §3Parallel§r hatches",
 
-    "block.gtceu.essence_replicator.tooltip.0": "§7A machine that can duplicate essences indefinitely, although for the more advanced ones, it requires special fluids to function properly.",
+    "block.gtceu.essence_replicator.tooltip.0": "§4§lDeprecated. Will be removed in Theta 2\n§7A machine that can duplicate essences indefinitely, although for the more advanced ones, it requires special fluids to function properly.",
     "block.gtceu.essence_replicator.tooltip.1": "Has §6Perfect Overclock",
     "block.gtceu.essence_replicator.tooltip.2": "Can use §3Parallel§r hatches",
 
@@ -255,7 +257,7 @@
     "material.gtceu.purified_debris": "Purified Debris",
     "material.gtceu.netherite": "Netherite",
     "block.gtceu.essence_replicator": "Essence Replicator",
-    "block.gtceu.essence_enchancer": "Essence Enchancer",
+    "block.gtceu.essence_enchancer": "Essence Enhancer",
     "block.gtceu.greenhouse": "Greenhouse",
     "gtceu.tree_greenhouse": "Tree Greenhouse",
     "gtceu.crop_greenhouse": "Crop Greenhouse",

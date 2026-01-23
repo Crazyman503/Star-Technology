@@ -45,4 +45,13 @@ ItemEvents.tooltip(event => {
     colossalTypes.forEach(type => {
         event.add(`colossalchests:colossal_chest_${type}`, Text.translate(`item.colossalchests.colossal_chest.tooltip`));
     });
+
+    //Theta 2 removals 
+    const techTiers = [`lv`, `mv`, `hv`, `ev`, `iv`, `luv`, `zpm`, `uv`, `uhv`];
+    techTiers.forEach(techTier => {
+        event.add(`gtceu:${techTier}_essence_burner`, Text.translate(`block.gtceu.essence_burner.tooltip`));
+    })
+    for (let x=1; x<=8; x++) {
+        event.add(`solarflux:sp_${x}`, Text.translate(`block.solarflux.sp.tooltip`));
+    }
 });
